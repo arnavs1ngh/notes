@@ -1,9 +1,9 @@
 ---
 layout: default
-title: The Flash Algorithm
+title: Year 2
 nav_order: 1
 math: mathjax3
 has_children: true
 ---
 
-I spent 11 weeks in the summer of 2021 working in the [Thermophysical Laboratory](https://www.imperial.ac.uk/thermophysics/) at Imperial, under the supervision of Martin Trusler. During this time I worked on a vba spreadsheet for flash calculations of arbitrary mixtures, implementing numerical methods for the first half, and new mixing rules for the one fluid approximation for the second. 
+Here you can find all the notes for Year 2 Mathematics at Imperial College London. Let me know if there are any mistakes, they will be amended promptly.
