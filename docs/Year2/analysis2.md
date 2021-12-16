@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Theoretical Overview
+title: Analysis 2
 nav_order: 1
 math: mathjax3
 parent: The Flash Algorithm
@@ -9,12 +9,6 @@ parent: The Flash Algorithm
 # The Flash Problem
 A common problem in chemical engineering is the flash problem, determining the vapour and liquid compositions for an overall composition, i.e. the feed composition, and the current state.
 The state can be specified with any combo of thermodynamic variables. It is often formulated as *T, P* or an "Isothermal Flash", or as *H, P* an "Isenthalpic Flash"
-
-It appears most obviously in flash drums or distillation columns, but it also occurs in compositional reservoir simulations, requiring a flash at each grid block for every time step.
-
-This is only ever a problem when dealing with mixtures, as clearly for a pure substance the liquid and vapour will both be pure.
-
-The flash problem is solved numerically, generally as either a gibbs energy minimisation problem, or with successive substitution of the composition variables.
 
 $$
 \min \text{g} = \sum_{i=1}^N y_i \mu_i^{\scriptsize V} + x_i \mu_i^{\scriptsize L} $$
