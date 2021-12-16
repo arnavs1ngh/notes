@@ -78,8 +78,8 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 
 *Content from MATH40002 assumed to be known.*
 
-<a href="ANA2-Concise.pdf" download>**PDF Download** Analysis 2 - Concise Notes</a>
-<a href="ANA2-Concise.pdf">**PDF AVAILABLE HERE**</a>
+<a href="/ANA2-Concise.pdf" download>**PDF Download** Analysis 2 - Concise Notes</a>
+<a href="/pdfs/ANA2-Concise.pdf">**PDF AVAILABLE HERE**</a>
 
 # Differentiation in Higher Dimensions
 
