@@ -100,10 +100,9 @@ $$|x| :=
 $$
 
 Having the following properties:
-1.  $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$
-2.  $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
-3.  $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle
-    inequality)*
+(i)  $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$
+(ii)  $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
+(iii)  $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
 
 ### Euclidean space of dim. n
 
