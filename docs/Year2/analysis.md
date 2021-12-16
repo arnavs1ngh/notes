@@ -121,23 +121,21 @@ $$||x|| = \sqrt{<x,x>}$$ Having the following properties:
 3.  $\forall x, y \in \mathbb{R}^{n}, ||x+y|| \leq ||x|| + ||y||$
     *(Triangle inequality)*
 
-**Definition - [**Cauchy-Schwartz
-Inequality**]**\
-$$|\langle x, y \rangle| \leq ||x||||y||$$\
+**Definition - <span style="color: green;">**Cauchy-Schwartz Inequality**]**</span>
+$$|\langle x, y \rangle| \leq ||x||||y||$$
 
 ### Convergence of Sequences in Euclidean Spaces
 
-**Definition - [**Sequence in
-$\mathbb{R}^{n}$**]**\
-An infinite ordered list, $x_{0}, x_{1},\dots,$ s.t
-$x_{i} \in \mathbb{R}^{n} \text{ } \forall  i$. Denoted
-$(x_{i})_{i\geq 1} \text{ or } (x_{i})_{i\in \mathbb{N}}$\
-Ḏefinition 1.1 - [**Convergence**]\
-[**A seq. $(x_{i}) \in \mathbb{R}^{n}$ converges to
-$x \in \mathbb{R}^{n}$**] if
-[**$\forall \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall i \geq \mathbb{N}, ||x_{i}-x||<\epsilon$**]\
-*Corollary*\
-seq. $(x_{i}) \in \mathbb{R}^{n}$ converges to
+**Definition - <span style="color: green;">**Sequence in $\mathbb{R}^{n}$**</span>
+An infinite ordered list, $x_{0}, x_{1},\dots,$ s.t $x_{i} \in \mathbb{R}^{n} \text{ } \forall  i$
+Denoted $(x_{i})_{i\geq 1}$ or $(x_{i})_{i\in \mathbb{N}}$
+  
+Ḏefinition 1.1 - <span style="color: green;">**Convergence**</span>
+<span style="color: red;">**A seq. $(x_{i}) \in \mathbb{R}^{n}$ converges to $x \in \mathbb{R}^{n}$** </span>
+if <span style="color: blue;">**$\forall \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall i \geq \mathbb{N}, ||x_{i}-x||<\epsilon$**</span>
+  
+***Corollary***
+Sequence $(x_{i}) \in \mathbb{R}^{n}$ converges to
 $x \in \mathbb{R}^{n} \iff$
 
 $$\text{For } x_{i} = (x_{i}^{1},\dots,x_{i}^{n}) \text{ and } x = (x^{1},\dots,x^{n})$$
