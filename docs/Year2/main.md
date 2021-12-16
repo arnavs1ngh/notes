@@ -15,7 +15,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ## Linked pdfs of notes available here:
 
 ### Analysis 2 - MATH50001
-- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a> <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**- ownload**</a>
+- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a> <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**- Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Lecturer - Term 1**</a> <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**- Download**</a>
 
 ### Linear Algebra + Numerical Analysis - MATH50003
