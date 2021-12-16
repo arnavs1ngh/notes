@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Numerical Methods 
+title: Linear Algebra & Numerical Analysis 
 parent: Year 2
 nav_order: 2
 math: mathjax3
