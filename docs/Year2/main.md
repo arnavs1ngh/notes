@@ -14,11 +14,16 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ## Linked pdfs of notes available here:
 
-- <a href="/notes/pdfs/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a>
-- <a href="/notes/pdfs/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Lecturer - Term 1**</a>
+### Analysis 2 - MATH50001
+- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a>
+- <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Lecturer - Term 1**</a>
 
-- <a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download Analysis 2 Concise- Term 1**</a>
-- <a href="/notes/pdfs/AnalysisII.pdf" download>**Download Analysis 2 Lecturer - Term 1**</a>
+- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**Download Analysis 2 Concise- Term 1**</a>
+- <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download Analysis 2 Lecturer - Term 1**</a>
 
+### Linear Algebra + Numerical Analysis - MATH50003
+- <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Term 1**</a>
+- <a href="/notes/pdfs/year2/LAGLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a>
 
-
+- <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download Linear Algebra Concise- Term 1**</a>
+- <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download Linear Algebra Lecturer - Term 1**</a>
