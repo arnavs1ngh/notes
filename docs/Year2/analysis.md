@@ -69,28 +69,6 @@ math: mathjax3
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-
-
-
-<!-- 1 Differentiation in Higher Dimensions 2
-1.1 EuclideanSpaces.................................................... 2
-1.1.1 Preliminaries .................................................. 2
-1.1.2 Euclideanspaceofdim.n........................................... 2
-1.1.3 ConvergenceofSequencesinEuclideanSpaces ............................... 2
-1.2 Continuity........................................................ 3 1.2.1 OpensetsinEuclideanSpaces ........................................ 3 1.2.2 Continuityatapoint/onanopenset..................................... 3
-1.3 DerivativeofamapofEuclideanSpaces....................................... 4 1.3.1 Derivativeofalinearmap........................................... 4 1.3.2 ChainRule ................................................... 4
-1.4 DirectionalDerivatives................................................. 4 1.4.1 RatesofchangeandPartialDerivatives ................................... 4 1.4.2 Relationbetweenpartialderivativesanddifferentiability.......................... 5
-1.5 HigherDerivatives ................................................... 5
-1.5.1 Higherderivativesaslinearmaps....................................... 5
-1.5.2 Symmetryofmixedpartialderivatives.................................... 6
-1.5.3 Taylor’sTheorem................................................ 6
-1.6 Inverse&ImplicitFunctionTheorem......................................... 6
-1.6.1 InverseFunctionTheorem........................................... 6
-1.6.2 ImplicitFunctionTheorem .......................................... 7
-1.6.4 ImplicitFunctionTheorem-GeneralForm . -->
-
-
-
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
 <span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
