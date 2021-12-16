@@ -14,8 +14,11 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ## Linked pdfs of notes available here:
 
-- <a href="/notes/pdfs/ANA2-Concise.pdf" style="color:#801fff;">**Open Analysis 2 - Term 1**</a>
-- <a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download Analysis 2 - Term 1**</a>
+- <a href="/notes/pdfs/ANA2-Concise.pdf" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a>
+- <a href="/notes/pdfs/AnalysisII.pdf" style="color:#801fff;">**Open Analysis 2 Lecturer - Term 1**</a>
+
+- <a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download Analysis 2 Concise- Term 1**</a>
+- <a href="/notes/pdfs/AnalysisII.pdf" download>**Download Analysis 2 Lecturer - Term 1**</a>
 
 
 
