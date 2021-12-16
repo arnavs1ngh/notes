@@ -15,8 +15,8 @@ math: mathjax3
   <summary>
     Table of contents
   </summary>
-  {: .text-delta }
-1. TOC
+<!--   {: .text-delta } -->
+* TOC
 {:toc}
 </details>
 
