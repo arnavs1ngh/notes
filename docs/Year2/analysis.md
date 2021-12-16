@@ -11,9 +11,9 @@ math: mathjax3
 {: .no_toc}
 **Term 1 Content**
 
-<a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download PDF** Analysis 2 - Concise Notes - Term 1</a>
+<a href="/notes/pdfs/ANA2-Concise.pdf" style="color:#FF0000;" download>**Download PDF** Analysis 2 - Concise Notes - Term 1</a>
 
-<a href="/notes/pdfs/ANA2-Concise.pdf">**Open PDF in browser**</a>
+<a href="/notes/pdfs/ANA2-Concise.pdf" target="_blank" style="color:#FF0000;">>**Open PDF in browser**</a>
 
 <details open markdown="block">
   <summary>
