@@ -25,55 +25,6 @@ math: mathjax3
 </details>
 
 ---
-<!-- - [Differentiation in Higher Dimensions](#differentiation-in-higher-dimensions)
-  * [Euclidean Spaces](#euclidean-spaces)
-    + [Preliminaries](#preliminaries)
-    + [Euclidean space of dim. n](#euclidean-space-of-dim-n)
-    + [Convergence of Sequences in Euclidean Spaces](#convergence-of-sequences-in-euclidean-spaces)
-  * [Continuity](#continuity)
-    + [Open sets in Euclidean Spaces](#open-sets-in-euclidean-spaces)
-    + [Continuity at a point/on an open set](#continuity-at-a-point-on-an-open-set)
-  * [Derivative of a map of Euclidean Spaces](#derivative-of-a-map-of-euclidean-spaces)
-    + [Derivative of a linear map](#derivative-of-a-linear-map)
-    + [Chain Rule](#chain-rule)
-  * [Directional Derivatives](#directional-derivatives)
-    + [Rates of change and Partial Derivatives](#rates-of-change-and-partial-derivatives)
-    + [Relation between partial derivatives and differentiability](#relation-between-partial-derivatives-and-differentiability)
-  * [Higher Derivatives](#higher-derivatives)
-    + [Higher derivatives as linear maps](#higher-derivatives-as-linear-maps)
-    + [Symmetry of mixed partial derivatives](#symmetry-of-mixed-partial-derivatives)
-    + [Taylor's Theorem](#taylor-s-theorem)
-  * [Inverse & Implicit Function Theorem](#inverse---implicit-function-theorem)
-    + [Inverse Function Theorem](#inverse-function-theorem)
-    + [Implicit Function Theorem](#implicit-function-theorem)
-    + [Implicit Function Theorem - General Form](#implicit-function-theorem---general-form)
-- [Metric and Topological Spaces](#metric-and-topological-spaces)
-  * [Metric Spaces](#metric-spaces)
-    + [Motivation + Definition](#motivation---definition)
-    + [Examples of metrics](#examples-of-metrics)
-    + [Normed Vector Spaces](#normed-vector-spaces)
-    + [Open sets in metric spaces](#open-sets-in-metric-spaces)
-    + [Convergence in Metric Spaces](#convergence-in-metric-spaces)
-    + [Closed sets in metric spaces](#closed-sets-in-metric-spaces)
-    + [Interior, isolated, limit, and boundary points in metric spaces](#interior--isolated--limit--and-boundary-points-in-metric-spaces)
-    + [Continuous maps of metric spaces](#continuous-maps-of-metric-spaces)
-  * [Topological Spaces](#topological-spaces)
-    + [Topology on a set](#topology-on-a-set)
-    + [Convergence, and Hausdorff property](#convergence--and-hausdorff-property)
-    + [Closed sets in topological spaces](#closed-sets-in-topological-spaces)
-    + [Continuous maps on topological spaces](#continuous-maps-on-topological-spaces)
-  * [Connectedness](#connectedness)
-    + [Connected sets](#connected-sets)
-    + [Continuous maps + Connected sets](#continuous-maps---connected-sets)
-    + [Path Connected Sets](#path-connected-sets)
-  * [Compactness](#compactness)
-    + [Compactness by covers](#compactness-by-covers)
-    + [Sequential Compactness](#sequential-compactness)
-    + [Continuous maps + Compact Sets](#continuous-maps---compact-sets)
-  * [Completeness](#completeness)
-    + [Complete metric spaces & Banach space](#complete-metric-spaces---banach-space)
-    + [Arzelà-Ascoli](#arzel--ascoli)
-    + [Fixed point theorem](#fixed-point-theorem) -->
 
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
@@ -88,7 +39,7 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 
 ## <span style="color: white;">1.1.</span> Euclidean Spaces
 
-### Preliminaries
+### <span style="color: white;">1.1.1</span> Preliminaries
 <!-- <span style="color: green;">Definition</span> -->
 <!-- <span style="color: blue;">Cause</span> -->
 <!-- <span style="color: red;">Consequence</span> -->
@@ -110,7 +61,7 @@ Having the following properties:
 
 (iii)$\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
 
-### Euclidean space of dim. n
+### <span style="color: white;">1.1.2</span> Euclidean space of dim. n
 
 **Define** - <span style="color: green;">**Euclidean Space of dim. $n, \mathbb{R}^{n}$**</span>
 
@@ -130,7 +81,7 @@ $$||x|| = \sqrt{<x,x>}$$ Having the following properties:
 **Definition - <span style="color: green;">**Cauchy-Schwartz Inequality**]**</span>
 $$|\langle x, y \rangle| \leq ||x||||y||$$
 
-### Convergence of Sequences in Euclidean Spaces
+### <span style="color: white;">1.1.3 </span> Convergence of Sequences in Euclidean Spaces
 
 **Definition - <span style="color: green;">**Sequence in $\mathbb{R}^{n}$**</span>
 An infinite ordered list, $x_{0}, x_{1},\dots,$ s.t $x_{i} \in \mathbb{R}^{n} \text{ } \forall  i$
@@ -147,9 +98,9 @@ $x \in \mathbb{R}^{n} \iff$
 $$\text{For } x_{i} = (x_{i}^{1},\dots,x_{i}^{n}) \text{ and } x = (x^{1},\dots,x^{n})$$
 $$x_{i} \to x \iff \forall k \text{ } x_{i}^{k} \to x^{k} \text{ as } i \to \infty$$
 
-## Continuity
+## <span style="color: white;">1.2</span> Continuity
 
-### Open sets in Euclidean Spaces
+### <span style="color: white;">1.2.1</span> Open sets in Euclidean Spaces
 
 **Definition - <span style="color: green;">**Open Ball**</span>
 Open ball of radius $r$ is
@@ -160,7 +111,7 @@ A set $U \subseteq \mathbb{R}^{n}$ is called
 [****open****], if
 [**$$\forall x \in U, \exists r > 0 \text{ such that} B_{r}(x) \subseteq U$$**]
 
-### Continuity at a point/on an open set
+### <span style="color: white;">1.2.2</span> Continuity at a point/on an open set
 
 **Definition 1.3 - <span style="color: green;">**Continuity at a point** </span>
 Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$\
@@ -201,9 +152,9 @@ $f,g: A \to \mathbb{R}^{n}$
 3.  [**If, $G\neq 0$ then
     $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$**]
 
-## Derivative of a map of Euclidean Spaces
+## <span style="color: white;">1.3</span> Derivative of a map of Euclidean Spaces
 
-### Derivative of a linear map
+### <span style="color: white;">1.3.1</span> Derivative of a linear map
 
 **Lemma 1.5**\
 *The map $f:(a,b) \to \mathbb{R}$ differentiable at
@@ -232,7 +183,7 @@ differentiable at $p\in \Omega \implies f$ continuous at $p$\
 *The derivative, [**if it exists**], [**is
 unique**]*
 
-### Chain Rule
+### <span style="color: white;">1.3.2</span> Chain Rule
 
 **Chain rule in $\mathbb{R}$**\
 $f,g: \mathbb{R}\to \mathbb{R}, g$ differentiable at $p$, $f$
@@ -247,9 +198,9 @@ $f:\Omega' \to \mathbb{R}^{l}$ differentiable at $g(p) \in \Omega'$\
 Then $h = f \circ g: \Omega \to \mathbb{R}^{l}$, differentiable at $p$,
 s.t $$Dh(p) = D(f(g(p))\circ Dg(p)$$
 
-## Directional Derivatives
+## <span style="color: white;">1.4</span> Directional Derivatives
 
-### Rates of change and Partial Derivatives
+### <span style="color: white;">1.4.1</span> Rates of change and Partial Derivatives
 
 **Definition - <span style="color: green;">**Directional Derivative**</span>
 The [**directional derivative**] of $f$ at
@@ -292,7 +243,7 @@ D_{1}f^{1}(p) & \dots & D_{n}f^{1}(p)\\
 D_{1}f^{m}(p) & \dots & D_{n}f^{m}(p)
 \end{pmatrix}$$
 
-### Relation between partial derivatives and differentiability
+### <span style="color: white;">1.4.2</span> Relation between partial derivatives and differentiability
 
 **Theorem 1.12**\
 Let $\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega\to \mathbb{R}$.
@@ -302,9 +253,9 @@ $\forall x \in \Omega$, with each map $x \mapsto D_{i}f(x)$ continuous
 at $p, \forall i$**]$\implies$ [**$f$ is
 differentiable at $p$**]
 
-## Higher Derivatives
+## <span style="color: white;">1.5</span> Higher Derivatives
 
-### Higher derivatives as linear maps
+### <span style="color: white;">1.5.1</span> Higher derivatives as linear maps
 
 Can think of the differential of $f$, $Df(p)$ as a map
 $$Df: \Omega \to L(R^{n};R^{m}) = \Omega \to \mathbb{R}^{mn}$$
@@ -337,7 +288,7 @@ $$D_{k}D_{i}f^{j}(p) := \lim_{t\to 0}\frac{D_{i}f^{j}(p+te_{k})-D_{i}f^{j}(p)}{t
 Easy to check these exist and are continuous $\implies$ $k$-times
 differentiability at $p$
 
-### Symmetry of mixed partial derivatives
+### <span style="color: white;">1.5.2</span> Symmetry of mixed partial derivatives
 
 **Theorem 1.13 - Schwartz' Theorem**\
 Suppose $\Omega \subset \mathbb{R}^{n}$ open and
@@ -352,7 +303,7 @@ The matrix of $2^{\text{nd}}$ partial derivatives at the point $p$
 $$\text{Hess } f(p) = [D_{i}D_{j}f(p)]_{i,j =1,\dots,n}$$ Schwartz'
 Theorem says Hess $f(p$ is a symmetric matrix
 
-### Taylor's Theorem
+### <span style="color: white;">1.5.3</span> Taylor's Theorem
 
 **Definition - <span style="color: green;">**Multi-inidices**</span>
 Multi-index $\alpha \in (\mathbb{N})^{n}, \alpha = \begin{pmatrix}
@@ -391,9 +342,9 @@ $$R_{k}(p,h) = \sum_{|\alpha| = k}\frac{h^{\alpha}}{\alpha!}D^{a}f(x)$$
 for some $x$ s.t $0 < ||x-p||< ||h||$\
 Evidently $$\lim_{h\to 0}\frac{|R_{k}(p,h)|}{||h||^{k-1}} = 0$$
 
-## Inverse & Implicit Function Theorem
+## <span style="color: white;">1.6</span> Inverse & Implicit Function Theorem
 
-### Inverse Function Theorem
+### <span style="color: white;">1.6.1</span> Inverse Function Theorem
 
 \
 Let $\Omega$ an open set in $\mathbb{R}^{n}$,
@@ -408,7 +359,7 @@ $V \subset \mathbb{R}^{n}, q \in U, f(q) \in V$ s.t
 
 3.  $\forall y \in V$, $$Df^{-1}(y) = [Df(f^{-1}(y))]^{-1}$$
 
-### Implicit Function Theorem
+### <span style="color: white;">1.6.2</span> Implicit Function Theorem
 
 **Theorem 1.16 - *(Implicit Function Theorem - Simple version)***\
 $\Omega \subset \mathbb{R}^{2}$ open\
@@ -432,7 +383,7 @@ $f:\Omega \to \Omega'$ a and $\forall x \in \Omega, Df(x)$
 $\mathcal{D}$ the set of all $C^{1}-$diffeomorphisms from
 $\Omega \to \Omega$, a group under group law; composition.\
 
-### Implicit Function Theorem - General Form
+### <span style="color: white;">1.6.4</span> Implicit Function Theorem - General Form
 
 **Theorem 1.17 - *(Implicit Function Theorem)***\
 $\Omega \subset \mathbb{R}^{n}, \Omega' \subset \mathbb{R}^{m}$ open
@@ -451,11 +402,11 @@ $a \in A, b \in B$ with a map $g:A \to B$ s.t
 $$g(x,y) = 0 \text{ for some } (x,y) \in A \times B \iff y = g(x) \text{for some } x \in A$$
 with $g:A \to B$ continuously differentiable.\
 
-# Metric and Topological Spaces
+# <span style="color: white;">2</span> Metric and Topological Spaces
 
-## Metric Spaces
+## <span style="color: white;">2.1</span> Metric Spaces
 
-### Motivation + Definition
+### <span style="color: white;">2.1.1</span> Motivation + Definition
 
 **Definition 2.1 - [**Metric**]**\
 $X$ an arbitrary set\
@@ -476,7 +427,7 @@ $d$\
 **Definition**\
 $$C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}\text{continuous}\}$$
 
-### Examples of metrics
+### <span style="color: white;">2.1.2</span> Examples of metrics
 
 -   $d_{2}(x,y) = ||x-y||$; Euclidean metric on $\mathbb{R}^{n}$
 
@@ -517,7 +468,7 @@ define metric using
 $d_{1},d_{2}$ $d: (X_{1} \times X_{2}) \times (X_{1} \times X_{2}) \to \mathbb{R}$.\
 $(X_{1} \times X_{2}, d)$ a product metric space.
 
-### Normed Vector Spaces
+### <span style="color: white;">2.1.3</span> Normed Vector Spaces
 
  
 **Definition 4**. [**Norm in Metric
@@ -539,7 +490,7 @@ A pair of a vector space $(V, ||\cdot||)$\
 note $||\cdot||$ is a metric on $V \implies$ normed vector space a
 metric space.
 
-### Open sets in metric spaces
+### <span style="color: white;">2.1.4</span> Open sets in metric spaces
 
  
 **Definition 5**. [**Open ball in metric spaces**
@@ -567,7 +518,7 @@ equivalent**]
 $d_{1},d_{2}$ metrics on a set $X$ **topologically equivalent** if:
 $$\forall\ U \subseteq X,\ U \text{ open in } (X,d_{1}) \iff U \text{ open in }  (X,d_{2})$$
 
-### Convergence in Metric Spaces
+### <span style="color: white;">2.1.5</span> Convergence in Metric Spaces
 
  
 **Definition 8**. [**Convergence in Metric
@@ -582,7 +533,7 @@ unique\
 ***Corollary*** - $d_{1},d_{2}$ topologically equivalent $\iff (x_n)$
 converges in $(X,d_1)$ and $(X,d_2)$
 
-### Closed sets in metric spaces
+### <span style="color: white;">2.1.6</span> Closed sets in metric spaces
 
  
 **Definition 9**. [**Closed set in Metric
@@ -658,7 +609,7 @@ $(X,d)$ a metric space
 
 -   $(X,d)$ seperable if, $\exists$ dense countable subset of $X$
 
-### Continuous maps of metric spaces
+### <span style="color: white;">2.1.8</span> Continuous maps of metric spaces
 
  
 **Definition 12**. [**Continuity in metric
@@ -731,9 +682,9 @@ $(X,d_X),(Y,d_Y)$ metric spaces with $f:X\to Y$\
     preserving**] if
     $\forall x_1,x_2 \in X;$ $$d_Y(f(x_1),f(x_2)) = d_X(x_1,x_2)$$
 
-## Topological Spaces
+## <span style="color: white;">2.2</span> Topological Spaces
 
-### Topology on a set
+### <span style="color: white;">2.2.2</span> Topology on a set
 
  
 **Definition 15**. [**Topology** ]
@@ -814,7 +765,7 @@ $\{z \in \Omega | z \text{ an interior point of } \Omega\}$\
 
 -   $S^{\circ}$ largest open set contained in $S$
 
-### Convergence, and Hausdorff property
+### <span style="color: white;">2.2.3</span> Convergence, and Hausdorff property
 
  
 **Definition 18**. [**Convergence in Topological
@@ -840,7 +791,7 @@ Say $U$ and $V$ seperate $x$ and $y$
 $(A,\tau)$ a Hausdorff topological space. $(x_n)$ a sequence in $A$.\
 if $(x_n)$ convergent in $(A,\tau) \implies$ limit is unique.
 
-### Closed sets in topological spaces
+### <span style="color: white;">2.2.4</span> Closed sets in topological spaces
 
  
 **Definition 20**. [**Closed set in Topological
@@ -876,7 +827,7 @@ $S, \bar{S}$**]$= S \cup \{ x \in A | x \text{ a limit point of } S\}$
 ***Lemma***\
 $S$ closed in $(A,\tau) \iff S = \bar{S}$
 
-### Continuous maps on topological spaces
+### <span style="color: white;">2.2.5</span> Continuous maps on topological spaces
 
  
 **Definition 22**. [**Continuity in topological
@@ -918,9 +869,9 @@ space**]
 $(X,\tau_X),(Y,\tau_Y)$ **topologically equivalent/homeomorphic** if
 $\exists$ homeomorphism from $X \to Y$
 
-## Connectedness
+## <span style="color: white;">2.3</span> Connectedness
 
-### Connected sets
+### <span style="color: white;">2.3.1</span> Connected sets
 
  
 **Definition 25**. [**Disconnected sets**]
@@ -949,7 +900,7 @@ $$T  \text{ disconnected } \iff\ \exists \text{ continuous } f:T \to \mathbb{R}\
 Consider $(\mathbb{R},d)$, $S \subseteq \mathbb{R}$
 $$S \text{ connected } \iff S \text{ an interval }$$
 
-### Continuous maps + Connected sets
+### <span style="color: white;">2.3.2</span> Continuous maps + Connected sets
 
  
 **Theorem 8**.
@@ -971,7 +922,7 @@ $(X,d)$ connected metric space, $f: X \to \mathbb{R}$ continuous. Assume
 $\exists a,b \in X$ s.t $f(a) <0, f(b) > 0 \implies \exists c \in X$ s.t
 $f(c) = 0$
 
-### Path Connected Sets
+### <span style="color: white;">2.3.3</span> Path Connected Sets
 
  
 **Definition 26**. [**Path**]
@@ -994,9 +945,9 @@ $a\to b$ in $X$
 
 if $(X,d)$ path connected $\implies$ connected
 
-## Compactness
+## <span style="color: white;">2.4</span> Compactness
 
-### Compactness by covers
+### <span style="color: white;">2.4.1</span> Compactness by covers
 
  
 **Definition 28**. [**Covers**]
@@ -1067,7 +1018,7 @@ $(X,d)$ compact metric space $\implies X$ bounded
 Consider $(\mathbb{R}^{n},d_{2})$, $X \subseteq \mathbb{R}^{n}$\
 $X$ compact $\iff X$ closed and bounded
 
-### Sequential Compactness
+### <span style="color: white;">2.4.2</span> Sequential Compactness
 
  
 **Definition 31**. [**Sequentially
@@ -1096,7 +1047,7 @@ Any bounded sequence in $\mathbb{R}^{n}$ has convergent subsequence.
 $(X,d)$ metric space.
 $$X \text{ Compact  }\iff X \text{ Sequentially Compact }$$
 
-### Continuous maps + Compact Sets
+### <span style="color: white;">2.4.3</span> Continuous maps + Compact Sets
 
  
 **Theorem 16**.
@@ -1136,9 +1087,9 @@ domain and range.\
 $\forall\ [a,b]$ we have $f([a,b])$ of the form $[m,M]$ for
 $m,M \in \mathbb{R}$
 
-## Completeness
+## <span style="color: white;">2.5</span> Completeness
 
-### Complete metric spaces & Banach space
+### <span style="color: white;">2.5.1</span> Complete metric spaces & Banach space
 
  
 **Definition 32**. [**Cauchy Sequence**]
@@ -1181,7 +1132,7 @@ $(C([a,b]),||\cdot||_{\infty})$ a Banach space
 
 $(X,d)$ a compact metric space $\implies (X,d)$ complete
 
-### Arzelà-Ascoli
+### <span style="color: white;">2.5.2</span>  Arzelà-Ascoli
 
  
 **Definition 34**. [**Uniformly bounded & Uniformly
@@ -1210,7 +1161,7 @@ $f:[a,b] \to \mathbb{R}$ if $\mathcal{C}$ uniformly bounded and
 uniformly equi-continuous $\implies$ every sequence in $\mathcal{C}$ has
 convergent subsequence in $(C([a,b],d_{\infty})$
 
-### Fixed point theorem
+### <span style="color: white;">2.5.3</span>  Fixed point theorem
 
  
 **Definition 35**. [**Contracting**]
