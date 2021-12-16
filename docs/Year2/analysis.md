@@ -78,7 +78,7 @@ math: mathjax3
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
 <span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
-and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">**blue**</span>
+and <span style="color: blue-000;">**Causes**</span> are <span style="color: blue-000;">**blue**</span>
 
 *Content from MATH40002 assumed to be known.*
 
