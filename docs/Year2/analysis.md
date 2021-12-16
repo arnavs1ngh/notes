@@ -73,7 +73,7 @@ $ \leq\cdot,\cdot\geq,:\mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}^$
   
 $$\textlangle(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})\textrangle = \sum_{i=1}^n x^{i}y^{i}$$
 
-**Define - Norm/Lengths**, $||\cdot||: \mathbb{R}^{n} \to \mathbb{R}$
+**Define - Norm/Lengths**, $\mid\mid\cdot\mid\mid: \mathbb{R}^{n} \to \mathbb{R}$
   
 $$||x|| = \sqrt{<x,x>}$$ 
 
@@ -85,22 +85,20 @@ Having the following properties:
 
 **Definition - <span style="color: green;">Cauchy-Schwartz Inequality</span>**
 
-$$|\langle x, y \rangle| \leq ||x||||y||$$
+$$|\langle x, y \rangle| \leq ||x||\cdot||y||$$
 
 ### <span style="color: white;">1.1.3 </span> Convergence of Sequences in Euclidean Spaces
   
 
-**Definition - <span style="color: green;">Sequence in $\mathbb{R}^{n}$**</span>
+**Definition - <span style="color: green;">Sequence in $\mathbb{R}^{n}$</span>**
   
 An infinite ordered list, $x_{0}, x_{1},\dots,$ s.t $x_{i} \in \mathbb{R}^{n} \text{ } \forall i$
 
-Denoted $(x_{i})_{i\geq 1}$ or $(x_{i})_{i\in \mathbb{N}}$
+Denoted $$ (x_{i})_{i\geq 1}$$ or $$(x_{i})_{i\in \mathbb{N}}$$
   
-**Ḏefinition 1.1 - <span style="color: green;">Convergence</span>**
+**Definition 1.1 - <span style="color: green;">Convergence</span>**
   
-<span style="color: red;">**A seq. $(x_{i}) \in \mathbb{R}^{n}$ converges to $x \in \mathbb{R}^{n}$** </span>
-  
-if <span style="color: RoyalBlue;">**$\forall \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall i \geq \mathbb{N}, ||x_{i}-x||<\epsilon$**</span>
+<span style="color: red;">**A seq. $(x_{i}) \in \mathbb{R}^{n}$ converges to $x \in \mathbb{R}^{n}$** </span> if <span style="color: RoyalBlue;">**$\forall \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall i \geq \mathbb{N}, ||x_{i}-x||<\epsilon$**</span>
   
 ***Corollary***
   
@@ -114,32 +112,31 @@ $$x_{i} \to x \iff \forall k \text{ } x_{i}^{k} \to x^{k} \text{ as } i \to \inf
 
 ### <span style="color: white;">1.2.1</span> Open sets in Euclidean Spaces
 
-**Definition - <span style="color: green;">Open Ball**</span>
+**Definition - <span style="color: green;">Open Ball</span>**
   
 Open ball of radius $r$ is
 $$B_{r}(x) = \{y \in \mathbb{R}^{n} : ||x-y||<r\}$$
 
-**Definition 1.2 - <span style="color: green;">Open sets**</span>
+**Definition 1.2 - <span style="color: green;">Open Sets</span>**
   
-A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open<\span> if
+A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</span> if
   
-**$$\forall x \in U, \exists r > 0 \text{ such that} B_{r}(x) \subseteq U$$**
+**$$\forall x \in U, \exists r > 0 \textrm{ such that } B_{r}(x) \subseteq U$$**
 
 ### <span style="color: white;">1.2.2</span> Continuity at a point/on an open set
 
-**Definition 1.3 - <span style="color: green;">**Continuity at a point** </span>
+**Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
-Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$\
-  
-**$f$ continuous at $p \in A$** if
+Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$  
+$f$ continuous at $p \in A$ if  
 **$$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$**
   
-$f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.\
+$f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
 For small enough $\delta$, we have $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p))$\
   
 **Theorem 1.2 - Composition of continuous functions**\
- **Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and suppose $f: A \to B$ continuous at $p\in A$, and $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$** ]
+Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and suppose $f: A \to B$ continuous at $p\in A$, and $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$
 
 \[
   **Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p**
