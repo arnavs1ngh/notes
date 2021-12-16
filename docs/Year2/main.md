@@ -12,8 +12,8 @@ Here you can find all the notes for Year 2 Mathematics at Imperial College Londo
 
 ## Linked pdfs of notes available here:
 
-- <a href="/notes/pdfs/ANA2-Concise.pdf" style="color:#00FF00;">**Open Analysis**</a>
-- <a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download Analysis 2**</a>
+- <a href="/notes/pdfs/ANA2-Concise.pdf" style="color:#00FF00;">**Open Analysis 2 - Term 1**</a>
+- <a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download Analysis 2 - Term 1**</a>
 
 
 
