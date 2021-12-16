@@ -11,6 +11,10 @@ math: mathjax3
 {: .no_toc}
 **Term 1 Content**
 
+<a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download PDF** Analysis 2 - Concise Notes - Term 1</a>
+
+<a href="/notes/pdfs/ANA2-Concise.pdf">**Open PDF in browser**</a>
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -78,9 +82,7 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 
 *Content from MATH40002 assumed to be known.*
 
-<a href="/notes/pdfs/ANA2-Concise.pdf" download>**Download PDF** Analysis 2 - Concise Notes</a>
 
-<a href="/notes/pdfs/ANA2-Concise.pdf">**Open PDF in browser**</a>
 
 # <span style="color: yellow;">1.</span> Differentiation in Higher Dimensions
 
