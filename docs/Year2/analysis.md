@@ -9,6 +9,32 @@ math: mathjax3
 ## MATH50001
 **Term 1 Content**
 
+# Table of contents
+1. [Differentiation in Higher Dimensions](#DifferentiationHigherDim)
+    1.1. [Euclidean Spaces](#EuclidSpaces)
+        1.1.1. [Preliminaries](#subparagraph1)
+        1.1.2. [Euclidean space of dim. n](#subparagraph1)
+        1.1.3 [Convergence of Sequences in Euclidean Spaces](#subparagraph1)
+    1.2. [Continuity](#paragraph2)
+
+<!-- 1 Differentiation in Higher Dimensions 2
+1.1 EuclideanSpaces.................................................... 2
+1.1.1 Preliminaries .................................................. 2
+1.1.2 Euclideanspaceofdim.n........................................... 2
+1.1.3 ConvergenceofSequencesinEuclideanSpaces ............................... 2
+1.2 Continuity........................................................ 3 1.2.1 OpensetsinEuclideanSpaces ........................................ 3 1.2.2 Continuityatapoint/onanopenset..................................... 3
+1.3 DerivativeofamapofEuclideanSpaces....................................... 4 1.3.1 Derivativeofalinearmap........................................... 4 1.3.2 ChainRule ................................................... 4
+1.4 DirectionalDerivatives................................................. 4 1.4.1 RatesofchangeandPartialDerivatives ................................... 4 1.4.2 Relationbetweenpartialderivativesanddifferentiability.......................... 5
+1.5 HigherDerivatives ................................................... 5
+1.5.1 Higherderivativesaslinearmaps....................................... 5
+1.5.2 Symmetryofmixedpartialderivatives.................................... 6
+1.5.3 Taylor’sTheorem................................................ 6
+1.6 Inverse&ImplicitFunctionTheorem......................................... 6
+1.6.1 InverseFunctionTheorem........................................... 6
+1.6.2 ImplicitFunctionTheorem .......................................... 7
+1.6.4 ImplicitFunctionTheorem-GeneralForm . -->
+
+
 
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
@@ -18,13 +44,13 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 *Content from MATH40002 assumed to be known.*
 
 
-# 1 - Differentiation in Higher Dimensions
+# Differentiation in Higher Dimensions
 
 ## Euclidean Spaces
 
 ### Preliminaries
 \
-<span style="color: green;">Definition</span>
+<!-- <span style="color: green;">Definition</span> -->
 <!-- <span style="color: blue;">Cause</span> -->
 <!-- <span style="color: red;">Consequence</span> -->
 
