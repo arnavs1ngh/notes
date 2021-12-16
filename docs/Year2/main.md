@@ -8,7 +8,9 @@ has_children: true
 
 # Year 2 Notes
 
-Here you can find all the notes for Year 2 Mathematics at Imperial College London. Let me know if there are any mistakes, they will be amended promptly.
+Here you can find all the notes for Year 2 Mathematics at Imperial College London. 
+
+Let me know if there are any mistakes, they will be amended promptly. You can email me at <arnav.singh20@imperial.ac.uk> with the subject **Online Notes**
 
 ## Linked pdfs of notes available here:
 
