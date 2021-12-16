@@ -9,14 +9,6 @@ math: mathjax3
 ## MATH50001
 **Term 1 Content**
 
-<!-- # Table of contents
-1. [Differentiation in Higher Dimensions](#DifferentiationHigherDim)\
-    1.1. [Euclidean Spaces](#EuclidSpaces)\
-        1.1.1. [Preliminaries](#subparagraph1)\
-        1.1.2. [Euclidean space of dim. n](#subparagraph1)\
-        1.1.3 [Convergence of Sequences in Euclidean Spaces](#subparagraph1)\
-    1.2. [Continuity](#paragraph2)\ -->
-
 - [Differentiation in Higher Dimensions](#differentiation-in-higher-dimensions)
   * [Euclidean Spaces](#euclidean-spaces)
     + [Preliminaries](#preliminaries)
@@ -80,7 +72,6 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 ## Euclidean Spaces
 
 ### Preliminaries
-\
 <!-- <span style="color: green;">Definition</span> -->
 <!-- <span style="color: blue;">Cause</span> -->
 <!-- <span style="color: red;">Consequence</span> -->
