@@ -5,7 +5,7 @@ nav_order: 1
 math: mathjax3
 ---
 
-#Home
+# Home
 
 This is a website designed to host my notes for Mathematics at Imperial College London
 
