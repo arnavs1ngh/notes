@@ -9,13 +9,16 @@ math: mathjax3
 ## MATH50001
 **Term 1 Content**
 
-# Table of contents
-1. [Differentiation in Higher Dimensions](#DifferentiationHigherDim)
-    1.1. [Euclidean Spaces](#EuclidSpaces)
-        1.1.1. [Preliminaries](#subparagraph1)
-        1.1.2. [Euclidean space of dim. n](#subparagraph1)
-        1.1.3 [Convergence of Sequences in Euclidean Spaces](#subparagraph1)
-    1.2. [Continuity](#paragraph2)
+<!-- # Table of contents
+1. [Differentiation in Higher Dimensions](#DifferentiationHigherDim)\
+    1.1. [Euclidean Spaces](#EuclidSpaces)\
+        1.1.1. [Preliminaries](#subparagraph1)\
+        1.1.2. [Euclidean space of dim. n](#subparagraph1)\
+        1.1.3 [Convergence of Sequences in Euclidean Spaces](#subparagraph1)\
+    1.2. [Continuity](#paragraph2)\ -->
+
+
+$\tableofcontents$
 
 <!-- 1 Differentiation in Higher Dimensions 2
 1.1 EuclideanSpaces.................................................... 2
