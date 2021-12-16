@@ -55,11 +55,11 @@ $$
 
 Having the following properties:
 
-1. *$\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ (Non-negative)*
+1. $\forall x \in \mathbb{R}, \lvert x \rvert \geq 0, \lvert x \rvert = 0 \iff x = 0$ 
 
-2. *$\forall x, y \in \mathbb{R}, |xy| = |x||y|$*
+2. $\forall x, y \in \mathbb{R}, \lvert xy \rvert = |x||y|$
 
-3. *$\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ (Triangle inequality)*
+3. $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ (Triangle inequality)
 
 
 ### <span style="color: white;">1.1.2</span> Euclidean space of dim. n
@@ -140,9 +140,7 @@ For small enough $\delta$, we have $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p)
 **Theorem 1.2 - Composition of continuous functions**\
 Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and suppose $f: A \to B$ continuous at $p\in A$, and $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$
 
-\[
-  **Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p**
-  \]
+Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p
 
 **Definition 1.4 - <span style="color: green;">Limit of a function at a point</span>**
 
