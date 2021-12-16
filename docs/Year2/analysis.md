@@ -71,7 +71,7 @@ $ \mathbb{R}^{n} $ a vector space.\
 **Define** - <span style="color: green;">**Inner Product**<\span> 
 $ \leq\cdot,\cdot\geq,:\mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}^$
   
-$$\textlangle(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})\textrangle = \sum_{i=1}^n x^{i}y^{i}$$
+$$\langle(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})\rangle = \sum_{i=1}^n x^{i}y^{i}$$
 
 **Define - Norm/Lengths**, $\mid\mid\cdot\mid\mid: \mathbb{R}^{n} \to \mathbb{R}$
   
