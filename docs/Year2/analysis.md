@@ -101,11 +101,11 @@ $$
 
 Having the following properties:
 
-(i).  $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
+(i)$\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
 
-(ii).  $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
+(ii)$\forall x, y \in \mathbb{R}, |xy| = |x||y|$
 
-(iii).  $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
+(iii)$\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
 
 ### Euclidean space of dim. n
 
