@@ -69,8 +69,7 @@ Having the following properties:
 Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}\
 $ \mathbb{R}^{n} $ a vector space.\
 
-**Define** - <span style="color: green;">**Inner Product**</span> 
-$ < \cdot,\cdot > : \mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}$
+**Define** - <span style="color: green;">**Inner Product** $ < \cdot,\cdot > : \mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}$</span> 
   
 $$\langle(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})\rangle = \sum_{i=1}^n x^{i}y^{i}$$
 
