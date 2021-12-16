@@ -101,11 +101,11 @@ $$
 
 Having the following properties:
 
-1.  $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
+(i).  $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
 
-2.  $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
+(ii).  $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
 
-3.  $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
+(iii).  $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
 
 ### Euclidean space of dim. n
 
@@ -114,7 +114,7 @@ Having the following properties:
 Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}\
 $\mathbb{R}^{n}$ a vector space.\
 
-**Define - <span style="color: green;">**Inner Product, $<\cdot,\cdot>,:\mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}^$**</span>\
+**Define - <span style="color: green;">**Inner Product, $ \leq\cdot,\cdot\geq,:\mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}^$**</span>\
 $$<(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})> = \sum_{i=1}^{n}x^{i}y^{i}$$
 
 **Define - [**Norm/Lengths, $||\cdot||: \mathbb{R}^{n} \to \mathbb{R}$**]**\
