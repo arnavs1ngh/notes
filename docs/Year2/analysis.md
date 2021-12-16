@@ -55,11 +55,10 @@ $$
 
 Having the following properties:
 
-(i)$\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
+1. $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
+2. $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
+3. $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
 
-(ii)$\forall x, y \in \mathbb{R}, |xy| = |x||y|$
-
-(iii)$\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
 
 ### <span style="color: white;">1.1.2</span> Euclidean space of dim. n
 
@@ -78,10 +77,11 @@ $$\langle(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})\rangle = \sum_{i=1}
 $$||x|| = \sqrt{<x,x>}$$ 
 
 Having the following properties:
-
-(i) $\forall x \in \mathbb{R}^{n}, ||x|| \geq 0, ||x|| = 0 \iff x = \Vec{0}$
-(ii) $\forall \lambdax \in \mathbb{R}, x\in \mathbb{R}^{n} ||\lambda x|| = |\lambda|||x||$
-(iii) $\forall x, y \in \mathbb{R}^{n}, ||x+y|| \leq ||x|| + ||y||$ *(Triangle inequality)*
+  
+1. $\forall x \in \mathbb{R}^{n}, ||x|| \geq 0, ||x|| = 0 \iff x = \Vec{0}$
+2. $\forall \lambdax \in \mathbb{R}, x\in \mathbb{R}^{n} ||\lambda x|| = |\lambda|||x||$
+3. $\forall x, y \in \mathbb{R}^{n}, ||x+y|| \leq ||x|| + ||y||$ *(Triangle inequality)*
+  
 
 **Definition - <span style="color: green;">Cauchy-Schwartz Inequality</span>**
 
