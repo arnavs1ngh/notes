@@ -10,11 +10,10 @@ math: mathjax3
 **Term 1 Content**
 
 
-**Colour Code** - [**Definitions**]{style="color: ForestGreen"} are
-[**green**]{style="color: ForestGreen"} in these notes,
-[**Consequences**]{style="color: red"} are [**red**]{style="color: red"}
-and [**Causes**]{style="color: blue"} are
-[**blue**]{style="color: blue"}\
+**Colour Code** - <span style="color: green;">**Definition**</span> are
+<span style="color: green;">**green**</span> in these notes,
+<span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
+and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">**blue**</span>
 
 *Content from MATH40002 assumed to be known.*
 
@@ -29,7 +28,7 @@ and [**Causes**]{style="color: blue"} are
 <!-- <span style="color: blue;">Cause</span> -->
 <!-- <span style="color: red;">Consequence</span> -->
 
-**Definition - <span style="color: green;">**Modulus Function**</span>\
+**Definition** - <span style="color: green;">**Modulus Function**</span>\
 $$|x| :=
 \begin{cases} 
      x, & x\geq 0 \\
