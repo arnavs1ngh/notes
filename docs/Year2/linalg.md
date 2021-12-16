@@ -1,17 +1,12 @@
 ---
 layout: default
 title: Numerical Methods 
-parent: The Flash Algorithm
+parent: Year 2
 nav_order: 2
 math: mathjax3
 ---
 
-# Numerical Methods in Flash Problems
-
-## Successive substitution
-The most basic method of solving a flash problem is by successive substitution of variables, either $K_i$ component equilibrium variables, or $x_i, y_i$ composition variables.
-
-The basic implementation involves calculating the liquid and vapour fugacities from an initial guess of the compositions, then writing the expression for the compositions from the material balance and definition of the equilibrium constant.
+# Linear Algebra & Numerical Analysis
 
 ### Substitution algorithm:
 1.  Start with $x_i, y_i$
@@ -40,23 +35,5 @@ $$
 
 where $\delta_{ij}$ is the [kronecker delta](https://en.wikipedia.org/wiki/Kronecker_delta), and the mole numbers $\beta = \sum_i^N v_i$
 
-### Gradient algorithm:
 
-
-1.  Start with $\ln K$
-2.  Solve the Rachford-Rice equation
-3. Compute $\vec{x}, \vec{y}$
-4.  Calculated the residual gibbs energy
-5.  Define 
-
-    $\ln K_{k+1} = \ln K_k - \lambda \nabla g$
-    
-    where $\lambda$ is parameter that can be calculated through a line search.
-
-
-
-## Acceleration steps
-
-Newton's method is effective in a small neighbourhood of the solution, having quadratic convergence. 
-A Newton step can be determined fully numerically, or with the semi-analytic Hessian described above. To solve the  
 
