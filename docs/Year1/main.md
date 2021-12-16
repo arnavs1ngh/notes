@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Year 1
-nav_order: 1
+nav_order: 0
 math: mathjax3
 has_children: true
 ---
