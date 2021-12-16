@@ -5,11 +5,11 @@ parent: Year 2
 nav_order: 0
 math: mathjax3
 ---
-# Analysis 2 - Concise Notes 
-## MATH50001
-**Term 1 Content**
-
+# Analysis 2 - Concise Notes
 {: .no_toc }
+## MATH50001
+{: .no_toc .text-delta }
+**Term 1 Content**
 
 <details open markdown="block">
   <summary>
