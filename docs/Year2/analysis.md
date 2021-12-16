@@ -9,13 +9,67 @@ math: mathjax3
 ## MATH50001
 **Term 1 Content**
 
-# Table of contents
+<!-- # Table of contents
 1. [Differentiation in Higher Dimensions](#DifferentiationHigherDim)\
     1.1. [Euclidean Spaces](#EuclidSpaces)\
         1.1.1. [Preliminaries](#subparagraph1)\
         1.1.2. [Euclidean space of dim. n](#subparagraph1)\
         1.1.3 [Convergence of Sequences in Euclidean Spaces](#subparagraph1)\
-    1.2. [Continuity](#paragraph2)\
+    1.2. [Continuity](#paragraph2)\ -->
+
+- [Differentiation in Higher Dimensions](#differentiation-in-higher-dimensions)
+  * [Euclidean Spaces](#euclidean-spaces)
+    + [Preliminaries](#preliminaries)
+    + [Euclidean space of dim. n](#euclidean-space-of-dim-n)
+    + [Convergence of Sequences in Euclidean Spaces](#convergence-of-sequences-in-euclidean-spaces)
+  * [Continuity](#continuity)
+    + [Open sets in Euclidean Spaces](#open-sets-in-euclidean-spaces)
+    + [Continuity at a point/on an open set](#continuity-at-a-point-on-an-open-set)
+  * [Derivative of a map of Euclidean Spaces](#derivative-of-a-map-of-euclidean-spaces)
+    + [Derivative of a linear map](#derivative-of-a-linear-map)
+    + [Chain Rule](#chain-rule)
+  * [Directional Derivatives](#directional-derivatives)
+    + [Rates of change and Partial Derivatives](#rates-of-change-and-partial-derivatives)
+    + [Relation between partial derivatives and differentiability](#relation-between-partial-derivatives-and-differentiability)
+  * [Higher Derivatives](#higher-derivatives)
+    + [Higher derivatives as linear maps](#higher-derivatives-as-linear-maps)
+    + [Symmetry of mixed partial derivatives](#symmetry-of-mixed-partial-derivatives)
+    + [Taylor's Theorem](#taylor-s-theorem)
+  * [Inverse & Implicit Function Theorem](#inverse---implicit-function-theorem)
+    + [Inverse Function Theorem](#inverse-function-theorem)
+    + [Implicit Function Theorem](#implicit-function-theorem)
+    + [Implicit Function Theorem - General Form](#implicit-function-theorem---general-form)
+- [Metric and Topological Spaces](#metric-and-topological-spaces)
+  * [Metric Spaces](#metric-spaces)
+    + [Motivation + Definition](#motivation---definition)
+    + [Examples of metrics](#examples-of-metrics)
+    + [Normed Vector Spaces](#normed-vector-spaces)
+    + [Open sets in metric spaces](#open-sets-in-metric-spaces)
+    + [Convergence in Metric Spaces](#convergence-in-metric-spaces)
+    + [Closed sets in metric spaces](#closed-sets-in-metric-spaces)
+    + [Interior, isolated, limit, and boundary points in metric spaces](#interior--isolated--limit--and-boundary-points-in-metric-spaces)
+    + [Continuous maps of metric spaces](#continuous-maps-of-metric-spaces)
+  * [Topological Spaces](#topological-spaces)
+    + [Topology on a set](#topology-on-a-set)
+    + [Convergence, and Hausdorff property](#convergence--and-hausdorff-property)
+    + [Closed sets in topological spaces](#closed-sets-in-topological-spaces)
+    + [Continuous maps on topological spaces](#continuous-maps-on-topological-spaces)
+  * [Connectedness](#connectedness)
+    + [Connected sets](#connected-sets)
+    + [Continuous maps + Connected sets](#continuous-maps---connected-sets)
+    + [Path Connected Sets](#path-connected-sets)
+  * [Compactness](#compactness)
+    + [Compactness by covers](#compactness-by-covers)
+    + [Sequential Compactness](#sequential-compactness)
+    + [Continuous maps + Compact Sets](#continuous-maps---compact-sets)
+  * [Completeness](#completeness)
+    + [Complete metric spaces & Banach space](#complete-metric-spaces---banach-space)
+    + [Arzelà-Ascoli](#arzel--ascoli)
+    + [Fixed point theorem](#fixed-point-theorem)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 
 
 <!-- 1 Differentiation in Higher Dimensions 2
