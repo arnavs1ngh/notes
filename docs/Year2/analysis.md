@@ -7,7 +7,7 @@ math: mathjax3
 ---
 # Analysis 2 - Concise Notes 
 ## MATH50001
-**Term 1 Content- ep2?**
+**Term 1 Content**
 
 {: .no_toc }
 
