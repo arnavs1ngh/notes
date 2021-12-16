@@ -7,9 +7,21 @@ math: mathjax3
 ---
 # Analysis 2 - Concise Notes 
 ## MATH50001
-**Term 1 Content- Changed?**
+**Term 1 Content- ep2?**
 
-- [Differentiation in Higher Dimensions](#differentiation-in-higher-dimensions)
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
+<!-- - [Differentiation in Higher Dimensions](#differentiation-in-higher-dimensions)
   * [Euclidean Spaces](#euclidean-spaces)
     + [Preliminaries](#preliminaries)
     + [Euclidean space of dim. n](#euclidean-space-of-dim-n)
@@ -57,7 +69,7 @@ math: mathjax3
   * [Completeness](#completeness)
     + [Complete metric spaces & Banach space](#complete-metric-spaces---banach-space)
     + [Arzelà-Ascoli](#arzel--ascoli)
-    + [Fixed point theorem](#fixed-point-theorem)
+    + [Fixed point theorem](#fixed-point-theorem) -->
 
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
