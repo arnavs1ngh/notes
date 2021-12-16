@@ -84,9 +84,9 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 
 
 
-# <span style="color: yellow;">1.</span> Differentiation in Higher Dimensions
+# <span style="color: white;">1.</span> Differentiation in Higher Dimensions
 
-## <span style="color: yellow;">1.1.</span> Euclidean Spaces
+## <span style="color: white;">1.1.</span> Euclidean Spaces
 
 ### Preliminaries
 <!-- <span style="color: green;">Definition</span> -->
