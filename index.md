@@ -7,7 +7,7 @@ permalink: /
 math: mathjax3
 ---
 
-# Test to see if shit changes
+# Test to see if shit changes again
 
 This is a website based off of the ["Just the Docs"](https://github.com/pmarsceill/just-the-docs) Jekyll theme by Patrick Marsceill. I created this in the summer of my first year, after using onenote for a year of taking notes. Hopefully I continue to use this, and it will be a useful repository of notes for myself and others, independent of internal student lead wiki.
 
