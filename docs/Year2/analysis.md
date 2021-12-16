@@ -28,7 +28,8 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 <!-- <span style="color: blue;">Cause</span> -->
 <!-- <span style="color: red;">Consequence</span> -->
 
-**Definition** - <span style="color: green;">**Modulus Function**</span>\
+**Definition** - <span style="color: green;">**Modulus Function**</span>
+
 $$|x| :=
 \begin{cases} 
      x, & x\geq 0 \\
@@ -44,22 +45,19 @@ Having the following properties:
 
 ### Euclidean space of dim. n
 
-**Define - [**Euclidean Space of dim.
-$n, \mathbb{R}^{n}$**]{style="color: ForestGreen"}**\
-Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t each
-$x^{i} \in \mathbb{R}\forall i$\
+**Define** - <span style="color: green;">**Euclidean Space of dim. $n, \mathbb{R}^{n}$**</span>
+
+Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}\
 $\mathbb{R}^{n}$ a vector space.\
-**Define - [**Inner Product,
-$<\cdot,\cdot>,:\mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}^$**]{style="color: ForestGreen"}**\
+
+**Define - <span style="color: green;">**Inner Product, $<\cdot,\cdot>,:\mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}^$**</span>\
 $$<(x^{1},x^{2},\dots,x^{n}),(y^{1},y^{2},\dots,y^{n})> = \sum_{i=1}^{n}x^{i}y^{i}$$
-**Define - [**Norm/Lengths,
-$||\cdot||: \mathbb{R}^{n} \to \mathbb{R}$**]{style="color: ForestGreen"}**\
+
+**Define - [**Norm/Lengths, $||\cdot||: \mathbb{R}^{n} \to \mathbb{R}$**]{style="color: ForestGreen"}**\
 $$||x|| = \sqrt{<x,x>}$$ Having the following properties:
 
 1.  $\forall x \in \mathbb{R}^{n}, ||x|| \geq 0, ||x|| = 0 \iff x = \Vec{0}$
-
 2.  $\forall \lambdax \in \mathbb{R}, x\in \mathbb{R}^{n} ||\lambda x|| = |\lambda|||x||$
-
 3.  $\forall x, y \in \mathbb{R}^{n}, ||x+y|| \leq ||x|| + ||y||$
     *(Triangle inequality)*
 
