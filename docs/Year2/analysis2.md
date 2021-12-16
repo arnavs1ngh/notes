@@ -3,7 +3,7 @@ layout: default
 title: Analysis 2
 nav_order: 1
 math: mathjax3
-parent: The Flash Algorithm
+parent: Year 2
 ---
 
 # The Flash Problem
