@@ -67,8 +67,6 @@ math: mathjax3
     + [Arzelà-Ascoli](#arzel--ascoli)
     + [Fixed point theorem](#fixed-point-theorem)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
 <span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
