@@ -14,6 +14,6 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ## Linked pdfs of notes available here:
 
 - <a href="/notes/pdfs/Y1Concise/AN-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Analysis Concise**</a>
-- <a href="/notes/pdfs/Y1Concise/CAA-MATH4004-c.pdf" target="_blank" style="color:#801fff;">**Calculus 1 Concise**</a>
+- <a href="/notes/pdfs/Y1Concise/CAA-MATH4004-c.pdf" target="_blank" style="color:#801fff;">**Calculus Concise**</a>
 -  <a href="/notes/pdfs/Y1Concise/LAG-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a>
 -   <a href="/notes/pdfs/Y1Concise/PAS-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Probability + Statistics Concise**</a>
