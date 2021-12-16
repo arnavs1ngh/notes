@@ -82,9 +82,9 @@ and <span style="color: blue;">**Causes**</span> are <span style="color: blue;">
 
 <a href="/notes/pdfs/ANA2-Concise.pdf">**Open PDF in browser**</a>
 
-# Differentiation in Higher Dimensions
+# <span style="color: yellow;">1.</span> Differentiation in Higher Dimensions
 
-## Euclidean Spaces
+## <span style="color: yellow;">1.1.</span> Euclidean Spaces
 
 ### Preliminaries
 <!-- <span style="color: green;">Definition</span> -->
