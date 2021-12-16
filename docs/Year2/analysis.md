@@ -55,9 +55,11 @@ $$
 
 Having the following properties:
 
-1. $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ *(Non-negative)*
-2. $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
-3. $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle inequality)*
+1. *$\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$ (Non-negative)*
+
+2. *$\forall x, y \in \mathbb{R}, |xy| = |x||y|$*
+
+3. *$\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ (Triangle inequality)*
 
 
 ### <span style="color: white;">1.1.2</span> Euclidean space of dim. n
@@ -142,20 +144,20 @@ Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and sup
   **Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p**
   \]
 
+**Definition 1.4 - <span style="color: green;">Limit of a function at a point</span>**
 
-**Definition 1.4 - <span style="color: green;">**Limit of a function at a point**</span>  
 $A \subseteq \mathbb{R}^{n}$ an open set. $f$ a function\
-$f: A \to \mathbb{R}^{m}$, with $p \in A$ and $q \in \mathbb{R}^{m}$\
+$f: A \to \mathbb{R}^{m}$, with $p \in A$ and $q \in \mathbb{R}^{m}$
   
-**Say $\lim_{x\to p}f(x) = q$** if  
-**$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x \in A \text{ with } 0 < ||x-p|| <\delta \text{ we have } ||f(x) - p|| < \epsilon$**
-$$f \text{ continuous at } p \iff \lim_{x\to p}f(x) = q$$
+Say $\lim_{x\to p}f(x) = q$ if  
+$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x \in A \text{ with } 0 < ||x-p|| <\delta \text{ we have } ||f(x) - p|| < \epsilon$
+$$f \textrm{ continuous at } p \iff \lim_{x\to p}f(x) = q$$
 
 **Theorem 1.3 - Algebra of Limits**\
 Suppose $A \subseteq \mathbb{R}^{n}$ open, with $p \in A$ and
 $f,g: A \to \mathbb{R}^{n}$
-[**$$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$\
-**] Then:
+$$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$\
+Then:
 
 1.  **$\lim_{x\to p}(f(x) + g(x)) = F + G$**
 
