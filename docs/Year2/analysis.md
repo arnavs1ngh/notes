@@ -57,9 +57,9 @@ Having the following properties:
 
 1. $\forall x \in \mathbb{R}, \lvert x \rvert \geq 0, \lvert x \rvert = 0 \iff x = 0$ 
 
-2. $\forall x, y \in \mathbb{R}, \lvert xy \rvert = |x||y|$
+2. $\forall x, y \in \mathbb{R}, \lvert xy \rvert = \lvert x \rvert\lvert y \rvert$
 
-3. $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ (Triangle inequality)
+3. $\forall x, y \in \mathbb{R}, \lvert x+y \rvert \leq \lvert x \rvert + \lvert y \rvert$ (Triangle inequality)
 
 
 ### <span style="color: white;">1.1.2</span> Euclidean space of dim. n
@@ -80,9 +80,9 @@ $$||x|| = \sqrt{<x,x>}$$
 
 Having the following properties:
   
-1. $\forall x \in \mathbb{R}^{n}, ||x|| \geq 0, ||x|| = 0 \iff x = \Vec{0}$
-2. $\forall \lambdax \in \mathbb{R}, x\in \mathbb{R}^{n} ||\lambda x|| = |\lambda|||x||$
-3. $\forall x, y \in \mathbb{R}^{n}, ||x+y|| \leq ||x|| + ||y||$ *(Triangle inequality)*
+1. $\forall x \in \mathbb{R}^{n}, \lvert\lvert x\rvert\rvert \geq 0, \lvert\lvert x\rvert\rvert \iff x = \Vec{0}$
+2. $\forall \lambdax \in \mathbb{R}, x\in \mathbb{R}^{n} \lvert\lvert \lambda x\rvert\rvert| = \lvert\lambda\rvert\lvert\lvert x\rvert\rvert$
+3. $\forall x, y \in \mathbb{R}^{n}, \lvert\lvert x+y\rvert\rvert \leq \lvert\lvert x\rvert\rvert + \lvert\lvert y\rvert\rvert$ *(Triangle inequality)*
   
 
 **Definition - <span style="color: green;">Cauchy-Schwartz Inequality</span>**
