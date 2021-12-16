@@ -145,19 +145,18 @@ $$x_{i} \to x \iff \forall k \text{ } x_{i}^{k} \to x^{k} \text{ as } i \to \inf
 
 ### Open sets in Euclidean Spaces
 
-**Definition - [**Open Ball**]**\
+**Definition - <span style="color: green;">**Open Ball**</span>
 Open ball of radius $r$ is
 $$B_{r}(x) = \{y \in \mathbb{R}^{n} : ||x-y||<r\}$$
 
-**Definition 1.2 - [**Open sets**]**\
+**Definition 1.2 - <span style="color: green;">**Open sets**</span>
 A set $U \subseteq \mathbb{R}^{n}$ is called
 [****open****], if
 [**$$\forall x \in U, \exists r > 0 \text{ such that} B_{r}(x) \subseteq U$$**]
 
 ### Continuity at a point/on an open set
 
-**Definition 1.3 - [**Continuity at a
-point**]**\
+**Definition 1.3 - <span style="color: green;">**Continuity at a point** </span>
 Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$\
 [**$f$ continuous at $p \in A$**] if
 [**$$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$**]
@@ -165,6 +164,7 @@ $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$
 continuous $\forall p \in A$, we write $f$ is continuous.\
 For small enough $\delta$, we have
 $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p))$\
+  
 **Theorem 1.2 - Composition of continuous functions**\
 [ **Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$
 open and suppose $f: A \to B$ continuous at $p\in A$, and
@@ -175,8 +175,7 @@ $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$** ]
 p**]
 
 
-**Definition 1.4 - [**Limit of a function at a
-point**]**\
+**Definition 1.4 - <span style="color: green;">**Limit of a function at a point**</span>
 $A \subseteq \mathbb{R}^{n}$ an open set. $f$ a function
 $f: A \to \mathbb{R}^{m}$, with $p \in A$ and $q \in \mathbb{R}^{m}$\
 [**Say $\lim_{x\to p}f(x) = q$**] if
@@ -210,8 +209,7 @@ s.t* $$\lim_{x\to p}\frac{|f(x) - A_{\lambda}(x)|}{|x-p|} = 0$$
 $$h(v) \text{ h a map, v a point in domain of h}$$
 $$L(\mathbb{R}^{n};\mathbb{R}^{m}) - \text{\textbf{Set of linear maps from }} \mathbb{R}^{n} \to \mathbb{R}^{m}$$
 
-**Definition 1.5 - [**Derivative in higher
-dimension**]**\
+**Definition 1.5 - <span style="color: green;">**Derivative in higher dimension**</span>
 Suppose $\Omega \subset \mathbb{R}^{n}$ open. [**The map
 $f:\Omega \to \mathbb{R}^{m}$
 **[**differentiable**]****]
@@ -247,12 +245,12 @@ s.t $$Dh(p) = D(f(g(p))\circ Dg(p)$$
 
 ### Rates of change and Partial Derivatives
 
-**Definition - [**Directional
-Derivative**]**\
+**Definition - <span style="color: green;">**Directional Derivative**</span>
 The [**directional derivative**] of $f$ at
 $p$ in the direction $v$ is
 $$\frac{\partial f}{\partial v}(p) := \lim_{t\to 0}\frac{1}{t}[f(p+vt)-f(p)] = Df(p)[v]$$
-**Definition - [**Partial derivatives**]**\
+  
+**Definition - <span style="color: green;">**Partial derivatives**</span>
 We can find any directional derivative at $p$, given we know the partial
 derivatives of $f$ $$D_{i}f(p) = \frac{\partial f}{\partial e_{i}}(p)$$
 In $\mathbb{R}^{3}$ we have, $$Df(p)[v] = 
@@ -265,7 +263,7 @@ v^{2} \\
 v^{3} 
 \end{pmatrix}$$
 
-**Definition - [**Gradient**]**\
+**Definition - <span style="color: green;">**Gradient**</span>
 *Gradient of $f$ at $p$* $$\nabla f(p) = 
 \begin{pmatrix}
 D_{1}f(p)\\
@@ -307,7 +305,7 @@ $$Df: \Omega \to L(R^{n};R^{m}) = \Omega \to \mathbb{R}^{mn}$$
 $$\quad p \mapsto Df(p)$$ [**if map $Df$ is
 continuous**] $\implies f:\Omega \to \mathbb{R}$ is
 **[**continuously differentiable**]**\
-**Definition - [**Higher derivative**]**\
+**Definition - <span style="color: green;">**Higher derivative**</span>
 If $Df: \Omega \to \mathbb{R}^{mn}$ differentiable at $p$, denote
 derivative of $Df$ as $DDf(p): \mathbb{R}^{n} \to \mathbb{R}^{nm}$
 $$DDf(p) \in L(\mathbb{R}^{n};\mathbb{R}^{nm}) = L(\mathbb{R}^{n};L(\mathbb{R}^{n};\mathbb{R}^{m}))$$
@@ -316,8 +314,8 @@ $\mathcal{L} \in L(\mathbb{R}^{n};L(\mathbb{R}^{n};\mathbb{R}^{m}))$,
 satisfying:
 $$\lim_{x\to p}\frac{||Df(x) - Df(p) - \mathcal{L}[x-p]||}{||x-p||} = 0$$
 $DDf(p)$ takes an $n$-vector to a $m\times n$ matrix\
-**Definition - [**Continuously
-differentiable**]**\
+  
+**Definition - <span style="color: green;">**Continuously differentiable**</span>
 *[**$f:\Omega \to \mathbb{R}^{m}$ is $k$-times dfferentiable with all
 continuous derivatives**]* $\implies$ [**$f$ is
 $k$-times continuously differentiable**]
@@ -343,14 +341,14 @@ derivatives $D_{i}D_{j}f$ and $D_{j}D_{i}f$ exist and are continuous
 $\forall p \in \Omega$
 [**$$\forall p \in \Omega, D_{i}D_{j}f(p) = D_{j}D_{i}f(p)$$**]
 
-**Definition - [**Hessian**]**\
+**Definition - <span style="color: green;">**Hessian**</span>
 The matrix of $2^{\text{nd}}$ partial derivatives at the point $p$
 $$\text{Hess } f(p) = [D_{i}D_{j}f(p)]_{i,j =1,\dots,n}$$ Schwartz'
 Theorem says Hess $f(p$ is a symmetric matrix
 
 ### Taylor's Theorem
 
-**Definition - [**Multi-inidices**]**\
+**Definition - <span style="color: green;">**Multi-inidices**</span>
 Multi-index $\alpha \in (\mathbb{N})^{n}, \alpha = \begin{pmatrix}
 \alpha_{1},\dots,\alpha_{n}
 \end{pmatrix}$\
