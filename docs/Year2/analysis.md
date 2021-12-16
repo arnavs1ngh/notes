@@ -5,12 +5,10 @@ parent: Year 2
 nav_order: 0
 math: mathjax3
 ---
-**Analysis 2 - Concise Notes**
-
-MATH50001\
+# Analysis 2 - Concise Notes 
+## MATH50001
 **Term 1 Content**
 
-**Arnav Singh**
 
 **Colour Code** - [**Definitions**]{style="color: ForestGreen"} are
 [**green**]{style="color: ForestGreen"} in these notes,
@@ -20,31 +18,28 @@ and [**Causes**]{style="color: blue"} are
 
 *Content from MATH40002 assumed to be known.*
 
-Mathematics\
-Imperial College London\
-United Kingdom\
-:::
-:::
 
-# Differentiation in Higher Dimensions
+# 1 - Differentiation in Higher Dimensions
 
 ## Euclidean Spaces
 
 ### Preliminaries
+\
+<span style="color: green;">Definition</span>
+<!-- <span style="color: blue;">Cause</span> -->
+<!-- <span style="color: red;">Consequence</span> -->
 
-**Definition - [**Modulus Function**]{style="color: ForestGreen"}**\
+**Definition - <span style="color: green;">**Modulus Function**</span>\
 $$|x| :=
 \begin{cases} 
      x, & x\geq 0 \\
-     -x, & x\textless 0
-   \end{cases}$$
+     -x, & x \leq 0
+\end{cases}
+$$
 
 Having the following properties:
-
 1.  $\forall x \in \mathbb{R}, |x| \geq 0, |x| = 0 \iff x = 0$
-
 2.  $\forall x, y \in \mathbb{R}, |xy| = |x||y|$
-
 3.  $\forall x, y \in \mathbb{R}, |x+y| \leq |x| + |y|$ *(Triangle
     inequality)*
 
