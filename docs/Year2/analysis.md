@@ -7,7 +7,7 @@ math: mathjax3
 ---
 # Analysis 2 - Concise Notes 
 ## MATH50001
-**Term 1 Content**
+**Term 1 Content- Changed?**
 
 - [Differentiation in Higher Dimensions](#differentiation-in-higher-dimensions)
   * [Euclidean Spaces](#euclidean-spaces)
