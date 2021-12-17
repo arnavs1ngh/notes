@@ -201,9 +201,9 @@ Then:
 **Notation**
   
   <center>
-    $h[v]$ for $h$ a linear map, $v$ a vector
+    $h[v]$ for $h$ a linear map, $v$ a vector<br>
     
-    $h(v)$, $h$ a map, $v$ a point in domain of $h$
+    $h(v)$, $h$ a map, $v$ a point in domain of $h$<br>
     
     $L(\mathbb{R}^{n};\mathbb{R}^{m})$ - Set of linear maps from $\mathbb{R}^{n} \to \mathbb{R}^{m}$
   </center>
@@ -408,12 +408,12 @@ Also
 ***helpful examples***
 
 <center>
-  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$
+  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$  
   
-  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$
+  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$  
   
   $(x,y,z)^{(2,1,5)} = x^{2}y^{1}z^{5}$
-  
+
 </center>
 
 **Theorem 1.14 - Taylor's Theorem in higher dim.**\
