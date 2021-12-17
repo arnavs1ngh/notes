@@ -104,8 +104,11 @@ Denoted $$ (x_{i})_{i\geq 1}$$ or $$(x_{i})_{i\in \mathbb{N}}$$
 Sequence $(x_{i}) \in \mathbb{R}^{n}$ converges to
 $x \in \mathbb{R}^{n} \iff$
 
-$$\textrm{For } x_{i} = (x_{i}^{1},\dots,x_{i}^{n}) \textrm{ and } x = (x^{1},\dots,x^{n})$$
-$$x_{i} \to x \iff \forall k \text{ } x_{i}^{k} \to x^{k} \text{ as } i \to \infty$$
+  <center>
+    $$\textrm{For } x_{i} = (x_{i}^{1},\dots,x_{i}^{n}) \textrm{ and } x = (x^{1},\dots,x^{n})$$
+
+    $$x_{i} \to x \iff \forall k \text{ } x_{i}^{k} \to x^{k} \text{ as } i \to \infty$$
+  </center>
 
 ## <span style="color: white;">1.2</span> Continuity
 
@@ -114,13 +117,18 @@ $$x_{i} \to x \iff \forall k \text{ } x_{i}^{k} \to x^{k} \text{ as } i \to \inf
 **Definition - <span style="color: green;">Open Ball</span>**
   
 Open ball of radius $r$ is
+  
+<center>
 $$B_{r}(x) = \{y \in \mathbb{R}^{n} : ||x-y||<r\}$$
-
+</center>
+  
 **Definition 1.2 - <span style="color: green;">Open Sets</span>**
   
 A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</span> if
-  
-**$$\forall x \in U, \exists r > 0 \textrm{ such that } B_{r}(x) \subseteq U$$**
+
+  <center>
+  $\forall x \in U, \exists r > 0$ such that $B_{r}(x) \subseteq U$**
+  </center>
 
 ### <span style="color: white;">1.2.2</span> Continuity at a point/on an open set
 
@@ -148,13 +156,15 @@ $f: A \to \mathbb{R}^{m}$, with $p \in A$ and $q \in \mathbb{R}^{m}$
 Say $\lim_{x\to p}f(x) = q$ if  
   
 $\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x \in A \text{ with } 0 < \lvert\lvert x-p\rvert\rvert <\delta \text{ we have } \lvert\lvert f(x) - p\rvert\rvert < \epsilon$
-                                                                                                                                                  
-                                                                                                                                                  <center>$f$ continuous at $p \iff \lim_{x\to p}f(x) = q$</center>
+                                                                                                                                                                                                                                                                                          <center> $f$ continuous at $p \iff \lim_{x\to p}f(x) = q$ </center>
 
 **Theorem 1.3 - Algebra of Limits**\
 Suppose $A \subseteq \mathbb{R}^{n}$ open, with $p \in A$ and
 $f,g: A \to \mathbb{R}^{n}$
+
+<center>
 $$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$\
+  </center>
 Then:
 
 1.  **$\lim_{x\to p}(f(x) + g(x)) = F + G$**
@@ -235,13 +245,14 @@ Then $h = f \circ g: \Omega \to \mathbb{R}^{l}$, differentiable at $p$, s.t
     $$\frac{\partial f}{\partial v}(p) := \lim_{t\to 0}\frac{1}{t}[f(p+vt)-f(p)] = Df(p)[v]$$
   </center>
   
-**Definition- <span style="color: green;">Partial derivatives**</span>
+**Definition ** - <span style="color: green;">**Partial derivatives**</span>
   
 We can find any directional derivative at $p$, given we know the partial derivatives of $f$
   
   $$D_{i}f(p) = \frac{\partial f}{\partial e_{i}}(p)$$
   
 In $\mathbb{R}^{3}$ we have,
+  
   $$Df(p)[v] = 
 \begin{pmatrix}
 \ D_{1}f(p)\quad  D_{2}f(p)\quad D_{3}f(p)\quad
@@ -252,28 +263,38 @@ v^{2} \\
 v^{3} 
 \end{pmatrix}$$
 
-**Definition - <span style="color: green;">**Gradient**</span>
-*Gradient of $f$ at $p$* $$\nabla f(p) = 
+**Definition - ** <span style="color: green;">**Gradient**</span>
+  
+*Gradient of $f$ at $p$*
+  <center>
+  $$\nabla f(p) = 
 \begin{pmatrix}
 D_{1}f(p)\\
 D_{2}f(p) \\
 D_{3}f(p)
 \end{pmatrix}\qquad
 Df(p) = (\nabla f(p))^{t}$$
+  </center>
 
 **Theorem 1.9 - Jacobian**\
-Suppose $\Omega \subset \mathbb{R}^{n}$ open and
-$f: \Omega \to \mathbb{R}^{m}$ of the form $$f(x) = 
-\begin{pmatrix}
-f^{1}(x),f^{2}(x),\dots,f^{m}(x)
-\end{pmatrix}$$ [**If $f$ differentiable for some
-$p \in \Omega$**] Then [**Jacobian of $f$ at $p$
-is:**] $$Df(p) = 
-\begin{pmatrix}
-D_{1}f^{1}(p) & \dots & D_{n}f^{1}(p)\\
-\vdots & \ddots & \vdots\\
-D_{1}f^{m}(p) & \dots & D_{n}f^{m}(p)
-\end{pmatrix}$$
+Suppose $\Omega \subset \mathbb{R}^{n}$ open and $f: \Omega \to \mathbb{R}^{m}$ of the form 
+  <center<
+  $$f(x) = 
+  \begin{pmatrix}
+  f^{1}(x),f^{2}(x),\dots,f^{m}(x)
+  \end{pmatrix}$$ 
+  </center>
+  
+<span style="color: RoyalBlue;">**If $f$ differentiable for some $p \in \Omega$** Then <span style="color: red;">**Jacobian of $f$ at $p$ is:**</span>
+  
+  <center>
+    $$Df(p) = 
+    \begin{pmatrix}
+    D_{1}f^{1}(p) & \dots & D_{n}f^{1}(p)\\
+    \vdots & \ddots & \vdots\\
+    D_{1}f^{m}(p) & \dots & D_{n}f^{m}(p)
+    \end{pmatrix}$$
+  </center>
 
 ### <span style="color: white;">1.4.2</span> Relation between partial derivatives and differentiability
 
