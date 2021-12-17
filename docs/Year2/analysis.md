@@ -320,7 +320,7 @@ Let $\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega\to \mathbb{R}$. <span style=
   <center>
     $$D_{i}f(x) := \lim_{t\to 0}\frac{f(x+te_{i}-f(x)}{t}$$
   </center>
-  <span style="color: RoyalBlue;">**exist $\forall x \in \Omega$, with each map $x \mapsto D_{i}f(x)$ continuous at $p, \forall i$**</span>$\implies$ <span style="color: red;">**$f$ is differentiable at $p$**</red>
+  <span style="color: RoyalBlue;">**exist $\forall x \in \Omega$, with each map $x \mapsto D_{i}f(x)$ continuous at $p, \forall i$**</span>$\implies$ <span style="color: red;">**$f$ is differentiable at $p$**</span>
 
 ## <span style="color: white;">1.5</span> Higher Derivatives
 
@@ -336,7 +336,7 @@ $$\quad p \mapsto Df(p)$$
   <span style="color: RoyalBlue;">**if map $Df$ is continuous**</span> $\implies f:\Omega \to \mathbb{R}$ is <span style="color: green;">**continuously differentiable**</span>
   
   
-**Definition - <span style="color: green;">**Higher derivative**</span>
+**Definition** - <span style="color: green;">**Higher derivative**</span>
   
 If $Df: \Omega \to \mathbb{R}^{mn}$ differentiable at $p$, denote derivative of $Df$ as $DDf(p): \mathbb{R}^{n} \to \mathbb{R}^{nm}$
   <center>
@@ -350,9 +350,7 @@ $DDf(p)$ takes an $n$-vector to a $m\times n$ matrix\
   
 **Definition** - <span style="color: green;">**Continuously differentiable**</span>
   
-*[**$f:\Omega \to \mathbb{R}^{m}$ is $k$-times dfferentiable with all
-continuous derivatives**]* $\implies$ [**$f$ is
-$k$-times continuously differentiable**]
+<span style="color: green;">**$f:\Omega \to \mathbb{R}^{m}$ is $k$-times dfferentiable with all continuous derivatives**</span> $\implies$ **<span style="color: red;">$f$ is $k$-times continuously differentiable**</span>
 
 **Testing for $k$-times differentiability**\
 For $f = \begin{pmatrix}
@@ -361,57 +359,68 @@ f^{1}(x),f^{2}(x),\dots,f^{m}(x)
 If $f$ differentiable at $p\in \Omega \implies$ we have partial
 derivatives $D_{i}f^{j}: \Omega \to \mathbb{R}$.\
 If $Df$ differentiable, then $2^{\text{nd}}$ partial derivatives exist
-$$D_{k}D_{i}f^{j}(p) := \lim_{t\to 0}\frac{D_{i}f^{j}(p+te_{k})-D_{i}f^{j}(p)}{t}$$
-Easy to check these exist and are continuous $\implies$ $k$-times
-differentiability at $p$
+  <center>
+    $$D_{k}D_{i}f^{j}(p) := \lim_{t\to 0}\frac{D_{i}f^{j}(p+te_{k})-D_{i}f^{j}(p)}{t}$$
+  </center>
+Easy to check these exist and are continuous $\implies$ $k$-times differentiability at $p$
 
 ### <span style="color: white;">1.5.2</span> Symmetry of mixed partial derivatives
 
 **Theorem 1.13 - Schwartz' Theorem**\
-Suppose $\Omega \subset \mathbb{R}^{n}$ open and
-$f:\Omega \to \mathbb{R}$ differentiable $\forall p \in \Omega$\
-Suppose also, for $i,j \in \{1,\dots,n\}, 2^{\text{nd}}$ partial
-derivatives $D_{i}D_{j}f$ and $D_{j}D_{i}f$ exist and are continuous
-$\forall p \in \Omega$
-[**$$\forall p \in \Omega, D_{i}D_{j}f(p) = D_{j}D_{i}f(p)$$**]
-
-**Definition - <span style="color: green;">**Hessian**</span>
+Suppose $\Omega \subset \mathbb{R}^{n}$ open and $f:\Omega \to \mathbb{R}$ differentiable $\forall p \in \Omega$\
+Suppose also, for $i,j \in \{1,\dots,n\}, 2^{\text{nd}}$ partial derivatives $D_{i}D_{j}f$ and $D_{j}D_{i}f$ exist and are continuous $\forall p \in \Omega$
+  <center>
+**$$\forall p \in \Omega, D_{i}D_{j}f(p) = D_{j}D_{i}f(p)$$**
+  </center>
+  
+**Definition** - <span style="color: green;">**Hessian**</span>
+  
 The matrix of $2^{\text{nd}}$ partial derivatives at the point $p$
-$$\text{Hess } f(p) = [D_{i}D_{j}f(p)]_{i,j =1,\dots,n}$$ Schwartz'
-Theorem says Hess $f(p$ is a symmetric matrix
+  <center>
+$$\text{Hess } f(p) = [D_{i}D_{j}f(p)]_{i,j =1,\dots,n}$$ 
+  </center>
+Schwartz' Theorem says Hess $f(p$ is a symmetric matrix
 
 ### <span style="color: white;">1.5.3</span> Taylor's Theorem
 
 **Definition - <span style="color: green;">**Multi-inidices**</span>
+  
 Multi-index $\alpha \in (\mathbb{N})^{n}, \alpha = \begin{pmatrix}
 \alpha_{1},\dots,\alpha_{n}
 \end{pmatrix}$\
+  
 We define
 [**$|a| = \sum_{i=1}^{n}\alpha_{i}$**] and
-[**$$D^{\alpha}f := (D_{1})^{\alpha_{1}}(D_{2})^{\alpha_{2}}\dots(D_{n})^{\alpha_{n}}f,$$**]
+  <center>
+**$$D^{\alpha}f := (D_{1})^{\alpha_{1}}(D_{2})^{\alpha_{2}}\dots(D_{n})^{\alpha_{n}}f,$$**
+  </center>
 And for a vector $h = \begin{pmatrix}
 h_{1},\dots,h_{n}
 \end{pmatrix}$
-[**$$h^{\alpha} := (h^{1})^{\alpha_{1}}(h^{2})^{\alpha_{2}}\dots(h^{n})^{\alpha_{n}}$$**]
+  <center>
+**$$h^{\alpha} := (h^{1})^{\alpha_{1}}(h^{2})^{\alpha_{2}}\dots(h^{n})^{\alpha_{n}}$$**
+  </center>
 Also
-[**$$\alpha ! := \alpha_{1}!\alpha_{2}!\dots\alpha_{n}!$$**]\
-*helpful examples*
+  <center>
+**$$\alpha ! := \alpha_{1}!\alpha_{2}!\dots\alpha_{n}!$$**
+  </center>
+  
+***helpful examples***
 
- center
-$D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$\
-$D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$\
-$(x,y,z)^{(2,1,5)} = x^{2}y^{1}z^{5}$\
-
-
-\
+<center>
+  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$\
+  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$\
+  $(x,y,z)^{(2,1,5)} = x^{2}y^{1}z^{5}$\
+</center>
 
 **Theorem 1.14 - Taylor's Theorem in higher dim.**\
-Suppose $p \in \mathbb{R}^{n}$ and $f: B_{r}(p) \to \mathbb{R}$ a
-$k$-times continuously differentiable $\forall q \in B_{r}(p)$, for some
-$k \geq 1 \in \mathbb{N}$\
-Then $\forall h \in \mathbb{R}^{n}$ with $||h|| < r$ We have [
+Suppose $p \in \mathbb{R}^{n}$ and $f: B_{r}(p) \to \mathbb{R}$ a $k$-times continuously differentiable $\forall q \in B_{r}(p)$, for some $k \geq 1 \in \mathbb{N}$\
+  
+Then $\forall h \in \mathbb{R}^{n}$ with $||h|| < r$ We have
+ <center>
 **$$f(p+h) = \sum_{|\alpha| \leq k-1}\frac{h^{\alpha}}{\alpha!}D^{\alpha}f(p) + R_{k}(p,h)$$**
-] Sum over all $\alpha = \begin{pmatrix}
+  </center>
+Sum over all $\alpha = \begin{pmatrix}
 \alpha_{1},\dots,\alpha_{n}
 \end{pmatrix}$\
 with $|\alpha| \leq k-1$ and remainder term
