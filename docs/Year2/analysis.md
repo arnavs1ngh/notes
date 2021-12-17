@@ -350,7 +350,7 @@ $DDf(p)$ takes an $n$-vector to a $m\times n$ matrix\
   
 **Definition** - <span style="color: green;">**Continuously differentiable**</span>
   
-<span style="color: green;">**$f:\Omega \to \mathbb{R}^{m}$ is $k$-times dfferentiable with all continuous derivatives**</span> $\implies$ **<span style="color: red;">$f$ is $k$-times continuously differentiable**</span>
+<span style="color: green;">**$f:\Omega \to \mathbb{R}^{m}$ is $k$-times dfferentiable with all continuous derivatives**</span> $\implies$ <span style="color: red;">$f$ is $k$-times continuously differentiable</span>
 
 **Testing for $k$-times differentiability**\
 For $f = \begin{pmatrix}
@@ -370,7 +370,7 @@ Easy to check these exist and are continuous $\implies$ $k$-times differentiabil
 Suppose $\Omega \subset \mathbb{R}^{n}$ open and $f:\Omega \to \mathbb{R}$ differentiable $\forall p \in \Omega$\
 Suppose also, for $i,j \in \{1,\dots,n\}, 2^{\text{nd}}$ partial derivatives $D_{i}D_{j}f$ and $D_{j}D_{i}f$ exist and are continuous $\forall p \in \Omega$
   <center>
-**$$\forall p \in \Omega, D_{i}D_{j}f(p) = D_{j}D_{i}f(p)$$**
+  $$\forall p \in \Omega, D_{i}D_{j}f(p) = D_{j}D_{i}f(p)$$
   </center>
   
 **Definition** - <span style="color: green;">**Hessian**</span>
@@ -387,30 +387,33 @@ Schwartz' Theorem says Hess $f(p$ is a symmetric matrix
   
 Multi-index $\alpha \in (\mathbb{N})^{n}, \alpha = \begin{pmatrix}
 \alpha_{1},\dots,\alpha_{n}
-\end{pmatrix}$\
+\end{pmatrix}$
   
 We define
-[**$|a| = \sum_{i=1}^{n}\alpha_{i}$**] and
+$|a| = \sum_{i=1}^{n}\alpha_{i}$ and
   <center>
-**$$D^{\alpha}f := (D_{1})^{\alpha_{1}}(D_{2})^{\alpha_{2}}\dots(D_{n})^{\alpha_{n}}f,$$**
+  $$D^{\alpha}f := (D_{1})^{\alpha_{1}}(D_{2})^{\alpha_{2}}\dots(D_{n})^{\alpha_{n}}f,$$
   </center>
 And for a vector $h = \begin{pmatrix}
 h_{1},\dots,h_{n}
 \end{pmatrix}$
   <center>
-**$$h^{\alpha} := (h^{1})^{\alpha_{1}}(h^{2})^{\alpha_{2}}\dots(h^{n})^{\alpha_{n}}$$**
+  $$h^{\alpha} := (h^{1})^{\alpha_{1}}(h^{2})^{\alpha_{2}}\dots(h^{n})^{\alpha_{n}}$$
   </center>
 Also
   <center>
-**$$\alpha ! := \alpha_{1}!\alpha_{2}!\dots\alpha_{n}!$$**
+  $$\alpha ! := \alpha_{1}!\alpha_{2}!\dots\alpha_{n}!$$
   </center>
   
 ***helpful examples***
 
 <center>
-  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$\
-  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$\
-  $(x,y,z)^{(2,1,5)} = x^{2}y^{1}z^{5}$\
+  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$
+  
+  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$
+  
+  $(x,y,z)^{(2,1,5)} = x^{2}y^{1}z^{5}$
+  
 </center>
 
 **Theorem 1.14 - Taylor's Theorem in higher dim.**\
@@ -418,24 +421,27 @@ Suppose $p \in \mathbb{R}^{n}$ and $f: B_{r}(p) \to \mathbb{R}$ a $k$-times cont
   
 Then $\forall h \in \mathbb{R}^{n}$ with $||h|| < r$ We have
  <center>
-**$$f(p+h) = \sum_{|\alpha| \leq k-1}\frac{h^{\alpha}}{\alpha!}D^{\alpha}f(p) + R_{k}(p,h)$$**
+$$f(p+h) = \sum_{|\alpha| \leq k-1}\frac{h^{\alpha}}{\alpha!}D^{\alpha}f(p) + R_{k}(p,h)$$
   </center>
 Sum over all $\alpha = \begin{pmatrix}
 \alpha_{1},\dots,\alpha_{n}
 \end{pmatrix}$\
 with $|\alpha| \leq k-1$ and remainder term
+  <center>
 $$R_{k}(p,h) = \sum_{|\alpha| = k}\frac{h^{\alpha}}{\alpha!}D^{a}f(x)$$
-for some $x$ s.t $0 < ||x-p||< ||h||$\
-Evidently $$\lim_{h\to 0}\frac{|R_{k}(p,h)|}{||h||^{k-1}} = 0$$
+  </center>
+for some $x$ s.t $0 < ||x-p||< ||h||$
+Evidently
+  <center>
+  $$\lim_{h\to 0}\frac{|R_{k}(p,h)|}{||h||^{k-1}} = 0$$
+  </center>
 
 ## <span style="color: white;">1.6</span> Inverse & Implicit Function Theorem
 
 ### <span style="color: white;">1.6.1</span> Inverse Function Theorem
 
-\
-Let $\Omega$ an open set in $\mathbb{R}^{n}$,
-$f: \Omega \to \mathbb{R}^{n}$ continuously differentiable on $\Omega$,
-$\exists q \in \Omega$ s.t $Df(q)$ invertible\
+**Theorem 1.15 - *(Inverse Function Theorem)* **
+Let $\Omega$ an open set in $\mathbb{R}^{n}$, $f: \Omega \to \mathbb{R}^{n}$ continuously differentiable on $\Omega$, $\exists q \in \Omega$ s.t $Df(q)$ invertible\
 Then $\exists$ open sets $U \subset \Omega$ and
 $V \subset \mathbb{R}^{n}, q \in U, f(q) \in V$ s.t
 
@@ -458,10 +464,12 @@ $\exists (x',y') \in \Omega$ s.t
 
 $\implies \exists$ open sets $A, B \subset \mathbb{R}$ with
 $x' \in A, y' \in B$ with a map $f:A \to B$ s.t
+  <center>
 $$(x,y) \in A \times B \text{ satisfies } F(x,y) = 0 \iff y = f(x) \text{for some } x \in A$$
+  </center>
 with $f:A \to B$ continuously differentiable.\
-**Definition - [
-**$C^{1}-$diffeomorphism**]**\
+  
+**Definition - $C^{1}-$diffeomorphism**\
 $\Omega,\Omega' \subset \mathbb{R}^{n}$ open.\
 Say $f:\Omega \to \Omega'$ a $C^{1}$-diffeormorphism, if
 $f:\Omega \to \Omega'$ a and $\forall x \in \Omega, Df(x)$
