@@ -127,8 +127,9 @@ A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</s
 **Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
 Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$  
-$f$ continuous at $p \in A$ if  
-**$$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$**
+$f$ continuous at $p \in A$ if
+  
+$$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$
   
 $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
@@ -137,7 +138,7 @@ For small enough $\delta$, we have $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p)
 **Theorem 1.2 - Composition of continuous functions**\
 Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and suppose $f: A \to B$ continuous at $p\in A$, and $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$
 
-Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p
+  <center>Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p</center>
 
 **Definition 1.4 - <span style="color: green;">Limit of a function at a point</span>**
 
@@ -145,8 +146,10 @@ $A \subseteq \mathbb{R}^{n}$ an open set. $f$ a function\
 $f: A \to \mathbb{R}^{m}$, with $p \in A$ and $q \in \mathbb{R}^{m}$
   
 Say $\lim_{x\to p}f(x) = q$ if  
+  
 $\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x \in A \text{ with } 0 < ||x-p|| <\delta \text{ we have } ||f(x) - p|| < \epsilon$
-$$f \textrm{ continuous at } p \iff \lim_{x\to p}f(x) = q$$
+                                                                                                                                                  
+                                                                                                                                                  <center>$f$ continuous at $p \iff \lim_{x\to p}f(x) = q$</center>
 
 **Theorem 1.3 - Algebra of Limits**\
 Suppose $A \subseteq \mathbb{R}^{n}$ open, with $p \in A$ and
@@ -166,30 +169,41 @@ Then:
 
 **Lemma 1.5**\
 *The map $f:(a,b) \to \mathbb{R}$ differentiable at
-$p \in (a,b) \iff \exists$ map of the form
-$A_{\lambda}(x) = \lambda(x-p) + f(p)$ for some $\lambda \in \mathbb{R}$
-s.t* $$\lim_{x\to p}\frac{|f(x) - A_{\lambda}(x)|}{|x-p|} = 0$$
+$p \in (a,b) \iff \exists$ map of the form $A_{\lambda}(x) = \lambda(x-p) + f(p)$ for some $\lambda \in \mathbb{R}$ s.t 
+  
+  $$\lim_{x\to p}\frac{|f(x) - A_{\lambda}(x)|}{|x-p|} = 0$$
 
-**Notation** $$h[v] \text{ for h a linear map, v a vector}$$
-$$h(v) \text{ h a map, v a point in domain of h}$$
-$$L(\mathbb{R}^{n};\mathbb{R}^{m}) - \text{\textbf{Set of linear maps from }} \mathbb{R}^{n} \to \mathbb{R}^{m}$$
+**Notation**
+  
+  <center>
+    $$h[v] \text{ for h a linear map, v a vector}$$
+    
+    $$h(v) \text{ h a map, v a point in domain of h}$$
+    
+    $$L(\mathbb{R}^{n};\mathbb{R}^{m}) - \text{\textbf{Set of linear maps from }} \mathbb{R}^{n} \to \mathbb{R}^{m}$$
+  </center>
 
-**Definition 1.5 - <span style="color: green;">**Derivative in higher dimension**</span>
-Suppose $\Omega \subset \mathbb{R}^{n}$ open. [**The map
-$f:\Omega \to \mathbb{R}^{m}$
-**[**differentiable**]****]
-at $p \in \Omega$ if [**$\exists$ a linear map
-$\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that
-$$\lim_{x\to p}\frac{||f(x) - (\Lambda[x-p] + f(p))}{||x-p||} = 0$$ We
-write $$Df(p) := \Lambda$$ Calling $Df(p)$ the derivative of $f$ at $p$\
-$\Lambda$ a $m\times n$ matrix called the
-[**Jacobian**]\
+**Definition 1.5 - <span style="color: green;">Derivative in higher dimension**</span>
+  
+Suppose $\Omega \subset \mathbb{R}^{n}$ open. The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that
+  
+  <center>
+    $$\lim_{x\to p}\frac{||f(x) - (\Lambda[x-p] + f(p))}{||x-p||} = 0$$
+  </center>
+  We write
+  <center>
+    $$Df(p) := \Lambda$$ 
+  </center>
+Calling $Df(p)$ the derivative of $f$ at $p$\
+$\Lambda$ a $m\times n$ matrix called the **Jacobian**
+  
+
 **Lemma 1.6 - Differentiable then continuous**\
-$\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega \to \mathbb{R}^{m}$
-differentiable at $p\in \Omega \implies f$ continuous at $p$\
+$\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p\in \Omega \implies f$ continuous at $p$\
+  
+  
 **Theorem 1.7 - Uniqueness of Derivative**\
-*The derivative, [**if it exists**], [**is
-unique**]*
+The derivative, <span style="color: RoyalBlue;">**if it exists**</span>, <span style="color: red;">**is unique**<span style="color: white;">
 
 ### <span style="color: white;">1.3.2</span> Chain Rule
 
