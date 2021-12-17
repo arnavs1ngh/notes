@@ -147,7 +147,7 @@ $f: A \to \mathbb{R}^{m}$, with $p \in A$ and $q \in \mathbb{R}^{m}$
   
 Say $\lim_{x\to p}f(x) = q$ if  
   
-$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x \in A \text{ with } 0 < ||x-p|| <\delta \text{ we have } ||f(x) - p|| < \epsilon$
+$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x \in A \text{ with } 0 < \lvert\lvert x-p\rvert\rvert <\delta \text{ we have } \lvert\lvert f(x) - p\rvert\rvert < \epsilon$
                                                                                                                                                   
                                                                                                                                                   <center>$f$ continuous at $p \iff \lim_{x\to p}f(x) = q$</center>
 
@@ -176,14 +176,14 @@ $p \in (a,b) \iff \exists$ map of the form $A_{\lambda}(x) = \lambda(x-p) + f(p)
 **Notation**
   
   <center>
-    $$h[v] \text{ for h a linear map, v a vector}$$
+    $h[v]$ for $h$ a linear map, $v$ a vector
     
-    $$h(v) \text{ h a map, v a point in domain of h}$$
+    $h(v)$, $h$ a map, $v$ a point in domain of $h$
     
-    $$L(\mathbb{R}^{n};\mathbb{R}^{m}) - \text{\textbf{Set of linear maps from }} \mathbb{R}^{n} \to \mathbb{R}^{m}$$
+    $$L(\mathbb{R}^{n};\mathbb{R}^{m})$$ - Set of linear maps from $\mathbb{R}^{n} \to \mathbb{R}^{m}$
   </center>
 
-**Definition 1.5 - <span style="color: green;">Derivative in higher dimension**</span>
+**Definition 1.5** - <span style="color: green;">**Derivative in higher dimension**</span>
   
 Suppose $\Omega \subset \mathbb{R}^{n}$ open. The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that
   
@@ -195,11 +195,12 @@ Suppose $\Omega \subset \mathbb{R}^{n}$ open. The map $f:\Omega \to \mathbb{R}^{
     $$Df(p) := \Lambda$$ 
   </center>
 Calling $Df(p)$ the derivative of $f$ at $p$\
-$\Lambda$ a $m\times n$ matrix called the **Jacobian**
+  $\Lambda$ a $m\times n$ matrix called the <span style="color: green;">**Jacobian**</span>
   
 
 **Lemma 1.6 - Differentiable then continuous**\
-$\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p\in \Omega \implies f$ continuous at $p$\
+$\Omega \subset \mathbb{R}^{n}$ open  
+$f:\Omega \to \mathbb{R}^{m}$ differentiable at $p\in \Omega \implies f$ continuous at $p$
   
   
 **Theorem 1.7 - Uniqueness of Derivative**\
@@ -208,31 +209,40 @@ The derivative, <span style="color: RoyalBlue;">**if it exists**</span>, <span s
 ### <span style="color: white;">1.3.2</span> Chain Rule
 
 **Chain rule in $\mathbb{R}$**\
-$f,g: \mathbb{R}\to \mathbb{R}, g$ differentiable at $p$, $f$
-differentiable at $g(p)$ Then $f \circ g$ differentiable at $p$ with
-$$(f\circ g)'(p) = f'(g(p))g'(p)$$
-
+$f,g: \mathbb{R}\to \mathbb{R}, g$ differentiable at $p$, $f$ differentiable at $g(p)$ Then $f \circ g$ differentiable at $p$ with
+  
+  <center> 
+    $$(f\circ g)'(p) = f'(g(p))g'(p)$$
+  </center>
+  
 **Theorem 1.8 - Chain rule in higher dim.**\
 $\Omega \subset \mathbb{R}^{n}$ open, $\Omega' \subset \mathbb{R}^{m}$
 open\
 With $g:\Omega \to \Omega'$ differentiable at $p \in \Omega$,
 $f:\Omega' \to \mathbb{R}^{l}$ differentiable at $g(p) \in \Omega'$\
-Then $h = f \circ g: \Omega \to \mathbb{R}^{l}$, differentiable at $p$,
-s.t $$Dh(p) = D(f(g(p))\circ Dg(p)$$
+Then $h = f \circ g: \Omega \to \mathbb{R}^{l}$, differentiable at $p$, s.t 
+  
+ $$Dh(p) = D(f(g(p))\circ Dg(p)$$
 
 ## <span style="color: white;">1.4</span> Directional Derivatives
 
 ### <span style="color: white;">1.4.1</span> Rates of change and Partial Derivatives
 
-**Definition - <span style="color: green;">**Directional Derivative**</span>
-The [**directional derivative**] of $f$ at
-$p$ in the direction $v$ is
-$$\frac{\partial f}{\partial v}(p) := \lim_{t\to 0}\frac{1}{t}[f(p+vt)-f(p)] = Df(p)[v]$$
+**Definition** - <span style="color: green;">**Directional Derivative**</span>
   
-**Definition - <span style="color: green;">**Partial derivatives**</span>
-We can find any directional derivative at $p$, given we know the partial
-derivatives of $f$ $$D_{i}f(p) = \frac{\partial f}{\partial e_{i}}(p)$$
-In $\mathbb{R}^{3}$ we have, $$Df(p)[v] = 
+  The <span style="color: green;">**directional derivative**</span> of $f$ at $p$ in the direction $v$ is
+  <center>
+    $$\frac{\partial f}{\partial v}(p) := \lim_{t\to 0}\frac{1}{t}[f(p+vt)-f(p)] = Df(p)[v]$$
+  </center>
+  
+**Definition- <span style="color: green;">Partial derivatives**</span>
+  
+We can find any directional derivative at $p$, given we know the partial derivatives of $f$
+  
+  $$D_{i}f(p) = \frac{\partial f}{\partial e_{i}}(p)$$
+  
+In $\mathbb{R}^{3}$ we have,
+  $$Df(p)[v] = 
 \begin{pmatrix}
 \ D_{1}f(p)\quad  D_{2}f(p)\quad D_{3}f(p)\quad
 \end{pmatrix}
