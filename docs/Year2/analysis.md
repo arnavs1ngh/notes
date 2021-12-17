@@ -514,66 +514,51 @@ with $g:A \to B$ continuously differentiable.\
 
 ### <span style="color: white;">2.1.1</span> Motivation + Definition
 
-  **Definition 2.1 - <span style="color: green;">**Metric**</span>
+**Definition 2.1 - <span style="color: green;">**Metric**</span>
 $X$ an arbitrary set\
 Metric a function $d: X \times X \to \mathbb{R}$ satisfying:
 
-<ol class="n">
-<li>$\forall x,y \in X;\ d(x,y) \geq 0, d(x,y) = 0 \iff x = y$
-    ***(positivity)***</li>
-<li>$\forall x,y \in X;\ d(x,y) = d(y,x)$ ***(symmetry)***</li>
-<li>$\forall x,y,z \in X d(x,y) \leq d(x,z) + d(z,y)$ ***(triangle
-    inequality)***</li>
-</ol>
-<!-- 1.  $\forall x,y \in X;\ d(x,y) \geq 0, d(x,y) = 0 \iff x = y$
+1.  $\forall x,y \in X;\ d(x,y) \geq 0, d(x,y) = 0 \iff x = y$
     ***(positivity)***
 
 2.  $\forall x,y \in X;\ d(x,y) = d(y,x)$ ***(symmetry)***
 
 3.  $\forall x,y,z \in X d(x,y) \leq d(x,z) + d(z,y)$ ***(triangle
-    inequality)*** -->
+    inequality)***
 
-**Definition 2.2 - [**Metric space**]**\
+  **Definition 2.2 - <span style="color: green;">**Metric space**</span>
 Pair of a set and metric; $M = (X,d)$\
-Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t
-$d$\
+Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$\
+  
+  
 **Definition**\
-$$C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}\text{continuous}\}$$
-
+  <center>
+$C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}$ continuous
+  </center>
+  
 ### <span style="color: white;">2.1.2</span> Examples of metrics
 
 -   $d_{2}(x,y) = ||x-y||$; Euclidean metric on $\mathbb{R}^{n}$
 
--   $d_{\text{disc}}(x,y) =$
-
-     cases
-    0, & x=y\
-    1, & xy
+-   $d_{\text{disc}}(x,y) = \begin{cases} 0, & x=y \\ 1, & xy \end{cases}$
     
-
 -   $d_{\infty}(x,y) = \text{sup}_{k\geq 1}|x^{k} - y^{k}|$
 
--   $d_{\infty}(f,g) = \text{max}_{a\leq t\leq b}|f(t) - g(t)$ where
-    $f,g \in C([a,b])$ ***(supremum/uniform metric)***
+-   $d_{\infty}(f,g) = $ \text{max}_{a\leq t\leq b}|f(t) - g(t)|$ where $f,g \in C([a,b])$ ***(supremum/uniform metric)***
 
  
-**Definition 1**. [**Induced metrics**]
+**Definition 2.3**. <span style="color: green;">**Induced metrics**</span>
 
-
-\
 $(X,d)$ a metric space\
-$Y \subseteq X$, define $d|_{Y}: Y \times Y \to \mathbb{R}$ as
-$d|_{Y}(x,y) = d(x,y)\ \forall x,y \in Y$
+$Y \subseteq X$, define $ d\rvert_{Y}: Y \times Y \to \mathbb{R}$ as $d|_{Y}(x,y) = d(x,y)\ \forall x,y \in Y$
 
  
-**Definition 2**. [**Metric Subspace**]
+**Definition 2.3**. <span style="color: green;">**Metric Subspace**</span>
 
-
-\
 Say $(Y,d|_{Y})$ a metric subspace of $(X,d)$
 
  
-**Definition 3**. [**Product metric space**]
+**Definition 2.4**. <span style="color: green;">**Product metric space**</span>
 
 
 $(X_{1},d_{1})$ and $(X_{2},d_{2})$ metric spaces.\
@@ -584,21 +569,19 @@ $(X_{1} \times X_{2}, d)$ a product metric space.
 ### <span style="color: white;">2.1.3</span> Normed Vector Spaces
 
  
-**Definition 4**. [**Norm in Metric
-Spaces**]
-
+**Definition 2.5**. <span style="color: green;">**Norm in Metric Spaces**</span>
 
 $V$ a vector space on $\mathbb{R}$. Say $||\cdot||: V \to \mathbb{R}$ a
 [**norm**] on $V$ if
 
-1.  $\forall v \in V,\ ||v|| \geq 0$ and $||v|| = 0 \iff v = 0$
+1.  $\forall v \in V,\ \lvert\lvert v\rvert\rvert \geq 0$ and $\lvert\lvert v\rvert\rvert = 0 \iff v = 0$
 
-2.  $\forall v \in V, \forall \lambda \in \mathbb{R},\ ||\lambda v|| = |\lambda|\cdot||v||$
+2.  $\forall v \in V, \forall \lambda \in \mathbb{R},\ \lvert\lvert\lambda v\rvert\rvert = \lvert\lambda\rvert\cdot\lvert\lvert v\rvert\rvert$
 
-3.  $\forall u,v \in V,\ ||u+v|| \leq ||u|| + ||v||$
+3.  $\forall u,v \in V,\ \lvert\lvert u+v\rvert\rvert \leq \lvert\lvert u\rvert\rvert + \lvert\lvert v\rvert\rvert$
 
-\
-\
+**Definition** - <span style="color: green;">**Normed Vector Space**</span>
+
 A pair of a vector space $(V, ||\cdot||)$\
 note $||\cdot||$ is a metric on $V \implies$ normed vector space a
 metric space.
@@ -606,26 +589,22 @@ metric space.
 ### <span style="color: white;">2.1.4</span> Open sets in metric spaces
 
  
-**Definition 5**. [**Open ball in metric spaces**
-]
+**Definition 2.6**. <span style="color: green;">**Open ball in metric spaces**</span>
 
-
-\
 $(X,d)$, with $x \in X, \epsilon \in \mathbb{R}; \epsilon > 0$\
-$$\text{Ball radius } \epsilon;\ B_{\epsilon}(x) = \{ x' \in X | d(x,x') < \epsilon\}$$
-notation; $B_{\epsilon}(x,X,d)$
-
+  <center>
+Ball radius $ \epsilon;\ B_{\epsilon}(x) = \{ x' \in X | d(x,x') < \epsilon\}$
+ </center>
+***notation;*** $B_{\epsilon}(x,X,d)$
  
-**Definition 6**. [**Open set in metric
-space**]
-
+**Definition 2.7**. <span style="color: green;">**Open set in metric space**</span>
 
 $(X,d)$ a metric space. $U \subseteq X$ open in $(X,d)$ if:
+    <center>
 $$\forall u \in U,\ \exists \delta > 0 \in \mathbb{R}\text{ s.t } B_{\delta}(u) \subset U$$
-
+    </center>
  
-**Definition 7**. [**Topologically
-equivalent**]
+**Definition 2.8**. <span style="color: green;">**Topologically equivalent**</span>
 
 
 $d_{1},d_{2}$ metrics on a set $X$ **topologically equivalent** if:
@@ -634,8 +613,7 @@ $$\forall\ U \subseteq X,\ U \text{ open in } (X,d_{1}) \iff U \text{ open in } 
 ### <span style="color: white;">2.1.5</span> Convergence in Metric Spaces
 
  
-**Definition 8**. [**Convergence in Metric
-Spaces**]
+**Definition 2.9**. <span style="color: green;">**Convergence in Metric Spaces**<span style="color: green;">
 
 
 $(X,d)$ a metric space. $(x_{n})_{n\geq 1}$ a sequence in $X$.\
