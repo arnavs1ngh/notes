@@ -20,7 +20,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Linear Algebra + Numerical Analysis - MATH50003
 - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Term 1**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/LAGLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/LagLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
 
 ### Multivariable Calculus + Differential Equations - MATH50004
 - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Term 1**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
