@@ -190,7 +190,7 @@ $p \in (a,b) \iff \exists$ map of the form $A_{\lambda}(x) = \lambda(x-p) + f(p)
     
     $h(v)$, $h$ a map, $v$ a point in domain of $h$
     
-    $$L(\mathbb{R}^{n};\mathbb{R}^{m})$$ - Set of linear maps from $\mathbb{R}^{n} \to \mathbb{R}^{m}$
+    $L(\mathbb{R}^{n};\mathbb{R}^{m})$ - Set of linear maps from $\mathbb{R}^{n} \to \mathbb{R}^{m}$
   </center>
 
 **Definition 1.5** - <span style="color: green;">**Derivative in higher dimension**</span>
@@ -263,7 +263,7 @@ v^{2} \\
 v^{3} 
 \end{pmatrix}$$
 
-**Definition - ** <span style="color: green;">**Gradient**</span>
+**Definition** - <span style="color: green;">**Gradient**</span>
   
 *Gradient of $f$ at $p$*
   <center>
@@ -285,7 +285,7 @@ Suppose $\Omega \subset \mathbb{R}^{n}$ open and $f: \Omega \to \mathbb{R}^{m}$ 
   \end{pmatrix}$$ 
   </center>
   
-<span style="color: RoyalBlue;">**If $f$ differentiable for some $p \in \Omega$** Then <span style="color: red;">**Jacobian of $f$ at $p$ is:**</span>
+  <span style="color: RoyalBlue;">**If $f$ differentiable for some $p \in \Omega$** </span> Then <span style="color: red;">**Jacobian of $f$ at $p$ is:**</span>
   
   <center>
     $$Df(p) = 
@@ -299,30 +299,36 @@ Suppose $\Omega \subset \mathbb{R}^{n}$ open and $f: \Omega \to \mathbb{R}^{m}$ 
 ### <span style="color: white;">1.4.2</span> Relation between partial derivatives and differentiability
 
 **Theorem 1.12**\
-Let $\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega\to \mathbb{R}$.
-[**Suppose the partial derivatives:**]
-$$D_{i}f(x) := \lim_{t\to 0}\frac{f(x+te_{i}-f(x)}{t}$$ [**exist
-$\forall x \in \Omega$, with each map $x \mapsto D_{i}f(x)$ continuous
-at $p, \forall i$**]$\implies$ [**$f$ is
-differentiable at $p$**]
+Let $\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega\to \mathbb{R}$. <span style="color: RoyalBlue;">**Suppose the partial derivatives:**</span>
+  <center>
+    $$D_{i}f(x) := \lim_{t\to 0}\frac{f(x+te_{i}-f(x)}{t}$$
+  </center>
+  <span style="color: RoyalBlue;">**exist $\forall x \in \Omega$, with each map $x \mapsto D_{i}f(x)$ continuous at $p, \forall i$**</span>$\implies$ <span style="color: red;">**$f$ is differentiable at $p$**</red>
 
 ## <span style="color: white;">1.5</span> Higher Derivatives
 
 ### <span style="color: white;">1.5.1</span> Higher derivatives as linear maps
 
 Can think of the differential of $f$, $Df(p)$ as a map
+  <center>
 $$Df: \Omega \to L(R^{n};R^{m}) = \Omega \to \mathbb{R}^{mn}$$
-$$\quad p \mapsto Df(p)$$ [**if map $Df$ is
-continuous**] $\implies f:\Omega \to \mathbb{R}$ is
-**[**continuously differentiable**]**\
+  
+$$\quad p \mapsto Df(p)$$ 
+  </center>
+    
+  <span style="color: RoyalBlue;">**if map $Df$ is continuous**</span> $\implies f:\Omega \to \mathbb{R}$ is <span style="color: green;">**continuously differentiable**<\span>
+  
+  
 **Definition - <span style="color: green;">**Higher derivative**</span>
-If $Df: \Omega \to \mathbb{R}^{mn}$ differentiable at $p$, denote
-derivative of $Df$ as $DDf(p): \mathbb{R}^{n} \to \mathbb{R}^{nm}$
+  
+If $Df: \Omega \to \mathbb{R}^{mn}$ differentiable at $p$, denote derivative of $Df$ as $DDf(p): \mathbb{R}^{n} \to \mathbb{R}^{nm}$
+  <center>
 $$DDf(p) \in L(\mathbb{R}^{n};\mathbb{R}^{nm}) = L(\mathbb{R}^{n};L(\mathbb{R}^{n};\mathbb{R}^{m}))$$
-Where $DDf(p)$ is a linear map
-$\mathcal{L} \in L(\mathbb{R}^{n};L(\mathbb{R}^{n};\mathbb{R}^{m}))$,
-satisfying:
+  </center>
+Where $DDf(p)$ is a linear map$\mathcal{L} \in L(\mathbb{R}^{n};L(\mathbb{R}^{n};\mathbb{R}^{m}))$, satisfying:
+  <center>
 $$\lim_{x\to p}\frac{||Df(x) - Df(p) - \mathcal{L}[x-p]||}{||x-p||} = 0$$
+  </center>
 $DDf(p)$ takes an $n$-vector to a $m\times n$ matrix\
   
 **Definition - <span style="color: green;">**Continuously differentiable**</span>
