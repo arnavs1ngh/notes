@@ -13,7 +13,7 @@ math: mathjax3
 
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
 
-<button class="btn js-toggle-dark-mode">Toggle Dark Mode</button>
+<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -21,10 +21,10 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Enable Dark Mode';
+    toggleDarkMode.textContent = 'Preview dark color scheme';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Enable Light Mode';
+    toggleDarkMode.textContent = 'Return to the light side';
   }
 });
 </script>
@@ -179,7 +179,7 @@ Suppose $A \subseteq \mathbb{R}^{n}$ open, with $p \in A$ and
 $f,g: A \to \mathbb{R}^{n}$
 
 <center>
-$$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$\
+$$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$
   </center>
 Then:
 
@@ -187,15 +187,14 @@ Then:
 
 2.  **$\lim_{x\to p}(f(x)g(x)) = FG$**
 
-3.  **If $G\neq 0$ then $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$**
+3.  If $G\neq 0$ then $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$
 
 ## <span style="color: white;">1.3</span> Derivative of a map of Euclidean Spaces
 
 ### <span style="color: white;">1.3.1</span> Derivative of a linear map
 
 **Lemma 1.5**\
-*The map $f:(a,b) \to \mathbb{R}$ differentiable at
-$p \in (a,b) \iff \exists$ map of the form $A_{\lambda}(x) = \lambda(x-p) + f(p)$ for some $\lambda \in \mathbb{R}$ s.t 
+*The map $f:(a,b) \to \mathbb{R}$ differentiable at $p \in (a,b) \iff \exists$ map of the form $A_{\lambda}(x) = \lambda(x-p) + f(p)$ for some $\lambda \in \mathbb{R}$ s.t*
   
   $$\lim_{x\to p}\frac{|f(x) - A_{\lambda}(x)|}{|x-p|} = 0$$
 
@@ -235,7 +234,9 @@ The derivative, <span style="color: RoyalBlue;">**if it exists**</span>, <span s
 ### <span style="color: white;">1.3.2</span> Chain Rule
 
 **Chain rule in $\mathbb{R}$**\
-$f,g: \mathbb{R}\to \mathbb{R}, g$ differentiable at $p$, $f$ differentiable at $g(p)$ Then $f \circ g$ differentiable at $p$ with
+$f,g: \mathbb{R}\to \mathbb{R}, g$ differentiable at $p$, $f$ differentiable at $g(p)$. 
+
+Then $f \circ g$ differentiable at $p$ with
   
   <center> 
     $$(f\circ g)'(p) = f'(g(p))g'(p)$$
@@ -261,7 +262,7 @@ Then $h = f \circ g: \Omega \to \mathbb{R}^{l}$, differentiable at $p$, s.t
     $$\frac{\partial f}{\partial v}(p) := \lim_{t\to 0}\frac{1}{t}[f(p+vt)-f(p)] = Df(p)[v]$$
   </center>
   
-**Definition ** - <span style="color: green;">**Partial derivatives**</span>
+**Definition** - <span style="color: green;">**Partial derivatives**</span>
   
 We can find any directional derivative at $p$, given we know the partial derivatives of $f$
   
@@ -347,7 +348,8 @@ $$\lim_{x\to p}\frac{||Df(x) - Df(p) - \mathcal{L}[x-p]||}{||x-p||} = 0$$
   </center>
 $DDf(p)$ takes an $n$-vector to a $m\times n$ matrix\
   
-**Definition - <span style="color: green;">**Continuously differentiable**</span>
+**Definition** - <span style="color: green;">**Continuously differentiable**</span>
+  
 *[**$f:\Omega \to \mathbb{R}^{m}$ is $k$-times dfferentiable with all
 continuous derivatives**]* $\implies$ [**$f$ is
 $k$-times continuously differentiable**]
