@@ -13,7 +13,7 @@ math: mathjax3
 
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
 
-<button class="btn js-toggle-dark-mode">Return to the light side</button>
+<button class="btn js-toggle-dark-mode">Light Mode</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -21,10 +21,10 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = 'Dark Mode';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = 'Light Mode';
   }
 });
 </script>
