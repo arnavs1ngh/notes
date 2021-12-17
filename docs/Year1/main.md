@@ -8,6 +8,8 @@ has_children: true
 
 # Year 1 Notes
 Here you can find all the notes for Year 1 Mathematics at Imperial College London.
+Coming soon
+{: .label .label-yellow }
 
 Let me know if there are any mistakes, they will be amended promptly. You can email me at <arnav.singh20@imperial.ac.uk> with the subject **Online Notes**
 
