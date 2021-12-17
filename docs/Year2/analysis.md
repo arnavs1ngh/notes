@@ -11,6 +11,13 @@ math: mathjax3
 {: .no_toc}
 **Term 1 Content**
 
+<head>
+  <style>
+ol.n {list-style-type: none;}
+  </style>
+</head>
+  
+
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
 
 <button class="btn js-toggle-dark-mode">Light Mode</button>
@@ -502,22 +509,29 @@ $g(x,y) = 0 $  for some  $(x,y) \in A \times B \iff y = g(x)$ for some  $x \in A
 with $g:A \to B$ continuously differentiable.\
 
 # <span style="color: white;">2</span> Metric and Topological Spaces
-
+`
 ## <span style="color: white;">2.1</span> Metric Spaces
 
 ### <span style="color: white;">2.1.1</span> Motivation + Definition
 
-**Definition 2.1 - [**Metric**]**\
+  **Definition 2.1 - <span style="color: green;">**Metric**</span>
 $X$ an arbitrary set\
 Metric a function $d: X \times X \to \mathbb{R}$ satisfying:
 
-1.  $\forall x,y \in X;\ d(x,y) \geq 0, d(x,y) = 0 \iff x = y$
+<ol class="n">
+<li>$\forall x,y \in X;\ d(x,y) \geq 0, d(x,y) = 0 \iff x = y$
+    ***(positivity)***</li>
+<li>$\forall x,y \in X;\ d(x,y) = d(y,x)$ ***(symmetry)***</li>
+<li>$\forall x,y,z \in X d(x,y) \leq d(x,z) + d(z,y)$ ***(triangle
+    inequality)***</li>
+</ol>
+<!-- 1.  $\forall x,y \in X;\ d(x,y) \geq 0, d(x,y) = 0 \iff x = y$
     ***(positivity)***
 
 2.  $\forall x,y \in X;\ d(x,y) = d(y,x)$ ***(symmetry)***
 
 3.  $\forall x,y,z \in X d(x,y) \leq d(x,z) + d(z,y)$ ***(triangle
-    inequality)***
+    inequality)*** -->
 
 **Definition 2.2 - [**Metric space**]**\
 Pair of a set and metric; $M = (X,d)$\
