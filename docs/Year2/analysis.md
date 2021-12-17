@@ -390,7 +390,7 @@ Multi-index $\alpha \in (\mathbb{N})^{n}, \alpha = \begin{pmatrix}
 \end{pmatrix}$
   
 We define
-$|a| = \sum_{i=1}^{n}\alpha_{i}$ and
+  <span style="color: green;">$|a| = \sum_{i=1}^{n}\alpha_{i}$</span> and
   <center>
   $$D^{\alpha}f := (D_{1})^{\alpha_{1}}(D_{2})^{\alpha_{2}}\dots(D_{n})^{\alpha_{n}}f,$$
   </center>
@@ -408,9 +408,9 @@ Also
 ***helpful examples***
 
 <center>
-  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$  
+  $D^{(0,3,0)}f(p) = D_{2}^{3}f(p)$<br>
   
-  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$  
+  $D^{(1,0,1)}f(p) = D_{1}D_{3}f(p)$<br>
   
   $(x,y,z)^{(2,1,5)} = x^{2}y^{1}z^{5}$
 
@@ -430,7 +430,7 @@ with $|\alpha| \leq k-1$ and remainder term
   <center>
 $$R_{k}(p,h) = \sum_{|\alpha| = k}\frac{h^{\alpha}}{\alpha!}D^{a}f(x)$$
   </center>
-for some $x$ s.t $0 < ||x-p||< ||h||$
+for some $x$ s.t $0 < ||x-p||< ||h||$ <br>
 Evidently
   <center>
   $$\lim_{h\to 0}\frac{|R_{k}(p,h)|}{||h||^{k-1}} = 0$$
@@ -465,9 +465,9 @@ $\exists (x',y') \in \Omega$ s.t
 $\implies \exists$ open sets $A, B \subset \mathbb{R}$ with
 $x' \in A, y' \in B$ with a map $f:A \to B$ s.t
   <center>
-$$(x,y) \in A \times B \text{ satisfies } F(x,y) = 0 \iff y = f(x) \text{for some } x \in A$$
+$(x,y) \in A \times B$  satisfies $F(x,y) = 0 \iff y = f(x)$ for some $x \in A$
   </center>
-with $f:A \to B$ continuously differentiable.\
+with $f:A \to B$ continuously differentiable.
   
 **Definition - $C^{1}-$diffeomorphism**\
 $\Omega,\Omega' \subset \mathbb{R}^{n}$ open.\
@@ -475,7 +475,7 @@ Say $f:\Omega \to \Omega'$ a $C^{1}$-diffeormorphism, if
 $f:\Omega \to \Omega'$ a and $\forall x \in \Omega, Df(x)$
 **invertible**\
 $\mathcal{D}$ the set of all $C^{1}-$diffeomorphisms from
-$\Omega \to \Omega$, a group under group law; composition.\
+$\Omega \to \Omega$, a group under group law; composition.
 
 ### <span style="color: white;">1.6.4</span> Implicit Function Theorem - General Form
 
@@ -488,12 +488,17 @@ $\exists (a,b) \in \Omega \times \Omega'$ s.t
 
 1.  $f(p) = 0$ and,
 
-2.  $m \times n$ matrix $$(D_{n+j}f^{i}(p)), \qquad 1 \leq i, j\leq m$$
-    invertible
+2.  $m \times n$ matrix
+  <center>
+  $$(D_{n+j}f^{i}(p)), \qquad 1 \leq i, j\leq m$$
+  </center>
+  invertible
 
-$\implies \exists$ open sets $A \subset \Omega, B \subset \Omega'$ with
-$a \in A, b \in B$ with a map $g:A \to B$ s.t
-$$g(x,y) = 0 \text{ for some } (x,y) \in A \times B \iff y = g(x) \text{for some } x \in A$$
+$\implies \exists$ open sets $A \subset \Omega, B \subset \Omega'$ with $a \in A, b \in B$ with a map $g:A \to B$ s.t
+  <center>
+$g(x,y) = 0 $  for some  $(x,y) \in A \times B \iff y = g(x)$ for some  $x \in A$
+  </center>
+   
 with $g:A \to B$ continuously differentiable.\
 
 # <span style="color: white;">2</span> Metric and Topological Spaces
