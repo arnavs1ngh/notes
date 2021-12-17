@@ -77,8 +77,8 @@ $$||x|| = \sqrt{<x,x>}$$
 
 Having the following properties:
   
-1. $\forall x \in \mathbb{R}^{n}, \lvert\lvert x\rvert\rvert \geq 0, \lvert\lvert x\rvert\rvert \iff x = \Vec{0}$
-2. $\forall \lambdax \in \mathbb{R}, x\in \mathbb{R}^{n} \lvert\lvert \lambda x\rvert\rvert = \lvert\lambda\rvert\lvert\lvert x\rvert\rvert$
+1. $\forall x \in \mathbb{R}^{n}, \lvert\lvert x\rvert\rvert \geq 0, \lvert\lvert x\rvert\rvert \iff x = \vec{0}$
+2. $\forall \lambda x \in \mathbb{R}, x\in \mathbb{R}^{n} \lvert\lvert \lambda x\rvert\rvert = \lvert\lambda\rvert\lvert\lvert x\rvert\rvert$
 3. $\forall x, y \in \mathbb{R}^{n}, \lvert\lvert x+y\rvert\rvert \leq \lvert\lvert x\rvert\rvert + \lvert\lvert y\rvert\rvert$ *(Triangle inequality)*
   
 
