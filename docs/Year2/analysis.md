@@ -13,7 +13,7 @@ math: mathjax3
 
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
 
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">Return to the light side</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -333,7 +333,7 @@ $$Df: \Omega \to L(R^{n};R^{m}) = \Omega \to \mathbb{R}^{mn}$$
 $$\quad p \mapsto Df(p)$$ 
   </center>
     
-  <span style="color: RoyalBlue;">**if map $Df$ is continuous**</span> $\implies f:\Omega \to \mathbb{R}$ is <span style="color: green;">**continuously differentiable**<\span>
+  <span style="color: RoyalBlue;">**if map $Df$ is continuous**</span> $\implies f:\Omega \to \mathbb{R}$ is <span style="color: green;">**continuously differentiable**</span>
   
   
 **Definition - <span style="color: green;">**Higher derivative**</span>
