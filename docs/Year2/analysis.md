@@ -13,6 +13,8 @@ math: mathjax3
 
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
 
+<button class="btn js-toggle-dark-mode">Toggle Dark Mode</button>
+
 <details open markdown="block">
   <summary>
     Table of contents
