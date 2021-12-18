@@ -36,7 +36,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 });
 </script>
 
-<details open markdown="block">
+<details closed markdown="block">
   <summary>
     Table of contents
   </summary>
