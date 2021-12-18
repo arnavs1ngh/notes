@@ -13,7 +13,23 @@ math: mathjax3
 
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Linear Algebra 2 - Concise Notes - Term 1</a>
 
-<details open markdown="block">
+<button class="btn js-toggle-dark-mode">Light Mode</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Dark Mode';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Light Mode';
+  }
+});
+</script>
+
+<details closed markdown="block">
   <summary>
     Table of contents
   </summary>
@@ -24,17 +40,17 @@ math: mathjax3
 
 ---
 
-**Colour Code** - [**Definitions**]{style="color: ForestGreen"} are
-[**green**]{style="color: ForestGreen"} in these notes,
-[**Consequences**]{style="color: red"} are [**red**]{style="color: red"}
-and [**Causes**]{style="color: blue"} are
-[**blue**]{style="color: blue"}\
+**Colour Code** - <span style="color: green;">**Definition**</span> are
+<span style="color: green;">**green**</span> in these notes,
+<span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
+and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: blue-000;">**blue**</span>
 
 *Content from MATH40003 assumed to be known.*
 
-# Prelim
+# <span style="color: white;">1</span> Prelim
 
-**Definition - [**Similair Matrices**]{style="color: ForestGreen"}**\
+**Definition** - <span style="color: green;">**Similair Matrices**</span>
+
 $A,B \in M_{n}(F)$ similair $(A \sim B)$ if $\exists$ invertible
 $P \in M_{n}(F)$ s.t $P^{-1}AP = B$\
 $\sim$ is an equivalence relation.
@@ -49,7 +65,7 @@ $\sim$ is an equivalence relation.
 
 -   Same rank Same Trace
 
-**Definition - [**Companion Matrix**]{style="color: ForestGreen"}**\
+**Definition - [**Companion Matrix**]**\
 Let $p(x)$ a monic polynomial of degree $r$;
 $p(x) = x^{r} + a_{r-1}x^{r-1} + \dots + a_{0}$.\
 Companion matrix of $p(x)$; $$C(p(x)) =
@@ -62,7 +78,7 @@ Companion matrix of $p(x)$; $$C(p(x)) =
 \end{pmatrix}$$
 
 ***Geometry***\
-**Definition - [**Dot Product**]{style="color: ForestGreen"}**\
+**Definition - [**Dot Product**]**\
 $u = (u_{1},\dots,u_{n})$ and $v = (v_{1},\dots,v{n})$\
 $$u\cdot v = \sum_{i=1}^{n}u_{i}v_{i}$$ Length of
 $u, ||u|| = \sqrt{u\cdot u}$\
@@ -80,18 +96,18 @@ Distance between $u$ and $v = ||u-v||$
 
 -   $u \cdot v > 0, \forall u,v$
 
-# Algebraic and Geometric multiplicities of eigenvalues
+# <span style="color: white;">2</span> Algebraic and Geometric multiplicities of eigenvalues
 
 **Definition - [**Multiplicity of
-eigenvalues**]{style="color: ForestGreen"}**\
+eigenvalues**]**\
 For $T:V \to V$ a linear map with char. poly. $p(x)$ with roots
-$\lambda$, Then $\exists$ [**$a(\lambda)$**]{style="color: ForestGreen"}
+$\lambda$, Then $\exists$ [**$a(\lambda)$**]
 $\in \mathbb{N}$ the [**algebraic
-multiplicity**]{style="color: ForestGreen"} of $\lambda$ s.t
+multiplicity**] of $\lambda$ s.t
 $$p(x) = (x-\lambda)^{a(\lambda)}q(x)$$ where $\lambda$ not a root of
 $q(x)$\
 [**Geometric multiplicity
-$g(\lambda) = dimE_{\lambda}$**]{style="color: ForestGreen"}, for
+$g(\lambda) = dimE_{\lambda}$**], for
 $E_{\lambda}$ the eigenspace of $T$\
 **Theorem 3.2**\
 $dim V = n$, Let $T: V\to V$ a linear map with finite distinct
@@ -107,21 +123,21 @@ $(\sum_{i=1}^{r}a(\lambda_{i}) = n$. Following are equivalent
 -   $g(\lambda_{i}) = a(\lambda_{i}) \forall i$ (This can be used to
     test for diagonalisability.)
 
-# Direct Sums
+# <span style="color: white;">4</span>Direct Sums
 
 **Define**\
 For $\{U_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. Sum of
 these subspaces is:
 $$U_{1} + \dots + U_{k} = \{u_{1}+\dots+u_{k}:u_{i} \in U_{i}, \forall i\}$$
-**Definition - [**Direct Sums**]{style="color: ForestGreen"}**\
+**Definition - [**Direct Sums**]**\
 $V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space
-$V$. [**$V$ a direct sum of $\{V_{i}\}$**]{style="color: ForestGreen"}
+$V$. [**$V$ a direct sum of $\{V_{i}\}$**]
 if: $$V = V_{1} \oplus \dots \oplus V_{k}$$ If $\forall v \in V$ can be
 expressed as $v = v_{1} + \dots + v_{k}$ for unique vectors
 $v_{i} \in V_{i}$\
 *Corollary*\
 $$V = V_{1} \oplus \dots \oplus V_{k} \iff  dimV =\sum_{i=1}^{k}dimV_{i} \text{ and if $B_{i}$ a basis for $V_{i}$}, B = \bigcup_{i}B_{i} \text{ is a basis for } V$$
-**Definition -** [**Invariant subspaces**]{style="color: ForestGreen"}\
+**Definition -** [**Invariant subspaces**]\
 $T: V\to V$ a linear map, $W$ a subspace of $V$.\
 
 ::: center
@@ -136,16 +152,16 @@ A_{1} & &\\
  & & A_{k}
 \end{pmatrix}$$
 
-# Quotient Spaces
+# <span style="color: white;">5</span> Quotient Spaces
 
-**Definition -** [**Cosets**]{style="color: ForestGreen"} $V$ a vector
+**Definition -** [**Cosets**] $V$ a vector
 space over $F$, with $W \leq V$ a subspace.\
 
 ::: center
 Cosets $W + v$ for $v\in V$ $W + v:= \{w+v:w \in W\}$
 :::
 
-[**Quotient Space**]{style="color: ForestGreen"}\
+[**Quotient Space**]\
 Define $V/W$ as a vector space of vectors $W + v$ over $F$
 
 -   Addition; $(W +v_{1}) + (W+ v_{2}) = W+v_{1}+v_{2}$
@@ -156,12 +172,12 @@ Can verify this using vector space axioms.\
 *Dimension of $V/W$*\
 $$dimV/W = dimV - dim W$$
 
-**Definition -** [**Quotient Map**]{style="color: ForestGreen"}\
+**Definition -** [**Quotient Map**]\
 $T: V \to V$ a linear map, $W$ a $T$-invariant subspace of V. Quotient
 map: $\bar{T}: V/W: \to V/W$ such that
 $$\bar{T}(W+v) = W + T(v), \qquad \forall v \in V$$
 
-# Triangularisation
+# <span style="color: white;">6</span> Triangularisation
 
 *Lemma - Diagonal Matrices*\
 $$A = 
@@ -195,39 +211,39 @@ Where $\chi(T) = \prod_{i=1}^{n}(x-\lambda_{i})$, where
 $\lambda_{i} \in F \ \forall i$ $\implies \exists$ basis $B$ of $V$ s.t
 $[T]_{B}$ upper triangular
 
-# The Cayley-Hamilton Theorem
+# <span style="color: white;">7</span> The Cayley-Hamilton Theorem
 
 **Theorem. 7.1 - *(Cayley-Hamilton Theorem)***\
 $V$ a finite dimensional vector space over $F$. $T: V \to V$ a linear
 map with char. poly. $p(x)$ $$p(T) = 0$$
 
-# Polynomials
+# <span style="color: white;">8</span> Polynomials
 
 **Definition -** [**Polynomials over a
-field**]{style="color: ForestGreen"}\
+field**]\
 $F$ a field,$p(x)$ over $F$, for
 $p(x) = \sum_{i}a_{i}x^{i}, F[x] = \{ p(x) : a_{i} \in F\}$\
-[**Degree of polynomial**]{style="color: ForestGreen"}\
+[**Degree of polynomial**]\
 $deg(p(x)) =$ the highest power of $x$ in $p(x)$\
-[**Euclidean Algorithm**]{style="color: ForestGreen"}\
+[**Euclidean Algorithm**]\
 $f,g \in F[x]$ with $deg(g) \geq 1$, Then $\exists q,r \in F[x] s.t$
 $$f = gq +r$$ for either $r = 0$ or $deg(r) < deg(g)$
 
 **Definition -** [**Greatest Common Divisor (GCD) of
-polynomials**]{style="color: ForestGreen"}\
+polynomials**]\
 $f,g \in F[x] \backslash \{0\}$, [**Say $d\in F[x]$ the gcd of $f,g$
-if:**]{style="color: red"}
+if:**]
 
-1.  [**$d|f$ and $d|g$**]{style="color: blue"}
+1.  [**$d|f$ and $d|g$**]
 
 2.  [**if $e(x) \in F[x]$ and $e|f$ and $e|g$ Then
-    $e|d$**]{style="color: blue"}
+    $e|d$**]
 
 Say $f,g$ are co-prime if $gcd(f,g) = 1$\
 ***Corollary***\
 $d = gcd(f,g) \implies \exists r,s \in F[x] \text{ s.t } d = rf + sg$\
 **Definiton -** [**Irreducible
-polynomials**]{style="color: ForestGreen"}\
+polynomials**]\
 $p(x) \in F[x]$ irreducible over $F$ if $deg(p) \geq 1$ and $p$ not
 factorisable over $F$ as a product of $\{f_{i}\} \in F$ s.t
 $deg(f_{i} \leq deg(p)$\
@@ -239,9 +255,9 @@ $f(x) \in F[x]$ s.t $deg(f) \geq 1$ $$f = p_{1}\dots p_{r}$$ where each
 $p_{i} \in F[x]$ irreducible. **Factorisation of $f$ is unique up to
 scalar multiplication**\
 
-# The minimal polynomial of a linear map
+# <span style="color: white;">9</span> The minimal polynomial of a linear map
 
-**Definition -**[**Minimal polynomial**]{style="color: ForestGreen"}\
+**Definition -**[**Minimal polynomial**]\
 Say $m(x) \in F[x]$ a minimal polynomial for $T: V \to V$ if
 
 1.  $m(T) = 0$
@@ -271,7 +287,7 @@ $c_{T}(x) \implies p(x)|m_{T}(x)$ *Corollaries*\
 
 -   $m_{T_{W}}(x)$ and $m_{\bar{T}}(x)$ both divide $m_{T}(x)$
 
-# Primary Decomposition
+# <span style="color: white;">10</span> Primary Decomposition
 
 **Theorem 10.1 - *(Primary Decomposition Theorem)***\
 $V$ a finite dimensional vector space over $F$, $T:V\to V$ a linear map
@@ -282,7 +298,7 @@ distinct irreducible polynomials in $F[x]$\
 For $1 \leq i \leq k$, define: $$V_{i} = ker(f_{i}(T)^{n_{i}})$$ Then
 
 1.  $V = V_{1} \oplus \dots \oplus V_{k}$ *(Call this the [**primary
-    decomposition**]{style="color: ForestGreen"} of $V$ w.r.t $T$)*
+    decomposition**] of $V$ w.r.t $T$)*
 
 2.  each $V_{i}$ is $T$-invariant
 
@@ -294,7 +310,7 @@ $$\implies m_{T}(x) = \prod_{i=1}^{k}(x-\lambda_{i})^{n_{i}}$$ With
 $\lambda_{i}$ distinct eigenvalues of $T$ and
 $V_{i} = ker(T-\lambda_{i}I)^{n_{i}}$\
 We call $V_{i}$ the [**generalised $\lambda_{i}$-eigenspace of
-T**]{style="color: ForestGreen"}\
+T**]\
 ***Corollary***\
 A linear map $T:V \to V$ diagonalisable
 $\iff m_{T}(x) = \prod_{i=1}^{k}(x-\lambda_{i})$ a product of distinct
@@ -309,9 +325,9 @@ polynomials s.t $g_{1}(T)g_{2}(T) = 0$
 2.  Suppose
     $m_{T}(x) = g_{1}(x)g_{2}(x) \implies m_{T_{V_{i}}}(x) = g_{i}(x), i = 1,2$
 
-# Jordan Canonical Form
+# <span style="color: white;">11</span> Jordan Canonical Form
 
-**Definition -** [**Jordan Block**]{style="color: ForestGreen"}\
+**Definition -** [**Jordan Block**]\
 $F$ a field and let $\lambda \in F$. Define $n\times n$ matrix:
 $$J_{n}(\lambda) =
  \begin{pmatrix}
@@ -360,7 +376,7 @@ Then
 
     ::: center
     [**This is the Jordan Canonical Form (JCF) of
-    $A$**]{style="color: ForestGreen"}
+    $A$**]
     :::
 
 2.  Matrix $J$ from above, is uniquely determined by $A$ up to order of
@@ -392,7 +408,7 @@ $J$ as above, $\lambda$ an eigenvalue;
 $T: V \to V$ a linear map s.t $c_{T}(x)$ a product of linear factors
 $\implies \exists$ basis $B$ of $V$ s.t $[T]_{B}$ a JCF matrix
 
-**Definition.- [**Nilpotent Matrix**]{style="color: ForestGreen"}**\
+**Definition.- [**Nilpotent Matrix**]**\
 $A^{k} = 0$ for some $k \in \mathbb{N}$
 
 ::: thm
@@ -429,9 +445,9 @@ Let $S_{i} = T_{V_i} - \lambda_{i}I$ so each $S_{i}$ nilpotent.
 
 -   Repeat successively finding Jordan bases of $S^{r-2},\dots,S(V),V$
 
-# Cyclic Decomposition & Rational Canonical Form
+# <span style="color: white;">12</span> Cyclic Decomposition & Rational Canonical Form
 
-**Definition - [**Cyclic Subspaces**]{style="color: ForestGreen"}**\
+**Definition - [**Cyclic Subspaces**]**\
 $V$ a finite dimensional vector space over $F$, and $T:V \to V$ a linear
 map.\
 Let $0 \neq v \in V$ and define $$\begin{aligned}
@@ -441,7 +457,7 @@ $T$-cyclic subspace of $V$ generated by $v$.\
 $Z(v,T)$ is $T-$invariant. Write $T_{v}$
 
 **Definition - [**$T$-annihilator of $v$ and
-$Z(v,T)$**]{style="color: ForestGreen"}**\
+$Z(v,T)$**]**\
 Considering, $v,T(v),T^{2}(V),\dots$ with $T^{k}(v)$ first vector in
 span of previous ones
 $$\implies T^{k}(v) = -a_{0}v - a_{1}T(v) - \dots - a_{k-1}T(v)$$
@@ -499,11 +515,11 @@ $\{f_{i}(x)\}$ all distinct irreducible polynomials in $F[x]$\
 enough to find;
 $rank(f_{i}(T)^{r}) \forall i \in \{1,\dots,t \}, 1\leq r \leq k_{i}$
 
-# The Dual Space
+# <span style="color: white;">13</span> The Dual Space
 
-**Definition - [**Linear functional**]{style="color: ForestGreen"}**\
+**Definition - [**Linear functional**]**\
 $V$ a vector space over $F$\
-A [**linear functional**]{style="color: ForestGreen"} on $V$ a linear
+A [**linear functional**] on $V$ a linear
 map $\phi: V \to F$ s.t
 $$\phi(\alpha v_{1} + \beta v_{2}) = \alpha\phi(v_1) + \beta\phi(v_2) \qquad \forall v_i \in V, \forall \alpha,\beta \in F$$
 *Operations of linear functionals*
@@ -529,11 +545,11 @@ $\forall i$ define $\phi_i \in V^*$ by $$\phi_i(v_{j}) = \delta_{ij} =
         0 & i \neq j\\
    \end{cases}$$
 $\implies \phi_i(\sum \alpha_{j}v_{j}) = \alpha_{i} \implies \{\phi_1,\dots,\phi_n\}$
-a basis of $V^*$ the [**dual basis**]{style="color: ForestGreen"} of
+a basis of $V^*$ the [**dual basis**] of
 $B$\
 $dim V^* = n = dim V$
 
-**Definition - [**Annihilators**]{style="color: ForestGreen"}**\
+**Definition - [**Annihilators**]**\
 $V$ a finite dimensional vector space over $F$ and $V^*$ the dual space.
 $X \subset V.$ Say annihilator $X^0 of X:$
 $$X^0 = \{ \phi \in V^* : \phi(x) = 0 \forall x\in X\}$$ $X^0$ a
@@ -542,9 +558,9 @@ subspace of $V^*$
 **Proposition 13.2.**\
 $W$ subspace of $V \implies dim W^0 = dim V - dim W$
 
-# Inner Product Spaces
+# <span style="color: white;">15</span> Inner Product Spaces
 
-**Definition - [**Inner Product**]{style="color: ForestGreen"}**\
+**Definition - [**Inner Product**]**\
 $F = \mathbb{R}$ or $\mathbb{C}$. $V$ a vector space over $F$\
 Inner product on $V$ a map $(u,v): V \times V \to F$ satisfying
 
@@ -556,7 +572,7 @@ Inner product on $V$ a map $(u,v): V \times V \to F$ satisfying
 
 $\forall v_i,v,w \in V$ and $\lamdba_i \in F$. Call such a vector space
 $V$ with inner product $(,)$ an [**inner product
-space**]{style="color: ForestGreen"}.\
+space**].\
 ***Properties of Inner Product Space***
 
 -   right-linear for $F = \mathbb{R}$;
@@ -579,7 +595,7 @@ Defining $a_{ij} = (v_i,v_j)$. So we have $a_{ji} = \bar{a_{ij}}$
 2.  $\mathbb{C}\implies A$ hermitian
 
 $v,w \in V \implies (v,w) = [v]_{B}^{T}A[\bar{w}]_{B}$\
-**Definition - [**Positive definite**]{style="color: ForestGreen"}**\
+**Definition - [**Positive definite**]**\
 Hermitian matrix $A$ positive-definite if
 $x^TA\bar{x} > 0\ \forall \text{ non-zero } x \in F^{n}$\
 **Proposition 14.1**\
@@ -596,7 +612,7 @@ Let $V$ an inner product space over
 $F = \mathbb{R}\text{ or }\mathbb{C}$\
 $v \in V$ define $$f_v: V \to F$$ $$f_v(w) = (w,v)$$ $\implies f_v$
 linear functional $\in V*$\
-**Definition - [**$\bar{V}$**]{style="color: ForestGreen"}** [V
+**Definition - [**$\bar{V}$**]** [V
 bar]{style="color: white"}\
 $\bar{V}$ has same vectors as $V$
 
@@ -608,10 +624,10 @@ $\bar{V}$ has same vectors as $V$
 $V$ finite-dimensional. Define $\pi : \bar{V} \to V*$ as
 $$\pi(v) = f_v \quad \forall v \in V$$ $\implies \pi$ a vector space
 isomorphism\
-**Definition - [**Orthogonality**]{style="color: ForestGreen"}**\
+**Definition - [**Orthogonality**]**\
 $\{v_1,\dots,v_k\}$ orthogonal if $(v_i,v_j) = 0\ \forall i,j\ i\neq j$\
 Orthonormal if also $||v_i|| = 1\ \forall i$\
-**Definition - [**$W^\perp$**]{style="color: ForestGreen"}** [W
+**Definition - [**$W^\perp$**]** [W
 perp]{style="color: white"}\
 $W \subseteq V$ define
 $$W^{\perp} = \{u \in V: (u,w) = 0\ \forall w \in W\}$$
@@ -647,12 +663,12 @@ $V$ a finite dimensional inner product space
 
 **Projections**\
 $V$ an inner product space. $v,w \in V\backslash 0$\
-[**Projection of $v$ along $w$**]{style="color: ForestGreen"} defined to
+[**Projection of $v$ along $w$**] defined to
 be $\lamdba w$ for $\lamdba \frac{(v,w)}{(w,w}$.\
 For $W \leq V, v\in V$\
 define projection of $V$ along $W$ as follows: $$V = W \oplus W^\perp$$
 $$v = w + w'\quad \text{ for unique } w \in W, w' \in W^\perp$$ Define
-[**orthogonal projection**]{style="color: ForestGreen"} map along $W$.
+[**orthogonal projection**] map along $W$.
 $$\pi_W: V \to W$$ $$\pi_W(v) = w$$ **Proposition 14.7.**\
 $V$ an inner product space. $W \leq V$ with $\pi_W$ orthogonal
 projection map along $W$.
@@ -691,21 +707,21 @@ $$f_i = \sum_{j=1}^{n}p_{ji}e_{j} \implies P^{T}\bar{P} = I$$
     *Unitary Group*;
     $U(n,\mathbb{C}) = \{P \in M_{n}(\mathbb{C}) : P^{T}\bar{P} = I$
 
-# Linear maps on inner product spaces
+# <span style="color: white;">15</span> Linear maps on inner product spaces
 
 **Proposition 15.1.**\
 $V$ a finite dimensional inner product space. $T: V\to V$ a linear map\
 $\implies \exists!$ linear map $T^*:V \to V$ s.t $\forall u,v \in V$
 $$(T(u),v) = (u,T^*(v))$$ Say $T^*$ - [**adjoint of
-$T$**]{style="color: ForestGreen"}\
-$T$ [**self-adjoint**]{style="color: ForestGreen"} if $T = T^*$\
+$T$**]\
+$T$ [**self-adjoint**] if $T = T^*$\
 **Proposition 15.2.**\
 $V$ an inner product space with orthonormal basis
 $E = \{v_1,\dots,v_n\}$\
 $T:V \to V$ a linear map, $A = [T]_{E}$\
 $\implies [T^*]_{E} = \bar{A}^T$ if field $\mathbb{R}\implies A$
 symmetric, if field $\mathbb{C}\implies A$ hermitian\
-**Theorem 15.3. [**Spectral Theorem**]{style="color: red"}**\
+**Theorem 15.3. [**Spectral Theorem**]**\
 $V$ an inner product space. $T: V \to V$ a self-adjoint linear map
 $\implies V$ has orthonormal basis of $T$-eigenvectors.\
 **Corollary 15.4.**
@@ -726,11 +742,11 @@ $T: V\to V$ self-adjoint
 3.  If $W \subseteq V$, $T-$invariant $\implies W^\perp$ is also
     $T-$invariant
 
-# Bilinear & Quadratic Forms
+# <span style="color: white;">16</span> Bilinear & Quadratic Forms
 
-**Definition. - [**Bi-linear form**]{style="color: ForestGreen"}**\
+**Definition. - [**Bi-linear form**]**\
 $V$ a vector space over $F$\
-[**Bi-linear form**]{style="color: ForestGreen"} on $V$ a map;
+[**Bi-linear form**] on $V$ a map;
 $(,): V\times V \to  F$ which is both right and left-linear.\
 i.e $\forall \alpha,\beta \in F$
 
@@ -747,18 +763,18 @@ $B = \{v_1,\dots,v_n\}$\
 $A$ matrix of $(,)$ w.r.t $B$, So
 $(a_{ij}) = (v_i,v_j) \implies \forall u,v \in V\ (u,v) = [u]_{B}^{T}A[v]_B$\
 **Definition - [**Symmetric &
-Skew-symmetric**]{style="color: ForestGreen"}**\
+Skew-symmetric**]**\
 Bilinear form $(,)$ on V is
 
--   [**Symmetric**]{style="color: ForestGreen"} if
+-   [**Symmetric**] if
     $(u,v) = (v,u)\ \forall u,v \in V$
 
--   [**Skew symmetric**]{style="color: ForestGreen"} if
+-   [**Skew symmetric**] if
     $(v,u) = -(u,v)\ \forall u,v \in V$
 
 \
 **Definition - [**Characteristic of Field
-$F$**]{style="color: ForestGreen"}**\
+$F$**]**\
 $char$ of field $F$ is the smallest $n \in \mathbb{N}_+$ s.t $n = 0$. if
 no such $n$ exists say $char(F) = 0$\
 **Lemma 16.1.**\
@@ -772,8 +788,8 @@ $$(v,v) = -(v,v) \implies 2(v,v) = 0 \iff 2 = 0 \text{ or } (v,v) = 0$$
 bilinear form $(,)$ has property that $$(v,w) = 0 \iff (w,v) = 0$$
 $$\iff$$ $$(,) \text{ skew-symmetric or symmetric}$$
 
-**Definition - [**Non-degenerate**]{style="color: ForestGreen"}**\
-$(,)$ on $V$ [**non-degenerate**]{style="color: ForestGreen"} if
+**Definition - [**Non-degenerate**]**\
+$(,)$ on $V$ [**non-degenerate**] if
 $V^\perp = \{0\}$. Where $V^\perp$ defined analogously w.r.t bilinear
 forms. $$\forall u \in V,\ (u,v) = 0 \forall v \in V \implies u = 0$$
 $V^\perp = \{0\} \iff$ matrix of $(,)$ w.r.t a basis is invertible.
@@ -793,10 +809,10 @@ vector space $V$.
 ***Bases***
 
 **Definition**\
-$A,B \in M_n(F)$ [**congruent**]{style="color: ForestGreen"} if
+$A,B \in M_n(F)$ [**congruent**] if
 $\exists$ invertible $P \in M_n(F)$ s.t $$B = P^TAP$$ $A,B$ congruent
 $\implies$ bilinear forms $(u,v)_{1} = u^TAv$ and $(u,v)_{2} = u^TBv$
-are [**equivalent**]{style="color: ForestGreen"}\
+are [**equivalent**]\
 **Skew-symmetric bilinear forms**\
 **Theorem 16.4.**\
 $V$ a finite dimensional vector space over $F$ where $char(F) \neq 2$\
@@ -840,7 +856,7 @@ $\implies A$ congruent to diagonal matrix
 ***Quadratic Form***\
 Assume from now $F$ s.t $char(F) \neq 2$, $V$ a finite dimensional
 vector space over $F$\
-**Definition - [**Quadratic form**]{style="color: ForestGreen"}**\
+**Definition - [**Quadratic form**]**\
 Quadratic form on $V$ a map $Q: V \to F$ of form
 $$Q(v) = (v,v)\qquad \forall v\in V$$ $(,)$ a symmetric bilinear form on
 $V$\
@@ -860,13 +876,13 @@ $Q$ non-degenerate if $(,)$ non-degenerate.\
 
 ***Change of variables***\
 **Definition - [**Equivalent Quadratic
-Forms**]{style="color: ForestGreen"}**\
+Forms**]**\
 $V = F^{n},\ Q: V \to F$\
 $Q(x) = x^TAx\ \forall x \in V, A$ symmetric\
 Take $y = (y_1,\dots,y_n)^T$ s.t $x = Py$ for $P$ invertible\
 $\implies Q(x) = y^TP^TAPy = Q'(y)$\
 If such a $P$ exists we say $Q,Q'$
-[**equivalent**]{style="color: ForestGreen"}
+[**equivalent**]
 
 *note:*\
 Congruent matrices $A, P^TAP$\
@@ -892,14 +908,14 @@ $V = F^{n}$, $Q:V\to F$ non-degenerate quadratic form
 3.  if $F = \mathbb{Q}\implies \exists$ infinitely many inequivalent
     non-degenerate quadratic forms on $\mathbb{Q}^{n}$
 
-**Definition - [**isometry**]{style="color: ForestGreen"}**\
+**Definition - [**isometry**]**\
 $f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on
 finite dimensional vector space $V$\
-[**Isometry**]{style="color: ForestGreen"} of $f$ a linear map
+[**Isometry**] of $f$ a linear map
 $T:V\to V$ s.t $$(T(u),T(v)) = (u,v)\quad \forall u,v \in V$$ $T$
 invertible since $f$ non-degenerate.
 
-**Definition - [**Isometry Group**]{style="color: ForestGreen"}**\
+**Definition - [**Isometry Group**]**\
 $$I(V,f) = \{T: T \text{ an isometry }\}$$ forms a subgroup of general
 linear group $GL(V)$\
 ***Equivalently;***\
@@ -909,10 +925,10 @@ $$\implies I(v,f) \cong \{X \in GL(n,F) : X^TAX = A\}$$
 
 -   $f$ skew-symmetric $\implies$ there is only one form (up to
     equivalence) so we get one isometry group; Classical [***symplectic
-    group***]{style="color: ForestGreen"} Sp$(V,f)$
+    group***] Sp$(V,f)$
 
 -   $f$ symmetric $\implies$ there are many forms, forming the isometry
     groups; the classical [***orthogonal
-    groups***]{style="color: ForestGreen"} $O(V,f)$
+    groups***] $O(V,f)$
 
 
