@@ -506,7 +506,7 @@ $\implies \exists$ open sets $A \subset \Omega, B \subset \Omega'$ with $a \in A
 $g(x,y) = 0 $  for some  $(x,y) \in A \times B \iff y = g(x)$ for some  $x \in A$
   </center>
    
-with $g:A \to B$ continuously differentiable.\
+with $g:A \to B$ continuously differentiable.
 
 # <span style="color: white;">2</span> Metric and Topological Spaces
   
@@ -681,7 +681,7 @@ $(X,d)$ a metric space, $V \subset X,\ x \in X$
     $$\forall \delta > 0, B_{\delta} \cap V \neq \emptyset \text{ and } B_{\delta}(x)\backslash V \neq \emptyset$$
       </center>
       
-    1.  <span style="color: green;">**Boundary of $V$; $\partial V$ - **</span> $\{v \in X : v \text{ a boundary point of } V\}$
+    1.  **<span style="color: green;">Boundary of $V$; $\partial V$ -</span>** $\{v \in X : v \text{ a boundary point of } V\}$
 
 4.  $x$ an <span style="color: green;">**isolated point**</span> of $V$ if
       <center>
