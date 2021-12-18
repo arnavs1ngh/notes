@@ -720,7 +720,7 @@ $f: X \to Y$ a map
     $x$
 
  
-**Theorem 2**.
+**Theorem 2.12**.
 
 
 $(A_{1},d_1),(A_2,d_2)$ metric spaces\
@@ -730,49 +730,43 @@ $f: A_1 \to A_2$ continuous $\iff$ pre-image of any closed set in $A_2$
 is a closed set in $A_1$
 
  
-**Theorem 3**.
-
+**Theorem 2.13**.
 
 $(X,d_X), (Y,d_Y)$ metric spaces\
 $f: X \to Y$ a map;
 $$f \text{ continuous at } x \in X \iff \text{ for any sequence } (x_n) \to x;\ f(x_n) \to f(x) \text{ in } (Y,d_Y)$$\
 
  
-**Definition 13**. [**Homeomorphism**]
-
+**Definition 2.15**. <span style="color: green;">**Homeomorphism**</span>
 
 $(X_1,d_1),(X_2,d_2)$ metric spaces.
 
-1.  $f: X_1 \to X_2$ a [**homeomorphism** ]
-    if
+1.  $f: X_1 \to X_2$ a <span style="color: green;">**homeomorphism**</span> if
 
     -   $f: X_1 \to X_2$ a bijection
 
     -   $f: X_1 \to X_2$ and $f^{-1}:X_2 \to X_1$ continuous
 
-2.  Say $(X_1,d_1),(X_2,d_2)$
-    [**homeomorphic**] if $\exists$
-    homeomorphism from $X_1$ to $X_2$
+2.  Say $(X_1,d_1),(X_2,d_2)$ <span style="color: green;">**homeomorphic**</span> if $\exists$ homeomorphism from $X_1$ to $X_2$
 
  
-**Definition 14**.
-
+**Definition 2.16**.
 
 $(X,d_X),(Y,d_Y)$ metric spaces with $f:X\to Y$\
 
-1.  $f$ is [**Lipschitz**] if $\exists$
-    constant $M > 0$ s.t
-    $\forall x_1,x_2 \in X, d_Y(f(x_1),f(x_2)) \leq M \cdot d_X(x_1,x_2)$
+1.  $f$ is [**Lipschitz**] if $\exists$ constant $M > 0$ s.t $\forall x_1,x_2 \in X, d_Y(f(x_1),f(x_2)) \leq M \cdot d_X(x_1,x_2)$
 
-2.  $f$ is [**bi-Lipschitz**] if $\exists$
-    constants $M_1,M_2 > 0$ s.t $\forall x_1,x_2 \in X$
-    $$M_2 \cdot d_X(x_1,x_2) \leq d_Y(f(x_1),f(x_2)) \leq M_1 \cdot d_X(x_1,x_2)$$
+2.  $f$ is [**bi-Lipschitz**] if $\exists$ constants $M_1,M_2 > 0$ s.t $\forall x_1,x_2 \in X$
+    <center>
+      $$M_2 \cdot d_X(x_1,x_2) \leq d_Y(f(x_1),f(x_2)) \leq M_1 \cdot d_X(x_1,x_2)$$
+    </center>  
     ***Corollary;** any bi-Lipschitz map is injective*
 
-3.  $f$ an [**isometry/distance
-    preserving**] if
-    $\forall x_1,x_2 \in X;$ $$d_Y(f(x_1),f(x_2)) = d_X(x_1,x_2)$$
-
+3.  $f$ an <span style="color: green;">**isometry/distance preserving**</span> if $\forall x_1,x_2 \in X;$ 
+      <center>
+      $$d_Y(f(x_1),f(x_2)) = d_X(x_1,x_2)$$
+      </center>
+      
 ## <span style="color: white;">2.2</span> Topological Spaces
 
 ### <span style="color: white;">2.2.2</span> Topology on a set
@@ -782,7 +776,7 @@ $(X,d_X),(Y,d_Y)$ metric spaces with $f:X\to Y$\
 
 
 $A$ an arbitrary set. $\tau$ a collection of subsets of $A$\
-$\tau$ a [**topology**] on $A$ if:
+$\tau$ a <span style="color: green;">**topology**</span> on $A$ if:
 
 1.  $\emptyset \in \tau$ and $A \in \tau$
 
@@ -791,23 +785,18 @@ $\tau$ a [**topology**] on $A$ if:
 
 3.  $G_{1},G_{2},\dots,G_{m} \in \tau\implies \bigcap_{i=1}^{m}G_{i} \in \tau$
 
-A [**topological space**]; $(A,\tau)$ a pair
-of a set $A$ and topology $\tau$ on $A$. Each element in $\tau$ an open
+A <span style="color: green;">**topological space**</span>; $(A,\tau)$ a pair of a set $A$ and topology $\tau$ on $A$. Each element in $\tau$ an open
 set in $(A,\tau)$\
 $U$ a neighbourhood of $a$ if $U \in \tau$ and $a \in U$
 
- exmp
-**Example 1**. Some Topologies
-
+**Example 2.25.**. *Some Topologies*
 
 1.  **Coarse topology -** $A$ arbitrary set, $\tau= \{\emptyset, A\}$
 
 2.  **Induced topology -** $(X,d)$ a metric space, with $\tau$ the
     collection of all open sets in $(X,d)$
 
-3.  **Order Topology -** $A = \mathbb{R}$ with $\tau$ collection of
-    subsets of $\mathbb{R}$ of form
-    $(a,+\infty),\ a \in \mathbb{R}\cup \{-\infty,+\infty\}, (\+infty,+\infty) := \emptyset$
+3.  **Order Topology -** $A = \mathbb{R}$ with $\tau$ collection of subsets of $\mathbb{R}$ of form $(a,+\infty),\ a \in \mathbb{R}\cup \{-\infty,+\infty\}, (\+infty,+\infty) := \emptyset$
 
 4.  **Discrete Topology** - $A$ arbitrary, $\tau= \mathcal{P}(A)$
 
