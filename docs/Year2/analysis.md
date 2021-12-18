@@ -703,7 +703,6 @@ $(X,d)$ a metric space
 -   $(X,d)$ seperable if, $\exists$ dense countable subset of $X$
 
 ### <span style="color: white;">2.1.8</span> Continuous maps of metric spaces
-
  
 **Definition 2.14**. <span style="color: green;">**Continuity in metric spaces**</span>
 
@@ -754,9 +753,9 @@ $(X_1,d_1),(X_2,d_2)$ metric spaces.
 
 $(X,d_X),(Y,d_Y)$ metric spaces with $f:X\to Y$\
 
-1.  $f$ is [**Lipschitz**] if $\exists$ constant $M > 0$ s.t $\forall x_1,x_2 \in X, d_Y(f(x_1),f(x_2)) \leq M \cdot d_X(x_1,x_2)$
+1.  $f$ is <span style="color: green;">**Lipschitz**</span> if $\exists$ constant $M > 0$ s.t $\forall x_1,x_2 \in X, d_Y(f(x_1),f(x_2)) \leq M \cdot d_X(x_1,x_2)$
 
-2.  $f$ is [**bi-Lipschitz**] if $\exists$ constants $M_1,M_2 > 0$ s.t $\forall x_1,x_2 \in X$
+2.  $f$ is <span style="color: green;">**bi-Lipschitz**</span> if $\exists$ constants $M_1,M_2 > 0$ s.t $\forall x_1,x_2 \in X$
     <center>
       $$M_2 \cdot d_X(x_1,x_2) \leq d_Y(f(x_1),f(x_2)) \leq M_1 \cdot d_X(x_1,x_2)$$
     </center>  
@@ -771,8 +770,8 @@ $(X,d_X),(Y,d_Y)$ metric spaces with $f:X\to Y$\
 
 ### <span style="color: white;">2.2.2</span> Topology on a set
 
- 
-**Definition 15**. [**Topology** ]
+      
+**Definition 2.15.**. <span style="color: green;">**Topology**</span>
 
 
 $A$ an arbitrary set. $\tau$ a collection of subsets of $A$\
@@ -802,22 +801,22 @@ $U$ a neighbourhood of $a$ if $U \in \tau$ and $a \in U$
 
 5.  **Product topology** -
 
-**Definition.** [**Metrisable topological
-space**]\
-Say topological space $(X,\tau)$
-[**metrisable**] if $\exists$ metric on $X$
-which induces a topology $\tau$.\
-**Definition.** [**Induced and Subspace
-topology**]\
+**Definition.** <span style="color: green;">**Metrisable topological space**</span>\
+      
+Say topological space $(X,\tau)$ <span style="color: green;">**metrisable**</span> if $\exists$ metric on $X$ which induces a topology $\tau$.\
+      
+**Definition.** <span style="color: green;">**Induced and Subspace topology**</span>\
+      
 $(X,\tau)$ a topological space. $Y \subset X$
-$$\tau_{Y} = \{U \cap Y | U \in \tau\}$$ $\tau_{Y}$ the [**induced
-topology**] on $Y$ from $(X,\tau)$\
-$(Y,\tau_{Y})$ has the [**subspace
-topology**] induced from $(X,\tau)$
+      <center>
+$$\tau_{Y} = \{U \cap Y | U \in \tau\}$$
+      </center>
 
- 
-**Definition 16**. [**Stronger topology**]
+$\tau_{Y}$ the <span style="color: green;">**induced topology**</span> on $Y$ from $(X,\tau)$\
+$(Y,\tau_{Y})$ has the <span style="color: green;">**subspace topology**</span> induced from $(X,\tau)$
 
+      
+**Definition 2.18**. <span style="color: green;">**Stronger topology**</span>
 
 $A$ a set, with $\tau_1,\tau_2$\
 Say $\tau_1$ stronger (or finer) than $\tau_2$ if
@@ -829,15 +828,16 @@ A set $G \subset A$ open $\iff \forall\ x \in G,\ \exists$ neighbourhood
 of $x$ contained in $G$
 
  
-**Definition 17**. [**Interior in Topological
-space**]
-
+**Definition 2.19**. <span style="color: green;">**Interior in Topological space**</span>
 
 $(A,\tau)$ a topological space. $\Omega \subseteq A$\
-$z \in \Omega$ an interior point of $\Omega if$
+$z \in \Omega$ an interior point of $\Omega$ if
+      <center>
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
-[**interior of $\Omega; \Omega^{\circ}$**] =
-$\{z \in \Omega | z \text{ an interior point of } \Omega\}$\
+      </center>
+<span style="color: green;">**interior of $\Omega; \Omega^{\circ}$**</span> = $\{z \in \Omega | z $ an interior point of $\Omega\}$\
+      
+*Properties of interior*
 
 -   $S \subset T \implies S^{\circ} \subset T^{\circ}$
 
@@ -848,19 +848,17 @@ $\{z \in \Omega | z \text{ an interior point of } \Omega\}$\
 ### <span style="color: white;">2.2.3</span> Convergence, and Hausdorff property
 
  
-**Definition 18**. [**Convergence in Topological
-Spaces**]
-
+**Definition 2.20**. <span style="color: green;">**Convergence in Topological Spaces**</span>
 
 $(A,\tau)$ a topological space. $(x_n)_{n\geq1}$ a sequence in $A$\
-$(x_n)$ [**converges**] in $(A,\tau)$ if
+$(x_n)$ <span style="color: green;">**converges**</span> in $(A,\tau)$ if
+      <center>
 $$\exists x \in A \text{ s.t } \forall\ G \in \tau\text{ with } x \in G,\ \exists N \in \mathbb{N}, \text{ s.t } \forall n \geq N, x_n \in G$$
+      </center>
 
- 
-**Definition 19**. [**Hausdorff**]
+**Definition 2.21**. <span style="color: green;">**Hausdorff**</span>
 
-
-$(A,\tau)$ called [**Hausdorff**] if:
+$(A,\tau)$ called <span style="color: green;">**Hausdorff**</span> if:
 $$\forall x,y \in A\ x \neq y,\ \exists \text{ open set } U,V \text{ s.t } x \in U, y \in V \text{ and } U \cap V = \emptyset$$
 Say $U$ and $V$ seperate $x$ and $y$
 
