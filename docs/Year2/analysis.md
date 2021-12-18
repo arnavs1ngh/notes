@@ -1048,7 +1048,7 @@ $X$ compact, $Y$ closed $\implies Y$ compact.
 
 $(X,d)$ a metric space $Y \subset X$
       <center>
-$Y$ compact  $\implies Y $ closed $$
+$Y$ compact  $\implies Y $ closed
       </center>
  
 **Theorem 2.35**.
@@ -1072,7 +1072,7 @@ $S$ arbitrary set. $f: S \to X$ bounded if $f(S)$ bounded in $X$
 $(X,d)$ compact metric space $\implies X$ bounded
 
  
-**Theorem 13**. <span style="color: red;">**Heine-Borel**</span>
+**Theorem 2.36**. <span style="color: red;">**Heine-Borel**</span>
 
 Consider $(\mathbb{R}^{n},d_{2})$, $X \subseteq \mathbb{R}^{n}$\
 $X$ compact $\iff X$ closed and bounded
@@ -1089,7 +1089,7 @@ $$\forall (x_n)_{n\geq 1} \in X,\ \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s
       </center>
       
 **Lemma 2.39.**\
-$(X,d)$ a metric space. with sequence $(x_n)_{n\geq 1}$ s.t $\exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$.\
+$(X,d)$ a metric space. with sequence $ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$.\
       <center>
 $\iff \exists x \in X$ s.t  $\forall \epsilon > 0$ there are infinitely many  $i$  s.t  $x_{i} \in B_{\epsilon}(x)$
       </center>
@@ -1115,11 +1115,11 @@ $$Z \text{ compact in } X \implies f(Z) \text{ compact in }Y$$
 
 **Corollary 2.44.**\
 $(X,d_X),(Y,d_Y)$ metric spaces, $f:X \to Y$ a homeomorphism
+      <center>
 $$\implies X \text{ compact } \iff Y \text{ compact }$$
-
+      </center>
  
-**Theorem 17**.
-
+**Theorem 2.45**.
 
 Every continuous map from compact metric space to a metric space is
 uniformly continuous.
@@ -1128,89 +1128,70 @@ uniformly continuous.
 uniformly continuous
 
  
-**Theorem 18**.
+**Theorem 2.47**.
 
-
-$(X,d_X)$ compact, $f:X \to \mathbb{R}$ continuous $\implies f$ bounded
-above and below attaining its upper & lower bounds
+$(X,d_X)$ compact, $f:X \to \mathbb{R}$ continuous $\implies f$ bounded above and below attaining its upper & lower bounds
 
  
-**Theorem 19**.
+**Theorem 2.48**.
 
-
-$f:\mathbb{R}\to \mathbb{R}$ continuous w.r.t Euclidean metrics on
-domain and range.\
-$\forall\ [a,b]$ we have $f([a,b])$ of the form $[m,M]$ for
-$m,M \in \mathbb{R}$
+$f:\mathbb{R}\to \mathbb{R}$ continuous w.r.t Euclidean metrics on domain and range.\
+$\forall\ [a,b]$ we have $f([a,b])$ of the form $[m,M]$ for $m,M \in \mathbb{R}$
 
 ## <span style="color: white;">2.5</span> Completeness
 
 ### <span style="color: white;">2.5.1</span> Complete metric spaces & Banach space
 
  
-**Definition 32**. [**Cauchy Sequence**]
-
+**Definition 32**. <span style="color: green;">**Cauchy Sequence**</span>
 
 $(X,d)$ a metric $(x_{n})_{n\geq 1}$ sequence in $X$\
-Say $(x_{n})_{n\geq 1}$ a [**Cauchy
-sequence**] in $(X,d)$ if
-$$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall n,m \geq N_{\epsilon} \text{ we have } d(x_{n},x_{m}) < \epsilon$$
+      
+Say $(x_{n})_{n\geq 1}$ a <span style="color: green;">**Cauchy sequence**</span> in $(X,d)$ if
+      <center>
+$$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall n,m \geq N_{\epsilon} d(x_{n},x_{m}) < \epsilon$$
+      </center>
+
+**Definition 2.35.**. <span style="color: green;">**Complete & Banach**</span>
+
+1.  metric space $(X,d)$ <span style="color: green;">**complete**</span> if every Cauchy sequence in $X$ converges to a limit in $X$
+
+2.  Normed vector space $(V,||\cdot||)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{|| ||}$ a complete metric space.
 
  
-**Definition 33**. [**Complete & Banach**]
+**Theorem 2.51**.
 
-
-1.  metric space $(X,d)$ [**complete**] if
-    every Cauchy sequence in $X$ converges to a limit in $X$
-
-2.  Normed vector space $(V,||\cdot||)$ a [**Banach
-    space**] if $V$ with induced metric
-    space $d_{|| ||}$ a complete metric space.
+Assume $(f_{n} : [a,b] \to \mathbb{R})_{n\geq 1}$ sequence of continuous functions converging uniformly to $f:[a,b] \to \mathbb{R}\implies f:[a,b] \to \mathbb{R}$ continuous
 
  
-**Theorem 20**.
+**Theorem 2.52**.
 
-
-Assume $(f_{n} : [a,b] \to \mathbb{R})_{n\geq 1}$ sequence of continuous
-functions converging uniformly to
-$f:[a,b] \to \mathbb{R}\implies f:[a,b] \to \mathbb{R}$ continuous
+Metric space $(C([a,b]),d_{\infty})$ is complete or equivalently $(C([a,b]),||\cdot||_{\infty})$ a Banach space
 
  
-**Theorem 21**.
-
-
-Metric space $(C([a,b]),d_{\infty})$ is complete or equivalently
-$(C([a,b]),||\cdot||_{\infty})$ a Banach space
-
- 
-**Theorem 22**.
-
+**Theorem 2.53**.
 
 $(X,d)$ a compact metric space $\implies (X,d)$ complete
 
 ### <span style="color: white;">2.5.2</span>  Arzelà-Ascoli
 
  
-**Definition 34**. [**Uniformly bounded & Uniformly
-equi-continuous**]
+**Definition 2.36**. [**Uniformly bounded & Uniformly equi-continuous**]
 
 
 Let $\mathcal{C}$ a collection of functions $f:[a,b] \to \mathbb{R}$
 
-1.  Say collection $\mathcal{C}$ [**uniformly
-    bounded**] if $\exists M$ s.t
+1.  Say collection $\mathcal{C}$ <span style="color: green;">**uniformly bounded**</span> if $\exists M$ s.t
     $\forall f \in \mathcal{C}$ and
     $\forall x \in [a,b] \implies |f(x)| < M$
 
-2.  Say collection $\mathcal{C}$ [**uniformly
-    equi-continuous**] if
+2.  Say collection $\mathcal{C}$ <span style="color: green;">**uniformly equi-continuous**</span> if
     $\forall \epsilon > 0, \exists \delta > 0$ s.t
     $\forall f \in \mathcal{C}$ and $\forall x_1,x_2 \in [a,b]$ s.t
     $|x_1-x_2| < \delta$ we have $|f(x_1) - f(x_2)| < \epsilon$
 
  
-**Theorem 23**. [**Arzelà-Ascoli**]
-
+**Theorem 2.54**. <span style="color: red;">**Arzelà-Ascoli**<span>
 
 Assume $\mathcal{C}$ collection of continuous functions
 $f:[a,b] \to \mathbb{R}$ if $\mathcal{C}$ uniformly bounded and
@@ -1220,24 +1201,21 @@ convergent subsequence in $(C([a,b],d_{\infty})$
 ### <span style="color: white;">2.5.3</span>  Fixed point theorem
 
  
-**Definition 35**. [**Contracting**]
-
+**Definition 2.37**. <span style="color: green;">**Contracting**</span>
 
 $(X_{1},d_{1})$ and $(X_{2},d_{2})$, with $f: X_1 \to X_2$\
-Say $f$ [**contracting**] if
-$\exists K \in (0,1)$ s.t $\forall a,b \in X$ we have
-$$d_{2}(f(a),f(b)) \leq K\cdot d_{1}(a,b)$$ Every contracting map is
-continuous.
+Say $f$ <span style="color: green;">**contracting**</span> if $\exists K \in (0,1)$ s.t $\forall a,b \in X$ we have
+      <center>
+$$d_{2}(f(a),f(b)) \leq K\cdot d_{1}(a,b)$$
+      </center>
+Every contracting map is continuous.
 
  
-**Definition 36**. [**Fixed point**]
+**Definition 2.37**. <span style="color: green;">**Fixed point**</span>
 
+$f:X\to X$ say $x \in X$ a <span style="color: green;">**fixed point**</span> of $f$ if $f(x) = x$
 
-$f:X\to X$ say $x \in X$ a [**fixed point**]
-of $f$ if $f(x) = x$
-
- 
-**Theorem 24**. [**Banach fixed point theorem**]
+**Theorem 2.55**. <span style="color: red;">**Banach fixed point theorem**</span>
 
 
 $(X,d)$ a non-empty complete metric space.\
