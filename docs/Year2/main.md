@@ -60,7 +60,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
   - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS3-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4*</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS4-Sol.pdf" target="_blank">**Solutions**</a>
   
   - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS5-Sol.pdf" target="_blank">**Solutions**</a>
   
