@@ -509,12 +509,15 @@ $g(x,y) = 0 $  for some  $(x,y) \in A \times B \iff y = g(x)$ for some  $x \in A
 with $g:A \to B$ continuously differentiable.\
 
 # <span style="color: white;">2</span> Metric and Topological Spaces
-`
+  
+  
+
 ## <span style="color: white;">2.1</span> Metric Spaces
 
 ### <span style="color: white;">2.1.1</span> Motivation + Definition
 
 **Definition 2.1 - <span style="color: green;">**Metric**</span>
+  
 $X$ an arbitrary set\
 Metric a function $d: X \times X \to \mathbb{R}$ satisfying:
 
@@ -526,14 +529,15 @@ Metric a function $d: X \times X \to \mathbb{R}$ satisfying:
 3.  $\forall x,y,z \in X d(x,y) \leq d(x,z) + d(z,y)$ ***(triangle
     inequality)***
 
-  **Definition 2.2 - <span style="color: green;">**Metric space**</span>
+**Definition 2.2 - <span style="color: green;">**Metric space**</span>
+  
 Pair of a set and metric; $M = (X,d)$\
-Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$\
+Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$
   
   
-**Definition**\
+**Definition**
   <center>
-$C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}$ continuous
+  $C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}$ continuous
   </center>
   
 ### <span style="color: white;">2.1.2</span> Examples of metrics
@@ -555,7 +559,7 @@ $Y \subseteq X$, define $ d\rvert_{Y}: Y \times Y \to \mathbb{R}$ as $d|_{Y}(x,y
  
 **Definition 2.3**. <span style="color: green;">**Metric Subspace**</span>
 
-Say $(Y,d|_{Y})$ a metric subspace of $(X,d)$
+Say $(Y,d\rvert_{Y})$ a metric subspace of $(X,d)$
 
  
 **Definition 2.4**. <span style="color: green;">**Product metric space**</span>
@@ -615,32 +619,33 @@ $$\forall\ U \subseteq X,\ U \text{ open in } (X,d_{1}) \iff U \text{ open in } 
  
 **Definition 2.9**. <span style="color: green;">**Convergence in Metric Spaces**<span style="color: green;">
 
+$(X,d)$ a metric space. $(x_{n})_{n\geq 1}$ a sequence in $X$.
 
-$(X,d)$ a metric space. $(x_{n})_{n\geq 1}$ a sequence in $X$.\
 Say $(x_{n}) \to x \in (X,d)$ if
+    <center>
 $$\forall\ \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall\ n \geq N, d(x,x_{n})< \epsilon$$
-***Lemma 2.7.*** - if $(x_n)$ converges in $(X,d)$ $\implies$ limit is
-unique\
+   </center>
+***Lemma 2.7.*** - if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique\
+      
 ***Corollary*** - $d_{1},d_{2}$ topologically equivalent $\iff (x_n)$
 converges in $(X,d_1)$ and $(X,d_2)$
 
 ### <span style="color: white;">2.1.6</span> Closed sets in metric spaces
 
  
-**Definition 9**. [**Closed set in Metric
-Spaces**]
-
+**Definition 9**. <span style="color: green;">**Closed set in Metric Spaces**</span>
 
 $(X,d)$ a metric space. $V \subseteq X$ a set.\
-$V$ **closed** in $(X,d)$ if $\forall\ (x_n) \in V$ s.t $(x_n) \to x$
-convergent in $(X,d) \implies x \in V$
+$V$ **closed** in $(X,d)$ if $\forall\ (x_n) \in V$ s.t $(x_n) \to x$ convergent in $(X,d) \implies x \in V$
 
  
-**Theorem 1**.
-
-
+**Theorem 2.9.**
+      
 $(X,d)$ a metric space. $V \subseteq X$\
-$$V \text{ closed in } (X,d) \iff X\backslash V \text{ open in } (X,d)$$
+      <center>
+$V$ closed in  $(X,d) \iff X\backslash V$  open in $(X,d)$
+      </center>
+      
 ***Lemma 2.10***
 
 1.  Intersection of closed sets in $(X,d)$ is a closed set in $(X,d)$
@@ -649,50 +654,47 @@ $$V \text{ closed in } (X,d) \iff X\backslash V \text{ open in } (X,d)$$
 
 ### Interior, isolated, limit, and boundary points in metric spaces
 
- 
-**Definition 10**. **- 2.12.**
-
+**Definition 2.11. - 2.12.**
 
 $(X,d)$ a metric space, $V \subset X,\ x \in X$
 
-1.  $x$ an [**interior/inner point**] of $V$
-    if $$\exists \delta > 0,\ \text{ s.t } B_{\delta}(x) \subset V$$
+1.  $x$ an <span style="color: green;">**interior/inner point**</span> of $V$ if 
+      <center>
+      $$\exists \delta > 0,\ \text{ s.t } B_{\delta}(x) \subset V$$
+      </center>
+      
+      1.  <span style="color: green;">**Interior of $V$; $V^{\circ}$**</span> - $\{v \in V : v \text{ an interior point of } V\}$
 
-    1.  [**Interior of $V$; $V^{\circ}$**]
-        - $\{v \in V : v \text{ an interior point of } V\}$
 
-    \
-
-2.  $x$ a [**limit/accumulation point**] of
-    $V$ if
+2.  $x$ a <span style="color: green;">**limit/accumulation point**</span> of $V$ if
+      <center>
     $$\forall \delta > 0, (B_{\delta}(x) \cap V)\backslash\{x\} \neq \emptyset$$
+      </center>
+    
     ***Note:** not all limit points of $V$ are in $V$*
 
-    1.  [**Closure of $V$; $\bar{V}$**] -
-        $V \cup \{v \text{ a limit point of } V\}$
+    1.  <span style="color: green;">**Closure of $V$; $\bar{V}$**</span> - $V \cup \{v \text{ a limit point of } V\}$
 
-    \
 
-3.  $x$ a [**boundary point of $V$**] if
+3.  $x$ a <span style="color: green;">**boundary point of $V$**</span> if
+      <center>
     $$\forall \delta > 0, B_{\delta} \cap V \neq \emptyset \text{ and } B_{\delta}(x)\backslash V \neq \emptyset$$
+      </center>
+      
+    1.  <span style="color: green;">**Boundary of $V$; $\partial V$ - **</span> $\{v \in X : v \text{ a boundary point of } V\}$
 
-    1.  [**Boundary of $V$; $\partial V$
-        -**]
-        $\{v \in X : v \text{ a boundary point of } V\}$
-
-    \
-
-4.  $x$ an [**isolated point**] of $V$ if
+4.  $x$ an <span style="color: green;">**isolated point**</span> of $V$ if
+      <center>
     $$\exists \delta > 0, \text{ s.t } V \cap B_{\delta}(x) = \{x\}$$
+      </center>
 
-***Lemma 2.11*** $(X,d)$ a metric space, $V \subseteq X$\
-$x \in X$ a limit point of $V \iff \exists$ sequence in
-$V \backslash \{x\}$ converging to $x$.
+***Lemma 2.11*** 
+      
+$(X,d)$ a metric space, $V \subseteq X$\
+$x \in X$ a limit point of $V \iff \exists$ sequence in $V \backslash \{x\}$ converging to $x$.
 
  
-**Definition 11**. [**Dense and Seperable
-subsets**]
-
+**Definition 2.13**. <span style="color: green;">**Dense and Seperable subsets**</span>
 
 $(X,d)$ a metric space
 
@@ -703,14 +705,12 @@ $(X,d)$ a metric space
 ### <span style="color: white;">2.1.8</span> Continuous maps of metric spaces
 
  
-**Definition 12**. [**Continuity in metric
-spaces**]
-
+**Definition 2.14**. <span style="color: green;">**Continuity in metric spaces**</span>
 
 $(X,d_{X}), (Y,d_{Y})$ metric spaces.\
 $f: X \to Y$ a map
 
-1.  $f$ [**continuous**] at $x \in X$ if
+1.  $f$ <span style="color: green;">**continuous**</span> at $x \in X$ if
     $$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } \forall x' \in X \text{ s.t } d_{X}(x',x) < \delta, d_{Y}(f(x),f(x')) < \epsilon$$
 
 2.  $f: X \to Y$ continuous if $f$ continuous $\forall x \in X$
