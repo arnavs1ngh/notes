@@ -801,11 +801,11 @@ $U$ a neighbourhood of $a$ if $U \in \tau$ and $a \in U$
 
 5.  **Product topology** -
 
-**Definition.** <span style="color: green;">**Metrisable topological space**</span>\
+**Definition.** <span style="color: green;">**Metrisable topological space**</span>
       
 Say topological space $(X,\tau)$ <span style="color: green;">**metrisable**</span> if $\exists$ metric on $X$ which induces a topology $\tau$.\
       
-**Definition.** <span style="color: green;">**Induced and Subspace topology**</span>\
+**Definition.** <span style="color: green;">**Induced and Subspace topology**</span>
       
 $(X,\tau)$ a topological space. $Y \subset X$
       <center>
@@ -835,7 +835,7 @@ $z \in \Omega$ an interior point of $\Omega$ if
       <center>
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
       </center>
-<span style="color: green;">**interior of $\Omega; \Omega^{\circ}$**</span> = $\{z \in \Omega | z $ an interior point of $\Omega\}$\
+<span style="color: green;">**interior of $\Omega; \Omega^{\circ}$**</span> = $ \{ z \in \Omega | z$ an interior point of $\Omega\}$
       
 *Properties of interior*
 
@@ -863,8 +863,7 @@ $$\forall x,y \in A\ x \neq y,\ \exists \text{ open set } U,V \text{ s.t } x \in
 Say $U$ and $V$ seperate $x$ and $y$
 
  
-**Theorem 4**.
-
+**Theorem 2.14.**
 
 $(A,\tau)$ a Hausdorff topological space. $(x_n)$ a sequence in $A$.\
 if $(x_n)$ convergent in $(A,\tau) \implies$ limit is unique.
@@ -872,13 +871,12 @@ if $(x_n)$ convergent in $(A,\tau) \implies$ limit is unique.
 ### <span style="color: white;">2.2.4</span> Closed sets in topological spaces
 
  
-**Definition 20**. [**Closed set in Topological
-space**]
-
+**Definition 2.22**. <span style="color: green;">**Closed set in Topological space**</span>
 
 $(A,\tau)$ a topological space.\
 $V \subseteq A$. Say $V$ closed in
 $(A,\tau) \iff A\backslash V \in \tau$\
+      
 ***Lemma 2.17.***\
 $(A,\tau)$ a topological space $\implies \emptyset$ and $A$ closed in
 $(A,\tau)$
@@ -890,17 +888,15 @@ $(A,\tau)$
     set in $(A,\tau)$
 
  
-**Definition 21**. [**Limit/Accumulation point in Topological
-Spaces**]
-
+**Definition 2.23**. <span style="color: green;">**Limit/Accumulation point in Topological Spaces**</span>
 
 $(A,\tau),$ a topological space, $S\subseteq A$\
-$x \in A$ a [**limit/accumulation point**]
-of $S$ if
+$x \in A$ a <span style="color: green;">**limit/accumulation point**</span> of $S$ if
+      <center>
 $$\forall\ U \text{ a neighbourhood of } x,\ (S \cap U)\backslash\{x\} \neq \emptyset$$
+      </center>
 $x$ not necessarily in $S$\
-[**Closure of
-$S, \bar{S}$**]$= S \cup \{ x \in A | x \text{ a limit point of } S\}$
+<span style="color: green;">**Closure of $S, \bar{S}$**</span>$= S \cup \{ x \in A | x \text{ a limit point of } S\}$
 
 ***Lemma***\
 $S$ closed in $(A,\tau) \iff S = \bar{S}$
@@ -908,23 +904,22 @@ $S$ closed in $(A,\tau) \iff S = \bar{S}$
 ### <span style="color: white;">2.2.5</span> Continuous maps on topological spaces
 
  
-**Definition 22**. [**Continuity in topological
-space**]
-
+**Definition 2.24**. <span style="color: green;">**Continuity in topological space**</span>
 
 $(X,\tau_X),(Y,\tau_Y)$ with $f: X \to Y$\
 $f$ continuous on $X$ if:
-$$\forall \text{open sets } U \in Y,\ f^{-1}(U) \text{ open in } X$$
-
+      <center>
+$\forall$ open sets  $U \in Y,\ f^{-1}(U) \text{ open in } X$$
+      </center>
  
-**Theorem 5**.
+**Theorem 2.20**.
 
 
 $(X,\tau_X),(Y,\tau_Y)$ with $f: X \to Y$\
 $f$ continuous $\iff$ pre-image of closed set in $Y$ is closed in $X$
 
  
-**Theorem 6**.
+**Theorem 2.21**.
 
 
 $(X,\tau_X),(Y,\tau_Y),(Z,\tau_Z)$\
@@ -932,32 +927,26 @@ $f: X \to Y, g:Y\to Z$ continuous $\implies g \circ f : X \to Z$
 continuous
 
  
-**Definition 23**. [**Homeomorphisms in Topological
-space**]
+**Definition 2.25**. <span style="color: green;">**Homeomorphisms in Topological space**</span>
 
 
-$f X \to Y$ a homeomorphism is $f: X \to Y$ bijective with $f$ and
+$f: X \to Y$ a homeomorphism is $f: X \to Y$ bijective with $f$ and
 $f^{-1}$ continuous
 
  
-**Definition 24**. [**Topologically equivalent in Topological
-space**]
+**Definition 2.25**. [**Topologically equivalent in Topological space**]
 
-
-$(X,\tau_X),(Y,\tau_Y)$ **topologically equivalent/homeomorphic** if
-$\exists$ homeomorphism from $X \to Y$
+$(X,\tau_X),(Y,\tau_Y)$ **topologically equivalent/homeomorphic** if $\exists$ homeomorphism from $X \to Y$
 
 ## <span style="color: white;">2.3</span> Connectedness
 
 ### <span style="color: white;">2.3.1</span> Connected sets
 
  
-**Definition 25**. [**Disconnected sets**]
-
+**Definition 25**. <span style="color: green;">**Disconnected sets**</span>
 
 For $(X,d)$ a metric space, consider $T \subseteq X$. $T$
-[**disconnected**],if $\exists$ open sets
-$U,V \in X$ s.t:
+<span style="color: green;">**disconnected**</span> ,if $\exists$ open sets $U,V \in X$ s.t:
 
 1.  $U \cap V = \emptyset$
 
@@ -969,32 +958,32 @@ Set conneted if not disconnected.
 
 **Lemma 2.23.**\
 $(X,d)$ a metric space. $T \subseteq X$
-$$T  \text{ disconnected } \iff\ \exists \text{ continuous } f:T \to \mathbb{R}\text{ s.t } f(T) = \{0,1\}$$
-
+<center>
+$T$  disconnected $iff\ \exists$ continuous $f:T \to \mathbb{R}\text{ s.t } f(T) = \{0,1\}$
+</center>
  
-**Theorem 7**.
-
+**Theorem 2.22**.
 
 Consider $(\mathbb{R},d)$, $S \subseteq \mathbb{R}$
-$$S \text{ connected } \iff S \text{ an interval }$$
-
+      <center>
+$S$ connected  $\iff S$ an interval
+      </center>
+      
+     
 ### <span style="color: white;">2.3.2</span> Continuous maps + Connected sets
 
- 
-**Theorem 8**.
+**Theorem 2.27**.
 
-
-$(A,d_{1})$ and $(A,d_{2})$ metric spaces. $f: A_1 \to A_2$ continuous
-map\
+$(A,d_{1})$ and $(A,d_{2})$ metric spaces. $f: A_1 \to A_2$ continuous map
 $S \subset A$ connected $\implies f(S)$ connected
 
-\
+***Corollary 2.28***
 $f:(X,d_X) \to (Y,d_Y)$ a homeomorphism\
-$$X \text{ connected } \iff Y \text{ connected }$$
-
+      <center>
+$X$ connected $\iff Y$ connected
+      </center>
  
-**Theorem 9**.
-
+**Theorem 2.29**.
 
 $(X,d)$ connected metric space, $f: X \to \mathbb{R}$ continuous. Assume
 $\exists a,b \in X$ s.t $f(a) <0, f(b) > 0 \implies \exists c \in X$ s.t
@@ -1003,23 +992,19 @@ $f(c) = 0$
 ### <span style="color: white;">2.3.3</span> Path Connected Sets
 
  
-**Definition 26**. [**Path**]
-
+**Definition 26**. <span style="color: green;">**Path**</span>
 
 Under $(X,d)$ given $a,b \in X$\
-**Path** from $a \to b$ a continuous map $f: [0,1] \to X$ s.t
-$f(0) = a, f(1) = b$
+**Path** from $a \to b$ a continuous map $f: [0,1] \to X$ s.t $f(0) = a, f(1) = b$
 
  
 **Definition 27**. [**Path Connected**]
 
 
-$(X,d)$ path connected if $\forall a,b \in X, \exists$ path from
-$a\to b$ in $X$
+$(X,d)$ path connected if $\forall a,b \in X, \exists$ path from $a\to b$ in $X$
 
  
-**Theorem 10**.
-
+**Theorem 2.30**.
 
 if $(X,d)$ path connected $\implies$ connected
 
@@ -1028,17 +1013,17 @@ if $(X,d)$ path connected $\implies$ connected
 ### <span style="color: white;">2.4.1</span> Compactness by covers
 
  
-**Definition 28**. [**Covers**]
-
+**Definition 2.30**. <span style="color: green;">**Covers**</span>
 
 $(X,d)$ a metric space. $Y \subseteq X$
 
-1.  collection $R$ of open subsets of $X$ an [**open
-    cover**] for $Y$ if
+1.  collection $R$ of open subsets of $X$ an <span style="color: green;">**open cover**</span> for $Y$ if
+      <center>
     $$Y \subseteq \bigcup_{v \in R}v$$
-
+      </center>
+      
 2.  Given open cover $R$ for $Y$\
-    Say $C$ a [**sub-cover**] of $R$ for $Y$
+    Say $C$ a <span style="color: green;">**sub-cover**</span> of $R$ for $Y$
     if $C \subseteq R$ and $Y \subseteq \bigcup_{v \in R}v$
 
 3.  Open cover $R$ for $Y$ is a [**finite
@@ -1046,28 +1031,27 @@ $(X,d)$ a metric space. $Y \subseteq X$
     elements.
 
  
-**Definition 29**. [**Compact**]
-
+**Definition 2.31**. <span style="color: green;">**Compact**</span>
 
 $(X,d)$ a metric space\
-$Y \subseteq X$ compact in $(X,d)$ if every open cover for $Y$ has a
-finite sub-cover.\
+$Y \subseteq X$ compact in $(X,d)$ if every open cover for $Y$ has a finite sub-cover.\
+      
 **Proposition 2.32.**\
 $a,b \in \mathbb{R},\ a \leq b$ in $(R,d_1)$ we have $[a,b]$ compact\
+      
 **Proposition 2.33.**\
 $(X,d)$ a metric space, $Y \subseteq X$\
-$X$ compact, $Y$ closed $\implies Y$ compact.\
+$X$ compact, $Y$ closed $\implies Y$ compact.
 
  
-**Theorem 11**.
-
+**Theorem 2.34**.
 
 $(X,d)$ a metric space $Y \subset X$
-$$Y \text{ compact } \implies Y \text{ closed }$$
-
+      <center>
+$Y$ compact  $\implies Y $ closed $$
+      </center>
  
-**Theorem 12**.
-
+**Theorem 2.35**.
 
 $(X,d_X),(Y,d_Y)$ metric spaces. Considering $(X\times Y,d)$\
 $d((x_{1},y_{1}),(x_{2},y_{2})) = d_{1}(x_1,x_2) + d_2(y_1,y_2)$\
@@ -1078,20 +1062,17 @@ $[a_1,b_1]\times[a_2,b_2]\dots\times[a_{n-1},b_{n-1}]\times[a_n,b_n]$
 compact in $\mathbb{R}^{n}$
 
  
-**Definition 30**. [**Bounded**]
-
+**Definition 2.32**. <span style="color: green;">**Bounded**</span>
 
 $(X,d)$ non-empty metric space, $Z \subseteq X$\
-$Z$ [**bounded**] in $(X,d)$ if
-$\exists M \in \mathbb{R}$ s.t $\forall x,y \in Z; d(x,y) \leq M$\
+$Z$ <span style="color: green;">**bounded**</span> in $(X,d)$ if $\exists M \in \mathbb{R}$ s.t $\forall x,y \in Z; d(x,y) \leq M$\
 $S$ arbitrary set. $f: S \to X$ bounded if $f(S)$ bounded in $X$
 
 **Lemma 2.37.**\
 $(X,d)$ compact metric space $\implies X$ bounded
 
  
-**Theorem 13**. [**Heine-Borel**]
-
+**Theorem 13**. <span style="color: red;">**Heine-Borel**</span>
 
 Consider $(\mathbb{R}^{n},d_{2})$, $X \subseteq \mathbb{R}^{n}$\
 $X$ compact $\iff X$ closed and bounded
@@ -1099,37 +1080,34 @@ $X$ compact $\iff X$ closed and bounded
 ### <span style="color: white;">2.4.2</span> Sequential Compactness
 
  
-**Definition 31**. [**Sequentially
-compact**]
+**Definition 31**. <span style="color: green;">**Sequentially compact**</span>
 
 
-$(X,d)$ sequentially compact, if for every sequence in $X$ has
-convergent subsequence in $(X,d)$
+$(X,d)$ sequentially compact, if for every sequence in $X$ has convergent subsequence in $(X,d)$
+      <center>
 $$\forall (x_n)_{n\geq 1} \in X,\ \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$$
-
+      </center>
+      
 **Lemma 2.39.**\
-$(X,d)$ a metric space. with sequence $(x_n)_{n\geq 1}$ s.t
-$\exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$.\
-$$\iff \exists x \in X \text{ s.t } \forall \epsilon > 0 \text{ there are infinitely many } i \text{ s.t } x_{i} \in B_{\epsilon}(x)$$
+$(X,d)$ a metric space. with sequence $(x_n)_{n\geq 1}$ s.t $\exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$.\
+      <center>
+$\iff \exists x \in X$ s.t  $\forall \epsilon > 0$ there are infinitely many  $i$  s.t  $x_{i} \in B_{\epsilon}(x)$
+      </center>
 
- 
-**Theorem 14**. [**Bolzanno-Weierstrass**]
-
+**Theorem 2.41**. <span style="color: red;">**Bolzanno-Weierstrass**</span>
 
 Any bounded sequence in $\mathbb{R}^{n}$ has convergent subsequence.
 
- 
-**Theorem 15**. **+ 2.42.**
-
+**Theorem 2.40 + 2.42.**
 
 $(X,d)$ metric space.
-$$X \text{ Compact  }\iff X \text{ Sequentially Compact }$$
-
+      <center>
+$X$  Compact  $\iff X$  Sequentially Compact
+      </center>
+      
 ### <span style="color: white;">2.4.3</span> Continuous maps + Compact Sets
-
  
-**Theorem 16**.
-
+**Theorem 2.41**.
 
 $(X,d_X),(Y,d_Y)$ metric spaces.\
 $f: X\to Y$ a continuous map if
