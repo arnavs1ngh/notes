@@ -130,7 +130,7 @@ so $(\sum_{i=1}^{r}a(\lambda_{i}) = n$. Following are equivalent
 -   $g(\lambda_{i}) = a(\lambda_{i}) \forall i$ (This can be used to
     test for diagonalisability.)
 
-# <span style="color: white;">4</span>Direct Sums
+# <span style="color: white;">4</span> Direct Sums
 
 **Define**\
 For $\{U_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. Sum of
