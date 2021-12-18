@@ -934,7 +934,7 @@ $f: X \to Y$ a homeomorphism is $f: X \to Y$ bijective with $f$ and
 $f^{-1}$ continuous
 
  
-**Definition 2.25**. [**Topologically equivalent in Topological space**]
+**Definition 2.25**. <span style="color: green;">**Topologically equivalent in Topological space**</span>
 
 $(X,\tau_X),(Y,\tau_Y)$ **topologically equivalent/homeomorphic** if $\exists$ homeomorphism from $X \to Y$
 
