@@ -51,8 +51,7 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 
 **Definition** - <span style="color: green;">**Similair Matrices**</span>
 
-$A,B \in M_{n}(F)$ similair $(A \sim B)$ if $\exists$ invertible
-$P \in M_{n}(F)$ s.t $P^{-1}AP = B$\
+$A,B \in M_{n}(F)$ similair $(A \sim B)$ if $\exists$ invertible $P \in M_{n}(F)$ s.t $P^{-1}AP = B$\
 $\sim$ is an equivalence relation.
 
 *Properties of Similair Matrices*
@@ -65,10 +64,14 @@ $\sim$ is an equivalence relation.
 
 -   Same rank Same Trace
 
-**Definition - [**Companion Matrix**]**\
+**Definition - **<span style="color: green;">**Companion Matrix**</span>
+
 Let $p(x)$ a monic polynomial of degree $r$;
 $p(x) = x^{r} + a_{r-1}x^{r-1} + \dots + a_{0}$.\
-Companion matrix of $p(x)$; $$C(p(x)) =
+Companion matrix of $p(x)$;
+
+<center>
+$$C(p(x)) =
 \begin{pmatrix}
 0 & 0 & 0 & \dots & 0 & -a_{0}\\
 1 & 0 & 0 & \dots & 0 & -a_{1}\\
@@ -76,12 +79,16 @@ Companion matrix of $p(x)$; $$C(p(x)) =
  & & & \dots & &\\
  0 & 0 & 0 & \dots & 1 & -a_{r-1}
 \end{pmatrix}$$
+  </center>
 
 ***Geometry***\
-**Definition - [**Dot Product**]**\
+**Definition - **<span style="color: green;">**Dot Product**</span>
 $u = (u_{1},\dots,u_{n})$ and $v = (v_{1},\dots,v{n})$\
-$$u\cdot v = \sum_{i=1}^{n}u_{i}v_{i}$$ Length of
-$u, ||u|| = \sqrt{u\cdot u}$\
+<center>
+$$u\cdot v = \sum_{i=1}^{n}u_{i}v_{i}$$
+  </center>
+Length of $u, ||u|| = \sqrt{u\cdot u}$\
+
 Distance between $u$ and $v = ||u-v||$
 
 -   $P$ orthogonal if $P^{T}P = I, (Pu\cdot Pv) = u\cdot v)$
@@ -96,25 +103,25 @@ Distance between $u$ and $v = ||u-v||$
 
 -   $u \cdot v > 0, \forall u,v$
 
-# <span style="color: white;">2</span> Algebraic and Geometric multiplicities of eigenvalues
+# <span style="color: white;">3</span> Algebraic and Geometric multiplicities of eigenvalues
 
-**Definition - [**Multiplicity of
-eigenvalues**]**\
+**Definition - **<span style="color: green;">**Multiplicity of eigenvalues**</span>
 For $T:V \to V$ a linear map with char. poly. $p(x)$ with roots
-$\lambda$, Then $\exists$ [**$a(\lambda)$**]
-$\in \mathbb{N}$ the [**algebraic
-multiplicity**] of $\lambda$ s.t
-$$p(x) = (x-\lambda)^{a(\lambda)}q(x)$$ where $\lambda$ not a root of
-$q(x)$\
-[**Geometric multiplicity
-$g(\lambda) = dimE_{\lambda}$**], for
-$E_{\lambda}$ the eigenspace of $T$\
+$\lambda$, Then $\exists$ **$a(\lambda)$** $\in \mathbb{N}$ the **algebraic multiplicity** of $\lambda$ s.t
+
+$$
+p(x) = (x-\lambda)^{a(\lambda)}q(x)
+$$
+where $\lambda$ not a root of $q(x)$\
+<span style="color: green;">**Geometric multiplicity $g(\lambda) = dimE_{\lambda}$**</span>, for $E_{\lambda}$ the eigenspace of $T$\
+
 **Theorem 3.2**\
-$dim V = n$, Let $T: V\to V$ a linear map with finite distinct
-eigenvalues $\{\lambda_{i}\}_{i=1}^{r}$\
+$dim V = n$, Let $T: V\to V$ a linear map with finite distinct eigenvalues $\{\lambda_{i}\}_{i=1}^{r}$\
 Characteristic polynomial of T is
-$$p(x) = \prod_{i=1}^{r}(x-\lambda_{i})^{a(\lambda_{i}}$$ so
-$(\sum_{i=1}^{r}a(\lambda_{i}) = n$. Following are equivalent
+<center>
+$$p(x) = \prod_{i=1}^{r}(x-\lambda_{i})^{a(\lambda_{i}}$$
+</center>
+so $(\sum_{i=1}^{r}a(\lambda_{i}) = n$. Following are equivalent
 
 -   $T$ diagonalisable
 
