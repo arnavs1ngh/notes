@@ -542,13 +542,13 @@ Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$
   
 ### <span style="color: white;">2.1.2</span> Examples of metrics
 
--   $d_{2}(x,y) = ||x-y||$; Euclidean metric on $\mathbb{R}^{n}$
+-   $d_{2}(x,y) = \lvert\lvert x-y\rvert\rvert$; Euclidean metric on $\mathbb{R}^{n}$
 
--   $d_{\text{disc}}(x,y) = \begin{cases} 0, & x=y \\ 1, & xy \end{cases}$
+-   $d_{\text{disc}}(x,y) = \begin{cases} 0, & x=y\\ 1, & x \not = y \end{cases}$
     
--   $d_{\infty}(x,y) = \text{sup}_{k\geq 1}|x^{k} - y^{k}|$
+-   $d_{\infty}(x,y) = \text{sup}_{k\geq 1}\lvert x^{k} - y^{k}\rvert$
 
--   $d_{\infty}(f,g) = $ \text{max}_{a\leq t\leq b}|f(t) - g(t)|$ where $f,g \in C([a,b])$ ***(supremum/uniform metric)***
+-   $d_{\infty}(f,g) = $ \text{max}_{a\leq t\leq b}\lvert f(t) - g(t)\rvert$ where $f,g \in C([a,b])$ ***(supremum/uniform metric)***
 
  
 **Definition 2.3**. <span style="color: green;">**Induced metrics**</span>
@@ -1156,7 +1156,7 @@ $$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall 
 
 1.  metric space $(X,d)$ <span style="color: green;">**complete**</span> if every Cauchy sequence in $X$ converges to a limit in $X$
 
-2.  Normed vector space $(V,||\cdot||)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{|| ||}$ a complete metric space.
+2.  Normed vector space $(V,\lvert\lvert\cdot\rvert\rvert)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{|| ||}$ a complete metric space.
 
  
 **Theorem 2.51**.
@@ -1166,7 +1166,7 @@ Assume $(f_{n} : [a,b] \to \mathbb{R})_{n\geq 1}$ sequence of continuous functio
  
 **Theorem 2.52**.
 
-Metric space $(C([a,b]),d_{\infty})$ is complete or equivalently $(C([a,b]),||\cdot||_{\infty})$ a Banach space
+Metric space $(C([a,b]),d_{\infty})$ is complete or equivalently $(C([a,b]),\lvert\lvert\cdot\rvert\rvert_{\infty})$ a Banach space
 
  
 **Theorem 2.53**.
@@ -1176,7 +1176,7 @@ $(X,d)$ a compact metric space $\implies (X,d)$ complete
 ### <span style="color: white;">2.5.2</span>  Arzelà-Ascoli
 
  
-**Definition 2.36**. [**Uniformly bounded & Uniformly equi-continuous**]
+**Definition 2.36**. <span style="color: green;">**Uniformly bounded & Uniformly equi-continuous**</span>
 
 
 Let $\mathcal{C}$ a collection of functions $f:[a,b] \to \mathbb{R}$
