@@ -82,14 +82,14 @@ $$C(p(x)) =
   </center>
 
 ***Geometry***\
-**Definition - **<span style="color: green;">**Dot Product**</span>
+**Definition** - <span style="color: green;">**Dot Product**</span>
 $u = (u_{1},\dots,u_{n})$ and $v = (v_{1},\dots,v{n})$\
 <center>
 $$u\cdot v = \sum_{i=1}^{n}u_{i}v_{i}$$
   </center>
 Length of $u, ||u|| = \sqrt{u\cdot u}$\
 
-Distance between $u$ and $v = ||u-v||$
+Distance between $u$ and $v = \lvert\lvert u-v\rvert\rvert$
 
 -   $P$ orthogonal if $P^{T}P = I, (Pu\cdot Pv) = u\cdot v)$
 
@@ -105,19 +105,20 @@ Distance between $u$ and $v = ||u-v||$
 
 # <span style="color: white;">3</span> Algebraic and Geometric multiplicities of eigenvalues
 
-**Definition - **<span style="color: green;">**Multiplicity of eigenvalues**</span>
+**Definition** - <span style="color: green;">**Multiplicity of eigenvalues**</span>
+
 For $T:V \to V$ a linear map with char. poly. $p(x)$ with roots
 $\lambda$, Then $\exists$ **$a(\lambda)$** $\in \mathbb{N}$ the **algebraic multiplicity** of $\lambda$ s.t
+<center>
+$$ p(x) = (x-\lambda)^{a(\lambda)}q(x) $$
+</center>
 
-$$
-p(x) = (x-\lambda)^{a(\lambda)}q(x)
-$$
 where $\lambda$ not a root of $q(x)$\
-<span style="color: green;">**Geometric multiplicity $g(\lambda) = dimE_{\lambda}$**</span>, for $E_{\lambda}$ the eigenspace of $T$\
+<span style="color: green;">**Geometric multiplicity $g(\lambda) = dimE_{\lambda}$**</span>, for $E_{\lambda}$ the eigenspace of $T$
 
 **Theorem 3.2**\
 $dim V = n$, Let $T: V\to V$ a linear map with finite distinct eigenvalues $\{\lambda_{i}\}_{i=1}^{r}$\
-Characteristic polynomial of T is
+Characteristic polynomial of $T$ is
 <center>
 $$p(x) = \prod_{i=1}^{r}(x-\lambda_{i})^{a(\lambda_{i}}$$
 </center>
@@ -132,43 +133,53 @@ so $(\sum_{i=1}^{r}a(\lambda_{i}) = n$. Following are equivalent
 
 # <span style="color: white;">4</span> Direct Sums
 
-**Define**\
-For $\{U_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. Sum of
-these subspaces is:
+**Define**
+For $ \{U_{i}\}_{i=1,\dots,k} $ subspaces of vector space $V$. Sum of these subspaces is:
+
+<center>
 $$U_{1} + \dots + U_{k} = \{u_{1}+\dots+u_{k}:u_{i} \in U_{i}, \forall i\}$$
-**Definition - [**Direct Sums**]**\
-$V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space
-$V$. [**$V$ a direct sum of $\{V_{i}\}$**]
-if: $$V = V_{1} \oplus \dots \oplus V_{k}$$ If $\forall v \in V$ can be
-expressed as $v = v_{1} + \dots + v_{k}$ for unique vectors
-$v_{i} \in V_{i}$\
-*Corollary*\
-$$V = V_{1} \oplus \dots \oplus V_{k} \iff  dimV =\sum_{i=1}^{k}dimV_{i} \text{ and if $B_{i}$ a basis for $V_{i}$}, B = \bigcup_{i}B_{i} \text{ is a basis for } V$$
-**Definition -** [**Invariant subspaces**]\
+</center>
+
+**Definition - <span style="color: green;">Direct Sums**</span>
+$V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. [**$V$ a direct sum of $\{V_{i}\}$**] if: 
+<center>
+$$V = V_{1} \oplus \dots \oplus V_{k}$$
+</center>
+If $\forall v \in V$ can be expressed as $v = v_{1} + \dots + v_{k}$ for unique vectors $v_{i} \in V_{i}$\
+
+*Corollary*
+<center>
+$V = V_{1} \oplus \dots \oplus V_{k} \iff  dimV = \sum_{i=1}^{k}dimV_{i}$ and if $B_{i}$ a basis for $V_{i}$}, $B = \bigcup_{i}B_{i}$ is a basis for V$
+
+**Definition - <span style="color: green;">Invariant subspaces**</span>
 $T: V\to V$ a linear map, $W$ a subspace of $V$.\
 
-::: center
+<center>
 $W$ is $T$-invariant if $T(W) \subseteq W, T(W) = \{T(w) : w \in W\}$
-:::
+</center>
 
 Write $T_{W}: W \to W$ for the restriction of $T$ to $W$\
 **Notation - Direct sums of matrices**\
+  <center>
 $$A_{1} \oplus \dots \oplus A_{k} = \begin{pmatrix}
 A_{1} & &\\
  & \ddots & \\
  & & A_{k}
 \end{pmatrix}$$
+  </center>
 
 # <span style="color: white;">5</span> Quotient Spaces
 
-**Definition -** [**Cosets**] $V$ a vector
-space over $F$, with $W \leq V$ a subspace.\
+**Definition - <span style="color: green;">Cosets**</span>
 
-::: center
+$V$ a vector space over $F$, with $W \leq V$ a subspace.\
+
+<center>
 Cosets $W + v$ for $v\in V$ $W + v:= \{w+v:w \in W\}$
-:::
+</center>
 
-[**Quotient Space**]\
+<span style="color: green;">**Quotient Space**</span>
+
 Define $V/W$ as a vector space of vectors $W + v$ over $F$
 
 -   Addition; $(W +v_{1}) + (W+ v_{2}) = W+v_{1}+v_{2}$
