@@ -943,7 +943,7 @@ $(X,\tau_X),(Y,\tau_Y)$ **topologically equivalent/homeomorphic** if $\exists$ h
 ### <span style="color: white;">2.3.1</span> Connected sets
 
  
-**Definition 25**. <span style="color: green;">**Disconnected sets**</span>
+**Definition 2.26**. <span style="color: green;">**Disconnected sets**</span>
 
 For $(X,d)$ a metric space, consider $T \subseteq X$. $T$
 <span style="color: green;">**disconnected**</span> ,if $\exists$ open sets $U,V \in X$ s.t:
@@ -959,7 +959,7 @@ Set connected if not disconnected.
 **Lemma 2.23.**\
 $(X,d)$ a metric space. $T \subseteq X$
 <center>
-$T$  disconnected $iff\ \exists$ continuous $f:T \to \mathbb{R}\text{ s.t } f(T) = \{0,1\}$
+$T$  disconnected $\iff\ \exists$ continuous $f:T \to \mathbb{R}\text{ s.t } f(T) = \{0,1\}$
 </center>
  
 **Theorem 2.22**.
@@ -992,13 +992,13 @@ $f(c) = 0$
 ### <span style="color: white;">2.3.3</span> Path Connected Sets
 
  
-**Definition 26**. <span style="color: green;">**Path**</span>
+**Definition 2.28**. <span style="color: green;">**Path**</span>
 
 Under $(X,d)$ given $a,b \in X$\
 **Path** from $a \to b$ a continuous map $f: [0,1] \to X$ s.t $f(0) = a, f(1) = b$
 
  
-**Definition 27**. [**Path Connected**]
+**Definition 2.29**. <span style="color: green;">**Path Connected**</span>
 
 
 $(X,d)$ path connected if $\forall a,b \in X, \exists$ path from $a\to b$ in $X$
@@ -1152,11 +1152,11 @@ Say $(x_{n})_{n\geq 1}$ a <span style="color: green;">**Cauchy sequence**</span>
 $$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall n,m \geq N_{\epsilon} d(x_{n},x_{m}) < \epsilon$$
       </center>
 
-**Definition 2.35.**. <span style="color: green;">**Complete & Banach**</span>
+**Definition 2.35.** <span style="color: green;">**Complete & Banach**</span>
 
 1.  metric space $(X,d)$ <span style="color: green;">**complete**</span> if every Cauchy sequence in $X$ converges to a limit in $X$
 
-2.  Normed vector space $(V,\lvert\lvert\cdot\rvert\rvert)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{|| ||}$ a complete metric space.
+2.  Normed vector space $(V,\lvert\lvert\cdot\rvert\rvert)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{\lvert\lvert\cdot\rver\rvert}$ a complete metric space.
 
  
 **Theorem 2.51**.
