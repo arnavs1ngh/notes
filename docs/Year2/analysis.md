@@ -516,7 +516,7 @@ with $g:A \to B$ continuously differentiable.
 
 ### <span style="color: white;">2.1.1</span> Motivation + Definition
 
-**Definition 2.1 - <span style="color: green;">**Metric**</span>
+**Definition 2.1** - <span style="color: green;">**Metric**</span>
   
 $X$ an arbitrary set\
 Metric a function $d: X \times X \to \mathbb{R}$ satisfying:
@@ -529,7 +529,7 @@ Metric a function $d: X \times X \to \mathbb{R}$ satisfying:
 3.  $\forall x,y,z \in X d(x,y) \leq d(x,z) + d(z,y)$ ***(triangle
     inequality)***
 
-**Definition 2.2 - <span style="color: green;">**Metric space**</span>
+**Definition 2.2** - <span style="color: green;">**Metric space**</span>
   
 Pair of a set and metric; $M = (X,d)$\
 Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$
