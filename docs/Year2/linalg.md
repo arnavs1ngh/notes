@@ -160,13 +160,13 @@ $W$ is $T$-invariant if $T(W) \subseteq W, T(W) = \{T(w) : w \in W\}$
 
 Write $T_{W}: W \to W$ for the restriction of $T$ to $W$\
 **Notation - Direct sums of matrices**\
-  <center>
+
 $$A_{1} \oplus \dots \oplus A_{k} = \begin{pmatrix}
 A_{1} & &\\
  & \ddots & \\
  & & A_{k}
 \end{pmatrix}$$
-  </center>
+
 
 # <span style="color: white;">5</span> Quotient Spaces
 
