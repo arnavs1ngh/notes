@@ -704,7 +704,7 @@ $x^TA\bar{x} > 0\ \forall$ non-zero  $x \in F^{n}$\
 **Proposition 14.1**\
 For $u,v,w \in V$ we have
 
-1.  $\lvert(u,v)\rvert \leq \lvert\lvert u\rvert\rvert\lvert\lvertv\rvert\rvert$ *(Cauchy-Schwarz Inequality)*
+1.  $\lvert(u,v)\rvert \leq \lvert\lvert u\rvert\rvert\lvert\lvert v\rvert\rvert$ *(Cauchy-Schwarz Inequality)*
 
 2.  $\lvert\lvert u+v \rvert\rvert \leq \lvert\lvert u\rvert\rvert + \lvert\lvert v\rvert\rvert$
 
@@ -722,7 +722,7 @@ $$f_v: V \to F$$
 $$f_v(w) = (w,v)$$ 
 </center>
 
-$\implies f_v$ linear functional $\in V*$\
+$\implies f_v$ linear functional $\in V*$
 
 **Definition** - **$\bar{V}$** 
 $\bar{V}$ has same vectors as $V$
@@ -733,17 +733,24 @@ $\bar{V}$ has same vectors as $V$
 
 **Proposition 14.2.**\
 $V$ finite-dimensional. Define $\pi : \bar{V} \to V*$ as
-$$\pi(v) = f_v \quad \forall v \in V$$ $\implies \pi$ a vector space
-isomorphism\
-**Definition - [**Orthogonality**]**\
+<center>
+$$\pi(v) = f_v \quad \forall v \in V$$
+</center>
+
+$\implies \pi$ a vector space isomorphism\
+
+**Definition -    <span style="color: green;">**Orthogonality**</span> **\
 $\{v_1,\dots,v_k\}$ orthogonal if $(v_i,v_j) = 0\ \forall i,j\ i\neq j$\
 Orthonormal if also $||v_i|| = 1\ \forall i$\
-**Definition - [**$W^\perp$**]** [W
-perp]{style="color: white"}\
+
+
+**Definition -  <span style="color: green;">**$W^\perp$**</span>**
+
 $W \subseteq V$ define
 $$W^{\perp} = \{u \in V: (u,w) = 0\ \forall w \in W\}$$
 
 **Proposition**\
+
 $V$ a finite dimensional inner product space. $W \leq V$
 $$\implies V = W \oplus W^\perp$$
 
@@ -763,26 +770,45 @@ $V$ a finite dimensional inner product space
     $\implies (w_2,u1) = 0, \quad$ let $u_{2} = \frac{w_2}{||w_2||}$\
     $\implies \{u_1,u_2\}$ orthonormal
 
-3.  Let $$w_3 = v_3 - (v_3,u_1)u_1 - (v_3,u_2)u_2$$ With
-    $u_3 = \frac{w_3}{||w_3||} \implies \{u_1,u_2,u_3\}$
+3.  Let 
+  <center>
+    $$w_3 = v_3 - (v_3,u_1)u_1 - (v_3,u_2)u_2$$
+  </center>
+  With $u_3 = \frac{w_3}{||w_3||} \implies \{u_1,u_2,u_3\}$
 
 4.  Continue, for $i^{\text{th}}$ step
+    <center>
     $$u_i = \frac{w_i}{||w_i||}\quad w_i = v_i - (v_i,u_1)u_1 - \dots - (v_i,u_{i-1})u_{i-1}$$
-    Yielding after $n$ steps an orthonormal basis
-    $\{u_{1},\dots,u_{n} \}$ with
+    </center>
+    Yielding after $n$ steps an orthonormal basis $\{u_{1},\dots,u_{n} \}$ with
+    <center>
     $$\text{Sp}(u_1,\dots,u_i) = \text{Sp}(v_1,\dots,v_i) \quad \forall i \in \{1,\dots,n\}$$
-
+    </center>
+    
 **Projections**\
 $V$ an inner product space. $v,w \in V\backslash 0$\
-[**Projection of $v$ along $w$**] defined to
-be $\lamdba w$ for $\lamdba \frac{(v,w)}{(w,w}$.\
+ <span style="color: green;">**Projection of $v$ along $w$**</span> defined to be $\lambda w$ for $\lambda \frac{(v,w)}{(w,w}$.\
 For $W \leq V, v\in V$\
-define projection of $V$ along $W$ as follows: $$V = W \oplus W^\perp$$
-$$v = w + w'\quad \text{ for unique } w \in W, w' \in W^\perp$$ Define
-[**orthogonal projection**] map along $W$.
-$$\pi_W: V \to W$$ $$\pi_W(v) = w$$ **Proposition 14.7.**\
-$V$ an inner product space. $W \leq V$ with $\pi_W$ orthogonal
-projection map along $W$.
+define projection of $V$ along $W$ as follows:
+<center>
+$$V = W \oplus W^\perp$$
+</center>
+
+<center>
+$$v = w + w'\quad \text{ for unique } w \in W, w' \in W^\perp$$
+  </center>
+  
+Define  <span style="color: green;">**orthogonal projection**</span> map along $W$.
+<center>
+$$\pi_W: V \to W$$
+</center>
+
+<center>
+$$\pi_W(v) = w$$
+</center>
+  
+**Proposition 14.7.**\
+$V$ an inner product space. $W \leq V$ with $\pi_W$ orthogonal projection map along $W$.
 
 1.  $v\in V \implies \pi_W$ vector in $W$ closest to $V$\
     i.e for $w \in W$, $||w-v||$ minimum for $w = \pi_W(v)$
@@ -823,18 +849,24 @@ $$f_i = \sum_{j=1}^{n}p_{ji}e_{j} \implies P^{T}\bar{P} = I$$
 **Proposition 15.1.**\
 $V$ a finite dimensional inner product space. $T: V\to V$ a linear map\
 $\implies \exists!$ linear map $T^*:V \to V$ s.t $\forall u,v \in V$
-$$(T(u),v) = (u,T^*(v))$$ Say $T^*$ - [**adjoint of
-$T$**]\
-$T$ [**self-adjoint**] if $T = T^*$\
+<center>
+$$(T(u),v) = (u,T^*(v))$$
+</center>
+
+Say $T^*$ -  <span style="color: green;">**adjoint of $T$**</span>
+
+$T$  <span style="color: green;">**self-adjoint**</span> if $T = T^*$\
+
 **Proposition 15.2.**\
-$V$ an inner product space with orthonormal basis
-$E = \{v_1,\dots,v_n\}$\
-$T:V \to V$ a linear map, $A = [T]_{E}$\
-$\implies [T^*]_{E} = \bar{A}^T$ if field $\mathbb{R}\implies A$
-symmetric, if field $\mathbb{C}\implies A$ hermitian\
-**Theorem 15.3. [**Spectral Theorem**]**\
-$V$ an inner product space. $T: V \to V$ a self-adjoint linear map
-$\implies V$ has orthonormal basis of $T$-eigenvectors.\
+$V$ an inner product space with orthonormal basis $E = \{v_1,\dots,v_n\}$\
+$T:V \to V$ a linear map, $A = [T]_{E}$
+
+$\implies [T^*]_{E} = \bar{A}^T$ if field $\mathbb{R}\implies A$ symmetric, if field $\mathbb{C}\implies A$ hermitian\
+
+**Theorem 15.3.  <span style="color: red;">**Spectral Theorem**</span>**\
+
+$V$ an inner product space. $T: V \to V$ a self-adjoint linear map $\implies V$ has orthonormal basis of $T$-eigenvectors.\
+
 **Corollary 15.4.**
 
 -   $A \in M_n(\mathbb{R}) \implies \exists$ orthogonal $P$ s.t
@@ -855,9 +887,10 @@ $T: V\to V$ self-adjoint
 
 # <span style="color: white;">16</span> Bilinear & Quadratic Forms
 
-**Definition. - [**Bi-linear form**]**\
+**Definition. -  <span style="color: green;">**Bi-linear form**</span>**\
+
 $V$ a vector space over $F$\
-[**Bi-linear form**] on $V$ a map;
+ <span style="color: green;">**Bi-linear form**</span> on $V$ a map;
 $(,): V\times V \to  F$ which is both right and left-linear.\
 i.e $\forall \alpha,\beta \in F$
 
@@ -868,47 +901,60 @@ i.e $\forall \alpha,\beta \in F$
 ***General example***\
 $F$ a field, $V = F^n$ with $A \in M_n(F)$\
 $\implies (u,v) = u^TAv \quad \forall u,v \in V$ a bilinear form on $V$\
+
 ***Matrices***\
-$(,)$ a bilinear form on finited dimensional vector space $V$. With
-$B = \{v_1,\dots,v_n\}$\
-$A$ matrix of $(,)$ w.r.t $B$, So
-$(a_{ij}) = (v_i,v_j) \implies \forall u,v \in V\ (u,v) = [u]_{B}^{T}A[v]_B$\
-**Definition - [**Symmetric &
-Skew-symmetric**]**\
+$(,)$ a bilinear form on finited dimensional vector space $V$. With $B = \{ v_1,\dots,v_n \}$\
+
+$A$ matrix of $(,)$ w.r.t $B$, So $(a_{ij}) = (v_i,v_j) \implies \forall u,v \in V\ (u,v) = [u]_{B}^{T}A[v]_B$\
+
+
+**Definition -  <span style="color: green;">**Symmetric & Skew-symmetric**</span>**\
 Bilinear form $(,)$ on V is
 
--   [**Symmetric**] if
-    $(u,v) = (v,u)\ \forall u,v \in V$
+-    <span style="color: green;">**Symmetric**</span> if $(u,v) = (v,u)\ \forall u,v \in V$
 
--   [**Skew symmetric**] if
-    $(v,u) = -(u,v)\ \forall u,v \in V$
+-    <span style="color: green;">**Skew symmetric**</span> if $(v,u) = -(u,v)\ \forall u,v \in V$
 
-\
-**Definition - [**Characteristic of Field
-$F$**]**\
-$char$ of field $F$ is the smallest $n \in \mathbb{N}_+$ s.t $n = 0$. if
-no such $n$ exists say $char(F) = 0$\
+
+**Definition -  <span style="color: green;">**Characteristic of Field $F$**</span>**\
+
+$char$ of field $F$ is the smallest $n \in \mathbb{N}_+$ s.t $n = 0$. if no such $n$ exists say $char(F) = 0$\
+
 **Lemma 16.1.**\
 $V$ a vector space over $F$ with $char(F) \neq 2$\
-$(,)$ skew-symmetric bilinear form on
-$V \implies (v,v) = 0\ \forall v \in V$
+$(,)$ skew-symmetric bilinear form on $V \implies (v,v) = 0\ \forall v \in V$
+<center>
 $$(v,v) = -(v,v) \implies 2(v,v) = 0 \iff 2 = 0 \text{ or } (v,v) = 0$$
+</center>
 
 ***Orthogonality***\
 **Theorem 16.2**\
-bilinear form $(,)$ has property that $$(v,w) = 0 \iff (w,v) = 0$$
-$$\iff$$ $$(,) \text{ skew-symmetric or symmetric}$$
+bilinear form $(,)$ has property that
+<center>
+$$(v,w) = 0 \iff (w,v) = 0$$
+</center>
 
-**Definition - [**Non-degenerate**]**\
-$(,)$ on $V$ [**non-degenerate**] if
-$V^\perp = \{0\}$. Where $V^\perp$ defined analogously w.r.t bilinear
-forms. $$\forall u \in V,\ (u,v) = 0 \forall v \in V \implies u = 0$$
+<center>
+$$\iff$$
+</center>
+  
+<center>  
+  $(,)$  skew-symmetric or symmetric
+</center>
+
+**Definition -  <span style="color: green;">**Non-degenerate**</span>**\
+
+$(,)$ on $V$  <span style="color: green;">**non-degenerate**</span> if $V^\perp = \{0\}$. Where $V^\perp$ defined analogously w.r.t bilinear forms.
+<center>
+$$\forall u \in V,\ (u,v) = 0 \forall v \in V \implies u = 0$$
+</center>
+
 $V^\perp = \{0\} \iff$ matrix of $(,)$ w.r.t a basis is invertible.
+
 
 ***Dual Space***\
 **Proposition 16.3.**\
-Suppose $(,)$ non-degenerate bilinear form on a finite dimensional
-vector space $V$.
+Suppose $(,)$ non-degenerate bilinear form on a finite dimensional vector space $V$.
 
 1.  $v\in V$ define $f_v \in V^*$\
     $f_v(u) = (v,u)\quad \forall u \in V$\
@@ -920,10 +966,12 @@ vector space $V$.
 ***Bases***
 
 **Definition**\
-$A,B \in M_n(F)$ [**congruent**] if
-$\exists$ invertible $P \in M_n(F)$ s.t $$B = P^TAP$$ $A,B$ congruent
-$\implies$ bilinear forms $(u,v)_{1} = u^TAv$ and $(u,v)_{2} = u^TBv$
-are [**equivalent**]\
+$A,B \in M_n(F)$  <span style="color: green;">**congruent**</span> if $\exists$ invertible $P \in M_n(F)$ s.t
+<center>
+$$B = P^TAP$$
+</center>
+$A,B$ congruent $\implies$ bilinear forms $(u,v)_{1} = u^TAv$ and $(u,v)_{2} = u^TBv$ are  <span style="color: green;">**equivalent**</span>
+
 **Skew-symmetric bilinear forms**\
 **Theorem 16.4.**\
 $V$ a finite dimensional vector space over $F$ where $char(F) \neq 2$\
@@ -933,21 +981,32 @@ $(,)$ non-degenerate skew-symmetric bilinear form on $V$. Then
 
 2.  $\exists$ basis $B = \{e_1,f_1,\dots,e_m,f_m\}$ of $V$\
     s.t matrix of $(,)$ w.r.t $B$ is a block-diagonal matrix
+    <center>
     $$J_m = \underbrace{\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix} \oplus \dots \oplus \begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix}}_{m \text{ blocks }}$$
+  </center>
     So that $(e_i,f_i) = -(f_i,e_i) = 1$\
     $(e_i,e_j) = (f_i,f_j) = (e_i,f_j)=(f_j,e_i) = 0\quad \forall i \neq j$
 
 **Corollary 16.5.**\
 If $A$ invertible skew-symmetric $n \times n$ matrix over $F$ where
 $char(F) \neq 2 \implies n$ even and $A$ congruent to $J_m$\
+
 **Symmetric bilinear forms**\
 **Theorem 16.6.**\
 $V$ a finite dimensional vector space over $F$ where $char(F) \neq 2$\
 $(,)$ a non-degenerate symmetric bilinear form on $V$\
 $\implies V$ has orthogonal basis $B = \{v_1,\dots,v_n\}$
+
+<center>
 $$(v_i,v_j) = 0 \quad \text{ for } i \neq j$$
-$$(v_i,v_i) = \alpha_i \neq 0 \quad \forall i$$ Matrix of $(,)$ w.r.t
-$B$ $=diag(\alpha_1,\dots,\alpha_n)$\
+</center> 
+  
+<center>
+$$(v_i,v_i) = \alpha_i \neq 0 \quad \forall i$$
+</center>
+
+Matrix of $(,)$ w.r.t $B$ $=diag(\alpha_1,\dots,\alpha_n)$\
+
 **Corollary 16.7.**\
 $A$ invertible symmetric matrix over $F, char(F) \neq 2$\
 $\implies A$ congruent to diagonal matrix
@@ -965,37 +1024,45 @@ $\implies A$ congruent to diagonal matrix
 4.  Continue until you get orthogonal basis
 
 ***Quadratic Form***\
-Assume from now $F$ s.t $char(F) \neq 2$, $V$ a finite dimensional
-vector space over $F$\
-**Definition - [**Quadratic form**]**\
+Assume from now $F$ s.t $char(F) \neq 2$, $V$ a finite dimensional vector space over $F$\
+
+**Definition -  <span style="color: green;">**Quadratic form**</span>**\
 Quadratic form on $V$ a map $Q: V \to F$ of form
-$$Q(v) = (v,v)\qquad \forall v\in V$$ $(,)$ a symmetric bilinear form on
-$V$\
+<center>
+$$Q(v) = (v,v)\qquad \forall v\in V$$
+</center>
+$(,)$ a symmetric bilinear form on $V$\
 $Q$ non-degenerate if $(,)$ non-degenerate.\
+
 *Remarks*\
 
 1.  given $Q$ we find $(u,v) = \frac{1}{2}[Q(u+v)-Q(u)-Q(v)]$
 
 2.  $V = F^{n}$ every symmetric bilinear forms s.t
-    $$(x,y) = x^TAy \qquad \text{for } A = A^T, (x,y \in V)$$ For
-    $\mathbf{x} = (x_1,\dots,x_n)^T$ $$\begin{aligned}
+    <center>
+    $$(x,y) = x^TAy \qquad \text{for } A = A^T, (x,y \in V)$$
+    </center>
+  For $\mathbf{x} = (x_1,\dots,x_n)^T$ 
+  <center>
+  $$\begin{aligned}
             Q(x) &= x^TAx\\
             &= \sum_{i,j} a_{ij}x_{i}x_{j}\\
             &= \sum_{i=1}^{n}a_{ii}x_{i}^{2} + 2\sum{i<j}a_{ij}x_{i}x_{j}
-        \end{aligned}$$ A general homogeneous quadratic polynomial in
-    $x_1,\dots,x_n$ ( all terms of degree 2)
+        \end{aligned}$$
+  </center>
+
+  A general homogeneous quadratic polynomial in $x_1,\dots,x_n$ ( all terms of degree 2)
 
 ***Change of variables***\
-**Definition - [**Equivalent Quadratic
-Forms**]**\
+**Definition -  <span style="color: green;">**Equivalent Quadratic Forms**</span>**\
 $V = F^{n},\ Q: V \to F$\
 $Q(x) = x^TAx\ \forall x \in V, A$ symmetric\
 Take $y = (y_1,\dots,y_n)^T$ s.t $x = Py$ for $P$ invertible\
 $\implies Q(x) = y^TP^TAPy = Q'(y)$\
-If such a $P$ exists we say $Q,Q'$
-[**equivalent**]
+If such a $P$ exists we say $Q,Q'$  <span style="color: green;">**equivalent**</span>
 
-*note:*\
+  
+***note:***\
 Congruent matrices $A, P^TAP$\
 $A \sim P^TAP \iff P$ orthogonal\
 **Theorem 16.8.**
@@ -1003,43 +1070,51 @@ $A \sim P^TAP \iff P$ orthogonal\
 $V = F^{n}$, $Q:V\to F$ non-degenerate quadratic form
 
 1.  if $F = \mathbb{C}\implies Q$ equivalent to form\
+  <center>
     $$Q_{0}(x) = x_{1}^{2} + \dots + x_{n}^{2} \quad (x\in \mathbb{C}^{n})$$
+  </center>
     Has matrix $I_{n}$
 
-2.  if $F = \mathbb{R}\implies Q$ equivalent to unique
-    $Q_{p,q}; p+q = n$
+2.  if $F = \mathbb{R}\implies Q$ equivalent to unique $Q_{p,q}; p+q = n$
+    <center>
     $$Q_{p,q}(x) = x_{1}^{2} + \dots + x_{p}^{2} - (x_{p+1}^{2} + \dots + x_{p+q}^{2})\quad (x \in \mathbb{C}^{n})$$
-    Has matrix $I_{p,q} =$
-
-    ::: pmatrix
+  </center>
+    Has matrix $I_{p,q} =
+    \begin{pmatrix}
     $I_{p}$ & 0\
-    0 & $-I_{q}$
-    :::
+    0 & $-I_{q}\end{pmatrix}$
+    
 
-3.  if $F = \mathbb{Q}\implies \exists$ infinitely many inequivalent
-    non-degenerate quadratic forms on $\mathbb{Q}^{n}$
+3.  if $F = \mathbb{Q}\implies \exists$ infinitely many inequivalent non-degenerate quadratic forms on $\mathbb{Q}^{n}$
 
-**Definition - [**isometry**]**\
-$f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on
-finite dimensional vector space $V$\
-[**Isometry**] of $f$ a linear map
-$T:V\to V$ s.t $$(T(u),T(v)) = (u,v)\quad \forall u,v \in V$$ $T$
-invertible since $f$ non-degenerate.
+**Definition -  <span style="color: green;">**isometry**</span>**\
+  
+$f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on finite dimensional vector space $V$\
+<span style="color: green;">**Isometry**</span> of $f$ a linear map $T:V\to V$ s.t
+  <center>
+  $$(T(u),T(v)) = (u,v)\quad \forall u,v \in V$$
+  </center>
+$T$ invertible since $f$ non-degenerate.
 
-**Definition - [**Isometry Group**]**\
-$$I(V,f) = \{T: T \text{ an isometry }\}$$ forms a subgroup of general
-linear group $GL(V)$\
+**Definition -  <span style="color: green;">**Isometry Group**</span>**\
+  <center>
+$$I(V,f) = \{T: T \text{ an isometry }\}$$
+  </center>
+  
+forms a subgroup of general linear group $GL(V)$\
+  
 ***Equivalently;***\
-fix basis $B$ of $V$, $A$ matrix of $f$ w.r.t $B$ if
-$[T]_{B} = X \implies T \in I(V,f) \iff X^TAX = A$
+  
+fix basis $B$ of $V$, $A$ matrix of $f$ w.r.t $B$ if $[T]_{B} = X \implies T \in I(V,f) \iff X^TAX = A$
+  <center>
 $$\implies I(v,f) \cong \{X \in GL(n,F) : X^TAX = A\}$$
+  </center>
 
 -   $f$ skew-symmetric $\implies$ there is only one form (up to
-    equivalence) so we get one isometry group; Classical [***symplectic
-    group***] Sp$(V,f)$
+    equivalence) so we get one isometry group; Classical  <span style="color: green;">***symplectic
+  group***</span> Sp$(V,f)$
 
 -   $f$ symmetric $\implies$ there are many forms, forming the isometry
-    groups; the classical [***orthogonal
-    groups***] $O(V,f)$
+    groups; the classical  <span style="color: green;">***orthogonal groups***</span> $O(V,f)$
 
 
