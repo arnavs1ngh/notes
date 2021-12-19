@@ -729,7 +729,7 @@ $\bar{V}$ has same vectors as $V$
 
 -   Addition in $\bar{V}$ same as $V$
 
--   Scalar multiplication; $\lambda * v = \bar{\lamdba}v$
+-   Scalar multiplication; $\lambda * v = \bar{\lambda}v$
 
 **Proposition 14.2.**\
 $V$ finite-dimensional. Define $\pi : \bar{V} \to V*$ as
@@ -739,17 +739,18 @@ $$\pi(v) = f_v \quad \forall v \in V$$
 
 $\implies \pi$ a vector space isomorphism\
 
-**Definition -    <span style="color: green;">**Orthogonality**</span> **\
+**Definition** -    <span style="color: green;">**Orthogonality**</span>\
+
 $\{v_1,\dots,v_k\}$ orthogonal if $(v_i,v_j) = 0\ \forall i,j\ i\neq j$\
 Orthonormal if also $||v_i|| = 1\ \forall i$\
 
 
-**Definition -  <span style="color: green;">**$W^\perp$**</span>**
+**Definition -  <span style="color: green;">$W^\perp$</span>**
 
 $W \subseteq V$ define
 $$W^{\perp} = \{u \in V: (u,w) = 0\ \forall w \in W\}$$
 
-**Proposition**\
+**Proposition**
 
 $V$ a finite dimensional inner product space. $W \leq V$
 $$\implies V = W \oplus W^\perp$$
@@ -808,7 +809,7 @@ $$\pi_W(v) = w$$
 </center>
   
 **Proposition 14.7.**\
-$V$ an inner product space. $W \leq V$ with $\pi_W$ orthogonal projection map along $W$.
+$V$ an inner product space. $W \leq V$ with $\pi_W$ orthogonal projection map along $W$
 
 1.  $v\in V \implies \pi_W$ vector in $W$ closest to $V$\
     i.e for $w \in W$, $||w-v||$ minimum for $w = \pi_W(v)$
@@ -839,10 +840,10 @@ $$f_i = \sum_{j=1}^{n}p_{ji}e_{j} \implies P^{T}\bar{P} = I$$
     i.e $||Pv|| = ||v|| \quad \forall v$
 
 2.  Set of all isometries form a group - *classical group*\
-    *orthogonal group*;
-    $O(n,\mathbb{R}) = \{P \in M_{n}(\mathbb{R}) : P^{T}P = I\}$\
-    *Unitary Group*;
-    $U(n,\mathbb{C}) = \{P \in M_{n}(\mathbb{C}) : P^{T}\bar{P} = I$
+
+    *orthogonal group*; $O(n,\mathbb{R}) = \{P \in M_{n}(\mathbb{R}) : P^{T}P = I\}$
+    
+    *Unitary Group*; $ U(n,\mathbb{C}) = \{P \in M_{n}(\mathbb{C}) : P^{T}\bar{P} = I $
 
 # <span style="color: white;">15</span> Linear maps on inner product spaces
 
@@ -855,17 +856,17 @@ $$(T(u),v) = (u,T^*(v))$$
 
 Say $T^*$ -  <span style="color: green;">**adjoint of $T$**</span>
 
-$T$  <span style="color: green;">**self-adjoint**</span> if $T = T^*$\
+$T$  <span style="color: green;">**self-adjoint**</span> if $T = T^*$
 
 **Proposition 15.2.**\
 $V$ an inner product space with orthonormal basis $E = \{v_1,\dots,v_n\}$\
 $T:V \to V$ a linear map, $A = [T]_{E}$
 
-$\implies [T^*]_{E} = \bar{A}^T$ if field $\mathbb{R}\implies A$ symmetric, if field $\mathbb{C}\implies A$ hermitian\
+$\implies [T^*]_{E} = \bar{A}^T$ if field $\mathbb{R}\implies A$ symmetric, if field $\mathbb{C}\implies A$ hermitian
 
-**Theorem 15.3.  <span style="color: red;">**Spectral Theorem**</span>**\
+**Theorem 15.3.  <span style="color: red;">**Spectral Theorem**</span>**
 
-$V$ an inner product space. $T: V \to V$ a self-adjoint linear map $\implies V$ has orthonormal basis of $T$-eigenvectors.\
+$V$ an inner product space. $T: V \to V$ a self-adjoint linear map $\implies V$ has orthonormal basis of $T$-eigenvectors.
 
 **Corollary 15.4.**
 
@@ -887,7 +888,7 @@ $T: V\to V$ self-adjoint
 
 # <span style="color: white;">16</span> Bilinear & Quadratic Forms
 
-**Definition. -  <span style="color: green;">**Bi-linear form**</span>**\
+**Definition. -  <span style="color: green;">Bi-linear form</span>**
 
 $V$ a vector space over $F$\
  <span style="color: green;">**Bi-linear form**</span> on $V$ a map;
@@ -908,7 +909,7 @@ $(,)$ a bilinear form on finited dimensional vector space $V$. With $B = \{ v_1,
 $A$ matrix of $(,)$ w.r.t $B$, So $(a_{ij}) = (v_i,v_j) \implies \forall u,v \in V\ (u,v) = [u]_{B}^{T}A[v]_B$\
 
 
-**Definition -  <span style="color: green;">**Symmetric & Skew-symmetric**</span>**\
+**Definition -  <span style="color: green;">Symmetric & Skew-symmetric</span>**\
 Bilinear form $(,)$ on V is
 
 -    <span style="color: green;">**Symmetric**</span> if $(u,v) = (v,u)\ \forall u,v \in V$
@@ -942,7 +943,7 @@ $$\iff$$
   $(,)$  skew-symmetric or symmetric
 </center>
 
-**Definition -  <span style="color: green;">**Non-degenerate**</span>**\
+**Definition -  <span style="color: green;">Non-degenerate</span>**
 
 $(,)$ on $V$  <span style="color: green;">**non-degenerate**</span> if $V^\perp = \{0\}$. Where $V^\perp$ defined analogously w.r.t bilinear forms.
 <center>
@@ -956,10 +957,11 @@ $V^\perp = \{0\} \iff$ matrix of $(,)$ w.r.t a basis is invertible.
 **Proposition 16.3.**\
 Suppose $(,)$ non-degenerate bilinear form on a finite dimensional vector space $V$.
 
-1.  $v\in V$ define $f_v \in V^*$\
-    $f_v(u) = (v,u)\quad \forall u \in V$\
-    $\implies \phi: V \to V^*$ mapping $v \mapsto f_v \ (v \in V)$ an
-    isomorphism
+1.  $v\in V$ define $f_v \in V^{\ast}$
+
+    $f_v(u) = (v,u)\quad \forall u \in V$
+    
+    $\implies \phi: V \to V^{\ast}$ mapping $v \mapsto f_v \ (v \in V)$ an isomorphism
 
 2.  $\forall W \leq V$ we have $dim(W^\perp) = dim(V)-dim(W)$
 
@@ -970,7 +972,7 @@ $A,B \in M_n(F)$  <span style="color: green;">**congruent**</span> if $\exists$ 
 <center>
 $$B = P^TAP$$
 </center>
-$A,B$ congruent $\implies$ bilinear forms $(u,v)_{1} = u^TAv$ and $(u,v)_{2} = u^TBv$ are  <span style="color: green;">**equivalent**</span>
+$A,B$ congruent $\implies$ bilinear forms $(u,v)_{1} = u^{T}Av$ and $(u,v)_{2} = u^{T}Bv$ are  <span style="color: green;">**equivalent**</span>
 
 **Skew-symmetric bilinear forms**\
 **Theorem 16.4.**\
@@ -983,13 +985,13 @@ $(,)$ non-degenerate skew-symmetric bilinear form on $V$. Then
     s.t matrix of $(,)$ w.r.t $B$ is a block-diagonal matrix
     <center>
     $$J_m = \underbrace{\begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix} \oplus \dots \oplus \begin{pmatrix} 0 & 1\\ -1 & 0\end{pmatrix}}_{m \text{ blocks }}$$
-  </center>
+    </center>
+    
     So that $(e_i,f_i) = -(f_i,e_i) = 1$\
     $(e_i,e_j) = (f_i,f_j) = (e_i,f_j)=(f_j,e_i) = 0\quad \forall i \neq j$
 
 **Corollary 16.5.**\
-If $A$ invertible skew-symmetric $n \times n$ matrix over $F$ where
-$char(F) \neq 2 \implies n$ even and $A$ congruent to $J_m$\
+If $A$ invertible skew-symmetric $n \times n$ matrix over $F$ where $char(F) \neq 2 \implies n$ even and $A$ congruent to $J_m$
 
 **Symmetric bilinear forms**\
 **Theorem 16.6.**\
@@ -1005,7 +1007,7 @@ $$(v_i,v_j) = 0 \quad \text{ for } i \neq j$$
 $$(v_i,v_i) = \alpha_i \neq 0 \quad \forall i$$
 </center>
 
-Matrix of $(,)$ w.r.t $B$ $=diag(\alpha_1,\dots,\alpha_n)$\
+Matrix of $(,)$ w.r.t $B$ $=diag(\alpha_1,\dots,\alpha_n)$
 
 **Corollary 16.7.**\
 $A$ invertible symmetric matrix over $F, char(F) \neq 2$\
@@ -1026,7 +1028,8 @@ $\implies A$ congruent to diagonal matrix
 ***Quadratic Form***\
 Assume from now $F$ s.t $char(F) \neq 2$, $V$ a finite dimensional vector space over $F$\
 
-**Definition -  <span style="color: green;">**Quadratic form**</span>**\
+**Definition -  <span style="color: green;">Quadratic form</span>**\
+
 Quadratic form on $V$ a map $Q: V \to F$ of form
 <center>
 $$Q(v) = (v,v)\qquad \forall v\in V$$
@@ -1034,7 +1037,7 @@ $$Q(v) = (v,v)\qquad \forall v\in V$$
 $(,)$ a symmetric bilinear form on $V$\
 $Q$ non-degenerate if $(,)$ non-degenerate.\
 
-*Remarks*\
+***Remarks***
 
 1.  given $Q$ we find $(u,v) = \frac{1}{2}[Q(u+v)-Q(u)-Q(v)]$
 
@@ -1051,10 +1054,10 @@ $Q$ non-degenerate if $(,)$ non-degenerate.\
         \end{aligned}$$
   </center>
 
-  A general homogeneous quadratic polynomial in $x_1,\dots,x_n$ ( all terms of degree 2)
+A general homogeneous quadratic polynomial in $x_1,\dots,x_n$ ( all terms of degree 2)
 
 ***Change of variables***\
-**Definition -  <span style="color: green;">**Equivalent Quadratic Forms**</span>**\
+**Definition -  <span style="color: green;">Equivalent Quadratic Forms</span>**\
 $V = F^{n},\ Q: V \to F$\
 $Q(x) = x^TAx\ \forall x \in V, A$ symmetric\
 Take $y = (y_1,\dots,y_n)^T$ s.t $x = Py$ for $P$ invertible\
@@ -1073,21 +1076,19 @@ $V = F^{n}$, $Q:V\to F$ non-degenerate quadratic form
   <center>
     $$Q_{0}(x) = x_{1}^{2} + \dots + x_{n}^{2} \quad (x\in \mathbb{C}^{n})$$
   </center>
+  
     Has matrix $I_{n}$
 
 2.  if $F = \mathbb{R}\implies Q$ equivalent to unique $Q_{p,q}; p+q = n$
     <center>
     $$Q_{p,q}(x) = x_{1}^{2} + \dots + x_{p}^{2} - (x_{p+1}^{2} + \dots + x_{p+q}^{2})\quad (x \in \mathbb{C}^{n})$$
   </center>
-    Has matrix $I_{p,q} =
-    \begin{pmatrix}
-    $I_{p}$ & 0\
-    0 & $-I_{q}\end{pmatrix}$
-    
+  
+    Has matrix $I_{p,q} = \begin{pmatrix} I_{p} & 0\\ 0 & -I_{q}\end{pmatrix}$
 
 3.  if $F = \mathbb{Q}\implies \exists$ infinitely many inequivalent non-degenerate quadratic forms on $\mathbb{Q}^{n}$
 
-**Definition -  <span style="color: green;">**isometry**</span>**\
+**Definition -  <span style="color: green;">isometry</span>**\
   
 $f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on finite dimensional vector space $V$\
 <span style="color: green;">**Isometry**</span> of $f$ a linear map $T:V\to V$ s.t
@@ -1096,14 +1097,14 @@ $f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on finite dime
   </center>
 $T$ invertible since $f$ non-degenerate.
 
-**Definition -  <span style="color: green;">**Isometry Group**</span>**\
+**Definition -  <span style="color: green;">Isometry Group</span>**\
   <center>
 $$I(V,f) = \{T: T \text{ an isometry }\}$$
   </center>
   
 forms a subgroup of general linear group $GL(V)$\
   
-***Equivalently;***\
+***Equivalently;***
   
 fix basis $B$ of $V$, $A$ matrix of $f$ w.r.t $B$ if $[T]_{B} = X \implies T \in I(V,f) \iff X^TAX = A$
   <center>
