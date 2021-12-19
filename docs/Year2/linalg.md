@@ -142,26 +142,28 @@ $$U_{1} + \dots + U_{k} = \{u_{1}+\dots+u_{k}:u_{i} \in U_{i}, \forall i\}$$
 
 **Definition - <span style="color: green;">Direct Sums**</span>
 
-$V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. [**$V$ a direct sum of $\{V_{i}\}$**] if: 
+$V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. **$V$ a direct sum of $\{V_{i}\}$** if: 
 <center>
 $$V = V_{1} \oplus \dots \oplus V_{k}$$
 </center>
-If $\forall v \in V$ can be expressed as $v = v_{1} + \dots + v_{k}$ for unique vectors $v_{i} \in V_{i}$\
+If $\forall v \in V$ can be expressed as $v = v_{1} + \dots + v_{k}$ for unique vectors $v_{i} \in V_{i}$
 
 *Corollary*
 <center>
 $V = V_{1} \oplus \dots \oplus V_{k} \iff  dimV = \sum_{i=1}^{k}dimV_{i}$ and if $B_{i}$ a basis for $V_{i}$}, $B = \bigcup_{i}B_{i}$ is a basis for V$
 </center>
 
-**Definition - <span style="color: green;">Invariant subspaces**</span>
-$T: V\to V$ a linear map, $W$ a subspace of $V$.\
+**Definition** - <span style="color: green;">**Invariant subspaces**</span>
+
+$T: V\to V$ a linear map, $W$ a subspace of $V$.
 
 <center>
 $W$ is $T$-invariant if $T(W) \subseteq W, T(W) = \{T(w) : w \in W\}$
 </center>
 
 Write $T_{W}: W \to W$ for the restriction of $T$ to $W$\
-**Notation - Direct sums of matrices**\
+
+**Notation - Direct sums of matrices**
 
 $$A_{1} \oplus \dots \oplus A_{k} = \begin{pmatrix}
 A_{1} & &\\
@@ -172,9 +174,9 @@ A_{1} & &\\
 
 # <span style="color: white;">5</span> Quotient Spaces
 
-**Definition - <span style="color: green;">Cosets**</span>
+**Definition** - <span style="color: green;">**Cosets**</span>
 
-$V$ a vector space over $F$, with $W \leq V$ a subspace.\
+$V$ a vector space over $F$, with $W \leq V$ a subspace.
 
 <center>
 Cosets $W + v$ for $v\in V$ $W + v:= \{w+v:w \in W\}$
@@ -188,18 +190,25 @@ Define $V/W$ as a vector space of vectors $W + v$ over $F$
 
 -   Scalar Multiplication; $\lambda(W+v) = W + \lambda v$
 
-Can verify this using vector space axioms.\
-*Dimension of $V/W$*\
-$$dimV/W = dimV - dim W$$
+Can verify this using vector space axioms.
 
-**Definition -** [**Quotient Map**]\
-$T: V \to V$ a linear map, $W$ a $T$-invariant subspace of V. Quotient
-map: $\bar{T}: V/W: \to V/W$ such that
+*Dimension of $V/W$*
+<center>
+$$dimV/W = dimV - dim W$$
+</center>
+
+**Definition -** <span style="color: green;">**Quotient Map**</span>
+
+$T: V \to V$ a linear map, $W$ a $T$-invariant subspace of V. Quotient map: $\bar{T}: V/W: \to V/W$ such that
+<center>
 $$\bar{T}(W+v) = W + T(v), \qquad \forall v \in V$$
+</center>
+
 
 # <span style="color: white;">6</span> Triangularisation
 
 *Lemma - Diagonal Matrices*\
+<center>
 $$A = 
 \begin{pmatrix}
 \lambda_{1} &  & & & \\
@@ -216,6 +225,7 @@ B =
 0 & & & \cdot &\\
 0 & 0 & & & \mu_{n}
 \end{pmatrix}$$
+</center>
 
 -   Characteristic polynomial of $A$ = $\prod_{i=1}^{n}(x-\lambda_{i})$,
     eigenvalues $=\{\lambda_{i}\}$
@@ -227,49 +237,52 @@ B =
 
 **Theorem 6.2 - Triangularisation Theorem**\
 $V$ an $n$ dimensional vector space over $F$, $T:V \to V$ a linear map,\
-Where $\chi(T) = \prod_{i=1}^{n}(x-\lambda_{i})$, where
-$\lambda_{i} \in F \ \forall i$ $\implies \exists$ basis $B$ of $V$ s.t
-$[T]_{B}$ upper triangular
+Where $\chi(T) = \prod_{i=1}^{n}(x-\lambda_{i})$, where $\lambda_{i} \in F \ \forall i$ $\implies \exists$ basis $B$ of $V$ s.t $[T]_{B}$ upper triangular
 
 # <span style="color: white;">7</span> The Cayley-Hamilton Theorem
 
 **Theorem. 7.1 - *(Cayley-Hamilton Theorem)***\
-$V$ a finite dimensional vector space over $F$. $T: V \to V$ a linear
-map with char. poly. $p(x)$ $$p(T) = 0$$
+$V$ a finite dimensional vector space over $F$. $T: V \to V$ a linear map with char. poly. $p(x)$ 
+<center>
+$$p(T) = 0$$
+</center>
 
 # <span style="color: white;">8</span> Polynomials
 
-**Definition -** [**Polynomials over a
-field**]\
+**Definition -** <span style="color: green;">**Polynomials over a field**</span>
+
 $F$ a field,$p(x)$ over $F$, for
 $p(x) = \sum_{i}a_{i}x^{i}, F[x] = \{ p(x) : a_{i} \in F\}$\
-[**Degree of polynomial**]\
+
+<span style="color: green;">**Degree of polynomial**</span>
+
 $deg(p(x)) =$ the highest power of $x$ in $p(x)$\
-[**Euclidean Algorithm**]\
+
+<span style="color: green;">**Euclidean Algorithm**</span>
 $f,g \in F[x]$ with $deg(g) \geq 1$, Then $\exists q,r \in F[x] s.t$
+<center>
 $$f = gq +r$$ for either $r = 0$ or $deg(r) < deg(g)$
+</center>
+  
+**Definition -** <span style="color: green;">**Greatest Common Divisor (GCD) of polynomials**</span>
+  
+$f,g \in F[x] \backslash \{0\}$, <span style="color: red;">**Say $d\in F[x]$ the gcd of $f,g$ if:**</span>
 
-**Definition -** [**Greatest Common Divisor (GCD) of
-polynomials**]\
-$f,g \in F[x] \backslash \{0\}$, [**Say $d\in F[x]$ the gcd of $f,g$
-if:**]
+1.  <span style="color: RoyalBlue;">**$d\lvert f$ and $d\lvert g$**</span>
 
-1.  [**$d|f$ and $d|g$**]
-
-2.  [**if $e(x) \in F[x]$ and $e|f$ and $e|g$ Then
-    $e|d$**]
+2.  <span style="color: RoyalBlue;">**if $e(x) \in F[x]$ and $e\lvert f$ and $e\lvert g$ Then $e\lvert d$**</span>
 
 Say $f,g$ are co-prime if $gcd(f,g) = 1$\
+  
 ***Corollary***\
 $d = gcd(f,g) \implies \exists r,s \in F[x] \text{ s.t } d = rf + sg$\
-**Definiton -** [**Irreducible
-polynomials**]\
-$p(x) \in F[x]$ irreducible over $F$ if $deg(p) \geq 1$ and $p$ not
-factorisable over $F$ as a product of $\{f_{i}\} \in F$ s.t
-$deg(f_{i} \leq deg(p)$\
+  
+**Definiton -** <span style="color: green;">**Irreducible polynomials**</span>
+$p(x) \in F[x]$ irreducible over $F$ if $deg(p) \geq 1$ and $p$ not factorisable over $F$ as a product of $\{f_{i}\} \in F$ s.t $deg(f_{i} \leq deg(p)$
+  
 ***Corollary***\
-$p(x) \in F[x]$ irreducible, $\{g_{i}\} \in F[x]$, if
-$p|g_{1}\dots g_{r} \implies p|g_{i} \text{ for some } i$\
+$p(x) \in F[x]$ irreducible, $\{g_{i}\} \in F[x]$, if $p|g_{1}\dots g_{r} \implies p|g_{i} \text{ for some } i$\
+  
 **Theorem 8.7 - *(Unique Factorization Theorem)***\
 $f(x) \in F[x]$ s.t $deg(f) \geq 1$ $$f = p_{1}\dots p_{r}$$ where each
 $p_{i} \in F[x]$ irreducible. **Factorisation of $f$ is unique up to
@@ -277,7 +290,7 @@ scalar multiplication**\
 
 # <span style="color: white;">9</span> The minimal polynomial of a linear map
 
-**Definition -**[**Minimal polynomial**]\
+**Definition -** <span style="color: green;">**Minimal polynomial**</span>
 Say $m(x) \in F[x]$ a minimal polynomial for $T: V \to V$ if
 
 1.  $m(T) = 0$
@@ -290,9 +303,9 @@ Say $m(x) \in F[x]$ a minimal polynomial for $T: V \to V$ if
 
 -   For $T$ a linear map, its minimal polynomial $m_{T}(x)$ is unique
 
--   $p(x) \in F[x], p(T) = 0 \iff m_{T}(x)|p(x)$
+-   $p(x) \in F[x], p(T) = 0 \iff m_{T}(x)\lvert p(x)$
 
--   $m_{T}(x)|c_{T}(x)$ the char. poly. of $T$
+-   $m_{T}(x)\lvert c_{T}(x)$ the char. poly. of $T$
 
 -   $\lambda \in F$ a root of $c_{T}(x) \implies \lambda$ a root of
     $m_{T}(x)$
@@ -310,13 +323,17 @@ $c_{T}(x) \implies p(x)|m_{T}(x)$ *Corollaries*\
 # <span style="color: white;">10</span> Primary Decomposition
 
 **Theorem 10.1 - *(Primary Decomposition Theorem)***\
-$V$ a finite dimensional vector space over $F$, $T:V\to V$ a linear map
-with $m_{T}(x)$\
+$V$ a finite dimensional vector space over $F$, $T:V\to V$ a linear map with $m_{T}(x)$\
 Let factorisation of $m_{T}(x)$ into irreducible polynomials be:
-$$m_{T}(x) = \prod_{i=1}^{k}f_{i}(x)^{n_{i}}$$ Where $\{f_{i}(x)\}$ all
-distinct irreducible polynomials in $F[x]$\
-For $1 \leq i \leq k$, define: $$V_{i} = ker(f_{i}(T)^{n_{i}})$$ Then
-
+  <center>
+$$m_{T}(x) = \prod_{i=1}^{k}f_{i}(x)^{n_{i}}$$
+  </center>
+Where $\{f_{i}(x)\}$ all distinct irreducible polynomials in $F[x]$\
+For $1 \leq i \leq k$, define:
+<center>
+$$V_{i} = ker(f_{i}(T)^{n_{i}})$$ Then
+</center>
+  
 1.  $V = V_{1} \oplus \dots \oplus V_{k}$ *(Call this the [**primary
     decomposition**] of $V$ w.r.t $T$)*
 
@@ -326,11 +343,13 @@ For $1 \leq i \leq k$, define: $$V_{i} = ker(f_{i}(T)^{n_{i}})$$ Then
     $f_{i}(x)^{n_{i}}$
 
 In the case where each $f_{i}(x) = (x-\lambda_{i})$
-$$\implies m_{T}(x) = \prod_{i=1}^{k}(x-\lambda_{i})^{n_{i}}$$ With
-$\lambda_{i}$ distinct eigenvalues of $T$ and
+  <center>
+$$\implies m_{T}(x) = \prod_{i=1}^{k}(x-\lambda_{i})^{n_{i}}$$
+  </center>
+With $\lambda_{i}$ distinct eigenvalues of $T$ and
 $V_{i} = ker(T-\lambda_{i}I)^{n_{i}}$\
-We call $V_{i}$ the [**generalised $\lambda_{i}$-eigenspace of
-T**]\
+We call $V_{i}$ the <span style="color: green;">**generalised $\lambda_{i}$-eigenspace of T**</span>
+  
 ***Corollary***\
 A linear map $T:V \to V$ diagonalisable
 $\iff m_{T}(x) = \prod_{i=1}^{k}(x-\lambda_{i})$ a product of distinct
@@ -349,6 +368,7 @@ polynomials s.t $g_{1}(T)g_{2}(T) = 0$
 
 **Definition -** [**Jordan Block**]\
 $F$ a field and let $\lambda \in F$. Define $n\times n$ matrix:
+<center>
 $$J_{n}(\lambda) =
  \begin{pmatrix}
 \lambda & 1 & 0 & \dots & 0 & 0 \\
@@ -357,7 +377,10 @@ $$J_{n}(\lambda) =
  &  &  & \dots &  &  \\
 0 & 0 & 0 & \dots & \lambda & 1 \\
 0 & 0 & 0 & \dots & 0 & \lambda 
-\end{pmatrix}$$ ***Properties of the Jordan Blocks***
+\end{pmatrix}$$
+</center>
+    
+***Properties of the Jordan Blocks***
 
 1.  characteristic and minimal polynomials of $J$, $= (x-\lambda)^{n})$
 
@@ -372,9 +395,9 @@ $$J_{n}(\lambda) =
     $rank((J-\lambda I)^{i}) = n-i$. And under multiplication:
     $$e_{n} \to e_{n-i}, e_{n-1} \to e_{n-i-1} \dots$$
 
-***Lemma***\
-Let $A = A_{1} \oplus \dots \oplus A_{k}$ for each $i$ let $A_{i}$ have
-char. poly $c_{i}(x)$ and min. poly. $m_{i}(x)$.\
+***Lemma***
+                                             
+Let $A = A_{1} \oplus \dots \oplus A_{k}$ for each $i$ let $A_{i}$ have char. poly $c_{i}(x)$ and min. poly. $m_{i}(x)$.
 
 -   $c_{A}(x) = \prod_{i=1}^{k}c_{i}(x)$
 
@@ -392,12 +415,11 @@ $F$.\
 Then
 
 1.  $A$ similair to matrix of form
+                                             <center>
     $$J = J_{n_{1}}(\lambda_{1}) \oplus \dots \oplus J_{n_{k}}(\lambda_{k})$$
 
-    ::: center
-    [**This is the Jordan Canonical Form (JCF) of
-    $A$**]
-    :::
+    <span style="color: green;">**This is the Jordan Canonical Form (JCF) of $A$**</span>
+                                             </center>
 
 2.  Matrix $J$ from above, is uniquely determined by $A$ up to order of
     Jordan blocks
@@ -409,7 +431,10 @@ $A \sim J \implies$ same characteristic polynomial, eigenvalues,
 geometric multiplicities, minimal polynomial and $q(A) \sim q(J)$ for
 any polynomial $q$.\
 For each eigenvalue $\lambda$, collect all Jordan blocks as such;
+
+<center>
 $$J = \underbrace{(J_{n_{1}}(\lambda) \oplus \dots \oplus J_{n_{a}}(\lambda))}_{\lambda-\text{blocks of J}}\oplus\underbrace{(J_{m_{1}}(\mu) \oplus \dots \oplus J_{m_{b}}(\mu))}_{\mu-\text{blocks of J}}\oplus \dots$$
+</center>
 
 ***Properties of JCF***\
 $J$ as above, $\lambda$ an eigenvalue;
@@ -421,22 +446,23 @@ $J$ as above, $\lambda$ an eigenvalue;
 3.  max$(n_{1},\dots,n_{a}) = r$, where $(x-\lambda)^{r}$ the highest
     power of $(x-\lambda)$ dividing $m_{A}(x)$
 
-::: thm
-**Theorem 1**.
-:::
+**Theorem 11.6**.
+
 
 $T: V \to V$ a linear map s.t $c_{T}(x)$ a product of linear factors
 $\implies \exists$ basis $B$ of $V$ s.t $[T]_{B}$ a JCF matrix
 
-**Definition.- [**Nilpotent Matrix**]**\
+**Definition** - <span style="color: green;">**Nilpotent Matrix**</span>
+
 $A^{k} = 0$ for some $k \in \mathbb{N}$
 
-::: thm
-**Theorem 2**.
-:::
+**Theorem 11.7**.
 
-$S:V \to V$ a nilpotent linear map $\implies \exists$ basis $B$ of $V$
-s.t $$[S]_{B} = J_{n_1}(0) \oplus \dots \oplus J_{n_k}(0)$$
+
+$S:V \to V$ a nilpotent linear map $\implies \exists$ basis $B$ of $V$ s.t
+<center>
+$$[S]_{B} = J_{n_1}(0) \oplus \dots \oplus J_{n_k}(0)$$
+</center>
 
 ***Computing a Jordan Basis***\
 Finding the Jordan Basis $B$ as above.\
@@ -445,52 +471,67 @@ Theorem.\
 Take each restriction $T_{V_i}$ each with $1$ eigenvalue.\
 Let $S_{i} = T_{V_i} - \lambda_{i}I$ so each $S_{i}$ nilpotent.
 
--   Compute subspaces\
+-   **Step 1** Compute subspaces\
+    <center>
     $$V \supset S(V) \supset S^{2}(V) \supset \dots \supset S^{r}(V) \supset 0$$
+    </center>
+    
     $S^{r+1}(V) = 0$
 
--   Find basis of $S^{r}(V)$, Using the following rules extend to basis
+-   **Step 2** Find basis of $S^{r}(V)$, Using the following rules extend to basis
     of $S^{r-1}(V)$:
 
-    1.  $u_{1},S(u_{1}),\dots,S^{m_{1}-1}(u_{1}),\dots u_{r},S(u_{r}),\dots,S^{m_{r}-1}(u_{r})$
+    Given basis $u_{1},S(u_{1}),\dots,S^{m_{1}-1}(u_{1}),\dots u_{r},S(u_{r}),\dots,S^{m_{r}-1}(u_{r})$
 
-    2.  for each $i$ add vector $v_i \in V$ s.t $u_i = S({v_i})$
+    1.  for each $i$ add vector $v_i \in V$ s.t $u_i = S({v_i})$
 
-    3.  note $ker(S)$ contains linearly independent vectors
-        $$S^{m_{1}-1}(u_{1}),\dots,S^{m_{r}-1}(u_{r})$$ extend to basis
-        of $ker(S)$ by adding vectors $w_{1},\dots,w_{s}$ with dim
-        $ker(S) = r+s$\
+    2.  note $ker(S)$ contains linearly independent vectors
+    
+        <center>
+        $$S^{m_{1}-1}(u_{1}),\dots,S^{m_{r}-1}(u_{r})$$
+        </center>
+        
+        extend to basis of $ker(S)$ by adding vectors $w_{1},\dots,w_{s}$ with dim$ker(S) = r+s$\
         Yielding
+        <center>
         $$v_{1},S(v_{1}),\dots,S^{m_{1}}(v_{1}),\dots,v_{r},S(v_{r}),\dots,S^{m_{r}}(v_{r}),w_{1},\dots,w_{s}$$
-
--   Repeat successively finding Jordan bases of $S^{r-2},\dots,S(V),V$
+        </center>
+        
+-   **Step 3** Repeat successively finding Jordan bases of $S^{r-2},\dots,S(V),V$
 
 # <span style="color: white;">12</span> Cyclic Decomposition & Rational Canonical Form
 
-**Definition - [**Cyclic Subspaces**]**\
-$V$ a finite dimensional vector space over $F$, and $T:V \to V$ a linear
-map.\
-Let $0 \neq v \in V$ and define $$\begin{aligned}
+**Definition ** - <span style="color: green;">**Cyclic Subspaces**</span>
+
+$V$ a finite dimensional vector space over $F$, and $T:V \to V$ a linear map.\
+Let $0 \neq v \in V$ and define 
+<center>
+$$\begin{aligned}
     Z(v,T) &= \{f(T)(v)\ : \ f(x) \in F[x]\}\\
-     &= \text{Sp}(v,T(v),T^{2}(v),\dots)\end{aligned}$$ Say $Z(v,T)$ the
-$T$-cyclic subspace of $V$ generated by $v$.\
+     &= \text{Sp}(v,T(v),T^{2}(v),\dots)\end{aligned}$$
+</center>
+Say $Z(v,T)$ the $T$-cyclic subspace of $V$ generated by $v$.\
 $Z(v,T)$ is $T-$invariant. Write $T_{v}$
 
-**Definition - [**$T$-annihilator of $v$ and
-$Z(v,T)$**]**\
-Considering, $v,T(v),T^{2}(V),\dots$ with $T^{k}(v)$ first vector in
-span of previous ones
-$$\implies T^{k}(v) = -a_{0}v - a_{1}T(v) - \dots - a_{k-1}T(v)$$
-$T-$annihilator of $v$ and $Z(v,T)$ is
-$$m_{v}(x) = x^{k} + a_{k-1}x^{k} + \dots + a_{0} \in F[x]$$ This is
-monic polynomial of smallest degree s.t $m_{v}(T)(v) = 0$ also with
-$m_{v}(T)(w) = 0\ \forall w \in Z(v,T)$
+**Definition - <span style="color: green;">**$T$-annihilator of $v$ and $Z(v,T)$**</span>
 
-::: thm
-**Theorem 3**. **(Cyclic Decomposition Theorem)**
-:::
+Considering, $v,T(v),T^{2}(V),\dots$ with $T^{k}(v)$ first vector in span of previous ones
+<center>
+$$\implies T^{k}(v) = -a_{0}v - a_{1}T(v) - \dots - a_{k-1}T(v)$$
+</center>
+
+$T-$annihilator of $v$ and $Z(v,T)$ is
+<center>
+$$m_{v}(x) = x^{k} + a_{k-1}x^{k} + \dots + a_{0} \in F[x]$$
+</center>
+This is monic polynomial of smallest degree s.t $m_{v}(T)(v) = 0$ also with $m_{v}(T)(w) = 0\ \forall w \in Z(v,T)$
+
+
+**Theorem 12.2**. **(Cyclic Decomposition Theorem)**
+
 
 $V$ a finite dimensional vector space over $F$\
+
 $T:V \to V$ a linear map. Suppose $m_{T}(x) = f(x)^{k}$ for irreducible
 $f(x) \in F[x]$\
 $\implies \exists v_{1},\dots,v_{r} \in V$ s.t
