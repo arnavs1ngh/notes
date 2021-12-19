@@ -415,11 +415,14 @@ $F$.\
 Then
 
 1.  $A$ similair to matrix of form
-                                             <center>
+   
+   <center>
     $$J = J_{n_{1}}(\lambda_{1}) \oplus \dots \oplus J_{n_{k}}(\lambda_{k})$$
-
+    </center>
+    
+  <center>
     <span style="color: green;">**This is the Jordan Canonical Form (JCF) of $A$**</span>
-                                             </center>
+   </center>
 
 2.  Matrix $J$ from above, is uniquely determined by $A$ up to order of
     Jordan blocks
@@ -471,14 +474,14 @@ Theorem.\
 Take each restriction $T_{V_i}$ each with $1$ eigenvalue.\
 Let $S_{i} = T_{V_i} - \lambda_{i}I$ so each $S_{i}$ nilpotent.
 
--   **Step 1** Compute subspaces\
+-   **Step 1** - Compute subspaces\
     <center>
     $$V \supset S(V) \supset S^{2}(V) \supset \dots \supset S^{r}(V) \supset 0$$
     </center>
     
     $S^{r+1}(V) = 0$
 
--   **Step 2** Find basis of $S^{r}(V)$, Using the following rules extend to basis
+-   **Step 2** - Find basis of $S^{r}(V)$, Using the following rules extend to basis
     of $S^{r-1}(V)$:
 
     Given basis $u_{1},S(u_{1}),\dots,S^{m_{1}-1}(u_{1}),\dots u_{r},S(u_{r}),\dots,S^{m_{r}-1}(u_{r})$
@@ -497,7 +500,7 @@ Let $S_{i} = T_{V_i} - \lambda_{i}I$ so each $S_{i}$ nilpotent.
         $$v_{1},S(v_{1}),\dots,S^{m_{1}}(v_{1}),\dots,v_{r},S(v_{r}),\dots,S^{m_{r}}(v_{r}),w_{1},\dots,w_{s}$$
         </center>
         
--   **Step 3** Repeat successively finding Jordan bases of $S^{r-2},\dots,S(V),V$
+-   **Step 3** - Repeat successively finding Jordan bases of $S^{r-2},\dots,S(V),V$
 
 # <span style="color: white;">12</span> Cyclic Decomposition & Rational Canonical Form
 
@@ -535,7 +538,10 @@ $V$ a finite dimensional vector space over $F$\
 $T:V \to V$ a linear map. Suppose $m_{T}(x) = f(x)^{k}$ for irreducible
 $f(x) \in F[x]$\
 $\implies \exists v_{1},\dots,v_{r} \in V$ s.t
+<center>
 $$V + Z(v_1,T) \oplus \dots \oplus Z(v_r,T)$$ where
+</center>
+where
 
 1.  each $Z(v_{i},T)$ has $T$-annihilator $f(x)^{k_i}$ for
     $1\leq i \leq r,\ k = k_{1} \geq k_{2} \geq \dots \geq k_{r}$
@@ -545,52 +551,70 @@ $$V + Z(v_1,T) \oplus \dots \oplus Z(v_r,T)$$ where
 ***Corollary 12.3***\
 $T$ a finite dimensional vector space over $F$\
 $\implies \exists$ basis $B$ of $V$ s.t
+<center>
 $$[T]_{B} = C(f(x)^{k_{1}}) \oplus \dots \oplus C(f(x)^{k_{r}})$$
+</center>
 
 ***Corollary 12.3***\
 $A \in M_{n}(F)$, with $m_A(x) = x^{k}$\
+<center>
 $$\implies A \sim C(x^{k_1} \oplus \dots \oplus C(x^{k_r})$$
+</center>
 
-::: thm
-**Theorem 4**. **(Rational Canonical Form Theorem)**
-:::
 
-$V$ be finite dimensional over field $F$ with $T:V \to V$ a linear map
-with $$m_{T}(x) = \prod_{i=1}^{t}f_{i}(x)^{k_i}$$ with
-$\{f_{i}(x)\}_{i=1}^{t} \in F[x]$ set of distinct irreducible
-polynomials $\implies \exists$ basis $B$ of $V$ s.t
+**Theorem 12.5**. **(Rational Canonical Form Theorem)**
 
+$V$ be finite dimensional over field $F$ with $T:V \to V$ a linear map with
+<center>
+$$m_{T}(x) = \prod_{i=1}^{t}f_{i}(x)^{k_i}$$
+  </center>
+with $\{f_{i}(x)\}_{i=1}^{t} \in F[x]$ set of distinct irreducible polynomials $\implies \exists$ basis $B$ of $V$ s.t
+
+<center>
 $$\begin{aligned}
 _{B} &= C(f_{1}(x)^{k_{11}}) \oplus \dots \oplus C(f_{1}(x)^{k_{1r_1}}) \oplus \dots\\
     & \oplus C(f_{t}(x)^{k_{t1}}) \oplus \dots \oplus C(f_{t}(x)^{k_{tr_{t}}})\end{aligned}$$
-where for each $i$ $$k_{i} = k_{i1} \geq \dots \geq k_{ir_{i}}$$ with
-$r_{i}$ and $k_{i1},\dots,k_{ir_{i}}$ uniquely determined by $T$\
+</center>
+
+where for each $i$
+<center>
+$$k_{i} = k_{i1} \geq \dots \geq k_{ir_{i}}$$
+</center>
+with $r_{i}$ and $k_{i1},\dots,k_{ir_{i}}$ uniquely determined by $T$\
+
 ***Corollary 12.6***\
-$A \in M_{n}(F)$ s.t $m_{A}(x) = \prod_{i=1}^{t}f_{i}(x)^{k_{i}}$
-distinct irreducible polynomials.\
+$A \in M_{n}(F)$ s.t $m_{A}(x) = \prod_{i=1}^{t}f_{i}(x)^{k_{i}}$ distinct irreducible polynomials.\
 $\implies A \sim  C(f_{1}(x)^{k_{11}}) \oplus \dots \oplus C(f_{1}(x)^{k_{1r_1}}) \oplus \dots \oplus C(f_{t}(x)^{k_{t1}}) \oplus \dots \oplus C(f_{t}(x)^{k_{tr_{t}}})$
 
-***Computing the RCF*** $T:V \to V$ we have
+***Computing the RCF***
+
+$T:V \to V$ we have
+<center>
 $$c_{T}(x) = \prod_{i=1}^{t}f_{i}(x)^{n_i},\quad m_{T}(x) = \prod-{i=1}^{t}f_{i}(x)^{k_i}$$
+  </center>
+  
 $\{f_{i}(x)\}$ all distinct irreducible polynomials in $F[x]$\
-enough to find;
-$rank(f_{i}(T)^{r}) \forall i \in \{1,\dots,t \}, 1\leq r \leq k_{i}$
+enough to find; $rank(f_{i}(T)^{r}) \forall i \in \{1,\dots,t \}, 1\leq r \leq k_{i}$
 
 # <span style="color: white;">13</span> The Dual Space
 
-**Definition - [**Linear functional**]**\
+**Definition** - <span style="color: green;">**Linear functional**</span>
 $V$ a vector space over $F$\
-A [**linear functional**] on $V$ a linear
-map $\phi: V \to F$ s.t
+A <span style="color: green;">**linear functional**</span> on $V$ a linear map $\phi: V \to F$ s.t
+<center>
 $$\phi(\alpha v_{1} + \beta v_{2}) = \alpha\phi(v_1) + \beta\phi(v_2) \qquad \forall v_i \in V, \forall \alpha,\beta \in F$$
+  </center>
+  
 *Operations of linear functionals*
 
 1.  $(\phi_1 + \phi_2)(v) = \phi_1(v) + \phi_2(v), \qquad \forall v \in V$
 
 2.  $(\lambda\phi)(v) = \lambda\phi(v),\qquad \forall \lambda \in F, \forall v \in V$
 
-\
+**Definition** - <span style="color: green;">**The Dual Space**</span>
+<center>
 $$V^{*} = \{ \phi | \phi: V\ to F \text{ a linear functional }\}$$
+</center>
 $V^{*}$ a vector space over $F$ w.r.t above multiplication and addition.
 
 ***Dimension***\
@@ -600,44 +624,51 @@ $$\phi(\sum \alpha_i v_i) = \sum \alpha_i \lambda_i$$
 
 **Proposition 13.1**\
 Let $n = dim V$ with $\{v_1,\dots,v_n\}$ a basis of $V$\
-$\forall i$ define $\phi_i \in V^*$ by $$\phi_i(v_{j}) = \delta_{ij} = 
+
+$\forall i$ define $\phi_{i} \in V^*$ by
+<center>
+$$\phi_i(v_{j}) = \delta_{ij} = 
     \begin{cases} 
         1 & i = j \\
         0 & i \neq j\\
    \end{cases}$$
+</center>
+
 $\implies \phi_i(\sum \alpha_{j}v_{j}) = \alpha_{i} \implies \{\phi_1,\dots,\phi_n\}$
 a basis of $V^*$ the [**dual basis**] of
 $B$\
 $dim V^* = n = dim V$
 
-**Definition - [**Annihilators**]**\
-$V$ a finite dimensional vector space over $F$ and $V^*$ the dual space.
-$X \subset V.$ Say annihilator $X^0 of X:$
-$$X^0 = \{ \phi \in V^* : \phi(x) = 0 \forall x\in X\}$$ $X^0$ a
-subspace of $V^*$
+**Definition** - <span style="color: green;">**Annihilators**</span>
+
+$V$ a finite dimensional vector space over $F$ and $V^*$ the dual space. $X \subset V.$ Say annihilator $X^0 of X:$
+<center>
+$$X^0 = \{ \phi \in V^* : \phi(x) = 0 \forall x\in X\}$$
+</center>
+$X^0$ a subspace of $V^*$
 
 **Proposition 13.2.**\
 $W$ subspace of $V \implies dim W^0 = dim V - dim W$
 
 # <span style="color: white;">15</span> Inner Product Spaces
 
-**Definition - [**Inner Product**]**\
+**Definition** - <span style="color: green;">**Inner Product**</span>
+
 $F = \mathbb{R}$ or $\mathbb{C}$. $V$ a vector space over $F$\
 Inner product on $V$ a map $(u,v): V \times V \to F$ satisfying
 
-1.  $(\lamdba_1v_1 + \lamdba_2v_2, w) = \lamdba_1(v_1,w) + \lamdba(v_2,w)$
+1.  $(\lambda_1v_1 + \lambda_2v_2, w) = \lambda_1(v_1,w) + \lambda(v_2,w)$
 
 2.  $(w,v) = \bar{(w,v)}$
 
 3.  $(v,v) > 0$ if $v \neq 0$
 
-$\forall v_i,v,w \in V$ and $\lamdba_i \in F$. Call such a vector space
-$V$ with inner product $(,)$ an [**inner product
-space**].\
+$\forall v_i,v,w \in V$ and $\lambda_{i} \in F$. Call such a vector space $V$ with inner product $(,)$ an <span style="color: green;">**inner product space**</span>
+
 ***Properties of Inner Product Space***
 
 -   right-linear for $F = \mathbb{R}$;
-    $(v, \lamdba_1w_1+\lamdba_2w_2) = \bar{\lamdba_1}(v,w_1) + \bar{\lamdba_2}(v,w_2)$
+    $(v, \lambda_1w_1+\lambda_2w_2) = \bar{\lambda_1}(v,w_1) + \bar{\lambda_2}(v,w_2)$
 
 -   $(v,v) \in \mathbb{R}$
 
@@ -647,18 +678,22 @@ space**].\
 
 -   $(v,w) = (v,x) \forall v \in V \implies w=x$
 
-***Matrix of an inner product*** $V$ a finite dimensional inner product
-space. $B = \{v_1,\dots,v_n\}$ a basis.\
+***Matrix of an inner product***
+
+$V$ a finite dimensional inner product space. $B = \{v_1,\dots,v_n\}$ a basis.\
 Defining $a_{ij} = (v_i,v_j)$. So we have $a_{ji} = \bar{a_{ij}}$
 
 1.  $\mathbb{R}\implies A$ symmetric
 
 2.  $\mathbb{C}\implies A$ hermitian
 
-$v,w \in V \implies (v,w) = [v]_{B}^{T}A[\bar{w}]_{B}$\
-**Definition - [**Positive definite**]**\
+$v,w \in V \implies (v,w) = [v]_{B}^{T}A[\bar{w}]_{B}$
+
+**Definition - <span style="color: green;">**Positive definite**</span>
 Hermitian matrix $A$ positive-definite if
-$x^TA\bar{x} > 0\ \forall \text{ non-zero } x \in F^{n}$\
+
+$x^TA\bar{x} > 0\ \forall$ non-zero  $x \in F^{n}$\
+
 **Proposition 14.1**\
 For $u,v,w \in V$ we have
 
