@@ -141,6 +141,7 @@ $$U_{1} + \dots + U_{k} = \{u_{1}+\dots+u_{k}:u_{i} \in U_{i}, \forall i\}$$
 </center>
 
 **Definition - <span style="color: green;">Direct Sums**</span>
+
 $V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. [**$V$ a direct sum of $\{V_{i}\}$**] if: 
 <center>
 $$V = V_{1} \oplus \dots \oplus V_{k}$$
@@ -150,6 +151,7 @@ If $\forall v \in V$ can be expressed as $v = v_{1} + \dots + v_{k}$ for unique 
 *Corollary*
 <center>
 $V = V_{1} \oplus \dots \oplus V_{k} \iff  dimV = \sum_{i=1}^{k}dimV_{i}$ and if $B_{i}$ a basis for $V_{i}$}, $B = \bigcup_{i}B_{i}$ is a basis for V$
+</center>
 
 **Definition - <span style="color: green;">Invariant subspaces**</span>
 $T: V\to V$ a linear map, $W$ a subspace of $V$.\
