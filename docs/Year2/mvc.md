@@ -18,7 +18,7 @@ ol.n {list-style-type: none;}
 </head>
   
 
-<a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
+<a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">PDF MVC  - Concise Notes - Term 1</a>
 
 <button class="btn js-toggle-dark-mode">Light Mode</button>
 
