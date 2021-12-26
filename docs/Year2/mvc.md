@@ -188,13 +188,13 @@ If curl $A = 0$, $A$ is an **irrotational vector field**. If div $A = 0$, $A$ a 
 
 **Definition 1.5.1 -** **Definition of a Path Integral**
 <center>
-$$\lim_{n\rightarrow \infty} \sum_{n=1}^{N} f_{n} \delta s_n = \int_{\gamma}f ds \Rightarrow \int_{\gamma}\textbf{F} \cdot d\textbf{r} \int_{\gamma}\textbf{F}\cdot \textbf{\^{t }} ds \text{ where }\textbf{\^{t}}\text{ is the normalized vector tangent to the path}$$\
-  </center>
+$$\lim_{n\rightarrow \infty} \sum_{n=1}^{N} f_{n} \delta s_n = \int_{\gamma}f ds \Rightarrow \int_{\gamma}\textbf{F} \cdot d\textbf{r} \int_{\gamma}\textbf{F}\cdot \textbf{\^{t}} ds $$ where $\^{t}$  is the normalized vector tangent to the path
+</center>
   
   
 **Definition 1.5.3 -** **Conservative forces**
 
-If [**$F = \nabla \phi$**] for a [**differentiable scalar function $\phi$**], [**$F$ is said to be a conservative field**], which has the following properties:
+If [**$F = \nabla \phi$**] for a **differentiable scalar function $\phi$**, **$F$ is said to be a conservative field**, which has the following properties:
 <center>
 $$\int_{\gamma} \textbf{F} \cdot d\textbf{r} = \phi(B)-\phi(A)$$ 
   </center>
@@ -202,11 +202,11 @@ Result independent of path joining **A** and **B**, in particular for $\gamma$ a
 <center>
 $$\oint_{\gamma}\textbf{F}\cdot d\textbf{r} = 0$$ 
 </center>
-Call this a **circulation of F** around $\gamma$\
+Call this a **circulation of F** around $\gamma$
 
-If a vector field **F** s.t [**$\oint_{\gamma}F\cdot dr = 0$**], for any closed curve $\gamma$ say [**F a conservative field**], if $\textbf{F} = \nabla\phi \implies \textbf{F}$ conservative.\
+If a vector field **F** s.t **$\oint_{\gamma}F\cdot dr = 0$**, for any closed curve $\gamma$ say **F a conservative field**, if $\textbf{F} = \nabla\phi \implies \textbf{F}$ conservative.\
 
-If **F** conservative $\implies$ can always find differentiable scalar function $\phi$ s.t **F**$=\nabla\phi$, call $\phi$ the [**potential of field F**]\
+If **F** conservative $\implies$ can always find differentiable scalar function $\phi$ s.t **F**$=\nabla\phi$, call $\phi$ the **potential of field F**
 
 **Definition 1.5.4 -**  **Calculation of Path Integrals**
 
@@ -224,7 +224,7 @@ $$\implies
 **Definition 1.6.1 -** **Surface Integral**
 Consider a surface $S$,where we find the surface integral of $f = f(P)$ over $S$.\
 
-Dividing $S$ into small elements of area $\delta S_{i}$, with $f_{i}$ the values of $f$ at typical points $P_{i}$ of $\delta S_{i}$\
+Dividing $S$ into small elements of area $\delta S_{i}$, with $f_{i}$ the values of $f$ at typical points $P_{i}$ of $\delta S_{i}$
 
 The **surface integral of $f$ over $S$** is
 <center>
@@ -275,9 +275,8 @@ $$y =
       F_{2}(x) & \text{lower half ACB}
 \end{cases}$$
   
-$$\textcolor{red}{
-\text{\textbf{Area of } \mathbf{S}= \int_{S}dS = \int_{x=a}^{x=b}\int_{y=F_{2}(x)}^{y=F_{1}(x)}dydx = \int_{a}^{b}[F_{1}(x) - F_{2}(x)]dx
-}$$
+
+Area of  $\mathbf{S}= \int_{S}dS = \int_{x=a}^{x=b}\int_{y=F_{2}(x)}^{y=F_{1}(x)}dydx = \int_{a}^{b}[F_{1}(x) -F_{2}(x)]dx $
 
 </center>
 For $f(x,y)$ a function of position
@@ -331,7 +330,8 @@ $\Sigma_{x}$, projection onto $x=0$, $\Sigma_{y}$, projection onto $y=0$
 
 **Definition 1.7.1 -** **Volume Integral**
 
-Considering a volume $\tau$, split into $N$ subregions, $\{\delta \tau_{i}\}$, with $\{P_{i}\}$ typical points of $\{\delta \tau_{i}\}$.\
+Considering a volume $\tau$, split into $N$ subregions, $\{\delta \tau_{i}\}$, with $\{P_{i}\}$ typical points of $\{\delta \tau_{i}\}$.
+
 <center>
 $$\int_{\tau}f d\tau = \lim_{\substack{N \to \infty \\ max(\delta \tau_{i}) \to 0}}\sum_{i=1}^{N}f(P_{i})\delta \tau_{i}$$
 </center>
@@ -368,7 +368,7 @@ $$\label{eq1}
 \begin{split}
 \oint_{C}F \cdot dr & = \int_{R}k\cdot \text{curl } F dS\\
 & = \int_{R}\text{curl }F \cdot d\mathbf{S}, \qquad d\mathbf{S} = \hat{\mathbf{k}}dS
-\end{split}$$\
+\end{split}$$
 </center>
 
 *(ii) Divergence Theorem in $2D$*\
@@ -403,19 +403,25 @@ $$\begin{split}
 ![Right; Green's Theorem in multiply-connected
 regions](connected.png){width="50%"}
 
-\
 
-$R$ [**simply-connected**] if any closed
-curve in $R$ can be shrunk to a point without leaving $R$.\
-For $2D$ any region with a hole in it; **not simply connected**, we say
-it is [**multiply-connected**]\
-**Green's theorem still holds in multiply-connected regions**. $C$
-interpreted as the entire inner and outer boundary.\
-For doubly-connected region, describe outer $C_{0}$ anti-clockwise,
-$C_{1}$ clockwise, and join them via $A$ on $C_{0}$ and $B$ on $C_{1}$\
+$R$ **simply-connected** if any closed curve in $R$ can be shrunk to a point without leaving $R$.
+
+For $2D$ any region with a hole in it; **not simply connected**, we say it is **multiply-connected**
+
+**Green's theorem still holds in multiply-connected regions**.
+
+$C$ interpreted as the entire inner and outer boundary.
+
+For doubly-connected region, describe outer $C_{0}$ anti-clockwise, $C_{1}$ clockwise, and join them via $A$ on $C_{0}$ and $B$ on $C_{1}$
+
 $R$ now a simply connected region bounded by $(C_{0} + AB + C_{1} + BA)$
+<center>
 $$\int_{R}\text{curl }\mathbf{F}\cdot d\mathbf{S} = \left(\oint_{C_{0}} + \int_{A}^{B} + \oint_{C_{0}} + \int_{B}^{A}\right)(\mathbf{F}\cdot d\mathbf{r})$$
+
 $$\int_{R}\text{curl }\mathbf{F}\cdot d\mathbf{S} = \left(\oint_{C_{0}} + \oint_{C_{1}} \right)(\mathbf{F}\cdot d\mathbf{r}) = \left( \oint_{C}\mathbf{F}\cdot d\mathbf{r} \right)$$
+  
+</center>
+
 Where $C = C_{0} + C_{1}$
 
 ### Flux
@@ -426,17 +432,16 @@ convention draw unit normal $\mathbf{\hat{n}}$ **out** of $S$.
 
 ### The divergence theorem
 
-If $\tau$ the volume enclosed by a closed surface $S$ with unit outward
-normal $\mathbf{\hat{n}}$ and $\mathbf{A}$ is a vector field with
-continuous derivatives throughout $\tau$, then:
+If $\tau$ the volume enclosed by a closed surface $S$ with unit outward normal $\mathbf{\hat{n}}$ and $\mathbf{A}$ is a vector field with continuous derivatives throughout $\tau$, then:
+<center>
 $$\int_{S}\mathbf{A\cdot \hat{n}}dS = \int_{\tau}div \mathbf{A}d\tau$$
+</center>
 
 ### The Divergence theorem in more complicated geometries
 
 ![The divergence theorem for a non-convex
 surface](fig17DivThm.png){width="30%"}
 
-\
 
 1.  **Non-convex surfaces** *non-convex surface $S$ can be divided by
     surfaces(s) $\sigma$ into 2 (or more) parts $S_{1}$ and $S_{2}$
@@ -448,11 +453,10 @@ surface](fig17DivThm.png){width="30%"}
 2.  **A region with internal boundaries**
 
     1.  *Simply-connected regions* - e.g space between concentric
-        spheres..\
+        spheres.
 
         ![Simply-connected regions](fig18-1.png){width="30%"}
 
-        \
 
         Given interior surface $S_{i}$ and outer surface $S_{o}$. A
         plane $\Pi$ cutting both $S_{o},S_{i}$, divides $S_{o},S_{i}$
@@ -476,69 +480,93 @@ surface](fig17DivThm.png){width="30%"}
         Consider the closed surface, enclosing simply connected region
         $\tau$
 
-        ::: center
+        <center>
         $S_{i} +$ side 1 of $\Pi+ S_{o} +$ side 2 of $\Pi$
-        :::
+        </center>
 
         Applying divergence theorem to $\tau$. Once again gives
         $$\int_{S_{0}+S_{i}}\mathbf{A\cdot\hat{n}}dS = \int_{\tau}div\mathbf{A}d\tau$$
 
 ### Green's identity in 3D
 
-For $\phi$ and $\psi$ 2 scalar fields with continuous derivatives. We
-consider $\mathbf{A} = \phi \nabla \psi$, for which we have
+For $\phi$ and $\psi$ 2 scalar fields with continuous derivatives. We consider $\mathbf{A} = \phi \nabla \psi$, for which we have
+<center>
 $$\begin{aligned}
         div\mathbf{A} &= \phi\nabla^{2}\psi + (\underline{\nabla}\phi)\cdot(\underline{\nabla}\psi)\\
         \mathbf{\hat{n}\cdot A} &= \phi(\underline{\nabla}\psi)\cdot\hat{\mathbf{n}} = \phi\frac{\partial \psi}{\partial n}
-    \end{aligned}$$ **Green's first identity**\
+    \end{aligned}$$
+</center>
+
+**Green's first identity**
+
+<center>
 $$\int_{S}\left \{ \phi\frac{\partial \psi}{\partial n} \right \} dS = \int_{\tau}\phi\nabla^{2}\psi + (\underline{\nabla}\phi)\cdot(\underline{\nabla}\psi)d\tau$$
+</center>
+
 **Green's Second identity**
+
+<center>
 $$\int_{S}\left \{ \phi\frac{\partial \psi}{\partial n} - \psi\frac{\partial \phi}{\partial n} \right \} dS = \int_{\tau} \phi \nabla^{2}\psi - \psi\nabla^{2}\phi d\tau$$
+</center>
 
 ### Green's identities in 2D
 
-Divergence theorem in 2D:
-$\int_{F}div \mathbf{F}dxdy = \oint_{C}\mathbf{F\cdot\hat{n}}ds$\
+Divergence theorem in 2D: $\int_{F}div \mathbf{F}dxdy = \oint_{C}\mathbf{F\cdot\hat{n}}ds$
+
 Giving the following Green's identities:
+<center>
 $$\oint_{C}\phi\frac{\partial \psi}{\partial n}ds = \int_{R}[\phi \nabla^{2}\psi + (\nabla\psi)\cdot(\nabla\phi)dxdy$$
+</center>
 and
+<center>
 $$\oint_{C}\left [\phi\frac{\partial \psi}{\partial n} - \psi\frac{\partial \phi}{\partial n} \right ]ds = \int_{R}\left [ \phi \nabla^{2}\psi - \psi\nabla^{2}\phi \right ] dxdy$$
-[**$\int_{R}\phi\nabla^{2}\psi\ dxdy = \oint_{C}\phi \frac{\partial \psi}{\partial n}ds - \int_{R}(\nabla\psi)\cdot(\nabla\phi)dxdy$**] -
-**Looks like Integration by parts**
+</center>
+
+**$\int_{R}\phi\nabla^{2}\psi\ dxdy = \oint_{C}\phi \frac{\partial \psi}{\partial n}ds - \int_{R}(\nabla\psi)\cdot(\nabla\phi)dxdy$** - **Looks like Integration by parts**
 
 ### Gauss' Flux Theorem
 
-Let $S$ a closed surface with outward unit normal $\mathbf{\hat{n}}$ and
-let $O$ the origin of the coordinate system.\
+Let $S$ a closed surface with outward unit normal $\mathbf{\hat{n}}$ and let $O$ the origin of the coordinate system.
+
 $\mathbf{A} = \frac{\mathbf{r}}{r^{3}}$ Then:
+
+<center>
 $$\int_{S}\frac{\mathbf{\hat{n}}\cdot\mathbf{r}}{r^{3}} =
         \begin{cases}
         0, \text{ if $O$ is exterior to $S$}\\
         $4\pi$, \text{ if $O$ interior to $S$}
         \end{cases}$$
+</center>
+
 
 ### Stokes Theorem
 
 ![Diagram for proof of Stokes' Theorem](fig20.jpeg){width="30%"}
 
-Suppose $S$ is **open** surface with simple closed curve $\gamma$
-forming its boundary.\
+Suppose $S$ is **open** surface with simple closed curve $\gamma$ forming its boundary.
+
 $A$ a vector field with continuous partial derivatives, Then:
+
+<center>
 $$\oint_{\gamma}\mathbf{A}\cdot d\mathbf{r} = \int_{S}curl\mathbf{A\cdot\hat{n}}dS$$
+</center>
+
 This holds for **any** open surface with $\gamma$ as a boundary.
 
 **Theorem**\
 For $\mathbf{A}$ continuously differentiable and simply connected
 region:
+<center>
 $$\underbrace{\oint_{\gamma}\mathbf{A}\cdot d\mathbf{r} = 0}_{\mathbf{A} \text{ conservative}} \iff curl\mathbf{A} = 0, \text{ throughout region for which $\gamma$ is drawn}$$
+</center>
 
 ## Curvilinear Coordinates
 
 ### Intro + Definition
 
-Consider generally cartesian coordinates: $(x_1,x_2,x_3)$ with each
-expressible as single-valued differentiable functions of the new
-coorinates $(u_1,u_2,u_3)$ $$x_i = x_i(u_1,u_2,u_3)$$
+Consider generally cartesian coordinates: $(x_1,x_2,x_3)$ with each expressible as single-valued differentiable functions of the new coorinates $(u_1,u_2,u_3)$ $$x_i = x_i(u_1,u_2,u_3)
+<center>
+$$
 $$\frac{\partial x_i}{\partial x_j} = \delta_{ij} = \frac{\partial x_i}{\partial u_1}\frac{\partial u_1}{\partial x_j} + \frac{\partial x_i}{\partial u_2}\frac{\partial u_2}{\partial x_j}+ \frac{\partial x_i}{\partial u_3}\frac{\partial u_3}{\partial x_j}$$
 With the following matrix equation $$\left(\begin{array}{lll}
             \partial x_{1} / \partial u_{1} & \partial x_{1} / \partial u_{2} & \partial x_{1} / \partial u_{3} \\
@@ -548,47 +576,67 @@ With the following matrix equation $$\left(\begin{array}{lll}
             \partial u_{1} / \partial x_{1} & \partial u_{1} / \partial x_{2} & \partial u_{1} / \partial x_{3} \\
             \partial u_{2} / \partial x_{1} & \partial u_{2} / \partial x_{2} & \partial u_{2} / \partial x_{3} \\
             \partial u_{3} / \partial x_{1} & \partial u_{3} / \partial x_{2} & \partial u_{3} / \partial x_{3}
-        \end{array}\right)=I$$ Or more succinctly
-$$J(x_u)\cdot J(u_x) = I$$ We say $J(x_u)$ the [**Jacobian
-matrix**] for the $(x_1,x_2,x_3)$ system.\
+        \end{array}\right)=I$$
+</center>
 
-::: center
-$det\left ( J(x_u) \right)\neq 0\ \implies J(u_x)$ exists\
+Or more succinctly
+<center>
+$$J(x_u)\cdot J(u_x) = I$$
+</center>
+We say $J(x_u)$ the **Jacobian matrix** for the $(x_1,x_2,x_3)$ system.\
+
+<center>
+$det\left ( J(x_u) \right)\neq 0\ \implies J(u_x)$ exists
+  
 $det(J(x_u)) = \frac{1}{det(J(u_x))}$
-:::
+</center>
 
 We say $(u_1,u_2,u_3)$ define a curvilinear coordinate system.\
 With each $u_i =$ constant, defining a family of surfaces, with a member
 of each family passing through each $P(x,y,z)$
 
-Let $\mathbf{(\hat{a_1},\hat{a_2},\hat{a_3})}$ unit vectors at $P$ in
+Let $\mathbf{(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3})}$ unit vectors at $P$ in
 the direction normal to $u_i = u_i(P)$, s.t $u_i$ increasing in the
-direction $\mathbf{\hat{a_{i}}}$
+direction $\mathbf{\hat{a}_{i}}}$
+
+<center>
 $$\mathbf{\hat{a}_i} = \mathbf{\frac{\nabla u_i}{\lvert \nabla u_i \rvert}}$$
-if we have that $\mathbf{(\hat{a_1},\hat{a_2},\hat{a_3})}$ mutually
-orthogonal $\implies$ [**orthogonal curvilinear coordinate
-system.**]
+</center>
+
+if we have that $\mathbf{(\hat{a_1},\hat{a_2},\hat{a_3})}$ mutually orthogonal $\implies$ **orthogonal curvilinear coordinate system.**
+<center>
 $$\frac{\partial \mathbf{r}}{\partial u_i} = \mathbf{\hat{e_{i}}}h_{i}$$
-For which we define
-$h_{i} = \lvert \partial \mathbf{r}/ \partial u_{i} \rvert$. We call
-these the [**length scales**]
+</center>
+
+For which we define $h_{i} = \lvert \partial \mathbf{r}/ \partial u_{i} \rvert$. We call these the **length scales**
 
 ### Path element
 
 $\mathbf{r} = \mathbf{r}(u_1,u_2,u_3)$ **path element** $d\mathbf{r}$
-given by $$\begin{aligned}
+given by
+<center>
+$$\begin{aligned}
         d\mathbf{r} &= \frac{\partial \mathbf{r}}{\partial u_1}du_1 + \frac{\partial \mathbf{r}}{\partial u_2}du_2 + \frac{\partial \mathbf{r}}{\partial u_3}du_3\\
         &= h_{1}du_{1}\hat{e_{1}} + h_{2}du_{2}\hat{e_{2}}+ h_{3}du_{3}\hat{e_{3}}
-    \end{aligned}$$ For an orthongal system
+    \end{aligned}$$
+</center>
+
+For an orthongal system
+<center>
 $$(ds)^{2} = (d\mathbf{r})\cdot(d\mathbf{r}) = h_{1}(du_{1})^{2} + h_{2}(du_{2})^{2} +h_{3}(du_{3})^{2}$$
+  
 $$\hat{e}_{i} = \hat{a}_{i} = \mathbf{\frac{\nabla u_i}{\lvert \nabla u_i \rvert}}$$
+</center>
+
 
 ### Volume Element
 
+<center>
 $$\begin{aligned}
         d\tau &= (h_{1}du_{1})(h_{2}du_{2})(h_{3}du_{3})\\
         &= h_1h_2h_3du_1du_2du_3
     \end{aligned}$$
+</center>
 
 ### Surface element
 
@@ -598,12 +646,14 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
 
 1.  **Cartesisan coordinates** $(x,y,z)$
 
-    ::: center
-    ::: aligned
+    <center>
+    $$  
+    \begin{aligned}
     d&= dxdydz & d &= dx + dy + dz\
-    (ds)\^2 &= (d)(d) = (dx)\^2 + (dy)\^2 + (dz)\^2
-    :::
-    :::
+    (ds)\^2 &= (d\mathbf{r})\cdot(d\mathbf{r}) = (dx)\^2 + (dy)\^2 + (dz)\^2
+    \end{aligned}
+    $$
+    </center>
 
     We have $h_{1} = h_{2} = h_{3}$
 
@@ -611,12 +661,12 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     Related to cartesian by
     $$x = r\cos \theta \quad y = r\sin \phi \quad z = z$$
 
-    ::: center
+    <center>
     ::: aligned
     &= () + () + () = () + ()\
     &= () + () + () = -(r) + (r)\
     &=
-    :::
+
 
     ::: aligned
     ()() &= 0\
@@ -629,11 +679,11 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     h\_2 &= = r\
     h\_3 &= = 1
     :::
-    :::
+    </center>
 
     Yielding length and volume elements:
 
-    ::: center
+    <center>
     ::: aligned
     (ds)\^2 &= (dr)\^2+r\^2(d)\^2+(dz)\^2
     :::
@@ -641,7 +691,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     ::: aligned
     d= rdrddz
     :::
-    :::
+    </center>
 
 3.  **Spherical polar coordinates** $(r,\theta,\phi)$\
     Related to cartesian by:
@@ -672,36 +722,46 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
 
 ### Gradient in orthogonal curvilinear coordinates
 
-Let
-$\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$.\
-In a general coordinate system for $\lambda_{i}$s to be found.\
+Let $\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$.
+
+In a general coordinate system for $\lambda_{i}$s to be found.
+
+<center>
 $$d\mathbf{r} = h_{1}du_{1}\hat{e}_{1} +  h_{2}du_{2}\hat{e}_{2} + h_{3}du_{3}\hat{e}_{3}$$
+  
 $$\begin{aligned}
             d\mathbf{\Phi} &= (\frac{\partial \phi}{\partial u_{1}})du_{1} + (\frac{\partial \phi}{\partial u_{2}})du_{2}+ (\frac{\partial \phi}{\partial u_{3}})du_{3}\\
             &= (\frac{\partial \phi}{\partial x})dx + (\frac{\partial \phi}{\partial y})dy+ (\frac{\partial \phi}{\partial z})dz\\
             &= \fbox{(\nabla\Phi)\cdot d\mathbf{r} = \lambda_{1}h_{1}du_{1} + \lambda_{2}h_{2}du_{2} + \lambda_{3}h_{3}du_{3}}
         \end{aligned}$$
+</center>
+
+<center>
 $$h_{i}\lambda_{i} = \frac{\partial \Phi}{\partial u_{i}}$$
+  
 $$\implies \nabla \Phi = \frac{\hat{\mathbf{e}}_{1}}{h_{1}}\frac{\partial \Phi}{\partial u_{1}} + \frac{\hat{\mathbf{e}}_{2}}{h_{2}}\frac{\partial \Phi}{\partial u_{2}} + \frac{\hat{\mathbf{e}}_{3}}{h_{3}}\frac{\partial \Phi}{\partial u_{3}}$$
+  
+</center>
 
 1.  **Cylindrical polars** $(r,\phi,z)$\
     We have: $\begin{aligned}
                     h_{1} &= 1\\
                     h_{2} &= r\\
                     h_{3} &= 1
-                    \end{aligned}$ $\implies$ $\begin{aligned}
-                        \nabla = \hat{r}\frac{\partial}{\partial r} + \frac{\hat{\phi}}{r}\frac{\partial}{\partial \phi} + \hat{z}\frac{\partial}{\partial z}
                     \end{aligned}$
+                    $\implies$ 
+                    $\begin{aligned} \nabla = \hat{r}\frac{\partial}{\partial r} + \frac{\hat{\phi}}{r}\frac{\partial}{\partial \phi} + \hat{z}\frac{\partial}{\partial z} \end{aligned}$
 
 2.  **Spherical polars** $(r,\theta,\phi)$\
     We have:
-
-    ::: aligned
+    <center>
+    \begin{aligned}
     h\_1 &= 1\
     h\_2 &= r\
     h\_3 &= r
-    :::
-
+    \end{aligned}
+    </center>
+    
     $\implies$
 
     ::: aligned
@@ -710,92 +770,134 @@ $$\implies \nabla \Phi = \frac{\hat{\mathbf{e}}_{1}}{h_{1}}\frac{\partial \Phi}{
 
 ### Expressions for unit vectors
 
-$$\hat{\mathbf{e}}_{i} =h_{i}\nabla u_{i}$$ Alternatively, unit vectors
-orthogonal $\implies$ if we know 2 already then
+<center>
+$$\hat{\mathbf{e}}_{i} =h_{i}\nabla u_{i}$$
+</center>
+
+Alternatively, unit vectors orthogonal $\implies$ if we know 2 already then
+<center>
 $$\hat{\mathbf{e}}_{1} = (\hat{\mathbf{e}}_{2}\times\hat{\mathbf{e}}_{3}) = h_{2}h_{3}(\nabla u_{2} \times \nabla u_{3})$$
+</center>
 
 ### Divergence in orthogonal curvilinear coordinates
 
 Suppose we have vector field
+<center>
 $$\mathbf{A} = A_{1}\hat{\mathbf{e}}_{1} + A_{2}\hat{\mathbf{e}}_{2} + A_{3}\hat{\mathbf{e}}_{3}$$
+  
 $$\implies \nabla\cdot\mathbf{A} = \frac{1}{h_{1}h_{2}h_{3}}\left \{ \frac{\partial}{\partial u_{1}}(A_1h_2h_3) + \frac{\partial}{\partial u_{2}}(A_2h_3h_1) + \frac{\partial}{\partial u_{3}}(A_3h_1h_2) \right \}$$
+  
+</center>
+
 So we have divergence in other coordinate systems as follows:
 
 ### Curl in orthogonal curvilinear coordinates
 
-\
+<center>
 $$curl\mathbf{A} = \frac{1}{h_1h_2h_3}
         \begin{vmatrix}
         h_1\hat{e}_{1} & h_2\hat{e}_{2} & h_3\hat{e}_{3}\\
         \frac{\partial}{\partial u_{1}} & \frac{\partial}{\partial u_{2}} & \frac{\partial}{\partial u_{3}}\\
         h_{1}A_{1} & h_{2}A_{2} & h_{3}A_{3}
         \end{vmatrix}$$
+</center>
 
 1.  **Cylindrical polars**\
+    <center>
     $$curl \mathbf{A} = \frac{1}{r}
                 \begin{vmatrix}
                 \mathbf{\hat{r}} & r\hat{\phi} & \mathbf{\hat{k}}\\
                 \partial/\partial r & \partial/\partial \phi & \partial/\partial z\\
                 A_1 & A2 & A_3
                 \end{vmatrix}$$
+    </center>
 
 2.  **Spherical polars**\
+    <center>
     $$curl \mathbf{A} = \frac{1}{r^{2}\sin\theta}
                 \begin{vmatrix}
                 \mathbf{\hat{r}} & r\hat{\phi} &  r\sin\theta\hat{\phi} \\
                 \partial/\partial r & \partial/\partial \phi & \partial/\partial z\\
                 A_1 & rA2 & r\sin\theta A_3
                 \end{vmatrix}$$
+    </center>
 
 ### The Laplacian in orthogonal curvilinear coordinates
 
 From the above grad and div;
+<center>
 $$\nabla^{2}\Phi = \nabla \cdot (\nabla\Phi)$$
+  
 $$= \frac{1}{h_{1}h_2h_3}\left \{ \frac{\partial}{\partial u_1}\left (\frac{h_2h_3}{h_1}\frac{\partial \Phi}{\partial u_1}\right ) + \frac{\partial}{\partial u_2}\left (\frac{h_1h_3}{h_2}\frac{\partial \Phi}{\partial u_2}\right ) + \frac{\partial}{\partial u_3}\left (\frac{h_1h_2}{h_3}\frac{\partial \Phi}{\partial u_3}\right ) \right \}$$
+  
+</center>
 
 1.  **Cylindrical polars** $(r,\phi,z)$\
+    <center>
     $$\begin{aligned}
                     \nabla^{2}\Phi &= \frac{1}{r}\left \{ \frac{\partial}{\partial r}\left ( r\frac{\partial \Phi}{\partial r} \right ) + \frac{\partial}{\partial \phi}\left ( \frac{1}{r}\frac{\partial \Phi}{\partial \phi} \right ) + \frac{\partial}{\partial z}\left ( r\frac{\partial \Phi}{\partial z} \right ) \right \} \\
                     &= \frac{\partial^{2}\Phi}{\partial r^{2}} + \frac{1}{r}\frac{\partial \Phi}{\partial r} + \frac{1}{r^{2}}\frac{\partial^{2}\Phi}{\partial \phi^{2}} + \frac{\partial^{2}\Phi}{\partial z^{2}}
                 \end{aligned}$$
+    </center>
 
 2.  **Spherical polars** $(r,\theta,\phi)$\
+    <center>
     $$\begin{aligned}
                     \nabla^{2}\Phi &= \frac{1}{r^{2}\sin\theta}\left \{ \frac{\partial}{\partial r}\left ( r^{2}\sin\theta\frac{\partial \Phi}{\partial r} \right ) + \frac{\partial}{\partial \theta}\left ( \sin\theta\frac{\partial \Phi}{\partial \theta} \right ) + \frac{\partial}{\partial \phi}\left ( \frac{1}{\sin\theta}\frac{\partial \Phi}{\partial \phi} \right ) \right \} \\
                     &= \frac{\partial^{2}\Phi}{\partial r^{2}} + \frac{2}{r}\frac{\partial \Phi}{\partial r} + \frac{\cot\theta}{r^{2}}\frac{\partial\Phi}{\partial \theta} + \frac{1}{r^{2}}\frac{\partial^{2}\Phi}{\partial \theta^{2}} + \frac{1}{r^{2}\sin^{2}\theta}\frac{\partial^{2}\Phi}{\partial \phi^{2}}
                 \end{aligned}$$
+     </center>
 
 ## Changes of variables in surface integration
 
-Suppose we have surface $S$, parametrized by quantities $u_1,u_2$. We
-can write: $$x = x(u_1,u_2),\quad y = y(u_1,u_2), \quad z = z(u_1,u_2)$$
+Suppose we have surface $S$, parametrized by quantities $u_1,u_2$. We can write:
+
+<center>
+$$x = x(u_1,u_2),\quad y = y(u_1,u_2), \quad z = z(u_1,u_2)$$
+</center>
+
 Consider surface to be comprised of arbitrarily small parallelograms,
-its sides given by keeping either $u_1$ or $u_2$ $$\begin{aligned}
+its sides given by keeping either $u_1$ or $u_2$
+<center>
+$$\begin{aligned}
         dS &= \text{ Area of parallelogram with sides } \frac{\partial \mathbf{r}}{\partial u_1}du_{1} \text{ and } \frac{\partial \mathbf{r}}{\partial u_2}du_{2}\\
         &= \lvert \mathbf{J} \rvert du_{1}du_{2}
-    \end{aligned}$$ [**Vector Jacobian** ]
-given by
-$\mathbf{J} = \frac{d\mathbf{r}}{du_1}\times\frac{d\mathbf{r}}{du_2}$.\
+    \end{aligned}$$ 
+</center>
+
+**Vector Jacobian** given by $\mathbf{J} = \frac{d\mathbf{r}}{du_1}\times\frac{d\mathbf{r}}{du_2}$.
+
 Useful in substitution of surface integrals:
+<center>
 $$\int_{S}f(x,y,z)dS = \int_{S}F(u_1,u_2)\lvert \mathbf{J}\rvert du_{1}du_{2]}$$
-$F(u_1,u_2) = f(x(u_1,u_2),y(u_1,u_2),z(u_1,u_2))$\
+</center>
+
+$F(u_1,u_2) = f(x(u_1,u_2),y(u_1,u_2),z(u_1,u_2))$
+
 For S a region $R$ in the $x-y$ plane we can write:
+
+<center>
 $$\int_{R}f(x,y)dxdy = \int_{R}F(u_1,u_2)\lvert det(J(x_u)) \rvert du_1 du_2$$
+  
 $$\lvert \mathbf{J}\rvert = \vert \frac{d\mathbf{r}}{du_1}\times\frac{d\mathbf{r}}{du_2}\vert = det(J(x_u))  = 
     \begin{vmatrix}
     \partial x/ \partial u_1 & \partial x/\partial u_2\\
     \partial y/\partial u_1 & \partial y/\partial u_2
-    \end{vmatrix}$$ For a surface described by $z = f(x,y)$. We have
-$x = u_1, y = u_2$ and $\mathbf{r} = (x,y,f(x,y))$\
+    \end{vmatrix}$$
+</center>
+
+For a surface described by $z = f(x,y)$. We have $x = u_1, y = u_2$ and $\mathbf{r} = (x,y,f(x,y))$\
+
 We have:
 
-::: center
+<center>
 ::: aligned
 &= &= +\
 &= &= +\
 :::
-:::
+</center>
 
+<center>
 $$\begin{aligned}
         \lvert \frac{\partial \mathbf{r}}{\partial u_1} \times \frac{\partial \mathbf{r}}{\partial u_2} \rvert &= 
         \begin{Vmatrix}
@@ -804,8 +906,14 @@ $$\begin{aligned}
         0 & 1 & \partial f/\partial y
         \end{Vmatrix}\\
         &= \sqrt{1 + \lvert \nabla f \rvert^{2}}
-    \end{aligned}$$ So we have area of surface given by
-$$\int_{\Sigma}\sqrt{1 + \lvert \nabla f \rvert^{2}}dxdy$$ for $\Simga$
-the projection of $S$ onto the $x-y$ plane.
+    \end{aligned}$$
+</center>
+
+So we have area of surface given by
+<center>
+$$\int_{\Sigma}\sqrt{1 + \lvert \nabla f \rvert^{2}}dxdy$$
+</center>
+
+for $\Simga$ the projection of $S$ onto the $x-y$ plane.
 
 
