@@ -58,32 +58,45 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 
 ## Prelim
 
-**Definition 1.1.1 -** [**Einstein Summation
-Convention**]
-$$a_{i}x_{i} = \sum_{i=1}^{3}x_{i}$$ **Definition 1.1.2 -** [**The
-Kronecker delta**]\
+**Definition 1.1.1 -** **Einstein Summation Convention**
+<center>
+$$a_{i}x_{i} = \sum_{i=1}^{3}x_{i}$$ 
+</center>
+
+**Definition 1.1.2 -** **The Kronecker delta**
+
+<center>
 $$\delta_{ij} = 
 \begin{cases} 
       1, & i=j \\
       0, & i \neq j
-   \end{cases}$$ **Definition 1.1.3 -** [**The Permutation
-Symbol**]\
+   \end{cases}$$
+</center>  
+
+**Definition 1.1.3 -** **The Permutation Symbol**
+
+<center>
 $$\epsilon_{ijk} = 
 \begin{cases} 
       0, & \text{ if any 2 elements $i,j,k$ equal} \\
       1, & \text{if $i, j, k$ a cyclic permutation of $1, 2, 3$} \\\
       -1, & \text{if $i, j, k$ an acyclic permutation $1, 3, 2$}
-   \end{cases}$$ **Formula -** [**Relation between Kroenecker Delta and
-Permutation Symbol**]
+   \end{cases}$$ **Formula -** 
+</center> 
+
+**Relation between Kroenecker Delta and Permutation Symbol**
+<center>
 $$\epsilon_{ijk} \epsilon_{klm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta_{kl}$$
 $$\epsilon_{ijk} \epsilon_{ilm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta{kl}$$\
-**Definition 1.1.4 -** [**Vector
-Products**]\
-[**Here are some identities:**]
+  </center>
+  
+**Definition 1.1.4 -** **Vector Products**
+
+**Here are some identities:**
 
 -   $\textbf{a} \cdot \textbf{b} = a_{i}b_{i}$
 
--   $[\textbf{a}\times\textbf{b}]_{i} = \epsilon_{ijk}a_{j}b_{k}$
+-   $[ \mathbf{a} \times \mathbf{b} ]_{i} = \epsilon_{ijk} a_{j} b_{k} $
 
 -   $\textbf{a} \times \textbf{b} = 
     \begin{vmatrix}
@@ -97,32 +110,43 @@ Products**]\
 
 ## Gradient, Div, and Curl
 
-**Definition 1.2 -** [**Gradient, Directional
-Derivatives**]\
-$\phi =$ constant, defines a surface in 3$D$, varying the constant
-yields a family of surfaces.\
+**Definition 1.2 -** **Gradient, Directional Derivatives**
+
+$\phi =$ constant, defines a surface in 3D, varying the constant yields a family of surfaces.\
+<center>
 $$\hat{\textbf{n}}\frac{\partial \phi}{\partial n} = \nabla = (\frac{\delta}{\delta x}, \frac{\delta}{\delta y}, \frac{\delta}{\delta z}) \Rightarrow \nabla \phi = \frac{\delta \phi}{ \delta x} + \frac{\delta \phi}{ \delta y} + \frac{\delta \phi}{ \delta z}$$
-[****s** =
-$\frac{\delta \phi}{\delta s} = \nabla \phi \cdot \textbf{\^{s}}$**]\
-[**$\nabla \phi = \textbf{\^{r}} \frac{\delta \phi}{\delta r} + \frac{\hat{\theta}}{r} \frac{\delta \phi}{\delta \theta} + \textbf{k} \frac{\delta \phi}{\delta z}$**]\
-**Definition 1.2.3 -** [**Tangent Plane to
-$\phi(P)$**]
+</center>
+
+s = $\frac{\delta \phi}{\delta s} = \nabla \phi \cdot \textbf{\^{s}}$
+
+**$\nabla \phi = \textbf{\^{r}} \frac{\delta \phi}{\delta r} + \frac{\hat{\theta}}{r} \frac{\delta \phi}{\delta \theta} + \textbf{k} \frac{\delta \phi}{\delta z}$**
+
+
+**Definition 1.2.3 -** [**Tangent Plane to $\phi(P)$**]
+<center>
 $$(\mathbf{r}-\mathbf{r}_{p})\cdot(\nabla \phi)_{P} = 0$$
 $$\left(\frac{\delta \phi}{\delta x}\right)_P (x-x_P) + \left(\frac{\delta \phi}{\delta y}\right)_P (y-y_P) + \left(\frac{\delta \phi}{\delta z}\right)_P (z-z_P) = 0$$
+</center>
 
 ## Divergence & Curl
 
-**Definition 1.3.1 -** [**Divergence and
-Curl**]\
+**Definition 1.3.1 -** **Divergence and Curl**
+
 **A** a vector function of position
+<center>
 $$\textcolor{ForestGreen}{\textbf{Div  \textbf{A}}} = \nabla \cdot \textbf{A} = \frac{\delta A_1}{\delta x} + \frac{\delta A_2}{\delta y} + \frac{\delta A_3}{\delta z} \text{ where }A = A_1 \textbf{\^{i}} + A_2 \textbf{\^{j}} + A_3 \textbf{\^{k}}$$
-$$\textcolor{ForestGreen}{\textbf{Curl \textbf{A}}} = \nabla \times \textbf{A} = \textbf{\^{i}} \left(\frac{\delta A_3}{\delta y} - \frac{\delta A_2}{\delta z} \right) - \textbf{\^{j}} \left(\frac{\delta A_3}{\delta x} - \frac{\delta A_1}{\delta z} \right) + \textbf{\^{k}} \left(\frac{\delta A_2}{\delta x} - \frac{\delta A_1}{\delta y} \right)$$\
-**Definition -** [**Laplacian Operator**]\
+
+$$\textcolor{ForestGreen}{\textbf{Curl \textbf{A}}} = \nabla \times \textbf{A} = \textbf{\^{i}} \left(\frac{\delta A_3}{\delta y} - \frac{\delta A_2}{\delta z} \right) - \textbf{\^{j}} \left(\frac{\delta A_3}{\delta x} - \frac{\delta A_1}{\delta z} \right) + \textbf{\^{k}} \left(\frac{\delta A_2}{\delta x} - \frac{\delta A_1}{\delta y} \right)$$
+</center>
+
+**Definition -** **Laplacian Operator**
+<center>
 $$\nabla^2 \phi = \text{div}(\nabla \phi) = \frac{\delta^2 \phi}{\delta x^2} + \frac{\delta^2 \phi}{\delta y^2} + \frac{\delta^2 \phi}{\delta z^2}$$
+</center>
 
 ## Operations with Grad operator
 
-[**Resulting Equalities**]
+**Resulting Equalities**
 
 1.  $\nabla(\phi_1+\phi_2) = \nabla \phi_1 + \nabla \phi_2$
 
@@ -150,58 +174,63 @@ $$\nabla^2 \phi = \text{div}(\nabla \phi) = \frac{\delta^2 \phi}{\delta x^2} + \
 
 # Integration
 
-**Definition 1.4.6 - [**Scalar and Vector
-Fields**]**\
+**Definition 1.4.6 - ** **Scalar and Vector Fields**
 If at each point of region $V$, scalar function $\phi$ defined -
-[**$\phi$ a scalar field over $V$**]\
-Similarly if vector function $A$ defined $\forall v \in V$, [**$A$ a
-vector field.**]\
-If curl $A = 0$, $A$ is an [**irrotational vector
-field**]. If div $A = 0$, $A$ a
-[**solenoidal vector field**]
+<center>
+**$\phi$ a scalar field over $V$**
+</center>
+
+Similarly if vector function $A$ defined $\forall v \in V$, **$A$ a vector field.**
+
+If curl $A = 0$, $A$ is an **irrotational vector field**. If div $A = 0$, $A$ a **solenoidal vector field**
 
 ## Path Integrals
 
-**Definition 1.5.1 -** [**Definition of a Path
-Integral**]\
+**Definition 1.5.1 -** **Definition of a Path Integral**
+<center>
 $$\lim_{n\rightarrow \infty} \sum_{n=1}^{N} f_{n} \delta s_n = \int_{\gamma}f ds \Rightarrow \int_{\gamma}\textbf{F} \cdot d\textbf{r} \int_{\gamma}\textbf{F}\cdot \textbf{\^{t }} ds \text{ where }\textbf{\^{t}}\text{ is the normalized vector tangent to the path}$$\
-**Definition 1.5.3 -** [**Conservative
-forces**]\
-If [**$F = \nabla \phi$**] for a [**differentiable
-scalar function $\phi$**], [**$F$ is said to be a
-conservative field**], which has the following
-properties:
-$$\int_{\gamma} \textbf{F} \cdot d\textbf{r} = \phi(B)-\phi(A)$$ Result
-independent of path joining **A** and **B**, in particular for $\gamma$
-a closed curve ($B \equiv A$) We have:
-$$\oint_{\gamma}\textbf{F}\cdot d\textbf{r} = 0$$ Call this a
-[**circulation of F**] around $\gamma$\
-If a vector field **F** s.t
-[**$\oint_{\gamma}F\cdot dr = 0$**], for any closed
-curve $\gamma$ say [**F a conservative
-field**], if
-$\textbf{F} = \nabla\phi \implies \textbf{F}$ conservative.\
-If **F** conservative $\implies$ can always find differentiable scalar
-function $\phi$ s.t **F**$=\nabla\phi$, call $\phi$ the [**potential of
-field F**]\
-**Definition 1.5.4 -** [**Calculation of Path
-Integrals**]\
+  </center>
+  
+  
+**Definition 1.5.3 -** **Conservative forces**
+
+If [**$F = \nabla \phi$**] for a [**differentiable scalar function $\phi$**], [**$F$ is said to be a conservative field**], which has the following properties:
+<center>
+$$\int_{\gamma} \textbf{F} \cdot d\textbf{r} = \phi(B)-\phi(A)$$ 
+  </center>
+Result independent of path joining **A** and **B**, in particular for $\gamma$ a closed curve ($B \equiv A$) We have:
+<center>
+$$\oint_{\gamma}\textbf{F}\cdot d\textbf{r} = 0$$ 
+</center>
+Call this a **circulation of F** around $\gamma$\
+
+If a vector field **F** s.t [**$\oint_{\gamma}F\cdot dr = 0$**], for any closed curve $\gamma$ say [**F a conservative field**], if $\textbf{F} = \nabla\phi \implies \textbf{F}$ conservative.\
+
+If **F** conservative $\implies$ can always find differentiable scalar function $\phi$ s.t **F**$=\nabla\phi$, call $\phi$ the [**potential of field F**]\
+
+**Definition 1.5.4 -**  **Calculation of Path Integrals**
+
 $\textbf{F}=\textbf{F}(x, y, z)$ $\gamma$ $(x(t), y(t), z(t)),$
+
+<center>
 $$\textbf{r} = {x(t)\textbf{\^{i}}+y(t)\textbf{\^{j}}+z(t)\textbf{\^{k}}} \Rightarrow d\textbf{r} = \frac{dx}{dt}\textbf{\^{i}}+\frac{dy}{dt}\textbf{\^{j}}+\frac{dz}{dt}\textbf{\^{k}}$$
+
 $$\implies
 \int_{\gamma}\textbf{F}\cdot d\textbf{r} = \int_{t_0}^{t_1}\left(\textbf{F}_{1}\frac{dx}{dt}+\textbf{F}_{2}\frac{dy}{dt}+\textbf{F}_{3}\frac{dz}{dt}\right) dt$$
+</center>
 
 ## Surface Integrals
 
-**Definition 1.6.1 - [**Surface
-Integral**]**\
-Consider a surface $S$,where we find the surface integral of $f = f(P)$
-over $S$.\
-Dividing $S$ into small elements of area $\delta S_{i}$, with $f_{i}$
-the values of $f$ at typical points $P_{i}$ of $\delta S_{i}$\
-The [**surface integral of $f$ over $S$**]
-is
+**Definition 1.6.1 -** **Surface Integral**
+Consider a surface $S$,where we find the surface integral of $f = f(P)$ over $S$.\
+
+Dividing $S$ into small elements of area $\delta S_{i}$, with $f_{i}$ the values of $f$ at typical points $P_{i}$ of $\delta S_{i}$\
+
+The **surface integral of $f$ over $S$** is
+<center>
 $$\int_{S}f dS = \lim_{\substack{N \to \infty \\ max(\delta S_{n}) \to 0}}\sum_{n=1}^{N}f_{n}\delta S_{n}$$
+</center>
+  
 $f$ may be a vector or a scalar.
 
 ### Types of Surfaces
@@ -220,15 +249,12 @@ label="fig:notconvex"}
 
 **Definitions**
 
-1.  [**Closed Surface**] - Divides $3D$
-    space into $2$ non-connected regions; interior and exterior.
+1.  **Closed Surface** - Divides $3D$ space into $2$ non-connected regions; interior and exterior.
 
-2.  [**Open Surface**] - Does not divide
-    $3D$ space into 2 non-connected regions - has a rim which can be
-    represented by closed curve.\
+2.  **Open Surface** - Does not divide $3D$ space into 2 non-connected regions - has a rim which can be represented by closed curve.\
     Can think of closed surfaces as sum of 2 open surfaces.
 
-3.  [**Convex Surface**] - A surface which
+3.  **Convex Surface** - A surface which
     is crossed by a straight line at most twice
 
 ### Evaluating surface integrals for plane surfaces in x-y plane
@@ -239,64 +265,91 @@ $dS$ infinitesimal area $\implies$ think of as approx. plane.\
 **Vector areal element $dS$** is the vector $\hat{\mathbf{n}}dS$ for
 $\hat{\mathbf{n}}$ the unit normal vector to $dS$.\
 For a plane lying in $z = 0$, we can say $dS = dxdy$\
-For a rectangle, $x = a,b$ and $y = c,d$ circumscribing convex $S$. We
-let $$y = 
+
+
+For a rectangle, $x = a,b$ and $y = c,d$ circumscribing convex $S$. We let
+<center>
+$$y = 
 \begin{cases}
       F_{1}(x) & \text{upper half ADB}\\
       F_{2}(x) & \text{lower half ACB}
-\end{cases}$$ $$\textcolor{red}{
+\end{cases}$$
+  
+$$\textcolor{red}{
 \text{\textbf{Area of } \mathbf{S}= \int_{S}dS = \int_{x=a}^{x=b}\int_{y=F_{2}(x)}^{y=F_{1}(x)}dydx = \int_{a}^{b}[F_{1}(x) - F_{2}(x)]dx
-}$$ For $f(x,y)$ a function of position
+}$$
+
+</center>
+For $f(x,y)$ a function of position
+<center>
 $$\int_{S}fdS = \int_{x=a}^{x=b}\int_{y = F_{2}(x)}^{y=F_{1}(x)}f(x,y)dydx$$
-Equivalently; $$x =
+</center>
+
+Equivalently;
+<center>
+$$x =
 \begin{cases}
       G_{1}(x) & \text{right half CBD}\\
       G_{2}(x) & \text{left half CAD}
-\end{cases}$$ $$\textcolor{red}{
-\text{\textbf{Area of  }} \mathbf{S} = \int_{S}dS = \int_{c}^{d} G_{1}(y) - G_{2}(y)dy
-}$$
+\end{cases}$$
+  
+$$\textcolor{red}{\text{\textbf{Area of  }} \mathbf{S} = \int_{S}dS = \int_{c}^{d} G_{1}(y) - G_{2}(y)dy}$$
+  
 $$\int_{S}fdS =  \int_{y=c}^{y=d}\int_{x = G_{2}(x)}^{x=G_{1}(x)}f(x,y)dxdy$$
+
+</center>
 
 ### Projection of an area onto a plane
 
-![Right; Projection of curved surface $S$ onto $x-y$
-plane](projection.png){width="55%"}
+![Right; Projection of curved surface $S$ onto $x-y$ plane](projection.png){width="55%"}
 
+<center>
 $$dS = \frac{d\Sigma}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{k}}|}$$
+</center>
 
 ### The Projection Theorem
 
-$P$ a point on surface $S$, which at no point is orthogonal to
-$\mathbf{k}$
+$P$ a point on surface $S$, which at no point is orthogonal to $\mathbf{k}$
+<center>
 $$\int_{S}f(P)dS = \int_{\Sigma}f(P)\frac{dx\ dy}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{k}}|}$$
-For $\Simga$ a projection of $S$ onto $z= 0$, with $\hat{\mathbf{n}}$
-normal to $S$\
+</center>
+  
+For $\Sigma$ a projection of $S$ onto $z= 0$, with $\hat{\mathbf{n}}$ normal to $S$\
 For $S$ given by $z = \phi(x,y)$
+<center>
 $$\int_{S}f(x,y,z)dS = \int_{\Sigma_{z}}f(x,y,\phi(x,y))\frac{dx\ dy}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{k}}|}$$
+</center>
+
 Projecting onto $x =0$ or $y = 0$\
+<center>
 $$\int_{S}f(P)dS = \int_{\Sigma_{x}}f(x,y,\phi(x,y))\frac{dy\ dz}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{i}}|} = \int_{\Sigma_{y}}f(x,y,\phi(x,y))\frac{dx\ dz}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{j}}|}$$
+</center>
+
 $\Sigma_{x}$, projection onto $x=0$, $\Sigma_{y}$, projection onto $y=0$
 
 ## Volume Integrals
 
-**Definition 1.7.1 -** [**Volume
-Integral**]\
-Considering a volume $\tau$, split into $N$ subregions,
-$\{\delta \tau_{i}\}$, with $\{P_{i}\}$ typical points of
-$\{\delta \tau_{i}\}$.\
+**Definition 1.7.1 -** **Volume Integral**
+
+Considering a volume $\tau$, split into $N$ subregions, $\{\delta \tau_{i}\}$, with $\{P_{i}\}$ typical points of $\{\delta \tau_{i}\}$.\
+<center>
 $$\int_{\tau}f d\tau = \lim_{\substack{N \to \infty \\ max(\delta \tau_{i}) \to 0}}\sum_{i=1}^{N}f(P_{i})\delta \tau_{i}$$
+</center>
+
 In Cartesian coordinates, the volume element $d \tau = dxdydz$
 
 ## Results relating line,surface and volume integrals
 
 ### Green's Theorem in the plane
 
-\
+
 $R$ a closed plane region bounded by a simple plane closed convex curve
 in $x-y$ plane.\
 $L,M$ continuous functions of $x,y$ with continuous derivatives
 throughout $R$. Then:
+<center>
 $$\oint_{C}(L\ dx + M\ dy) = \int_{R}(\frac{\partial M}{\partial x} - \frac{\partial L}{\partial y})dxdy,$$
+</center>
 For $C$ the boundary of $R$ described in the counter-clockwise sense.
 
 ### Vector forms of Green's Theorem
@@ -304,30 +357,46 @@ For $C$ the boundary of $R$ described in the counter-clockwise sense.
 *(i) $2D$ Stokes Theorem*\
 Let $F = L\mathbf{i} + M\mathbf{j}$ and
 $d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j}$. Then
+
+<center>
 $$\text{curl }\mathbf{F} = \left(\frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}\right)\mathbf{k}$$
-Over region $R$ write $dxdy = dS$. $$\label{eq1}
+</center>
+  
+Over region $R$ write $dxdy = dS$. 
+<center>
+$$\label{eq1}
 \begin{split}
 \oint_{C}F \cdot dr & = \int_{R}k\cdot \text{curl } F dS\\
 & = \int_{R}\text{curl }F \cdot d\mathbf{S}, \qquad d\mathbf{S} = \hat{\mathbf{k}}dS
 \end{split}$$\
+</center>
+
 *(ii) Divergence Theorem in $2D$*\
 Let $\mathbf{F} = M\mathbf{i} - L\mathbf{j}$. Then
+<center>
 $$\text{div }\mathbf{F} = \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}$$
+</center>
+
 So we can rewrite Green's Theorem as
+<center>
 $$\int_{R}\text{div }\mathbf{F} dxdy  = \oint_{C}F\cdot\hat{\mathbf{n}}ds$$
-Green's Theorem holds for more complicated geometries too, if C not
-convex we can see it as the composition of 2 or more simple convex
-closed curves.\
+</center>
+
+Green's Theorem holds for more complicated geometries too, if C not convex we can see it as the composition of 2 or more simple convex closed curves.\
 Joining $A$, $A'$ form $C_{1}, C_{2}$ enclosing $R_{1},R_{2}$ s.t
 $R_{1} + R_{2} =R$
 
 ![A non-convex boundary](boundary.png){width="70%"}
 
+<center>
 $$\oint_{C}\mathbf{F}\cdot dr = \oint_{C_{1}}\mathbf{F}\cdot d\mathbf{r} + \oint_{C_{2}}\mathbf{F}\cdot d\mathbf{r} = \int_{R} \text{curl }\mathbf{F}\cdot d\mathbf{S}$$
+  
+
 $$\begin{split}
         \oint_{C_{1}} & = \int_{AXA'} + \int_{A'}^{A}\\
         \oint_{C_{2}} & = \int_{A'YA} + \int_{A}^{A'}\\
     \end{split}$$
+</center>
 
 ### Green's Theorem in multiply-connected regions
 
