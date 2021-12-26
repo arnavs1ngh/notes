@@ -96,13 +96,19 @@ $$\epsilon_{ijk} \epsilon_{ilm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta{k
 
 -   $\textbf{a} \cdot \textbf{b} = a_{i}b_{i}$
 
--   $[ \mathbf{a} \times \mathbf{b} ]_{i} = \epsilon_{ijk} a_{j} b_{k} $
+-   $
+    [ \mathbf{a} \times \mathbf{b} ]_{i} = \epsilon_{ijk} a_{j} b_{k}
+    $
 
--   $\textbf{a} \times \textbf{b} = 
+-   $
+    \textbf{a} \times \textbf{b} = 
     \begin{vmatrix}
-    \textbf{i} & \textbf{j} & \textbf{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3
+      \textbf{i} & \textbf{j} & \textbf{k}\\
+      a_1 & a_2 & a_3 \\
+      b_1 & b_2 & b_3
     \end{vmatrix}
-    \Rightarrow [a \times b]_i = \epsilon_{ijk} a_j b_k$
+    \implies [a \times b]_{i} = epsilon_{ijk} a_j b_k
+    $
 
 -   $\textbf{a} \cdot (\textbf{b} \times \textbf{c}) = (\textbf{a} \times \textbf{b}) \cdot \textbf{c} = \epsilon_{ijk} a_i b_j c_k$
 
