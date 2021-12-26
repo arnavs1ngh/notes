@@ -81,10 +81,10 @@ $$\epsilon_{ijk} =
       0, & \text{ if any 2 elements $i,j,k$ equal} \\
       1, & \text{if $i, j, k$ a cyclic permutation of $1, 2, 3$} \\\
       -1, & \text{if $i, j, k$ an acyclic permutation $1, 3, 2$}
-   \end{cases}$$ **Formula -** 
+   \end{cases}$$ 
 </center> 
 
-**Relation between Kroenecker Delta and Permutation Symbol**
+**Formula -**  **Relation between Kroenecker Delta and Permutation Symbol**
 <center>
 $$\epsilon_{ijk} \epsilon_{klm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta_{kl}$$
 $$\epsilon_{ijk} \epsilon_{ilm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta{kl}$$\
