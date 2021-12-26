@@ -920,6 +920,6 @@ So we have area of surface given by
 $$\int_{\Sigma}\sqrt{1 + \lvert \nabla f \rvert^{2}}dxdy$$
 </center>
 
-for $\Simga$ the projection of $S$ onto the $x-y$ plane.
+for $\Sigma$ the projection of $S$ onto the $x-y$ plane.
 
 
