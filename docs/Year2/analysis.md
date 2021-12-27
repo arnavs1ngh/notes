@@ -954,7 +954,7 @@ For $(X,d)$ a metric space, consider $T \subseteq X$. $T$
 
 3.  $T \cap U \neq \emptyset$ and $T \cap V \neq \emptyset$
 
-Set connected if not disconnected.
+Set connected if not disconnected. i.e for any 2 of the properties that hold from above the 3rd cannot.
 
 **Lemma 2.23.**\
 $(X,d)$ a metric space. $T \subseteq X$
