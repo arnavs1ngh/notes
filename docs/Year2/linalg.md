@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Linear Algebra & Numerical Methods 
-parent: Year 2
+title: Linear Algebra & Groups 
+parent: Year 1
 nav_order: 1
 math: mathjax3
 ---
