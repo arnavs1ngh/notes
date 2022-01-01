@@ -1,33 +1,60 @@
-::: titlepage
-::: center
-**Linear Algebra and Groups 1 - Concise Notes**
+---
+layout: default
+title: Linear Algebra & Numerical Methods 
+parent: Year 2
+nav_order: 1
+math: mathjax3
+---
+# Linear Algebra and Groups 1 - Concise
+{: .no_toc }
+## MATH40002
+{: .no_toc}
+**Term 1 Content**
 
-MATH40002\
+<a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Linear Algebra 2 - Concise Notes - Term 1</a>
+
+<button class="btn js-toggle-dark-mode">Light Mode</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Dark Mode';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Light Mode';
+  }
+});
+</script>
+
+<details closed markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+<!--   {: .text-delta } -->
+* TOC
+{:toc}
+</details>
+
+---
+
+**Colour Code** - <span style="color: green;">**Definition**</span> are
+<span style="color: green;">**green**</span> in these notes,
+<span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
+and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: blue-000;">**blue**</span>
+
 **Term 1 Content**
 
 **Louis Gibson**
-
-**Colour Code** - [**Definitions**]{style="color: ForestGreen"} are
-[**green**]{style="color: ForestGreen"} in these notes,
-[**Consequences**]{style="color: red"} are [**red**]{style="color: red"}
-and [**Causes**]{style="color: blue"} are
-[**blue**]{style="color: blue"}\
-
-Mathematics\
-Imperial College London\
-United Kingdom\
-:::
-:::
 
 # System of Linear Equations
 
 ## Introductions
 
-::: defn
-**Definition 1**.
-:::
 
-\#
+**Definition 1**.
 
 Given a system of linear equations in n unknowns we can write this in
 matrix form as follows:\
