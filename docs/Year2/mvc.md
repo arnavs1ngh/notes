@@ -241,17 +241,13 @@ $f$ may be a vector or a scalar.
 
 ### Types of Surfaces
 
-![image](ClosedSurface.jpeg){width="\\linewidth"}[\[fig:closed\]]{#fig:closed
-label="fig:closed"}
+![image](diags/ClosedSurface.jpeg)
 
-![image](OpenSurface.jpeg){width="\\linewidth"}[\[fig:open\]]{#fig:open
-label="fig:open"}
+![image](diags/OpenSurface.jpeg)
 
-![image](Convex.jpeg){width="\\linewidth"}[\[fig:convex\]]{#fig:convex
-label="fig:convex"}
+![image](diags/Convex.jpeg)
 
-![image](notConvex.jpeg){width="\\linewidth"}[\[fig:notconvex\]]{#fig:notconvex
-label="fig:notconvex"}
+![image](diags/notConvex.jpeg)
 
 **Definitions**
 
