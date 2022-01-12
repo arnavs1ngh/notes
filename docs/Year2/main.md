@@ -73,7 +73,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets</span>
+    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
   - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS1-Sol.pdf" target="_blank">**Solutions**</a>
@@ -98,13 +98,22 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
 </details>
 
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/LAGPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+</details>
+
 ### Multivariable Calculus + Differential Equations - MATH50004
 - <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Term 1**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/MVCLec.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/MVCLec.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets</span>
+    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
   - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term1/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term1/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
@@ -117,6 +126,15 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
   - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term1/MVCPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term1/MVCPS5-Sol.pdf" target="_blank">**Solutions**</a>
 
+</details>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
 </details>
 
 ### Groups and Rings - MATH50005
