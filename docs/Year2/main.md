@@ -12,7 +12,7 @@ Here you can find all the notes for Year 2 Mathematics at Imperial College Londo
 
 Let me know if there are any mistakes, they will be amended promptly. You can email me at <arnav.singh20@imperial.ac.uk> with the subject **Online Notes**
 
-## Linked pdfs of notes available here:
+## PDF Resources:
 
 ### Analysis 2 - MATH50001
 - <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a> - <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**Download**</a>
