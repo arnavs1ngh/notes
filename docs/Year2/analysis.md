@@ -20,7 +20,7 @@ ol.n {list-style-type: none;}
 
 <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Analysis 2 - Concise Notes - Term 1</a>
 
-<button class="btn js-toggle-dark-mode">Light Mode</button>
+<!-- <button class="btn js-toggle-dark-mode">Light Mode</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -33,8 +33,8 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
     jtd.setTheme('dark');
     toggleDarkMode.textContent = 'Light Mode';
   }
-});
-</script>
+}); -->
+<!-- </script> -->
 
 <details closed markdown="block">
   <summary>
@@ -61,9 +61,6 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 ## <span style="color: white;">1.1</span> Euclidean Spaces
 
 ### <span style="color: white;">1.1.1</span> Preliminaries
-<!-- <span style="color: green;">Definition</span> -->
-<!-- <span style="color: blue;">Cause</span> -->
-<!-- <span style="color: red;">Consequence</span> -->
 
 **Definition** - <span style="color: green;">**Modulus Function**</span>
 
@@ -87,8 +84,10 @@ Having the following properties:
 
 **Define** - <span style="color: green;">**Euclidean Space of dim. $n, \mathbb{R}^{n}$**</span>
 
-Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}\
-$ \mathbb{R}^{n} $ a vector space.\
+Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}
+<center>
+  $$\mathbb{R}^{n} $$ a vector space.
+</center>
 
 **Define** - <span style="color: green;">**Inner Product** $ < \cdot,\cdot > : \mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}$</span> 
   
@@ -158,9 +157,10 @@ A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</s
 **Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
 Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$  
-$f$ continuous at $p \in A$ if
-  
+<span style="color: red;">$f$ continuous at $p \in A$</span> if
+<span style="color: RoyalBlue;">  
 $$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$
+</span>
   
 $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
@@ -186,15 +186,19 @@ Suppose $A \subseteq \mathbb{R}^{n}$ open, with $p \in A$ and
 $f,g: A \to \mathbb{R}^{n}$
 
 <center>
+  <span style="color: RoyalBlue;">
 $$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$
+  </span>
   </center>
 Then:
+  <span style="color: red;">
 
 1.  **$\lim_{x\to p}(f(x) + g(x)) = F + G$**
 
 2.  **$\lim_{x\to p}(f(x)g(x)) = FG$**
 
 3.  If $G\neq 0$ then $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$
+  </span>
 
 ## <span style="color: white;">1.3</span> Derivative of a map of Euclidean Spaces
 
@@ -217,11 +221,12 @@ Then:
 
 **Definition 1.5** - <span style="color: green;">**Derivative in higher dimension**</span>
   
-Suppose $\Omega \subset \mathbb{R}^{n}$ open. The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that
+Suppose $\Omega \subset \mathbb{R}^{n}$ open. <span style="color: red;"> The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ </span><span style="color: RoyalBlue;">if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that
   
   <center>
     $$\lim_{x\to p}\frac{||f(x) - (\Lambda[x-p] + f(p))}{||x-p||} = 0$$
   </center>
+  </span>
   We write
   <center>
     $$Df(p) := \Lambda$$ 
