@@ -84,9 +84,9 @@ Having the following properties:
 
 **Define** - <span style="color: green;">**Euclidean Space of dim. $n, \mathbb{R}^{n}$**</span>
 
-Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}
+Defined as the set of ordered $n$-tuples $(x^{1},\dots,x^{n})$, s.t $\forall i,\ x^{i} \in \mathbb{R}$
 <center>
-  $$\mathbb{R}^{n} $$ a vector space.
+  $\mathbb{R}^{n} $ a vector space.
 </center>
 
 **Define** - <span style="color: green;">**Inner Product** $ < \cdot,\cdot > : \mathbb{R}^{n} \times \mathbb{R}^{n} \to \mathbb{R}$</span> 
@@ -156,11 +156,12 @@ A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</s
 
 **Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
-Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$  
-<span style="color: red;">$f$ continuous at $p \in A$</span> if
+Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if 
+  <center>
 <span style="color: RoyalBlue;">  
 $$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$
 </span>
+   </center>
   
 $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
@@ -187,18 +188,18 @@ $f,g: A \to \mathbb{R}^{n}$
 
 <center>
   <span style="color: RoyalBlue;">
-$$\lim_{x\to p}f(x) = F \text{ and } \lim_{x\to p}g(x) = G$$
+$\lim_{x\to p}f(x) = F $ and $\lim_{x\to p}g(x) = G$
   </span>
   </center>
 Then:
-  <span style="color: red;">
+  
 
-1.  **$\lim_{x\to p}(f(x) + g(x)) = F + G$**
+1.  <span style="color: red;">**$\lim_{x\to p}(f(x) + g(x)) = F + G$**</span>
 
-2.  **$\lim_{x\to p}(f(x)g(x)) = FG$**
+2.  <span style="color: red;">**$\lim_{x\to p}(f(x)g(x)) = FG$**</span>
 
-3.  If $G\neq 0$ then $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$
-  </span>
+3.  <span style="color: red;">If $G\neq 0$ then $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$</span>
+  
 
 ## <span style="color: white;">1.3</span> Derivative of a map of Euclidean Spaces
 
@@ -221,12 +222,11 @@ Then:
 
 **Definition 1.5** - <span style="color: green;">**Derivative in higher dimension**</span>
   
-Suppose $\Omega \subset \mathbb{R}^{n}$ open. <span style="color: red;"> The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ </span><span style="color: RoyalBlue;">if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that
+Suppose $\Omega \subset \mathbb{R}^{n}$ open. <span style="color: red;"> The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ </span><span style="color: RoyalBlue;">if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that </span>
   
   <center>
-    $$\lim_{x\to p}\frac{||f(x) - (\Lambda[x-p] + f(p))}{||x-p||} = 0$$
+    <span style="color: RoyalBlue;">$$\lim_{x\to p}\frac{||f(x) - (\Lambda[x-p] + f(p))}{||x-p||} = 0$$</span>
   </center>
-  </span>
   We write
   <center>
     $$Df(p) := \Lambda$$ 
@@ -255,6 +255,7 @@ Then $f \circ g$ differentiable at $p$ with
   </center>
   
 **Theorem 1.8 - Chain rule in higher dim.**\
+  
 $\Omega \subset \mathbb{R}^{n}$ open, $\Omega' \subset \mathbb{R}^{m}$
 open\
 With $g:\Omega \to \Omega'$ differentiable at $p \in \Omega$,
@@ -395,7 +396,7 @@ Schwartz' Theorem says Hess $f(p$ is a symmetric matrix
 
 ### <span style="color: white;">1.5.3</span> Taylor's Theorem
 
-**Definition - <span style="color: green;">**Multi-inidices**</span>
+**Definition** - <span style="color: green;">**Multi-inidices**</span>
   
 Multi-index $\alpha \in (\mathbb{N})^{n}, \alpha = \begin{pmatrix}
 \alpha_{1},\dots,\alpha_{n}
@@ -452,10 +453,10 @@ Evidently
 
 ### <span style="color: white;">1.6.1</span> Inverse Function Theorem
 
-**Theorem 1.15 - *(Inverse Function Theorem)* **
+**Theorem 1.15** - (Inverse Function Theorem)
+  
 Let $\Omega$ an open set in $\mathbb{R}^{n}$, $f: \Omega \to \mathbb{R}^{n}$ continuously differentiable on $\Omega$, $\exists q \in \Omega$ s.t $Df(q)$ invertible\
-Then $\exists$ open sets $U \subset \Omega$ and
-$V \subset \mathbb{R}^{n}, q \in U, f(q) \in V$ s.t
+Then $\exists$ open sets $U \subset \Omega$ and $V \subset \mathbb{R}^{n}, q \in U, f(q) \in V$ s.t
 
 1.  $f:U \to V$, a bijection
 
@@ -481,7 +482,7 @@ $(x,y) \in A \times B$  satisfies $F(x,y) = 0 \iff y = f(x)$ for some $x \in A$
   </center>
 with $f:A \to B$ continuously differentiable.
   
-**Definition - $C^{1}-$diffeomorphism**\
+**Definition - <span style="color: green;">$C^{1}-$diffeomorphism**</span>\
 $\Omega,\Omega' \subset \mathbb{R}^{n}$ open.\
 Say $f:\Omega \to \Omega'$ a $C^{1}$-diffeormorphism, if
 $f:\Omega \to \Omega'$ a and $\forall x \in \Omega, Df(x)$
@@ -542,7 +543,7 @@ Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$
   
 **Definition**
   <center>
-  $C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}$ continuous
+  $C([a,b]) = \{f:[a,b] \to \mathbb{R}| f:[a,b] \to \mathbb{R}$ continuous $\}$
   </center>
   
 ### <span style="color: white;">2.1.2</span> Examples of metrics
@@ -551,9 +552,9 @@ Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$
 
 -   $d_{\text{disc}}(x,y) = \begin{cases} 0, & x=y\\ 1, & x \not = y \end{cases}$
     
--   $d_{\infty}(x,y) = \text{sup}_{k\geq 1}\lvert x^{k} - y^{k}\rvert$
+-   $d_{\infty}(x,y) = \sup_{k\geq 1}\lvert x^{k} - y^{k}\rvert$
 
--   $d_{\infty}(f,g) = $ \text{max}_{a\leq t\leq b}\lvert f(t) - g(t)\rvert$ where $f,g \in C([a,b])$ ***(supremum/uniform metric)***
+-   $d_{\infty}(f,g) =  \text{max}_{a\leq t\leq b}\lvert f(t) - g(t)\rvert $ where $f,g \in C([a,b])$ (supremum/uniform metric)***
 
  
 **Definition 2.3**. <span style="color: green;">**Induced metrics**</span>
@@ -696,7 +697,7 @@ $(X,d)$ a metric space, $V \subset X,\ x \in X$
 ***Lemma 2.11*** 
       
 $(X,d)$ a metric space, $V \subseteq X$\
-$x \in X$ a limit point of $V \iff \exists$ sequence in $V \backslash \{x\}$ converging to $x$.
+$x \in X$ a limit point of $V \iff \exists$ sequence in $V \backslash \{ x \}$ converging to $x$.
 
  
 **Definition 2.13**. <span style="color: green;">**Dense and Seperable subsets**</span>
@@ -738,7 +739,7 @@ is a closed set in $A_1$
 
 $(X,d_X), (Y,d_Y)$ metric spaces\
 $f: X \to Y$ a map;
-$$f \text{ continuous at } x \in X \iff \text{ for any sequence } (x_n) \to x;\ f(x_n) \to f(x) \text{ in } (Y,d_Y)$$\
+$$f \text{ continuous at } x \in X \iff \text{ for any sequence } (x_n) \to x;\ f(x_n) \to f(x) \text{ in } (Y,d_Y)$$
 
  
 **Definition 2.15**. <span style="color: green;">**Homeomorphism**</span>
@@ -808,7 +809,7 @@ $U$ a neighbourhood of $a$ if $U \in \tau$ and $a \in U$
 
 **Definition.** <span style="color: green;">**Metrisable topological space**</span>
       
-Say topological space $(X,\tau)$ <span style="color: green;">**metrisable**</span> if $\exists$ metric on $X$ which induces a topology $\tau$.\
+Say topological space $(X,\tau)$ <span style="color: green;">**metrisable**</span> if $\exists$ metric on $X$ which induces a topology $\tau$.
       
 **Definition.** <span style="color: green;">**Induced and Subspace topology**</span>
       
@@ -840,7 +841,7 @@ $z \in \Omega$ an interior point of $\Omega$ if
       <center>
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
       </center>
-<span style="color: green;">**interior of $\Omega; \Omega^{\circ}$**</span> = $ \{ z \in \Omega | z$ an interior point of $\Omega\}$
+<span style="color: green;">**interior of $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z $ an interior point of $\Omega\} $
       
 *Properties of interior*
 
@@ -1161,7 +1162,7 @@ $$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall 
 
 1.  metric space $(X,d)$ <span style="color: green;">**complete**</span> if every Cauchy sequence in $X$ converges to a limit in $X$
 
-2.  Normed vector space $(V,\lvert\lvert\cdot\rvert\rvert)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{\lvert\lvert\cdot\rver\rvert}$ a complete metric space.
+2.  Normed vector space $(V,\lvert\lvert\cdot\rvert\rvert)$ a <span style="color: green;">**Banach space**</span> if $V$ with induced metric space $d_{\lvert\lvert\cdot\rvert\rvert}$ a complete metric space.
 
  
 **Theorem 2.51**.
