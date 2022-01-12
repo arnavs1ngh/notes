@@ -117,5 +117,99 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
   - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term1/MVCPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term1/MVCPS5-Sol.pdf" target="_blank">**Solutions**</a>
 
+</details>
+
+### Groups and Rings - MATH50005
+
+- <a href="/notes/pdfs/year2/GR-Concise.pdf" target="_blank" style="color:#801fff;">**Open Groups+Rings Concise**</a> - <a href="/notes/pdfs/year2/GR-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/GRLec.pdf" target="_blank" style="color:#801fff;">**Open Groups+Rings Lecturer**</a> - <a href="/notes/pdfs/year2/GRLec.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Class</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GR-Bonus-3/4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3 BONUS**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/given/GRPS6-Sol.pdf" target="_blank">**Solutions**</a>
+
+</details>
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Unseen</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/grSheets/unseen/GRUS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a>
+
+</details>
+
+### Probability For Statistics - MATH50010
+
+- <a href="/notes/pdfs/year2/PFS-Concise.pdf" target="_blank" style="color:#801fff;">**Open Probability Concise**</a> - <a href="/notes/pdfs/year2/PFS-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/PFSLec.pdf" target="_blank" style="color:#801fff;">**Open Probability Lecturer**</a> - <a href="/notes/pdfs/year2/PFSLec.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Class</span>
+  </summary>
+  
+   - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS0.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 0**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/PFSPS7-Sol.pdf" target="_blank">**Solutions**</a>
+
+</details>
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Unseen</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1 + Solution**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS7-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/unseen/PFSUS8-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
+
