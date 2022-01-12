@@ -21,7 +21,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets Term 1</span>
+    <span style="color: #00ba47;">Problem Sheets - Term 1</span>
   </summary>
   
   - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
@@ -48,7 +48,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets Term 2</span>
+    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
   - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
