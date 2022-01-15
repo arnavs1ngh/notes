@@ -19,7 +19,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 - <a href="/notes/pdfs/Y1Concise/AN-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Analysis Concise**</a>
 - <a href="/notes/pdfs/Y1Concise/CAA-MATH4004-c.pdf" target="_blank" style="color:#801fff;">**Calculus Concise**</a>
--  <a href="/notes/pdfs/Y1Concise/LAG-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a>
+-  <a href="/notes/pdfs/Y1Concise/LAG-MATH4003-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a>
 -   <a href="/notes/pdfs/Y1Concise/PAS-MATH4005-c.pdf" target="_blank" style="color:#801fff;">**Probability + Statistics Concise**</a>
 
 ## PDF Resources:
@@ -48,7 +48,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 </details>
 
 ### Linear Algebra and Groups - MATH40003
-- <a href="/notes/pdfs/Y1Concise/LAG-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a> - <a href="/notes/pdfs/Y1Concise/LAG-MATH4002-c.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/Y1Concise/LAG-MATH4003-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a> - <a href="/notes/pdfs/Y1Concise/LAG-MATH4003-c.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
