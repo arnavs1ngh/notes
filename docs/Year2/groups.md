@@ -19,9 +19,11 @@ ol.n {list-style-type: none;}
 
 <details closed markdown="block">
   <summary>
-    <a href="https://arnavs1ngh.github.io/notes/docs/Year2/main" style="color:#FF0000;"> PDFS here<a>
+    PDFS here
   </summary>
+  
 - <a href="/notes/pdfs/year2/GR-Concise.pdf" target="_blank" style="color:#801fff;">**Open Groups+Rings Concise**</a> - <a href="/notes/pdfs/year2/GR-Concise.pdf" download>**Download**</a>
+  
 - <a href="/notes/pdfs/year2/GRLec.pdf" target="_blank" style="color:#801fff;">**Open Groups+Rings Lecturer**</a> - <a href="/notes/pdfs/year2/GRLec.pdf" download>**Download**</a>
 
 <details closed markdown="block">
