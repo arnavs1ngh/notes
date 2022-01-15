@@ -11,23 +11,51 @@ math: mathjax3
 {: .no_toc}
 **Term 1 Content**
 
-<a href="https://arnavs1ngh.github.io/notes/docs/Year2/main/#analysis-2---math50001" style="color:#FF0000;">** PDF** Linear Algebra 2 - Concise Notes - Term 1</a>
+<details closed markdown="block">
+  <summary>
+    <span style="color: RoyalBlue;">PDFs</span>
+  </summary>
+  
+- <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Term 1**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/LagLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
 
-<button class="btn js-toggle-dark-mode">Light Mode</button>
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Term 1</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS7-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS8-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS9-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term1/LAGPS10-Sol.pdf" target="_blank">**Solutions**</a>
+  
+</details>
 
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/LAGPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+</details>
+</details>
 
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Dark Mode';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Light Mode';
-  }
-});
-</script>
 
 <details closed markdown="block">
   <summary>
