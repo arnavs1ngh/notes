@@ -19,7 +19,7 @@ ol.n {list-style-type: none;}
 
 <details closed markdown="block">
   <summary>
-    PDFS here
+    <span style="color: RoyalBlue;">PDFS here</span>
   </summary>
   
 - <a href="/notes/pdfs/year2/GR-Concise.pdf" target="_blank" style="color:#801fff;">**Open Groups+Rings Concise**</a> - <a href="/notes/pdfs/year2/GR-Concise.pdf" download>**Download**</a>
