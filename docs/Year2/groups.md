@@ -66,8 +66,6 @@ ol.n {list-style-type: none;}
 </details>
 </details>
     
----
-  
 <details closed markdown="block">
 <summary>
   Table of contents
