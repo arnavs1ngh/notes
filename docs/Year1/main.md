@@ -83,7 +83,17 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 1</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term1/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year1/linalg/term1/probsheets/LAGPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term1/LAGPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year1/linalg/term1/probsheets/LAGPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term1/LAGPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year1/linalg/term1/probsheets/LAGPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term1/LAGPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year1/linalg/term1/probsheets/LAGPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term1/LAGPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year1/linalg/term1/probsheets/LAGPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term1/LAGPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year1/linalg/term1/probsheets/LAGPS6-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -92,7 +102,21 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year1/linalg/term2/probsheets/LAGPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year1/linalg/term2/probsheets/LAGPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year1/linalg/term2/probsheets/LAGPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year1/linalg/term2/probsheets/LAGPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year1/linalg/term2/probsheets/LAGPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/linalg/probsheets/term2/LAGPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year1/linalg/term2/probsheets/LAGPS6-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -106,7 +130,19 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 1</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/calc/probsheets/term1/CAAPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year1/calc/term1/probsheets/CAAPS7-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -115,7 +151,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">** PLACE HOLDER LINK **</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -129,7 +165,19 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 1</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term1/PASPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year1/prob/term1/probsheets/PASPS7-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -138,6 +186,16 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year1/prob/probsheets/term2/PASPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year1/prob/term2/probsheets/PASPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term2/PASPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year1/prob/term2/probsheets/PASPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term2/PASPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year1/prob/term2/probsheets/PASPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term2/PASPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year1/prob/term2/probsheets/PASPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term2/PASPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year1/prob/term2/probsheets/PASPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/probsheets/term2/PASPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year1/prob/term2/probsheets/PASPS6-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
