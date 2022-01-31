@@ -17,6 +17,8 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ## Linked pdfs of notes available here:
 
+### Low-res full year concise notes
+
 - <a href="/notes/pdfs/Y1Concise/AN-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Analysis Concise**</a>
 - <a href="/notes/pdfs/Y1Concise/CAA-MATH4004-c.pdf" target="_blank" style="color:#801fff;">**Calculus Concise**</a>
 -  <a href="/notes/pdfs/Y1Concise/LAG-MATH4003-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a>
@@ -25,7 +27,8 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ## PDF Resources:
 
 ### Analysis - MATH40002
-- <a href="/notes/pdfs/Y1Concise/AN-MATH4002-c.pdf" target="_blank" style="color:#801fff;">**Analysis Concise**</a> - <a href="/notes/pdfs/Y1Concise/AN-MATH4002-c.pdf" download>**Download**</a>
+
+- <a href="/notes/pdfs/year1/analysis/ANA-ConciseL.pdf" target="_blank" style="color:#801fff;">**Analysis Concise Term 1**</a> - <a href="/notes/pdfs/year1/analysis/ANA-ConciseL.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Analysis Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Analysis Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
@@ -74,7 +77,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 </details>
 
 ### Linear Algebra and Groups - MATH40003
-- <a href="/notes/pdfs/Y1Concise/LAG-MATH4003-c.pdf" target="_blank" style="color:#801fff;">**Linear Algebra + Groups Concise**</a> - <a href="/notes/pdfs/Y1Concise/LAG-MATH4003-c.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/linalg/LAG-ConciseL.pdf" target="_blank" style="color:#801fff;">**Analysis Concise Term 1**</a> - <a href="/notes/pdfs/year1/linalg/LAG-ConciseL.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
@@ -121,7 +124,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 </details>
 
 ### Calculus and Applications - MATH40004
-- <a href="/notes/pdfs/Y1Concise/CAA-MATH4004-c.pdf" target="_blank" style="color:#801fff;">**Calculus Concise**</a> - <a href="/notes/pdfs/Y1Concise/CAA-MATH4004-c.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/calc/CAA-ConciseL.pdf" target="_blank" style="color:#801fff;">**Analysis Concise Term 1**</a> - <a href="/notes/pdfs/year1/calc/CAA-ConciseL.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
@@ -156,7 +159,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 </details>
 
 ### Probability and Statistics - MATH40005
-- <a href="/notes/pdfs/Y1Concise/PAS-MATH4005-c.pdf" target="_blank" style="color:#801fff;">**Prob + Stats Concise**</a> - <a href="/notes/pdfs/Y1Concise/PAS-MATH4005-c.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/prob/PAS-ConciseL.pdf" target="_blank" style="color:#801fff;">**Analysis Concise Term 1**</a> - <a href="/notes/pdfs/year1/prob/PAS-ConciseL.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
