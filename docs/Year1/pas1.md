@@ -24,8 +24,11 @@ ol.n {list-style-type: none;}
   </summary>
   
   - <a href="/notes/pdfs/Y1Concise/PAS-MATH4005-c.pdf" target="_blank" style="color:#801fff;">**Prob + Stats Concise**</a> - <a href="/notes/pdfs/Y1Concise/PAS-MATH4005-c.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
+  
+  - <a href="/notes/pdfs/year1/prob/PAS-ConciseL" target="_blank" style="color:#801fff;">**Prob + Stats Concise - Term 1**</a> - <a href="/notes/pdfs/year1/prob/PAS-ConciseL" download>**Download**</a>
+  
+- <a href="/notes/pdfs/year1/prob/pas-term1.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 2 - PLACEHOLDER LINK**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
