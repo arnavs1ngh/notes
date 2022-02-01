@@ -134,7 +134,9 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS2-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
