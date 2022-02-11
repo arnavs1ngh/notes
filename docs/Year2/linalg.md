@@ -92,7 +92,7 @@ $\sim$ is an equivalence relation.
 
 -   Same rank Same Trace
 
-**Definition - **<span style="color: green;">**Companion Matrix**</span>
+**Definition** - <span style="color: green;">**Companion Matrix**</span>
 
 Let $p(x)$ a monic polynomial of degree $r$;
 $p(x) = x^{r} + a_{r-1}x^{r-1} + \dots + a_{0}$.\
@@ -168,7 +168,7 @@ For $ \{U_{i}\}_{i=1,\dots,k} $ subspaces of vector space $V$. Sum of these subs
 $$U_{1} + \dots + U_{k} = \{u_{1}+\dots+u_{k}:u_{i} \in U_{i}, \forall i\}$$
 </center>
 
-**Definition - <span style="color: green;">Direct Sums**</span>
+**Definition** - <span style="color: green;">**Direct Sums**</span>
 
 $V$ a vector space, $\{V_{i}\}_{i=1,\dots,k}$ subspaces of vector space $V$. **$V$ a direct sum of $\{V_{i}\}$** if: 
 <center>
@@ -280,11 +280,11 @@ $$p(T) = 0$$
 **Definition -** <span style="color: green;">**Polynomials over a field**</span>
 
 $F$ a field,$p(x)$ over $F$, for
-$p(x) = \sum_{i}a_{i}x^{i}, F[x] = \{ p(x) : a_{i} \in F\}$\
+$p(x) = \sum_{i}a_{i}x^{i}, F[x] = \{ p(x) : a_{i} \in F\}$
 
 <span style="color: green;">**Degree of polynomial**</span>
 
-$deg(p(x)) =$ the highest power of $x$ in $p(x)$\
+$deg(p(x)) =$ the highest power of $x$ in $p(x)$
 
 <span style="color: green;">**Euclidean Algorithm**</span>
 $f,g \in F[x]$ with $deg(g) \geq 1$, Then $\exists q,r \in F[x] s.t$
@@ -300,21 +300,21 @@ $f,g \in F[x] \backslash \{0\}$, <span style="color: red;">**Say $d\in F[x]$ the
 
 2.  <span style="color: RoyalBlue;">**if $e(x) \in F[x]$ and $e\lvert f$ and $e\lvert g$ Then $e\lvert d$**</span>
 
-Say $f,g$ are co-prime if $gcd(f,g) = 1$\
+Say $f,g$ are co-prime if $gcd(f,g) = 1$
   
 ***Corollary***\
-$d = gcd(f,g) \implies \exists r,s \in F[x] \text{ s.t } d = rf + sg$\
+$d = gcd(f,g) \implies \exists r,s \in F[x] \text{ s.t } d = rf + sg$
   
 **Definiton -** <span style="color: green;">**Irreducible polynomials**</span>
-$p(x) \in F[x]$ irreducible over $F$ if $deg(p) \geq 1$ and $p$ not factorisable over $F$ as a product of $\{f_{i}\} \in F$ s.t $deg(f_{i} \leq deg(p)$
+$p(x) \in F[x]$ irreducible over $F$ if $deg(p) \geq 1$ and $p$ not factorisable over $F$ as a product of $\{f_{i}\} \in F$ s.t $deg(f_{i}) \leq deg(p)$
   
 ***Corollary***\
-$p(x) \in F[x]$ irreducible, $\{g_{i}\} \in F[x]$, if $p|g_{1}\dots g_{r} \implies p|g_{i} \text{ for some } i$\
+$p(x) \in F[x]$ irreducible, $\{g_{i}\} \in F[x]$, if $p|g_{1}\dots g_{r} \implies p|g_{i} \text{ for some } i$
   
 **Theorem 8.7 - *(Unique Factorization Theorem)***\
 $f(x) \in F[x]$ s.t $deg(f) \geq 1$ $$f = p_{1}\dots p_{r}$$ where each
 $p_{i} \in F[x]$ irreducible. **Factorisation of $f$ is unique up to
-scalar multiplication**\
+scalar multiplication**
 
 # <span style="color: white;">9</span> The minimal polynomial of a linear map
 
@@ -342,7 +342,9 @@ Say $m(x) \in F[x]$ a minimal polynomial for $T: V \to V$ if
 
 **Theorem 9.3**\
 $p(x) \in F[x]$ an irreducible factor of
-$c_{T}(x) \implies p(x)|m_{T}(x)$ *Corollaries*\
+$c_{T}(x) \implies p(x)|m_{T}(x)$
+  
+**Corollaries**
 
 -   $c_{T}(x) = c_{T_{W}}(x)c_{\bar{T}}(x)$
 
@@ -364,8 +366,7 @@ $$V_{i} = ker(f_{i}(T)^{n_{i}})$$
   
 Then
   
-1.  $V = V_{1} \oplus \dots \oplus V_{k}$ *(Call this the [**primary
-    decomposition**] of $V$ w.r.t $T$)*
+1.  $V = V_{1} \oplus \dots \oplus V_{k}$ *(Call this the <span style="color: green;">**primary decomposition**</span> of $V$ w.r.t $T$*
 
 2.  each $V_{i}$ is $T$-invariant
 
@@ -396,7 +397,7 @@ polynomials s.t $g_{1}(T)g_{2}(T) = 0$
 
 # <span style="color: white;">11</span> Jordan Canonical Form
 
-**Definition -** [**Jordan Block**]\
+**Definition -** <span style="color: green;">**Jordan Block**</span>\
 $F$ a field and let $\lambda \in F$. Define $n\times n$ matrix:
 <center>
 $$J_{n}(\lambda) =
@@ -451,7 +452,7 @@ Then
     </center>
     
   <center>
-    <span style="color: green;">** This is the Jordan Canonical Form (JCF) of $A$ **</span>
+    <span style="color: green;">**This is the Jordan Canonical Form (JCF) of $A$**</span>
    </center>
 
 2.  Matrix $J$ from above, is uniquely determined by $A$ up to order of
@@ -586,7 +587,7 @@ $$[T]_{B} = C(f(x)^{k_{1}}) \oplus \dots \oplus C(f(x)^{k_{r}})$$
 </center>
 
 ***Corollary 12.3***\
-$A \in M_{n}(F)$, with $m_A(x) = x^{k}$\
+$A \in M_{n}(F)$, with $m_A(x) = x^{k}$
 <center>
 $$\implies A \sim C(x^{k_1} \oplus \dots \oplus C(x^{k_r})$$
 </center>
@@ -649,7 +650,7 @@ $V^{*}$ a vector space over $F$ w.r.t above multiplication and addition.
 
 ***Dimension***
 
-$\{ v_i \}_{i} $ a basis of $ V $ with eigenvalues $\{ \lambda \}_{i} $
+$\ \{ v_i \}_{i} $ a basis of $V$ with eigenvalues $\ \{ \lambda \}_{i} $
 
 $\exists! \phi \in V^*$ sending $v_i \to \lambda_i$
 <center>
@@ -668,10 +669,9 @@ $$\phi_i(v_{j}) = \delta_{ij} =
    \end{cases}$$
 </center>
 
-$\implies \phi_i(\sum \alpha_{j}v_{j}) = \alpha_{i} \implies \{\phi_1,\dots,\phi_n\}$
-a basis of $V^*$ the [**dual basis**] of
+$\implies \phi_i(\sum \alpha_{j}v_{j}) = \alpha_{i} \implies \{\phi_1,\dots,\phi_n\}$ a basis of $V^{*}$ the <span style="color: green;">**dual basis**</span> of
 $B$\
-$ dim V^* = n = dim V $
+$ dim V^{*} = n = dim V $
 
 **Definition** - <span style="color: green;">**Annihilators**</span>
 
@@ -721,7 +721,7 @@ Defining $a_{ij} = (v_i,v_j)$. So we have $a_{ji} = \bar{a_{ij}}$
 
 2.  $\mathbb{C}\implies A$ hermitian
 
-$ v,w \in V \implies (v,w) = [v]_{B}^{T}A[\bar{w}]_{B}$
+$\ v,w \in V \implies (v,w) = [v]_{B}^{T} A[\bar{w}]_{B} $
 
 **Definition** - <span style="color: green;">**Positive definite**</span>
 
@@ -767,13 +767,13 @@ $$\pi(v) = f_v \quad \forall v \in V$$
 
 $\implies \pi$ a vector space isomorphism\
 
-**Definition** -    <span style="color: green;">**Orthogonality**</span>\
+**Definition** - <span style="color: green;">**Orthogonality**</span>
 
 $\{v_1,\dots,v_k\}$ orthogonal if $(v_i,v_j) = 0\ \forall i,j\ i\neq j$\
 Orthonormal if also $||v_i|| = 1\ \forall i$\
 
 
-**Definition -  <span style="color: green;">$W^\perp$</span>**
+**Definition -  <span style="color: green;">$W^\perp$ (W perp)</span>**
 
 $W \subseteq V$ define
 $$W^{\perp} = \{u \in V: (u,w) = 0\ \forall w \in W\}$$
@@ -869,9 +869,9 @@ $$f_i = \sum_{j=1}^{n}p_{ji}e_{j} \implies P^{T}\bar{P} = I$$
 
 2.  Set of all isometries form a group - *classical group*\
 
-    *orthogonal group*; $O(n,\mathbb{R}) = \{P \in M_{n}(\mathbb{R}) : P^{T}P = I\}$
+    **orthogonal group**; $O(n,\mathbb{R}) = \{P \in M_{n}(\mathbb{R}) : P^{T}P = I\}$
     
-    *Unitary Group*; $ U(n,\mathbb{C}) = \{P \in M_{n}(\mathbb{C}) : P^{T}\bar{P} = I $
+    **Unitary Group**; $U(n,\mathbb{C}) = \{P \in M_{n}(\mathbb{C}) : P^{T}\bar{P} = I$
 
 # <span style="color: white;">15</span> Linear maps on inner product spaces
 
@@ -892,7 +892,7 @@ $T:V \to V$ a linear map, $A = [T]_{E}$
 
 $\implies [T^*]_{E} = \bar{A}^T$ if field $\mathbb{R}\implies A$ symmetric, if field $\mathbb{C}\implies A$ hermitian
 
-**Theorem 15.3.  <span style="color: red;">**Spectral Theorem**</span>**
+**Theorem 15.3.**  <span style="color: red;">**Spectral Theorem**</span>
 
 $V$ an inner product space. $T: V \to V$ a self-adjoint linear map $\implies V$ has orthonormal basis of $T$-eigenvectors.
 
@@ -929,12 +929,12 @@ i.e $\forall \alpha,\beta \in F$
 
 ***General example***\
 $F$ a field, $V = F^n$ with $A \in M_n(F)$\
-$\implies (u,v) = u^TAv \quad \forall u,v \in V$ a bilinear form on $V$\
+$\implies (u,v) = u^TAv \quad \forall u,v \in V$ a bilinear form on $V$
 
 ***Matrices***\
-$(,)$ a bilinear form on finited dimensional vector space $V$. With $B = \{ v_1,\dots,v_n \}$\
+$(,)$ a bilinear form on finited dimensional vector space $V$. With $B = \{ v_1,\dots,v_n \}$
 
-$A$ matrix of $(,)$ w.r.t $B$, So $(a_{ij}) = (v_i,v_j) \implies \forall u,v \in V\ (u,v) = [u]_{B}^{T}A[v]_B$\
+$A$ matrix of $(,)$ w.r.t $B$, So $(a_{ij}) = (v_i,v_j) \implies \forall u,v \in V\ (u,v) = [u]_{B}^{T}A[v]_B$
 
 
 **Definition -  <span style="color: green;">Symmetric & Skew-symmetric</span>**\
@@ -945,9 +945,9 @@ Bilinear form $(,)$ on V is
 -    <span style="color: green;">**Skew symmetric**</span> if $(v,u) = -(u,v)\ \forall u,v \in V$
 
 
-**Definition -  <span style="color: green;">**Characteristic of Field $F$**</span>**\
+**Definition** -  <span style="color: green;">**Characteristic of Field $F$**</span>
 
-$char$ of field $F$ is the smallest $n \in \mathbb{N}_+$ s.t $n = 0$. if no such $n$ exists say $char(F) = 0$\
+$char$ of field $F$ is the smallest $n \in \mathbb{N}_+$ s.t $n = 0$. if no such $n$ exists say $char(F) = 0$
 
 **Lemma 16.1.**\
 $V$ a vector space over $F$ with $char(F) \neq 2$\
@@ -1000,7 +1000,7 @@ $A,B \in M_n(F)$  <span style="color: green;">**congruent**</span> if $\exists$ 
 <center>
 $$B = P^TAP$$
 </center>
-$A,B$ congruent $\implies$ bilinear forms $(u,v)_{1} = u^{T}Av$ and $(u,v)_{2} = u^{T}Bv$ are  <span style="color: green;">**equivalent**</span>
+$A,B$ congruent $\implies$ bilinear forms $\ (u,v)_{1} = u^{T}Av$ and $(u,v)_{2} = u^{T}Bv $ are  <span style="color: green;">**equivalent**</span>
 
 **Skew-symmetric bilinear forms**\
 **Theorem 16.4.**\
@@ -1054,16 +1054,16 @@ $\implies A$ congruent to diagonal matrix
 4.  Continue until you get orthogonal basis
 
 ***Quadratic Form***\
-Assume from now $F$ s.t $char(F) \neq 2$, $V$ a finite dimensional vector space over $F$\
+Assume from now $F$ s.t $char(F) \neq 2$, $V$ a finite dimensional vector space over $F$
 
-**Definition -  <span style="color: green;">Quadratic form</span>**\
+**Definition -  <span style="color: green;">Quadratic form</span>**
 
 Quadratic form on $V$ a map $Q: V \to F$ of form
 <center>
 $$Q(v) = (v,v)\qquad \forall v\in V$$
 </center>
 $(,)$ a symmetric bilinear form on $V$\
-$Q$ non-degenerate if $(,)$ non-degenerate.\
+$Q$ non-degenerate if $(,)$ non-degenerate.
 
 ***Remarks***
 
@@ -1096,6 +1096,7 @@ If such a $P$ exists we say $Q,Q'$  <span style="color: green;">**equivalent**</
 ***note:***\
 Congruent matrices $A, P^TAP$\
 $A \sim P^TAP \iff P$ orthogonal\
+  
 **Theorem 16.8.**
 
 $V = F^{n}$, $Q:V\to F$ non-degenerate quadratic form
@@ -1104,19 +1105,17 @@ $V = F^{n}$, $Q:V\to F$ non-degenerate quadratic form
   <center>
     $$Q_{0}(x) = x_{1}^{2} + \dots + x_{n}^{2} \quad (x\in \mathbb{C}^{n})$$
   </center>
-  
-    Has matrix $I_{n}$
+  Has matrix $I_{n}$
 
 2.  if $F = \mathbb{R}\implies Q$ equivalent to unique $Q_{p,q}; p+q = n$
     <center>
     $$Q_{p,q}(x) = x_{1}^{2} + \dots + x_{p}^{2} - (x_{p+1}^{2} + \dots + x_{p+q}^{2})\quad (x \in \mathbb{C}^{n})$$
-  </center>
-  
-    Has matrix $I_{p,q} = \begin{pmatrix} I_{p} & 0\\ 0 & -I_{q}\end{pmatrix}$
+    </center>
+  Has matrix $I_{p,q} = \begin{pmatrix} I_{p} & 0\\ 0 & -I_{q}\end{pmatrix}$
 
 3.  if $F = \mathbb{Q}\implies \exists$ infinitely many inequivalent non-degenerate quadratic forms on $\mathbb{Q}^{n}$
 
-**Definition -  <span style="color: green;">isometry</span>**\
+**Definition -  <span style="color: green;">Isometry</span>**
   
 $f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on finite dimensional vector space $V$\
 <span style="color: green;">**Isometry**</span> of $f$ a linear map $T:V\to V$ s.t
@@ -1125,12 +1124,12 @@ $f = (,)$ a non-degenerate symmetric/skew-symmetric bilinear form on finite dime
   </center>
 $T$ invertible since $f$ non-degenerate.
 
-**Definition -  <span style="color: green;">Isometry Group</span>**\
+**Definition -  <span style="color: green;">Isometry Group</span>**
   <center>
 $$I(V,f) = \{T: T \text{ an isometry }\}$$
   </center>
   
-forms a subgroup of general linear group $GL(V)$\
+forms a subgroup of general linear group $GL(V)$
   
 ***Equivalently;***
   
