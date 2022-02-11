@@ -205,7 +205,7 @@ $$B_{r}(x) = \{y \in \mathbb{R}^{n} : ||x-y||<r\}$$
 A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</span> if
 
   <center>
-  $\forall x \in U, \exists r > 0$ such that $B_{r}(x) \subseteq U$**
+  $\forall x \in U, \exists r > 0$ such that $B_{r}(x) \subseteq U$
   </center>
 
 ### <span style="color: white;">1.2.2</span> Continuity at a point/on an open set
@@ -221,7 +221,7 @@ $$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implie
   
 $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
-For small enough $\delta$, we have $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p))$\
+For small enough $\delta$, we have $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p))$
   
 **Theorem 1.2 - Composition of continuous functions**\
 Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and suppose $f: A \to B$ continuous at $p\in A$, and $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$
@@ -278,7 +278,7 @@ Then:
 
 **Definition 1.5** - <span style="color: green;">**Derivative in higher dimension**</span>
   
-Suppose $\Omega \subset \mathbb{R}^{n}$ open. <span style="color: red;"> The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ </span><span style="color: RoyalBlue;">if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$**] such that </span>
+Suppose $\Omega \subset \mathbb{R}^{n}$ open. <span style="color: red;"> The map $f:\Omega \to \mathbb{R}^{m}$ differentiable at $p \in \Omega$ </span><span style="color: RoyalBlue;">if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^{n};R^{m})$ such that </span>
   
   <center>
     <span style="color: RoyalBlue;">$$\lim_{x\to p}\frac{||f(x) - (\Lambda[x-p] + f(p))}{||x-p||} = 0$$</span>
@@ -538,7 +538,7 @@ $(x,y) \in A \times B$  satisfies $F(x,y) = 0 \iff y = f(x)$ for some $x \in A$
   </center>
 with $f:A \to B$ continuously differentiable.
   
-**Definition - <span style="color: green;">$C^{1}-$diffeomorphism**</span>\
+**Definition** - <span style="color: green;">**$C^{1}-$diffeomorphism**</span>\
 $\Omega,\Omega' \subset \mathbb{R}^{n}$ open.\
 Say $f:\Omega \to \Omega'$ a $C^{1}$-diffeormorphism, if
 $f:\Omega \to \Omega'$ a and $\forall x \in \Omega, Df(x)$
@@ -897,7 +897,7 @@ $z \in \Omega$ an interior point of $\Omega$ if
       <center>
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
       </center>
-<span style="color: green;">** Interior of ** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z$ an interior point of $ \Omega \}$
+<span style="color: green;">**Interior of** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z$ an interior point of $ \Omega \}$
       
 *Properties of interior*
 
@@ -1150,11 +1150,11 @@ $$\forall (x_n)_{n\geq 1} \in X,\ \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s
       
 **Lemma 2.39.**
 
-$(X,d)$ a metric space. with sequence $ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x $.
-      
-      <center>
+$(X,d)$ a metric space. with sequence $\ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x $.
+
+<center>
 $\iff \exists x \in X$ s.t  $\forall \epsilon > 0$ there are infinitely many  $i$  s.t  $x_{i} \in B_{\epsilon}(x)$
-      </center>
+</center>
 
 **Theorem 2.41**. <span style="color: red;">**Bolzanno-Weierstrass**</span>
 
