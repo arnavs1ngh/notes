@@ -125,8 +125,8 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Calculus and Applications - MATH40004
 - <a href="/notes/pdfs/year1/calc/CAA-ConciseL.pdf" target="_blank" style="color:#801fff;">**Calculus Concise Term 1**</a> - <a href="/notes/pdfs/year1/calc/CAA-ConciseL.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/calc/CAA-T1.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year1/calc/CAA-T1.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/calc/CAA-T2.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 2**</a> - <a href="/notes/pdfs/year1/calc/CAA-T2.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
