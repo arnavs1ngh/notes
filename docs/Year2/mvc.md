@@ -107,7 +107,7 @@ $$\epsilon_{ijk} =
 <center>
 $$\epsilon_{ijk} \epsilon_{klm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta_{kl}$$
 $$\epsilon_{ijk} \epsilon_{ilm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta{kl}$$
-  </center>
+</center>
   
 **Definition 1.1.4 -** **Vector Products**
 
@@ -117,7 +117,8 @@ $$\epsilon_{ijk} \epsilon_{ilm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta{k
 
 -   $[\mathbf{a} \times \mathbf{b}]_{i} = \epsilon_{ijk} a_{j} b_{k}$
 
--   $\textbf{a} \times \textbf{b} = \begin{vmatrix}\textbf{i} & \textbf{j} & \textbf{k}\\a_1 & a_2 & a_3 \\b_1 & b_2 & b_3\end{vmatrix} \implies [a \times b]_{i} = epsilon_{ijk} a_j b_k$
+-   $\textbf{a} \times \textbf{b} = \begin{vmatrix}\textbf{i} & \textbf{j} & \textbf{k}\\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3\end{vmatrix}$
+    $\implies [a \times b]_{i} = epsilon_{ijk} a_j b_k$
 
 -   $\textbf{a} \cdot (\textbf{b} \times \textbf{c}) = (\textbf{a} \times \textbf{b}) \cdot \textbf{c} = \epsilon_{ijk} a_i b_j c_k$
 
@@ -198,7 +199,7 @@ If at each point of region $V$, scalar function $\phi$ defined -
 
 Similarly if vector function $A$ defined $\forall v \in V$, <span style="color: green;">**$A$ a vector field.**</span>
 
-If curl $A = 0$, $A$ is an **irrotational vector field**. If div $A = 0$, $A$ a **solenoidal vector field**
+If curl $A = 0$, $A$ is an <span style="color: green;">**irrotational vector field**</span>. If div $A = 0$, $A$ a <span style="color: green;">**solenoidal vector field**</span>
 
 ## Path Integrals
 
@@ -210,7 +211,7 @@ $$\lim_{n\rightarrow \infty} \sum_{n=1}^{N} f_{n} \delta s_n = \int_{\gamma}f ds
   
 **Definition 1.5.3 -** <span style="color: green;">**Conservative forces**</span>
 
-If [**$F = \nabla \phi$**] for a **differentiable scalar function $\phi$**, **$F$ is said to be a conservative field**, which has the following properties:
+If [**$F = \nabla \phi$**] for a **differentiable scalar function $\phi$**, **$F$ is said to be a** <span style="color: green;">**conservative field**</span>, which has the following properties:
 <center>
 $$\int_{\gamma} \textbf{F} \cdot d\textbf{r} = \phi(B)-\phi(A)$$ 
   </center>
@@ -222,7 +223,7 @@ Call this a <span style="color: green;">**circulation of F**</span> around $\gam
 
 If a vector field **F** s.t **$\oint_{\gamma}F\cdot dr = 0$**, for any closed curve $\gamma$ say **F a conservative field**, if $\textbf{F} = \nabla\phi \implies \textbf{F}$ conservative.
 
-If **F** conservative $\implies$ can always find differentiable scalar function $\phi$ s.t **F**$=\nabla\phi$, call $\phi$ the **potential of field F**
+If **F** conservative $\implies$ can always find differentiable scalar function $\phi$ s.t **F**$=\nabla\phi$, call $\phi$ the <span style="color: green;">**potential of field F**</span>
 
 **Definition 1.5.4 -**  **Calculation of Path Integrals**
 
@@ -391,7 +392,8 @@ For $C$ the boundary of $R$ described in the counter-clockwise sense.
 
 ### Vector forms of Green's Theorem
 
-*(i) <span style="color: red;">$2D$ Stokes Theorem*\</span>
+*(i) <span style="color: red;">$2D$ Stokes Theorem</span>
+
 Let $F = L\mathbf{i} + M\mathbf{j}$ and
 $d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j}$. Then
 
@@ -408,7 +410,8 @@ $$\label{eq1}
 \end{split}$$
 </center>
 
-*(ii) <span style="color: green;">Divergence Theorem in $2D$*\</span>
+*(ii) <span style="color: red;">Divergence Theorem in $2D$*\</span>
+
 Let $\mathbf{F} = M\mathbf{i} - L\mathbf{j}$. Then
 <center>
 $$\text{div }\mathbf{F} = \frac{\partial M}{\partial x} - \frac{\partial L}{\partial y}$$
@@ -691,8 +694,8 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     <center>
     $$  
     \begin{aligned}
-    d&= dxdydz & d &= dx + dy + dz\
-    (ds)\^2 &= (d\mathbf{r})\cdot(d\mathbf{r}) = (dx)^{2} + (dy)^{2} + (dz)^{2}
+    d\tau &= dxdydz & d\mathbf{r} &= dx\mathbf{\hat{i}} + dy\mathbf{\hat{j}} + dz\\mathbf{\hat{k}}
+    (ds)^{2} &= (d\mathbf{r})\cdot(d\mathbf{r}) = (dx)^{2} + (dy)^{2} + (dz)^{2}
     \end{aligned}
     $$
     </center>
@@ -717,9 +720,9 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     \end{aligned}$
 
     \begin{aligned}
-    h\_1 &= = 1\
-    h\_2 &= = r\
-    h\_3 &= = 1
+    h_{1} &= = 1\
+    h_2 &= = r\
+    h_3 &= = 1
     \end{aligned}
     </center>
 
@@ -759,7 +762,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     \end{aligned}
     </center>
 
-    Volume element:\
+    Volume element:
     <center>
     $$d\tau = r^{2}\sin\theta drd\theta d\phi$$
     </center>
