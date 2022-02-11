@@ -310,7 +310,7 @@ Then $f \circ g$ differentiable at $p$ with
     $$(f\circ g)'(p) = f'(g(p))g'(p)$$
   </center>
   
-**Theorem 1.8 - Chain rule in higher dim.**\
+**Theorem 1.8 - Chain rule in higher dim.**
   
 $\Omega \subset \mathbb{R}^{n}$ open, $\Omega' \subset \mathbb{R}^{m}$
 open\
@@ -364,7 +364,7 @@ Df(p) = (\nabla f(p))^{t}$$
 
 **Theorem 1.9 - Jacobian**\
 Suppose $\Omega \subset \mathbb{R}^{n}$ open and $f: \Omega \to \mathbb{R}^{m}$ of the form 
-  <center<
+  <center>
   $$f(x) = 
   \begin{pmatrix}
   f^{1}(x),f^{2}(x),\dots,f^{m}(x)
@@ -415,7 +415,7 @@ Where $DDf(p)$ is a linear map$\mathcal{L} \in L(\mathbb{R}^{n};L(\mathbb{R}^{n}
   <center>
 $$\lim_{x\to p}\frac{||Df(x) - Df(p) - \mathcal{L}[x-p]||}{||x-p||} = 0$$
   </center>
-$DDf(p)$ takes an $n$-vector to a $m\times n$ matrix\
+$DDf(p)$ takes an $n$-vector to a $m\times n$ matrix
   
 **Definition** - <span style="color: green;">**Continuously differentiable**</span>
   
@@ -448,7 +448,7 @@ The matrix of $2^{\text{nd}}$ partial derivatives at the point $p$
   <center>
 $$\text{Hess } f(p) = [D_{i}D_{j}f(p)]_{i,j =1,\dots,n}$$ 
   </center>
-Schwartz' Theorem says Hess $f(p$ is a symmetric matrix
+Schwartz' Theorem says Hess $f(p)$ is a symmetric matrix
 
 ### <span style="color: white;">1.5.3</span> Taylor's Theorem
 
@@ -610,7 +610,7 @@ Call elements of $X$ points,with $d(x,y)$ distance between $x,y$ w.r.t $d$
     
 -   $d_{\infty}(x,y) = \sup_{k\geq 1}\lvert x^{k} - y^{k}\rvert$
 
--   $d_{\infty}(f,g) =  \text{max}_{a\leq t\leq b}\lvert f(t) - g(t)\rvert $ where $f,g \in C([a,b])$ (supremum/uniform metric)***
+-   $d_{\infty}(f,g) =  \text{max}_{a\leq t\leq b}\lvert f(t) - g(t)\rvert $ where $f,g \in C([a,b])$ (supremum/uniform metric)
 
  
 **Definition 2.3**. <span style="color: green;">**Induced metrics**</span>
@@ -687,7 +687,7 @@ Say $(x_{n}) \to x \in (X,d)$ if
     <center>
 $$\forall\ \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall\ n \geq N, d(x,x_{n})< \epsilon$$
    </center>
-***Lemma 2.7.*** - if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique\
+***Lemma 2.7.*** - if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique
       
 ***Corollary*** - $d_{1},d_{2}$ topologically equivalent $\iff (x_n)$
 converges in $(X,d_1)$ and $(X,d_2)$
@@ -857,7 +857,7 @@ $U$ a neighbourhood of $a$ if $U \in \tau$ and $a \in U$
 2.  **Induced topology -** $(X,d)$ a metric space, with $\tau$ the
     collection of all open sets in $(X,d)$
 
-3.  **Order Topology -** $A = \mathbb{R}$ with $\tau$ collection of subsets of $\mathbb{R}$ of form $(a,+\infty),\ a \in \mathbb{R}\cup \{-\infty,+\infty\}, (\+infty,+\infty) := \emptyset$
+3.  **Order Topology -** $A = \mathbb{R}$ with $\tau$ collection of subsets of $\mathbb{R}$ of form $(a,+\infty),\ a \in \mathbb{R}\cup \{ -\infty,+\infty \}, (+\infty,+\infty) := \emptyset$
 
 4.  **Discrete Topology** - $A$ arbitrary, $\tau= \mathcal{P}(A)$
 
@@ -897,7 +897,7 @@ $z \in \Omega$ an interior point of $\Omega$ if
       <center>
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
       </center>
-<span style="color: green;">**interior of $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z $ an interior point of $\Omega\} $
+<span style="color: green;">** Interior of ** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z$ an interior point of $ \Omega \}$
       
 *Properties of interior*
 
@@ -937,7 +937,7 @@ if $(x_n)$ convergent in $(A,\tau) \implies$ limit is unique.
 
 $(A,\tau)$ a topological space.\
 $V \subseteq A$. Say $V$ closed in
-$(A,\tau) \iff A\backslash V \in \tau$\
+$(A,\tau) \iff A\backslash V \in \tau$
       
 ***Lemma 2.17.***\
 $(A,\tau)$ a topological space $\implies \emptyset$ and $A$ closed in
@@ -1088,18 +1088,16 @@ $(X,d)$ a metric space. $Y \subseteq X$
     Say $C$ a <span style="color: green;">**sub-cover**</span> of $R$ for $Y$
     if $C \subseteq R$ and $Y \subseteq \bigcup_{v \in R}v$
 
-3.  Open cover $R$ for $Y$ is a [**finite
-    cover**] if $R$ has finitely many
-    elements.
+3.  Open cover $R$ for $Y$ is a <span style="color: green;">** finite cover **</span> if $R$ has finitely many elements.
 
  
 **Definition 2.31**. <span style="color: green;">**Compact**</span>
 
 $(X,d)$ a metric space\
-$Y \subseteq X$ compact in $(X,d)$ if every open cover for $Y$ has a finite sub-cover.\
+$Y \subseteq X$ compact in $(X,d)$ if every open cover for $Y$ has a finite sub-cover.
       
 **Proposition 2.32.**\
-$a,b \in \mathbb{R},\ a \leq b$ in $(R,d_1)$ we have $[a,b]$ compact\
+$a,b \in \mathbb{R},\ a \leq b$ in $(R,d_1)$ we have $[a,b]$ compact
       
 **Proposition 2.33.**\
 $(X,d)$ a metric space, $Y \subseteq X$\
@@ -1150,8 +1148,10 @@ $(X,d)$ sequentially compact, if for every sequence in $X$ has convergent subseq
 $$\forall (x_n)_{n\geq 1} \in X,\ \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$$
       </center>
       
-**Lemma 2.39.**\
-$(X,d)$ a metric space. with sequence $ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$.\
+**Lemma 2.39.**
+
+$(X,d)$ a metric space. with sequence $ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x $.
+      
       <center>
 $\iff \exists x \in X$ s.t  $\forall \epsilon > 0$ there are infinitely many  $i$  s.t  $x_{i} \in B_{\epsilon}(x)$
       </center>
@@ -1207,7 +1207,7 @@ $\forall\ [a,b]$ we have $f([a,b])$ of the form $[m,M]$ for $m,M \in \mathbb{R}$
  
 **Definition 32**. <span style="color: green;">**Cauchy Sequence**</span>
 
-$(X,d)$ a metric $(x_{n})_{n\geq 1}$ sequence in $X$\
+$(X,d)$ a metric $(x_{n})_{n\geq 1}$ sequence in $X$
       
 Say $(x_{n})_{n\geq 1}$ a <span style="color: green;">**Cauchy sequence**</span> in $(X,d)$ if
       <center>
