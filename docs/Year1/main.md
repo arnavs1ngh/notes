@@ -29,8 +29,8 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Analysis - MATH40002
 
 - <a href="/notes/pdfs/year1/analysis/ANA-ConciseL.pdf" target="_blank" style="color:#801fff;">**Analysis Concise Term 1**</a> - <a href="/notes/pdfs/year1/analysis/ANA-ConciseL.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Analysis Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Analysis Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/analysis/ana-term1.pdf" target="_blank" style="color:#801fff;">**Open Analysis Lecturer - Term 1**</a> - <a href="/notes/pdfs/year1/analysis/ana-term1.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/analysis/ana-term2.pdf" target="_blank" style="color:#801fff;">**Open Analysis Lecturer - Term 2**</a> - <a href="/notes/pdfs/year1/analysis/ana-term2.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -78,8 +78,9 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Linear Algebra and Groups - MATH40003
 - <a href="/notes/pdfs/year1/linalg/LAG-ConciseL.pdf" target="_blank" style="color:#801fff;">**Linear Algebra Concise Term 1**</a> - <a href="/notes/pdfs/year1/linalg/LAG-ConciseL.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/linalg/lag-term1.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year1/linalg/lag-term1.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/linalg/lag-term2i.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 2 - Part 1**</a> - <a href="/notes/pdfs/year1/linalg/lag-term2i.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/linalg/lag-term2ii.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 2 - Part 2**</a> - <a href="/notes/pdfs/year1/linalg/lag-term2ii.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -160,8 +161,8 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Probability and Statistics - MATH40005
 - <a href="/notes/pdfs/year1/prob/PAS-ConciseL.pdf" target="_blank" style="color:#801fff;">**Probability Concise Term 1**</a> - <a href="/notes/pdfs/year1/prob/PAS-ConciseL.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year1/prob/pas-term1.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 1**</a> - <a href="/notes/pdfs/year1/prob/pas-term1.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Prob + Stats Lecturer - Term 2 **PLACE HOLDER LINK** **</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
