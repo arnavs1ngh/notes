@@ -111,7 +111,7 @@ $$\epsilon_{ijk} \epsilon_{ilm} = \delta_{jl} \delta_{km} - \delta_{jm} \delta{k
   
 **Definition 1.1.4 -** **Vector Products**
 
-**Here are some identities:**
+**Here are some identities!:**
 
 -   $\textbf{a} \cdot \textbf{b} = a_{i}b_{i}$
 
