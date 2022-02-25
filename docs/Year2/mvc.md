@@ -553,7 +553,7 @@ $\mathbf{A} = \frac{\mathbf{r}}{r^{3}}$ Then:
 $$\int_{S}\frac{\mathbf{\hat{n}}\cdot\mathbf{r}}{r^{3}} =
         \begin{cases}
         0, \text{ if $O$ is exterior to $S$}\\
-        $4\pi$, \text{ if $O$ interior to $S$}
+        4\pi, \text{ if $O$ interior to $S$}
         \end{cases}$$
 </center>
 
@@ -617,9 +617,7 @@ We say $(u_1,u_2,u_3)$ define a curvilinear coordinate system.\
 With each $u_i =$ constant, defining a family of surfaces, with a member
 of each family passing through each $P(x,y,z)$
 
-Let $\ \mathbf{(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3})} $ unit vectors at $P$ in
-the direction normal to $ u_i = u_i(P)$, s.t $u_i$ increasing in the
-direction $\mathbf{\hat{a}_{i}}}$
+Let $\mathbf{(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3})}$ unit vectors at $P$ in the direction normal to $u_i = u_i(P)$, s.t $u_i$ increasing in the direction $\mathbf{\hat{a}_{i}}}$
 
 <center>
 $$\mathbf{\hat{a}_i} = \mathbf{\frac{\nabla u_i}{\lvert \nabla u_i \rvert}}$$
@@ -707,7 +705,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
 
     <center>
     $\begin{aligned}
-    (ds)\^2 &= (dr)\^2+r\^2(d)\^2+(dz)\^2
+    (ds)^2 &= (dr)^2+r^2(d)^2+(dz)^2
     \end{aligned}$
 
     \begin{aligned}
@@ -746,7 +744,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
   
 ### Gradient in orthogonal curvilinear coordinates
 
-Let $\ \nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$.
+Let $\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$.
 
 In a general coordinate system for $\lambda_{i}$s to be found.
 
@@ -780,9 +778,9 @@ $$\implies \nabla \Phi = \frac{\hat{\mathbf{e}}_{1}}{h_{1}}\frac{\partial \Phi}{
     We have:
     <center>
     \begin{aligned}
-    h\_1 &= 1\
-    h\_2 &= r\
-    h\_3 &= r
+    h_1 &= 1\\
+    h_2 &= r\\
+    h_3 &= r
     \end{aligned}
     </center>
     
