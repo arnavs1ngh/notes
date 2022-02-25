@@ -276,7 +276,7 @@ Closed Surface             |  Convex                      |  Not Convex
 
 ### Evaluating surface integrals for plane surfaces in x-y plane
 
-![image](diags/surface.png){width="30%"}
+![image](diags/surface.png)
 
 $dS$ infinitesimal area $\implies$ think of as approx. plane.\
 **Vector areal element $dS$** is the vector $\hat{\mathbf{n}}dS$ for
@@ -317,7 +317,7 @@ $$\int_{S}fdS =  \int_{y=c}^{y=d}\int_{x = G_{2}(x)}^{x=G_{1}(x)}f(x,y)dxdy$$
 
 ### Projection of an area onto a plane
 
-![Right; Projection of curved surface $S$ onto $x-y$ plane](diags/projection.png){width="55%"}
+![Right; Projection of curved surface $S$ onto $x-y$ plane](diags/projection.png)
 
 <center>
 $$dS = \frac{d\Sigma}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{k}}|}$$
@@ -405,7 +405,7 @@ Green's Theorem holds for more complicated geometries too, if C not convex we ca
 Joining $A$, $A'$ form $C_{1}, C_{2}$ enclosing $R_{1},R_{2}$ s.t
 $R_{1} + R_{2} =R$
 
-![A non-convex boundary](diags/boundary.png){width="70%"}
+![A non-convex boundary](diags/boundary.png)
 
 <center>
 $$\oint_{C}\mathbf{F}\cdot dr = \oint_{C_{1}}\mathbf{F}\cdot d\mathbf{r} + \oint_{C_{2}}\mathbf{F}\cdot d\mathbf{r} = \int_{R} \text{curl }\mathbf{F}\cdot d\mathbf{S}$$
@@ -419,7 +419,7 @@ $$\begin{split}
 
 ### Green's Theorem in multiply-connected regions
 
-![Right; Green's Theorem in multiply-connected regions](diags/connected.png){width="50%"}
+![Right; Green's Theorem in multiply-connected regions](diags/connected.png)
 
 
 $R$ <span style="color: green;">**simply-connected**</span> if any closed curve in $R$ can be shrunk to a point without leaving $R$.
@@ -455,10 +455,9 @@ If $\tau$ the volume enclosed by a closed surface $S$ with unit outward normal $
 $$\int_{S}\mathbf{A\cdot \hat{n}}dS = \int_{\tau}div \mathbf{A}d\tau$$
 </center>
 
-### The Divergence theorem in more complicated geometries
+### The Divergence theorem in more complicated geometries!
 
-![The divergence theorem for a non-convex
-surface](diags/fig17DivThm.png){width="30%"}
+![The divergence theorem for a non-convex surface](diags/fig17DivThm.png)
 
 
 1.  **Non-convex surfaces**
@@ -475,7 +474,7 @@ surface](diags/fig17DivThm.png){width="30%"}
     1.  *Simply-connected regions* - e.g space between concentric
         spheres.
 
-        ![Simply-connected regions](diags/fig18-1.png){width="30%"}
+        ![Simply-connected regions](diags/fig18-1.png)
 
 
         Given interior surface $S_{i}$ and outer surface $S_{o}$. A
@@ -490,7 +489,7 @@ surface](diags/fig17DivThm.png){width="30%"}
 
     2.  *Multiply-connected regions*
 
-        ![Multiply-connected regions](diags/fig18 - 2.png){width="30%"}
+        ![Multiply-connected regions](diags/fig18 - 2.png)
 
         
 
@@ -561,7 +560,7 @@ $$\int_{S}\frac{\mathbf{\hat{n}}\cdot\mathbf{r}}{r^{3}} =
 
 ### Stokes Theorem
 
-![Diagram for proof of Stokes' Theorem](diags/fig20.jpeg){width="30%"}
+![Diagram for proof of Stokes' Theorem](diags/fig20.jpeg)
 
 Suppose $S$ is **open** surface with simple closed curve $\gamma$ forming its boundary.
 
