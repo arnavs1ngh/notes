@@ -234,3 +234,26 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
 </details>
 
+### Statistical Modelling - MATH50011
+
+- <a href="/notes/pdfs/year2/SM-Concise.pdf" target="_blank" style="color:#801fff;">**Open Probability Concise**</a> - <a href="/notes/pdfs/year2/SM-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/SMLec.pdf" target="_blank" style="color:#801fff;">**Open Probability Lecturer**</a> - <a href="/notes/pdfs/year2/SMLec.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - Class</span>
+  </summary>
+  
+   - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS0.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 0**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  
+</details>
