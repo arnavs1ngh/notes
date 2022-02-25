@@ -244,8 +244,6 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Class</span>
   </summary>
   
-   - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS0.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 0**</a>
-  
   - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1-Sol.pdf" target="_blank">**Solutions**</a>
   
   - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS2-Sol.pdf" target="_blank">**Solutions**</a>
