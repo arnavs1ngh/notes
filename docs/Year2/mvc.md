@@ -253,37 +253,16 @@ $f$ may be a vector or a scalar.
 
 ### Types of Surfaces
 
-<div class="container">
-    <img src="diags/ClosedSurface.jpeg" height="200" width="200" />
-    <p>Closed Surface</p>
-  </div>
-  <div class="container">
-    <img class="middle-img" src="diags/OpenSurface.jpeg"/ height="200" width="200" />
-    <p>Open Surface</p>
-  </div>
-  <div class="container">
-    <img src="diags/Convex.jpeg" height="200" width="200" />
-    <p>Convex</p>
-  </div>
-  <div class="container">
-    <img src="diags/notConvex.jpeg" height="200" width="200" />
-    <p>Not Convex</p>
-  </div>
-</div>
+<!-- <p float="left">
+  <img src="diags/ClosedSurface.jpeg" width="100" />
+  <img src="diags/Convex.jpeg" width="100" />
+  <img src="diags/notConvex.jpeg" width="100" />
+</p> -->
 
-<img src="diags/ClosedSurface.jpeg" alt="closedSurface" style="width:200px;"/>
-<img src="diags/OpenSurface.jpeg" alt="drawing" style="width:200px;"/>
-<img src="diags/Convex.jpeg" alt="drawing" style="width:200px;"/>
-<img src="diags/notConvex.jpeg" alt="drawing" style="width:200px;"/>
+Closed Surface             |  Convex                      |  Not Convex
+:-------------------------:|:----------------------------:|:---------------:
+![](diags/ClosedSurface.jpeg)  |  ![](diags/Convex.jpeg)  | ![](diags/notConvex.jpeg)
 
-
-<!-- ![image]()
-
-![image]()
-
-![image]()
-
-![image]() -->
 
 **Definitions**
 
@@ -297,7 +276,7 @@ $f$ may be a vector or a scalar.
 
 ### Evaluating surface integrals for plane surfaces in x-y plane
 
-![image](surface.png){width="30%"}
+![image](diags/surface.png){width="30%"}
 
 $dS$ infinitesimal area $\implies$ think of as approx. plane.\
 **Vector areal element $dS$** is the vector $\hat{\mathbf{n}}dS$ for
@@ -338,7 +317,7 @@ $$\int_{S}fdS =  \int_{y=c}^{y=d}\int_{x = G_{2}(x)}^{x=G_{1}(x)}f(x,y)dxdy$$
 
 ### Projection of an area onto a plane
 
-![Right; Projection of curved surface $S$ onto $x-y$ plane](projection.png){width="55%"}
+![Right; Projection of curved surface $S$ onto $x-y$ plane](diags/projection.png){width="55%"}
 
 <center>
 $$dS = \frac{d\Sigma}{|\hat{\mathbf{n}}\cdot\hat{\mathbf{k}}|}$$
@@ -426,7 +405,7 @@ Green's Theorem holds for more complicated geometries too, if C not convex we ca
 Joining $A$, $A'$ form $C_{1}, C_{2}$ enclosing $R_{1},R_{2}$ s.t
 $R_{1} + R_{2} =R$
 
-![A non-convex boundary](boundary.png){width="70%"}
+![A non-convex boundary](diags/boundary.png){width="70%"}
 
 <center>
 $$\oint_{C}\mathbf{F}\cdot dr = \oint_{C_{1}}\mathbf{F}\cdot d\mathbf{r} + \oint_{C_{2}}\mathbf{F}\cdot d\mathbf{r} = \int_{R} \text{curl }\mathbf{F}\cdot d\mathbf{S}$$
@@ -440,8 +419,7 @@ $$\begin{split}
 
 ### Green's Theorem in multiply-connected regions
 
-![Right; Green's Theorem in multiply-connected
-regions](connected.png){width="50%"}
+![Right; Green's Theorem in multiply-connected regions](diags/connected.png){width="50%"}
 
 
 $R$ <span style="color: green;">**simply-connected**</span> if any closed curve in $R$ can be shrunk to a point without leaving $R$.
@@ -480,7 +458,7 @@ $$\int_{S}\mathbf{A\cdot \hat{n}}dS = \int_{\tau}div \mathbf{A}d\tau$$
 ### The Divergence theorem in more complicated geometries
 
 ![The divergence theorem for a non-convex
-surface](fig17DivThm.png){width="30%"}
+surface](diags/fig17DivThm.png){width="30%"}
 
 
 1.  **Non-convex surfaces**
@@ -497,7 +475,7 @@ surface](fig17DivThm.png){width="30%"}
     1.  *Simply-connected regions* - e.g space between concentric
         spheres.
 
-        ![Simply-connected regions](fig18-1.png){width="30%"}
+        ![Simply-connected regions](diags/fig18-1.png){width="30%"}
 
 
         Given interior surface $S_{i}$ and outer surface $S_{o}$. A
@@ -512,7 +490,7 @@ surface](fig17DivThm.png){width="30%"}
 
     2.  *Multiply-connected regions*
 
-        ![Multiply-connected regions](fig18 - 2.png){width="30%"}
+        ![Multiply-connected regions](diags/fig18 - 2.png){width="30%"}
 
         
 
@@ -583,7 +561,7 @@ $$\int_{S}\frac{\mathbf{\hat{n}}\cdot\mathbf{r}}{r^{3}} =
 
 ### Stokes Theorem
 
-![Diagram for proof of Stokes' Theorem](fig20.jpeg){width="30%"}
+![Diagram for proof of Stokes' Theorem](diags/fig20.jpeg){width="30%"}
 
 Suppose $S$ is **open** surface with simple closed curve $\gamma$ forming its boundary.
 
