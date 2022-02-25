@@ -22,8 +22,8 @@ ol.n {list-style-type: none;}
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year2/SM-Concise.pdf" target="_blank" style="color:#801fff;">**Open Probability Concise**</a> - <a href="/notes/pdfs/year2/SM-Concise.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year2/SMLec.pdf" target="_blank" style="color:#801fff;">**Open Probability Lecturer**</a> - <a href="/notes/pdfs/year2/SMLec.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/SM-Concise.pdf" target="_blank" style="color:#801fff;">**Open Stats Concise**</a> - <a href="/notes/pdfs/year2/SM-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/SMLec.pdf" target="_blank" style="color:#801fff;">**Open Stats Lecturer**</a> - <a href="/notes/pdfs/year2/SMLec.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
