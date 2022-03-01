@@ -505,7 +505,7 @@ $$\underbrace{B_n = \bigcap_{m=n}^{\infty}A_m}_{\text{increasing sequence}} \qqu
 
 And further
 
-$$\underbrace{\liminf_{n\to\infty} A_N = \bigcup_{n=1}^{\infty}\bigcap_{n=N}^{\infty}A_n}_{=\{A_n a.a\}} \quad \underbrace{\limsup_{n\to\infty} A_N = \bigcap_{n=1}^{\infty}\bigcup_{n=N}^{\infty}A_n}_{=\{A_n i.o\}}$$
+$$\underbrace{\liminf_{n\to\infty} A_N = \bigcup_{n=1}^{\infty}\bigcap_{n=N}^{\infty}A_n}_{=\{A_n\ a.a\}} \quad \underbrace{\limsup_{n\to\infty} A_N = \bigcap_{n=1}^{\infty}\bigcup_{n=N}^{\infty}A_n}_{=\{A_n\ i.o\}}$$
 
 **Remark 4.16**\
 $\{A_n\ i.o\}^{C}$ - only finitely many $A_n$ occur
@@ -548,7 +548,8 @@ $\lvert t \rvert < t_0$ for some $t_0 > 0$
 $$X,Y \text{ identically distributed}$$
 
 *(Continuity)*\
-Suppose $X$ a random variable with $M_X(t)$\
+Suppose $X$ a random variable with $M_X(t)$
+  
 $(X_{n})_{n\geq 1}$ sequence of random variables with respective $M_{X_i}(t)$
 
 $$\text{ if } \textcolor{RoyalBlue}{M_{X_i}(t) \xrightarrow[i\to \infty]{} M_X(t) < \infty \quad (\forall \lvert t \rvert < t_0, t_0 > 0}$$
@@ -605,8 +606,10 @@ Markov chains <span style="color: green;">**Time homegenous**</span> if
 $$P(X_{n+1} = j \rvert X_n = i) = P(X_1 = j \rvert X_0 = i) \quad \forall n \in \mathbb{N}_0,\forall i,j \in \mathcal{E}$$
 
 
-**Definition 6.4**\
-Matrix $ P = (p_{ij})_{i,j \in \mathcal{E}} $ of <span style="color: green;">**transition probability**</span> $ p_{ij} = Pr(X_1 = j \rvert X_0 = i)$\
+**Definition 6.4**
+  
+Matrix $P = (p_{ij})_{i,j \in \mathcal{E}} $ of <span style="color: green;">**transition probability**</span> $ p_{ij} = Pr(X_1 = j \rvert X_0 = i)$
+  
 Called the <span style="color: green;">**Transition Matrix**</span> for the
 time homogeneous Markov chain. $(X_n)$
 
