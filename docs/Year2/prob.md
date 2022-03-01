@@ -508,7 +508,7 @@ And further
 $$\underbrace{\liminf_{n\to\infty} A_N = \bigcup_{n=1}^{\infty}\bigcap_{n=N}^{\infty}A_n}_{=\{A_n\ a.a\}} \quad \underbrace{\limsup_{n\to\infty} A_N = \bigcap_{n=1}^{\infty}\bigcup_{n=N}^{\infty}A_n}_{=\{A_n\ i.o\}}$$
 
 **Remark 4.16**\
-$\{A_n\ i.o\}^{C}$ - only finitely many $A_n$ occur
+$ \{ A_n\ i.o \}^{C}$ - only finitely many $A_n$ occur
 
 $$\{A_n\ i.o\}^{C} = \bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}A_n^C = \{A_n^C\ a.a\}$$
 
