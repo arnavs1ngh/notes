@@ -85,7 +85,7 @@ ol.n {list-style-type: none;}
 **Colour Code** - <span style="color: green;">**Definition**</span> are
 <span style="color: green;">**green**</span> in these notes,
 <span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
-and <span style="color: RoyalRoyalBlue;">**Causes**</span> are <span style="color: RoyalBlue-000;">**RoyalBlue**</span>
+and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: RoyalBlue;">**Blue**</span>
 
 *Content from MATH40005 assumed to be known.*
 
@@ -293,9 +293,13 @@ increasing CDF $\implies X$ a random variable with CDF $F$
 <span style="color: green;">**Expectation**</span>
 
 For discrete r.v $X$
-**$$\textcolor{green}{E(X) = \sum_{x}xPr(X=x)}$$**
+
+$$\textcolor{green}{E(X) = \sum_{x}xPr(X=x)}$$
+
 Similary for continuous r.v
-**$$\textcolor{green}{E(X) = \int_{-\infty}^{+\infty}xf_{X}(x)dx}$$**
+
+$$\textcolor{green}{E(X) = \int_{-\infty}^{+\infty}xf_{X}(x)dx}$$
+
 *Properties of Expectation*
 
 1.  $E(aX+bY) = aE(x) + bE(Y), \forall a,b \in \mathbb{R}$
@@ -314,7 +318,7 @@ Given by $$F_{XY}(x,y) = Pr(X \leq x, Y\leq y)$$ Jointly absolutely
 continuous case:
 $$F_{XY}(x,y) = \int_{-\infty}^{y}\int_{-\infty}^{x}f_{XY}(s,t)dsdt$$
 
-**Definition - <span style="color: green;">**Marginal Density Function (MDF)**</span>**
+**Definition** - <span style="color: green;">**Marginal Density Function (MDF)**</span>
 
 $$f_{X}(x) = \int_{-\infty}^{\infty}f_{XY}(x,y)dy$$
 
@@ -352,13 +356,16 @@ $$J(u,v) = det
 
 
 ***Remark 3.9 - (Factorisable independence)***\
-$X,Y$ independent if $\exists g,h : \mathbb{R}to \mathbb{R}$ such that
+$X,Y$ independent if $\exists g,h : \mathbb{R} \to \mathbb{R}$ such that
 the joint mass/density function factorises as
+
 $$f_{XY}(x,u) = g(x)h(y),\quad \forall x,y \in R$$
 
 **Definition -** <span style="color: green;">**Conditioning**</span>\
 For $X$ a r.v, conditional CDF of $X$ given $A$
+
 $$F_{X\rvert A}(x) = \frac{Pr(\{X\leq x\} \cap A)}{Pr(A)}$$
+
 $$f_{X\rvert A}(x) = \frac{d}{dx}F_{X\rvert A}(x)$$
 
 **Definition** - <span style="color: green;">**Conditional Probability Density Function**</span>
@@ -373,11 +380,14 @@ Has pdf for $-1 < \rho < 1$
 
 $$f(x,y\rvert\rho) = \frac{1}{2\pi\sqrt{1-\rho^{2}}}\exp{\left ( -\frac{1}{2(1-\rho^{2})(x^{2}-2\rho xy + y^{2})}\right ) } \qquad (x,y) \in \mathbb{R}^{2}$$
 
-Properties:\
-$E(X) = E(Y) = 0, E(XY) = \rho$\
-$Var(X) = Var(Y) = 1, Cov(X,Y) = \rho$\
+Properties:
+
+- $E(X) = E(Y) = 0, E(XY) = \rho$\
+- $Var(X) = Var(Y) = 1, Cov(X,Y) = \rho$\
+
 **Vector form**\
 $\mathbf{x} = (x,y)\ \underline{\mu} = (\mu_x,\mu_y), \Sigma = \begin{pmatrix} \sigma_x^2 & \rho\sigma_x\sigma_y\\ \rho\sigma_x\sigma_y & \sigma_2^2\end{pmatrix}$
+
 $$f_{\mathbf{X}}(\mathbf{x}\rvert\underline{\mu}, \Sigma) = \frac{1}{2\pi\sigma_x\sigma_y\sqrt{1-\rho^{2}}}exp\left(-\frac{1}{2}(\mathbf{x} - \underline{\mu})^T( \Sigma^{-1}(\mathbf{x}-\underline{\mu})\right)$$
 
 Extend this to <span style="color: green;">**Multivariate normal distribution:**</span>
@@ -450,7 +460,7 @@ $$Pr(Y \geq \epsilon^2) \leq \frac{E(X-\mu)^2}{\epsilon^2} = \frac{\sigma^2}{\ep
 
 $X_1,X_2,\dots $
 
-$$\underbrace{\bar{X}_n = \frac{1}{n}\sum_{i=1}^{n}X_i}_{\textcolor{ForestGreen}{\textbf{\text{sample mean}}}}$$
+$$\underbrace{\bar{X}_n = \frac{1}{n}\sum_{i=1}^{n}X_i}_{\text{sample mean}}}$$
 
 **Proposition 4.7.** - *(Weak law of large numbers)*\
 $X_1,X_2,\dots$ sequence of iid random variable with finite
