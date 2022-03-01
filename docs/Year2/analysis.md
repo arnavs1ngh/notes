@@ -111,7 +111,7 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 *Content from MATH40002 assumed to be known.*
 
 
-# **Term I - -**
+# **Term I**
 
 # <span style="color: white;">1</span> Differentiation in Higher Dimensions
 
@@ -197,9 +197,7 @@ $x \in \mathbb{R}^{n} \iff$
   
 Open ball of radius $r$ is
   
-<center>
 $$B_{r}(x) = \{y \in \mathbb{R}^{n} : ||x-y||<r\}$$
-</center>
   
 **Definition 1.2 - <span style="color: green;">Open Sets</span>**
   
@@ -213,12 +211,10 @@ A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</s
 
 **Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
-Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if 
-  <center>
-<span style="color: RoyalBlue;">  
-$$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$
-</span>
-   </center>
+Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if
+
+$$\textcolor{RoyalBlue}{\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon}$$
+
   
 $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
@@ -662,14 +658,16 @@ $(X,d)$, with $x \in X, \epsilon \in \mathbb{R}; \epsilon > 0$\
   <center>
 Ball radius $ \epsilon;\ B_{\epsilon}(x) = \{ x' \in X | d(x,x') < \epsilon\}$
  </center>
-***notation;*** $B_{\epsilon}(x,X,d)$
+
+**Notation** 
+
+$B_{\epsilon}(x,X,d)$
  
 **Definition 2.7**. <span style="color: green;">**Open set in metric space**</span>
 
 $(X,d)$ a metric space. $U \subseteq X$ open in $(X,d)$ if:
-    <center>
+
 $$\forall u \in U,\ \exists \delta > 0 \in \mathbb{R}\text{ s.t } B_{\delta}(u) \subset U$$
-    </center>
  
 **Definition 2.8**. <span style="color: green;">**Topologically equivalent**</span>
 
@@ -688,7 +686,10 @@ Say $(x_{n}) \to x \in (X,d)$ if
     <center>
 $$\forall\ \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall\ n \geq N, d(x,x_{n})< \epsilon$$
    </center>
-***Lemma 2.7.*** - if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique
+
+**Lemma 2.7**
+
+if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique
       
 ***Corollary*** - $d_{1},d_{2}$ topologically equivalent $\iff (x_n)$
 converges in $(X,d_1)$ and $(X,d_2)$
@@ -871,9 +872,8 @@ Say topological space $(X,\tau)$ <span style="color: green;">**metrisable**</spa
 **Definition.** <span style="color: green;">**Induced and Subspace topology**</span>
       
 $(X,\tau)$ a topological space. $Y \subset X$
-      <center>
+
 $$\tau_{Y} = \{U \cap Y | U \in \tau\}$$
-      </center>
 
 $\tau_{Y}$ the <span style="color: green;">**induced topology**</span> on $Y$ from $(X,\tau)$\
 $(Y,\tau_{Y})$ has the <span style="color: green;">**subspace topology**</span> induced from $(X,\tau)$
@@ -895,10 +895,10 @@ of $x$ contained in $G$
 
 $(A,\tau)$ a topological space. $\Omega \subseteq A$\
 $z \in \Omega$ an interior point of $\Omega$ if
-      <center>
+
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
-      </center>
-<span style="color: green;">**Interior of** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z$ an interior point of $ \Omega \}$
+
+<span style="color: green;">**Interior of** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega \lvert z$ an interior point of $ \Omega \}$
       
 *Properties of interior*
 
@@ -915,9 +915,9 @@ $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
 
 $(A,\tau)$ a topological space. $(x_n)_{n\geq1}$ a sequence in $A$\
 $(x_n)$ <span style="color: green;">**converges**</span> in $(A,\tau)$ if
-      <center>
+
 $$\exists x \in A \text{ s.t } \forall\ G \in \tau\text{ with } x \in G,\ \exists N \in \mathbb{N}, \text{ s.t } \forall n \geq N, x_n \in G$$
-      </center>
+
 
 **Definition 2.21**. <span style="color: green;">**Hausdorff**</span>
 
@@ -955,9 +955,9 @@ $(A,\tau)$
 
 $(A,\tau),$ a topological space, $S\subseteq A$\
 $x \in A$ a <span style="color: green;">**limit/accumulation point**</span> of $S$ if
-      <center>
+
 $$\forall\ U \text{ a neighbourhood of } x,\ (S \cap U)\backslash\{x\} \neq \emptyset$$
-      </center>
+
 $x$ not necessarily in $S$\
 <span style="color: green;">**Closure of $S, \bar{S}$**</span>$= S \cup \{ x \in A | x \text{ a limit point of } S\}$
 
@@ -971,9 +971,11 @@ $S$ closed in $(A,\tau) \iff S = \bar{S}$
 
 $(X,\tau_X),(Y,\tau_Y)$ with $f: X \to Y$\
 $f$ continuous on $X$ if:
-      <center>
-$\forall$ open sets  $U \in Y,\ f^{-1}(U) \text{ open in } X$$
-      </center>
+
+$\forall$ open sets
+
+$$ U \in Y,\ f^{-1}(U) \text{ open in } X$$
+
  
 **Theorem 2.20**.
 
@@ -1145,17 +1147,17 @@ $X$ compact $\iff X$ closed and bounded
 
 
 $(X,d)$ sequentially compact, if for every sequence in $X$ has convergent subsequence in $(X,d)$
-      <center>
+
 $$\forall (x_n)_{n\geq 1} \in X,\ \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$$
-      </center>
+
       
 **Lemma 2.39.**
 
 $(X,d)$ a metric space. with sequence $\ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x $.
 
-<center>
-$\iff \exists x \in X$ s.t  $\forall \epsilon > 0$ there are infinitely many  $i$  s.t  $x_{i} \in B_{\epsilon}(x)$
-</center>
+
+$$\iff \exists x \in X \text{ s.t }  \forall \epsilon > 0 \text{ there are infinitely many } i \text{ s.t }  x_{i} \in B_{\epsilon}(x)$$
+
 
 **Theorem 2.41**. <span style="color: red;">**Bolzanno-Weierstrass**</span>
 
@@ -1164,9 +1166,9 @@ Any bounded sequence in $\mathbb{R}^{n}$ has convergent subsequence.
 **Theorem 2.40 + 2.42.**
 
 $(X,d)$ metric space.
-      <center>
-$X$  Compact  $\iff X$  Sequentially Compact
-      </center>
+
+<center> $X$  Compact  $\iff X$  Sequentially Compact </center>
+      
       
 ### <span style="color: white;">2.4.3</span> Continuous maps + Compact Sets
  
@@ -1178,9 +1180,8 @@ $$Z \text{ compact in } X \implies f(Z) \text{ compact in }Y$$
 
 **Corollary 2.44.**\
 $(X,d_X),(Y,d_Y)$ metric spaces, $f:X \to Y$ a homeomorphism
-      <center>
+
 $$\implies X \text{ compact } \iff Y \text{ compact }$$
-      </center>
  
 **Theorem 2.45**.
 
@@ -1211,9 +1212,8 @@ $\forall\ [a,b]$ we have $f([a,b])$ of the form $[m,M]$ for $m,M \in \mathbb{R}$
 $(X,d)$ a metric $(x_{n})_{n\geq 1}$ sequence in $X$
       
 Say $(x_{n})_{n\geq 1}$ a <span style="color: green;">**Cauchy sequence**</span> in $(X,d)$ if
-      <center>
+
 $$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall n,m \geq N_{\epsilon} d(x_{n},x_{m}) < \epsilon$$
-      </center>
 
 **Definition 2.35.** <span style="color: green;">**Complete & Banach**</span>
 
@@ -1268,9 +1268,9 @@ convergent subsequence in $(C([a,b],d_{\infty})$
 
 $(X_{1},d_{1})$ and $(X_{2},d_{2})$, with $f: X_1 \to X_2$\
 Say $f$ <span style="color: green;">**contracting**</span> if $\exists K \in (0,1)$ s.t $\forall a,b \in X$ we have
-      <center>
+
 $$d_{2}(f(a),f(b)) \leq K\cdot d_{1}(a,b)$$
-      </center>
+
 Every contracting map is continuous.
 
  
@@ -1284,9 +1284,9 @@ $f:X\to X$ say $x \in X$ a <span style="color: green;">**fixed point**</span> of
 $(X,d)$ a non-empty complete metric space.\
 $f: X \to X$ a contracting map $\implies f$ has unique fixed point in
 $X$
-      
+
 # **Term II**
-      
+
 # Holomorphic Functions
 
 ## Complex Numbers
@@ -1327,11 +1327,11 @@ $$e^{i\theta} = (\cos\theta + i\sin\theta)$$
  
 **Definition 2**. Discs in $\mathbb{C}$
 
-[**Open Disc : $D_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
+- [**Open Disc : $D_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
 
-[**Boundary of Disc : $C_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
+- [**Boundary of Disc : $C_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
 
-[**Unit Disc : $\mathbb{D}$**] $= \{ z \in \mathbb{C}: |z| < 1\}$
+- [**Unit Disc : $\mathbb{D}$**] $= \{ z \in \mathbb{C}: |z| < 1\}$
 
  
 **Definition 3**. [**Interior Point**]
@@ -1730,7 +1730,7 @@ primitive in $\Omega \implies$
 
 
 $$
-    \ointctrclockwise_{\gamma}f(z)dz = 0
+    \int_{\gamma}f(z)dz = 0
 $$
 
 ***Corollary***\
@@ -1744,15 +1744,15 @@ $\Omega$ with $f' = 0 \implies f$ constant
 Let $\Omega \subset \mathbb{C}$ open set\
 $T \subset \Omega$ a triangle whose interior contained in $\Omega$
 
-$$\implies \ointctrclockwise_{T}f(z)dz = 0$$
+$$\implies \int_{T}f(z)dz = 0$$
 
 for $f$ holomorphic in $\Omega$
 
 ***Corollary***\
 $f$ holomorphic on open set $\Omega$ containing rectangle $R$ in its
-interior $$\implies \ointctrclockwise_{R}f(z)dz = 0$$
+interior $$\implies \int_{R}f(z)dz = 0$$
 
-## Local existence of primitives and Cauch-Goursat theorem in a disc
+## Local existence of primitives and Cauchy-Goursat theorem in a disc
 
 **Theorem 10**.
 
@@ -1760,7 +1760,7 @@ Holomorphic functions in open disc have a primitive in that disc
 
 ***Corollary* - (Cauchy-Goursat Theorem for a disc)**
 
-$f$ holomorphic in disc $\implies \ointctrclockwise_{\gamma}f(z)dz = 0$
+$f$ holomorphic in disc $\implies \int_{\gamma}f(z)dz = 0$
 for any closed curve $\gamma$ in that disc
 
 ***Corollary***
@@ -1768,7 +1768,7 @@ for any closed curve $\gamma$ in that disc
 Suppose $f$ holomorphic in open set containing circle $C$ and its
 interior
 
-$$\implies \ointctrclockwise_{C}f(z)dz = 0$$
+$$\implies \int_{C}f(z)dz = 0$$
 
 ## Homotopies and simply connected domains
 
@@ -1805,7 +1805,7 @@ Any holomorphic function in simply connected domain has a primitive.
 
 $f$ holomorphic in simply connected open set $\Omega$
 
-$$\implies \ointctrclockwise_{\gamma}f(z)dz = 0$$
+$$\implies \int_{\gamma}f(z)dz = 0$$
 
 for any closed piecewise-smooth curve $\gamma \subset \Omega$
  
@@ -1816,7 +1816,7 @@ with $\gamma_2$ lying wholly inside $\gamma_1$
 
 $f$ holomorphic in domain containing region between $\gamma_1,\gamma_2$
 
-$$\implies \ointctrclockwise_{\gamma_1}f(z)dz = \ointctrclockwise_{\gamma_2}f(z)dz$$
+$$\implies \int_{\gamma_1}f(z)dz = \int_{\gamma_2}f(z)dz$$
 
 ## Cauchy's Integral Formulae
 
@@ -1827,17 +1827,17 @@ $f$ holomorphic inside and on simple closed piecewise-smooth curve $\gamma$
 
 $\forall z_0 \text{ interior } to \gamma$
 
-$$f(z_0) = \frac{1}{2\pi i}\ointctrclockwise_{\gamma}\frac{f(z)}{z-z_0}dz$$
+$$f(z_0) = \frac{1}{2\pi i}\int_{\gamma}\frac{f(z)}{z-z_0}dz$$
  
 **Theorem 15**. *(Generalised cauchy's integral formula)*
 
 $f$ holomorphic in open set $\Omega$.
 
-$\gamma$ simple,closed piecewise-smooth $\subsets \Omega$
+$\gamma$ simple,closed piecewise-smooth $\subset \Omega$
 
 $\forall z$ interior to $\gamma$
 
-$$\implies \frac{d^n f(z)}{dz^n} = \frac{n!}{2\pi i}\ointctrclockwise_{\gamma}\frac{f(t)}{(t-z)^{n+1}}dt$$
+$$\implies \frac{d^n f(z)}{dz^n} = \frac{n!}{2\pi i}\int_{\gamma}\frac{f(t)}{(t-z)^{n+1}}dt$$
 
 ***Corollary***\
 $f$ holomorphic $\implies$ all its derivatives are too.
@@ -1963,4 +1963,3 @@ $\implies \exists F$ holomorphic in $\Omega$ s.t
 $F\rvert_{\Omega^{+}} = f$
 
 # Meromorphic Functions
-
