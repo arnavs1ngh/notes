@@ -111,7 +111,7 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 *Content from MATH40002 assumed to be known.*
 
 
-# **Term I**
+# **Term I- :)**
 
 # <span style="color: white;">1</span> Differentiation in Higher Dimensions
 
