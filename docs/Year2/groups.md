@@ -109,13 +109,13 @@ $\iff \forall g,h,i \in G$
 
 A function $f: G \to H$ is a <span style="color: green;">**Homomorphism**</span> if $\forall a,b \in G$ we have $f(ab) = f(a)f(b)$.
 
-Note $ab$ operation of G, $f(a)f(b)$ operation of H\
+Note $ab$ operation of G, $f(a)f(b)$ operation of H
 
-corollary: $f(e_{G}) = e_{H} \implies f(g^{-1}) = f(g)^{-1}$\
+corollary: $f(e_{G}) = e_{H} \implies f(g^{-1}) = f(g)^{-1}$
 
 **Definition 1.4** A function $f: G \to H$ an <span style="color: green;">**Isomorphism**</span> if <span style="color: RoyalBlue;">**$f$ a bijective homomorphism.**</span>
 
-We write $f: G \xrightarrow{\sim} H$ or $G \cong H$\
+We write $f: G \xrightarrow{\sim} H$ or $G \cong H$
 
 **Definition 1.6**
 
@@ -136,11 +136,11 @@ Extend this to define <span style="color: green;">**$Aut(G)$**</span> as the gro
 
 $$N \subset G \text{ normal in G} \iff gng^{-1} \in N, \forall g \in G \text{ and } n \in N$$
 
-We say that N is stable under the conjugation by any element in G.\
+We say that N is stable under the conjugation by any element in G.
 
 **Definition 1.12** <span style="color: green;">**Simple Groups**</span>
 
-[**group $G$ simple**] if <span style="color: RoyalBlue;">**$G$ has no normal subgroups aside from $\{e\}$ and $G$**</span>\
+[**group $G$ simple**] if <span style="color: RoyalBlue;">**$G$ has no normal subgroups aside from $\{e\}$ and $G$**</span>
 
 **Define**
 
@@ -150,7 +150,7 @@ We say that N is stable under the conjugation by any element in G.\
 
 **Lemma**
 
-$H \subset G$ a subgroup. If [**$gH = Hg \text{ } \forall g \in G$**] [**$\implies H$ a normal subgroup**]\
+$H \subset G$ a subgroup. If [**$gH = Hg \text{ } \forall g \in G$**] [**$\implies H$ a normal subgroup**]
 
 **Lemma**
 
@@ -158,20 +158,20 @@ $H \subset G$ a subgroup. If [**$gH = Hg \text{ } \forall g \in G$**] [**$\impli
 
 **Define** - **Quotient Group**
 
-$N$ a normal subgroup of $G$. $G/N$ the quotient group of $G$ modulo $N$ is the set of all left cosets of N in G.[**$G/N = \{aN | a \in G\}$**]\
+$N$ a normal subgroup of $G$. $G/N$ the quotient group of $G$ modulo $N$ is the set of all left cosets of N in G. [**$G/N = \{aN | a \in G\}$**]
 
 **Lemma**
 
 $N$ a normal subgroup of $G$. The set [**$G/N$**] of left cosets of $G$ modulo $N$ [**is a group**] under group law
-[**$(g_{1}N, g_{2}N) \mapsto (g_{1}g_{2}N)$.**]\
+[**$(g_{1}N, g_{2}N) \mapsto (g_{1}g_{2}N)$.**]
 
 **Theorem 1.19 - Isomorphism Theorem**
 
 Let $f: G \to H$ a homomorphism
 of groups. Consider the map $gKer(f) \mapsto f(g)$, this map is an **isomorphism** of groups. 
-<center>
+
 $$G/Ker(f) \xrightarrow{\sim} f(G)$$
-</center>
+
 
 #### Group-Theoretic Constructions
 
@@ -196,47 +196,47 @@ $$G/Ker(f) \xrightarrow{\sim} f(G)$$
 
 Sending an element $g \in G$ to the conjugation by $g$ is a homomorphism
 $G \to Aut(G)$ with image $Inn(G)$ and kernel $Z(G)$. Giving isomorphism
-$G/Z(G) \xrightarrow{\sim} Inn(G)$. using **Theorem 1.19**\
+$G/Z(G) \xrightarrow{\sim} Inn(G)$. using **Theorem 1.19**
 
 **Lemma 1.21**
 
-[**$G$ a group**] .Then [**$[G, G]$ a normal subgroup**] of $G$ and [**$G/[G,G]$ is abelian.**]\
+[**$G$ a group**] .Then [**$[G, G]$ a normal subgroup**] of $G$ and [**$G/[G,G]$ is abelian.**]
 
 **Proposition 1.22**
 
-[**$N$ a normal subgroup of $G$**]. Then [**$G/N$ is abelian if and only if $N$ contains $[G,G]$**]\
+[**$N$ a normal subgroup of $G$**]. Then [**$G/N$ is abelian if and only if $N$ contains $[G,G]$**]
 
 **Lemma 1.23**
 
-Any [**subgroup of $G$ containing $[G,G]$**] is [**normal**]\
+Any [**subgroup of $G$ containing $[G,G]$**] is [**normal**]
 
-*Behaviour of products of groups in the abelian case:*\
+**Behaviour of products of groups in the abelian case:**
 
 **Lemma 1.25**
 
-$G$ an abelian group. [**If orders of $a,b \in G$ finite**], then [**order of $ab$ is finite and divides $lcm(ord(a),ord(b))$.**]\
+$G$ an abelian group. [**If orders of $a,b \in G$ finite**], then [**order of $ab$ is finite and divides $lcm(ord(a),ord(b))$.**]
 
 **Definition** - **Torsion subgroups**
 
-The set of elements of $G$ that have finite order is a subgroup of $G$, denoted $G_{\text{tors}}$. If $G = G_{\text{tors}}$ we say G is a **torsion abelian group.**\
+The set of elements of $G$ that have finite order is a subgroup of $G$, denoted $G_{\text{tors}}$. If $G = G_{\text{tors}}$ we say G is a **torsion abelian group.**
 
-**Definition** - **p$-subgroups of G**
+**Definition** - **$p$-subgroups of G**
 
-$G$ an abelian group, $p$ a prime number.\
+$G$ an abelian group, $p$ a prime number.
 
-The subgroup $G\{p\} = \{g | g \in G \text{ s.t } ord(g) = p^{n}\}$ is the **$p$-primary subgroup of G**\
+The subgroup $G\{p\} = \{g | g \in G \text{ s.t } ord(g) = p^{n}\}$ is the **$p$-primary subgroup of G**
 
-If $G = G\{p\}$ then $G$ is called a **$p$-primary torsion abelian group**\
+If $G = G\{p\}$ then $G$ is called a **$p$-primary torsion abelian group**
 
-*Generators.*
+**Generators.**
 
-**Lemma 1.29** - $I$ a set s.t $\forall i \in I$, we [**have subgroups $H_{i} \subset G$**]. Then [**$H = \cap_{i\in I}H_{i}$ a subgroup of G.**]\
+**Lemma 1.29** - $I$ a set s.t $\forall i \in I$, we [**have subgroups $H_{i} \subset G$**]. Then [**$H = \cap_{i\in I}H_{i}$ a subgroup of G.**]
 
 **Definition 1.30.** - **Generated Groups**
 
-$G$ a group, $S \subset G$ a set. Intersection of all subgroups of G that contain S is the **subgroup of $G$ generated by $S$** denoted $< S >$.\
+$G$ a group, $S \subset G$ a set. Intersection of all subgroups of G that contain S is the **subgroup of $G$ generated by $S$** denoted $< S >$.
 
-If $G = < S >$ then we say $S$ generates G.\
+If $G = < S >$ then we say $S$ generates G.
 
 **Definition 1.32** -  **Finitely generated group**
 
@@ -249,58 +249,78 @@ $G$ finitely generated if $\exists$ pos. integer $n$ s.t $G$ generated by $n$ el
 **Definition 2.1 [**Action**]**
 
 $G$ a group, $X$ a set. Let $S(X)$ be the group of bijections $X\to X$ with
-composition as the group law. An [**action of $G$ on $X$ is a homomorphism $G \to S(X)$**]\
-Associates each $g \in G$ to a bijective map $X \to X$, thought of as permutation of elements of X.\
+composition as the group law. An [**action of $G$ on $X$ is a homomorphism $G \to S(X)$**]
+
+Associates each $g \in G$ to a bijective map $X \to X$, thought of as permutation of elements of X.
+
 Equivalent to a function $G \times X \to X$, an action
 $\iff (g_{1}g_{2}(x) = g_{1}(g_{2}(x)) \forall g_{1},g_{2} \in G$ and
-$x \in X$\
-**Definition 2.3 [**Faithful actions**]** -
+$x \in X$
+
+**Definition 2.3 [**Faithful actions**]**
+
 an action of $G$ on $X$ is [**faithful if $G\to S(X)$ is
 injective**]\
 Equivalently, kernel of $G \to S(x)$ is trivial.
-$g(x) = g \forall x \implies g= e_{G}$\
-**Definition 2.4.1 [**Orbit of
-elements**]** - Let $G \times X \to X$ an
+$g(x) = g \forall x \implies g= e_{G}$
+
+**Definition 2.4.1 [**Orbit of elements**]**
+
+Let $G \times X \to X$ an
 action of G on a set X. The $G$-orbit of $x\in X$ is
-[**$G(x) = \{g(x) | g\in G\} \subset X$**]\
-**Definition 2.4.2 [**Stabiliser of
-$x$**]** -
-[**$\text{St}_{G}(x) = \{g \in G | g(x) = x\}\subset G$**]\
-**Theorem 2.6** [**Orbit-Stabiliser Theorem**]\
+[**$G(x) = \{g(x) | g\in G\} \subset X$**]
+
+**Definition 2.4.2 [**Stabiliser of $x$**]**
+
+$$\text{St}_{G}(x) = \{g \in G | g(x) = x\}\subset G$$
+
+**Theorem 2.6** [**Orbit-Stabiliser Theorem**]
+
 $G \times X \to X$ an action of $G$ on $X$. $\forall x\in X$ the map
 $g \mapsto g(x)$, gives bijection from set of left cosets
-$G/St(x) \to G(x)$, the orbit of $x$.\
+$G/St(x) \to G(x)$, the orbit of $x$.
+
 If $G$ a finite group $\implies |G(x)| = |G|/|St(x)| \forall x \in X$.\
 If $X$ a finite set and $X = \cup_{i=1}^{n}G(x_{i})$ is a disjoint union
 of $G$-orbits, then
+
 $$|X| = \sum_{i=1}^{n} |G(x_{i})| = \sum_{i=1}^{n}[G: St(x_{i})],$$
-where [**$[G: St(x_{i})]$ is the index of $St(x_{i})$ in
-G**]
+
+where [**$[G: St(x_{i})]$ is the index of $St(x_{i})$ in G**]
 
 #### Applications of the orbit-stabiliser theorem
 
 **Theorem 2.7** - *(Cayley)*.\
 Let $G$ a finite group of order $n \implies S_{n}$ has a subgroup
-isomorphic to $G$\
+isomorphic to $G$
+
 **Theorem 2.8** - *(Cauchy)*\
 $G$ a finite group of order $n$ with $p$ a prime factor of $n \implies$
-G has an element of order $p$.\
+G has an element of order $p$.
+
 **Definition 2.9 -** [**$p$-groups**] - $p$
 a prime, finite group $G$ is a $p$-group if order of $G$ is a power of
-$p$.\
-*Corollary 2.10 -* $G$ a $p$-group $\iff$ order of every element of G is
-a power of $p$.\
+$p$.
+
+**Corollary 2.10**
+
+$G$ a $p$-group $\iff$ order of every element of G is
+a power of $p$.
+
 **Theorem 2.11.**\
 $G$ a $p$-group, $p$-prime. Then $Z(G) \neq \{e_{G}\}$\
 **Definition 2.13** - $G \times X \to X$ an action of $G$ on $X$. If
 $X = G(x)$ ($X$ a $G$-orbit) for some $x \in X$, then we say [**$G$ acts
 **transitively** on $X$**].
 
-**Definition 2.14** - Let $G \times X \to X$ an action of $G$ on $X$. If
+**Definition 2.14**
+
+Let $G \times X \to X$ an action of $G$ on $X$. If
 $x \in X$ s.t $g(x) = x$. [**We say $x$ a **fixed
 point****].\
 [**Fix($g$) $\subset X$ - the set of fixed points of
-$g \in G$**]\
+$g \in G$**]
+
 **Theorem 2.15** - *(Jordan)*\
 Let $G \times X \to X$ a transitive action of a finite group $G$ on a
 finite set $X$. Then: $$\sum_{g \in G}|Fix(G)| = |G|$$ $\exists g \in G$
@@ -313,8 +333,8 @@ $|G|^{-1}\sum_{g\in G}|Fix(g)|.$\
 
 #### Smith Normal form
 
-**Definition 3.1 - [**Smith Normal
-Form**]**\
+**Definition 3.1 - [**Smith Normal Form**]**
+
 $A = (a_{ij}) \in \mathbb{Z}$ a $(m\times n)$ matrix in [**Smith Normal
 Form**] if:\
 
@@ -337,36 +357,57 @@ Row Operations:
 3.  replace $i^{\text{th}}$ row; $r_{i}$ by
     $r_{i} + ar_{j},\ i \neq j, \ a\in \mathbb{Z}$
 
-*Notation*\
+*Notation*
+
 $$d(A) - \text{gcd of } (a_{ij})$$
-$$t(A) - \text{smallest non-zero } |a_{ij}|$$ *Corollary*;
-$d(A) | t(A) \implies d(A) \leq t(A)$\
-*Lemma*; Any matrix $A$ of integer coefficients transformed via row/col
+
+$$t(A) - \text{smallest non-zero } |a_{ij}|$$
+
+**Corollary**
+
+$d(A) | t(A) \implies d(A) \leq t(A)$
+
+*Lemma*\
+Any matrix $A$ of integer coefficients transformed via row/col
 operations to $B$ s.t $t(B) = d(B) = d(A)$
 
 #### Classification of finitely generated abelian groups
 
-**Definition 3.4 - [**Free abelian group of rank
-$n$**]**\
+**Definition 3.4 - [**Free abelian group of rank $n$**]**
+
 $$\mathbb{Z}^{n} := \{(a_{1},\dots,a_{n})|a_{i} \in \mathbb{Z}\}$$
-*Lemma*; $\mathbb{Z}^{m} \cong \mathbb{Z}^{m} \implies n = m$, shows
+*Lemma*
+
+$\mathbb{Z}^{m} \cong \mathbb{Z}^{m} \implies n = m$, shows
 rank is well defined\
-*Lemma*; Any subgroup of $\mathbb{Z}^{n}$ isomorphic to $\mathbb{Z}^{m}$
+*Lemma*
+
+Any subgroup of $\mathbb{Z}^{n}$ isomorphic to $\mathbb{Z}^{m}$
 for $m \leq n$\
-***Corollary 3.7***\
+
+***Corollary 3.7***
+
 $G$ a finitely generated abelian group.\
-$\implies \exists$ surjective homomorphism $f: \mathbb{Z}^{n} \to \G$
-some $n$\
-$\text{Ker}(f) \cong \mathbb{Z}^{m}$\
+$\implies \exists$ surjective homomorphism
+
+$$f: \mathbb{Z}^{n} \to G$$
+
+some $n$
+
+$$\text{Ker}(f) \cong \mathbb{Z}^{m}$$
+
 **Theorem 3.8**\
 Every finitely generated abelian group is isomorphic to a product of
-finitely many cyclic groups\
+finitely many cyclic groups
+
 ***Corollary - 3.10***; Any finite abelian group isomorphic to a product
-of its $p$-primary torsion subgroups.\
+of its $p$-primary torsion subgroups.
+
 **Theorem 3.11**\
 Every finitely generated abelian group isomorphic to a product of
 *finitely many infinite cyclic groups* and *finitely many cyclic groups
-of prime power order*\
+of prime power order*
+
 The number of infinite cyclic factors and the number of cyclic factos of
 order $p^{r}$, for $p \in \mathbb{P}, r \in \mathbb{N}_{+}$, depends
 only on the group.
@@ -410,23 +451,26 @@ is a [**subring**]\
 ***Lemma 4.4***\
 $S$ a non-empty subset of ring $R$ Then;\
 $S$ a subring of $R \iff 1 \in S$ and
-$\forall a,b \in S; a+b \in S,\ ab \in S,\ -a \in S$\
-**Definition 4.6 - [**Invertible
-Elements**]**\
+$\forall a,b \in S; a+b \in S,\ ab \in S,\ -a \in S$
+
+**Definition 4.6 - [**Invertible Elements**]**\
 $x\in R$ invertible if $\exist y,z \in R$ s.t $xy = 1$ and $zx = 1$\
-if $y = z$ denote $x^{-1} = y = z$\
-**Definition 4.6.2 - [**Multiplicative group of
-$R$**]**
-$$R^{\times} = \{x \in R \mid x \text{ invertible} \}$$ **Definition
-4.8 - [**Division Ring**]** A ring where all
-non-zero elements a [**division ring**]\
+if $y = z$ denote $x^{-1} = y = z$
+
+**Definition 4.6.2 - [**Multiplicative group of $R$**]**
+
+$$R^{\times} = \{x \in R \mid x \text{ invertible} \}$$ 
+
+**Definition 4.8 - [**Division Ring**]**
+
+A ring where all  non-zero elements a [**division ring**]
+
 **Definition 4.8.2 - [**Field**]**\
 A commutative division ring a [**Field**].
 
 #### Homomorphisms, ideals and quotient rings
-
-**Definition 4.12 - [**Homomorphism of
-Rings**]**\
+\
+**Definition 4.12 - [**Homomorphism of Rings**]**\
 $R,S$ rings. $f: R\to S$ a homomorphism of rings if
 
 1.  $f:(R, +) \to (S, +)$ a homomorphism of abelian groups
@@ -436,7 +480,8 @@ $R,S$ rings. $f: R\to S$ a homomorphism of rings if
 3.  $f(1_{R}) = 1_{S}$
 
 A subset $R'$ of $R$ a subring $\iff$ tautological map $R' \to R$ a
-homomorphism of rings\
+homomorphism of rings
+
 **Definition 4.16 - [**Ideal rings**]**\
 $R$ a ring, $I \subset R$ [**ideal**] if:
 
@@ -452,18 +497,19 @@ $R$ a ring, $I \subset R$ [**ideal**] if:
 
     Mostly consider commutative rings so one condition is often enough.
 
-An ideal ring not equal to the whole ring a [**proper
-ideal**]\
+An ideal ring not equal to the whole ring a [**proper ideal**]
+
 **Defintion 4.17 - [**Quotient Ring**]**\
 $R$ a ring, $I \subset R$ a proper ideal\
 Quotient abelian group, $R/I$ with multiplication as in $R$ called a
-[**quotient ring**] of $R$ by ideal $I$\
+[**quotient ring**] of $R$ by ideal $I$
+
 **Definition 4.18 - [**Principal ideal**]**\
 $R$ a commutative ring.\
 Take $a \in R$, consider $aR = \{ax | x\in R\}$, this is an ideal in
-$R$, called the **principal ideal with generator $a$**\
-**Definition 4.19 - [**Types of
-homomorphisms**]**
+$R$, called the **principal ideal with generator $a$**
+
+**Definition 4.19 - [**Types of homomorphisms**]**
 
 1.  A bijective homomorphism of rings $f: R \to S$ called an
     [**isomorphism of rings**]
@@ -482,32 +528,31 @@ $R/\text{Ker}(f)$
 
 #### Integral domains and fields
 
-::: defn
+ 
 **Definition 1**. [**Zero-divisors** ]
-:::
 
 $R$ a ring. non-zero elements $a,b \in R$ are called [**zero
 divisors**] if $ab=0$
 
-::: defn
+ 
 **Definition 2**. [**Integral Domain** ]
-:::
 
-Commutative ring without zero divisors an [**integral
-domain**]
+Commutative ring without zero divisors an [**integral domain**]
 
-::: lm
+
 **Lemma 1**.
-:::
+
 
 $R$ an integral domain. $ab \in R$\
-$$aR = bR \iff a = br,\ r \in R^{\times}$$ **Proposition 4.24.**\
-\
+
+$$aR = bR \iff a = br,\ r \in R^{\times}$$
+
+**Proposition 4.24.**\
 Every field is an integral domain.
 
-::: thm
+ 
 **Theorem 1**.
-:::
+
 
 Every finite integral domain a field
 
@@ -515,9 +560,9 @@ Every finite integral domain a field
 $n \in \mathbb{N}_{+}$, ring $\mathbb{Z}/n\mathbb{Z}$ an integral domain
 $\iff n \in \mathbb{P}$
 
-::: defn
+ 
 **Definition 3**. [**Subfield**]
-:::
+
 
 subset $K$ of field $\mathbb{F}$ a [**subfield of
 $\mathbb{F}$**] if $K$ a field with the same
@@ -533,19 +578,19 @@ $R$ an integral domain. kernel of unique homomorphism $\mathbb{Z}\to R$
 either $0-$ideal; $\{0\}\subset \mathbb{Z}$ or principal ideal
 $p\mathbb{Z},\ p\in \mathbb{P}$
 
-::: defn
+ 
 **Definition 4**. [**Characteristic of integral
 domain**]
-:::
+
 
 Characteristic of integral domain $R$ is the unique non-negative
 generator of the kernel of a homomorphism $\mathbb{Z}\to R$; either $0$
 or $p \in \mathbb{P}$.\
 denoted $\text{Char}(R)$
 
-::: defn
+ 
 **Definition 5**.
-:::
+
 
 $k$ a field, $V$ an abelian group with an action of elements of $k$
 (scalars) on elements of $V$ (vectors)\
@@ -560,36 +605,38 @@ Where for $x \in k,\ v\in V,\ xv \in V$
 **Lemma 4.32.**\
 field extension $\mathbb{F}$ of $k$ is a vector space over $k$
 
-::: thm
+ 
 **Theorem 2**.
-:::
 
 $k$ a field.\
-if char$(k) = 0 \implies k$ has unique subfield isomorphic to
+if $char(k) = 0 \implies k$ has unique subfield isomorphic to
 $\mathbb{Q}\implies k$ a vector space over $\mathbb{Q}$\
 if char$(k) = p \in \mathbb{P} \implies k$ contains unique subfield
 isomorphic to $\mathbb{F}_{p} \implies k$ a vector space over
-$\mathbb{F}_{p}$\
+$\mathbb{F}_{p}$
+
 ***Corollary 4.34.***\
 Every finite field has $p^{n}$ elements,
 $p \in \mathbb{P},\ n \in \mathbb{N}_{+}$
 
 #### More on ideals
-
+\
 **Proposition 4.35.**\
-A commutative ring a field $\iff$ only proper ideal is the zero ideal.\
+A commutative ring a field $\iff$ only proper ideal is the zero ideal.
+
 **Proposition 4.36.**\
 $f:R \to S$ a homomorphism of rings\
-$J \subset S$ an ideal $\implies f^{-1}(J)$ an ideal of $R$\
+$J \subset S$ an ideal $\implies f^{-1}(J)$ an ideal of $R$
+
 **Proposition 4.37.**\
 $f: R\to S$ surjective homomorphism of rings.\
 $I \subset R$ an ideal $\implies f(I)$ an ideal of $S$\
 The maps $$I \mapsto f(I) \qquad J \mapsto f^{-1}(J)$$ give a bijection
 between ideals of $R$ that contain ker$(f)$ and ideals of $S$
 
-::: defn
+ 
 **Definition 6**.
-:::
+
 
 $R$ a commutative ring. We say a proper ideal $I \subset R$ a [**prime
 ideal**] if quotient ring $R/I$ an integral
@@ -610,10 +657,15 @@ $J \subset R$ s.t $I \subset J$ and $I \neq J$
 
 $R$ an integral domain. $R[t]$ the ring of polynomials in $t$ with
 coefficients in $R$.
+
 $$R[t] = \{ a_{n}t^{n} + a_{n-1}t^{n-1}+\dots+a_{1}t + a_{0}| a_{i} \in R\}\quad n = deg(p(t))$$
+
 **Proposition 5.1.**\
 $R$ an integral domain $\implies$
-$$deg(p(t)q(t)) = deg(p(t)) + deg(q(t))$$ $R[t]$ an integral domain.
+
+$$deg(p(t)q(t)) = deg(p(t)) + deg(q(t))$$
+
+$R[t]$ an integral domain.
 $R[t]^{\times} = R^{\times}$
 
 **Proposition 5.2.**\
@@ -622,9 +674,9 @@ $\forall a(t), b(t) \in k[t],\ b(t) \neq 0$\
 $\implies \exists! q(t), r(t) \in k[t]$ s.t $$a(t) = q(t)b(t) + r(t)$$
 $r(t) = 0$ or $deg(r(t)) < deg(b(t))$
 
-::: defn
+ 
 **Definition 7**.
-:::
+
 
 Integral domain $R$ with a function
 $\phi: R\backslash \{0\} \to \mathbb{Z}_{\geq 0}$ a [**Euclidean
@@ -635,25 +687,25 @@ domain**] if
 2.  $\forall a,b \in R,\ \exists q,r \in R$ s.t $a = qb + r$ where
     $r = 0$ or $\phi(r)< \phi(b)$
 
-::: defn
+ 
 **Definition 8**.
-:::
+
 
 Integral domain $R$ a [**principal ideal domain
 (PID)**] if every ideal of $R$ is principal.
 i.e of form $aR, a \in R$
 
-::: thm
+ 
 **Theorem 3**.
-:::
+
 
 Any euclidean domain is a PID.
 
 #### Factorisation in Integral Domains
 
-::: defn
+ 
 **Definition 9**.
-:::
+
 
 $R$ an integral domain.\
 non-zero $x \in R\backslash R^{\times}$ an [**irreducible
@@ -664,20 +716,20 @@ elements of $R\backslash R^{\times}$
 $R$ an integral domain.\
 if $x$ irreducible, $a\in R^{\times} \implies ax$ also irreducible
 
-::: defn
+ 
 **Definition 10**.
-:::
 
-An integral domain $R$ a [**unique factorisation domain
-(UFD)**] if every element of
-$R\backslash R^{\times}$ a product of finitely many irreducibles.\
+
+An integral domain $R$ a [**unique factorisation domain (UFD)**] if every element of $R\backslash R^{\times}$ a product of finitely many irreducibles.
+
 This decomposition is unique up to changing order of factors and
-multiplication of factors by elements in $R^{\times}$.\
+multiplication of factors by elements in $R^{\times}$.
+
 Also called **factorial rings**
 
-::: defn
+ 
 **Definition 11**.
-:::
+
 
 $R$ an integral domain. $a,b \in R$\
 Say $a \in R$ [**divides**] $b\in R$; $a|b$
@@ -696,9 +748,9 @@ $r_{n}\ \forall n \geq 1$
 Let $R$ be a UFD. If $p$ is irreducible and $p|ab \implies p|a$ or
 $p|b$\
 
-::: thm
+ 
 **Theorem 4**.
-:::
+
 
 $R$ an integral domain. $R$ a UFD $\iff$
 
@@ -717,9 +769,8 @@ We say that an ascending chain of ideals **stabilises**
 Suppose $R$ a PID. $p \in R$ an irreducible element such that
 $p|ab \implies p|a$ or $p|b$
 
-::: thm
+ 
 **Theorem 5**.
-:::
 
 Every PID is a UFD.
 
@@ -727,19 +778,13 @@ Every PID is a UFD.
 
 #### Field extensions
 
-::: defn
 **Definition 12**.
-:::
 
-An extension of fiels $k \subset K$ is called
-[**finite**] if $K$ a finite-dimensional
-vector space over $k$\
-$dim_{k}(K)$ = [**degree**] of the
-extension. We write $[K:k] = dim_{k}(K)$
+An extension of fiels $k \subset K$ is called [**finite**] if $K$ a finite-dimensional vector space over $k$
 
-::: thm
+$dim_{k}(K)$ = [**degree**] of the extension. We write $[K:k] = dim_{k}(K)$
+
 **Theorem 6**.
-:::
 
 $k \subset F$ and $F \subset K$ field extensions. Then $K$ a finite
 extension of $k \iff$ $F$ a finite extension of $k$ and $K$ a finite
@@ -747,18 +792,22 @@ extension of $F$\
 i.e we have $[K:k] = [K:F][F:k]$
 
 #### Constructing fields from irreducible polynomials
-
+\
 **Proposition 6.3.**\
 Let $R$ a PID and let $a\in R, a\neq 0$.\
-$aR$ maximal $\iff$ $a$ irreducible.\
+$aR$ maximal $\iff$ $a$ irreducible.
+
 **Corollary 6.4.**\
-$R$ a PID and $a \in R$ irreducible then $R/ar$ a field.\
+$R$ a PID and $a \in R$ irreducible then $R/ar$ a field.
+
 **Proposition 6.6.**\
 Let $k$ a field. A polynomial $f(t) \in k[t]$ of degree $2$ or $3$
-irreducible $\iff$ has no roots in $k$\
+irreducible $\iff$ has no roots in $k$
+
 **Proposition 6.8.**\
 $p \neq 2$ prime. Field $\mathbb{F}_{p} = \mathbb{Z}/p\mathbb{Z}$
-contains $(p-1)/2 \geq 1$ non-squares.\
+contains $(p-1)/2 \geq 1$ non-squares.
+
 $\forall a \in \mathbb{F}_{p}$ non-square we have $t^2 - a$ irreducible
 in $F_{p}[t]$ with $F_{p}[t]/(t^2 -a)\mathbb{F}_{p}[t]$ a quadratic
 extension of $\mathbb{F}_{p}$
@@ -767,7 +816,10 @@ extension of $\mathbb{F}_{p}$
 
 **Lemma 6.10**\
 $k$ a field s.t $char(k) = p$, $p$ a prime. $\forall x,y \in k$
-$$(x+y)^{p^m}= x^{p^m}+y^{p^m}$$ $\forall x,y \in k,\ m \in \mathbb{Z}$
+
+$$(x+y)^{p^m}= x^{p^m}+y^{p^m}$$
+
+$\forall x,y \in k,\ m \in \mathbb{Z}$
 
 **Lemma 6.11**\
 $k$ a field $p(t) = (t-\alpha_1)\dots(t-\alpha_n)$ for
@@ -775,12 +827,12 @@ $\alpha_i \in k, i \in \{1,\dots,n\}$\
 Then $\alpha_i \neq \alpha_j$ for $i \neq j \iff p(t), q(t)$ have no
 common root.
 
-::: thm
+
 **Theorem 7**.
-:::
 
 Let $p$ prime, $n \in \mathbb{Z}_{+}$
 
-::: center
-$\exists$ field of $p^n$ elements.
-:::
+<center>$\exists$ field of $p^n$ elements.</center>
+
+
+
