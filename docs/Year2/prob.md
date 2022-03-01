@@ -460,7 +460,7 @@ $$Pr(Y \geq \epsilon^2) \leq \frac{E(X-\mu)^2}{\epsilon^2} = \frac{\sigma^2}{\ep
 
 $X_1,X_2,\dots $
 
-$$\underbrace{\bar{X}_n = \frac{1}{n}\sum_{i=1}^{n}X_i}_{\text{\textcolor{green}{sample mean}}}
+$$\underbrace{\bar{X}_n = \frac{1}{n}\sum_{i=1}^{n}X_i}_{\text{\textcolor{green}{sample mean}}}$$
 
 **Proposition 4.7.** - *(Weak law of large numbers)*\
 $X_1,X_2,\dots$ sequence of iid random variable with finite
