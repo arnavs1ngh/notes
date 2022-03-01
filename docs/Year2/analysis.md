@@ -1730,7 +1730,6 @@ primitive in $\Omega \implies$
 
 
 $$
-    \require{esint}
     \ointctrclockwise_{\gamma}f(z)dz = 0
 $$
 
