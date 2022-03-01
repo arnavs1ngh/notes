@@ -111,6 +111,7 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 *Content from MATH40002 assumed to be known.*
 
 
+# **Term I**
 
 # <span style="color: white;">1</span> Differentiation in Higher Dimensions
 
@@ -196,9 +197,7 @@ $x \in \mathbb{R}^{n} \iff$
   
 Open ball of radius $r$ is
   
-<center>
 $$B_{r}(x) = \{y \in \mathbb{R}^{n} : ||x-y||<r\}$$
-</center>
   
 **Definition 1.2 - <span style="color: green;">Open Sets</span>**
   
@@ -212,12 +211,10 @@ A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</s
 
 **Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
-Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if 
-  <center>
-<span style="color: RoyalBlue;">  
-$$\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon$$
-</span>
-   </center>
+Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if
+
+$$\textcolor{RoyalBlue}{\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon}$$
+
   
 $f$ is (pointwise) continuous on $A\subseteq \mathbb{R}^{n} \iff$ continuous $\forall p \in A$, we write $f$ is continuous.
   
@@ -661,14 +658,16 @@ $(X,d)$, with $x \in X, \epsilon \in \mathbb{R}; \epsilon > 0$\
   <center>
 Ball radius $ \epsilon;\ B_{\epsilon}(x) = \{ x' \in X | d(x,x') < \epsilon\}$
  </center>
-***notation;*** $B_{\epsilon}(x,X,d)$
+
+**Notation** 
+
+$B_{\epsilon}(x,X,d)$
  
 **Definition 2.7**. <span style="color: green;">**Open set in metric space**</span>
 
 $(X,d)$ a metric space. $U \subseteq X$ open in $(X,d)$ if:
-    <center>
+
 $$\forall u \in U,\ \exists \delta > 0 \in \mathbb{R}\text{ s.t } B_{\delta}(u) \subset U$$
-    </center>
  
 **Definition 2.8**. <span style="color: green;">**Topologically equivalent**</span>
 
@@ -687,7 +686,10 @@ Say $(x_{n}) \to x \in (X,d)$ if
     <center>
 $$\forall\ \epsilon > 0, \exists N \in \mathbb{N}\text{ s.t } \forall\ n \geq N, d(x,x_{n})< \epsilon$$
    </center>
-***Lemma 2.7.*** - if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique
+
+**Lemma 2.7**
+
+if $(x_n)$ converges in $(X,d)$ $\implies$ limit is unique
       
 ***Corollary*** - $d_{1},d_{2}$ topologically equivalent $\iff (x_n)$
 converges in $(X,d_1)$ and $(X,d_2)$
@@ -870,9 +872,8 @@ Say topological space $(X,\tau)$ <span style="color: green;">**metrisable**</spa
 **Definition.** <span style="color: green;">**Induced and Subspace topology**</span>
       
 $(X,\tau)$ a topological space. $Y \subset X$
-      <center>
+
 $$\tau_{Y} = \{U \cap Y | U \in \tau\}$$
-      </center>
 
 $\tau_{Y}$ the <span style="color: green;">**induced topology**</span> on $Y$ from $(X,\tau)$\
 $(Y,\tau_{Y})$ has the <span style="color: green;">**subspace topology**</span> induced from $(X,\tau)$
@@ -894,10 +895,10 @@ of $x$ contained in $G$
 
 $(A,\tau)$ a topological space. $\Omega \subseteq A$\
 $z \in \Omega$ an interior point of $\Omega$ if
-      <center>
+
 $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
-      </center>
-<span style="color: green;">**Interior of** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega | z$ an interior point of $ \Omega \}$
+
+<span style="color: green;">**Interior of** $\Omega; \Omega^{\circ}$</span> = $ \{ z \in \Omega \lvert z$ an interior point of $ \Omega \}$
       
 *Properties of interior*
 
@@ -914,9 +915,9 @@ $$\exists U \in \tau\text{ s.t } z \in U \text{ and } U \subset \Omega$$
 
 $(A,\tau)$ a topological space. $(x_n)_{n\geq1}$ a sequence in $A$\
 $(x_n)$ <span style="color: green;">**converges**</span> in $(A,\tau)$ if
-      <center>
+
 $$\exists x \in A \text{ s.t } \forall\ G \in \tau\text{ with } x \in G,\ \exists N \in \mathbb{N}, \text{ s.t } \forall n \geq N, x_n \in G$$
-      </center>
+
 
 **Definition 2.21**. <span style="color: green;">**Hausdorff**</span>
 
@@ -954,9 +955,9 @@ $(A,\tau)$
 
 $(A,\tau),$ a topological space, $S\subseteq A$\
 $x \in A$ a <span style="color: green;">**limit/accumulation point**</span> of $S$ if
-      <center>
+
 $$\forall\ U \text{ a neighbourhood of } x,\ (S \cap U)\backslash\{x\} \neq \emptyset$$
-      </center>
+
 $x$ not necessarily in $S$\
 <span style="color: green;">**Closure of $S, \bar{S}$**</span>$= S \cup \{ x \in A | x \text{ a limit point of } S\}$
 
@@ -970,9 +971,11 @@ $S$ closed in $(A,\tau) \iff S = \bar{S}$
 
 $(X,\tau_X),(Y,\tau_Y)$ with $f: X \to Y$\
 $f$ continuous on $X$ if:
-      <center>
-$\forall$ open sets  $U \in Y,\ f^{-1}(U) \text{ open in } X$$
-      </center>
+
+$\forall$ open sets
+
+$$ U \in Y,\ f^{-1}(U) \text{ open in } X$$
+
  
 **Theorem 2.20**.
 
@@ -1144,17 +1147,17 @@ $X$ compact $\iff X$ closed and bounded
 
 
 $(X,d)$ sequentially compact, if for every sequence in $X$ has convergent subsequence in $(X,d)$
-      <center>
+
 $$\forall (x_n)_{n\geq 1} \in X,\ \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x$$
-      </center>
+
       
 **Lemma 2.39.**
 
 $(X,d)$ a metric space. with sequence $\ (x_{n})_{n\geq 1} \text{ s.t } \exists (x_{n_k})_{k\geq 1},\ x \in X \text{ s.t } x_{n_k} \to x $.
 
-<center>
-$\iff \exists x \in X$ s.t  $\forall \epsilon > 0$ there are infinitely many  $i$  s.t  $x_{i} \in B_{\epsilon}(x)$
-</center>
+
+$$\iff \exists x \in X \text{ s.t }  \forall \epsilon > 0 \text{ there are infinitely many } i \text{ s.t }  x_{i} \in B_{\epsilon}(x)$$
+
 
 **Theorem 2.41**. <span style="color: red;">**Bolzanno-Weierstrass**</span>
 
@@ -1163,9 +1166,9 @@ Any bounded sequence in $\mathbb{R}^{n}$ has convergent subsequence.
 **Theorem 2.40 + 2.42.**
 
 $(X,d)$ metric space.
-      <center>
-$X$  Compact  $\iff X$  Sequentially Compact
-      </center>
+
+<center> $X$  Compact  $\iff X$  Sequentially Compact </center>
+      
       
 ### <span style="color: white;">2.4.3</span> Continuous maps + Compact Sets
  
@@ -1177,9 +1180,8 @@ $$Z \text{ compact in } X \implies f(Z) \text{ compact in }Y$$
 
 **Corollary 2.44.**\
 $(X,d_X),(Y,d_Y)$ metric spaces, $f:X \to Y$ a homeomorphism
-      <center>
+
 $$\implies X \text{ compact } \iff Y \text{ compact }$$
-      </center>
  
 **Theorem 2.45**.
 
@@ -1210,9 +1212,8 @@ $\forall\ [a,b]$ we have $f([a,b])$ of the form $[m,M]$ for $m,M \in \mathbb{R}$
 $(X,d)$ a metric $(x_{n})_{n\geq 1}$ sequence in $X$
       
 Say $(x_{n})_{n\geq 1}$ a <span style="color: green;">**Cauchy sequence**</span> in $(X,d)$ if
-      <center>
+
 $$\forall \epsilon > 0, \exists N_{\epsilon} \in \mathbb{N}\text{ s.t } \forall n,m \geq N_{\epsilon} d(x_{n},x_{m}) < \epsilon$$
-      </center>
 
 **Definition 2.35.** <span style="color: green;">**Complete & Banach**</span>
 
@@ -1267,9 +1268,9 @@ convergent subsequence in $(C([a,b],d_{\infty})$
 
 $(X_{1},d_{1})$ and $(X_{2},d_{2})$, with $f: X_1 \to X_2$\
 Say $f$ <span style="color: green;">**contracting**</span> if $\exists K \in (0,1)$ s.t $\forall a,b \in X$ we have
-      <center>
+
 $$d_{2}(f(a),f(b)) \leq K\cdot d_{1}(a,b)$$
-      </center>
+
 Every contracting map is continuous.
 
  
@@ -1284,3 +1285,682 @@ $(X,d)$ a non-empty complete metric space.\
 $f: X \to X$ a contracting map $\implies f$ has unique fixed point in
 $X$
 
+# **Term II**
+
+# Holomorphic Functions
+
+## Complex Numbers
+
+ 
+**Definition 1**. [**$i$**]
+
+$$i = \sqrt{-1},\quad i^2 = -1$$
+
+Root of $x^{2} + 1 = 0$
+
+***Basic properties***
+
+$$z = x + iy, \quad Re(z) = x,\ Im(z) = y$$
+
+The complex conjugate:
+
+$$\bar{z} = x - iy$$ 
+
+***Polar Coordinates***\
+$z = x+iy$
+
+$$r = |z| = \sqrt{x^2 + y^2}$$
+
+$$x = r\cos\theta,\ y = r\sin\theta$$
+
+$$z = r(\cos\theta + i\sin\theta$$
+
+***De-Moivre's Formula***
+
+$$z^{n} = r^{n}(\cos(n\theta) + i\sin(n'\theta)),\ n \in \mathbb{Z}^{+}$$
+
+***Eulers's Formula***\
+$$e^{i\theta} = (\cos\theta + i\sin\theta)$$
+
+## Sets in Complex Plane
+
+ 
+**Definition 2**. Discs in $\mathbb{C}$
+
+[**Open Disc : $D_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
+
+[**Boundary of Disc : $C_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
+
+[**Unit Disc : $\mathbb{D}$**] $= \{ z \in \mathbb{C}: |z| < 1\}$
+
+ 
+**Definition 3**. [**Interior Point**]
+
+
+$\Omega \in \mathbb{C}, z_{0}$ an [**interior
+point**] of $\Omega$ if $\exists r > 0$ s.t
+$D_{r}(z_0) \subset \Omega$
+
+ 
+**Definition 4**.
+
+
+Set $\Omega$ [**open**] if
+$\forall \omega \in \Omega$, $\omega$ an interior point
+
+ 
+**Definition 5**.
+
+
+Set $\Omega$ [**closed**] if
+$\Omega^{C} = \mathbb{C}\backslash\Omega$ open\
+Closed $\iff$ contains all its limit points.
+
+ 
+**Definition 6**. Closure
+
+Closure of $\Omega$ =
+$\bar{\Omega} = \{ \Omega \cup \text{ limit points of } \Omega\}$
+
+ 
+**Definition 7**. Boundary
+
+Boundary of $\Omega$ =
+$\underbrace{\bar{\Omega}}_{\text{Closure}}\backslash\underbrace{\partial\Omega}_{\text{interior}}$
+
+ 
+**Definition 8**. Bounded
+
+
+$\Omega$ bounded if $\exists M > 0$ s.t
+$|\omega| < M\ \forall \omega\in \Omega$
+
+ 
+**Definition 9**. Diameter
+
+
+$$diam(\Omega) = \sup_{z,w \in \Omega}|z-w|$$
+
+ 
+**Definition 10**. Compact
+
+
+$\Omega$ compact if closed and bounded
+
+ 
+**Theorem 1**.
+
+
+$$\begin{aligned}
+\Omega \text{ compact}  & \iff  \text{every sequence} \{z_{n}\} \subset \Omega \text{ has a subsequence convergent in } \Omega \\ 
+ & \iff  \text{every open covering of } \Omega \text{ has a finite subcover}\end{aligned}$$
+
+ 
+**Theorem 2**.
+
+
+if $\Omega_1 \supset \Omega_2 \supset \dots \Omega_n \supset \dots$ a
+sequence of non-empty compact sets\
+s.t $\lim_{n\to \infty}diam(\Omega_n) \to 0$
+$$\implies \exists ! w \in \mathbb{C},\ w \in \Omega_n\ \forall n$$
+
+ 
+**Definition 11**. Connected
+
+
+Open set $\Omega$ [**connected**] $\iff$ any
+2 points in $\Omega$ joined by curve $\gamma$ entirely contained in
+$\Omega$
+
+## Complex Functions
+
+ 
+**Definition 12**.
+
+
+$\Omega_1, \Omega_2 \subset \mathbb{C}$ $$f: \Omega_1 \to \Omega_2$$ a
+[**mapping**] $\Omega_1 \to \Omega_2$ if
+
+$$\forall z = x + iy \in \Omega_1$$
+
+$$\exists ! w = u + iv \in \Omega_2,\ s.t\ w = f(z)$$
+We have
+$w = f(z) = u(x,y) + iv(x,y)$\
+$u,v : \mathbb{R}^{2} \to \mathbb{R}$
+
+ 
+**Definition 13**.
+
+$f$ defined on $\Omega_1 \subset \mathbb{C}$ $f$
+[**continuous**] at $z_0 \in \Omega$ if
+$$\forall \epsilon > 0 \exists \delta > 0\ s.t\ |z-z_{0}| < \delta \implies |f(z) - f(z_{0})| < \epsilon$$
+$f$ continuous if continuous $\forall z \in \Omega$
+
+## Complex Derivative
+
+ 
+**Definition 14**. [**Holomorphic**]
+
+
+$\Omega_1, \Omega_2 \subset \mathbb{C}$ open sets\
+$f: \Omega_1 \to \Omega_2$\
+Say $f$ [**differentiable/holomorphic**] at
+$z_{0}$ if
+$$\lim_{h\to 0}\frac{f(z_{0} + h) - f(z_0)}{h} = f'(z_0) \textbf{\text{ exists}}$$
+
+$f$ holomorphic on open set $\Omega$ if holomorphic at every point of
+$\Omega$
+
+***Lemma***\
+$f$ holomorphic at $z_0 \in \Omega \iff \exists\ a \in \mathbb{C}$ s.t
+
+$$f(z_0 + h) - f(z_0) - ah = h\Psi(h)$$
+
+For $\Psi$ a function defined for all small $h$ with $\lim_{h\to 0}\Psi(h) = 0$, $a = f'(z_0)$
+
+***Corollary***\
+$f$ holomorphic $\implies$ $f$ continuous
+
+***Proposition***\
+$f,g$ holomorphic in $\Omega$ $\implies$
+
+1.  $(f+g)' = f' + g'$
+
+2.  $(fg)' = f'g + fg'$
+
+3.  $g(z_0) \neq 0 \implies (\frac{f}{g})' = \frac{f'g - fg'}{g^2}$
+
+4.  $f:\Omega \to V,\ g:V \to \mathbb{C}$ holomorphic\
+    $\implies [g \circ f(z)]' = g'(f(z))f'(z)\ \forall z \in \Omega$
+
+## Cauchy-Riemann equations
+
+ tcolorbox
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}\qquad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
+$$u'_x = v'_y \qquad u'_y = -v'_x$$
+
+
+ 
+**Definition 15**.
+
+
+$$\frac{\partial}{\partial z} = \frac{1}{2}\left( \frac{\partial}{\partial x} + \frac{1}{i}\frac{\partial}{\partial y}\right)\qquad \frac{\partial}{\partial \bar{z}} = \frac{1}{2}\left( \frac{\partial}{\partial x} - \frac{1}{i}\frac{\partial}{\partial y}\right)$$
+
+ 
+**Theorem 3**.
+
+$f(z) = u(x,y) + iv(x,y)\quad z = x+iy$\
+$f$ holomorphic at $z_0$ $\implies$
+
+$$\frac{\partial f}{\partial \bar{z}}(z_0) = 0\qquad f'(z_0) = \frac{\partial f}{\partial z}(z_0) = 2\frac{\partial u}{\partial z}(z_0)$$
+
+ 
+**Theorem 4**.
+
+$f = u+ iv$ complex-valued function on open set $\Omega$\
+$u,v$ continuously differentiable, satisfying Cauchy-Riemann equations
+$\implies f$ holomorphic on $\Omega$ with
+$f'(z) = \frac{\partial f}{\partial z}(z)$
+
+## Cauchy-Riemann equations in polar
+
+For $f = u + iv$ we have
+
+$$u'_r = \frac{1}{r}v'_\theta \qquad v'_r = -\frac{1}{r}u'_\theta$$
+
+## Power Series
+
+ 
+**Definition 16**. Power Series
+
+Of the form $$\sum_{n = 0}^{\infty}a_n z^{n} \quad a_n \in \mathbb{C}$$
+Series converge at $z$ if $S_N(z) = \sum_{n=0}^{N}a_n z^{n}$ has limit
+$S(z) = \lim_{n\to \infty}S_{N}(z)$
+
+ 
+**Theorem 5**.
+
+
+Given power series $\sum_{n=0}^{\infty}a_{n}z^{n}$,
+$\exists 0 \leq R \leq \infty$ s.t
+
+1.  if $|z| < R \implies$ series converges absolutely
+
+2.  $|z| > R \implies$ series diverges
+
+$$\frac{1}{R} = \limsup_{n\to \infty}|a_n|^{1/n}\qquad \text{(Radius of Convergence)}$$
+
+ 
+**Theorem 6**.
+
+
+$$f(z) = \sum_{n = 0}^{\infty}a_n z^{n}$$
+
+Defines holomorphic function on its disc of convergence.
+With,
+
+$$f'(z) = \sum_{n = 1}^{\infty}na_nz^{n-1}$$
+
+with same radius of convergence as $f$.
+
+Power series infinitely differentiable in the disc of convergence,
+achieved through term-wise differentiation.
+
+ 
+**Definition 17**. [**Entire**]
+
+
+A function said to be [**entire**] if
+holomorphic $\forall z \in \mathbb{C}$
+
+## Elementary functions
+
+### Exponential function
+
+$$e^z = e^x\cos y + ie^x \sin y \qquad z = x + iy \in \mathbb{C}$$
+***Properties***
+
+1.  $y = 0 \implies e^z = e^x$
+
+2.  $e^z$ is entire
+
+3.  $g(z)$ holomorphic\
+    $\implies \frac{\partial}{\partial z}e^{g(z)} = e^{g(z)}g'(z)$
+
+4.  $z_1,z_2 \in \mathbb{C}\quad e^{z_1 + z_2} = e^{z_1}e^{z_2}$
+
+5.  $|e^z| = |e^x||e^{iy}| = e^x\sqrt{\cos^{2}x + \sin^{2}(x)} = e^x$
+
+6.  $(e^{iy})^{n} = e^{iny}$
+
+7.  $arg(z) = \arctan(y/x)$\
+    $arg(e^z) = y + 2\pi k,\quad k \in \mathbb{Z}$
+
+### Trigonometric functions
+
+ 
+**Definition 18**.
+
+
+$$\cos z = \frac{1}{2}\left( e^{iz} + e^{-iz}\right) \qquad \sin z = \frac{1}{2i}\left( e^{iz} - e^{-iz}\right)$$
+
+***Properties***
+
+1.  $\sin z, \cos z$ are entire
+
+2.  $\frac{\partial}{\partial z}\sin z = \cos z \quad \frac{\partial}{\partial z}\cos z = -\sin z$
+
+3.  $\sin^{2}z + \cos^{2}z = 1$
+
+4.  $\sin(z_{1} \pm z_{2}) = \sin z_1 \cos z_2 \pm \cos z_1 \sin z_2$\
+    $\cos(z_1 \pm z_2) = \cos z_1 \cos z_2 \mp \sin z_1 \sin z_2$
+
+### Logariic Functions
+
+ 
+**Definition 19**.
+
+
+$$log(z) = ln|z| + i\arg(z) = log(r) + i(\theta + 2\pi k) \quad z \neq 0,\ k \in \mathbb{Z}$$
+
+$\log(z)$ a multi-valued function
+
+ 
+**Definition 20**.
+
+$\mathop{\mathrm{Log}}(z) = \ln|z| + i\mathop{\mathrm{Arg}}(z)\ $ for
+$\mathop{\mathrm{Arg}}(z)$ principal value $\in [-\pi,\pi]$
+
+***Properties***
+
+1.  $\log(z_1 z_2) = \log(z_1) + \log(z_2)$
+
+2.  $\mathop{\mathrm{Log}}(z)$ holomorphic in
+    $\mathbb{C}\backslash \{(\infty,0]\}$
+
+### Powers
+
+ 
+**Definition 21**.
+
+
+$\alpha \in \mathbb{C}$ define $z^{\alpha} := e^{\alpha\log(z)}$ as a
+multi-valued function
+
+ 
+**Definition 22**.
+
+
+Principal value of $z^{\alpha},\ \alpha \in \mathbb{C}$ as
+$z^{\alpha} = e^{\alpha\mathop{\mathrm{Log}}(z)}$ ***Properties***
+
+1.  $z^{a_{1}}z^{a_{2}} = z^{a_{1} + a_{2}}$
+
+# Cauchy's Integral Formula
+
+## Parametrised Curve
+
+**Definition 23**.
+
+Parametrised curve a function $z(t): [a,b] \to \mathbb{C}$ [**Smooth**] if $z'(t)$ exists and is  continuous on $[a,b]$ with $z'(t) \neq 0 \forall t \in [a,b]$ 
+
+Taking one-sided limits for $z'(a), z'(b)$.
+
+[**Piecewise-smooth**] if $z$ continuous on $[a,b]$ and if $\exists$ finitely many points $a = a_{0} < a_1 < \dots < a_n = b$ s.t $z(t)$ smooth on $[a_{k},a_{k+1}]$
+
+$$z:[a,b] \to \mathbb{C}\quad \tilde{z}:[c,d] \to \mathbb{C}$$
+
+equivalent if $\exists$ continuously differentiable bijection $s \to t(s)$ from $[c,d]$ to $[a,b]$ s.t $t'(s) > 0$ and $\tilde{z}(s) = z(t(s))=$
+
+**Definition 24**. Path Integrals
+
+Path integral given smooth $\gamma \subset \mathbb{C}$ parametrised by
+$z:[a,b] \to \mathbb{C}$.\
+$f$ continuous function on $\gamma$
+
+$$\int_{\gamma}f(z)dz = \int_{a}^{b}f(z(t))z'(t)dt$$
+
+independent of choice of parametrization.\
+If $\gamma$ piece-wise smooth
+$$\int_{\gamma}f(z)dz = \sum_{k=0}^{n-1}\int_{a_{k}}^{a_{k+1}} f(z(t))z'(t)dt$$
+
+ 
+**Definition 25**.
+
+
+Define curve $\gamma^{-}$ obtained by reversing orientation of $\gamma$\
+Can take $z^{-}:[a,b]\to \mathbb{C}$ s.t $z^{-}(t) = z(b + a -t)$
+
+ 
+**Definition 26**. Closed Curve
+
+
+Smooth/piece-wise smooth curve closed if $z(a) = z(b)$ for any
+parametrisation.
+
+ 
+**Definition 27**. Simple Curve
+
+
+Smooth/piece-wise smooth curve simple if not **self-intersecting**
+
+$$z(t) \neq z(s) \text{ unless } s = t \in [a,b]$$
+
+## Integration along Curves
+
+ 
+**Definition 28**. Length of smooth curve
+
+$$\text{Length}(\gamma) = \int_{a}^{b}|z'(t)|dt = \int_{a}^{b}\sqrt{x'(t)^{2} + y'(t)^{2}}dt$$
+
+ 
+**Theorem 7**. Properties of Integration
+
+
+1.  $\int_{\gamma}af(z) + bg(z) dz = a\int_{\gamma}f(z)dz + b\int_{\gamma}g(z)dz$
+
+2.  $\gamma^{-}$ reverse orientation of $\gamma$
+    $$\implies \int_{\gamma}f(z)dz = -\int_{\gamma^-}f(z)dz$$
+
+3.  **M-L inequality**
+    $$\left|\int_{\gamma}f(z)dz\right| \leq \sup_{z\in\gamma}|f(z)|\cdot\mathop{\mathrm{length}}(\gamma) = \int_{a}^{b}\sqrt{x'(t)^{2} + y'(t)^{2}}dt$$
+
+## Primitive Functions
+
+ 
+**Definition 29**. Primitive
+
+
+A [**Primitive**] for $f$ on
+$\Omega \subset \mathbb{C}$ a function $F$ holomorphic on $\Omega$ s.t
+$F'(z) = f(z)\ \forall z \in \Omega$
+
+ 
+**Theorem 8**.
+
+Continuous function $f$ with primitive $F$ in open set $\Omega$ and
+curve $\gamma$ in $\Omega$ from $w_1 \to w_2$
+
+$$\int_{\gamma}f(z)dz = F(w_2) - F(w_1)$$
+
+***Corollary***
+
+$\gamma$ closed curve in open set $\Omega$ $f$ continuous and has
+primitive in $\Omega \implies$ 
+
+
+$$
+    \require{esint}
+    \ointctrclockwise_{\gamma}f(z)dz = 0
+$$
+
+***Corollary***\
+$\Omega$ with $f' = 0 \implies f$ constant
+
+## Properties of Holomorphic functions
+
+
+**Theorem 9**.
+
+Let $\Omega \subset \mathbb{C}$ open set\
+$T \subset \Omega$ a triangle whose interior contained in $\Omega$
+
+$$\implies \ointctrclockwise_{T}f(z)dz = 0$$
+
+for $f$ holomorphic in $\Omega$
+
+***Corollary***\
+$f$ holomorphic on open set $\Omega$ containing rectangle $R$ in its
+interior $$\implies \ointctrclockwise_{R}f(z)dz = 0$$
+
+## Local existence of primitives and Cauch-Goursat theorem in a disc
+
+**Theorem 10**.
+
+Holomorphic functions in open disc have a primitive in that disc
+
+***Corollary* - (Cauchy-Goursat Theorem for a disc)**
+
+$f$ holomorphic in disc $\implies \ointctrclockwise_{\gamma}f(z)dz = 0$
+for any closed curve $\gamma$ in that disc
+
+***Corollary***
+
+Suppose $f$ holomorphic in open set containing circle $C$ and its
+interior
+
+$$\implies \ointctrclockwise_{C}f(z)dz = 0$$
+
+## Homotopies and simply connected domains
+
+ 
+**Definition 30**. [**Homotopic**]
+
+$\gamma_{0},\gamma_{1}$ [**homotopic**] in
+$\Omega$ if $\forall s \in [0,1], \exists$ curve $\gamma \subset \Omega$
+with $\gamma_{s}(t)$ s.t
+
+$$\gamma_{s}(a) = \alpha \qquad \gamma_{s}(b) = \beta$$
+
+$\forall t \in [a,b]: \gamma_{s}(t)\vert_{s = 0} = \gamma_{0}(t) \quad \gamma_{s}(t)\vert_{s = 1} = \gamma_{1}(t)$
+
+With $\gamma_{s}(t)$ jointly continuous in $s \in [0,1]$ and $t \in [a,b]$
+
+**Theorem 11**.
+
+$\gamma_{0},\gamma_{1}$ homotopic, $f$ holomorphic
+
+$$\int_{\gamma_{0}}f(z)dz = \int_{\gamma_{1}}f(z)dz$$
+
+**Definition 31**.
+
+Open set $\Omega \subset \mathbb{C}$ [**simply
+connected**] if any 2 pair of curves in
+$\Omega$ with shared end-points homotopic.
+ 
+**Theorem 12**.
+
+Any holomorphic function in simply connected domain has a primitive.
+
+***Corollary* - (Cauchy-Goursat Theorem)**
+
+$f$ holomorphic in simply connected open set $\Omega$
+
+$$\implies \ointctrclockwise_{\gamma}f(z)dz = 0$$
+
+for any closed piecewise-smooth curve $\gamma \subset \Omega$
+ 
+**Theorem 13**. **(Deformation Theorem)**
+
+$\gamma_{1}$ and $\gamma_2$, 2 simple closed piecewise-smooth curves
+with $\gamma_2$ lying wholly inside $\gamma_1$
+
+$f$ holomorphic in domain containing region between $\gamma_1,\gamma_2$
+
+$$\implies \ointctrclockwise_{\gamma_1}f(z)dz = \ointctrclockwise_{\gamma_2}f(z)dz$$
+
+## Cauchy's Integral Formulae
+
+ 
+**Theorem 14**. **(Cauchy's Integral Formula)**
+
+$f$ holomorphic inside and on simple closed piecewise-smooth curve $\gamma$
+
+$\forall z_0 \text{ interior } to \gamma$
+
+$$f(z_0) = \frac{1}{2\pi i}\ointctrclockwise_{\gamma}\frac{f(z)}{z-z_0}dz$$
+ 
+**Theorem 15**. *(Generalised cauchy's integral formula)*
+
+$f$ holomorphic in open set $\Omega$.
+
+$\gamma$ simple,closed piecewise-smooth $\subsets \Omega$
+
+$\forall z$ interior to $\gamma$
+
+$$\implies \frac{d^n f(z)}{dz^n} = \frac{n!}{2\pi i}\ointctrclockwise_{\gamma}\frac{f(t)}{(t-z)^{n+1}}dt$$
+
+***Corollary***\
+$f$ holomorphic $\implies$ all its derivatives are too.
+
+# Applications of Cauchy's integral formula
+
+***Corollary - (Liouville's theorem)***\
+if an entire function bounded $\implies$ $f$ constant
+
+ 
+**Theorem 16**. **(Fundamental theorem of algebra)**
+
+
+Every polynomial of degree $> 0$ with complex coefficients has at least
+one zero.
+
+***Corollary*** Every polynomial $P(z) = a_n z^n + \dots + a_0$ of
+degree $n \geq 1$ has precisely $n$ roots in $C$
+
+ 
+**Theorem 17**. **(Morera's theorem)**
+
+
+Suppose $f$ continuous in open disc $D$ s.t $\forall$ triangle
+$T \subset D$ $$\int_{T}f(z)dz = 0 \implies f \text{ holomorphic }$$
+
+## Taylor + Maclaurin Series
+
+ 
+**Theorem 18**. (Taylor's expansion theorem
+
+
+$f$ holomorphic in $\Omega$, $z_0 \in \Omega$
+
+$$\implies f(z) = f(z_0) = f'(z_0)(z-z_0) + \frac{f''(z_0)}{2!}(z-z_0)^{2} + \dots$$
+
+Valid in all circles $\{ z: \lvert z - z_0 \rvert < r\} \subset \Omega$
+ 
+**Definition 32**. (Taylor Series)
+
+$$f(z) = f(z_0) + f'(z_0)(z-z_0) + \frac{f''(z_0)}{2!}(z-z_0)^{2} + \dots = \sum_{i=0}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z-z_0)^{n}$$
+
+**Definition 33**. (Maclaurin Series)
+
+Taylor series for $z_0 = 0$
+
+$$f(z) = \sum_{n=0}^{\infty}\frac{f^{n}(0)}{n!}z^n$$
+
+## Sequences of holomorphic functions
+
+ 
+**Theorem 19**.
+
+
+if $\{f_n\}_{n = 1}^{\infty}$ a sequence of holomorphic functions
+converging uniformly to $f$ in every compact subset of
+$\Omega \implies f$ holomorphic in $\Omega$
+
+**Corollary**
+
+$$F(z) = \sum_{n=1}^{\infty}f_{n}(z)$$
+
+$f_n$ holomorphic in $\Omega \subset \mathbb{C}$
+
+Given series converges uniformmly in compact subsets of $\Omega$ $\implies F(z)$ holomorphic
+ 
+**Theorem 20**.
+
+Sequence $\{f_n\}_{n=1}^{\infty} \xrightarrow[unif]{} f$ in every
+compact subset of $\Omega$ $\implies$ sequence $\{f'_n\}_{n=1}^{\infty} \xrightarrow[unif]{} f'$ in every compact subset of $\Omega$
+
+## Holomorphic functions defined in terms of integrals
+
+**Theorem 21**.
+
+Let $F(z,s)$ defined for $(z,s) \in \Omega \times [0,1]$\
+$\Omega \subset \mathbb{C}$ open set. Given $F$ satisfies
+
+1.  $F(z,s)$ holomorphic in $\Omega \forall s$
+
+2.  $F$ continuous on $\Omega\times[0,1]$
+
+$\implies f(z) := \int_{0}^{1}F(z,s)ds$ **holomorphic**
+
+## Schwarz reflection principle
+
+ 
+**Definition 34**.
+
+$\Omega \subset \mathbb{C}$ open and
+[**symmetric**] w.r.t real line
+$$z \in \Omega \iff \bar{z} \in \Omega$$
+
+ 
+**Definition 35**.
+
+
+$$\Omega^{+} = \{ z\in \Omega: Im(z) > 0\} \quad
+\Omega^{-} = \{ z\in \Omega: Im(z) < 0\} \quad
+I = \{ z\in \Omega: Im(z) = 0\}$$
+ 
+**Theorem 22**. (Symmetry Principle)
+
+$f^+,f^-$ holomorphic in $\Omega^+,\Omega^-$ respectively.\
+Extend continuously to $I$ s.t $f^+(x) = f^-(x) \quad  \forall x \in I$
+
+$$f(z) :=
+ \begin{cases}
+f^+(z), & z \in \Omega^+\\
+f^+(z) = f^-(z), & z \in \Omega^{-}\\
+f^-(z), & z \in \Omega^-
+\end{cases} \quad \text{holomorphic}$$
+
+
+
+ 
+**Theorem 23**. (Schwarz relfection principle)
+
+
+$f$ holomorphic in $\Omega^{+}$ extend continuously to $I$ s.t $f$
+real-valued on $I$\
+$\implies \exists F$ holomorphic in $\Omega$ s.t
+$F\rvert_{\Omega^{+}} = f$
+
+# Meromorphic Functions
