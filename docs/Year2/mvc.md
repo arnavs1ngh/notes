@@ -73,6 +73,9 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 
 *Content from MATH40004 assumed to be known.*
 
+
+# **Term I**
+
 # Vector Calculus
 
 ## Prelim
@@ -445,7 +448,10 @@ Where $C = C_{0} + C_{1}$
 ### Flux
 
 If $S$ is a surface then the flux of $A$ across $S$ is defined as
-$$\int_{S}\mathbf{A\cdot \hat{n}}dS$$ If $S$ a closed surface then by
+
+$$\int_{S}\mathbf{A\cdot \hat{n}}dS$$
+
+If $S$ a closed surface then by
 convention draw unit normal $\mathbf{\hat{n}}$ **out** of $S$.
 
 ### The divergence theorem
@@ -457,7 +463,7 @@ $$\int_{S}\mathbf{A\cdot \hat{n}}dS = \int_{\tau}div \mathbf{A}d\tau$$
 
 ### The Divergence theorem in more complicated geometries!
 
-![The divergence theorem for a non-convex surface](diags/fig17DivThm.png)
+![The divergence theorem for a non-convex surface](diags/fig17Div.png)
 
 
 1.  **Non-convex surfaces**
@@ -605,7 +611,7 @@ Or more succinctly
 <center>
 $$J(x_u)\cdot J(u_x) = I$$
 </center>
-We say $J(x_u)$ the <span style="color: green;">**Jacobian matrix**<span> for the $(x_1,x_2,x_3)$ system.
+We say $J(x_u)$ the <span style="color: green;">Jacobian matrix</span> for the $(x_1,x_2,x_3)$ system.
 
 <center>
 $det\left ( J(x_u) \right)\neq 0\ \implies J(u_x)$ exists
@@ -617,7 +623,7 @@ We say $(u_1,u_2,u_3)$ define a curvilinear coordinate system.\
 With each $u_i =$ constant, defining a family of surfaces, with a member
 of each family passing through each $P(x,y,z)$
 
-Let $\mathbf{(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3})}$ unit vectors at $P$ in the direction normal to $u_i = u_i(P)$, s.t $u_i$ increasing in the direction $\mathbf{\hat{a}_{i}}}$
+Let $\mathbf{(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3})}$ unit vectors at $P$ in the direction normal to $u_i = u_i(P)$, s.t $u_i$ increasing in the direction $\mathbf{\hat{a}_{i}}$
 
 <center>
 $$\mathbf{\hat{a}_i} = \mathbf{\frac{\nabla u_i}{\lvert \nabla u_i \rvert}}$$
@@ -679,6 +685,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
 
 2.  **Cylindrical polar coordinates** $(r,\phi,z)$\
     Related to cartesian by
+
     $$x = r\cos \theta \quad y = r\sin \phi \quad z = z$$
 
     <center>
@@ -689,16 +696,16 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     \end{aligned}$
 
     $\begin{aligned}
-    ()() &= 0\
-    ()() &= 0\
+    ()() &= 0\\
+    ()() &= 0\\
     ()() &= 0
     \end{aligned}$
 
-    \begin{aligned}
-    h_{1} &= = 1\
-    h_2 &= = r\
+    $\begin{aligned}
+    h_{1} &= = 1\\
+    h_2 &= = r\\
     h_3 &= = 1
-    \end{aligned}
+    \end{aligned}$
     </center>
 
     Yielding length and volume elements:
@@ -708,9 +715,9 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     (ds)^2 &= (dr)^2+r^2(d)^2+(dz)^2
     \end{aligned}$
 
-    \begin{aligned}
+    $\begin{aligned}
     d= rdrddz
-    \end{aligned}
+    \end{aligned}$
     </center>
 
 3.  **Spherical polar coordinates** $(r,\theta,\phi)$\
@@ -718,23 +725,23 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     $$x = r\sin\theta\cos\phi \quad y = r\sin\theta\sin\phi \quad z = r\cos\theta$$
 
     <center>
-    \begin{aligned}
-    &= () + () + ()\
-    &= (r) + (r) + (-r)\
+    $\begin{aligned}
+    &= () + () + ()\\
+    &= (r) + (r) + (-r)\\
     &= (-r) + (r) + (0)
-    \end{aligned}
+    \end{aligned}$
 
-    \begin{aligned}
-    ()() &= 0\
-    ()() &= 0\
+    $\begin{aligned}
+    ()() &= 0\\
+    ()() &= 0\\
     ()() &= 0
-    \end{aligned}
+    \end{aligned}$
 
-    \begin{aligned}
-    h\_1 &= = 1\
-    h\_2 &= = r\
+    $\begin{aligned}
+    h\_1 &= = 1\\
+    h\_2 &= = r\\
     h\_3 &= = r
-    \end{aligned}
+    \end{aligned}$
     </center>
 
     Volume element:
@@ -748,22 +755,20 @@ Let $\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_
 
 In a general coordinate system for $\lambda_{i}$s to be found.
 
-<center>
+
 $$d\mathbf{r} = h_{1}du_{1}\hat{e}_{1} +  h_{2}du_{2}\hat{e}_{2} + h_{3}du_{3}\hat{e}_{3}$$
   
 $$\begin{aligned}
 d\mathbf{\Phi} &= (\frac{\partial \phi}{\partial u_{1}})du_{1} + (\frac{\partial \phi}{\partial u_{2}})du_{2}+ (\frac{\partial \phi}{\partial u_{3}})du_{3}\\
 &= (\frac{\partial \phi}{\partial x})dx + (\frac{\partial \phi}{\partial y})dy+ (\frac{\partial \phi}{\partial z})dz\\
-&= \fbox{(\nabla\Phi)\cdot d\mathbf{r} = \lambda_{1}h_{1}du_{1} + \lambda_{2}h_{2}du_{2} + \lambda_{3}h_{3}du_{3}}
+&= (\nabla\Phi)\cdot d\mathbf{r} = \lambda_{1}h_{1}du_{1} + \lambda_{2}h_{2}du_{2} + \lambda_{3}h_{3}du_{3}
 \end{aligned}$$
-</center>
 
-<center>
+
 $$h_{i}\lambda_{i} = \frac{\partial \Phi}{\partial u_{i}}$$
   
 $$\implies \nabla \Phi = \frac{\hat{\mathbf{e}}_{1}}{h_{1}}\frac{\partial \Phi}{\partial u_{1}} + \frac{\hat{\mathbf{e}}_{2}}{h_{2}}\frac{\partial \Phi}{\partial u_{2}} + \frac{\hat{\mathbf{e}}_{3}}{h_{3}}\frac{\partial \Phi}{\partial u_{3}}$$
   
-</center>
 
 1.  **Cylindrical polars** $(r,\phi,z)$\
     We have: $\begin{aligned}
@@ -771,24 +776,23 @@ $$\implies \nabla \Phi = \frac{\hat{\mathbf{e}}_{1}}{h_{1}}\frac{\partial \Phi}{
                     h_{2} &= r\\
                     h_{3} &= 1
                     \end{aligned}$
-                    $\implies$ 
-                    \begin{aligned} \nabla = \hat{r}\frac{\partial}{\partial r} + \frac{\hat{\phi}}{r}\frac{\partial}{\partial \phi} + \hat{z}\frac{\partial}{\partial z} \end{aligned}
+        
+    
+    $$\implies \begin{aligned} \nabla = \hat{r}\frac{\partial}{\partial r} + \frac{\hat{\phi}}{r}\frac{\partial}{\partial \phi} + \hat{z}\frac{\partial}{\partial z} \end{aligned}$$
 
 2.  **Spherical polars** $(r,\theta,\phi)$\
     We have:
-    <center>
-    \begin{aligned}
+
+    $$\begin{aligned}
     h_1 &= 1\\
     h_2 &= r\\
     h_3 &= r
-    \end{aligned}
-    </center>
+    \end{aligned}$$
     
-    $\implies$
-
+    $$\implies
     \begin{aligned}
     = + +
-    \end{aligned}
+    \end{aligned}$$
 
 ### Expressions for unit vectors
 
@@ -824,7 +828,7 @@ $$curl\mathbf{A} = \frac{1}{h_1h_2h_3}
         \end{vmatrix}$$
 </center>
 
-1.  **Cylindrical polars**\
+1.  **Cylindrical polars**
     <center>
     $$curl \mathbf{A} = \frac{1}{r}
                 \begin{vmatrix}
@@ -834,7 +838,7 @@ $$curl\mathbf{A} = \frac{1}{h_1h_2h_3}
                 \end{vmatrix}$$
     </center>
 
-2.  **Spherical polars**\
+2.  **Spherical polars**
     <center>
     $$curl \mathbf{A} = \frac{1}{r^{2}\sin\theta}
                 \begin{vmatrix}
@@ -938,4 +942,508 @@ $$\int_{\Sigma}\sqrt{1 + \lvert \nabla f \rvert^{2}}dxdy$$
 
 for $\Sigma$ the projection of $S$ onto the $x-y$ plane.
 
+# **Term II**
 
+# Introduction
+
+## ODEs and initial value problems
+
+ 
+**Definition 1.2**. Ordinary differential equation
+
+Consider $d \in \mathbb{N}$ an open set
+$D \subset \mathbb{R}\times \mathbb{R}^{d}$ and function
+$f:D \to \mathbb{R}^{d}$ Call 
+
+$$\dot{x} = f(t,x)$$
+
+ a [**d-dimensional (first-order) ordinary differential equation**]
+
+Differentiable function $\lambda:I \to \mathbb{R}^{d}$ on interval
+$I \subset \mathbb{R}$ a **solution** to a differential equation if
+$(t,\lambda(t)) \in D$ and
+
+$$\dot{\lambda}(t) = f(t,\lambda(t))\quad \forall t \in I$$
+
+Say ODE [**autonomous**] if of form
+
+$$\dot{x} = f(x)$$
+
+for $f:D\to\mathbb{R}^{d}, D\subset \mathbb{R}^{d}$
+
+**Proposition 1.3.**\
+$D \subset \mathbb{R}^{d}$ open. $f:D \to \mathbb{R}^{d}$ with
+autonomous ODE $$\dot{x} = f(x)$$ $\implies \exists$ constant solution
+$\lambda:\mathbb{R}\to\mathbb{R}^{d}$ with $a \in \mathbb{R}^{d}$ at
+$\lambda(t) = a \iff f(a) =0 \forall t$
+
+ 
+**Definition 1.4**. **Initial value problem**
+
+
+$d \in \mathbb{N}$ open
+$D \subset \mathbb{R}\times\mathbb{R}^d,\ f:D \to \mathbb{R}^d$.\
+Call the following pair a [**initial value
+problem**]
+
+ center
+$\underbrace{\dot{x} = f(t,x)}_{\text{ODE}}$ and
+$\underbrace{x(t_0) = x_0}_{\text{Initial condition}}$
+
+
+Solutions s.t $\lambda:I \to \mathbb{R}^d$ with $t_0$ in interior of $I$
+and $\lambda(t_0) = x_0$
+
+## Visualisations
+
+### Solution portrait
+
+$f:D \subset \mathbb{R}\times\mathbb{R}^d \to \mathbb{R}^d$ with
+$\dot{x} = f(t,x)$\
+Graph of solutions given by
+
+<center>
+[**Solution Curve**]:
+$G(\lambda) = \left\{(t,\lambda(t)): t \in I\right\} \subset \mathbb{R}\times \mathbb{R}^d$
+</center>
+
+derivative of curve at point $t_0 \in I$ is
+
+$$\frac{d}{dt}(t,\lambda(t))\vert_{t = t_0} = (t,\dot{\lambda}(t_0)) = (1, f(t_0,\lambda(t_0))$$
+Vector field a map $(t,x) \mapsto (1,f(t,x))$, defined on $D$
+
+Solution Curves are tangential to vector field.\
+Solution portrait given by visualisations of several solution curves in
+both
+
+
+$$\underbrace{(t,x)-\text{space}}_{\text{extended phase space}} \text{and }\  \underbrace{x-\text{space}}_{\text{phase space}}$$
+
+
+### Phase Portraits
+
+Autonomous differential equations not dependent on time. Visualisations
+in phase-space alone suffice.
+
+**Proposition 1.9.*(Translation invariance)***
+
+$\lambda: I \to \mathbb{R}^{d}$ a solution to $\dot{x} = f(x)$
+
+$\implies \forall \tau \in \mathbb{R}, \mu: \tilde{I}\to \mathbb{R}^{d}$
+
+where $\tilde{I} = \{t\in \mathbb{R}: t+ \tau \in I\}$
+
+$\mu(t) = \lambda(t+ \tau),\ \forall t \in \tilde{I}$ also a solution to this differential equation.
+
+# Existence & Uniqueness
+
+## Picard iterates
+
+**Proposition 2.1.** - (Reformation as integral equation)
+
+Consider initial value problem $\dot{x} = f(t,x),\quad x(t_0) = x_0$\
+for $f: D\subset \mathbb{R}\times\mathbb{R}^{d} \to \mathbb{R}^{d}$
+continuous and $(t_0,x_0) \in D$\
+$\lambda: I \to \mathbb{R}^{d}$ a function on interval $I$ s.t
+$t_0 \in I$ and $\{(t,\lambda(t)): t \in I\} \subset D$
+
+Following are equivalent:
+
+1.  $\lambda$ solves initial value problem\
+    $\dot{\lambda}(t) = f(t,\lambda(t)),\ \forall t \in I$\
+    $\lambda(t_0) = x_0$
+
+2.  $\lambda$ continuous and
+    $$\lambda(t) = x_0 + \int_{t_0}^{t}f(s,\lambda(s))ds\ \forall t \in I$$
+
+***Higher dimensional derivative***\
+for $g:\mathbb{R}\to\mathbb{R}^{d}$
+$$\int_{t_0}^{t}g(s)ds = \begin{pmatrix}\int_{t_0}^{t}g_1(s)ds\\ \vdots \\ \int_{t_0}^{t}g_d(s)ds\end{pmatrix}$$
+
+ 
+**Definition 3**. **(Picard iterates)**
+
+
+Consider initial value problem; $\dot{x} = f(t,x)\quad x(t_0) = x_0$ and
+chosen interval $J$ s.t $t_0 \in J$\
+Define [**initial function**]:
+
+$$\lambda_0(t) \equiv x_0 \quad \forall t \in J$$
+
+and inductively the [**Picard iterates**]:
+
+$$\lambda_{n+1}(t) := x_0 + \int_{t_0}^{t}f(s,\lambda_n(s))ds \quad \forall t\in J\ \forall n \in \mathbb{N}_{0}$$
+
+If $(\lambda_n)$ uniformly convergent sequence with limit $\lambda_{\infty}$ obtain:
+
+$$\lambda_{\infty}(t) = x_0 + \int_{t_0}^{t}f(s,\lambda_{\infty}(s))ds\ \forall t \in J$$
+
+$\implies \lambda_{\infty}$ a solution to integral equation $\implies$ solves initial value problem
+
+## Lipschitz Continuity
+
+**Definition**\
+[**Space of continuous functions on compact interval
+J**] $:= C^{0}(J,\mathbb{R}^{d})$\
+This a complete normed vector space under supremum norm. (Banach Space)
+
+ 
+**Definition 4**. (Normed Vector Space)
+
+
+Norm on a vector space $V$ over $\mathbb{R}$ a map
+$\lvert \lvert \cdot\rvert\rvert:V \to \mathbb{R}^{+}_{0}$ s.t
+
+1.  $\lvert \lvert x\rvert\rvert = 0 \iff x = 0$
+
+2.  $\lvert \lvert ax\rvert\rvert = \lvert a\rvert\cdot\lvert \lvert x\rvert\rvert,\ \forall a \in \mathbb{R},x \in V$
+
+3.  $\lvert \lvert x+y\rvert\rvert\leq \lvert \lvert x\rvert\rvert+\lvert \lvert y\rvert\rvert$
+
+Normed vector space $V$ [**complete**] if
+every cauchy sequence converges in $V$\
+Call a complete normed vector space a [**Banach
+Space**]
+
+ 
+**Definition 5**. (Continuous + Lipschitz continuous functions)
+
+
+$X \subset$ normed vector space
+$(V,\lvert \lvert \cdot\rvert\rvert_{V})$\
+$Y \subset$ normed vector space
+$(W,\lvert \lvert \cdot\rvert\rvert_{W})$\
+We say a function $f:X \to Y$
+
+1.  [**Continuous**] if
+
+    $$\forall x \in X, \epsilon > 0, \exists \delta > 0, \lvert \lvert  x-\bar{x}\rvert\rvert_{V} < d \implies \lvert \lvert  f(x)-f(\bar{x})\rvert\rvert_{W} < \epsilon$$
+
+2.  [**Lipschitz Continuous**] if
+
+    $$\exists K > 0, \lvert \lvert  f(x)-f(\bar{x})\rvert\rvert_{W} \leq K\lvert \lvert  x-\bar{x}\rvert\rvert_{V}\ \forall x,\bar{x} \in X$$
+
+    Call $K$ a [**Lipschitz Constant**]
+
+ center
+Lipschitz continuous $\implies$ Continuous
+
+
+### Lipschitz Continuity and MVT
+
+ 
+**Theorem 1**. (Mean Value Theorem)
+
+
+$I$ compact interval, $f$ continuously differentiable\
+$\forall x,y \in I,\ \exists \xi \in (x,y)$ s.t\
+$f(x)- f(y) = f'(\xi)(x-y)$\
+$\implies f'$ bounded $\implies$ $f$ Lipschitz continuous
+
+### Lipschitz Continuity and Mean Value Inequality
+
+ 
+**Definition 6**. (Operator norm of a matrix)
+
+
+For given matrix $A \in M_n(\mathbb{R})$ Operator norm:
+
+$$\lvert \lvert A\rvert\rvert = \sup_{x\in\mathbb{R}^{n}\backslash\{0\}}\frac{\lvert \lvert  Ax\rvert\rvert}{\lvert \lvert x\rvert\rvert} = \sup_{x\in\mathbb{R}^{n}\backslash\{0\}}\left|\left|A\frac{x}{\lvert \lvert  x\rvert\rvert}\right|\right| = \sup_{x\in \mathbb{R}^{n},\lvert \lvert  x\rvert\rvert = 1}\lvert \lvert  Ax\rvert\rvert$$
+ 
+**Theorem 2**. (Mean Value Inequality)
+
+Consider open set $D \subset \mathbb{R}^{n}$ with
+$f:D \to \mathbb{R}^{m}$ continuously differentiable\
+$\forall x,y \in D$ with $[x,y] \subset D$
+
+$$\exists \xi \in [x,y]\ s.t\ \lvert \lvert f(x)-f(y)\rvert\rvert \leq |f'(\xi)\lvert \lvert |x-y\rvert\rvert$$
+
+$\forall x,y \in \mathbb{R}^{n}$, closed line segment connecting $x$ and $y$ given by
+
+$$[x,y] = \{\alpha x + (1-\alpha)y \in \mathbb{R}^{n} : \alpha \in [0,1]\}$$
+
+**Lemma 2.9.** (Triangle-like inequality for integrals)\
+$I \subset R$ an interval\
+$f:I \to \mathbb{R}^{m}$ continuous function
+
+$$\implies \left\lvert \left\lvert  \int_{t_0}^{t}f(s)ds \right\rvert\right\rvert \leq \left\lvert  \int_{t_0}^{t} \lvert \lvert  f(s)\rvert\rvert ds \right\rvert \quad \forall t,t_0 \in I$$
+
+**Corollary 2.10.** - (Lipschitz continuous and mean value inequality)\
+$U \subset \mathbb{R}^{n}$ open. $f:U \to \mathbb{R}^{m}$ continuously differentiable\
+Given compact and convex set $C\subset U$. Restriction is Lipschitz continuous $$f\rvert_{C}: C \to \mathbb{R}^{m}$$ Convex $C$ means $\forall x,y, \in C$ closed line segment lies in $C$ i.e. $[x,y] \subset C$
+
+## Picard-Lindelöf Theorem
+
+
+**Theorem 3**. *(Picard-Lindelöf theorem - global version)*
+
+
+Consider ODE $\dot{x} = f(t,x)$\
+$f:\mathbb{R}\times\mathbb{R}^d \to \mathbb{R}^d$ continuous, satisfying
+global Lipschitz condition of the form
+
+$$\lvert \lvert  f(t,x) - f(t,y) \rvert\rvert \leq K\lvert \lvert  x - y \rvert\rvert \quad \forall t \in \mathbb{R}, \forall x,y \in \mathbb{R}^d,\ K > 0 \text{ a const}$$
+
+Take $h = \frac{1}{2K} \implies$ every intial value problem $x(t_0) = x_0$ admits a unique solution
+
+$$\lambda:[t_0 - h, t_0 + h] \to \mathbb{R}^d$$
+
+ 
+**Definition 7**.
+
+
+1.  [**Globally Lipschitz continuous**]\
+    if $\exists K > 0$ s.t
+    $\lvert \lvert  f(t,x) - f(t,y) \rvert\rvert \leq K \lvert \lvert  x-y \rvert\rvert \quad \forall (t,x),(t,y) \in D$
+
+2.  [**Locally Lipschitz continuous**]\
+    if $\forall (t_0,x_0) \in D$ and $\exists$ neighbourhood
+    $U\subset D$ of $(t_0,x_0)$ and $\exists L > 0$ s.t
+
+    $$\lvert \lvert  f(t,x) - f(t,y) \rvert\rvert \leq K \lvert \lvert  x - y \rvert\rvert \quad \forall (t,x),(t,y) \in U$$
+
+ 
+**Theorem 4**. *(Picard-Lindelöf theorem - local version)*
+
+
+$D \subset \mathbb{R}\times \mathbb{R}^{d}$ open\
+Consider function $f: D \to \mathbb{R}^d$ continuous and locally
+Lipschitz continuous.\
+For fixed $(t_0,x_0) \in D$, we have intial value problem. Following 2
+hold
+
+1.  ***Qualitative version***\
+    Initial value problem has locally a uniquely determined solution
+
+    $$\exists h = h(t_0,x_0) \text{ s.t. there is exactly one solution on } [t_0-h,t_0 + h]$$
+
+2.  ***Quantitative version***\
+    For some $\tau,\delta$ take set
+    $W^{\tau,\delta}(t_0,x_0) := [t_0-\tau,t_0+\tau] \times \overline{B_{\delta}(x_0)}$.
+    For
+    $\overline{B_{\delta}(x_0)} := \{ x\in \mathbb{R}^d:\lvert \lvert  x- x_0 \rvert\rvert \leq \delta \}$ -
+    Closed $\delta-$neighbourhood of $x_0$.\
+    Assume $W^{\tau,\delta}(t_0,x_0) \subset D$, suppose
+    $\exists K,M > 0$ s.t
+
+    $$\lvert \lvert  f(t,x) - f(t,y) \rvert\rvert \leq K \lvert \lvert  x - y \rvert\rvert \quad \forall (t,x),(t,y) \in U$$
+
+    and
+
+    $$\lvert \lvert  f(t,x) \rvert\rvert \leq M \quad \forall (t,x) \in W^{\tau,\delta}(t_0,x_0)$$
+    
+    $\implies$ there is exactly one solution on $[t_0-h,t_0+h]$ with
+    $h(t_0,x_0) := \min\{\tau,\frac{1}{2K},\frac{\delta}{M}\}$
+
+**Proposition 2.14.** - (Continuously differentiable & Lipschitz
+Continuity)
+
+$D\subset \mathbb{R}\times \mathbb{R}^d$ open. Continuously differentiable function $f:D\to \mathbb{R}^d$
+
+<center>
+$\implies f$ locally Lipschitz continuous w.r.t $x$\
+$\implies$ every intial value problem with differential equation with RHS $f$ solved locally uniquely.
+</center>
+
+**Lemma 2.15.** - (Solutions cannot cross)\
+Let $D \subset \mathbb{R}\times \mathbb{R}^d$ open.
+$f:D \to \mathbb{R}^d$ continuous and locally Lipschitz continuous w.r.t
+$x$\
+Given 2 solutions of $\dot{x} = f(t,x)$;
+$\lambda: I \to \mathbb{R}^d, \mu: J \to \mathbb{R}^d$\
+Either $\lambda(t) = \mu(t) \quad \forall t \in I \cap J$ or
+$\lambda(t) \neq \mu(t) \quad \forall t \in I \cap J$
+
+## Maximal Solutions
+
+**Definition 8**.  - (Maximal existence interval)
+
+Consider initial value problem $\dot{x} = f(t,x),\ x(t_0) = x_0$ Define
+
+-   $I_{+}(t_0,x_0) := \sup\{ t_{+} \geq t_0 : \text{there exists solution on } [t_0,t_{+}] \}$
+
+-   $I_{-}(t_0,x_0) := \sup\{ t_{-} \leq t_0 : \text{there exists solution on } [t_{-},t_0] \}$
+
+[**Maximal existence interval:**]
+
+$$I_{max}(t_0,x_0) := \left( I_{-}(t_0,x_0), I_{+}(t_0,x_0) \right)$$
+
+ 
+**Theorem 5**. (Existence of maximal solution + boundary behaviour)
+
+
+There exists maximal solution
+$\lambda_{max}:I_{max}(t_0,x_0) \to \mathbb{R}^d$ to initial value
+problem. Having properties:
+
+1.  $I_{+}(t_0,x_0)$ finite\
+    **Either** - maximal solution unbounded for $t\geq t_0$
+    $$\sup_{t \in (t_0,I_{+}(t_0,x_0))} \lvert \lvert  \lambda_{max}(t) \rvert\rvert  = \infty$$
+    **Or** boundary: $\partial D$ of $D$ non-empty and we have
+    $$\lim_{t \nearrow I_{+}(t_0,x_0)} dist\left( (t,\lambda_{max}(t)),\partial D\right) = 0$$
+
+2.  $I_{-}(t_0,x_0)$ finite\
+    **Either** - maximal solution unbounded for $t \leq t_0$
+    $$\sup_{t \in (I_{-}(t_0,x_0),t_0)} \lvert \lvert  \lambda_{max}(t) \rvert\rvert  = \infty$$
+    **Or** boundary: $\partial D$ of $D$ non-empty and we have
+    $$\lim_{t \searrow I_{-}(t_0,x_0)} dist\left( (t,\lambda_{max}(t)),\partial D\right) = 0$$
+
+***Dist function***
+
+$A \subset \mathbb{R}^{n},\ dist(\cdot,A):\mathbb{R}^n \to \mathbb{R}_{0}^{+}$
+
+$$dist(y,A) := \inf\{\lvert \lvert y-a\rvert\rvert: a \in A\} \quad \forall y \in \mathbb{R}^n$$
+
+## General solutions and flows
+
+### General solutions
+
+ 
+**Definition 9**. (General solution to non-autonomous differential equation)
+
+Consider $\dot{x} = f(t,x)$. We define
+
+$$\Omega := \{ (t,t_0,x_0) \in \mathbb{R}^{1+1+d}: (t_0,x_0) \in D \text{ and } t\in I_{max}(t_0,x_0) \}$$
+
+We say $\lambda:\Omega \to \mathbb{R}^{d}$ with $\lambda(t,t_0,x_0) := \lambda_{max}(t,t_0,x_0)$ a [**general solution**] of $\dot{x} = f(t,x)$
+
+Solution identity:
+
+$$\frac{\partial \lambda}{\partial t}(t,t_0,x_0) = f(t,\lambda(t,t_0,x_0)) \quad \forall (t,t_0,x_0) \in \Omega$$
+
+**Proposition 2.21.** - (Properties of general solutions)\
+Consider $\dot{x} =f(t,x)$, $(t_0,x_0) \in D$
+$\implies \forall s \in I_{max}(t_0,x_0)$ we have
+
+1.  $I_{max}(s,\lambda(s,t_0,x_0)) = I_{max}(t_0,x_0)$
+
+2.  $\lambda(t_0,t_0,x_0) = x_0$ [**(Initial value
+    property)**]
+
+3.  $\lambda(t,s,\lambda(s,t_0,x_0)) = \lambda(t,t_0,x_0) \forall t \in I_{max}(t_0,x_0)$
+    [**(Cocycle property)**]
+
+### Flows
+
+
+**Definition 10**. (Flow of an autonomous differential equation)
+
+
+Consider $\dot{x} = f(x)$\
+Define for any initial value $x_0 \in D$
+
+$$J_{max}(x_0) := I_{max}(0,x_0)$$
+
+$$\varphi(t,x_0) = \lambda(t,0,x_0) \quad \forall t \in J_{max}(x_0)$$
+
+$(t,x_0) \mapsto \phi(t,0,x_0)$ called [**flow of autonomous differential equation**]
+
+Solution identity:
+
+$$\frac{\partial \varphi}{\partial t}(t,x_0) = f(\varphi(t,x_0)) \quad \forall x_0 \in D, t \in J_{max}(0)$$
+
+**Proposition 2.24** - (Properties of the flow)\
+Let $\varphi$ be flow of autonomous differential equation.
+$\implies \forall x \in D$ we have
+
+1.  $J_{max}(\varphi(t,x)) = J_{max}(x) - t \quad \forall t \in J_{max}(x)$
+
+2.  $\varphi(0,x) = x$ [**(Initial value
+    property)**]
+
+3.  $\varphi(t,\varphi(s,x)) = \varphi(t +s ,x) \quad \forall t,s$ with
+    $s,t+s \in J_{max}(x)$ [**(Group
+    property)**]
+
+4.  $\varphi(-t,\varphi(t,x)) = x \quad \forall t \in J_{max}(x)$
+
+ 
+**Definition 11**. (Orbits (or trajectories))
+
+
+$\varphi$ flow of autonomous differential equations $\forall x \in D$,
+we have the [**Orbit**] through $x$
+
+$$O(x) := \{ \varphi(t,x) \in D: t \in J_{max}(x) \}$$
+
+With the positive/negative half orbits:
+
+-   $O^{+}(x) := \{ \varphi(t,x) \in D: t \in J_{max}(x) \cap \mathbb{R}^{+}_{0}\}$
+
+-   $O^{-}(x) := \{ \varphi(t,x) \in D: t \in J_{max}(x) \cap \mathbb{R}^{-}_{0}\}$
+
+*Types of orbits*
+
+1.  $O(x)$ singleton $\implies f(x) = 0$ and $J_{max}(x) = \mathbb{R}$\
+    Call $x$ the equilibrium
+
+2.  $O(x)$ closed curve $\exists t> 0$ s.t $\varphi(t,x) = x$ but
+    $f(x) \neq 0$ $\implies$ $J_{max}(x) = \mathbb{R}$, call $x$ periods
+    with $O(x)$ periodic orbit
+
+3.  $O(x)$ not closed curve. function $t \mapsto \varphi(t,x)$ injective
+    on $J_{max}(x)$
+
+**Proposition 2.27.** - (Orbits of one-dimensional differential
+equation)\
+Consider $\dot{x} = f(x)$ where $d = 1$\
+$\implies$ all solutions monotone, $\not\exists$ periodic orbits\
+$\implies$ trajectory either an equilibrium or non-closed curve
+
+# Linear Systems
+
+## Matrix exponential function
+
+Consider linear differential equation
+
+$$\dot{x} = Ax \quad A \in \mathbb{R}^{d\times d}$$
+We have
+$\lvert \lvert  Ax - Ay\rvert\rvert \leq \lvert \lvert  A\rvert\rvert \lvert \lvert  x-y\rvert\rvert$
+
+$\implies$ globally Lipschitz continuous with constant $\lvert \lvert  A \rvert\rvert$\
+
+Solution to every intial value problem exists and are unique.\
+$\implies$ generates globally defined flow
+$\varphi: \mathbb{R}\times \mathbb{R}^d \to \mathbb{R}^d$
+
+***Picard iterates for local solutions***\
+$\lambda_{0}(t) := x_0 \forall t \in J$\
+$\lambda_{n+1} = P(\lambda_n)(t) = x_{0} + \int_{0}^{t}A\lambda_n(s)ds \implies \lambda_n = \sum_{k=0}^{n} \frac{t^k A^k}{k!}x_0$\
+$\implies \lambda_{\infty}(t) = \varphi(t,x_0) e^{At}x_0$\
+We have the series converge whenever $\lvert  t \rvert \leq h$ for some
+$h >0$
+
+ 
+**Definition 12**. (Matrix exponential function)
+
+
+$$t \mapsto e^{At} \qquad e^{At} = \sum_{k = 0}^{\infty}\frac{t^k A^k}{k!}$$
+
+**Lemma 3.1.**
+
+$$\lvert \lvert  BC \rvert\rvert \leq \lvert \lvert  B \rvert\rvert \lvert \lvert  C \rvert\rvert$$
+
+**Proposition 3.2.** - (Existence of matrix exponential)\
+Matrix $B \in \mathbb{R}^{d\times d}$
+
+$$e^{B} := \sum_{k=0}^{\infty}\frac{1}{k!}B^{k} \in \mathbb{R}^{d\times d}$$
+exists
+
+ 
+**Theorem 6**. (Flow of an autonomous linear differential equation)
+
+
+Consider $\dot{x} = Ax, \quad A \in \mathbb{R}^{d\times d}$\
+Flow $\varphi: \mathbb{R}\times \mathbb{R}^d \to \mathbb{R}^d$ given by
+
+$$\varphi(t,x) = e^{At}x \quad \forall t \in \mathbb{R}$$
+
+**Proposition 3.4.** - (Properties of matrix exponential)
+
+1.  $C = T^{-1}BT \implies e^{C} = T^{-1}e^{B}T$
+
+2.  $e^{-B} = (e^{B})^{-1}$
+
+3.  $BC = CB \implies e^{B+C} = e^{B}e^{C}$
+
+4.  $B = diag(B_{1},\dots,B_p) \implies e^B = diag(e^{B_1},\dots,e^{B_p})$
