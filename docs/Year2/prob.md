@@ -93,11 +93,11 @@ and <span style="color: RoyalRoyalBlue;">**Causes**</span> are <span style="colo
 
 # Probability Review
 
-**Definition 1.1 - <span style="color: green;">**Experiment**</span>**\
+**Definition 1.1** - <span style="color: green;">**Experiment**</span>\
 Any fixed procedure with variable outcome
 
 
-**Definition 1.2 - <span style="color: green;">**Sample space $\Omega$**</span>**\
+**Definition 1.2** - <span style="color: green;">**Sample space $\Omega$**</span>\
 Set of all possible outcomes of an experiment
 
 **Definition 1.4** - <span style="color: green;"> $\sigma$-algebra **(Sigma-algebra)**</span>
@@ -114,7 +114,7 @@ $\mathcal{F}$ an algebra if
 
 $\mathcal{F}$ a $\sigma$-algebra if closed under countable union.
 
-**Definition 1.13 - <span style="color: green;">**Borel sigma algebra**</span>**
+**Definition 1.13** - <span style="color: green;">**Borel sigma algebra**</span>
 
 Let $\mathcal{F}_{i}, i \in \mathcal{I}$, the collection of all $\sigma$-algebras that contain all open intervals of $\mathbb{R}$
 
@@ -146,7 +146,7 @@ a function $Pr : \mathcal{F}\to [0,1]$ satisfying:
 3.  <span style="color: RoyalBlue;">**$\{A_{i}\} \in \mathcal{F}$ are pairwise disjoint then**</span>
 **$$\textcolor{RoyalBlue}{Pr(\bigcup_{i=1}^{\infty}A_{i}) = \sum_{i=1}^{\infty}Pr(A_{i})}$$**
 
-**Definition 1.17 - <span style="color: green;">**Probability Space**</span>**
+**Definition 1.17** - <span style="color: green;">**Probability Space**</span>
 
 Defined as the triple $(\Omega,\mathcal{F},Pr(\cdot))$
 
@@ -165,26 +165,27 @@ Defined as the triple $(\Omega,\mathcal{F},Pr(\cdot))$
 
 
 
-
 **Proposition 1.18 - Continuity Property**
 
 Let $(\Omega,\mathcal{F},Pr(\cdot))$, and $A_{1},A_{2},\dots \in \mathcal{F}$ an increasing sequence of events, ($A_{1} \subseteq A_{2} \subseteq \dots)$
 
 $$A = \bigcup_{n=1}^{\infty}A_{n} \in \mathcal{F}$$
+  
 <span style="color: RoyalBlue;">**$\mathcal{F}$ a sigma algebra $\implies$**</span>
-**$$\textcolor{red}{Pr(A)  = \lim_{n\to \infty}Pr(A_{n}) \qquad Pr(\lim_{n\to\infty}A_{n}) = \lim_{n\to\infty}Pr(A_{n})}$$**
+  
+$$\textcolor{red}{Pr(A)  = \lim_{n\to \infty}Pr(A_{n}) \qquad Pr(\lim_{n\to\infty}A_{n}) = \lim_{n\to\infty}Pr(A_{n})}$$
 
-**Definition 1.20 - <span style="color: green;">**Conditional Probability**</span>**
+**Definition 1.20** - <span style="color: green;">**Conditional Probability**</span>
 
 $A, B \in \mathcal{F}, Pr(B) > 0$, Conditional Probability of $A$ given $B$ is
 
 $$Pr(A\rvert B) = \frac{Pr(A\cap B}{Pr(B)}$$
 
-**Definition 1.21 - <span style="color: green;">**Independence**</span>**
+**Definition 1.21** - <span style="color: green;">**Independence**</span>
 
 2 events are independent if $$Pr(A\cap B) = Pr(A)Pr(B)$$
 
-**Definition 1.22 - <span style="color: green;">**Mutually independent**</span>**
+**Definition 1.22** - <span style="color: green;">**Mutually independent**</span>
 
 $\{A_{i}\}\in \mathcal{F}$ mutually independent if for any subcollection $\{A_{i_{j}}\}_{j=1,\dots,k}$
 
@@ -194,7 +195,7 @@ $$Pr(\bigcap_{j=1}^{k}A_{i_{j}}) = \prod_{j=1}^{k}Pr(A_{i_{j}}$$
 
 ## Definitions
 
-**Definition 2.1 - <span style="color: green;">**Random Variable**</span>**
+**Definition 2.1** - <span style="color: green;">**Random Variable**</span>
 
 A random variable on $(\Omega,\mathcal{F},Pr)$ a function
 
@@ -206,15 +207,15 @@ Random vectors defined analogously, $X: \Omega \to \mathbb{R}^{n}$ and
 Complex Random Variables $X:\Omega\to \mathbb{C}$
 
 
-**Definition 2.3 - <span style="color: green;">**Distribution**</span>**
+**Definition 2.3** - <span style="color: green;">**Distribution**</span>
 
 $\forall \text{ Borel sets } B \in \mathcal{B}$
 $$Pr_{X}(B) = Pr(X^{-1}(B)) =  Pr(\{\omega \in \Omega: X(\omega) \in B\})$$
-$Pr_{X}$ the <span style="color: green;">**distribution**</span> of $X$.
-Written $Pr(X \in B)$\
+$Pr_{X}$ the <span style="color: green;">**distribution**</span> of $X$. Written $Pr(X \in B)$
+
 We say $X$ and $Y$ <span style="color: green;">**identically distributed**</span> if $Pr(X\in B) = Pr(Y\in B)\ \forall B \in \mathcal{B}$
 
-**Definition 2.10 - <span style="color: green;">**Cumulative Distributive Function (CDF)**</span>**
+**Definition 2.10** - <span style="color: green;">**Cumulative Distributive Function (CDF)**</span>
 
 CDF of a random variable $X$ a function $F_{x}:\mathbb{R}\to [0,1]$
 $$F_{x} = Pr(X\leq x)$$
@@ -237,7 +238,7 @@ $$F_{x} = Pr(X\leq x)$$
     from the right.
 
 \
-**Definition - <span style="color: green;">**Point mass CDF**</span>**\
+**Definition** - <span style="color: green;">**Point mass CDF**</span>\
 The constant random variable the most trivial RV. For $a \in \mathbb{R}$
 define point mass CDF as
 
@@ -247,9 +248,9 @@ $$\delta_{a}(x) =
       1 & x\geq a \\
    \end{cases}$$
 
-**Definition 2.14 - <span style="color: green;">**Probability Mass Function PMF**</span>**
+**Definition 2.14** - <span style="color: green;">**Probability Mass Function PMF**</span>
 
-1.  <span style="color: RoyalBlue;">if $\exists (a_{n})_{n\geq 1}$ and $(b_{n})_{n\geq 1}$ where $b_{i} > 0$ with $\sum_{i}b_{i} = 1$ with $F_{X}(x)$ s.t</span>
+1.  <span style="color: RoyalBlue;"> if $ \exists (a_{n})_{n\geq 1}$ and $(b_{n})_{n\geq 1}$ where $b_{i} > 0$ with $\sum_{i}b_{i} = 1$ with $F_{X}(x)$ s.t</span>
 
     $$\textcolor{RoyalBlue}{F_{X}(x) = \sum_{i=1}^{\infty}b_{i}\delta_{\alpha_{i}}(x)}$$
 
@@ -277,11 +278,14 @@ $$Y = g(X) \implies f_{Y}(y) = f_{X}(g^{-1}(y))\left\lvert\frac{dg^{-1}y}{dy}\ri
 *Scale Family*\
 For $\sigma >0$, we have <span style="color: RoyalBlue;">**$Y = \sigma Z$**</span> which
 has pdf
-**$$\textcolor{red}{f(y\rvert\sigma) = \frac{1}{\sigma}f_{Z}(\frac{y}{\sigma})}$$**
+
+$$\textcolor{red}{f(y\rvert\sigma) = \frac{1}{\sigma}f_{Z}(\frac{y}{\sigma})}$$
+
 *Location-Scale Family*\
 Define <span style="color: RoyalBlue;">**$W = \mu + \sigma Z$**</span>, with pdf 
-**$$\textcolor{red}{f(w\rvert\mu,\sigma) = \frac{1}{\sigma}f_{Z}(\frac{w - \mu}{\sigma})}$$**
-\
+
+$$\textcolor{red}{f(w\rvert\mu,\sigma) = \frac{1}{\sigma}f_{Z}(\frac{w - \mu}{\sigma})}$$
+
 **Probability Integral Transform**\
 Let $U \sim Unif[0,1]$ with $X = F^{-1}(U)$ s.t $F$ a strictly
 increasing CDF $\implies X$ a random variable with CDF $F$
@@ -304,16 +308,17 @@ Similary for continuous r.v
 
 ## Definitions
 
-**Definition 3.1 - <span style="color: green;">**Joint Cumulative Distribution Function (Joint
-CDF)**</span>**\
+**Definition 3.1** - <span style="color: green;">**Joint Cumulative Distribution Function (Joint
+CDF)**</span>\
 Given by $$F_{XY}(x,y) = Pr(X \leq x, Y\leq y)$$ Jointly absolutely
 continuous case:
 $$F_{XY}(x,y) = \int_{-\infty}^{y}\int_{-\infty}^{x}f_{XY}(s,t)dsdt$$
+
 **Definition - <span style="color: green;">**Marginal Density Function (MDF)**</span>**
 
 $$f_{X}(x) = \int_{-\infty}^{\infty}f_{XY}(x,y)dy$$
 
-**Definition 3.3 - <span style="color: green;">**Independence**</span>**
+**Definition 3.3** - <span style="color: green;">**Independence**</span>
 
 Finite set of r.v $\{X_{i}\}$ said to be **independent** if
 $$Pr(X_{1} \in B_{1},\dots,X_{n}\in B_{n}) = \prod_{i=1}^{n}Pr(X_{i}\in B)$$
@@ -323,23 +328,28 @@ $\forall \text{ Borel sets }B_{i}$
 
 <span style="color: red;">**Any collection $(X_{i})$ independent**</span> <span style="color: RoyalBlue;"> **if every finite subcollection independent.**</span>\
 \
-**Definition 3.4 - <span style="color: green;">**Covariance**</span>**\
+**Definition 3.4** - <span style="color: green;">**Covariance**</span>\
 For r.v $X,Y$ with finite $E(X) = \mu_{X}, E(Y) = \mu_{Y}$
 $$Cov(X,Y) = E((X-\mu_{X})(Y-\mu_{Y}))$$
 
-**Definition - <span style="color: green;">**Correlation**</span>**
+**Definition** - <span style="color: green;">**Correlation**</span>
+
 $$Cor(X,Y) = \frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}$$
 
 **Change of variables for pdfs**\
 If $(U,V) = T(X,Y)$ a function of pair of r.v $(X,Y)$ with joint pdf
 $f_{XY}$ a joint pdf for $(U,V)$ given by
+
 $$f_{UV}(u,v) = f_{XY}(x(u,v),y(u,v))\lvert J(u,v)\rvert$$
+
 Where
+
 $$J(u,v) = det
 \begin{pmatrix}
 \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v}\\
 \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}
 \end{pmatrix}$$
+
 
 ***Remark 3.9 - (Factorisable independence)***\
 $X,Y$ independent if $\exists g,h : \mathbb{R}to \mathbb{R}$ such that
@@ -351,7 +361,8 @@ For $X$ a r.v, conditional CDF of $X$ given $A$
 $$F_{X\rvert A}(x) = \frac{Pr(\{X\leq x\} \cap A)}{Pr(A)}$$
 $$f_{X\rvert A}(x) = \frac{d}{dx}F_{X\rvert A}(x)$$
 
-**Definition - <span style="color: green;">**Conditional Probability Density Function**</span>**
+**Definition** - <span style="color: green;">**Conditional Probability Density Function**</span>
+
 $$f_{Y\rvert X}(y\rvert x) = \frac{d}{dy}F_{Y\rvert X}(y\rvert x) = \frac{f_{XY}(x,y)}{f_{X}(x)}$$
 
 ## Bivariate Normal Distribution
@@ -359,7 +370,9 @@ $$f_{Y\rvert X}(y\rvert x) = \frac{d}{dy}F_{Y\rvert X}(y\rvert x) = \frac{f_{XY}
 \
 **Definition -** <span style="color: green;">**Standard bivariate normal distribution**</span>\
 Has pdf for $-1 < \rho < 1$
+
 $$f(x,y\rvert\rho) = \frac{1}{2\pi\sqrt{1-\rho^{2}}}\exp{\left ( -\frac{1}{2(1-\rho^{2})(x^{2}-2\rho xy + y^{2})}\right ) } \qquad (x,y) \in \mathbb{R}^{2}$$
+
 Properties:\
 $E(X) = E(Y) = 0, E(XY) = \rho$\
 $Var(X) = Var(Y) = 1, Cov(X,Y) = \rho$\
@@ -368,7 +381,9 @@ $\mathbf{x} = (x,y)\ \underline{\mu} = (\mu_x,\mu_y), \Sigma = \begin{pmatrix} \
 $$f_{\mathbf{X}}(\mathbf{x}\rvert\underline{\mu}, \Sigma) = \frac{1}{2\pi\sigma_x\sigma_y\sqrt{1-\rho^{2}}}exp\left(-\frac{1}{2}(\mathbf{x} - \underline{\mu})^T( \Sigma^{-1}(\mathbf{x}-\underline{\mu})\right)$$
 
 Extend this to <span style="color: green;">**Multivariate normal distribution:**</span>
+
 $$f_{\mathbf{X}}(\mathbf{x}\rvert\underline{\mu}, \Sigma) = \frac{1}{(2\pi)^{d/2}(det\Sigma)^{1/2})}exp\left(-\frac{1}{2}(\mathbf{x} - \underline{\mu})^T( \Sigma^{-1}(\mathbf{x}-\underline{\mu})\right)$$
+
 Where $\mathbf{x} \in \mathbb{R}^d,\ (\Sigma_{ij}) = Cov(X_i,X_j)$
 
 **Remarks.**
@@ -405,42 +420,51 @@ f(n) = \begin{cases}
 \end{cases}
 $$
 
-
 $$f_{k}(y) = k {n\choose k} f_X(y)F_X(y)^{k-1}(1-F_X(y))^{n-k}$$
+
 $$F_k(y) = Pr(N_y \geq k) = \sum_{j=k}^{n} {n\choose j}F_X(y)^{j}(1-F_X(y))^{n-j}$$
 
 # Convergence of Random Variables
 
 ## Convergence
 
-**Definition 4.1.** Sequence $(X_i)$ of random variables said to
-<span style="color: green;">**converge in probability**</span> to $X$
+**Definition 4.1.** Sequence $(X_i)$ of random variables said to <span style="color: green;">**converge in probability**</span> to $X$
+
 $$X_n \xrightarrow[]{P} X \quad \text{ if } \quad  \forall \epsilon >0 \lim_{n\to \infty} Pr(\lvert X_n - X\rvert \geq \epsilon ) = 0$$
 
 **Proposition 4.4.** - *(Markov's inequality)*
 
 $X$ a random variable taking non-negative values only.\
-$a> 0$ constant $$Pr(X\geq a ) \leq \frac{E(X)}{a}$$
+$a> 0$ constant
+
+$$Pr(X\geq a ) \leq \frac{E(X)}{a}$$
 
 **Proposition 4.5.**\
 Take non-negative random variable $Y = (X-\mu)^2$
+
 $$Pr(\lvert X-\mu\rvert \geq \epsilon) = Pr((X-\mu)^2 \geq \epsilon^2) = P(Y \geq \epsilon^2)$$
+
 $$Pr(Y \geq \epsilon^2) \leq \frac{E(X-\mu)^2}{\epsilon^2} = \frac{\sigma^2}{\epsilon^2}$$
 
 **Definition 4.6.**
 
-$X_1,X_2,\dots$
+$X_1,X_2,\dots $
+
 $$\underbrace{\bar{X}_n = \frac{1}{n}\sum_{i=1}^{n}X_i}_{\textcolor{ForestGreen}{\textbf{\text{sample mean}}}}$$
 
 **Proposition 4.7.** - *(Weak law of large numbers)*\
 $X_1,X_2,\dots$ sequence of iid random variable with finite
-$\mu,\sigma^2$ $$\implies \bar{X}_n \xrightarrow[]{P} \mu$$
+$\mu,\sigma^2$
+
+$$\implies \bar{X}_n \xrightarrow[]{P} \mu$$
 
 **Definition 4.9.**\
 $X_1,X_2,\dots$ with cdfs $F_1,F_2,\dots$\
 <span style="color: green;">**Converge in distribution**</span> to random
 variable $X$ with cdf $X_n$
+
 $$\textcolor{red}{X_n \xrightarrow[]{D} X} \quad \text{ if } \quad \textcolor{RoyalBlue}{\lim_{n\to\infty}F_n(X) = F_X(x)}$$
+
 $\forall x \in \mathbb{R}$ for which $F_X$ continuous.
 
 **Proposition 4.12.**\
@@ -450,6 +474,7 @@ $\forall x \in \mathbb{R}$ for which $F_X$ continuous.
 
 **Proposition 4.14.**\
 Suppose $(X_n)_{n\geq 1}$ sequence of random variables
+
 $$X_n \xrightarrow[]{D} c \in \mathbb{R}\implies X_n \xrightarrow[]{P} c$$
 
 ## Limit events
@@ -465,12 +490,16 @@ $\{A_n\ a.a\} \subset \{A_n\ i.o\}$
 
 **Proposition 4.15.**\
 Sequence of sets $(A_n)$ We define
+
 $$\underbrace{B_n = \bigcap_{m=n}^{\infty}A_m}_{\text{increasing sequence}} \qquad\underbrace{C_n = \bigcup_{m=n}^{\infty}A_m}_{\text{decreasing sequence}}$$
+
 And further
+
 $$\underbrace{\liminf_{n\to\infty} A_N = \bigcup_{n=1}^{\infty}\bigcap_{n=N}^{\infty}A_n}_{=\{A_n a.a\}} \quad \underbrace{\limsup_{n\to\infty} A_N = \bigcap_{n=1}^{\infty}\bigcup_{n=N}^{\infty}A_n}_{=\{A_n i.o\}}$$
 
 **Remark 4.16**\
 $\{A_n\ i.o\}^{C}$ - only finitely many $A_n$ occur
+
 $$\{A_n\ i.o\}^{C} = \bigcup_{N=1}^{\infty}\bigcap_{n=N}^{\infty}A_n^C = \{A_n^C\ a.a\}$$
 
 **Proposition 4.17**\
@@ -485,6 +514,7 @@ $A_1,A_2,\dots$ sequence of events
 ## Moment generating functions
 
 **Definition 5.1** - <span style="color: green;">**(Moment generating functions MGFs)**</span>
+  
 $$M_{X}(t) = E\left[ \exp{(tX)} \right]$$
 
 **Proposition 5.2.**\
@@ -492,11 +522,12 @@ $Y = aX + b \implies M_Y(t) = \exp(bt)M_X(at)$
 
 **Proposition 5.3.**\
 $X,Y$ independent random variables
+  
 $$\textcolor{RoyalBlue}{Z = X + Y} \implies \textcolor{red}{M_Z(t) = M_X(t)M_Y(t)}$$
 
 **Proposition 5.4.**\
-Suppose $\exists t_0 > 0$ s.t $M_X(t) < \infty$ for
-$\lvert t \rvert < t_0$
+Suppose $\exists t_0 > 0$ s.t $M_X(t) < \infty$ for $\lvert t \rvert < t_0$
+  
 $$M_X(t) = \sum_{k=0}^{\infty}E(X^k)\frac{t^k}{k!}\ \ \implies \ \  \forall k > 0\ \textcolor{red}{\frac{d^k}{dt^k}M_X(t)\rvert_{t = 0} E(X^k)}$$
 
 **Proposition 5.5.**\
@@ -516,12 +547,17 @@ $$\implies \textcolor{red}{X_n \xrightarrow[]{D} X}$$
 
 **Definition 5.11**\
 Say <span style="color: red;">**$f(x) = o(g(x))$ in $\lim_{x\to \infty}$**</span>
-if $$\textcolor{RoyalBlue}{\lim_{x\to\infty}\frac{f(x)}{g(x)} = 0}$$
+if
+  
+$$\textcolor{RoyalBlue}{\lim_{x\to\infty}\frac{f(x)}{g(x)} = 0}$$
+  
 Similarly defined for case $x \to 0$ limit.
 
-**Proposition 5.12.**\
+**Proposition 5.12.**
+  
 $X_1,X_2,\dots$ sequence of iid random variables with common MGF; $M(t)$
 exists in open interval containing $0$
+
 $$\text{ if } E(X_i) = \mu\ \forall i \implies \bar{X}_n \xrightarrow[]{P} \mu$$
 
 ## The Central Limit Theorem
@@ -529,7 +565,8 @@ $$\text{ if } E(X_i) = \mu\ \forall i \implies \bar{X}_n \xrightarrow[]{P} \mu$$
 **Proposition 5.14.**\
 $X_1,X_2,\dots$ sequence of iid random variables with [**common MGF
 $M(t)$**] (existing in open interval containing 0)\
-[**$E(X_i) = \mu,\ Var(X_i) = \sigma^2 \forall i$**]
+<span style="color: RoyalBlue;">**$E(X_i) = \mu,\ Var(X_i) = \sigma^2 \forall i$**</span>`
+  
 $$\implies \textcolor{red}{\frac{\sqrt{n}}{\sigma}(\bar{X}_n - \mu) \xrightarrow[]{D } Z \sim N(0,1)}$$
 
 # Stochastic Processes
@@ -543,21 +580,23 @@ $\mathcal{E}$ valued random variables $X_0,X_1,\dots$
 
 \
 **Definition 6.1**\
-<span style="color: green;">**Stochastic Process**</span> on state space
-$\mathcal{E}$, collection of $\mathcal{E}$-valued r.v $(X_t)_{t\in T}$
-indexed by set $T$; often $T = \mathbb{N}_{0}$
+<span style="color: green;">**Stochastic Process**</span> on state space $ \mathcal{E}$, collection of $\mathcal{E}$-valued r.v $(X_t)_{t\in T}$ indexed by set $T$; often $T = \mathbb{N}_{0}$
 
 **Definition 6.2**\
 Discrete time stochastic process $(X_n)_{n\in \mathbb{N}_0}$ on
 $\mathcal{E}$ a <span style="color: green;">**Markov chain**</span> if
+  
 $$P(X_n = x_n \rvert X_{n-1} = x_{n-1},\dots, X_0 = x_0) = P(X_n = x_n \rvert X_{n-1} = x_{n-1}) \quad \forall n \in \mathbb{N}, \forall x_n,\dots,x_0 \in \mathcal{E}$$
+  
 
 **Definition 6.3**\
 Markov chains <span style="color: green;">**Time homegenous**</span> if
+  
 $$P(X_{n+1} = j \rvert X_n = i) = P(X_1 = j \rvert X_0 = i) \quad \forall n \in \mathbb{N}_0,\forall i,j \in \mathcal{E}$$
 
+
 **Definition 6.4**\
-Matrix $P = (p_{ij})_{i,j \in \mathcal{E}}$ of <span style="color: green;">**transition probability**</span> $p_{ij} = Pr(X_1 = j \rvert X_0 = i)$\
+Matrix $ P = (p_{ij})_{i,j \in \mathcal{E}} $ of <span style="color: green;">**transition probability**</span> $ p_{ij} = Pr(X_1 = j \rvert X_0 = i)$\
 Called the <span style="color: green;">**Transition Matrix**</span> for the
 time homogeneous Markov chain. $(X_n)$
 
@@ -578,12 +617,14 @@ $\lambda = (\lambda_j)_{j\in \mathcal{E}} ; \lambda_j  = Pr(X_0 = j)$
 **Definition 6.7**\
 Given Markov chain $(X_n)_{n\in \mathbb{N}_0}$.
 
-$$\text{N-step transition prob matrix - }  P(n) = p_{ij}(n) = P(X_n = j \rvert X_0 = 1)$$
+$$\textcolor{green}{\text{N-step transition prob matrix - }  P(n) = p_{ij}(n) = P(X_n = j \rvert X_0 = 1)}$$
 
 **Proposition 6.9.** - *(Chapman-Kolmogorov equations)*
 
 Suppose $m \geq 0$ and $n \geq 1$
+  
 $$p_{ij}(m+n) = \sum_{l \in \mathcal{E}} p_{il}(m)p_{lj}(n)$$
+
 $$P(m+n) = P(m)P(n) \quad \text{(Matrix form)} \implies P(m) = P^m$$
 
 ## Class Structure
@@ -641,13 +682,18 @@ $j \in \mathcal{E}$ $$T_{j} = \min\{n\geq 1: X_n = j\}$$ First $n$ s.t
 $X_n = j$\
 Say $T_j = \infty$ if never visits state $j$ $\implies T_j$ not a random
 variable since its not real valued.\
-**Definition.** $$\{T_j = n\} = \{X_n = j, X_i \neq j: i < n\}$$
+**Definition.** 
+  
+$$\{T_j = n\} = \{X_n = j, X_i \neq j: i < n\}$$
 
-**Remark 6.27** $$\begin{aligned}
+**Remark 6.27**
+
+$$\begin{aligned}
     f_{ij}(n) &= Pr(T_j = n \rvert X_0 = i)\\
     f_{ij} &= Pr(T_j < \infty \rvert X_0 =i)\\
             &= Pr(\bigcup_{n=1}^{\infty}\{T_j= n\} \rvert X_0 = i)\\
-            &= \sum_{n=1}^{\infty}f_{ij}(n)\end{aligned}$$
+            &= \sum_{n=1}^{\infty}f_{ij}(n)
+  \end{aligned}$$
 
 **Remark 6.28**
 
@@ -673,11 +719,14 @@ $p_{ij} = p_{ij}(1) = f_{ij}(1)$
 
 **Proposition 6.34**\
 State space decomposes
+  
 $$\mathcal{E}= \underbrace{T}_{\text{Transient states}} \cup \underbrace{C_1 \cup C_2 \cup \dots}_{\text{irreducible closed sets of recurrent states}}$$
 
 **Definition 6.36**\
 <span style="color: green;">**Mean recurrence time**</span> of state
-$i \in \mathcal{E}$ $$\mu_i = E(T_i \rvert X_0 = i)$$
+$i \in \mathcal{E}$ 
+  
+$$\mu_i = E(T_i \rvert X_0 = i)$$
 
 **Remark 6.37**
 
@@ -699,11 +748,18 @@ $i \in \mathcal{E}$
 
 **Definition 6.39**\
 $(X_n)$ a markov chain on $\mathcal{E}$ <span style="color: green;">**Hitting time**</span> of set $A \subseteq \mathcal{E}$ a
-random variable $$H^{A} = \min\{n \geq 0: X_n \in A\}$$ We take
+random variable
+
+$$H^{A} = \min\{n \geq 0: X_n \in A\}$$ 
+
+We take
 $\min\emptyset = \infty$\
-<span style="color: green;">**Hitting probability**</span> starting at
-$i \in \mathcal{E}$ $$h_{i}^{A} = Pr(H^A < \infty \rvert X_0 = i)$$ in
-the case $A = \{j\}$ we write $h_i^j$
+
+<span style="color: green;">**Hitting probability**</span> starting at $i \in \mathcal{E}$
+
+$$h_{i}^{A} = Pr(H^A < \infty \rvert X_0 = i)$$ 
+
+in the case $A = \{j\}$ we write $h_i^j$
 
 **Proposition 6.43**\
 $A \subseteq \mathcal{E}$ take vector
