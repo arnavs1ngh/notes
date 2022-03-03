@@ -557,6 +557,7 @@ $$\text{ if } \textcolor{RoyalBlue}{M_{X_i}(t) \xrightarrow[i\to \infty]{} M_X(t
 $$\implies \textcolor{red}{X_n \xrightarrow[]{D} X}$$
 
 **Definition 5.11**\
+<span style="color: green">**Little-o**</span>\
 Say <span style="color: red;">**$f(x) = o(g(x))$ in $\lim_{x\to \infty}$**</span>
 if
   
