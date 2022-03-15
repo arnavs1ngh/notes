@@ -2636,7 +2636,9 @@ $$\mathbf{u} := \begin{bmatrix}
                 u(t_1)\\
                 \vdots\\
                 u(t_n)
-             \end{bmatrix}$$ Assume $u$ twice differentiable with
+             \end{bmatrix}$$
+             
+Assume $u$ twice differentiable with
 uniformly bounded 2nd derivative.\
 $\implies$ error for forwardEuler is
 
