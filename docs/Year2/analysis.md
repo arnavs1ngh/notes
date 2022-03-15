@@ -253,7 +253,7 @@ Then:
 
 3.  <span style="color: red;">If $G\neq 0$ then $\lim_{x\to p}\frac{f(x)}{g(x)} = \frac{F}{G}$</span>
   
-
+-------------------------------------------
 ## <span style="color: white;">1.3</span> Derivative of a map of Euclidean Spaces
 
 ### <span style="color: white;">1.3.1</span> Derivative of a linear map
@@ -316,6 +316,8 @@ $f:\Omega' \to \mathbb{R}^{l}$ differentiable at $g(p) \in \Omega'$\
 Then $h = f \circ g: \Omega \to \mathbb{R}^{l}$, differentiable at $p$, s.t 
   
  $$Dh(p) = D(f(g(p))\circ Dg(p)$$
+
+-------------------------------------------
 
 ## <span style="color: white;">1.4</span> Directional Derivatives
 
@@ -387,6 +389,8 @@ Let $\Omega \subset \mathbb{R}^{n}$ open, $f:\Omega\to \mathbb{R}$. <span style=
     $$D_{i}f(x) := \lim_{t\to 0}\frac{f(x+te_{i}-f(x)}{t}$$
   </center>
   <span style="color: RoyalBlue;">**exist $\forall x \in \Omega$, with each map $x \mapsto D_{i}f(x)$ continuous at $p, \forall i$**</span>$\implies$ <span style="color: red;">**$f$ is differentiable at $p$**</span>
+  
+-------------------------------------------
 
 ## <span style="color: white;">1.5</span> Higher Derivatives
 
@@ -1963,3 +1967,427 @@ $\implies \exists F$ holomorphic in $\Omega$ s.t
 $F\rvert_{\Omega^{+}} = f$
 
 # Meromorphic Functions
+
+
+## Complex Logarithm
+
+
+**Theorem 24**.
+
+
+$\Omega$ simply connected, $1\in \Omega, 0 \not\in \Omega$\
+$\implies$ in $\Omega$ there is a branch of logarithm
+
+$$F(z) = \log_{\Omega}(z)$$
+
+Satisfying
+
+1.  $F$ holomorphic in $\Omega$
+
+2.  $e^{F(z)} =z \ \forall z \in \Omega$
+
+3.  $F(r) = \log(r),\ r\in \mathbb{R}$ close to $1$
+
+
+**Theorem 25**.
+
+
+Holomorphic $f$ has $0$ of order $m$ at $z_0$\
+$\iff$ can be written in form $$f(z) = (z-z_0)^m g(z)$$ $g$ holomorphic
+at $z_0$, $g(z_0) \neq 0$
+
+**Corollary**\
+$0$ s of non-constant holomorphic function are isolated.\
+Every zero has neighbourhood, inside of which it is the only $0$
+
+## Laurent Series
+ 
+**Definition 36**.
+
+
+[**Laurent Series**] for $f$ at $z_0$, where
+series converge
+$$
+\begin{align*}
+f(z) &= \sum_{-\infty}^{\infty} a_{n}(z-z_{0})^{n}\\
+&= \dots + a_{-2}(z-z_{0})^{-2} + a_{-1}(z-z_{0})^{-1} + a_{0} + a_{1}(z-z_{0})^{1} + a_{2}(z-z_{0})^{2} + \dots
+\end{align*}
+$$
+
+
+**Theorem 26**. (Laurent Expansion theorem)
+
+
+$f$ holomorphic in anunulus $D = \{ z: r < |z-z_{0}| < R \}$\
+$\implies f(z)$ expressed in form
+$f(z) = \sum_{-\infty}^{\infty} a_{n}(z-z_{0})^{n}$
+
+$$a_{n} = \frac{1}{2\pi i}\int_{\gamma}\frac{f(\eta)}{(\eta - z_{0})^{n+1}} d\eta$$
+
+$\gamma$ simple,closed piecewise smooth curve in $D$ with $z_0$ in its
+interior.
+
+## Poles of holomorphic functions
+
+ 
+**Definition 37**.
+
+
+$z_0$ a [**singularity**] of complex
+function $f$\
+if $f$ not holomorphic at $z_0$, but every neighbourhood of $z_0$ has at
+least 1 holomorphic point.
+
+ 
+**Definition 38**.
+
+
+Singulartiy $z_0$ is [**isolated**] if
+$\exists$ neighbourhood of $z_0$, where it is the only singularity.
+
+ 
+**Definition 39**.
+
+
+$f$ holomorphic with isolated singularity $z_0$\
+Considering Laurent expansion valid in some annulus
+
+$$f(z) = \sum_{-\infty}^{\infty} a_{n}(z-z_{0})^{n}$$ 
+
+$\implies$
+
+-   $a_n = 0 \ \forall n < 0 \implies z_0$ a [**removable
+    singularity**]
+
+-   $a_n = 0 \forall n < -m, m \in \mathbb{Z}^{+}, a_{-m} \neq 0 \implies z_0$
+    pole of order $m$
+
+-   $a_{n} \neq 0$ for infinitely many negative $n$ $\implies$ $z_0$ a
+    [**essential singularity**]
+
+
+**Theorem 27**.
+
+
+$f$ has pole of order $m$ at $z_0$ $\iff$ written in form
+
+$$f(z) = \frac{g(z)}{(z - z_0)^m}$$
+
+$g$ holomorphic at $z_0$, $g(z_0) \neq 0$
+
+## Residue Theory
+
+ 
+**Definition 40**.
+
+
+Let $f(z) = \sum_{-\infty}^{\infty} a_{n}(z-z_{0})^{n}$ for
+$0 < |z-z_0| < R$ the Laurent series for $f$ at $z_0$\
+[**Residue**] of $f$ at $z_0$ is
+$$\implies Res[f,z_0] - a_{-1}$$
+
+
+**Theorem 28**.
+
+
+$\gamma \subset \{ z : 0< |z-z_0| <R\}$ simple closed piecewise-smooth
+curve containing $z_0$
+$$\implies Res[f,z_0] = \frac{1}{2\pi i}\int_{\gamma}f(z) dz$$
+
+
+**Theorem 29**.
+
+
+$f$ holomorphic function inside and on simple closed piecewise-smooth
+curve $\gamma$ except at the singularities\
+$z_1,\dots,z_n$ in its interior
+
+$$\implies \int_{\gamma}f(z) dz = 2\pi i \sum_{j=1}^{n} Res[f,z_j]$$
+
+## The argument principle
+
+
+**Theorem 30**. (Princple of argument)
+
+
+$f$ holomorphic in open $\Omega$, except for finitely many poles.\
+$\gamma$ simple closed piecewise-smooth curve in $\Omega$ not passing
+through poles or zeroes of $f$
+
+$$\implies \int_{\gamma} \frac{f'(z)}{f(z)}dz = 2\pi i(N-P)$$
+
+  -------------------------- -------------------------
+  $N = \sum order(zeroes)$   $P = \sum order(poles)$
+  -------------------------- -------------------------
+
+
+**Theorem 31**. (Rouche's Theorem)
+
+
+$f,g$ holomorphic in open $\Omega$\
+$\gamma \subset \Omega$ simple closed piecewise-smooth curve with
+interior containing only points of $\Omega$\
+if $|g(z)| < |f(z)|, z\in \gamma$
+
+$$\implies \sum_{0s \text{ of } f+g \text{ in } \gamma} order(zeros) = \sum_{0s \text{ of } f \text{ in } \gamma} order(zeros)$$
+
+ 
+**Definition 41**.
+
+
+Mapping [**open**] if maps open sets $\mapsto$ open sets
+
+
+**Theorem 32**. (Open mapping theorem)
+
+
+if $f$ holomorphic and non-constant in open $\Omega \subset \mathbb{C}$
+$$\implies f \text{ open }$$
+
+**Remark**\
+$f$ open $\implies |f|$ open
+
+
+**Theorem 33**. (Max modulus principle)
+
+
+$f$ non-constant holomorphic in open $\Omega \subset \mathbb{C}$\
+$\implies f$ cannot attain maximum in $\Omega$
+
+**Corollary**\
+$\Omega$ open with closure $\bar{\Omega}$ compact\
+$f$ holomorphic on $\Omega$ and continuous on $\bar{\Omega}$
+$$\sup_{z\in \Omega}|f(z)| \leq \sup_{z\in \bar{Omega}\backslash \Omega}|f(z)|$$
+
+## Evaluation of definite integrals
+
+***This subsection is to be filled in.***
+
+# Harmonic Functions
+
+## Harmonic functions
+
+ 
+**Definition 42**.
+
+
+$\varphi = \varphi(x,y): \mathbb{R}^2 \to \mathbb{R},\ x,y \in \mathbb{R}$\
+$\varphi$ [**harmonic**] in open
+$\Omega \subset \mathbb{R}^2$ if
+
+$$
+\begin{aligned}
+\underbrace{\Delta\varphi(x,y)}_{\text{laplace operator}} &:= \frac{\partial^2 \varphi}{\partial x^2}(x,y) + \frac{\partial^2 \varphi}{\partial y^2}(x,y)\\
+&:= \varphi''_{xx}(x,y) + \varphi''_{yy}(x,y)\\
+&:= 0
+\end{aligned}
+$$
+
+
+**Theorem 34**.
+
+
+$f(z) = u(x,y) + iv(x,y)$ holomorphic in open
+$\Omega\subset \mathbb{C}$\
+$\implies u,v$ harmonic
+
+
+**Theorem 35**. (Harmonic conjugate)
+
+
+$u$ harmonic in open disc $D \subset \mathbb{C}$\
+$\implies \exists$ harmonic $v$ s.t $f = u+ iv$ holomorphic in $D$\
+$v$ the [**harmonic conjugate**] to $u$
+
+**Remark**\
+In simply connected domain $\Omega \subset \mathbb{R}^2$ every harmonic
+function $u$ has harmonic conjugate $v$ s.t
+
+$$v(x,y) = \int_{\gamma} \left( -\frac{\partial u}{\partial y}dx + \frac{\partial u}{\partial x}dy \right)$$
+
+Integral independent of path, by Green's theorem as $u$ harmonic and
+$\Omega$ simply connected.
+
+## Properties of real + imaginary parts of holomorphic function
+
+
+**Theorem 36**.
+
+
+Assume $f = u + iv$ holomorphic on open connected
+$\Omega \subset \mathbb{C}$
+
+$$
+\begin{aligned}
+    u(x,y) &= C\\
+    v(x,y) &= K\\
+    C,K &\in \mathbb{R}
+\end{aligned}
+$$
+    
+If $(1)$ and $(2)$ have same
+solution $(x_0,y_0)$ and $f'(x_0 + iy_0) \neq 0$\
+$\implies$ curve defined by $(1)$ orthogonal to curve defined by $(2)$
+
+## Preservation of angles
+
+ 
+**Definition 43**.
+
+
+Consider smooth curve $\gamma \subset \mathbb{C}$\
+$z(t) = x(t) + iy(t) \quad t \in [a,b]$\
+$\forall t_0 \in [a,b]$ we have direction vector
+
+$$
+\begin{aligned}
+    L_{t_0} &= \{ z(t_0) + tz'(t_0): t \in \mathbb{R}\}\\
+            &= \left\{ x(t_0) = tx'( t_0 + i(y(t_0) + ty'(t_0)) : t \in \mathbb{R}\right\}
+\end{aligned}
+$$
+
+For $\gamma_1, \gamma_2$ curves parameterised by functions
+$z_1(t),z_2(t)$, $t\in[0,1]$ s.t $z_1 (0) = z_2 (0)$\
+Define angle between $\gamma_1, \gamma_2$ as angle between tangents
+
+$$\arg z_{2}'(0) - \arg z_{1}' (0)$$
+
+
+**Theorem 37**. (Angle preservation theorem)
+
+
+$f$ holomorphic in open $\Omega \subset \mathbb{C}$\
+Given $\gamma_1,\gamma_2$ inside $\Omega$, parameterised by
+$z_1 (t), z_2 (t)$\
+Take $z_0 = z_1 (0) = z_2 (0)$ with $z_1 '(0), z_2 '(0), f'(z_0) \neq 0$
+
+$$\underbrace{\arg z_{2}'(t) - \arg z_{1}'(t)}_{\text{angle between } z_{1}(0),z_{2}(0)} \rvert_{t = 0} = \underbrace{\arg f(z_{2}'(t)) - \arg f(z_{1}'(t))}_{\text{angle between }f(z_{1}(0)),f(z_{2}(0))} \rvert_{t = 0} (\mod 2\pi)$$
+
+
+ 
+**Definition 44**.
+
+$\Omega$ open $\subset \mathbb{C}$\
+$f:\Omega \to \mathbb{C}$ [**conformal**] if
+holomorphic in $\Omega$ and if $f'(z) \neq 0 \forall z \in \Omega$\
+Conformal mappings preserve angles.
+
+ 
+**Definition 45**.
+
+
+Holomorphic function a [**local injection**]
+on open $\Omega \subset \mathbb{C}$\
+if
+$$\forall z_0 \in \Omega, \exists D = \{ z: |z-z_0| < r \} \subset \Omega \text{ s.t } f: D\to f(D) \text{ an injection}$$
+
+
+**Theorem 38**.
+
+
+$f:\Omega \to \mathbb{C}$ local injection and holomorphic
+
+$$\implies f'(z) \neq 0 \quad \forall z \in \Omega$$ 
+
+Inverse of $f$
+defined on its range holomorphic\
+$\implies$ inverse of conformal mapping also holomorphic
+
+## Möbius Transformations
+
+ 
+**Definition 46**.
+
+
+[**Mobius Transformation**]/ Bilinear
+transformation a map
+
+$$f(z) = \frac{az + b}{cz + d} \quad a,b,c,d \in \mathbb{C}, ad -bc \neq 0$$
+
+**Remark**\
+Mobius Transformations holomorphic except for simple pole
+$z = -\frac{d}{c}$ with derivative
+
+$$f'(z) = \frac{ad-bc}{(cz+b)^2}$$
+
+$\implies$ mapping conformal for $\mathbb{C}\backslash \{-\frac{d}{c}\}$
+
+
+**Theorem 39**.
+
+
+1.  Inverse of mobius transformation a mobius transformation
+
+2.  Composition of mobius transformations a mobius transformations
+
+Corresponding to matrix multiplication and inverses
+
+ 
+**Definition 47**. (Special/Simple mobius tranformations)
+
+
+- **(M1)**.  $f(z) = az$ Scaling and rotation by $a$
+
+- **(M2)**..  $f(z) = z+ b$ Translation by $b$
+
+- **(M3)**..  $f(z) = \frac{1}{z}$ Inverse and reflection w.r.t real axis
+
+
+**Theorem 40**.
+
+
+Every mobius transformations a composition of **(M1),(M2),(M3)**.
+
+**Corollary**\
+Mobius transformations:
+  - circles $\mapsto$ circles
+  - interior points $\mapsto$ interior points
+  
+
+Straight lines, considered to be circles of infinite radius
+
+-------------------------------------------
+## Cross-ratios Mobius Transformations
+
+
+**Theorem 41**.
+
+
+$w = f(z)$ a Mobius Transformation\
+s.t distinct $(z_1,z_2,z_3) \mapsto (w_1,w_2,w_3)$\
+$$\implies \left( \frac{z-z_1}{z-z_3} \right)\left( \frac{z_2-z_3}{z_2-z_1} \right) = \left( \frac{w-w_1}{w-z_3} \right)\left( \frac{w_2-w_3}{w_2-w_1} \right) \quad \forall z$$
+
+-------------------------------------------
+## Conformal mapping of half-plane to unit disc
+
+
+**Theorem 42**.
+
+$$\mathbb{D} = \{z: |z| <1\}$$  
+
+$$\mathbb{H} = \{z = x +iy : Im(z) = y > 0\}$$
+
+  - $w = f(z) = \frac{i-z}{i+z}$  
+  - $g(w) =  \frac{1-w}{1+w}$
+
+-------------------------------------------
+## Riemann mapping theorem
+
+ 
+**Definition 48**.
+
+
+$\Omega \subset \mathbb{C}$ [**proper**] if
+non-empty and $\Omega\neq \mathbb{C}$
+
+
+**Theorem 43**.
+
+
+$\Omega$ proper and simply connected\
+if $z_0 \in \Omega \implies \exists !$ conformal
+$f: \Omega \to \mathbb{D}$ s.t $f(z_0) = 0$ and $f'(z_0) > 0$
+
+**Corollary**\
+Any $2$ simply connected open subsets in $\mathbb{C}$ conformally
+equivalent.
