@@ -1074,13 +1074,15 @@ $Q$ non-degenerate if $(,)$ non-degenerate.
     $$(x,y) = x^TAy \qquad \text{for } A = A^T, (x,y \in V)$$
     </center>
   For $\mathbf{x} = (x_1,\dots,x_n)^T$ 
-  <center>
-  $$\begin{aligned}
+
+  $$
+  \begin{aligned}
             Q(x) &= x^TAx\\
             &= \sum_{i,j} a_{ij}x_{i}x_{j}\\
             &= \sum_{i=1}^{n}a_{ii}x_{i}^{2} + 2\sum{i<j}a_{ij}x_{i}x_{j}
-        \end{aligned}$$
-  </center>
+  \end{aligned}
+  $$
+
 
 A general homogeneous quadratic polynomial in $x_1,\dots,x_n$ ( all terms of degree 2)
 
@@ -1134,9 +1136,9 @@ forms a subgroup of general linear group $GL(V)$
 ***Equivalently;***
   
 fix basis $B$ of $V$, $A$ matrix of $f$ w.r.t $B$ if $[T]_{B} = X \implies T \in I(V,f) \iff X^TAX = A$
-  <center>
+
 $$\implies I(v,f) \cong \{X \in GL(n,F) : X^TAX = A\}$$
-  </center>
+
 
 -   $f$ skew-symmetric $\implies$ there is only one form (up to
     equivalence) so we get one isometry group; Classical  <span style="color: green;">***symplectic
@@ -1145,4 +1147,1402 @@ $$\implies I(v,f) \cong \{X \in GL(n,F) : X^TAX = A\}$$
 -   $f$ symmetric $\implies$ there are many forms, forming the isometry
     groups; the classical  <span style="color: green;">***orthogonal groups***</span> $O(V,f)$
 
+---------
+# NUMERICAL ANALYSIS
+
+
+
+
+
+# Computing with Numbers
+
+### Numbers
+
+#### Binary Representation
+
+ 
+**Definition 1**.
+
+
+$B_0,\dots,B_p \in {0,1}$ denote $x\in \mathbb{N}_{0}$ in [**binary
+format**]
+
+$$(B_p\ldots B_1B_0)_2 := 2^pB_p + \cdots + 2B_1 + B_0$$
+
+For $b_1,b_2,\ldots \in \{0,1\}$, Denote $x\in\mathbb{R}^{+}$ in binary
+format by:
+
+$$(B_p \ldots B_0.b_1b_2b_3\ldots)_2 = (B_p \ldots B_0)_2 + {b_1 \over 2} + {b_2 \over 2^2} + {b_3 \over 2^3} + \cdots$$
+
+#### Integers
+
+ 
+**Definition 2**. *[**Ring of integers modulo
+$m$**]*
+
+
+$${\mathbb Z}_{m} := \{0 \ ({\rm mod}\ m), 1 \ ({\rm mod}\ m), \ldots, m-1 \ ({\rm mod}\ m) \}$$
+Integers with $p-$ bits represent elements in $\mathbb{Z}_{2^p}$\
+Integer arithmetic equivalent to arithmetic module $2^p$
+
+##### Signed Integer
+
+Use **Two's complement** convention.
+
+$$
+\text{Integer is}
+\begin{cases}
+\text{negative}, & \text{if 1st bit} = 1\\
+\text{positive}, & \text{if 1st bit} = 0\\
+\end{cases}
+$$
+
+
+$2^p - y$ interpreted as $-y$\
+e.g
+
+     11001001 = -55      01001001 = 73 
+
+\
+*Overflow*\
+Given arithmetic is modulo $2^p$ we often get overflow errors
+
+    typemax(Int8) + Int8(1)# returns typemin(Int8)               
+    127 + 1 = -128
+
+    01111111
+    00000001+ 
+    --------
+    =10000000
+
+##### Variable bit representation
+
+Can represent integers using a variable number of bits, hence avoiding
+overflow.\
+In Julia we have `BigInt`s created by `big()`
+
+##### Division
+
+We have $2$ types of division
+
+1.  Integer division $(\div)$\
+    $5 \div 2$ equivalent to `div(5,2)` rounds down returning `2`
+
+2.  Standard Division $(/)$\
+    Returns floating-point number\
+    `5 / 2`\
+    Can also create rationals using $(//)$\
+    `(1//2) + (3//4)`
+
+Rational arithmetic often leads to overflow so combine it with `big()`
+often.
+
+#### Floating Point numbers
+
+Subset of real numbers representable using a fixed number of bits.
+
+ 
+**Definition 3**. *[**Floating-point
+numbers**]*
+
+
+Given integers\
+$\sigma$ - (Exponential shift)\
+$Q$ - (Number of exponent bits)\
+$S$ - (The precision)\
+Define set of floating-point numbers as
+$$F_{\sigma,Q,S} := F^{normal}_{\sigma,Q,S} \cup F^{sub-normal}_{\sigma,Q,S} \cup F^{special}$$
+With each component as such $$\begin{aligned}
+F^{normal}_{\sigma,Q,S} &= \{ \pm 2^{q-\sigma} \times (1.b_1b_2\dots b_S)_2 : 1 \leq q < 2^Q -1 \}\\
+F^{sub-normal}_{\sigma,Q,S} &= \{\pm 2^{1-\sigma} \times (0.b_1b_2b_3\ldots b_S)_2\}.\\
+F^{special} &= \{-\infty,\infty,\texttt{NaN}\}\end{aligned}$$
+
+Floating point numbers stored in $1+ Q +S$ total bits as such
+$$\textcolor{cyan}{s}\textcolor{orange}{q_{Q-1}\ldots q_0}\textcolor{magenta}{b_1 \ldots b_S}$$
+With first bit the [sign bit]{style="color: cyan"}: 0 positive, 1
+negative\
+Bits $q_{Q-1}\ldots q_0$ the [exponent bits]{style="color: orange"} -
+binary digits of unsigned integer $q$\
+Bits $b_1 \ldots b_S$ the [significand bits]{style="color: magenta"}.\
+For $q = (q_{Q-1}\ldots q_0)_2$
+
+1.  $1 \leq q < 2^Q-1$ - Bits represent normal number
+    $$x = \pm 2^{q-\sigm} \times (1.b_1b_2b_3\ldots b_S)_2$$
+
+2.  $q = 0$. (All bits are $0$) - Bits represent sub-normal number.
+    $$x = \pm 2^{1-\sigma} \times (0.b_1b_2b_3\ldots b_S)_2.$$
+
+3.  $q = 2^Q -1$ (All bits are $1$) - Bits represent special number.
+    $\pm \infty$
+
+##### IEEE Floating-point numbers
+
+ 
+**Definition 4**. *[**IEEE Floating-point numbers**
+]*
+
+
+IEEE has $3$ standard floating-point formats defined as such with
+corresponding types in Julia $$\begin{aligned}
+    F_{16} &:= F_{15,5,10} &    \texttt{Float16}-\text{Double-precision}\\
+    F_{32} &:= F_{127,8,23} &   \texttt{Float32}-\text{Single-precision}\\
+    F_{64} &:= F_{1023,11,52} & \texttt{Float64}-\text{Half-precision}\end{aligned}$$
+`Float64` - created by using decimals. e.g `1.0`\
+`Float32` - created by using `f0` e.g `1f0`\
+
+##### Special normal numbers
+
+\
+
+ 
+**Definition 5**. *[**Machine epsilon** ]*
+
+
+\
+Denoted: $$\epsilon_{m,S} := 2^{-S}$$
+$$\min |F_{\sigma,Q,S}^{\rm normal}| = 2^{1-\sigma}$$ Largest (postive)
+normal number is
+$$\max F_{\sigma,Q,S}^{\rm normal} = 2^{2^Q-2-\sigma} (1.11\ldots1)_2 = 2^{2^Q-2-\sigma} (2-\epsilon_{\rm m})$$
+
+##### Special Numbers
+
+ 
+**Definition 6**. *[**Not a Number**]*
+
+
+We have `NaN` represent \"not a number\"
+
+#### Arithmetic
+
+Arithmetic on floating-points exact up to rounding.
+
+ 
+**Definition 7**. *[**Rounding**]*
+
+
+$$\begin{aligned}
+    \rm fl^{\rm UP}_{\sigma_Q,S}: \mathbb{R}\to \rm F_{\sigma,Q,S} & \text{ rounds up}\\
+    \rm fl^{\rm DOWN}_{\sigma_Q,S}: \mathbb{R}\to F_{\sigma,Q,S} & \text{ rounds down}\\
+    \rm fl^{\rm Nearest}_{\sigma_Q,S}: \mathbb{R}\to F_{\sigma,Q,S} & \text{ rounds nearest}\end{aligned}$$
+In case of tie, returns floating-point number whose least significand
+bit is equal to 0\
+$fl^{nearest}$ the default rounding mode. Exempt excess notation when
+implied by context.\
+Rounding modes in Julia we are going to use:
+`RoundUp, RoundDown, RoundNearest`\
+Use `setrounding(Float__, roundingmode`) to change mode in a chunk of
+code.
+
+$$\begin{aligned}
+x\oplus y &:= {\rm fl}(x+y) \\
+x\ominus y &:= {\rm fl}(x - y) \\
+x\otimes y &:= {\rm fl}(x * y) \\
+x\oslash y &:= {\rm fl}(x / y)\end{aligned}$$
+
+Each of the above defined in IEEE arithmetic.\
+*Warning* These operations are not **associative**
+$(x \oplus y) \oplus z \neq x \oplus (y \oplus z)$
+
+#### Bounding errors in floating-point arithmetic
+
+ 
+**Definition 8**. *[**Absolute/relative
+error**]*
+
+
+\
+if $\tilde{x} = x + \delta_{rma} = x(1+\delta_r)$
+
+1.  $\lvert\delta_a\rvert$ - [**absolute
+    error**]
+
+2.  $\delta_r$ - [**relative error**]
+
+ 
+**Definition 9**. *[**Normalised Range**]*
+
+
+Normalised range ${\cal N}_{\sigma,Q,S} \subset {\mathbb R}$ - subset of
+reals, that lies between smallest and largest normal floating-point
+number:
+
+$${\cal N}_{\sigma,Q,S} := \{x : \min |F_{\sigma,Q,S}| \leq |x| \leq \max F_{\sigma,Q,S} \}$$
+
+**Proposition.** - *Rounding arithmetic*\
+if $x \in \cal{N} \implies$
+$${\rm fl}^{\rm mode}(x) = x (1 + \delta_x^{\rm mode})$$ With relative
+error: $$\begin{aligned}
+|\delta_x^{\rm nearest}| &\leq {\epsilon_{\rm m} \over 2} \\
+|\delta_x^{\rm up/down}| &< {\epsilon_{\rm m}}.\end{aligned}$$
+
+##### Arithmetic and Special numbers
+
+We have the following identiites
+
+    1/0.0        #  Inf         Inf*0        #  NaN         NaN*0        #  NaN
+    1/(-0.0)     # -Inf         Inf+5        #  Inf         NaN+5        #  NaN
+    0.0/0.0      #  NaN         (-1)*Inf     # -Inf         1/NaN        #  NaN
+                                1/Inf        #  0.0         NaN == NaN   #  false
+                                1/(-Inf)     # -0.0         NaN != NaN   #  true
+                                Inf - Inf    #  NaN
+                                Inf ==  Inf  #  true
+                                Inf == -Inf  #  false
+
+##### Special functions
+
+Functions such as `cos, sin, exp` designed to have *relative accuracy*\
+e.g for `s = sin(x)` we satisfy
+$$s = sin(x)(1+\delta) \quad \lvert\delta\rvert < c\epsilon_m$$ for
+reasonable small $c > 0$ given $x \in F^{\rm normal}$
+
+#### High-precision floating-point numbers
+
+Possible to set precision using `BigFloat` type created using `big()`\
+Use to find rigorous bound on a number.\
+e.g
+
+    setprecision(4_000) # 4000 bit precision
+    setrounding(BigFloat, RoundDown) do
+      big(1)/3
+    end, setrounding(BigFloat, RoundUp) do
+      big(1)/3
+    end
+
+    (0.3333333333333333333333333333333333333333333333333333333333333333333333333333305,
+     0.3333333333333333333333333333333333333333333333333333333333333333333333333333348)
+
+### Differentiation
+
+Considering functions:
+
+1.  *Black-box function*
+    $f^{\rm FP}: D \to F,\ D \subset F \equiv F_{\sigma,Q,S}$\
+    Only know function pointwise, $F$ discrete $\implies f^{\rm FP}$ not
+    differentiable rigorously.\
+    Assume $f^{\rm RP}$ approximates a differentiable function $f$ with
+    controlled error.
+
+2.  *Generic function*\
+    A formula that can be evaluated on arbitrary types. e.g polynomial
+    $p(x) = p_0 + p_1 x + \dots + p_{n}x^{n}$\
+    Consider both differentiable
+    $f:D \to \mathbb{R},\ D \subset \mathbb{R}$ and floating point
+    evaluated $f^{\rm FP}: D \cap F \to F$, which is actually computed.
+
+3.  *Graph Function*\
+    Function built by composition of basic \"kernels\" with known
+    differentiability properties.
+
+#### Finite-differences
+
+$$f'(x) = \lim_{h \rightarrow 0} {f(x+h) - f(x) \over h} \implies f'(x) \approx {f(x+h) - f(x) \over h}$$
+for sufficiently small $h$\
+Approximation uses only *black-box* notion of function.\
+**Proposition.** - Bounding the derivative\
+$$\left|f'(x) - {f(x+h) - f(x) \over h}\right| \leq {M \over 2} h$$
+where $M = \sup_{x \leq t \leq x+h} |f''(t)|$. Given by Taylor's
+theorem.\
+Can also use left-side and central differences to compute derivatives.
+
+-   $f'(x) \approx {f(x) - f(x-h) \over h}$
+
+-   $f'(x) \approx {f(x + h) - f(x - h) \over 2h}$
+
+##### Bounding the error
+
+ 
+**Theorem 1**. *(Finite differences error bound)*
+
+
+$f$ twice-differentiable in neighbourhood of $x$\
+Assume $f^{\rm FP} = f(x) + \delta_{x}^{f}$ has uniform absolute
+accuracy in that neighbourhood i.e
+$|\delta_x^f| \leq c \epsilon_{\rm m}$ for fixed constant $c$.\
+Take $h = 2^{-n}$ for $n \leq S$ (no. of Significand bits) and $|x|<1$\
+Finite difference approximation then satisfies
+$$(f^{\rm FP}(x + h) \ominus f^{\rm FP}(x)) \oslash h = f'(x) + \delta_{x,h}^{\rm FD}$$
+Where
+$$|\delta_{x,h}^{\rm FD}| \leq {|f'(x)| \over 2} \epsilon_{\rm m} + M h +  {4c \epsilon_{\rm m} \over h}$$
+for $M = \sup_{x \leq t \leq x+h} |f''(t)|$.\
+3 terms in bound tell us behaviour.
+
+**Heuristic** - (finite differences with floating point step.\
+Choose $h$ proportional to $\sqrt{\epsilon_m}$
+
+#### Dual numbers
+
+ 
+**Definition 10**. *[**Dual numbers**]*
+
+
+Dual numbers, $\mathbb{D}$ Commutative ring over reals generated by 1
+and $\epsilon$ with $\epsilon^2 = 0$, written $a + b \epsilon$
+
+##### Connection with differentiation
+
+Dual numbers not prone to growth due to round-off errors.
+
+ 
+**Theorem 2**. *(Polynomials on dual numbers)*
+
+
+$p$ a polynomial. $$p(a+b\epsilon) = p(a) + b'p(a)\epsilon$$
+
+ 
+**Definition 11**. *[**Dual extension**]*
+
+
+$f$ real-valued function differentiable at $a$, a dual extension at $a$
+if $$f(a + b \epsilon) = f(a) + b f'(a) \epsilon$$
+
+**Lemma** - (Product and Chain rule)\
+$f$ a dual extension at $g(a)$, $g$ a dual extension at $a$
+$$\begin{aligned}
+\implies q(x) := f(g(x)) & \text{ a dual extension at a}\end{aligned}$$
+$f,g$ dual extensions at $a$ $$\begin{aligned}
+\implies r(x) := f(x)g(x) & \text{ a dual extension at a}\end{aligned}$$
+
+# Computing with Matrices
+
+### Structured Matrices
+
+Consider the following structures
+
+1.  *Dense*\
+    Considered unstructured, need to store all entries in vector or
+    Matrix.\
+    Reduces directly to standard algebraic operations
+
+2.  *Triangular*\
+    A matrix upper of lower triangular, can invert immediately with
+    back-substitution\
+    Store as dense and ignore upper/lower entries in practice.
+
+3.  *Banded*\
+    A matrix zero, appart from entries a fixed distance from diagonal.\
+    Have diagonal, bidiagonal and tridiagonal matrices.
+
+4.  *Permutation*\
+    Permutation matrix permutes rows of a vector
+
+5.  *Orthogonal*\
+    $Q$ orthogonal satisfies $Q^T Q = I$, hence easily inverted
+
+#### Dense vectors and matrices
+
+*Storage in memory*
+
+ multicols
+2
+
+-   `Vector` of primitive type\
+    stored consecutively in memory.
+
+-   `Matrix` stored consecutively in memory\
+    going down column-by column. (column-major format)
+
+```{=html}
+<!-- -->
+```
+    A = [1 2;       vec(A) = 1
+         3 4;                3
+         5 6]                5
+                             2
+                             4
+                             6
+
+
+Transposing `A` done lazily, `A'` stores entries by row\
+**Matrix multiplication** done as expected `A*x`\
+*Implemented 2 ways*
+
+ multicols
+2 Using Traditional definition\
+$\begin{bmatrix} \sum_{j=1}^n a_{1,j} x_j \\ \vdots \\ \sum_{j=1}^n a_{m,j} x_j \end{bmatrix}$
+
+Or going column-by-column\
+$x_1 \mathbf{a}_1  + \cdots + x_n \mathbf{a}_n$
+
+
+Both are $O(mn)$ operations, but column-by-column faster due to more
+efficient memory accessing.\
+**Solving a linear system** done by `\`
+
+    A = [1 2 3;         returns # 41.000000000000036
+         1 2 4;                  -17.000000000000014
+         3 7 8]                   1.0
+    b = [10; 11; 12]
+    A \ b
+
+#### Triangular Matrices
+
+Represented as dense square matrices, where we ignore entries
+above/below diagonal.
+
+ multicols
+3
+
+    A = [1 2 3;
+         4 5 6;
+         7 8 9]
+
+    U = UpperTriangular(A)
+    #  1  2  3
+          5  6
+             9
+
+    L = LowerTriangular(A)
+    # 1  
+      4  5  
+      7  8  9
+
+
+We have `U,L` both storing all the data of `A`\
+**Solving upper-triangular system** $$\begin{bmatrix}
+u_{11} & \cdots & u_{1n} \\ & \ddots & \vdots \\ && u_{nn}
+\end{bmatrix} \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix} = 
+\begin{bmatrix} b_1 \\ \vdots \\ b_n \end{bmatrix}$$ by computing
+$x_n, x_{n-1}, \ldots, x_1$ by the back-substitution formula:
+$$x_k = {b_k - \sum_{j=k+1}^n u_{kj} x_j \over u_{kk}}$$\
+Multiplication and solving linear system $O(n^2)$ for a triangular
+matrix.
+
+#### Banded Matrices
+
+ 
+**Definition 12**. *[**Bandwidths**]*
+
+
+Matrix $A$ has
+
+-   [**lower-bandwidth, $l$**] if
+    $A[k,j] = 0 \forall k-j>l$
+
+-   [**upper-bandwidth, $u$**] if
+    $A[k,j] = 0 \forall j-k>u$
+
+-   [**strictly lower-bandwidth**] if it has
+    lower-bandwidth $l$ and $\exists j$ such that $A[j+l,j] \neq 0$
+
+-   [**strictly upper-bandwidth**] if it has
+    upper-bandwidth $u$ and $\exists k$ such that $A[k,k+u] \neq 0$
+
+ 
+**Definition 13**. *[**Diagonal**]*
+
+
+Matrix diagonal if square and $l=u=0$ the bandwidths.\
+Stored as `Vector`s in Julia.\
+Perform multiplication and solving linear systems in $O(n)$ operations.\
+
+ 
+**Definition 14**. *[**Bidiagonal**]*
+
+
+Matrix bidiagonal if square and has bandwidths
+
+-   $(l,u) = (1,0)$ $\implies$ lower-bidiagonal
+
+-   $(l,u) = (0,1)$ $\implies$ upper-bidiagonal
+
+ multicols
+2
+
+    Bidiagonal([1,2,3], [4,5], :L)
+    # 1  ⋅  ⋅
+      4  2  ⋅ 
+         5  3
+
+    Bidiagonal([1,2,3], [4,5], :U)
+    # 1  4   
+         2  5
+            3
+
+
+Multiplication and solving linear systems still $O(n)$ operations.
+
+ multicols
+2
+
+ 
+**Definition 15**. *[**Tridiagonal**]*
+
+
+Matrix tridiagonal if square and has bandwidths $l=u=1$
+
+    Tridiagonal([1,2], [3,4,5], [6,7])
+    #  3  6  ⋅
+       1  4  7
+          2  5    
+
+
+#### Permutation Matrices
+
+Matrix representation of the symmetric group $S_n$ acting on
+$\mathbb{R}^n$\
+$\forall \sigma \in S_n$ a bijection between $\{1,2,\dots,n\}$ and
+itself.\
+*Cauchy Notation* $$\begin{pmatrix}
+ 1 & 2 & 3 & \cdots & n \cr
+ \sigma_1 & \sigma_2 & \sigma_3 & \cdots & \sigma_n
+ \end{pmatrix}$$ Where
+$\{\sigma_1,\ldots,\sigma_n\} = \{1,2,\ldots,n\}$\
+Inverse permutation given by $\sigma^{-1}$, found by swapping rows of
+cauchy notation and reordering.\
+*Permuting a vector*\
+$\mathbf{\sigma} = [\sigma_1,\dots,\sigma_n]^T$
+$$\mathbf{v}[\mathbf{\sigma}] = \begin{bmatrix}v_{\sigma}\\ \vdots \\ v_{\sigma_n} \end{bmatrix}$$
+Obviously $\mathbf{v[\sigma][\sigma^{-1}] = v}$\
+
+ 
+**Definition 16**. *[**Permutation
+Matrix**]*
+
+
+Entries of $P_{\sigma}$ given by
+$$P_{\sigma}[k,j] = e^{T}_{k} P_\sigma e_{j} = e_{k}^{T} e_{\sigma^{-1}_j} = \delta_{k,\sigma^{-1}_j} = \delta_{\sigma_k,j}$$
+where $\delta_{k,j}$ is the Kronecker delta\
+Permutation matrix equal to identity matrix with rows permuted.\
+**Proposition** - Inverse of Permutation Matrix\
+$$P^{T}_{\sigma} = P_{\sigma^{-1}} = P_{\sigma}^{-1} \implies P_{\sigma} \text{ orthogonal }$$
+
+#### Orthogonal Matrices
+
+ 
+**Definition 17**. *[**Orthogonal Matrix**]*
+
+
+Square matrix orthogonal if $Q^T Q = Q Q^T = I$
+
+Special cases
+
+##### Simple Roations
+
+ 
+**Definition 18**. *[**Simple Rotation**]*
+
+
+$2\times2$ rotation matrix through angle $\theta$
+$$Q_{\theta} := \begin{bmatrix} \cos \theta & -\sin \theta \cr \sin \theta & \cos \theta \end{bmatrix}$$
+
+ 
+**Definition 19**. *[**two-arg arctan**]*
+
+
+two-argument arctan function gives angle $\theta$ through point
+$[a,b]^T$
+$${\rm atan}(b,a) := \begin{cases} {\rm atan}{b \over a} & a > 0 \\
+                            {\rm atan}{b \over a} + \pi & a < 0\hbox{ and }b >0 \\
+                            {\rm atan}{b \over a} + \pi & a < 0\hbox{ and }b < 0 \\
+                            \pi/2 & a = 0\hbox{ and }b >0 \\
+                            -\pi/2 & a = 0\hbox{ and }b < 0 
+                            \end{cases}$$
+`atan(-1,-2) # angle through [-2,-1]`
+
+**Proposition** - *Rotating vector to unit axis*
+$$Q = {1 \over \sqrt{a^2 + b^2}}\begin{bmatrix}
+ a & b \cr -b & a
+\end{bmatrix}$$ Satisfies
+$Q \begin{bmatrix} a \\ b \end{bmatrix} = \sqrt{a^2 + b^2} \begin{bmatrix} 1 \\ 0 \end{bmatrix}$
+
+##### Reflections
+
+ 
+**Definition 20**. *[**Reflection Matrix**]*
+
+
+Given vector $\mathbf{v}$ satisfying $||v|| = 1$, reflection matrix is
+orthogonal matrix. $$Q_\mathbf{v} := I - 2 \mathbf{v}\mathbf{v}^T$$
+Reflections in direction of $\mathbf{v}$
+
+**Proposition** - *Properties of reflection matrix*
+
+1.  1\. Symmetry: $Q_v = Q_{v}^{T}$
+
+2.  2\. Orthogonality: $Q_{v}^{⊤} Q_{v} = I$
+
+3.  2\. ${v}$ is an eigenvector of $Q_{v}$ with eigenvalue $-1$
+
+4.  4\. $Q_{v}$ is a rank -1 perturbation of $I$
+
+5.  3\. $\det Q_{v} = -1$
+
+ 
+**Definition 21**. *[**Householder
+reflection**]*
+
+
+Given vector $\mathbf{x}$ define Householder reflection.
+$$Q_{\mathbf{x}}^{\pm,H} := Q_{\mathbf{w}}$$ For
+$\mathbf{y} = \mp ||\mathbf{x}|| e_1 + x$,
+$\mathbf{w = \frac{y}{||y||}}$\
+Default choice in sign is $$Q_{x}^{H} := Q_{x}^{-sign(x_1),H}$$
+
+**Lemma** $$Q_{x}^{\pm,H}\mathbf{x} = \pm ||\mathbf{x}||e_1$$
+
+### Decompositions and Least Squares
+
+Consider decompositions of matrix into products of structured matrices.
+
+1.  *$QR$ Decomposition* (For square or rectangular matrix
+    $A\in \mathbb{R}^{m\times n},\ m \geq n$)
+    $$A = QR = \underbrace{\begin{bmatrix} \mathbf{q}_1 | \cdots | \mathbf{q}_m \end{bmatrix}}_{m \times m} \underbrace{\begin{bmatrix} \times & \cdots & \times \\ & \ddots & \vdots \\ && \times \\ &&0 \\ &&\vdots \\ && 0 \end{bmatrix}}_{m \times n}$$
+    $Q$ orthogonal and $R$ right/upper-triangular
+
+2.  *Reduced $QR$ Decomposition*
+    $$A = \hat{Q}\hat{R} = \underbrace{\begin{bmatrix} \mathbf{q}_1 | \cdots | \mathbf{q}_m \end{bmatrix}}_{m \times m}\begin{bmatrix} \times & \cdots & \times\\ & \ddots & \vdots\\ & & \times \end{bmatrix}$$
+    $Q$ has orthogonal columns, and $\hat{R}$ upper-triangular.\
+
+3.  *PLU Decomposition* (For square Matrix) $$A = P^T LU$$ $P$ a
+    permutation matrix, $L$ lower triangular and $U$ upper triangular
+
+4.  *Cholesky Decomposition* (For square, symmetric positive definite
+    matrix ($x^T Ax > 0 \forall x \in \mathbb{R}^n, x \neq 0$))
+    $$A = LL^T$$
+
+Useful as component pieces easily inverted on a computer.
+$$\begin{aligned}
+A = P^{T}LU &\implies\ A^{-1}\mathbf{b} = U^{-1} L^{-1} P \mathbf{b}\\
+A = QR &\implies\ A^{-1}\mathbf{b} = R^{-1} Q^\top \mathbf{b} \\
+A = L L^⊤ &\implies\ A^{-1}\mathbf{b} = L^{-⊤} L^{-1} \mathbf{b}\end{aligned}$$
+
+#### QR and least squares
+
+Consider matrices with more rows than columns.\
+QR decomposition contains reduced QR decomposition within it
+$$A = QR = \begin{bmatrix} \hat{Q} |\mathbf{q}_{n+1} | \cdots | \mathbf{q}_m \end{bmatrix} \begin{bmatrix} \hat{R} \\  \mathbf{0}_{m-n \times n} \end{bmatrix} = \hat{Q}\hat{R}.$$
+*Least squares problem*\
+Find $\vec{x} \in \mathbb{R}^n$ s.t $||A\vec{x} - \vec{b}||$ is
+minimised\
+For $m=n$ and $A$ invertible we simply have $\vec{x} = A^{-1}\vec{b}$.
+$$\| A\mathbf{x} - \mathbf{b} \| = \| Q R\mathbf{x} - \mathbf{b} \| = \| R \mathbf{x} - Q^{\top} \mathbf{b} \| = \left \| 
+\begin{bmatrix} \hat{R} \\ \mathbf{0}_{m-n \times n} \end{bmatrix} \mathbf{x} - \begin{bmatrix} \hat{Q}^{\top} \\ \mathbf{q}_{n+1}^{\top} \\ \vdots \\ \mathbf{q}_{m}^{\top} \end{bmatrix} \mathbf{b} \right \|$$
+To minimise this norm, suffices to minimise
+$$\| \hat{R}\mathbf{x} - \hat{Q}^{\top}\mathbf{b}\| \implies \mathbf{x} = \hat{R}^{-1}\hat{Q}^{\top}\mathbf{b}$$
+Provided column rank of $A$ is full, we have $\hat{R}$ invertible
+
+#### Reduced QR and Gram-Schmidt
+
+##### Computing QR decomposition
+
+1.  Write
+    $A = \begin{bmatrix} \mathbf{a}_1 | \dots | \mathbf{a}_n \end{bmatrix}$,
+    $a_k \in \mathbb{R}^m$\
+    Assume $A$ has full column rank, $a_k$ all linearly independent.\
+    Column span of first $j$ columns in $A$ same as first $j$ columns in
+    $\hat{Q}$
+    $$span(\mathbf{a}_1,\dots,\mathbf{a}_n) = span(\mathbf{q}_1,\dots,\mathbf{q}_n)$$
+
+2.  if
+    $\mathbf{v} \in span(\mathbf{a}_1,\dots,\mathbf{a}_n) \implies \forall \mathbf{c} \in \mathbb{R}^j$
+    $$\begin{aligned}
+        \mathbf{v} &= \begin{bmatrix} \mathbf{a}_1 | \dots | \mathbf{a}_j \end{bmatrix} \mathbf{c}\\
+                   &= \begin{bmatrix} \mathbf{q}_1 | \dots | \mathbf{q}_j\end{bmatrix}\hat{R}[1:j,1:j]\mathbf{c}\\
+                   &\in span(\mathbf{q}_1,\dots,\mathbf{q}_n)
+        \end{aligned}$$
+
+3.  if $\mathbf{w} \in span(\mathbf{q}_1,\dots,\mathbf{q}_n)$, we have
+    for $\mathbf{d} \in \mathbb{R}^j$ $$\begin{aligned}
+            \mathbf{w} &= \begin{bmatrix} \mathbf{q}_1 | \dots | \mathbf{q}_j \end{bmatrix}\mathbf{d}\\
+                       &= \begin{bmatrix} \mathbf{a}_1 | \dots | \mathbf{a}_j\end{bmatrix}\hat{R}[1:j,1:j]^{-1}\mathbf{d}\\
+                       &\in span(\mathbf{a}_1,\dots,\mathbf{a}_j)
+        \end{aligned}$$
+
+We can find an orthogonal basis using Gram-Schmidt.
+
+1.  By assumption of full rank of $A$
+    $$span(\mathbf{a}_1,\dots,\mathbf{a}_n) = span(\mathbf{q}_1,\dots,\mathbf{q}_n)$$
+
+2.  $\mathbf{q}_1,\dots,\mathbf{q}_n$ orthogonal
+    $$\mathbf{q}^{T}_{k}\mathbf{q}_{l} = \delta_{kl}$$
+
+3.  For $k,l < j$. Define
+    $$\mathbf{v}_j := \mathbf{a}_{j} - \sum_{k=1}^{j-1} \underbrace{\mathbf{q}^{T}_{k}\mathbf{a}_{j}}_{\mathbf{r}_{kj}}\mathbf{q}_k$$
+
+4.  For $k < j$
+    $$\mathbf{q}_k^\top \mathbf{v}_j = \mathbf{q}_k^\top \mathbf{a}_j - \sum_{k=1}^{j-1} \underbrace{\mathbf{q}_k^\top \mathbf{a}_j}_{\mathbf{r}_{kj}} \mathbf{q}_k^\top \mathbf{q}_k = 0.$$
+
+5.  Define further
+    $$\mathbf{q}_j = \frac{\mathbf{v}_j}{\|\mathbf{v}_j\|}$$ Define
+    $\mathbf{r}_{jj} := \|\mathbf{v}_j\|$, rearrange definition to have
+    $$\mathbf{a}_{j} = \begin{bmatrix} \mathbf{q}_{1} | \dots | \mathbf{q}_{j} \end{bmatrix} \begin{bmatrix} r_{1j} \\ \vdots \\ r_{jj} \end{bmatrix}$$
+    $$\begin{bmatrix} \mathbf{a}_1|\cdots|\mathbf{a}_j \end{bmatrix} 
+        \begin{bmatrix} r_{11} & \cdots & r_{1j} \\ & \ddots & \vdots \\ && r_{jj} \end{bmatrix}$$
+    Compute reduced QR decomposition column-by-column $\implies$ apply
+    for $j=n$ to complete decomposition.
+
+**Complexity and Stability**\
+We have a total complexity of $O(mn^{2})$ operations,\
+Gram-Schmidt algorithm is unstable, rounding errors in floating point
+accumulate, $\implies$ lose orthogonality.
+
+#### Householder reflections and QR
+
+Consider multiplication by Householder reflection corresponding to first
+column. $$Q_1 := Q_{a_1}^{H}$$ $$Q_1 A = \begin{bmatrix}
+            \times & \times & \cdots & \times \\
+            & \times & \cdots & \times \\
+            & \vdots & \ddots & \vdots \\
+            & \times & \cdots & \times 
+        \end{bmatrix}
+        = 
+        \begin{bmatrix}
+            r_{11} & r_{12} & \cdots & r_{1n} \\
+            & \mathbf{a}_2^1 & \cdots & \mathbf{a}_n^1   
+        \end{bmatrix}
+    \qquad
+    r_{1j} := (Q_1 \mathbf{a}_j)[1] \quad \mathbf{a}_1^j := (Q_1 \mathbf{a}_j)[2:m]$$
+Note that $r_{11} = -\sign(a_11)\|a_1\|$ with all entries of
+$\mathbf{a}^{1}_{1}$ zero.\
+Now consider,
+$$Q_2 := \begin{bmatrix} 1  \\ & Q_{\mathbf{a}_2^1}^{\rm H} \end{bmatrix} = Q_{\begin{bmatrix} 0 \\ \mathbf{a}_2^1 \end{bmatrix}}^H$$
+to achieve the following $$Q_2 Q_1A = \begin{bmatrix} 
+                \times & \times & \times & \cdots & \times \\
+                & \times & \times  & \cdots & \times \\
+                && \vdots & \ddots & \vdots \\
+                && \times & \cdots & \times
+            \end{bmatrix}
+            =  
+            \begin{bmatrix}
+                r_{11} & r_{12} & r_{13} & \cdots & r_{1n} \\ 
+                & r_{22} & r_{23} & \cdots & r_{2n} \\
+                && \mathbf{a}_3^2 & \cdots & \mathbf{a}_n^2   
+            \end{bmatrix}
+    \qquad
+     r_{2j} := (Q_2 \mathbf{a}^{1}_j)[1] \quad \mathbf{a}^2_j := (Q_2 \mathbf{a}^{1}_j)[2:m-1]$$
+**Inductively**, we get\
+Defining $\mathbf{a}^{0}_{j} := \mathbf{a}_j$ we have $$\begin{aligned}
+Q_j &:= \begin{bmatrix} I_{j-1 × j-1}  \\ & Q_{\mathbf{a}_j^j}^{±,\rm H} \end{bmatrix} \\
+\mathbf{a}_j^k &:= (Q_k \mathbf{a}_j^{k-1})[2:m-k+1] \\
+r_{kj} &:= (Q_k \mathbf{a}_j^{k-1})[1]\end{aligned}$$ Then
+$$Q_n \cdots Q_1 A = \underbrace{\begin{bmatrix} 
+                                    r_{11} & \cdots & r_{1n} \\ & \ddots & \vdots\\
+                                    && r_{nn} \\&& 0 \\ && \vdots \\ && 0
+                                \end{bmatrix}}_R$$
+$$\implies A = \underbrace{Q_1 \cdots Q_n}_Q R.$$
+
+#### PLU Decomposition
+
+##### Special \"one-column\" Lower triangular matrices
+
+Consider the following set of lower triangular matrices
+$${\cal L}_j := \left\{I + \begin{bmatrix} \mathbf{0}_j \\ \mathbf{l}_j \end{bmatrix} \mathbf{l}_j^⊤ : \mathbf{l}_j ∈ ℝ^{n-j} \right\}$$
+$$L_j = \begin{bmatrix}
+        1 \\ & {\ddots} \\ && 1 \\
+        && \ell_{j+1,j} & 1 \\
+        && \vdots && \dots \\
+        && \ell_{n,j} & & & 1 
+      \end{bmatrix}$$ With the following properties:
+
+-   $L_{j}^{-1} = I - \begin{bmatrix} \mathbf{0}_j \\ \mathbf{l}_j\end{bmatrix}\mathbf{e}_{j}^{T} = \begin{bmatrix}
+            1 \\ & {\ddots} \\ && 1 \\
+            && -\ell_{j+1,j} & 1 \\
+            && \vdots && \dots \\
+            && -\ell_{n,j} & & & 1 
+          \end{bmatrix} \in {\cal L}_j$
+
+-   $L_j L_k = I + \begin{bmatrix} \mathbf{0}_j \\ \mathbf{l}_j\end{bmatrix}\mathbf{e}_{j}^{T} + \begin{bmatrix} \mathbf{0}_k \\ \mathbf{l}_k\end{bmatrix}\mathbf{e}_{k}^{T}$
+
+-   $\sigma$ a permutation leaving first $j$ rows fixed
+    ($\sigma_{\ell} = \ell\ \forall\ \ell \leq j)$ and
+    $L_j \in \cal{L}_j$\
+    $$P_{\sigma}L_j = \tilde{L}_{j}P_{\sigma} \quad \tilde{L}_{j} \in \cal{L}_{j}$$
+
+##### LU Decomposition
+
+Similarly to QR decomposition we perform a triangularisation using
+$L_j \in \cal{L}_j$.\
+Taking the following definitions
+
+ multicols
+3
+$$L_j := I - \begin{bmatrix} \mathbf{0}_j \\ {\mathbf{a}_{j+1}^j[2:n-j] \over \mathbf{a}_{j+1}^j[1]} \end{bmatrix} \mathbf{e}_j^{T}$$\
+$$\mathbf{a}_j^k := (L_k \mathbf{a}_j^{k-1})[2:n-k+1]$$\
+$u_{kj} := (L_k \mathbf{a}_j^{k-1})[1]$
+
+
+$$\implies L_{n-1}\dots L_{1} A = \underbrace{\begin{bmatrix} 
+                                                u_{11} & \cdots & u_{1n} \\
+                                                & \ddots & \vdots\\
+                                                && u_{nn}
+                                            \end{bmatrix}}_{U}$$
+$$A = \underbrace{L_{1}^{-1}\dots L_{n-1}^{-1}}_{L} U 
+\qquad L_{j} =
+            I + \begin{bmatrix} 
+                    \mathbf{0}_j \\
+                    \ell_{j+1,j} \\ 
+                    \vdots \\ 
+                    \ell_{n,j} 
+                \end{bmatrix} \mathbf{e}_j^\top
+\implies L =
+            \begin{bmatrix}
+                1 \\ -\ell_{21} & 1 \\
+                -\ell_{31} & -\ell_{32} & 1 \\
+                \vdots & \vdots & \ddots & \ddots\\
+                -\ell_{n1} & -\ell_{n2} & \cdots & -\ell_{n,n-1} & 1
+            \end{bmatrix}$$
+
+##### PLU Decomposition
+
+Achieved by always pivoting when performing Gaussian elimination, swap
+largest in magnitude entry on the diagonal.\
+This gives us $$L_{n-1}P_{n-1}\dots P_{2}L_{1}P_{1}A = U$$ for $P_{j}$
+the permutation that leaves rows 1 $\to$ $j-1$ fixed, swapping row $j$
+with row $k \geq j$ whose entry is maximal in magnitude.
+$$L_{n-1}P_{n-1}\dots P_{2}L_{1}P_{1} =
+\underbrace{L_{n-1} \tilde{L}_{n-2}\dots \tilde{L}_{1}}_{L^{-1}}
+\underbrace{P_{n-1}\dots P_2 P_1}_{P}$$ Tilde denotes combined actions
+of swapping permutations and lower-triangular matrices.
+$$P_{n-1}\cdots P_{j+1} L_j = \tilde L_j P_{n-1}\cdots P_{j+1}
+\implies \tilde{L}_{j} = I + \begin{bmatrix} 
+                                \mathbf{0}_j \\
+                                \tilde \ell_{j+1,j} \\
+                                \vdots \\ \tilde \ell_{n,j}
+                            \end{bmatrix} \mathbf{e}_j^\top
+\implies L =\begin{bmatrix} 
+                1 \\ 
+                -\tilde \ell_{21} & 1 \\
+                -\tilde \ell_{31} & -\tilde \ell_{32} & 1 \\
+                \vdots & \vdots & \ddots & \ddots \\
+                -\tilde \ell_{n-1,1} & -\tilde \ell_{n-1,2} & \cdots &  - \tilde \ell_{n-1,n-2} & 1 \\
+                -\tilde \ell_{n1} & -\tilde \ell_{n2} & \cdots &  - \tilde \ell_{n,n-2} &  -\ell_{n,n-1} & 1
+            \end{bmatrix}$$
+
+#### Cholesky Decomposition
+
+Form of Gaussian elimination (without pivoting) for **symmetric positive
+definite matrices**\
+Substantially faster.
+
+ 
+**Definition 22**. *(Positive definite)*
+
+
+A square matrix $A \in \mathbb{R}^{n\times n}$ [**positived
+definite**] if
+$\forall x \in \mathbb{R}^n, x \neq 0$ we have $$x^T A x > 0$$
+
+**Proposition**\
+$A \in \mathbb{R}^{n\times n}$ positive deifinite and
+$V \in \mathbb{R}^{n\times n}$ non-singular
+$$\implies V^T A V \text{ pos. definite}$$ **Proposition**\
+$A \in \mathbb{R}^{n\times n}$ positive definite $\implies$ diagonal
+entries $a_{ii} > 0$
+
+ 
+**Theorem 3**. *(Subslice positive definite)*
+
+
+$A \in \mathbb{R}^{n\times n}$ positive definite and
+$k \in {1,\dots,n}^{m}$ a vector of $m$ integers, each integer appearing
+only once
+$$\implies A[k,k] \in \mathbb{R}^{m\times m} \text{ pos. definite}$$
+
+ 
+**Theorem 4**. *(Cholesky and symmetric positive definite)*
+
+
+Matrix $A$ symmetric positive definite $\iff$ has Cholesky Decomposition
+$$A = LL^T$$ Where diagonals of $L$ positive.\
+**Computing the Cholesky Decomposition**
+
+Using the following definitions:
+
+  ---------------------------------- ---------------------------------------------------------------------------------------
+  $A_1 := A$                         $\alpha_k := A_k[1,1]$
+  $\mathbf{v}_k := A_k[2:n-k+1,1]$   $A_{k+1} := A_k[2:n-k+1,2:n-k+1] - \frac{\mathbf{v}_k \mathbf{v}_k^{\top}}{\alpha_k}$
+  ---------------------------------- ---------------------------------------------------------------------------------------
+
+$$\implies L = \begin{bmatrix}
+                \sqrt{\alpha_1} \\
+                {\mathbf{v}_1[1] \over \sqrt{\alpha_1}}  &  \sqrt{\alpha_2} \\
+                {\mathbf{v}_1[2] \over \sqrt{\alpha_1}}  & {\mathbf{v}_2[1] \over \sqrt{\alpha_2}} &  \sqrt{\alpha_2} \\
+                \vdots & \vdots & \ddots & \ddots \\
+                {\mathbf{v}_1[n-1] \over \sqrt{\alpha_1}} &{\mathbf{v}_2[n-2] \over \sqrt{\alpha_2}} & \dots & {\mathbf{v}_{n-1}[1] \over \sqrt{\alpha_{n-1}}} & \sqrt{\alpha_{n}}
+    \end{bmatrix}$$
+
+#### Timings
+
+Different decompositions have trade-offs between stability and speed.
+
+ multicols
+2
+
+    n = 100
+    A = Symmetric(rand(n,n)) + 100I 
+    @btime cholesky(A);
+    @btime lu(A);
+    @btime qr(A);
+
+    # returns
+
+    82.313 μs 
+    127.977 μs 
+    255.111 μs
+
+
+*Stability* 
+
+  Stable                            Unstable
+  --------------------------------- -----------------------------------------------
+  QR with Householder reflections   LU usually, unless diagonally dominant matrix
+  Cholesky for pos. def.            PLU rarely unstable.
+
+Set of Matrices for which `PLU` unstable extremely small, often one
+doesn't run into them.
+
+### Singular Values and Conditioning
+
+#### Vector Norms
+
+ 
+**Definition 23**. *(Vector-norm)*
+
+
+Norm on $\|\cdot\|$ on $\mathbb{R}^n$ a function satisfying the
+following, $\forall x,y\in \mathbb{R}^n,\ c\in \mathbb{R}$:
+
+1.  Triangle inequality: $\|x+y\| \leq |x| + |y|$
+
+2.  Homogeneity: $\|cx\| = |c|\|x\|$
+
+3.  Positive-definiteness: $\|x\| = 0 \iff x = 0$
+
+ 
+**Definition 24**. *(p-norm)*
+
+
+For $1 \leq p < \infty,\ x \in \mathbb{R}^n$
+$$\|x\|_{p} := (\sum_{k=1}^{n} |x_k|^p)^{1/p}$$ $x_k$ $k$-th entry of
+$x$.\
+$p = \infty$ we define $$\|x\|_{\infty} := \max_{k}|x_k|$$
+
+#### Matrix Norms
+
+ 
+**Definition 25**. *(Fröbenius norm)*
+
+
+$A$ a $m\times n$ matrix
+$$\|A\|_F := \sqrt{\sum_{k=1}^{m}\sum_{j=1]^{n}} A^{2}_{kj}}$$ Given by
+`norm(A)` in Julia.\
+`norm(A) == norm(vec(A))`
+
+ 
+**Definition 26**. *(Matrix-norm)*
+
+
+$A \in \mathbb{R}^{n\times m}$ for 2 norms $\|\cdot\|_{X}$ on
+$\mathbb{R}^n$ and $\|\cdot\|_{Y}$ on $\mathbb{R}^{n}$\
+We have the [**induced matrix norm**]
+$$\|A \|_{X \to Y} := \sup_{\mathbf{v} : \|\mathbf{v}\|_X=1} \|A \mathbf{v}\|_Y = \sup_{\x \in \mathbb{R}^n, x\neq 0}\frac{\|Ax\|_{Y}}{\|x\|_{X}}$$
+$$\|A\|_{X} := \|A\|_{X\to X}$$
+$$\|A\|_{1} = \max_{j}\|\mathbf{a}\|_{1} \qquad \|A\|_{\infty} = \max_{k}\|A[k, :\|_{1}$$
+Given by `opnorm(A,1),opnorm(A,Inf)` in Julia
+
+#### Singular Value Decomposition
+
+ 
+**Definition 27**. *(Singular Value Decomposition)*
+
+
+For $A \in \mathbb{R}^{n\times n}$ with $rank, r>0$\
+Reduced singular value decomposition (SVD) is $$A = U\Sigma V^T$$
+$U \in \mathbb{R}^{m\times r}, V \in \mathbb{R}^{r\times n}$ that have
+orthonormal columns\
+$\Sigma \in \mathbb{R}^{r\times r}$ diagonal of singular values, all
+positive and decreasing $\sigma_1 \leq \dots \leq \sigma_{r} > 0$\
+Full singular value decomposition (SVD) is
+$$A = \tilde{U}\tilde{\Sigma}\tilde{V}^{T}x$$
+$\tilde{U} \in \mathbb{R}^{m\times m}, V \in \mathbb{R}^{n\times n}$
+orthogonal matrices,\
+$\tilde{\Sigma} \in \mathbb{R}^{m\times n}$ has only diagonal entries.\
+For $\sigma_{k} = 0$ if $k>r$
+
+  if $m>n$                                                                                                            if $m<n$
+  ------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------
+  $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_n \\ && 0 \\ && \vdots \\ && 0 \end{bmatrix}$   $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_m & 0 & \dots & 0 \end{bmatrix}$
+
+**Proposition** - *Gram matrix kernel*\
+[**Gram-matrix**]: $A^T A$ Kernel of $A$
+also kernel of $A^A$\
+**Proposition** - *Gram matrix diagonalisation*\
+Gram-matrix satisfies $$A^T A =Q \Lambda Q^T$$ $Q$ orthogonal and
+eigenvalues $\lambda_k$ non-negative
+
+ 
+**Theorem 5**. *(SVD existence)*
+
+
+$\forall A \in \mathbb{R}6{m\times n}$ has a SVD.\
+**Corollary**\
+$A \in \mathbb{R}^{n\times n}$ invertible
+$$\implies \|A\|_{2} = \sigma_1, \quad \|A^{-1}\|_{2} = \sigma_{n}^{-1}$$
+
+ 
+**Theorem 6**. *(Best low rank approximation)*
+
+
+$$
+A_k :=  \begin{bmatrix} 
+            \mathbf{u}_1 | \dots | \mathbf{u}_k
+        \end{bmatrix}
+        \begin{bmatrix}
+            \sigma_1 \\
+            & \ddots\\
+            && \sigma_k
+        \end{bmatrix}
+        \begin{bmatrix} 
+            \mathbf{v}_1 | ⋯ | \mathbf{v}_k 
+        \end{bmatrix}^{T}
+$$
+        
+The best 2-norm approximation of $A$ by a
+rank $k$ matrix.\
+We have $\forall$ matrices $B$ of rank $k$,
+$\|A-A_k\|_{2} \leq \|A-B\|_{2}$
+
+#### Condition numbers
+
+**Proposition**\
+$|\epsilon_i| \leq \epsilon$ and $n\epsilon < 1$, then
+
+$$\prod_{k=1}^{n} ( 1 + \epsilon_i) = 1 + \theta_n$$
+
+for constant
+$\theta_n$ s.t $|\theta_n| \leq \frac{n\epsilon}{1-n\epsilon}$
+
+**Lemma.** - *Dot product backward error*\
+$\mathbf{x,y} \in \mathbb{R}^n$
+
+$$dot(\mathbf{x,y}) = (\mathbf{x} + \delta\mathbf{x})^T\mathbf{y}$$
+
+Where we have
+$|\delta\mathbf{x}| \leq \frac{n\epsilon_m}{2-n\epsilon_m}|\mathbf{x}|$,
+$|\mathbf{x}|$ absolute value of each entry.
+
+ 
+**Theorem 7**. *(Matrix-vector backward error)*
+
+
+$A\in \mathbb{R}^{m\times n}, \mathbf{x} \in \mathbb{R}^n$
+
+$$mul(A,\mathbf{x}) = (A + \delta A)\mathbf{x}$$
+Where
+
+$|\delta A| \leq \frac{n\epsilon_m}{2- n\epsilon_m}\|A\|$ $\implies$
+
+$$\begin{aligned}
+    \| \delta A\|_1 &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\|A\|_1\\
+    \| \delta A\|_2 &\leq \frac{\sqrt{\min(m,n)}n\epsilon_m}{2-n\epsilon_m}\|A\|_2\\
+    \| \delta A\|_\infty &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\|A\|_\infty\\\end{aligned}$$
+
+ 
+**Definition 28**. *(Condition number)*
+
+
+$A$ a square matrix.\
+[**Condition number**] (in $p$-norm)
+
+$$\kappa_p(A) := \|A\|_p \|A^{-1}\|_p$$
+
+Under the 2-norm:
+
+$$\kappa_2(A) = \frac{\sigma_1}{\sigma_n}$$
+
+ 
+**Theorem 8**. *(relative-error for matrix-vector)*
+
+
+Worst-case relative error in
+$A\mathbf{x} \approx (A + \delta A)\mathbf{x}$
+
+$$\frac{\| \delta A \mathbf{x}\|}{\|A \mathbf{x}\|} \leq \kappa(A)\epsilon$$
+
+if we have relative perturbation error $\|\delta A \| = \|A\|\epsilon$\
+We know for floating point arithmetic the error is bounded by
+
+$$\kappa(A)\frac{n\epsilon_m}{2-n\epsilon_m}$$
+
+### Differential equations via Finite differences
+
+#### Indefinite integration
+
+For simple differential equation on interval $[a,b]$
+
+$$
+\begin{aligned}
+    u(a) &= c\\
+    u'(x) &= f(x)
+  \end{aligned}
+$$
+    
+We have, for
+$u_k \approx u(x_k), k \neq 1,\dots,n-1$
+
+$$f(x_k) = u'(x_k) \approx \frac{u_{k+1} - u_{k}}{h} = f(x_k)$$
+
+As a linear system
+ 
+$$\underbrace{\frac{1}{h}\begin{bmatrix}
+                -1 & 1\\
+                & \ddots & \ddots\\
+                && -1 & 1\\
+            \end{bmatrix}}_{D_h \in \mathbb{R}^{n-1 \times n}} \mathbf{u}^f 
+            =
+            \underbrace{\begin{bmatrix}
+                f(x_1)\\
+                \vdots\\
+                f(x_{n-1})
+            \end{bmatrix}}_{\mathbf{f}^f}$$
+            
+Super-script $^{f}$ denotes forward differences.
+
+$D_h$ not square $\implies$ need to add extra row from the initial
+condition $\mathbf{e}^T\mathbf{u}^f = c$
+
+$$\begin{bmatrix}
+    \mathbf{e}_{1}^{T}\\
+    D_h
+\end{bmatrix}\mathbf{u}^{f} 
+=
+\underbrace{\begin{bmatrix}
+    1\\
+    -1/h & 1/h\\
+    && \ddots & \ddots\\
+    && -1/h & 1/h\\
+\end{bmatrix}}_{L_h} \mathbf{u}^{f}
+=
+\begin{bmatrix}
+    c\\
+    \mathbf{f}^f
+\end{bmatrix}$$
+
+Lower-triangular bidiagonal system $\implies$ solved using forward substitution in $O(n)$\
+Can choose either central or backwards-difference formulae too.
+
+*Central differences*\
+Take
+$m_k = \frac{x_{k+1}- x_k}{2} \implies u'(m_k) \approx \frac{u_{k+1} - u_k}{h} = f(m_k)$
+
+$$\underbrace{\frac{1}{h}\begin{bmatrix}
+                -1 & 1\\
+                & \ddots & \ddots\\
+                && -1 & 1\\
+            \end{bmatrix}}_{D_h} \mathbf{u}^m
+            =
+            \underbrace{\begin{bmatrix}
+                f(m_1)\\
+                \vdots\\
+                f(m_{n-1})
+            \end{bmatrix}}_{\mathbf{f}^m}$$
+
+*Convergence*\
+We see experimentally that the error for solutions from forward
+differences is $O(n^{-1})$ while for central differences it is a faster
+$O(n^{-2})$ convergence.\
+Both appearing to be stable.
+
+#### Forward Euler
+
+Consider scalar linear time-evolution for $0\leq t\leq T$
+$$\begin{aligned}
+    u(0) &= c\\
+    u'(t) - a(t)u(t) &= f(t)\end{aligned}$$
+
+Label $n$-point gird as $t_k = (k-1)h,\ h = \frac{T}{n-1}$
+
+ 
+**Definition 29**. *(Restriction Matrices)*
+
+
+Define $n-1 \times n$ [**restriction matrices
+as**]
+
+$$
+\begin{aligned}
+    I_n^{\rm f} &:= \begin{bmatrix} 1 \\ &\ddots \\ &&1 & 0 \end{bmatrix}\\
+    I_n^{\rm b} &:= \begin{bmatrix} 0 & 1 \\ &&\ddots \\ &&& 1  \end{bmatrix} \\
+\end{aligned}
+$$
+
+Can replace discretisation using finite differences.
+$\frac{u_{k+1}-u_{k}}{h} - a(t_k)u_k = f(u_k)$\
+Giving us the linear system
+
+$$\begin{bmatrix}
+\mathbf{e}_1^{T} \\
+D_h -  I_n^{\rm f}  A_n
+\end{bmatrix} \mathbf{u}^{\rm f} = \underbrace{ \begin{bmatrix}
+1 \\
+-a(t_1)-1/h & 1/h\\
+& \ddots & \ddots \\
+&& -a(t_{n-1})-1/h & 1/h
+\end{bmatrix}}_L \mathbf{u}^{\rm f} = \begin{bmatrix} c \\ I_n^{\rm f} \mathbf{f} \end{bmatrix}$$
+
+Where we have
+
+$$A_n = \begin{bmatrix} a(t_1) \\ &\ddots \\ && a(t_n) \end{bmatrix}\quad
+\mathbf{f} = \begin{bmatrix} f(t_1) \\ \vdots \\ f(t_n) \end{bmatrix}$$
+
+#### Backward Euler
+
+Simply replace forward-difference with backward-difference
+$\frac{u_{k}-u_{k-1}}{h} - a(t_k)u_k = f(u_k)$\
+Giving us our system:
+
+$$\begin{bmatrix}
+\mathbf{e}_1^{T} \\
+D_h -  I_n^{\rm b}  A_n
+\end{bmatrix} \mathbf{u}^{\rm f} = \underbrace{ \begin{bmatrix}
+1 \\
+-1/h & 1/h - a(t_2)\\
+& \ddots & \ddots \\
+&& -1/h & 1/h - a(t_n)
+\end{bmatrix}}_L \mathbf{u}^{\rm b} = \begin{bmatrix} c \\ I_n^{\rm b} \mathbf{f} \end{bmatrix}$$
+
+Still bidiagonal forward-substitution $$\begin{aligned}
+    u_1 &= c\\
+    (1 - ha(t_{k+1}))u_{k+1} &= u_k + hf(t_{k+1})\\
+    u_{k+1} &= (1-ha(t_{k+1}))^{-1} (u_{k} + hf(t_{k+1})\end{aligned}$$
+
+#### Systems of equations
+
+Solving systems of the form
+
+$$\begin{aligned}
+    \mathbf{u}(0) &= c\\
+    \mathbf{u}'(t) - A(t)\mathbf{u}(t) &= f(t)\end{aligned}$$
+    
+For
+$\mathbf{u,f}: [0,T] \to \mathbb{R}^{d}$ and $A: [0,T] \to \mathbb{R}^{d\times d}$
+
+Once again discretise at the grid $t_k$ approximating
+$\mathbf{u}(t_k) \approx \mathbf{u}_k \in \mathbb{R}^d$
+
+*Forward-Euler*
+$$\begin{aligned}
+    \mathbf{u}_1 & = c\\
+    \mathbf{u}_{k+1} &= (I-hA(t_{k+1}))^{-1}(\mathbf{u}_k + h\mathbf{f}(t_{k+1}))\end{aligned}$$
+
+#### Nonlinear problems
+
+Forward-euler extends naturally to nonlinear equations.
+
+$$\mathbf{u}' = f(t,\mathbf{u}(t))$$
+
+Becomes:
+
+$$\mathbf{u}_{k+1} = \mathbf{u}_k + hf(t_k, \mathbf{u}_k)$$
+
+#### Two-point boundary value problem
+
+Consider one discretisation, since symmetric
+
+$$u''(x) \approx \frac{u_{k-1} = 2u_k + u_{k+1}}{h^2}$$
+
+So we use the $n -1 \times n + 1$ matrix
+
+$$D^{2}h := \frac{1}{h^2}
+\begin{bmatrix}
+    1 & -2 & 1\\
+    & \ddots & \ddots & \ddots\\
+    && 1 & -2 & 1
+\end{bmatrix}$$
+
+#### Convergence
+
+ 
+**Definition 30**. *(Toeplitz)*
+
+
+\
+[**Toeplitz matrix**] has constant diagonals
+$$T[k,j] = a_{k-j}$$
+
+**Proposition.** - *(Bidiagonal Toeplitz inverse)*
+
+Inverse of $n\times n$ bidiagonal Toeplitz matrix is
+
+$$\begin{bmatrix}
+    1\\
+    -\ell & 1\\
+    & -\ell & 1\\
+    && \ddots & \ddots\\
+    &&&& -\ell & 1\\
+\end{bmatrix}^{-1} = 
+\begin{bmatrix}
+    1\\
+    \ell & 1\\
+    \ell^{2} & \ell & 1\\
+    \vdots & \ddots & \ddots & \ddots\\
+    \ell^{n-1} & \cdots & \ell^{2} & \ell & 1
+\end{bmatrix}$$
+
+ 
+**Theorem 9**. *(Forward/Backward Euler Convergence)*
+
+
+Consider equation $$u(0) = c, \quad u'(t) + au(t) = f(t)$$ Denote
+$$\mathbf{u} := \begin{bmatrix}
+                u(t_1)\\
+                \vdots\\
+                u(t_n)
+             \end{bmatrix}$$ Assume $u$ twice differentiable with
+uniformly bounded 2nd derivative.\
+$\implies$ error for forwardEuler is
+$$\| \mathbf{u}^{f} - \mathbf{u} \|_{\infty},\| \mathbf{u}^{b} - \mathbf{u} \|_{\infty} = O(n^{-1})$$
+
+##### Poisson
+
+For $2D$ problems consider Poisson. First stage is to row-reduce to get
+a summetric tridiagonal pos. def. matrix $$\begin{bmatrix} 
+1 \\
+-1/h^2 & 1 \\
+&& 1 \\ 
+&&& \ddots\\
+&&&& 1 & -1/h^2 \\
+&&&&& 1
+\end{bmatrix} 
+\begin{bmatrix}
+    1 \\
+    1/h^2 & -2/h^2 & 1/h^2 \\
+    & \ddots& \ddots& \ddots \\
+    && 1/h^2 & -2/h^2 & 1/h^2 \\
+    &&&& 1 
+\end{bmatrix} = 
+\begin{bmatrix}
+    1 \\
+    0 & -2/h^2 & 1/h^2 \\
+    & \ddots& \ddots& \ddots\\
+    && 1/h^2 & -2/h^2 & 0 \\
+    &&&& 1
+\end{bmatrix}$$ Consider right-hand side, aside from first and last row,
+we have $${1 \over h^2} \underbrace{\begin{bmatrix}
+                            -2 & 1 \\
+                            1 & -2 & \ddots\\
+                            & \ddots&  \ddots& 1 \\
+                            && 1 & -2  
+                        \end{bmatrix}}_{\Delta} 
+                        \begin{bmatrix}
+                            u_2 \\
+                            \vdots \\
+                            u_{n-1} 
+                        \end{bmatrix}
+                        = \underbrace{\begin{bmatrix} 
+                                f(x_2) - c_0/h^2 \\
+                                f(x_3) \\
+                                \vdots \\
+                                f(x_{n-2}) \\
+                                f(x_{n-1}) - c_1/h^2 
+                            \end{bmatrix}}_{\mathbf{f}^{p}}$$
+
+ 
+**Theorem 10**. *(Poisson Convergence)*
+
+
+Suppose $u$ four-times differentiable with uniformly bounded
+fourth-derivative\
+$\implies$ finite difference approximation to Poisson convergence like
+$O(n^2)$
 
