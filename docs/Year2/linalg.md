@@ -1295,7 +1295,7 @@ corresponding types in Julia $$\begin{aligned}
     F_{32} &:= F_{127,8,23} &   \texttt{Float32}-\text{Single-precision}\\
     F_{64} &:= F_{1023,11,52} & \texttt{Float64}-\text{Half-precision}\end{aligned}$$
 `Float64` - created by using decimals. e.g `1.0`\
-`Float32` - created by using `f0` e.g `1f0`\
+`Float32` - created by using `f0` e.g `1f0`
 
 ##### Special normal numbers
 
