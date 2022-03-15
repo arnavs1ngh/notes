@@ -15,7 +15,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ## PDF Resources:
 
 ### Analysis 2 - MATH50001
-- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Term 1**</a> - <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Complete**</a> - <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/AnalysisII.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/AnalysisII.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/ANALecII.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/ANALecII.pdf" download>**Download**</a>
 
