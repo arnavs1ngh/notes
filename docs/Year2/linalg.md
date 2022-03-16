@@ -14,7 +14,7 @@ math: mathjax3
 <details closed markdown="block">
   <summary>
     <span style="color: RoyalBlue;">PDFs</span>
-  </summary>
+  </summary>  
   
 - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Term 1**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/LagLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
@@ -1499,7 +1499,7 @@ Dual numbers not prone to growth due to round-off errors.
 
 $p$ a polynomial
 
-$$p(a+b\epsilon) = p(a) + b'p(a)\epsilon$$
+$$p(a+b\epsilon) = p(a) + bp'(a)\epsilon$$
 
  
 **Definition 11**. *[**Dual extension**]*
