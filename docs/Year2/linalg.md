@@ -1620,12 +1620,19 @@ u_{11} & \cdots & u_{1n} \\ & \ddots & \vdots \\ && u_{nn}
 \begin{bmatrix} b_1 \\ \vdots \\ b_n \end{bmatrix}$$
 
 by computing
-$x_n, x_{n-1}, \ldots, x_1$ by the back-substitution formula:
+$x_n, x_{n-1}, \ldots, x_1$ by the *back-substitution* formula:
 
 $$x_k = {b_k - \sum_{j=k+1}^n u_{kj} x_j \over u_{kk}}$$
 
 Multiplication and solving linear system $O(n^2)$ for a triangular
 matrix.
+
+*Forward substituion formula*
+
+For the case when we have a lower triangular system of equations.
+
+$$x_{k} = \frac{b_k - \sum_{j=1}^{n-1} u_{kj}x_{j} }{u_{kk}}$$
+
 
 #### Banded Matrices
 
