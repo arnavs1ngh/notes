@@ -1642,17 +1642,15 @@ $$x_{k} = \frac{b_k - \sum_{j=1}^{n-1} u_{kj}x_{j} }{u_{kk}}$$
 
 Matrix $A$ has
 
--   [**lower-bandwidth, $l$**] if
+-   **<span style="color: green;">lower-bandwidth, $l$</span>** if
     $A[k,j] = 0 \forall k-j>l$
 
--   [**upper-bandwidth, $u$**] if
+-   <span style="color: green;">**upper-bandwidth, $u$**</span> if
     $A[k,j] = 0 \forall j-k>u$
 
--   [**strictly lower-bandwidth**] if it has
-    lower-bandwidth $l$ and $\exists j$ such that $A[j+l,j] \neq 0$
+-   <span style="color: green;">**strictly lower-bandwidth**</span> if it has lower-bandwidth $l$ and $\exists j$ such that $A[j+l,j] \neq 0$
 
--   [**strictly upper-bandwidth**] if it has
-    upper-bandwidth $u$ and $\exists k$ such that $A[k,k+u] \neq 0$
+-   <span style="color: green;">**strictly upper-bandwidth**</span> if it has upper-bandwidth $u$ and $\exists k$ such that $A[k,k+u] \neq 0$
 
  
 **Definition 13**. *<span style="color: green;">**Diagonal**</span>*
@@ -1660,7 +1658,7 @@ Matrix $A$ has
 
 Matrix diagonal if square and $l=u=0$ the bandwidths.\
 Stored as `Vector`s in Julia.\
-Perform multiplication and solving linear systems in $O(n)$ operations.\
+Perform multiplication and solving linear systems in $O(n)$ operations.
 
  
 **Definition 14**. *<span style="color: green;">**Bidiagonal**</span>*
@@ -1729,8 +1727,7 @@ $$\mathbf{v}[\mathbf{\sigma}] = \begin{bmatrix}v_{\sigma}\\ \vdots \\ v_{\sigma_
 Obviously $\mathbf{v[\sigma][\sigma^{-1}] = v}$
 
  
-**Definition 16**. *[**Permutation
-Matrix**]*
+**Definition 16**. *<span style="color: green;">**Permutation Matrix**</span>*
 
 
 Entries of $P_{\sigma}$ given by
@@ -1747,7 +1744,7 @@ $$P^{T}_{\sigma} = P_{\sigma^{-1}} = P_{\sigma}^{-1} \implies P_{\sigma} \text{ 
 #### Orthogonal Matrices
 
  
-**Definition 17**. *[**Orthogonal Matrix**]*
+**Definition 17**. *<span style="color: green;">**Orthogonal Matrix**</span>*
 
 
 Square matrix orthogonal if $Q^T Q = Q Q^T = I$
@@ -1757,7 +1754,7 @@ Special cases
 ##### Simple Roations
 
  
-**Definition 18**. *[**Simple Rotation**]*
+**Definition 18**. *<span style="color: green;">**Simple Rotation**</span>*
 
 
 $2\times2$ rotation matrix through angle $\theta$
@@ -1765,7 +1762,7 @@ $2\times2$ rotation matrix through angle $\theta$
 $$Q_{\theta} := \begin{bmatrix} \cos \theta & -\sin \theta \cr \sin \theta & \cos \theta \end{bmatrix}$$
 
  
-**Definition 19**. *[**two-arg arctan**]*
+**Definition 19**. *<span style="color: green;">**two-arg arctan**</span>*
 
 
 two-argument arctan function gives angle $\theta$ through point
@@ -2127,7 +2124,7 @@ definite matrices**\
 Substantially faster.
 
  
-**Definition 22**. *(Positive definite)*
+**Definition 22**. *<span style="color: green;">Positive definite</span>*
 
 
 A square matrix $A \in \mathbb{R}^{n\times n}$ [**positived
@@ -2217,7 +2214,7 @@ doesn't run into them.
 #### Vector Norms
 
  
-**Definition 23**. *(Vector-norm)*
+**Definition 23**. *<span style="color: green;">Vector-norm</span>*
 
 
 Norm on $\|\cdot\|$ on $\mathbb{R}^n$ a function satisfying the
@@ -2230,7 +2227,7 @@ following, $\forall x,y\in \mathbb{R}^n,\ c\in \mathbb{R}$:
 3.  Positive-definiteness: $\|x\| = 0 \iff x = 0$
 
  
-**Definition 24**. *(p-norm)*
+**Definition 24**. *<span style="color: green;">p-norm</span>*
 
 
 For $1 \leq p < \infty,\ x \in \mathbb{R}^n$
@@ -2246,7 +2243,7 @@ $$\|x\|_{\infty} := \max_{k}|x_k|$$
 #### Matrix Norms
 
  
-**Definition 25**. *(Fröbenius norm)*
+**Definition 25**. *<span style="color: green;">Fröbenius norm</span>*
 
 
 $A$ a $m\times n$ matrix
@@ -2263,9 +2260,9 @@ Given by
 
 $A \in \mathbb{R}^{n\times m}$ for 2 norms $\|\cdot\|_{X}$ on
 $\mathbb{R}^n$ and $\|\cdot\|_{Y}$ on $\mathbb{R}^{n}$\
-We have the [**induced matrix norm**]
+We have the <span style="color: green;">**induced matrix norm**</span>
 
-$$\|A \|_{X \to Y} := \sup_{\mathbf{v} : \|\mathbf{v}\|_X=1} \|A \mathbf{v}\|_Y = \sup_{\x \in \mathbb{R}^n, x\neq 0}\frac{\|Ax\|_{Y}}{\|x\|_{X}}$$
+$$\|A \|_{X \to Y} := \sup_{\mathbf{v} : \|\mathbf{v}\|_X=1} \|A \mathbf{v}\|_Y = \sup_{x \in \mathbb{R}^n, x\neq 0}\frac{\|Ax\|_{Y}}{\|x\|_{X}}$$
 
 $$\|A\|_{X} := \|A\|_{X\to X}$$
 
@@ -2276,7 +2273,7 @@ Given by `opnorm(A,1),opnorm(A,Inf)` in Julia
 #### Singular Value Decomposition
 
  
-**Definition 27**. *(Singular Value Decomposition)*
+**Definition 27**. *<span style="color: green;">Singular Value Decomposition</span>*
 
 
 For $A \in \mathbb{R}^{n\times n}$ with $rank, r>0$\
@@ -2381,11 +2378,11 @@ $$\begin{aligned}
     \| \delta A\|_\infty &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\|A\|_\infty\\\end{aligned}$$
 
  
-**Definition 28**. *(Condition number)*
+**Definition 28**. *<span style="color: green;">Condition number</span>*
 
 
 $A$ a square matrix.\
-[**Condition number**] (in $p$-norm)
+<span style="color: green;">**Condition number**</span> (in $p$-norm)
 
 $$\kappa_p(A) := \|A\|_p \|A^{-1}\|_p$$
 
@@ -2497,11 +2494,10 @@ $$\begin{aligned}
 Label $n$-point gird as $t_k = (k-1)h,\ h = \frac{T}{n-1}$
 
  
-**Definition 29**. *(Restriction Matrices)*
+**Definition 29**. *<span style="color: green;">Restriction Matrices</span>*
 
 
-Define $n-1 \times n$ [**restriction matrices
-as**]
+Define $n-1 \times n$ <span style="color: green;">**restriction matrices as**</span>
 
 $$
 \begin{aligned}
@@ -2602,8 +2598,7 @@ $$D^{2}h := \frac{1}{h^2}
 **Definition 30**. *(Toeplitz)*
 
 
-\
-[**Toeplitz matrix**] has constant diagonals
+<span style="color: green;">**Toeplitz matrix**</span> has constant diagonals
 
 $$T[k,j] = a_{k-j}$$
 
