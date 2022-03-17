@@ -2030,14 +2030,16 @@ $$L_j = \begin{bmatrix}
       
 With the following properties:
 
--   $L_{j}^{-1} = I - \begin{bmatrix} \mathbf{0}_j \\ \mathbf{l}_j\end{bmatrix}\mathbf{e}_{j}^{T} = \begin{bmatrix}
+- $$L_{j}^{-1} = I - \begin{bmatrix} \mathbf{0}_j\\
+                                    \mathbf{l}_j
+                    \end{bmatrix}\mathbf{e}_{j}^{T} = \begin{bmatrix}
             1 \\ & {\ddots} \\ && 1 \\
             && -\ell_{j+1,j} & 1 \\
             && \vdots && \dots \\
             && -\ell_{n,j} & & & 1 
-          \end{bmatrix} \in {\cal L}_j$
+          \end{bmatrix} \in {\cal L}_j$$
 
--   $L_j L_k = I + \begin{bmatrix} \mathbf{0}_j \\ \mathbf{l}_j\end{bmatrix}\mathbf{e}_{j}^{T} + \begin{bmatrix} \mathbf{0}_k \\ \mathbf{l}_k\end{bmatrix}\mathbf{e}_{k}^{T}$
+-   $$L_j L_k = I + \begin{bmatrix} \mathbf{0}_j \\ \mathbf{l}_j\end{bmatrix}\mathbf{e}_{j}^{T} + \begin{bmatrix} \mathbf{0}_k \\ \mathbf{l}_k\end{bmatrix}\mathbf{e}_{k}^{T}$$
 
 -   $\sigma$ a permutation leaving first $j$ rows fixed
     ($\sigma_{\ell} = \ell\ \forall\ \ell \leq j)$ and
