@@ -2205,10 +2205,10 @@ Different decompositions have trade-offs between stability and speed.
 
 *Stability* 
 
-  Stable                            Unstable
-  --------------------------------- -----------------------------------------------
-  QR with Householder reflections   LU usually, unless diagonally dominant matrix
-  Cholesky for pos. def.            PLU rarely unstable.
+| Stable                          | Unstable                                      |
+|---------------------------------|-----------------------------------------------|
+| QR with Householder reflections | LU usually, unless diagonally dominant matrix |
+| Cholesky for pos. def.          | PLU rarely unstable                           |
 
 Set of Matrices for which `PLU` unstable extremely small, often one
 doesn't run into them.
@@ -2224,11 +2224,11 @@ doesn't run into them.
 Norm on $\|\cdot\|$ on $\mathbb{R}^n$ a function satisfying the
 following, $\forall x,y\in \mathbb{R}^n,\ c\in \mathbb{R}$:
 
-1.  Triangle inequality: $\|x+y\| \leq |x| + |y|$
+1.  Triangle inequality: $\lvert x+y\rvert \leq \lvert x\rvert + \lvert y\rvert$
 
-2.  Homogeneity: $\|cx\| = |c|\|x\|$
+2.  Homogeneity: $\lvert\lvert cx\rvert\rvert = \lvert c\rvert\lvert\lvert x\rvert\rvert $
 
-3.  Positive-definiteness: $\|x\| = 0 \iff x = 0$
+3.  Positive-definiteness: $\lvert\lvert x\rvert\rvert = 0 \iff x = 0$
 
  
 **Definition 24**. *<span style="color: green;">p-norm</span>*
@@ -2298,9 +2298,9 @@ orthogonal matrices,\
 $\tilde{\Sigma} \in \mathbb{R}^{m\times n}$ has only diagonal entries.\
 For $\sigma_{k} = 0$ if $k>r$
 
-  if $m>n$                                                                                                            if $m<n$
-  ------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------
-  $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_n \\ && 0 \\ && \vdots \\ && 0 \end{bmatrix}$   $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_m & 0 & \dots & 0 \end{bmatrix}$
+| if $m>n$                                                                                                          | if $m <n$                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_n \\ && 0 \\ && \vdots \\ && 0 \end{bmatrix}$ | $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_m & 0 & \dots & 0 \end{bmatrix}$ |
 
 **Proposition** - *Gram matrix kernel*\
 [**Gram-matrix**]: $A^T A$ Kernel of $A$
@@ -2374,12 +2374,12 @@ $A\in \mathbb{R}^{m\times n}, \mathbf{x} \in \mathbb{R}^n$
 $$mul(A,\mathbf{x}) = (A + \delta A)\mathbf{x}$$
 Where
 
-$|\delta A| \leq \frac{n\epsilon_m}{2- n\epsilon_m}\|A\|$ $\implies$
+$\lvert\delta A\rvert \leq \frac{n\epsilon_m}{2- n\epsilon_m}\lvert\lvert A\rvert\rvert$ $\implies$
 
 $$\begin{aligned}
-    \| \delta A\|_1 &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\|A\|_1\\
-    \| \delta A\|_2 &\leq \frac{\sqrt{\min(m,n)}n\epsilon_m}{2-n\epsilon_m}\|A\|_2\\
-    \| \delta A\|_\infty &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\|A\|_\infty\\\end{aligned}$$
+    \lvert\lvert \delta A\rvert\rvert_1 &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\lvert\lvert  A\rvert\rvert_1\\
+    \lvert\lvert \delta A\rvert\rvert_{2} &\leq \frac{\sqrt{\min(m,n)}n\epsilon_m}{2-n\epsilon_m}\lvert\lvert A\rvert\rvert_2\\
+    \lvert\lvert \delta A\rvert\rvert_\infty &\leq \frac{n\epsilon_m}{2- n\epsilon_m)}\lvert\lvert A\rvert\rvert_\infty\\\end{aligned}$$
 
  
 **Definition 28**. *<span style="color: green;">Condition number</span>*
@@ -2388,7 +2388,7 @@ $$\begin{aligned}
 $A$ a square matrix.\
 <span style="color: green;">**Condition number**</span> (in $p$-norm)
 
-$$\kappa_p(A) := \|A\|_p \|A^{-1}\|_p$$
+$$\kappa_p(A) := \lvert\lvert A\rvert\rvert_p \lvert\lvert A^{-1}\rvert\rvert_p$$
 
 Under the 2-norm:
 
