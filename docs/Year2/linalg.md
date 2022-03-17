@@ -2166,10 +2166,14 @@ Where diagonals of $L$ positive.\
 
 Using the following definitions:
 
-  ---------------------------------- ---------------------------------------------------------------------------------------
-  $A_1 := A$                         $\alpha_k := A_k[1,1]$
-  $\mathbf{v}_k := A_k[2:n-k+1,1]$   $A_{k+1} := A_k[2:n-k+1,2:n-k+1] - \frac{\mathbf{v}_k \mathbf{v}_k^{\top}}{\alpha_k}$
-  ---------------------------------- ---------------------------------------------------------------------------------------
+- $A_1 := A$
+
+- $\alpha_k := A_k[1,1]$
+
+- $\mathbf{v}_k := A_k[2:n-k+1,1]$
+
+- $A_{k+1} := A_k[2:n-k+1,2:n-k+1] - \frac{\mathbf{v}_k \mathbf{v}_k^{\top}}{\alpha_k}$
+  
 
 $$\implies L = \begin{bmatrix}
                 \sqrt{\alpha_1} \\
