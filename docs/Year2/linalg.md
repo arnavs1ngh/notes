@@ -2319,11 +2319,11 @@ eigenvalues $\lambda_k$ non-negative
 **Theorem 5**. *(SVD existence)*
 
 
-$\forall A \in \mathbb{R}6{m\times n}$ has a SVD.\
+$\forall A \in \mathbb{R}^{m\times n}$ has a SVD.\
 **Corollary**\
 $A \in \mathbb{R}^{n\times n}$ invertible
 
-$$\implies \|A\|_{2} = \sigma_1, \quad \|A^{-1}\|_{2} = \sigma_{n}^{-1}$$
+$$\implies \|A\|_{2} = \sigma_1, \quad \lvert \lvert A^{-1}\rvert\rvert_{2} = \sigma_{n}^{-1}$$
 
  
 **Theorem 6**. *(Best low rank approximation)*
@@ -2652,7 +2652,7 @@ $$\| \mathbf{u}^{f} - \mathbf{u} \|_{\infty},\| \mathbf{u}^{b} - \mathbf{u} \|_{
 ##### Poisson
 
 For $2D$ problems consider Poisson. First stage is to row-reduce to get
-a summetric tridiagonal pos. def. matrix
+a symmetric tridiagonal pos. def. matrix
 
 $$\begin{bmatrix} 
 1 \\
