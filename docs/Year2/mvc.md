@@ -1452,53 +1452,72 @@ $$\varphi(t,x) = e^{At}x \quad \forall t \in \mathbb{R}$$
 
 Consider $\dot{x} = Ax, A \in \mathbb{R}^{2\times 2}$\
 Transform $A$ in Jordan normal form $\implies J = T^{-1}AT$, $T$
-invertible\
+invertible
+
 $\implies e^{AT} = Te^{Jt}T^{-1}$
 
-C1.  $A$ has $2$ distinct real eigenvalues,
-    $a,b \in \mathbb{R}: J = \begin{pmatrix}a & 0\\ 0 & b\end{pmatrix}$
+C1.  $A$ has $2$ distinct real eigenvalues, $a,b \in \mathbb{R}$
+    $$J = \begin{pmatrix}a & 0\\ 0 & b\end{pmatrix}$$
 
 C2.  $A$ has double real eigenvalues $a \in \mathbb{R}$, with $2$
-    linearly independent eigenvectors:
-    $J = \begin{pmatrix}a & 0\\ 0 & a\end{pmatrix}$
+    linearly independent eigenvectors
+    $$J = \begin{pmatrix}a & 0\\ 0 & a\end{pmatrix}$$
 
-C3.  $A$ double real eigenvalues with $1$ eigenvector :
-    $J = \begin{pmatrix}a & 0\\ 1 & a\end{pmatrix}$
+C3.  $A$ double real eigenvalues with $1$ eigenvector
+    $$J = \begin{pmatrix}a & 0\\ 1 & a\end{pmatrix}$$
 
-C4.  $A$ has $2$ complex eigenvalues $a \pm b$, $b \neq 0$ :
-    $J = \begin{pmatrix}a & -b\\ b & a\end{pmatrix}$
+C4.  $A$ has $2$ complex eigenvalues $a \pm b$, $b \neq 0$
+    $$J = \begin{pmatrix}a & -b\\ b & a\end{pmatrix}$$
 
 ***$A$ not singular:***\
 **C1**
+
 $$\begin{aligned}
     J &= \begin{pmatrix}a & 0\\ 0 & b\end{pmatrix} \quad a,b \in \mathbb{R}\backslash \{0\},\ a \neq b\\
     e^{Jt} &= \begin{pmatrix} e^{at} & 0 \\ 0 & e^{bt}\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
-Trajectory given
-$O(x_0,y_0) = \{ (x,y_0(\frac{x}{x_0})^{b/a} \in \mathbb{R}^2: \frac{x}{x_0} > 0)\}$\
-Obtaining the following phase portraits:\
+
+Trajectory given $O(x_0,y_0) = \{ (x,y_0(\frac{x}{x_0})^{b/a} \in \mathbb{R}^2: \frac{x}{x_0} > 0)\}$
+
+Obtaining the following phase portraits:
+
 **C2**
+
 $$\begin{aligned}
     J &= \begin{pmatrix}a & 0\\ 0 & a\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
     e^{Jt} &= \begin{pmatrix} e^{at} & 0 \\ 0 & e^{at}\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
-Trajectory given
-$O(x_0,y_0) = \{ (x_0 e^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (x,x\frac{y_0}{x_0}) \in \mathbb{R}^2: \frac{x}{x_0} > 0\}$\
-Obtaining the following phase portraits:\
-**C3** $$\begin{aligned}
+
+Trajectory given by $O(x_0,y_0) = \{ (x_0 e^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (x,x\frac{y_0}{x_0}) \in \mathbb{R}^2: \frac{x}{x_0} > 0\}$
+
+Obtaining the following phase portraits:
+
+**C3**
+
+$$\begin{aligned}
     J &= \begin{pmatrix}a & 1\\ 0 & a\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
     e^{Jt} &= \begin{pmatrix} e^{at} & te^{at} \\ 0 & e^{at}\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
-Trajectory given
-$O(x_0,y_0) = \{(x_0 e^{at} + y_0 te^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (\frac{x_0}{y_0}y + \frac{y}{a}\ln \frac{y}{y_0}, y) \in \mathbb{R}^2: \frac{y}{y_0} > 0\}$\
-Obtaining the following phase portraits:\
-**C4** $$\begin{aligned}
+
+Trajectory given by $O(x_0,y_0) = \{(x_0 e^{at} + y_0 te^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (\frac{x_0}{y_0}y + \frac{y}{a}\ln \frac{y}{y_0}, y) \in \mathbb{R}^2: \frac{y}{y_0} > 0\}$
+
+Obtaining the following phase portraits:
+
+**C4** 
+
+$$\begin{aligned}
     J &= \begin{pmatrix}a & b\\ -b & a\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
     e^{Jt} &= e^{at}\begin{pmatrix} \cos (bt) & \sin (bt) \\ -\sin (bt) & \cos (bt)\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
-Trajectory given
-$O(x_0,y_0) = \{ e^{at} \begin{pmatrix} x_0 \cos (bt) + y_0 \sin (bt) \\ y_0 \cos (bt) - x_0 \sin (bt) \end{pmatrix}: t \in \mathbb{R}\}$\
-Obtaining the following phase portraits:\
-***$A$ singular:***\
-**C1** $$\begin{aligned}
+
+Trajectory given by $O(x_0,y_0) = \{ e^{at} \begin{pmatrix} x_0 \cos (bt) + y_0 \sin (bt) \\ y_0 \cos (bt) - x_0 \sin (bt) \end{pmatrix}: t \in \mathbb{R}\}$
+
+Obtaining the following phase portraits:
+
+***$A$ singular:***
+
+**C1** 
+
+$$\begin{aligned}
     J &= \begin{pmatrix}a & 0\\ 0 & 0\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
     e^{Jt} &= \begin{pmatrix} e^{at} & 0 \\ 0 & 1 \end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+
 Trajectory given by
 $O(x_0,y_0) = \{(e^{at}x_0, y_0) : t \in \mathbb{R}\}$\
 Obtaining the following phase portraits:\
@@ -1564,9 +1583,10 @@ $$J_j = \begin{pmatrix} C_j & I_2 && 0 &0\\ 0 & C_2 & I_2 && 0\\ &&\ddots & \ddo
 ## Explicit representation of matrix exponential function
 
 $A \in \mathbb{R}^{d\times d}$\
-Assume invertible $T \in \mathbb{R}^{d\times d}$ transforms $A$ into
-real
-$J := T^{-1} A T = \begin{pmatrix}J_1 & & 0\\ &\ddots\\0 && J_p \end{pmatrix}$
+Assume invertible $T \in \mathbb{R}^{d\times d}$ transforms $A$ into real
+
+$$J := T^{-1} A T = \begin{pmatrix}J_1 & & 0\\ &\ddots\\ 0 && J_p \end{pmatrix}$$
+
 $$\implies e^{At} = Te^{Jt}T^{-1} = T \begin{pmatrix}e^{J_1 t} & & 0\\ &\ddots\\0 && e^{J_p t} \end{pmatrix} T^{-1}$$
 
 **Proposition 3.8**\
@@ -1578,16 +1598,16 @@ Jordan blocks for real Jordan normal form with eigenvalues $\rho_j$
 
 2.  $\rho_j = a_j + ib_j \in \mathbb{C}$
     $$\exp\left\{ \begin{pmatrix}C_j & I_2 &&0\\ & \ddots&\ddots\\ &&\ddots& I_2\\ 0 &&&C_j \end{pmatrix}t\right\} = e^{a_jt}\begin{pmatrix} G(t) & tG(t) & \frac{t^2}{2}G(t) & \dots & \frac{t^{d_j -1}}{(d_j -1)!}G(t) \\ 0 & G(t) & tG(t) & \ddots & \vdots\\ && \ddots & \ddots & \frac{t^2}{2}G(t)\\ 0 &&& G(t) & tG(t)\\ 0 & 0 && 0 & G(t)\end{pmatrix}$$
+
     Where
-    $G(t)=\left(\begin{array}{cc}\cos \left(b_{j} t\right) & \sin \left(b_{j} t\right) \\ -\sin \left(b_{j} t\right) & \cos \left(b_{j} t\right)\end{array}\right)\quad \forall t\ \in \mathbb{R}$
+
+    $$G(t)=\left(\begin{array}{cc}\cos \left(b_{j} t\right) & \sin \left(b_{j} t\right) \\ -\sin \left(b_{j} t\right) & \cos \left(b_{j} t\right)\end{array}\right)\quad \forall t\ \in \mathbb{R}$$
 
 ## Exponential growth behaviour
 
  
-**Definition 13**.
+**Definition 13**. - [**Spectrum of $A$**]
 
-
-[**Spectrum of $A$**]
 $$A\in \mathbb{R}^{d\times d} \quad \Sigma (A) = \left \{ Re(\rho): \rho \text{ eval of } A\right \} = \{s_1,\dots,s_p\}$$
 For $\dot{x} = Ax$ we have decomposition
 
@@ -1600,26 +1620,26 @@ $E_j$ invariant
 -   $x \in E_j \backslash \{0\} \implies \sigma_{lyap}(\varphi(\cdot,x)) = \lim_{t\to\infty}\frac{\|\varphi(t,x)\|}{t} = s_j$
 
  
-**Definition 14**.
+**Definition 14**. - [**semi-simple eigenvalue**]
 
-
-[**semi-simple eigenvalue**]\
-If all Jordan blocks associated to eval in real Jordan normal form are:\
+If all Jordan blocks associated to eval in real Jordan normal form are:
 - 1 dim. for real e.val
 - 2 dim. for non-real e.val
 
-**Proposition 3.9** - *Exponential estimate for matrix exponential
-function*
+**Proposition 3.9** - *(Exponential estimate for matrix exponential
+function)*
 
 $A\in \mathbb{R}^{d\times d}$, Choose $\gamma > \max \Sigma(A)$\
 If all e.vals $\rho$ with $Re(\rho) = \max \Sigma(A)$, semi-simple
-$\implies$ take $\gamma = \max \Sigma(A)$\
+$\implies$ take $\gamma = \max \Sigma(A)$
+
 $$\implies \exists K>0 s.t \|e^{At} \| \leq Ke^{\gamma t} \quad \forall t\geq 0$$
 
 ## Variation of constants formula
 
 **Proposition 3.10** - *(Variation of constants formula)*\
 General solution to $\dot{x} = Ax + g(t)$ given by
+
 $$\lambda(t,t_0,x_0) = e^{A(t-t_0)}x_0 + \int_{t_0}^{t}e^{A(t-s)}g(s) ds \quad \forall t,t_0 \in I, x_0 \in \mathbb{R}^d$$
 
 # Non-linear systems
@@ -1632,23 +1652,26 @@ $$\lambda(t,t_0,x_0) = e^{A(t-t_0)}x_0 + \int_{t_0}^{t}e^{A(t-s)}g(s) ds \quad \
 **Definition 15**.
 
 
-$x^{*}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
+$x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 
 1.  $x^{*}$ [**stable**] if
     $\forall \epsilon > 0, \exists \delta >0$ s.t
+
     $$\|\varphi(t,x) - x^{*}\| < \epsilon \quad \forall x \in B_{\delta}(x^{*}) \text{ and } t \geq 0$$
 
 2.  $x^*$ [**unstable**] if not stable
 
 3.  $x^{*}$ [**attractive**] if
     $\exists \delta > 0$ s.t
+
     $$\lim_{t\to \infty}\varphi(t,x) = x^{*} \quad \forall x \in B_{\delta}(x^{*})$$
 
-4.  $x^{*}$ [**asymptotically stable**] if
-    $x^{*}$ stable and attractive
+4.  $x^{\ast}$ [**asymptotically stable**] if
+    $x^{\ast}$ stable and attractive
 
 5.  $x^{*}$ [**exponentially stable**] if
     $\exists \delta>0, K\geq 1$ and $\gamma <0$ s.t
+
     $$\| \varphi(t,x) -x^{*}\| \leq Ke^{\gamma t}\|$$
 
 6.  $x^{*}$ [**repulsive**] if
