@@ -1868,7 +1868,7 @@ $$S_{c} := \{x \in D: V(x) \leq c\} \ \forall c>0$$
 
 $\implies S_c$ subset of domain of attraction $W^{s}(x^*)$ if $S_c \subset D$ compact
 
-#### Poincaré-Bendixson Theorem
+## Poincaré-Bendixson Theorem
 
  
 **Theorem 12**. (Poincare-Bendixson Theorem
