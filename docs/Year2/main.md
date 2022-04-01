@@ -255,3 +255,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS5-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
+
+### Network Science - MATH50007
+
+- <a href="/notes/pdfs/year2/NSC-Lec.pdf" target="_blank" style="color:#801fff;">**Open NetSci Lecturer**</a> - <a href="/notes/pdfs/year2/NSC-Lec.pdf" download>**Download**</a>
