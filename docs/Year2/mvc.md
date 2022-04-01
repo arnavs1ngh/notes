@@ -1447,3 +1447,450 @@ $$\varphi(t,x) = e^{At}x \quad \forall t \in \mathbb{R}$$
 3.  $BC = CB \implies e^{B+C} = e^{B}e^{C}$
 
 4.  $B = diag(B_{1},\dots,B_p) \implies e^B = diag(e^{B_1},\dots,e^{B_p})$
+
+## Planar linear systems
+
+Consider $\dot{x} = Ax, A \in \mathbb{R}^{2\times 2}$\
+Transform $A$ in Jordan normal form $\implies J = T^{-1}AT$, $T$
+invertible\
+$\implies e^{AT} = Te^{Jt}T^{-1}$
+
+C1.  $A$ has $2$ distinct real eigenvalues,
+    $a,b \in \mathbb{R}: J = \begin{pmatrix}a & 0\\ 0 & b\end{pmatrix}$
+
+C2.  $A$ has double real eigenvalues $a \in \mathbb{R}$, with $2$
+    linearly independent eigenvectors:
+    $J = \begin{pmatrix}a & 0\\ 0 & a\end{pmatrix}$
+
+C3.  $A$ double real eigenvalues with $1$ eigenvector :
+    $J = \begin{pmatrix}a & 0\\ 1 & a\end{pmatrix}$
+
+C4.  $A$ has $2$ complex eigenvalues $a \pm b$, $b \neq 0$ :
+    $J = \begin{pmatrix}a & -b\\ b & a\end{pmatrix}$
+
+***$A$ not singular:***\
+**C1**
+$$\begin{aligned}
+    J &= \begin{pmatrix}a & 0\\ 0 & b\end{pmatrix} \quad a,b \in \mathbb{R}\backslash \{0\},\ a \neq b\\
+    e^{Jt} &= \begin{pmatrix} e^{at} & 0 \\ 0 & e^{bt}\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+Trajectory given
+$O(x_0,y_0) = \{ (x,y_0(\frac{x}{x_0})^{b/a} \in \mathbb{R}^2: \frac{x}{x_0} > 0)\}$\
+Obtaining the following phase portraits:\
+**C2**
+$$\begin{aligned}
+    J &= \begin{pmatrix}a & 0\\ 0 & a\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
+    e^{Jt} &= \begin{pmatrix} e^{at} & 0 \\ 0 & e^{at}\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+Trajectory given
+$O(x_0,y_0) = \{ (x_0 e^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (x,x\frac{y_0}{x_0}) \in \mathbb{R}^2: \frac{x}{x_0} > 0\}$\
+Obtaining the following phase portraits:\
+**C3** $$\begin{aligned}
+    J &= \begin{pmatrix}a & 1\\ 0 & a\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
+    e^{Jt} &= \begin{pmatrix} e^{at} & te^{at} \\ 0 & e^{at}\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+Trajectory given
+$O(x_0,y_0) = \{(x_0 e^{at} + y_0 te^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (\frac{x_0}{y_0}y + \frac{y}{a}\ln \frac{y}{y_0}, y) \in \mathbb{R}^2: \frac{y}{y_0} > 0\}$\
+Obtaining the following phase portraits:\
+**C4** $$\begin{aligned}
+    J &= \begin{pmatrix}a & b\\ -b & a\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
+    e^{Jt} &= e^{at}\begin{pmatrix} \cos (bt) & \sin (bt) \\ -\sin (bt) & \cos (bt)\end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+Trajectory given
+$O(x_0,y_0) = \{ e^{at} \begin{pmatrix} x_0 \cos (bt) + y_0 \sin (bt) \\ y_0 \cos (bt) - x_0 \sin (bt) \end{pmatrix}: t \in \mathbb{R}\}$\
+Obtaining the following phase portraits:\
+***$A$ singular:***\
+**C1** $$\begin{aligned}
+    J &= \begin{pmatrix}a & 0\\ 0 & 0\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
+    e^{Jt} &= \begin{pmatrix} e^{at} & 0 \\ 0 & 1 \end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+Trajectory given by
+$O(x_0,y_0) = \{(e^{at}x_0, y_0) : t \in \mathbb{R}\}$\
+Obtaining the following phase portraits:\
+**C2** $$J = \begin{pmatrix} 0 & 0\\ 0 & 0 \end{pmatrix}$$ Trivially
+whole space is equilibria\
+**C3** $$\begin{aligned}
+    J &= \begin{pmatrix}0 & 1\\ 0 & 0\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
+    e^{Jt} &= \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
+Trajectory given by
+$O(x_0,y_0) = e^{Jt}\begin{pmatrix}x_0 \\ y_0 \end{pmatrix}\{(x_0 + ty_0, y_0) : t \in \mathbb{R}\}$\
+Obtaining the following phase portraits:\
+**C4**\
+Can't happen as a 2D matrix of real eigenvalus can't have eigenvalue of
+0.\
+
+**Remark 3.5** - *(Meaning of real + imaginary parts of e.vals of A)*
+
+1.  Rate of exponential growth\
+    $Re[e.val]$ - determines rate of exponential growth behaviour of
+    solution
+    $$\lambda(t) = e^{At}\begin{pmatrix}x_0 \\ y_0 \end{pmatrix}$$
+    Obtain exponential growth rate for $\mu (t) = e^{at}$
+    $$\lim_{t\to\infty}\frac{\ln e^{at}}{t} = a$$ 
+
+    [**Lyapunov exponent**]\
+    For solution $\lambda$ with initial condition $(x_0,y_0) \neq (0,0)$
+    $$\sigma_{lyap}(\lambda) = \lim_{t\to\infty}\frac{\ln \| \lambda (t)\|}{t}$$
+    We have a solution decay if $\sigma_{lyap} < 0$ , grow if
+    $\sigma_{lyap} > 0$
+
+2.  Rate of Rotation\
+    Solution rotates is e.vals not real.\
+    For $a+bi$ an e.val
+
+    -   $\lvert b \rvert$ - speed of rotation
+
+    -   $sign(b)$ - orientation of rotation\
+        $b> 0  \implies \circlearrowright$\
+        $b< 0  \implies \circlearrowleft$
+
+## Jordan Normal Form
+
+**Theorem 3.6** - *Complex Jordan Normal Form*\
+$A\in \mathbb{R}^{d\times d}, \exists T \in \mathbb{C}^{d\times d}$ s.t we get
+$$J := T^{-1} AT = \begin{pmatrix}J_1 & & 0\\ &\ddots\\0 && J_p \end{pmatrix}$$
+With Jordan blocks $$J_{j}=\left(\begin{array}{ccccc}
+\rho_{j} & 1 & & 0 & 0 \\
+0 & \rho_{j} & 1 & & 0 \\
+& & \ddots & \ddots & \\
+0 & & & \rho_{j} & 1 \\
+0 & 0 & & 0 & \rho_{j}
+\end{array}\right) \quad \text { for all } j \in\{1, \ldots, p\}$$ For
+$p_j, j \in \{1,\dots,p\}$ complex e.vals of $A$
+
+**Theorem 3.7** - *Real Jordan Form*\
+$A \in \mathbb{R}^{d\times d}$, $\exists T \in \mathbb{R}^{d\times d}$
+s.t
+$$J := T^{-1} A T = \begin{pmatrix}J_1 & & 0\\ &\ddots\\0 && J_p \end{pmatrix}$$
+$J_j$ as in 3.6 if $\rho_j$ real\
+if $\rho_j$ complex $\implies$
+$$J_j = \begin{pmatrix} C_j & I_2 && 0 &0\\ 0 & C_2 & I_2 && 0\\ &&\ddots & \ddots\\ 0 &&& C_j & I_2\\ 0 & 0 && 0 & C_j \end{pmatrix} \quad \text{ with } C_j = \begin{pmatrix} a_j & b_j\\ -b_j & a_j \end{pmatrix}\ \rho_j = a_j + ib_j$$
+
+## Explicit representation of matrix exponential function
+
+$A \in \mathbb{R}^{d\times d}$\
+Assume invertible $T \in \mathbb{R}^{d\times d}$ transforms $A$ into
+real
+$J := T^{-1} A T = \begin{pmatrix}J_1 & & 0\\ &\ddots\\0 && J_p \end{pmatrix}$
+$$\implies e^{At} = Te^{Jt}T^{-1} = T \begin{pmatrix}e^{J_1 t} & & 0\\ &\ddots\\0 && e^{J_p t} \end{pmatrix} T^{-1}$$
+
+**Proposition 3.8**\
+$A\in \mathbb{R}^{d\times d}$ $J_j, j \in \{1,\dots,p\}$\
+Jordan blocks for real Jordan normal form with eigenvalues $\rho_j$
+
+1.  $\rho_j$ real
+    $$\exp\left\{ \begin{pmatrix}\rho_j & 1 &&0\\ & \ddots&\ddots\\ &&\ddots& 1\\ 0 &&& \rho_j \end{pmatrix}t\right\} = e^{\rho_j t}\begin{pmatrix} 1 & t & t^2/2 & \dots & \frac{t^{d_j -1}}{(d_j -1)!} \\ 0 & 1 & t & \ddots & \vdots\\ && \ddots & \ddots & t^2/2\\ 0 &&& 1 & t\\ 0 & 0 && 0 & 1\end{pmatrix}$$
+
+2.  $\rho_j = a_j + ib_j \in \mathbb{C}$
+    $$\exp\left\{ \begin{pmatrix}C_j & I_2 &&0\\ & \ddots&\ddots\\ &&\ddots& I_2\\ 0 &&&C_j \end{pmatrix}t\right\} = e^{a_jt}\begin{pmatrix} G(t) & tG(t) & \frac{t^2}{2}G(t) & \dots & \frac{t^{d_j -1}}{(d_j -1)!}G(t) \\ 0 & G(t) & tG(t) & \ddots & \vdots\\ && \ddots & \ddots & \frac{t^2}{2}G(t)\\ 0 &&& G(t) & tG(t)\\ 0 & 0 && 0 & G(t)\end{pmatrix}$$
+    Where
+    $G(t)=\left(\begin{array}{cc}\cos \left(b_{j} t\right) & \sin \left(b_{j} t\right) \\ -\sin \left(b_{j} t\right) & \cos \left(b_{j} t\right)\end{array}\right)\quad \forall t\ \in \mathbb{R}$
+
+## Exponential growth behaviour
+
+ 
+**Definition 13**.
+
+
+[**Spectrum of $A$**]
+$$A\in \mathbb{R}^{d\times d} \quad \Sigma (A) = \left \{ Re(\rho): \rho \text{ eval of } A\right \} = \{s_1,\dots,s_p\}$$
+For $\dot{x} = Ax$ we have decomposition
+
+$$\mathbb{R}^d = E_1 \oplus \dots \oplus E_q$$ 
+
+$E_j$ invariant
+
+-   $x\in E_j \implies \varphi(t,x) \in E_j \ \forall t \in \mathbb{R}$
+
+-   $x \in E_j \backslash \{0\} \implies \sigma_{lyap}(\varphi(\cdot,x)) = \lim_{t\to\infty}\frac{\|\varphi(t,x)\|}{t} = s_j$
+
+ 
+**Definition 14**.
+
+
+[**semi-simple eigenvalue**]\
+If all Jordan blocks associated to eval in real Jordan normal form are:\
+- 1 dim. for real e.val
+- 2 dim. for non-real e.val
+
+**Proposition 3.9** - *Exponential estimate for matrix exponential
+function*
+
+$A\in \mathbb{R}^{d\times d}$, Choose $\gamma > \max \Sigma(A)$\
+If all e.vals $\rho$ with $Re(\rho) = \max \Sigma(A)$, semi-simple
+$\implies$ take $\gamma = \max \Sigma(A)$\
+$$\implies \exists K>0 s.t \|e^{At} \| \leq Ke^{\gamma t} \quad \forall t\geq 0$$
+
+## Variation of constants formula
+
+**Proposition 3.10** - *(Variation of constants formula)*\
+General solution to $\dot{x} = Ax + g(t)$ given by
+$$\lambda(t,t_0,x_0) = e^{A(t-t_0)}x_0 + \int_{t_0}^{t}e^{A(t-s)}g(s) ds \quad \forall t,t_0 \in I, x_0 \in \mathbb{R}^d$$
+
+# Non-linear systems
+
+## Stability
+
+### Basic definitions
+
+ 
+**Definition 15**.
+
+
+$x^{*}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
+
+1.  $x^{*}$ [**stable**] if
+    $\forall \epsilon > 0, \exists \delta >0$ s.t
+    $$\|\varphi(t,x) - x^{*}\| < \epsilon \quad \forall x \in B_{\delta}(x^{*}) \text{ and } t \geq 0$$
+
+2.  $x^*$ [**unstable**] if not stable
+
+3.  $x^{*}$ [**attractive**] if
+    $\exists \delta > 0$ s.t
+    $$\lim_{t\to \infty}\varphi(t,x) = x^{*} \quad \forall x \in B_{\delta}(x^{*})$$
+
+4.  $x^{*}$ [**asymptotically stable**] if
+    $x^{*}$ stable and attractive
+
+5.  $x^{*}$ [**exponentially stable**] if
+    $\exists \delta>0, K\geq 1$ and $\gamma <0$ s.t
+    $$\| \varphi(t,x) -x^{*}\| \leq Ke^{\gamma t}\|$$
+
+6.  $x^{*}$ [**repulsive**] if
+    $\exists \delta >0$ s.t
+    $\lim_{t\to -\infty}\varphi(t,x) = x^{*},\ \forall x \in B_{\delta}(x^{*})$
+    $$INSERT FIGURES HERE$$
+
+ 
+**Definition 16**. (Homoclinic and heteroclinic orbits)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+locally Lipschitz continuous, with flow $\varphi$\
+Orbit $O(x)$ for some $x \in D$\
+
+1.  [**Homoclinic**] orbit if $\exists$
+    equilibrium $x^{*} \in D \backslash\{x\}$ s.t
+    $$\lim_{t\to\infty}\varphi(t,x) = x^* \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x^*$$
+
+2.  [**Heteroclinic**] orbit if $\exists$ 2
+    distinct equilibria $x_1^* \neq x_2^*$ s.t
+    $$\lim_{t\to\infty}\varphi(t,x) = x_1^* \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x_2^*$$
+
+ 
+**Theorem 7**. (Stability of linear systems
+
+
+Consider autonomous linear system,
+$\dot{x} = Ax, A \in \mathbb{R}^{d\times d}$\
+Have trivial equilibrium $x^* = 0$
+
+1.  stable $\iff$
+    - $Re(\rho) \leq 0\ \forall \rho$ e.vals of $A$\
+    - e.val $\rho$ semi-simple $\forall$ e.vals $\rho$ of $A$ with
+    $Re(\rho) =0$
+
+2.  exponentially stable $\iff Re(\rho) < 0\ \forall$ e.vals $\rho$ of
+    $A$
+
+### Hyperbolicity
+
+ 
+**Definition 17**.
+
+
+$A \in \mathbb{R}^{d\times d}$
+[**hyperbolic**] if
+$Re(\lambda) \neq 0\ \forall \lambda$ e.vals of $A$\
+Equilibrium $x^*$ of differential equation
+$\dot{x} = f(x)\ f:D\subset \mathbb{R}^d \to \mathbb{R}^d$ continuously
+differentiable, is [**hyperbolic**] if
+matrix $f'(x^*) \in \mathbb{R}^{d\times d}$ hyperbolic.
+
+**Lemma 4.9** - *Gronwall Lemma*\
+Consider continuous function $u:[a,b] \to \mathbb{R},$ let $c,d \geq 0$\
+Assume $u$ satisfies implicit inequality
+$$0 \leq u(t) \leq c + d\int_{a}^{t}u(s) ds \quad \forall t \in [a,b]$$
+
+ 
+**Theorem 8**. (Linearised stability)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+continuously differentiable.\
+Assume $x^*$ equilibrium of above s.t $\forall$ e.vals $\lambda \in \mathbb{C}$
+of linearisation of $f'(x^*)\in \mathbb{R}^{d\times d}$ we have
+$Re(\lambda) < 0 \implies x^*$ is exponentially stable.
+
+### Stable and unstable sets, invariant sets
+
+ 
+**Definition 18**. (Stable + unstable set)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+locally lipschitz continuous, with flow $\varphi$ and equilibria $x^*$\
+[**Stable set**] of $x^*$
+$$W^{s}(x^*) = \{ x \in D: \lim_{t\to\infty} \varphi(t,x) = x^*\}$$
+[**Unstable set**] of $x^*$
+$$W^{u}(x^*) = \{ x \in D: \lim_{t\to-\infty} \varphi(t,x) = x^*\}$$
+
+ 
+**Definition 19**. (Invariance)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+locally lipschitz continuous..
+
+1.  [**positively invariant**] if
+    $\forall x \in M, O^+(x) \subset M$
+
+2.  [**negatively invariant**] if
+    $\forall x \in M, O^-(x) \subset M$
+
+3.  [**invariant**] if
+    $\forall x\in M, O(x) \subset M$
+
+## Limit Sets
+
+ 
+**Definition 20**. (Omega and alpha limit sets)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+locally lipschitz continuous, with flow $\varphi, x\in D$
+
+1.  $x_w \in D$ an [**omega limit point**]
+    of $x$\
+    If $\exists$ sequence $\{t_n\}_{n\in\mathbb{N}}$ s.t
+    $\lim_{n\to \infty} t_n = \infty$ and
+    $$x_\omega = \lim_{n\to\infty}\varphi(t_n,x)$$
+    [**$\omega(x)$**]$= \{$all omega limit
+    points of $x\}$
+
+2.  $x_{\alpha}\in D$ an [**alpha limit
+    point**] of $x$\
+    if $\exists$ sequence $\{t_n\}_{n\in\mathbb{N}}$ s.t
+    $\lim_{n\to\infty}t_n = -\infty$ and
+    $$x_{\alpha} = \lim_{n\to\infty}\varphi(t_n,x)$$
+    [**$\alpha(x)$**]$= \{$all alpha limit
+    points of $x\}$
+
+**Proposition 4.19** - *(Alternative characterisation of limit sets)*\
+$\varphi$ flow of differential from above $x\in D$
+$$\omega(x) = \bigcap_{t\geq 0}\overline{O^{+}(\varphi(t,x))}$$
+$$\alpha(x) = \bigcup_{t\leq 0}\overline{O^{-}(\varphi(t,x))}$$
+
+**Proposition 4.21** - *(properties of $\omega,\alpha$ limit sets)*\
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+locally lipschitz continuous, $x\in D$
+
+1.  $\omega(x)$ invariant\
+    if $O^+(x)$ bounded and
+    $\overline{O^+(x)} \subset D \implies \omega(x) \neq \emptyset$
+    compact
+
+2.  $\alpha(x)$ invariant if $O^{-}(x)$ bounded and
+    $\overline{O^{-}(x)} \subset D \implies \alpha(x) \neq \emptyset$
+    compact
+
+## Lyapunov functions
+
+ 
+**Definition 21**. (Orbital derivatives)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+locally lipschitz continuous\
+$V:D\to \mathbb{R}$ continuosly differentiable function.\
+Define [**orbital derivative**] $\dot{V}$ of
+$V$
+$$\dot{V}(x) := V'(x)\cdot f(x) = \sum_{i=1}^{d}\frac{\partial V}{\partial x_i}(x) f_{i}(x)$$
+$V'(x) \in \mathbb{R}^{1\times d}$ the gradient of $V$ at $x \in D$\
+$\dot{V}$ describes derivative of $V$ along solution $\mu:I \to D$ of
+$\dot{x} = f(x)$
+
+ 
+**Definition 22**. (Lyapunov functions)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous.\
+$V: D \to \mathbb{R}$ continuously differentiable function\
+$V$ a Lyapunov function if $\dot{V}(X) \leq 0\ \forall x \in D$\
+*Remark.*\
+Lyapunov function decrease along solutions
+$$V(\varphi(t,x)) \leq V(x) \ \forall t \in [0,\sup J_{max}(x))$$
+
+**Proposition 4.25.** - *(Sublevel sets of Lyapunov functions are
+positively invariant)*\
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$\
+Any sublevel set of form
+$$S_{c} := \{ x\in D: V(x) \leq c\},\ c\in \mathbb{R}$$
+is positively invariant
+
+ 
+**Theorem 9**. (Lyapunov's direct method for stability)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous, $x^*$ an equilibria and
+$V:D\to \mathbb{R}$ lyapunov funtion s.t
+$$V(x^*) = 0, V(x) >0 \ \forall x \in D\backslash\{x^*\} \implies x^* \text{ stable }$$
+
+ 
+**Theorem 10**. (La Salle's invariance principal)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$
+$$\omega(x) \subset \{ y \in D: \dot{V}(y) = 0\} \ \forall x \in D$$
+
+**Corollary 4.30** - *(Reformation of La Salle's invariance principle)*\
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$
+$$\forall x \in D \omega(x) \subset \underbrace{\text{ largest invariant subset of } \{y \in D:\dot{V}(y) = 0\}}_{= \bigcup \text{ invariant subsets of } \{y \in D:\dot{V}(y) = 0\}}$$
+
+ 
+**Theorem 11**. (Lyapunov's direct method for asymptotic stability)
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous, $x^* \in D, V:D\to\mathbb{R}$ Lyapunov
+function s.t $$\begin{aligned}
+    V(x^*) =0 &\text{ and } V(x) > 0\ \forall x \in D\backslash\{x^*\}\\
+    \dot{V}(x^*) =0 &\text{ and } \dot{V}(x) < 0\ \forall x \in D\backslash\{x^*\}\end{aligned}$$
+$\implies x^*$ asymptotically stable\
+**Corollary 4.33** - *(Sublevel sets of Lyapunov functions are subsets
+of domain of attraction)*\
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
+Locally Lipschitz continuous, $x^* \in D, V:D\to\mathbb{R}$ Lyapunov
+function\
+Consider sublevel sets of Lyapunov function $V$
+
+$$S_{c} := \{x \in D: V(x) \leq c\} \ \forall c>0$$
+
+$\implies S_c$ subset of domain of attraction $W^{s}(x^*)$ if $S_c \subset D$ compact
+
+#### Poincaré-Bendixson Theorem
+
+ 
+**Theorem 12**. (Poincare-Bendixson Theorem
+
+
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^2}_{\text{open}}\to \mathbb{R}^2$
+with flow $\varphi$ continuously differentiable.\
+Assume for some $x\in D, O^{+}(x) \subset K$ compact $\subset D$\
+$K$ containing not more than finitely many equilibria.\
+One of the following 3 hold for $\omega(x)$
+
+1.  $\omega(x)$ a singleton, consisting of an equilibrium
+
+2.  $\omega(x)$ a periodic orbit
+
+3.  $\omega(x)$ consists of equilibria + non-closed orbits\
+    non-closed orbits in $\omega(x)$ converge forward and backward in
+    time to equilibria in $\omega(x)$\
+    $\implies$ either homoclinic or heteroclinic orbits.
+
+**Corollary 4.35** - *(Existence of a periodic orbit)*\
+$\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^2}_{\text{open}}\to \mathbb{R}^2$
+continuously differentiable with flow $\varphi$.\
+Assume for $x\in D$, $O^{+}(x) \subset K$ compact $\subset D$\
+$D$ not containing an equilibrium $\implies \omega(x)$ periodic orbit.

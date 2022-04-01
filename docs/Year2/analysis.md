@@ -426,9 +426,9 @@ $DDf(p)$ takes an $n$-vector to a $m\times n$ matrix
 For $f = \begin{pmatrix}
 f^{1}(x),f^{2}(x),\dots,f^{m}(x)
 \end{pmatrix}$\
-If $f$ differentiable at $p\in \Omega \implies$ we have partial
+<span style="color: RoyalBlue;">If $f$ differentiable at $p\in \Omega$</span>  $\implies$ we have partial
 derivatives $D_{i}f^{j}: \Omega \to \mathbb{R}$.\
-If $Df$ differentiable, then $2^{\text{nd}}$ partial derivatives exist
+If <span style="color: RoyalBlue;">$Df$ differentiable</span>, then $2^{\text{nd}}$ partial derivatives exist
   <center>
     $$D_{k}D_{i}f^{j}(p) := \lim_{t\to 0}\frac{D_{i}f^{j}(p+te_{k})-D_{i}f^{j}(p)}{t}$$
   </center>
@@ -487,7 +487,7 @@ Also
 </center>
 
 **Theorem 1.14 - Taylor's Theorem in higher dim.**\
-Suppose $p \in \mathbb{R}^{n}$ and $f: B_{r}(p) \to \mathbb{R}$ a $k$-times continuously differentiable $\forall q \in B_{r}(p)$, for some $k \geq 1 \in \mathbb{N}$\
+Suppose $p \in \mathbb{R}^{n}$ and $f: B_{r}(p) \to \mathbb{R}$ a $k$-times continuously differentiable $\forall q \in B_{r}(p)$, for some $k \geq 1 \in \mathbb{N}$
   
 Then $\forall h \in \mathbb{R}^{n}$ with $||h|| < r$ We have
  <center>
@@ -512,7 +512,7 @@ Evidently
 
 **Theorem 1.15** - (Inverse Function Theorem)
   
-Let $\Omega$ an open set in $\mathbb{R}^{n}$, $f: \Omega \to \mathbb{R}^{n}$ continuously differentiable on $\Omega$, $\exists q \in \Omega$ s.t $Df(q)$ invertible\
+Let $\Omega$ an open set in $\mathbb{R}^{n}$,<span style="color: RoyalBlue;"> $f: \Omega \to \mathbb{R}^{n}$ continuously differentiable on $\Omega$, $\exists q \in \Omega$ s.t $Df(q)$ invertible</span>
 Then $\exists$ open sets $U \subset \Omega$ and $V \subset \mathbb{R}^{n}, q \in U, f(q) \in V$ s.t
 
 1.  $f:U \to V$, a bijection
@@ -539,7 +539,8 @@ $(x,y) \in A \times B$  satisfies $F(x,y) = 0 \iff y = f(x)$ for some $x \in A$
   </center>
 with $f:A \to B$ continuously differentiable.
   
-**Definition** - <span style="color: green;">**$C^{1}-$diffeomorphism**</span>\
+**Definition** - <span style="color: green;">**$C^{1}- $ diffeomorphism** </span>
+
 $\Omega,\Omega' \subset \mathbb{R}^{n}$ open.\
 Say $f:\Omega \to \Omega'$ a $C^{1}$-diffeormorphism, if
 $f:\Omega \to \Omega'$ a and $\forall x \in \Omega, Df(x)$
@@ -1296,7 +1297,7 @@ $X$
 ## Complex Numbers
 
  
-**Definition 1**. [**$i$**]
+**Definition 1**. <span style="color: green;">**$i$**</span>
 
 $$i = \sqrt{-1},\quad i^2 = -1$$
 
@@ -1323,60 +1324,60 @@ $$z = r(\cos\theta + i\sin\theta$$
 
 $$z^{n} = r^{n}(\cos(n\theta) + i\sin(n'\theta)),\ n \in \mathbb{Z}^{+}$$
 
-***Eulers's Formula***\
+***Eulers's Formula***
 $$e^{i\theta} = (\cos\theta + i\sin\theta)$$
 
 ## Sets in Complex Plane
 
  
-**Definition 2**. Discs in $\mathbb{C}$
+**Definition 2**. <span style="color: green;">**Discs in $\mathbb{C}$**</span>
 
-- [**Open Disc : $D_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
+- <span style="color: green;">**Open Disc : $D_{r}(z_{0})$**</span> $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
 
-- [**Boundary of Disc : $C_{r}(z_{0})$**] $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
+- <span style="color: green;">**Boundary of Disc : $C_{r}(z_{0})$**</span> $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
 
-- [**Unit Disc : $\mathbb{D}$**] $= \{ z \in \mathbb{C}: |z| < 1\}$
+- <span style="color: green;">**Unit Disc : $\mathbb{D}$**</span> $= \{ z \in \mathbb{C}: |z| < 1\}$
 
  
-**Definition 3**. [**Interior Point**]
+**Definition 3**. <span style="color: green;">**Interior Point**</span>
 
 
-$\Omega \in \mathbb{C}, z_{0}$ an [**interior
-point**] of $\Omega$ if $\exists r > 0$ s.t
+$\Omega \in \mathbb{C}, z_{0}$ an <span style="color: green;">**interior
+point**</span> of $\Omega$ if $\exists r > 0$ s.t
 $D_{r}(z_0) \subset \Omega$
 
  
 **Definition 4**.
 
 
-Set $\Omega$ [**open**] if
+Set $\Omega$ <span style="color: green;">**open**</span> if
 $\forall \omega \in \Omega$, $\omega$ an interior point
 
  
 **Definition 5**.
 
 
-Set $\Omega$ [**closed**] if
+Set $\Omega$ <span style="color: green;">**closed**</span> if
 $\Omega^{C} = \mathbb{C}\backslash\Omega$ open\
 Closed $\iff$ contains all its limit points.
 
  
 **Definition 6**. Closure
 
-Closure of $\Omega$ =
+<span style="color: green;">**Closure**</span> of $\Omega$ =
 $\bar{\Omega} = \{ \Omega \cup \text{ limit points of } \Omega\}$
 
  
 **Definition 7**. Boundary
 
-Boundary of $\Omega$ =
+<span style="color: green;">**Boundary**</span> of $\Omega$ =
 $\underbrace{\bar{\Omega}}_{\text{Closure}}\backslash\underbrace{\partial\Omega}_{\text{interior}}$
 
  
 **Definition 8**. Bounded
 
 
-$\Omega$ bounded if $\exists M > 0$ s.t
+$\Omega$ <span style="color: green;">**bounded**</span> if $\exists M > 0$ s.t
 $|\omega| < M\ \forall \omega\in \Omega$
 
  
@@ -1412,7 +1413,7 @@ $$\implies \exists ! w \in \mathbb{C},\ w \in \Omega_n\ \forall n$$
 **Definition 11**. Connected
 
 
-Open set $\Omega$ [**connected**] $\iff$ any
+Open set $\Omega$ <span style="color: green;">**connected**</span> $\iff$ any
 2 points in $\Omega$ joined by curve $\gamma$ entirely contained in
 $\Omega$
 
@@ -1423,7 +1424,7 @@ $\Omega$
 
 
 $\Omega_1, \Omega_2 \subset \mathbb{C}$ $$f: \Omega_1 \to \Omega_2$$ a
-[**mapping**] $\Omega_1 \to \Omega_2$ if
+<span style="color: green;">**mapping**</span> $\Omega_1 \to \Omega_2$ if
 
 $$\forall z = x + iy \in \Omega_1$$
 
@@ -1436,19 +1437,19 @@ $u,v : \mathbb{R}^{2} \to \mathbb{R}$
 **Definition 13**.
 
 $f$ defined on $\Omega_1 \subset \mathbb{C}$ $f$
-[**continuous**] at $z_0 \in \Omega$ if
+<span style="color: green;">**continuous**</span> at $z_0 \in \Omega$ if
 $$\forall \epsilon > 0 \exists \delta > 0\ s.t\ |z-z_{0}| < \delta \implies |f(z) - f(z_{0})| < \epsilon$$
 $f$ continuous if continuous $\forall z \in \Omega$
 
 ## Complex Derivative
 
  
-**Definition 14**. [**Holomorphic**]
+**Definition 14**. <span style="color: green;">**Holomorphic**</span>
 
 
 $\Omega_1, \Omega_2 \subset \mathbb{C}$ open sets\
 $f: \Omega_1 \to \Omega_2$\
-Say $f$ [**differentiable/holomorphic**] at
+Say $f$ <span style="color: green;">**differentiable/holomorphic**</span> at
 $z_{0}$ if
 $$\lim_{h\to 0}\frac{f(z_{0} + h) - f(z_0)}{h} = f'(z_0) \textbf{\text{ exists}}$$
 
@@ -1515,7 +1516,7 @@ $$u'_r = \frac{1}{r}v'_\theta \qquad v'_r = -\frac{1}{r}u'_\theta$$
 ## Power Series
 
  
-**Definition 16**. Power Series
+**Definition 16**. <span style="color: green;">Power Series</span>
 
 Of the form $$\sum_{n = 0}^{\infty}a_n z^{n} \quad a_n \in \mathbb{C}$$
 Series converge at $z$ if $S_N(z) = \sum_{n=0}^{N}a_n z^{n}$ has limit
@@ -1551,10 +1552,10 @@ Power series infinitely differentiable in the disc of convergence,
 achieved through term-wise differentiation.
 
  
-**Definition 17**. [**Entire**]
+**Definition 17**. <span style="color: green;">**Entire**</span>
 
 
-A function said to be [**entire**] if
+A function said to be <span style="color: green;">**entire**</span> if
 holomorphic $\forall z \in \mathbb{C}$
 
 ## Elementary functions
@@ -1583,7 +1584,7 @@ $$e^z = e^x\cos y + ie^x \sin y \qquad z = x + iy \in \mathbb{C}$$
 ### Trigonometric functions
 
  
-**Definition 18**.
+**Definition 18**. - <span style="color: green;">Trig functions</span>
 
 
 $$\cos z = \frac{1}{2}\left( e^{iz} + e^{-iz}\right) \qquad \sin z = \frac{1}{2i}\left( e^{iz} - e^{-iz}\right)$$
@@ -1599,10 +1600,10 @@ $$\cos z = \frac{1}{2}\left( e^{iz} + e^{-iz}\right) \qquad \sin z = \frac{1}{2i
 4.  $\sin(z_{1} \pm z_{2}) = \sin z_1 \cos z_2 \pm \cos z_1 \sin z_2$\
     $\cos(z_1 \pm z_2) = \cos z_1 \cos z_2 \mp \sin z_1 \sin z_2$
 
-### Logariic Functions
+### Logarithmic Functions
 
  
-**Definition 19**.
+**Definition 19**. - <span style="color: green;">Log Functions</span>
 
 
 $$log(z) = ln|z| + i\arg(z) = log(r) + i(\theta + 2\pi k) \quad z \neq 0,\ k \in \mathbb{Z}$$
@@ -1646,19 +1647,21 @@ $z^{\alpha} = e^{\alpha\mathop{\mathrm{Log}}(z)}$ ***Properties***
 
 **Definition 23**.
 
-Parametrised curve a function $z(t): [a,b] \to \mathbb{C}$ [**Smooth**] if $z'(t)$ exists and is  continuous on $[a,b]$ with $z'(t) \neq 0 \forall t \in [a,b]$ 
+<span style="color: green;">Parametrised curve</span> a function $z(t): [a,b] \to \mathbb{C}$
+
+<span style="color: green;">**Smooth**</span> if $z'(t)$ exists and is  continuous on $[a,b]$ with $z'(t) \neq 0 \forall t \in [a,b]$ 
 
 Taking one-sided limits for $z'(a), z'(b)$.
 
-[**Piecewise-smooth**] if $z$ continuous on $[a,b]$ and if $\exists$ finitely many points $a = a_{0} < a_1 < \dots < a_n = b$ s.t $z(t)$ smooth on $[a_{k},a_{k+1}]$
+<span style="color: green;">**Piecewise-smooth**</span> if $z$ continuous on $[a,b]$ and if $\exists$ finitely many points $a = a_{0} < a_1 < \dots < a_n = b$ s.t $z(t)$ smooth on $[a_{k},a_{k+1}]$
 
 $$z:[a,b] \to \mathbb{C}\quad \tilde{z}:[c,d] \to \mathbb{C}$$
 
 equivalent if $\exists$ continuously differentiable bijection $s \to t(s)$ from $[c,d]$ to $[a,b]$ s.t $t'(s) > 0$ and $\tilde{z}(s) = z(t(s))=$
 
-**Definition 24**. Path Integrals
+**Definition 24**. <span style="color: green;">Path integral</span>
 
-Path integral given smooth $\gamma \subset \mathbb{C}$ parametrised by
+<span style="color: green;">Path integral</span> given smooth $\gamma \subset \mathbb{C}$ parametrised by
 $z:[a,b] \to \mathbb{C}$.\
 $f$ continuous function on $\gamma$
 
@@ -1679,21 +1682,21 @@ Can take $z^{-}:[a,b]\to \mathbb{C}$ s.t $z^{-}(t) = z(b + a -t)$
 **Definition 26**. Closed Curve
 
 
-Smooth/piece-wise smooth curve closed if $z(a) = z(b)$ for any
+Smooth/piece-wise smooth curve <span style="color: green;">closed</span> if $z(a) = z(b)$ for any
 parametrisation.
 
  
 **Definition 27**. Simple Curve
 
 
-Smooth/piece-wise smooth curve simple if not **self-intersecting**
+Smooth/piece-wise smooth curve <span style="color: green;">simple</span> if not **self-intersecting**
 
 $$z(t) \neq z(s) \text{ unless } s = t \in [a,b]$$
 
 ## Integration along Curves
 
  
-**Definition 28**. Length of smooth curve
+**Definition 28**. <span style="color: green;">Length of smooth curve</span>
 
 $$\text{Length}(\gamma) = \int_{a}^{b}|z'(t)|dt = \int_{a}^{b}\sqrt{x'(t)^{2} + y'(t)^{2}}dt$$
 
@@ -1715,7 +1718,7 @@ $$\text{Length}(\gamma) = \int_{a}^{b}|z'(t)|dt = \int_{a}^{b}\sqrt{x'(t)^{2} + 
 **Definition 29**. Primitive
 
 
-A [**Primitive**] for $f$ on
+A <span style="color: green;">**Primitive**</span> for $f$ on
 $\Omega \subset \mathbb{C}$ a function $F$ holomorphic on $\Omega$ s.t
 $F'(z) = f(z)\ \forall z \in \Omega$
 
@@ -1777,9 +1780,9 @@ $$\implies \int_{C}f(z)dz = 0$$
 ## Homotopies and simply connected domains
 
  
-**Definition 30**. [**Homotopic**]
+**Definition 30**. <span style="color: green;">**Homotopic**</span>
 
-$\gamma_{0},\gamma_{1}$ [**homotopic**] in
+$\gamma_{0},\gamma_{1}$ <span style="color: green;">**homotopic**</span> in
 $\Omega$ if $\forall s \in [0,1], \exists$ curve $\gamma \subset \Omega$
 with $\gamma_{s}(t)$ s.t
 
@@ -1797,8 +1800,7 @@ $$\int_{\gamma_{0}}f(z)dz = \int_{\gamma_{1}}f(z)dz$$
 
 **Definition 31**.
 
-Open set $\Omega \subset \mathbb{C}$ [**simply
-connected**] if any 2 pair of curves in
+Open set $\Omega \subset \mathbb{C}$ <span style="color: green;">**simply connected**</span> if any 2 pair of curves in
 $\Omega$ with shared end-points homotopic.
  
 **Theorem 12**.
@@ -1880,11 +1882,11 @@ $$\implies f(z) = f(z_0) = f'(z_0)(z-z_0) + \frac{f''(z_0)}{2!}(z-z_0)^{2} + \do
 
 Valid in all circles $\{ z: \lvert z - z_0 \rvert < r\} \subset \Omega$
  
-**Definition 32**. (Taylor Series)
+**Definition 32**. <span style="color: green;">(Taylor Series)</span>
 
 $$f(z) = f(z_0) + f'(z_0)(z-z_0) + \frac{f''(z_0)}{2!}(z-z_0)^{2} + \dots = \sum_{i=0}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z-z_0)^{n}$$
 
-**Definition 33**. (Maclaurin Series)
+**Definition 33**. <span style="color: green;">(Maclaurin Series)</span>
 
 Taylor series for $z_0 = 0$
 
@@ -1932,16 +1934,16 @@ $\implies f(z) := \int_{0}^{1}F(z,s)ds$ **holomorphic**
 **Definition 34**.
 
 $\Omega \subset \mathbb{C}$ open and
-[**symmetric**] w.r.t real line
+<span style="color: green;">**symmetric**</span> w.r.t real line
 $$z \in \Omega \iff \bar{z} \in \Omega$$
 
  
 **Definition 35**.
 
 
-$$\Omega^{+} = \{ z\in \Omega: Im(z) > 0\} \quad
-\Omega^{-} = \{ z\in \Omega: Im(z) < 0\} \quad
-I = \{ z\in \Omega: Im(z) = 0\}$$
+$$\textcolor{green}{\Omega^{+}} = \{ z\in \Omega: Im(z) > 0\} \quad
+\textcolor{green}{\Omega^{-}} = \{ z\in \Omega: Im(z) < 0\} \quad
+\textcolor{green}{I} = \{ z\in \Omega: Im(z) = 0\}$$
  
 **Theorem 22**. (Symmetry Principle)
 
@@ -1955,8 +1957,6 @@ f^+(z) = f^-(z), & z \in \Omega^{-}\\
 f^-(z), & z \in \Omega^-
 \end{cases} \quad \text{holomorphic}$$
 
-
-
  
 **Theorem 23**. (Schwarz relfection principle)
 
@@ -1967,7 +1967,6 @@ $\implies \exists F$ holomorphic in $\Omega$ s.t
 $F\rvert_{\Omega^{+}} = f$
 
 # Meromorphic Functions
-
 
 ## Complex Logarithm
 
@@ -2005,7 +2004,7 @@ Every zero has neighbourhood, inside of which it is the only $0$
 **Definition 36**.
 
 
-[**Laurent Series**] for $f$ at $z_0$, where
+<span style="color: green;">**Laurent Series**</span> for $f$ at $z_0$, where
 series converge
 $$
 \begin{align*}
@@ -2033,7 +2032,7 @@ interior.
 **Definition 37**.
 
 
-$z_0$ a [**singularity**] of complex
+$z_0$ a <span style="color: green;">**singularity**</span> of complex
 function $f$\
 if $f$ not holomorphic at $z_0$, but every neighbourhood of $z_0$ has at
 least 1 holomorphic point.
@@ -2042,7 +2041,7 @@ least 1 holomorphic point.
 **Definition 38**.
 
 
-Singulartiy $z_0$ is [**isolated**] if
+Singulartiy $z_0$ is <span style="color: green;">**isolated**</span> if
 $\exists$ neighbourhood of $z_0$, where it is the only singularity.
 
  
@@ -2083,7 +2082,7 @@ $g$ holomorphic at $z_0$, $g(z_0) \neq 0$
 
 Let $f(z) = \sum_{-\infty}^{\infty} a_{n}(z-z_{0})^{n}$ for
 $0 < |z-z_0| < R$ the Laurent series for $f$ at $z_0$\
-[**Residue**] of $f$ at $z_0$ is
+<span style="color: green;">**Residue**</span> of $f$ at $z_0$ is
 $$\implies Res[f,z_0] - a_{-1}$$
 
 
@@ -2135,7 +2134,7 @@ $$\implies \sum_{0s \text{ of } f+g \text{ in } \gamma} order(zeros) = \sum_{0s 
 **Definition 41**.
 
 
-Mapping [**open**] if maps open sets $\mapsto$ open sets
+Mapping <span style="color: green;">**open**</span> if maps open sets $\mapsto$ open sets
 
 
 **Theorem 32**. (Open mapping theorem)
@@ -2172,7 +2171,7 @@ $$\sup_{z\in \Omega}|f(z)| \leq \sup_{z\in \bar{Omega}\backslash \Omega}|f(z)|$$
 
 
 $\varphi = \varphi(x,y): \mathbb{R}^2 \to \mathbb{R},\ x,y \in \mathbb{R}$\
-$\varphi$ [**harmonic**] in open
+$\varphi$ <span style="color: green;">**harmonic**</span> in open
 $\Omega \subset \mathbb{R}^2$ if
 
 $$
@@ -2197,7 +2196,7 @@ $\implies u,v$ harmonic
 
 $u$ harmonic in open disc $D \subset \mathbb{C}$\
 $\implies \exists$ harmonic $v$ s.t $f = u+ iv$ holomorphic in $D$\
-$v$ the [**harmonic conjugate**] to $u$
+$v$ the <span style="color: green;">**harmonic conjugate**</span> to $u$
 
 **Remark**\
 In simply connected domain $\Omega \subset \mathbb{R}^2$ every harmonic
@@ -2248,7 +2247,7 @@ $$
 
 For $\gamma_1, \gamma_2$ curves parameterised by functions
 $z_1(t),z_2(t)$, $t\in[0,1]$ s.t $z_1 (0) = z_2 (0)$\
-Define angle between $\gamma_1, \gamma_2$ as angle between tangents
+Define <span style="color: green;">angle between $\gamma_1, \gamma_2$</span> as angle between tangents
 
 $$\arg z_{2}'(0) - \arg z_{1}' (0)$$
 
@@ -2268,7 +2267,7 @@ $$\underbrace{\arg z_{2}'(t) - \arg z_{1}'(t)}_{\text{angle between } z_{1}(0),z
 **Definition 44**.
 
 $\Omega$ open $\subset \mathbb{C}$\
-$f:\Omega \to \mathbb{C}$ [**conformal**] if
+$f:\Omega \to \mathbb{C}$ <span style="color: green;">**conformal**</span> if
 holomorphic in $\Omega$ and if $f'(z) \neq 0 \forall z \in \Omega$\
 Conformal mappings preserve angles.
 
@@ -2276,7 +2275,7 @@ Conformal mappings preserve angles.
 **Definition 45**.
 
 
-Holomorphic function a [**local injection**]
+Holomorphic function a <span style="color: green;">**local injection**</span>
 on open $\Omega \subset \mathbb{C}$\
 if
 $$\forall z_0 \in \Omega, \exists D = \{ z: |z-z_0| < r \} \subset \Omega \text{ s.t } f: D\to f(D) \text{ an injection}$$
@@ -2299,7 +2298,7 @@ $\implies$ inverse of conformal mapping also holomorphic
 **Definition 46**.
 
 
-[**Mobius Transformation**]/ Bilinear
+<span style="color: green;">**Mobius Transformation**</span> / Bilinear
 transformation a map
 
 $$f(z) = \frac{az + b}{cz + d} \quad a,b,c,d \in \mathbb{C}, ad -bc \neq 0$$
@@ -2323,7 +2322,7 @@ $\implies$ mapping conformal for $\mathbb{C}\backslash \{-\frac{d}{c}\}$
 Corresponding to matrix multiplication and inverses
 
  
-**Definition 47**. (Special/Simple mobius tranformations)
+**Definition 47**. <span style="color: green;">(Special/Simple mobius tranformations)</span>
 
 
 - **(M1)**.  $f(z) = az$ Scaling and rotation by $a$
@@ -2377,7 +2376,7 @@ $$\mathbb{H} = \{z = x +iy : Im(z) = y > 0\}$$
 **Definition 48**.
 
 
-$\Omega \subset \mathbb{C}$ [**proper**] if
+$\Omega \subset \mathbb{C}$ <span style="color: green;">**proper**</span> if
 non-empty and $\Omega\neq \mathbb{C}$
 
 
