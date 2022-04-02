@@ -1520,18 +1520,27 @@ $$\begin{aligned}
 
 Trajectory given by
 $O(x_0,y_0) = \{(e^{at}x_0, y_0) : t \in \mathbb{R}\}$\
-Obtaining the following phase portraits:\
-**C2** $$J = \begin{pmatrix} 0 & 0\\ 0 & 0 \end{pmatrix}$$ Trivially
-whole space is equilibria\
-**C3** $$\begin{aligned}
+Obtaining the following phase portraits:
+
+**C2**
+
+$$J = \begin{pmatrix} 0 & 0\\ 0 & 0 \end{pmatrix}$$
+
+Trivially whole space is equilibria
+
+**C3** 
+
+$$\begin{aligned}
     J &= \begin{pmatrix}0 & 1\\ 0 & 0\end{pmatrix} \quad a \in \mathbb{R}\backslash \{0\}\\
     e^{Jt} &= \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} \quad \forall\ t \in \mathbb{R}\end{aligned}$$
-Trajectory given by
-$O(x_0,y_0) = e^{Jt}\begin{pmatrix}x_0 \\ y_0 \end{pmatrix}\{(x_0 + ty_0, y_0) : t \in \mathbb{R}\}$\
-Obtaining the following phase portraits:\
-**C4**\
+
+Trajectory given by $O(x_0,y_0) = e^{Jt}\begin{pmatrix}x_0 \\ y_0 \end{pmatrix}\{(x_0 + ty_0, y_0) : t \in \mathbb{R}\}$\
+Obtaining the following phase portraits:
+
+**C4**
+
 Can't happen as a 2D matrix of real eigenvalus can't have eigenvalue of
-0.\
+0.
 
 **Remark 3.5** - *(Meaning of real + imaginary parts of e.vals of A)*
 
@@ -1659,7 +1668,7 @@ $x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 
     $$\|\varphi(t,x) - x^{*}\| < \epsilon \quad \forall x \in B_{\delta}(x^{*}) \text{ and } t \geq 0$$
 
-2.  $x^*$ [**unstable**] if not stable
+2.  $x^{\ast}$ [**unstable**] if not stable
 
 3.  $x^{*}$ [**attractive**] if
     $\exists \delta > 0$ s.t
@@ -1674,9 +1683,9 @@ $x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 
     $$\| \varphi(t,x) -x^{*}\| \leq Ke^{\gamma t}\|$$
 
-6.  $x^{*}$ [**repulsive**] if
-    $\exists \delta >0$ s.t
+6.  $x^{\ast}$ [**repulsive**] if $\exists \delta >0$ s.t
     $\lim_{t\to -\infty}\varphi(t,x) = x^{*},\ \forall x \in B_{\delta}(x^{*})$
+
     $$INSERT FIGURES HERE$$
 
  
@@ -1689,10 +1698,12 @@ Orbit $O(x)$ for some $x \in D$\
 
 1.  [**Homoclinic**] orbit if $\exists$
     equilibrium $x^{*} \in D \backslash\{x\}$ s.t
-    $$\lim_{t\to\infty}\varphi(t,x) = x^* \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x^*$$
+
+    $$\lim_{t\to\infty}\varphi(t,x) = x^{\ast} \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x^{\ast}$$
 
 2.  [**Heteroclinic**] orbit if $\exists$ 2
     distinct equilibria $x_1^* \neq x_2^*$ s.t
+
     $$\lim_{t\to\infty}\varphi(t,x) = x_1^* \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x_2^*$$
 
  
@@ -1701,7 +1712,7 @@ Orbit $O(x)$ for some $x \in D$\
 
 Consider autonomous linear system,
 $\dot{x} = Ax, A \in \mathbb{R}^{d\times d}$\
-Have trivial equilibrium $x^* = 0$
+Have trivial equilibrium $x^{\ast} = 0$
 
 1.  stable $\iff$
     - $Re(\rho) \leq 0\ \forall \rho$ e.vals of $A$\
@@ -1718,12 +1729,9 @@ Have trivial equilibrium $x^* = 0$
 
 
 $A \in \mathbb{R}^{d\times d}$
-[**hyperbolic**] if
-$Re(\lambda) \neq 0\ \forall \lambda$ e.vals of $A$\
-Equilibrium $x^*$ of differential equation
-$\dot{x} = f(x)\ f:D\subset \mathbb{R}^d \to \mathbb{R}^d$ continuously
-differentiable, is [**hyperbolic**] if
-matrix $f'(x^*) \in \mathbb{R}^{d\times d}$ hyperbolic.
+[**hyperbolic**] if $Re(\lambda) \neq 0\ \forall \lambda$ e.vals of $A$
+
+Equilibrium $x^{\ast}$ of differential equation $\dot{x} = f(x)\ f:D\subset \mathbb{R}^d \to \mathbb{R}^d$ continuouslydifferentiable, is [**hyperbolic**] if matrix $f'(x^{\ast}) \in \mathbb{R}^{d\times d}$ hyperbolic.
 
 **Lemma 4.9** - *Gronwall Lemma*\
 Consider continuous function $u:[a,b] \to \mathbb{R},$ let $c,d \geq 0$\
@@ -1733,12 +1741,10 @@ $$0 \leq u(t) \leq c + d\int_{a}^{t}u(s) ds \quad \forall t \in [a,b]$$
  
 **Theorem 8**. (Linearised stability)
 
-
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-continuously differentiable.\
-Assume $x^*$ equilibrium of above s.t $\forall$ e.vals $\lambda \in \mathbb{C}$
-of linearisation of $f'(x^*)\in \mathbb{R}^{d\times d}$ we have
-$Re(\lambda) < 0 \implies x^*$ is exponentially stable.
+continuously differentiable.
+
+Assume $x^{\ast}$ equilibrium of above s.t $\forall$ e.vals $\lambda \in \mathbb{C}$ of linearisation of $f'(x^{\ast})\in \mathbb{R}^{d\times d}$ we have $Re(\lambda) < 0 \implies x^{\ast}$ is exponentially stable.
 
 ### Stable and unstable sets, invariant sets
 
@@ -1747,11 +1753,11 @@ $Re(\lambda) < 0 \implies x^*$ is exponentially stable.
 
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-locally lipschitz continuous, with flow $\varphi$ and equilibria $x^*$\
-[**Stable set**] of $x^*$
-$$W^{s}(x^*) = \{ x \in D: \lim_{t\to\infty} \varphi(t,x) = x^*\}$$
-[**Unstable set**] of $x^*$
-$$W^{u}(x^*) = \{ x \in D: \lim_{t\to-\infty} \varphi(t,x) = x^*\}$$
+locally lipschitz continuous, with flow $\varphi$ and equilibria $x^{\ast}$\
+[**Stable set**] of $x^{\ast}$
+$$W^{s}(x^{\ast}) = \{ x \in D: \lim_{t\to\infty} \varphi(t,x) = x^{\ast}\}$$
+[**Unstable set**] of $x^{\ast}$
+$$W^{u}(x^{\ast}) = \{ x \in D: \lim_{t\to-\infty} \varphi(t,x) = x^{\ast}\}$$
 
  
 **Definition 19**. (Invariance)
@@ -1853,9 +1859,9 @@ is positively invariant
 
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-Locally Lipschitz continuous, $x^*$ an equilibria and
+Locally Lipschitz continuous, $x^{\ast}$ an equilibria and
 $V:D\to \mathbb{R}$ lyapunov funtion s.t
-$$V(x^*) = 0, V(x) >0 \ \forall x \in D\backslash\{x^*\} \implies x^* \text{ stable }$$
+$$V(x^{\ast}) = 0, V(x) >0 \ \forall x \in D\backslash\{x^{\ast}\} \implies x^{\ast} \text{ stable }$$
 
  
 **Theorem 10**. (La Salle's invariance principal)
@@ -1875,21 +1881,21 @@ $$\forall x \in D \omega(x) \subset \underbrace{\text{ largest invariant subset 
 
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-Locally Lipschitz continuous, $x^* \in D, V:D\to\mathbb{R}$ Lyapunov
+Locally Lipschitz continuous, $x^{\ast} \in D, V:D\to\mathbb{R}$ Lyapunov
 function s.t $$\begin{aligned}
-    V(x^*) =0 &\text{ and } V(x) > 0\ \forall x \in D\backslash\{x^*\}\\
-    \dot{V}(x^*) =0 &\text{ and } \dot{V}(x) < 0\ \forall x \in D\backslash\{x^*\}\end{aligned}$$
-$\implies x^*$ asymptotically stable\
+    V(x^{\ast}) =0 &\text{ and } V(x) > 0\ \forall x \in D\backslash\{x^{\ast}\}\\
+    \dot{V}(x^{\ast}) =0 &\text{ and } \dot{V}(x) < 0\ \forall x \in D\backslash\{x^{\ast}\}\end{aligned}$$
+$\implies x^{\ast}$ asymptotically stable\
 **Corollary 4.33** - *(Sublevel sets of Lyapunov functions are subsets
 of domain of attraction)*\
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-Locally Lipschitz continuous, $x^* \in D, V:D\to\mathbb{R}$ Lyapunov
+Locally Lipschitz continuous, $x^{\ast} \in D, V:D\to\mathbb{R}$ Lyapunov
 function\
 Consider sublevel sets of Lyapunov function $V$
 
 $$S_{c} := \{x \in D: V(x) \leq c\} \ \forall c>0$$
 
-$\implies S_c$ subset of domain of attraction $W^{s}(x^*)$ if $S_c \subset D$ compact
+$\implies S_c$ subset of domain of attraction $W^{s}(x^{\ast})$ if $S_c \subset D$ compact
 
 ## Poincaré-Bendixson Theorem
 
