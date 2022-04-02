@@ -1882,12 +1882,16 @@ $$\forall x \in D \omega(x) \subset \underbrace{\text{ largest invariant subset 
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 Locally Lipschitz continuous, $x^{\ast} \in D, V:D\to\mathbb{R}$ Lyapunov
-function s.t $$\begin{aligned}
+function s.t
+
+$$\begin{aligned}
     V(x^{\ast}) =0 &\text{ and } V(x) > 0\ \forall x \in D\backslash\{x^{\ast}\}\\
     \dot{V}(x^{\ast}) =0 &\text{ and } \dot{V}(x) < 0\ \forall x \in D\backslash\{x^{\ast}\}\end{aligned}$$
-$\implies x^{\ast}$ asymptotically stable\
-**Corollary 4.33** - *(Sublevel sets of Lyapunov functions are subsets
-of domain of attraction)*\
+
+$\implies x^{\ast}$ asymptotically stable
+
+**Corollary 4.33** - *(Sublevel sets of Lyapunov functions are subsets of domain of attraction)*
+
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 Locally Lipschitz continuous, $x^{\ast} \in D, V:D\to\mathbb{R}$ Lyapunov
 function\
