@@ -1480,6 +1480,13 @@ Trajectory given $O(x_0,y_0) = \{ (x,y_0(\frac{x}{x_0})^{b/a} \in \mathbb{R}^2: 
 
 Obtaining the following phase portraits:
 
+| a< b < 0                | a < 0 < b | 0 < a < b |
+| ----------------------- | ------------- | ------------ |
+| Stable knot - 2 tangents| Saddle | Unstable knot - 2 tangents|
+|  <img src="diags/c1-1.png" alt="drawing" width="300"/>  |  <img src="diags/c1-2.png" alt="drawing" width="300"/> |  <img src="diags/c1-3.png" alt="drawing" width="300"/> |
+
+
+
 **C2**
 
 $$\begin{aligned}
@@ -1489,6 +1496,12 @@ $$\begin{aligned}
 Trajectory given by $O(x_0,y_0) = \{ (x_0 e^{at}, y_0 e^{at}): t \in \mathbb{R}\} = \{ (x,x\frac{y_0}{x_0}) \in \mathbb{R}^2: \frac{x}{x_0} > 0\}$
 
 Obtaining the following phase portraits:
+
+| a < 0                | a > 0 |
+| ----------------------- | ------------- |
+| Stable knot - many tangents| Unstable knot - many tangents |
+|  <img src="diags/c2-1.png" alt="drawing" width="300"/>  |  <img src="diags/c2-2.png" alt="drawing" width="300"/> | 
+
 
 **C3**
 
@@ -1500,6 +1513,11 @@ Trajectory given by $O(x_0,y_0) = \{(x_0 e^{at} + y_0 te^{at}, y_0 e^{at}): t \i
 
 Obtaining the following phase portraits:
 
+| a < 0                | a > 0 |
+| ----------------------- | ------------- |
+| Stable knot - 1 tangent| Unstable knot - 1 tangent |
+|  <img src="diags/c3-1.png" alt="drawing" width="300"/>  |  <img src="diags/c3-2.png" alt="drawing" width="300"/> | 
+
 **C4** 
 
 $$\begin{aligned}
@@ -1509,6 +1527,21 @@ $$\begin{aligned}
 Trajectory given by $O(x_0,y_0) = \{ e^{at} \begin{pmatrix} x_0 \cos (bt) + y_0 \sin (bt) \\ y_0 \cos (bt) - x_0 \sin (bt) \end{pmatrix}: t \in \mathbb{R}\}$
 
 Obtaining the following phase portraits:
+
+| a < 0, b > 0 | a < 0, b < 0  |
+| ----------------------- | ------------- |
+| Stable focus | Stable focus |
+|  <img src="diags/c4-1.png" alt="drawing" width="300"/>  |  <img src="diags/c4-2.png" alt="drawing" width="300"/> | 
+
+| a = 0, b > 0 | a = 0, b < 0 |
+| ----------------------- | ------------- |
+| Centre | Centre |
+|  <img src="diags/c4-3.png" alt="drawing" width="300"/>  |  <img src="diags/c4-4.png" alt="drawing" width="300"/> | 
+
+| a > 0, b > 0                | a > 0, b < 0|
+| ----------------------- | ------------- |
+| Unstable focus | Unstable focus |
+|  <img src="diags/c4-5.png" alt="drawing" width="300"/>  |  <img src="diags/c4-6.png" alt="drawing" width="300"/> | 
 
 ***$A$ singular:***
 
@@ -1521,6 +1554,10 @@ $$\begin{aligned}
 Trajectory given by
 $O(x_0,y_0) = \{(e^{at}x_0, y_0) : t \in \mathbb{R}\}$\
 Obtaining the following phase portraits:
+
+| a < 0                | a > 0 |
+| ----------------------- | ------------- |
+|  <img src="diags/c1-21.png" alt="drawing" width="300"/>  |  <img src="diags/c1-22.png" alt="drawing" width="300"/> | 
 
 **C2**
 
@@ -1536,6 +1573,8 @@ $$\begin{aligned}
 
 Trajectory given by $O(x_0,y_0) = e^{Jt}\begin{pmatrix}x_0 \\ y_0 \end{pmatrix}\{(x_0 + ty_0, y_0) : t \in \mathbb{R}\}$\
 Obtaining the following phase portraits:
+
+<img src="diags/c3-21.png" alt="drawing" width="300"/>
 
 **C4**
 
