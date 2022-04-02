@@ -1788,16 +1788,20 @@ locally lipschitz continuous, with flow $\varphi, x\in D$
     of $x$\
     If $\exists$ sequence $\{t_n\}_{n\in\mathbb{N}}$ s.t
     $\lim_{n\to \infty} t_n = \infty$ and
+
     $$x_\omega = \lim_{n\to\infty}\varphi(t_n,x)$$
-    [**$\omega(x)$**]$= \{$all omega limit
+
+    $\omega(x)= \{$ all omega limit
     points of $x\}$
 
 2.  $x_{\alpha}\in D$ an [**alpha limit
     point**] of $x$\
     if $\exists$ sequence $\{t_n\}_{n\in\mathbb{N}}$ s.t
     $\lim_{n\to\infty}t_n = -\infty$ and
+
     $$x_{\alpha} = \lim_{n\to\infty}\varphi(t_n,x)$$
-    [**$\alpha(x)$**]$= \{$all alpha limit
+    
+    $\alpha(x) = \{$ all alpha limit
     points of $x\}$
 
 **Proposition 4.19** - *(Alternative characterisation of limit sets)*\
