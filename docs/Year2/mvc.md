@@ -1786,7 +1786,7 @@ locally lipschitz continuous, with flow $\varphi, x\in D$
 
 1.  $x_w \in D$ an [**omega limit point**]
     of $x$\
-    If $\exists$ sequence $\{t_n\}_{n\in\mathbb{N}}$ s.t
+    If $\exists$ sequence $ \{ t_n \}_{n\in\mathbb{N}}$ s.t
     $\lim_{n\to \infty} t_n = \infty$ and
 
     $$x_\omega = \lim_{n\to\infty}\varphi(t_n,x)$$
