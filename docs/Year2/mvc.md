@@ -1539,7 +1539,7 @@ Obtaining the following phase portraits:
 
 **C4**
 
-Can't happen as a 2D matrix of real eigenvalus can't have eigenvalue of
+Can't happen as a 2D matrix of real eigenvalues can't have eigenvalue of
 0.
 
 **Remark 3.5** - *(Meaning of real + imaginary parts of e.vals of A)*
@@ -1800,7 +1800,7 @@ locally lipschitz continuous, with flow $\varphi, x\in D$
     $\lim_{n\to\infty}t_n = -\infty$ and
 
     $$x_{\alpha} = \lim_{n\to\infty}\varphi(t_n,x)$$
-    
+
     $\alpha(x) = \{$ all alpha limit
     points of $x\}$
 
