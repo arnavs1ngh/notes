@@ -23,7 +23,7 @@ ol.n {list-style-type: none;}
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Term 1**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Complete**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
   
 - <a href="/notes/pdfs/year2/MVCLec.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/MVCLec.pdf" download>**Download**</a>
 
@@ -1483,7 +1483,8 @@ Obtaining the following phase portraits:
 | a< b < 0                | a < 0 < b | 0 < a < b |
 | ----------------------- | ------------- | ------------ |
 | Stable knot - 2 tangents| Saddle | Unstable knot - 2 tangents|
-|  <img src="diags/c1-1.png" alt="drawing" width="300"/>  |  <img src="diags/c1-2.png" alt="drawing" width="300"/> |  <img src="diags/c1-3.png" alt="drawing" width="300"/> |
+|  <img src="/notes/docs/Year2/diags/c1-1.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c1-2.png" alt="drawing" width="300"/> |  <img src="/notes/docs/Year2/diags/c1-3.png" alt="drawing" width="300"/> |
+
 
 
 
@@ -1500,7 +1501,7 @@ Obtaining the following phase portraits:
 | a < 0                | a > 0 |
 | ----------------------- | ------------- |
 | Stable knot - many tangents| Unstable knot - many tangents |
-|  <img src="diags/c2-1.png" alt="drawing" width="300"/>  |  <img src="diags/c2-2.png" alt="drawing" width="300"/> | 
+|  <img src="/notes/docs/Year2/diags/c2-1.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c2-2.png" alt="drawing" width="300"/> | 
 
 
 **C3**
@@ -1516,7 +1517,7 @@ Obtaining the following phase portraits:
 | a < 0                | a > 0 |
 | ----------------------- | ------------- |
 | Stable knot - 1 tangent| Unstable knot - 1 tangent |
-|  <img src="diags/c3-1.png" alt="drawing" width="300"/>  |  <img src="diags/c3-2.png" alt="drawing" width="300"/> | 
+|  <img src="/notes/docs/Year2/diags/c3-1.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c3-2.png" alt="drawing" width="300"/> | 
 
 **C4** 
 
@@ -1531,17 +1532,17 @@ Obtaining the following phase portraits:
 | a < 0, b > 0 | a < 0, b < 0  |
 | ----------------------- | ------------- |
 | Stable focus | Stable focus |
-|  <img src="diags/c4-1.png" alt="drawing" width="300"/>  |  <img src="diags/c4-2.png" alt="drawing" width="300"/> | 
+|  <img src="/notes/docs/Year2/diags/c4-1.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c4-2.png" alt="drawing" width="300"/> | 
 
 | a = 0, b > 0 | a = 0, b < 0 |
 | ----------------------- | ------------- |
 | Centre | Centre |
-|  <img src="diags/c4-3.png" alt="drawing" width="300"/>  |  <img src="diags/c4-4.png" alt="drawing" width="300"/> | 
+|  <img src="/notes/docs/Year2/diags/c4-3.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c4-4.png" alt="drawing" width="300"/> | 
 
 | a > 0, b > 0                | a > 0, b < 0|
 | ----------------------- | ------------- |
 | Unstable focus | Unstable focus |
-|  <img src="diags/c4-5.png" alt="drawing" width="300"/>  |  <img src="diags/c4-6.png" alt="drawing" width="300"/> | 
+|  <img src="/notes/docs/Year2/diags/c4-5.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c4-6.png" alt="drawing" width="300"/> | 
 
 ***$A$ singular:***
 
@@ -1557,7 +1558,7 @@ Obtaining the following phase portraits:
 
 | a < 0                | a > 0 |
 | ----------------------- | ------------- |
-|  <img src="diags/c1-21.png" alt="drawing" width="300"/>  |  <img src="diags/c1-22.png" alt="drawing" width="300"/> | 
+|  <img src="/notes/docs/Year2/diags/c1-21.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c1-22.png" alt="drawing" width="300"/> | 
 
 **C2**
 
@@ -1574,7 +1575,7 @@ $$\begin{aligned}
 Trajectory given by $O(x_0,y_0) = e^{Jt}\begin{pmatrix}x_0 \\ y_0 \end{pmatrix}\{(x_0 + ty_0, y_0) : t \in \mathbb{R}\}$\
 Obtaining the following phase portraits:
 
-<img src="diags/c3-21.png" alt="drawing" width="300"/>
+<img src="/notes/docs/Year2/diags/c3-21.png" alt="drawing" width="300"/>
 
 **C4**
 
