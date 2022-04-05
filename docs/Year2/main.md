@@ -68,7 +68,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 </details>
 
 ### Linear Algebra + Numerical Analysis - MATH50003
-- <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Term 1**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Complete**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/LagLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
 
 <details closed markdown="block">
@@ -108,7 +108,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 </details>
 
 ### Multivariable Calculus + Differential Equations - MATH50004
-- <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Term 1**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Complete**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/MVCLec.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/MVCLec.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/MVC-T2.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/MVC-T2.pdf" download>**Download**</a>
 
@@ -259,3 +259,9 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Network Science - MATH50007
 
 - <a href="/notes/pdfs/year2/NSC-Lec.pdf" target="_blank" style="color:#801fff;">**Open NetSci Lecturer**</a> - <a href="/notes/pdfs/year2/NSC-Lec.pdf" download>**Download**</a>
+
+### Useful Links & Resources
+
+
+- <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" target="_blank" style="color:#801fff;">**Matrix Cookbook**</a>
+- 
