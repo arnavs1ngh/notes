@@ -23,7 +23,7 @@ ol.n {list-style-type: none;}
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Complete**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Completed**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
   
 - <a href="/notes/pdfs/year2/MVCLec.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/MVCLec.pdf" download>**Download**</a>
 
