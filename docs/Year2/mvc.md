@@ -1483,7 +1483,7 @@ Obtaining the following phase portraits:
 | a< b < 0                | a < 0 < b | 0 < a < b |
 | ----------------------- | ------------- | ------------ |
 | Stable knot - 2 tangents| Saddle | Unstable knot - 2 tangents|
-|  <img src="/notes/docs/Year2/diags/c1-1.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c1-2.png" alt="drawing" width="300"/> |  <img src="diags/c1-3.png" alt="drawing" width="300"/> |
+|  <img src="/notes/docs/Year2/diags/c1-1.png" alt="drawing" width="300"/>  |  <img src="/notes/docs/Year2/diags/c1-2.png" alt="drawing" width="300"/> |  <img src="/notes/docs/Year2/diags/c1-3.png" alt="drawing" width="300"/> |
 
 
 
