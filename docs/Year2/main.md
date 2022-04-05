@@ -70,6 +70,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Linear Algebra + Numerical Analysis - MATH50003
 - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Complete**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/LagLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
+- <a href="https://github.com/isaacjeffersonlee/MATH50003-compiled-lecture-notes" target="_blank" style="color:#801fff;">**Numerical Analysis Lecturer - Term 2**</a>
 
 <details closed markdown="block">
   <summary>
@@ -256,12 +257,17 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
 </details>
 
+### Principles of Programming - MATH50009
+
+
+- <a href="https://object-oriented-python.github.io" target="_blank" style="color:#801fff;">**Official website**</a>
+
 ### Network Science - MATH50007
 
 - <a href="/notes/pdfs/year2/NSC-Lec.pdf" target="_blank" style="color:#801fff;">**Open NetSci Lecturer**</a> - <a href="/notes/pdfs/year2/NSC-Lec.pdf" download>**Download**</a>
 
 ### Useful Links & Resources
 
-
 - <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" target="_blank" style="color:#801fff;">**Matrix Cookbook**</a>
-- 
+- <a href="https://github.com/isaacjeffersonlee/lag-helper" target="_blank" style="color:#801fff;">**LAG Helper**</a>
+
