@@ -702,7 +702,7 @@ $$\mathbf{Y} = X\mathbf{\beta} + \mathbf{\epsilon}$$
 
 **Assumptions**\
 *2nd order assumptions (SOA)*
-$$cov(\mathbf{\epsilon}) = (cov(\epsilon_i,\epsilon_j))_{\substack{{i = 1,\dots,n}\\{ j = 1,\dots,n}}} = \sigma^{2}I_{n} \quad \sigma^{2} > 0$$
+$$cov(\mathbf{\epsilon}) = (cov(\epsilon_i,\epsilon_j))_{\substack{i = 1,\dots,n \\ j = 1,\dots,n}} = \sigma^{2}I_{n} \quad \sigma^{2} > 0$$
 *Normal theory assumptions (NTA)*\
 $\mathbf{\epsilon} \sim N(0,\sigma^{2}I_{n})$, some $\sigma^{2} > 0$\
 $N$-multivariate $n$-dimensional normal multivariate distribution
