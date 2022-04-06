@@ -587,3 +587,620 @@ Under regularity conditions
 $$2\log t(\mathbf{Y}) \xrightarrow[]{D} \chi^2_{r} \quad (n\to \infty)$$
 under $H_0$ where $r$ the number of independent restrictions on
 $\mathbf{\theta}$ needed to define $H_0$
+
+# Linear models with 2nd order assumptions
+
+## Simple Linear Regression
+
+ 
+**Definition 25**. *(Simple Linear Model)*
+
+
+$$\underbrace{Y_i}_{\substack{\text{outcome}\\ \text{observable random var}}} = \underbrace{\textcolor{red}{\beta_1} + \overbrace{a_i}^{\substack{\text{covariate}\\ \text{(observable constant)}}} \textcolor{red}{\beta_2}}_{\textcolor{red}{\substack{\text{unknown}\\ \text{parameters}}}} + \overbrace{\epsilon_i}^{\text{error (not observable)}}$$
+
+[**Least Square Estimators**]\
+$\hat{\beta_1},\hat{\beta_2}$ of $\beta_1,\beta_2$ defined as minimisers
+of
+$$S(\beta_1,\beta_2) = \sum_{i=1}^{n}(y_i - \beta_1 - a_i\beta_2)^{2}$$
+
+**Remark**
+
+-   $e_i = y_i = \hat{\beta}_1 - a_i \hat{\beta}_2$ -
+    [**residuals**] are observable, not
+    i.i.d
+
+-   unkown parameters $\beta_1,\beta_2$ and $\sigma^{2}$
+
+-   $Y_1,\dots,Y_n$ generally not i.i.d observations\
+    independence holds if $\epsilon_1,\dots,\epsilon_n$ independent\
+    $Y_i$ not of same distribution, distribution depending on covariate
+    $a_i$
+
+## Matrix Algebra
+
+**Lemma 5**
+
+1.  $A\in \mathbb{R}^{n\times m}, B \in \mathbb{R}^{m\times n}$\
+    $(AB)^T = B^T A^T$
+
+2.  $A \in \mathbb{R}^{n\times n}$ invertible\
+    $\implies (A^{-1})^T = (A^T)^{-1}$
+
+3.  $trace(AB) = trace(BA)$
+
+4.  $rank(X^TX) = rank(X)$
+
+**Lemma 8**\
+$A\in \mathbb{R}^{n\times n}$ symmetric $\implies \exists$ orthogonal
+$P$ s.t $P^T A P$ diagonal with diagonal entries $=$ e.vals of $A$\
+$A$ positive definite, symmetric $\implies \exists Q$ non-singular s.t
+$Q^T A Q = I_n$
+
+## Review of rules for $E,cov$ for random vectors
+
+ 
+**Definition 26**.
+
+
+$\mathbf{X} = (X_1,\dots,X_n)^T$ random vector
+$$\implies E(\mathbf{X}) = (E(X_1),\dots,E(X_n))^T$$
+
+**Lemma 9**\
+$\mathbf{X,Y}$ random vector
+
+1.  $E(\mathbf{X} + \mathbf{Y}) = E(\mathbf{X}) + E(\mathbf{Y})$
+
+2.  $E(a\mathbf{X}) = aE(\mathbf{X})$
+
+3.  $AB$ deterministic matrices\
+    $E(A\mathbf{X}) = AE(\mathbf{X})$,
+    $E(\mathbf{X^T}B) = E(\mathbf{X})^T B$
+
+ 
+**Definition 27**. *(Covariance)*
+
+
+random vectors
+$$cov(\mathbf{X,Y}) = E(\mathbf{XY^T}) - E(\mathbf{X})E(\mathbf{Y})^T$$
+$$cov(\mathbf{X}) = cov(\mathbf{X,X})$$
+
+**Lemma 10**\
+$\mathbf{X,Y,Z}$ random vector\
+$A,B$ deterministic matrices, $a,b \in \mathbb{R}$
+
+1.  $cov(\mathbf{X,Y}) = cov(\mathbf{Y,X})^T$
+
+2.  $cov(a\mathbf{X} + b\mathbf{Y}, Z) = a\cdot cov(\mathbf{X,Z}) + b\cdot cov(\mathbf{Y,Z})$
+
+3.  $cov(A\mathbf{X},B\mathbf{Y}) = Acov(\mathbf{X,Y})B^T$
+
+4.  $cov(A\mathbf{X}) = Acov(\mathbf{X})A^T$\
+    $cov(\mathbf{X})$ positive semidefinite and symmetric\
+    i.e.
+    $\mathbf{c}^T cov(\mathbf{X}) \mathbf{c} \geq 0 \ \forall \mathbf{c}$\
+    All e.val. of $cov(\mathbf{X})$ non-negative
+
+5.  $\mathbf{c,Y}$ independent $\implies cov(\mathbf{X,Y}) = 0$
+
+## Linear Model
+
+ 
+**Definition 28**.
+
+
+In a [**linear model**]
+$$\mathbf{Y} = X\mathbf{\beta} + \mathbf{\epsilon}$$
+
+-   $\mathbf{Y}$ - n. dimensional random vector (observable)
+
+-   $X \in \mathbb{R}^{n\times p}$ known matrix - [**design
+    matrix**]
+
+-   $\mathbf{\beta} \in \mathbb{R}^{p}$
+
+-   $\epsilon$ n-variate random vector (not observable);
+    $E(\mathbf{\epsilon}) = 0$
+
+**Assumptions**\
+*2nd order assumptions (SOA)*
+$$cov(\mathbf{\epsilon}) = (cov(\epsilon_i,\epsilon_j))_{\substack{{i = 1,\dots,n}\\{ j = 1,\dots,n}}} = \sigma^{2}I_{n} \quad \sigma^{2} > 0$$
+*Normal theory assumptions (NTA)*\
+$\mathbf{\epsilon} \sim N(0,\sigma^{2}I_{n})$, some $\sigma^{2} > 0$\
+$N$-multivariate $n$-dimensional normal multivariate distribution
+
+$$NTA \implies SOA$$ 
+
+*Full rank (FR)*\
+$X$ has full rank $rank(X) = r$
+
+## Identifiability
+
+ 
+**Definition 29**.
+
+
+Suppose statistical model with unkown parameter $\theta$\
+$\theta$ [**identifiable**] if no 2
+different values of $\theta$ yield same distribution of observed data.
+
+## Least Square estimation
+
+Estimate $\beta$ by least squares.\
+Least squares: choose $\beta$ to minimise $$\begin{aligned}
+    S(\beta) &= \sum_{i=1}^{n}\left (Y_i - \sum_{j=1}^{p}X_{ij}\beta_{j}\right)^{2}\\
+             &=  (Y-X\beta)^T(Y-X\beta)\\
+             &= Y^T Y - 2Y^T X\beta + \beta^T X^T X \beta\\
+    \frac{\partial S(\beta)}{\partial \beta} &= \frac{\partial S(\beta)}{\partial \beta_i}_{i = 1,\dots,p} = -2X^TY + 2X^TX\beta\end{aligned}$$
+$$\begin{aligned}
+\text{Unique solution} &\iff X^TX \text{ invertible } (rank = p)\quad rank(X^TX) = rank(X)\\
+                       &\iff \text{linear model of full rank}\end{aligned}$$
+$\hat{\beta}$ satisfies LSE $\implies$ minimise $S(\beta)$
+
+## Properties of LSE
+
+Assume (FR) and (SOA) $\implies \hat{\beta} = (X^TX)^{-1}X^{T}Y$
+
+-   $\hat{\beta}$ linear in $\mathbf{X}$\
+    i.e.
+    $\hat{\beta}: \mathbb{R}^{n} \to \mathbb{R}^{p}, y \mapsto (X^{T}X)^{-1}X^{T}\mathbf{y}$
+    linear mapping
+
+-   $\hat{\beta}$ unbiased for $\beta$\
+    $\forall \beta\ E(\hat{\beta}) = (X^TX)^{-1}X^{T}E(\mathbf{Y}) = (X^TX)^{-1}X^{T}X\beta = \beta$
+
+-   $cov(\hat{\beta}) = \sigma^{2}(X^X X)^{-1}$
+
+ 
+**Definition 30**.
+
+
+Estimator $\hat{\gamma}$ linear if $\exists L \in \mathbb{R}^{n}$ s.t
+$\hat{\gamma} = L^{T}Y$
+
+ 
+**Theorem 8**. *(Gauss-Markov Theorem for FR linear models)*
+
+
+Assume (FR),(SOA)\
+Let $\mathbf{c} \in \mathbb{R}^{p},\hat{\beta}$ a least square estimator
+of $\beta$ in a linear model.\
+$\implies$ estimator $c^{T}\mathbf{\beta}$ has smallest variance among
+all linear unbiased estimators for $c^{T}\beta$
+
+## Projection Matrices
+
+ 
+**Definition 31**.
+
+
+$L$ a linear subspace of $\mathbb{R}^{n},dim(L) = r\leq n$\
+$P \in \mathbb{R}^{n\times n}$ a projection matrix onto $L$ if
+
+1.  $P\mathbf{x} = \mathbf{x} \quad \forall \mathbf{x} \in L$
+
+2.  $P\mathbf{x} = \mathbf{0} \quad \forall \mathbf{x} \in L^{\perp} = \{ \mathbf{z} \in \mathbb{R}^{n} : \mathbf{z}^{T}\mathbf{y} = 0 \ \forall \mathbf{y} \in L\}$
+
+**Lemma 11**\
+$P$ a projection matrix
+$\iff \underbrace{P^{T} = P}_{P \text{ symmetric}}$ and
+$\underbrace{P^{2} = P}_{P \text{ independent}}$
+
+**Lemma 12**\
+$A$ a $n\times n$ projection matrix $(A = A^{T}, A^{2} = A)$ of
+$rank(r)$
+
+1.  $r$ of e.val of $A$ are 1 and $n-r$ are 0
+
+2.  $rank(A) = trace(A)$
+
+## Residuals, Estimation of the variance
+
+ 
+**Definition 32**.
+
+
+$\hat{Y} = X\hat{\beta}$, $\hat{\beta}$ a least squares estimator,
+called vector of fitted values.
+
+**Lemma 13**\
+$\hat{Y}$ unique and $$\hat{Y} = PY$$ $P$ the projection matrix onto
+column space of $X$
+
+ 
+**Definition 33**.
+
+
+Vector of residuals.
+$$\begin{aligned}
+    \mathbf{e} &= Y - \hat{Y}: \text{ vector of residuals}\\
+               &= Y-PY = QY, Q = I - P: \text{ the projection of matrix onto } span(X)^{\perp}\\
+    E(\mathbf{e}) = E(QY) = QE(Y) = \underbrace{QX}_{=0}\beta = 0\end{aligned}$$
+
+**Diagnostic plots**\
+Suppose data comes from model
+$$Y = X\beta + Z\gamma + \epsilon \quad E(\epsilon) = 0$$
+$z \in \mathbb{R}^{n}\backslash span(X), \gamma \in \mathbb{R}$
+deterministic\
+But analyst works with $$Y = X\beta + \epsilon$$ $\implies$ if
+$\gamma \neq 0$, used wrong model
+$$\implies E(\epsilon) = E(QY) = E(Q(X\beta + Z\gamma + \epsilon)) = QZ\gamma$$
+$\implies$ plot $QZ$ against residuals yields line through the origin.\
+if non-zero slope $\implies$ consider including $Z$
+
+**Residual sum of squares**
+
+ 
+**Definition 34**. *(Residual sum of squares)*
+
+
+$$RSS = e^{T}e$$
+
+**Other forms**
+
+-   RSS = $\sum_{i=1}^{n}e^{2}_i$
+
+-   RSS = $S(\hat{\beta}) = \|Y - X\hat{\beta}\|^{2}$
+
+-   RSS = $Y^{T}Y - \hat{Y}^{T}\hat{Y}$
+
+-   RSS = $(Y-\hat{Y})^{T}(Y-\hat{Y})$
+
+-   RSS = $(QY)^{T}QY$
+
+-   RSS = $Y^{T}QY$
+
+ 
+**Theorem 9**.
+
+
+$$\hat{\sigma}^{2} = \frac{RSS}{n-r}$$
+
+An unbiased estimator of $\sigma^{2}$, $r = rank(X)$
+
+**Coefficient of determination** - ($\mathbb{R}^{2}$)\
+For models containing intercept term ($X$ has column of 1s or other
+constants) $$R^{2} = 1 - \frac{RSS}{\sum_{i=1}^{n}(Y_i - \bar{Y})^{2}}$$
+Small RSS 'better' $\implies$ want large $R^{2}$\
+$0 \leq R^{2} \leq 1 \implies R^{2} = 1$ for perfect model.
+
+**Remark**\
+$\frac{RSS}{n}$ an estimator of $\sigma^{2}$
+
+$$\frac{1}{n}\sum_{i=1}^{n}(Y_{i} - \bar{Y})^{2}$$ 
+
+estimator of $\sigma^{2}$ in model with only intercept term.
+
+$$\implies \frac{RSS/n}{\frac{1}{n}\sum(Y_i - \bar{Y})^{2}} \approx \frac{\text{Var. in model}}{\text{Total variance}} \implies R^{2} \approx \frac{\text{Total var. - Var. in Model}}{\text{Total var.}}$$
+
+# Linear Models with Normal theory Assumptions
+
+## Distributional Results
+
+### Multivariate Normal Distribution
+
+Denoted
+$N(\underbrace{\mu}_{\in \mathbb{R}^{n}},\underbrace{\Sigma}_{\in \mathbb{R}^{n\times n}})$,
+distribution of random vec. $\mu$ - Expectation, $\Sigma$ - Covariance
+
+ 
+**Definition 35**.
+
+
+$\Sigma$ - positive definite\
+$Z \sim N(\mu,\Sigma)$ if $Z$ has pdf of form
+$$f(z) = \frac{1}{(2\pi)^{n/2}\lvert \Sigma \rvert^{1.2}}\exp \left( -\frac{1}{2}(z-\mu)^{T}\Sigma^{-1}(z-\mu) \right)$$
+$n$-variate random vector $Z$ follows MVN distribution if
+
+-   $\forall a \in \mathbb{R}^{n}$ random variable $a^TZ$ follows
+    univariate normal distribution
+
+-   $X_1,\dots,X_n \sim N(0,1)$ iid, let
+    $\mu \in \mathbb{R}^{d}, A \in\mathbb{R}^{n\times r}$\
+    $\implies Z = AX + \mu \sim N(\mu,AA^T)$
+
+-   $Z \sim N(\mu,\Sigma)$ if its characteristic function
+    $\phi:\mathbb{R}^{n} \to \mathbb{C}, \phi(t) = E(\exp(iZ^{T}t)$
+    satisfies
+    $$\phi(t) = \exp\left( i\mu^Tt - \frac{1}{2}t^T\Sigma t\right) \quad \forall \ t \in \mathbb{R}^{n},\mu \in \mathbb{R}^{n},\Sigma\in \mathbb{R}^{n\times n} \text{ symm. pos. def}$$
+
+**Remark**\
+$Z\sim N(\mu,\Sigma) \implies$
+
+-   $E(Z) = \mu$
+
+-   $cov(Z) = \Sigma$
+
+-   $A$ deterministic matrix, $b$ deterministic vector\
+    $AZ + b \sim N(A\mu + b, A\Sigma A^T)$
+
+**Remark**\
+$X,Y$ random variables\
+$cov(X,Y) \neq = 0 \;\not\!\!\!\implies X,Y$ independent
+
+**Lemma 14**\
+$i= 1,\dots,k$ let $A_i \in \mathbb{R}^{n_i \times n_i}$ positive
+semidefinite and symmetric\
+$Z_i$ a $n_i$-variate random vector\
+if
+$Z = \begin{pmatrix}Z_1\\ \dots \\ Z_k\end{pmatrix} \sim N(\mu,\Sigma)$
+for some $\mu \in \mathbb{R}^{\sum_{i=1}^{k}n_i}$ and
+$\Sigma = diag(A_1,\dots,A_n) \implies Z_1,\dots,Z_k$ independent.
+
+### Distributions derived from MVN
+
+ 
+**Definition 36**. *$\chi^{2}$ (Chi squared distribution)*
+
+
+$Z\sim N(\mu,I_n), \ \mu \in \mathbb{R}^n$\
+$U = Z^TZ = \sum_{i=1}^{n}z_{i}^{2}$ has non-central $\chi^{2}$
+distribution with $n$ degrees of freedom and non-centrality parameter;
+$\delta = \sqrt{\mu^T\mu}$
+$$U \sim \chi^{2}_{n}(\delta), \quad \chi^{2}_{n} =\chi^{2}_{n}(0)$$
+
+**Lemma**\
+$U \sim \chi^{2}_{n}(\delta) \implies E(U) = n + \delta^{2},\ Var(U) = 2n + 4\delta^{2}$\
+$U_i \sim \chi^{2}_{n_i}(\delta_i), i = 1,\dots,k \text{ and } U_{i} \text{ independent}$
+
+$$\implies \sum_{i=1}^{k}U_i \sim \chi^{2}_{\sum_{n_i}\sqrt{\Sigma \delta_{i}^{2}}}$$
+
+ 
+**Definition 37**.
+
+
+$X,U$ independent random variables,\
+$X \sim N(\delta,1),\ U \sim \chi^{2}_{n}$
+
+$$Y = \frac{X}{\sqrt{U/n}} \sim t_{n}(\delta)$$ 
+
+Non-central $t$-distribution with $n$ degrees of freedom and centrality parameter
+$\delta$\
+$t_n = t_n(0)$
+
+**Remark**\
+$Y_n \sim t_n \ \forall n \in \mathbb{N}$
+$$Y_n \xrightarrow[n\to\infty]{d} N(0,1)$$
+
+ 
+**Definition 38**.
+
+
+$W_1 \sim \chi^{2}_{n_{1}}(\delta), W_2 \sim \chi^{2}_{n_2}$
+independently $$F = \frac{W_1/n_1}{W_2/n_2} \sim F_{n_1,n_2}(\delta)$$
+Non-central $F$ distribution with $(n_1,n_2)$ degrees of freedom and
+non-centrality parameter $= \delta$\
+$F_{n_1,n_2} = F_{n_1,n_2}(0)$
+
+### Some independence results
+
+**Lemma 16**\
+$A\in \mathbb{R}^{n\times n}$ positive semidefinite and symmetric matrix
+of rank $r$
+
+$$\implies \exists L \in \mathbb{R}^{n\times r} \text{ s.t } rank(L) = r, A = LL^{T}\ L^TL = diag(\text{non-zero evals of } A)$$
+
+**Lemma 17**\
+$X\sim N(\mu,I)$, $A\in \mathbb{R}^{n\times n}$ positive semidefinite
+symmetric, $B$ s.t $BA = 0$
+
+$$\implies X^TAX, BX \text{ independent}$$
+
+**Lemma 18**\
+$Z\sim N(\mu,I_n)$, $A$ a $n\times n$ projection matrix of rank $r$
+
+$$\implies Z^TAZ \sim \chi^{2}_{r}(\delta) \quad \delta^{2} = \mu^T A\mu$$
+
+**Lemma 19**\
+$Z \sim N(\mu,I_n), A_1,A_2 \in \mathbb{R}^{n\times n}$ projecetion
+matrix s.t $A_1A_2 =0$
+
+$$\implies Z^{T}A_{1}Z\ \& \ Z^TA_2Z \text{ independent}$$
+
+**Lemma 20**\
+$A_1,\dots,A_k$ symmetric $n\times n$ matrices s.t $\Sigma(A_i) = I_n$
+if rank $A_i = r_i$\
+Following equivalent
+
+1.  $\Sigma r_i = n$
+
+2.  $A_iA_j = 0 \quad \forall i \neq j$
+
+3.  $A_i \text{ independent } \forall i = 1,\dots,k$
+
+ 
+**Theorem 10**. *(The Fisher-Cochran Theorem)*
+
+
+Consider linear model $Y = X\beta + \epsilon, \ E(\epsilon) = 0$ with
+(NTA)\
+(NTA):
+$\epsilon \sim N(0,\sigma^{2}I_n) \implies Y \sim N(X\beta, \sigma^{2}I_n)$
+
+$$f(y) = \frac{1}{(\sigma\sqrt{2\pi})^{n}}\exp\left( -\frac{1}{2\sigma^{2}}(y-X\beta)^T(y-X\beta)\right)$$
+
+*Estimation using maximum likelihood approach:*
+
+-   Log-likelihood of data is
+
+    $$L(\beta,\mu^{2}) = -\frac{n}{2}\log(2\pi\sigma^{2})-\frac{1}{2\sigma^{2}}\underbrace{(Y-X\beta)^T(Y-X\beta)}_{S(\beta}$$
+
+-   Maximising $L$ w.r.t $\beta$ (for fixed $\sigma^{2}$) equivalent to
+    minimising $S(\beta) = (Y-X\beta)^T(Y-X\beta)$\
+    Max likelihood equivalent to least squares for estimating $\beta$
+
+-   MLE for $\sigma^{2}$ is $\frac{RSS}{n}$
+
+    $$L(\hat{\beta},\sigma^2) = -\frac{n}{2}\log(2\pi\sigma^{2})-\frac{1}{2\sigma^{2}}RSS \quad \text{ w.r.t } \sigma^{2}$$
+
+### Confidence intervals, tests for one dimensional quantities.
+
+**Lemma 21** - (*Distribution of $RSS$*)\
+Assume (NTA)
+$\implies \frac{RSS}{\sigma^{2}} \sim \chi^{2}_{n-r}\ r = rank(X)$
+
+**Lemma 22**\
+Assume (FR),(NTA) in linear model.\
+Let $c \in \mathbb{R}^p$
+
+$$\frac{c^T\hat{\beta} - c^T\beta}{\sqrt{c^T(X^TX)^{-1}c\frac{RSS}{n-p}}} \sim t_{n-p}$$
+
+## The $F$-test
+
+**Lemma 23**\
+Under $H_0: E(Y) \in Span(X_0)$
+
+$$F = \frac{RSS_0 - RSS}{RSS}\cdot\frac{n-r}{r-s}\sim F_{r-s,n-r}$$
+
+$r = rank(X), s= rank(X_0)$
+
+**NEED EXPLAINING AND TYPING UP STILL**
+
+## Confidence regions
+
+Suppose $E(Y) = X\beta$ a linear model satisfying (FR),(NTA)\
+Want to find random set $D$ s,t
+$P(\beta \in D) \geq 1 -\alpha \ \forall \beta,\sigma^{2}$
+
+$$A = \frac{(\hat{\beta}-\beta)^TX^TX(\hat{\beta}-\beta)}{RSS}\cdot\frac{n-p}{p}$$
+
+Find distribution of $A \implies$ use $A$ as pivotal quantity for
+$\beta$\
+Numerator of first fraction re-written as
+
+$$(Y-X\beta)^TP(Y-X\beta)$$
+
+$P$, projection onto space span(cols. of $X$)
+
+$$(Y-X\beta)^TP(Y-X\beta) = (Y-X\beta)^TPP(Y-X\beta) = [P(Y-X\beta)]^T[P(Y-X\beta)]$$
+
+Taking $P = X(X^TX)^{-1}X^{T}$
+
+$$\implies [X(\hat{\beta}-\beta)]^T[X(\hat{\beta}-\beta)]$$ 
+
+With
+
+$$RSS = Y^TQY = (Y-X\beta)^TQ(Y-X\beta),\quad Q = I_P \implies Z = \frac{1}{\sigma}(Y-X\beta)$$
+
+$$A = \frac{Z^TPZ}{Z^TQZ}\cdot\frac{n-p}{p}\quad Z\sim N(0,1),P +Q = I, rank(P) =p, P \& Q \text{ proj. mat.}$$
+
+$\implies$ by Fisher-Cochran Theorem $A\sim F_{p,n-p}$\
+$1-\alpha$ confidence region $R$ for $\beta$ defined by all
+$\gamma \in \mathbb{R}^{p}$ s.t
+
+$$\frac{(\hat{\beta}- \gamma)^{T} X^{T} X (\hat{\beta} - \gamma)}{RSS}\cdot\frac{n-p}{p}\leq F_{p,n-p,\alpha}$$
+
+$P(Z \geq F_{p,n-p,\alpha}) = \alpha$ for $Z \sim F_{p,n-p}$\
+$R$ an ellipsoid central at $\hat{\beta}$
+
+**Remark**\
+General definition of ellipsoid
+$$\{z\in \mathbb{R}^p: (z-z_0)^TA^{-1}(z-z_0) \leq 1\}\quad A \text{ pos. semi def.}, z_0 \in \mathbb{R}^p$$
+
+# Diagnostics,Model selection, Extensions
+
+## Outliers
+
+ 
+**Definition 39**. *(Outlier)*
+
+[**Outlier**] - an obseravtion that does not
+conform to general pattern of the rest of the data.\
+Potential causes
+
+-   error in data recording mechanism
+
+-   Data set may be 'contaminated (e.g. mix of 2 or more populations)
+
+-   Indication that model/underlying theory needs improvement
+
+Spot outliers $\implies$ look for residuals that are 'too large'
+
+$$\mathbf{e} = (I-P); \quad P - \text{ projects onto } span(X)$$ 
+
+$X$ full rank $\implies P = X(X^TX)^{-1}X^T$
+
+$$cov(\mathbf{e}) = (I-P)cov(Y)(I-P)^T = \sigma^{2}(I-P) \quad E(\mathbf{e}) = 0$$
+
+$\implies$ under (NTA) $e_i \sim N(0,\sigma^{2}(1-P_{ii})) \quad P_ii$
+the $i^{th}$ diagonal of $P$
+
+$$\implies \frac{e_i}{\sqrt{(1-P_{ii}\sigma^{2}}} \sim N(0,1)$$
+
+$\sigma^{2}$ unknown $\implies$ use unbiased estimator $\hat{\sigma}^{2} = \frac{RSS}{n-p}$
+
+$$r_i = \frac{e_i}{\sqrt{\hat{\sigma}^{2}(1-P_{ii}}}$$ 
+
+$r_i$ not necessarily $\sim N(0,1)$ but distribution is close to it.
+
+**Remark**\
+$r_i \not\sim t$; $\hat{\sigma}^2,e_i$ not independent
+
+**Remark**\
+$X\sim N(0,1) \implies$ probability for large $X$ v. rapidly decreasing\
+if (NTA) holds $\implies$ standardised residuals should be relatively
+small
+
+## Leverage
+
+ 
+**Definition 40**.
+
+[**Leverage**] of $i^{\text{th}}$
+observation in linear model is $P_{ii}$\
+$i^{\text{th}}$ diagonal matrices of hat matrix $P$
+
+## Cook's Distance
+
+ 
+**Definition 41**. *(Cook's Distance)*
+
+Measure how much $i^{\text{th}}$ observation changes estimator
+$\hat{\beta}$
+
+$$D_i = \frac{(\hat{\beta}_{(i)}-\hat{\beta})^TX^TX(\hat{\beta}_{(i)}-\hat{\beta})}{pRSS/(n-p)}$$
+
+$\hat{\beta}_{(i)}$ - least squares estimator with $i^{\text{th}}$
+observation removed
+
+Alternatively 
+
+$$\begin{aligned}
+D_i &= \frac{(\hat{Y}-Y_{(i)})^T(\hat{Y}-Y_{(i)})}{pRSS/(n-p)} \quad \hat{Y}_{(i)} = X\hat{\beta}_{(i)}\\
+    &= r_{i}^{2}\frac{P_{ii}}{(1-P_{ii})r} \quad r_i \text{ standardised residuals}, r = rank(X)\end{aligned}$$
+
+## Under/Overfitting
+
+ 
+**Definition 42**.
+
+1.  Underfitting - necessary predictors left out
+
+2.  Overfitting - unnecessary predictors included
+
+## Weighted Least Squares
+
+$cov(Y) = \sigma^{2}I_n$ but now we take $cov(Y) = \sigma^{2}V$ instead
+for $V$ symmetric, positive definite.
+
+Transform model s.t $cov(\epsilon) = \sigma^{2}I$ to estimate $\beta$\
+$V$ symmetric, positive definite $\implies \exists$ non-singular $T$ s.t
+$T^{T}VT = I_n\ TT^{T} = V^{-1}$
+
+$\implies \exists$ orthogonal $P$, diagonal of e.vals of $V; D$ s.t
+$P^T V P = D$
+
+Take
+$T = PD^{-1/2}P^{T} \implies V = PDP^T \implies T^TVT = PD^{-1/2}P^TPDP^TPD^{-1/2}P^T = I_n$
+
+$TT^T = PD^{-1}P^T = V^{-1}$
+
+Take $Z = T^TY \implies$
+
+$$E(Z) = \underbrace{T^TX}_{= \tilde{X}}\beta\quad cov(Z) = T^TVT\sigma^{2} = \sigma^{2}I_n$$
+
+$\implies E(Z) = \tilde{X}\beta$ satisfies (SOA)\
+Assuming (FR); $$\begin{aligned}
+    \hat{\beta} &= [\tilde{X}^TX]^{-1}\tilde{X}^TZ\\
+                &= [X^T(TT^T)X]^{-1}X^T(TT^T)Y\\
+                &= (X^TV^{-1}X)^{-1}X^{T}V^{-1}Y\end{aligned}$$
+$\hat{\beta};$ optimal estimator in sense of Gauss-Markov Theorem.
