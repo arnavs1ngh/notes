@@ -496,11 +496,10 @@ subset of sample space for which $H_0$ rejected
  
 **Definition 21**. *(Types of error)*
 
-
-                       $H_0$ True                                       $H_0$ False
-  -------------------- ------------------------------------------------ -------------------------------------------------
-  Don't reject $H_0$   $\checkmark$                                     [**Type II Error**]
-  Reject $H_0$         [**Type I Error**]   $\checkmark$
+|                    | $H_0$ True   | $H_0$ False   |
+|--------------------|--------------|---------------|
+| Don't reject $H_0$ | $\checkmark$ | Type II Error |
+| Reject $H_0$       | Type I Error | $\checkmark$  |
 
 ## Power of a Test
 
