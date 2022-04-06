@@ -623,7 +623,7 @@ We say $(u_1,u_2,u_3)$ define a curvilinear coordinate system.\
 With each $u_i =$ constant, defining a family of surfaces, with a member
 of each family passing through each $P(x,y,z)$
 
-Let $\mathbf{(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3})}$ unit vectors at $P$ in the direction normal to $u_i = u_i(P)$, s.t $u_i$ increasing in the direction $\mathbf{\hat{a}_{i}}$
+Let $(\hat{\mathbf{a}}_{1},\hat{\mathbf{a}}_{2},\hat{\mathbf{a}}_{3})$ unit vectors at $P$ in the direction normal to $u_{i} = u_{i}(P)$, s.t $u_{i}$ increasing in the direction $\hat{\mathbf{a}}_{i}$
 
 <center>
 $$\mathbf{\hat{a}_i} = \mathbf{\frac{\nabla u_i}{\lvert \nabla u_i \rvert}}$$
