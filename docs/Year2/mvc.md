@@ -755,7 +755,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
   
 ### Gradient in orthogonal curvilinear coordinates
 
-Let $\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$.
+Let $\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$
 
 In a general coordinate system for $\lambda_{i}$s to be found.
 
