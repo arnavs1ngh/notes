@@ -926,7 +926,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 
-<center>
+<center> 
 $$\begin{aligned}
         \lvert \frac{\partial \mathbf{r}}{\partial u_1} \times \frac{\partial \mathbf{r}}{\partial u_2} \rvert &= 
         \begin{Vmatrix}
