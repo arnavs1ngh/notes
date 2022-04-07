@@ -916,16 +916,15 @@ $$\lvert \mathbf{J}\rvert = \vert \frac{d\mathbf{r}}{du_1}\times\frac{d\mathbf{r
     \end{vmatrix}$$
 </center>
 
-For a surface described by $z = f(x,y)$. We have $x = u_1, y = u_2$ and $\mathbf{r} = (x,y,f(x,y))$\
+For a surface described by $z = f(x,y)$. We have $x = u_1, y = u_2$ and $\mathbf{r} = (x,y,f(x,y))$
 
 We have:
 
-<center>
-\begin{aligned}
-&= &= +\
-&= &= +\
-\end{aligned}
-</center>
+$$\begin{aligned}
+\frac{\partial \mathbf{r}}{\partial u_1} &= \frac{\partial \mathbf{r}}{\partial x} \hspace{-2pt} &= \mathbf{\hat{i}} + \frac{\partial f}{\partial x}\mathbf{\hat{k}}\\
+        \frac{\partial \mathbf{r}}{\partial u_2} &= \frac{\partial \mathbf{r}}{\partial y} \hspace{-2pt} &= \mathbf{\hat{j}} + \frac{\partial f}{\partial y}\mathbf{\hat{k}}\\
+\end{aligned}$$
+
 
 <center>
 $$\begin{aligned}
