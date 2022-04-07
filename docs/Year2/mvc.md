@@ -463,7 +463,7 @@ $$\int_{S}\mathbf{A\cdot \hat{n}}dS = \int_{\tau}div \mathbf{A}d\tau$$
 
 ### The Divergence theorem in more complicated geometries!
 
-![The divergence theorem for a non-convex surface](diags/fig17Div.png)
+![The divergence theorem for a non-convex surface](diags/fig17DivThm.png)
 
 
 1.  **Non-convex surfaces**
