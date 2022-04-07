@@ -647,7 +647,7 @@ $$\begin{aligned}
     \end{aligned}$$
 </center>
 
-For an orthongal system
+For an orthogonal system
 <center>
 $$(ds)^{2} = (d\mathbf{r})\cdot(d\mathbf{r}) = h_{1}(du_{1})^{2} + h_{2}(du_{2})^{2} +h_{3}(du_{3})^{2}$$
   
@@ -675,8 +675,8 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
     <center>
     $$  
     \begin{aligned}
-    d\tau &= dxdydz & d\mathbf{r} &= dx\mathbf{\hat{i}} + dy\mathbf{\hat{j}} + dz\\mathbf{\hat{k}}
-    (ds)^{2} &= (d\mathbf{r})\cdot(d\mathbf{r}) = (dx)^{2} + (dy)^{2} + (dz)^{2}
+    d\tau &= dxdydz & d\mathbf{r} &= dx\mathbf{\hat{i}} + dy\mathbf{\hat{j}} + dz\\ 
+    \mathbf{\hat{k}} (ds)^{2} &= (d\mathbf{r})\cdot(d\mathbf{r}) = (dx)^{2} + (dy)^{2} + (dz)^{2}
     \end{aligned}
     $$
     </center>
@@ -688,66 +688,70 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
 
     $$x = r\cos \theta \quad y = r\sin \phi \quad z = z$$
 
-    <center>
-    $\begin{aligned}
-    &= () + () + () = () + ()\
-    &= () + () + () = -(r) + (r)\
-    &=
-    \end{aligned}$
+    $$\begin{aligned}
+    \frac{\partial \mathbf{r}}{\partial r} &= (\frac{\partial x}{\partial r})\mathbf{\hat{i}} + (\frac{\partial y}{\partial r})\mathbf{\hat{j}} + (\frac{\partial z}{\partial r})\mathbf{\hat{k}} \hspace{1.5pt} = (\cos\phi)\mathbf{\hat{i}} + (\sin\phi)\mathbf{\hat{j}}\\
+    \frac{\partial \mathbf{r}}{\partial \phi} &= (\frac{\partial x}{\partial \phi})\mathbf{\hat{i}} + (\frac{\partial y}{\partial \phi})\mathbf{\hat{j}} + (\frac{\partial z}{\partial \phi})\mathbf{\hat{k}} = -(r\sin\phi)\mathbf{\hat{i}} + (r\cos\phi)\mathbf{\hat{j}}\\
+    \frac{\partial \mathbf{r}}{\partial z} &= \mathbf{\hat{k}}
+    \end{aligned}$$
 
-    $\begin{aligned}
-    ()() &= 0\\
-    ()() &= 0\\
-    ()() &= 0
-    \end{aligned}$
+    $$\begin{aligned}
+    (\frac{\partial \mathbf{r}}{\partial r})\cdot(\frac{\partial \mathbf{r}}{\partial \phi}) &= 0\\
+                (\frac{\partial \mathbf{r}}{\partial r})\cdot(\frac{\partial z}{\partial \phi}) &= 0\\
+                (\frac{\partial \mathbf{r}}{\partial \phi})\cdot(\frac{\partial \mathbf{r}}{\partial z}) &= 0
+    \end{aligned}$$
 
-    $\begin{aligned}
-    h_{1} &= = 1\\
-    h_2 &= = r\\
-    h_3 &= = 1
-    \end{aligned}$
-    </center>
+    $$\begin{aligned}
+    h_{1} &= \lvert \frac{\partial \mathbf{r}}{\partial r} \rvert = 1\\
+                h_{2} &= \lvert \frac{\partial \mathbf{r}}{\partial \phi} \rvert = r\\
+                h_{3} &= \lvert \frac{\partial \mathbf{r}}{\partial z} \rvert = 1
+    \end{aligned}$$
+
 
     Yielding length and volume elements:
 
-    <center>
-    $\begin{aligned}
+    $$\begin{aligned}
     (ds)^2 &= (dr)^2+r^2(d)^2+(dz)^2
-    \end{aligned}$
+    \end{aligned}$$
 
-    $\begin{aligned}
+    $$\begin{aligned}
     d= rdrddz
-    \end{aligned}$
-    </center>
+    \end{aligned}$$
 
 3.  **Spherical polar coordinates** $(r,\theta,\phi)$\
     Related to cartesian by:
+
     $$x = r\sin\theta\cos\phi \quad y = r\sin\theta\sin\phi \quad z = r\cos\theta$$
 
-    <center>
-    $\begin{aligned}
-    &= () + () + ()\\
-    &= (r) + (r) + (-r)\\
-    &= (-r) + (r) + (0)
-    \end{aligned}$
+    $$\begin{aligned}
+    \frac{\partial \mathbf{r}}{\partial r} &= (\sin\theta\cos\phi)\mathbf{\hat{i}} + (\sin\theta\sin\phi)\mathbf{\hat{j}} + (\cos\theta)\mathbf{\hat{k}}
+                \\
+                \frac{\partial \mathbf{r}}{\partial \theta} &=
+                (r\cos\theta\cos\phi)\mathbf{\hat{i}} + 
+                (r\cos\theta\sin\phi)\mathbf{\hat{j}} +
+                (-r\sin\theta)\mathbf{\hat{k}}
+                \\
+                \frac{\partial \mathbf{r}}{\partial \phi} &=
+                (-r\sin\theta\sin\phi)\mathbf{\hat{i}} +
+                (r\sin\theta\cos\phi)\mathbf{\hat{j}} +
+                (0)\mathbf{\hat{k}}
+    \end{aligned}$$
 
-    $\begin{aligned}
-    ()() &= 0\\
-    ()() &= 0\\
-    ()() &= 0
-    \end{aligned}$
+    $$\begin{aligned}
+    (\frac{\partial \mathbf{r}}{\partial r})\cdot(\frac{\partial \mathbf{r}}{\partial \theta}) &= 0\\
+    (\frac{\partial \mathbf{r}}{\partial r})\cdot(\frac{\partial \mathbf{r}}{\partial \phi}) &= 0\\
+    (\frac{\partial \mathbf{r}}{\partial \phi})\cdot(\frac{\partial \mathbf{r}}{\partial \theta}) &= 0
+    \end{aligned}$$
 
-    $\begin{aligned}
-    h\_1 &= = 1\\
-    h\_2 &= = r\\
-    h\_3 &= = r
-    \end{aligned}$
-    </center>
+    $$\begin{aligned}
+    h_{1} &= \lvert \frac{\partial \mathbf{r}}{\partial r} \rvert = 1\\
+                h_{2} &= \lvert \frac{\partial \mathbf{r}}{\partial \theta} \rvert = r\\
+                h_{3} &= \lvert \frac{\partial \mathbf{r}}{\partial \phi} \rvert = r\sin\theta
+    \end{aligned}$$
 
     Volume element:
-    <center>
+
     $$d\tau = r^{2}\sin\theta drd\theta d\phi$$
-    </center>
+
   
 ### Gradient in orthogonal curvilinear coordinates
 
@@ -791,7 +795,7 @@ $$\implies \nabla \Phi = \frac{\hat{\mathbf{e}}_{1}}{h_{1}}\frac{\partial \Phi}{
     
     $$\implies
     \begin{aligned}
-    = + +
+    \nabla = \hat{r}\frac{\partial}{\partial r} + \frac{\hat{\theta}}{r}\frac{\partial}{\partial \theta} + \frac{\hat{\phi}}{r\sin\theta}\frac{\partial}{\partial \phi}
     \end{aligned}$$
 
 ### Expressions for unit vectors

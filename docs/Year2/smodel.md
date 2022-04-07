@@ -330,7 +330,8 @@ MLE of $\phi = g(\theta)$
 
 $X_1,X_2,\dots$ iid observations with pdf/pmf $f_{\theta}$\
 $\theta \in \Theta,\ \Theta$ an open interval\
-$\theta_0 \in \Theta$ - true parameter.\
+$\theta_0 \in \Theta$ - true parameter.
+
 Under regularity conditions ($\{x:f_{\theta}(x) > 0 \}$ indpendent of
 $\theta$). We have
 
@@ -343,7 +344,8 @@ $\theta$). We have
     Where $I_f{\theta}$ Fisher information of sample size $=1$
 
 **Remark:** if MLE unique $(\forall n) \implies$ sequence of MLEs
-consistent\
+consistent
+
 **Remark**\
 Limiting distribution depends on $I_f(\theta_0)$, which is often unknown
 in practical situations. $\implies$ need to estimate $I_f(\theta_0)$\
@@ -361,14 +363,19 @@ Often consistent $\implies$ converge to $I_f(\theta_0)$ in probability
 Standard error of asymptotically normal MLE $\hat{\theta}_{n}$\
 Approximated by
 $SE(\hat{\theta}_n) = \sqrt{\hat{I}^{-1}_{n}}/\sqrt{n}\ \hat{I}_n$
-estimator from above.\
+estimator from above.
+
 **Remark -** Multivariate version.
 
 $\Theta \subset \mathbb{R}^k$ open set, $\hat{\mathbf{\theta}}_n$ MLE
 based on $n$ observation.
+
 $$\sqrt{n}(\hat{\mathbf{\theta}}_n - \mathbf{\theta}_0) \xrightarrow[]{d} N(0,(I_f(\mathbf{\theta_0})^{-1})$$
+
 $\mathbf{\theta_0}$ the true parameter, $I_f(\mathbf{\theta})$ [**Fisher
-information matrix**] $$\begin{aligned}
+information matrix**] 
+
+$$\begin{aligned}
 I_{f}(\mathbf{\theta}) &:= E_{\theta}\left[ (\nabla \log f(X; \mathbf{\theta}))^T(\nabla \log f(X;\theta)) \right]\\
 &:= -E_{\theta}\left[ \nabla^T \nabla \log f(X:\theta) \right]\end{aligned}$$
 
@@ -382,8 +389,7 @@ $\mathbf{X,X_1,X_2}$ random vectors of dimension $k$
 
 $$\mathbf{X}_n \xrightarrow[]{d} \mathbf{X} \quad (n\to\infty)$$
 
-If
-$P(\mathbf{X}_n \leq z) \xrightarrow[n\to\infty]{} P(\mathbf{X} \leq z) \quad \forall z \in \mathbb{R}^k: z \mapsto P(X\leq Z) \text{ continuous}$
+If $P(\mathbf{X}_n \leq z) \xrightarrow[n\to\infty]{} P(\mathbf{X} \leq z) \quad \forall z \in \mathbb{R}^k: z \mapsto P(X\leq Z) \text{ continuous}$
 
 # Confidence Regions
 
@@ -394,6 +400,7 @@ $P(\mathbf{X}_n \leq z) \xrightarrow[n\to\infty]{} P(\mathbf{X} \leq z) \quad \f
 $1-\alpha$ [**confidence interval**] for
 $\theta$, a random interval $I$ containing 'true' paramter with
 probability $\geq 1 - \alpha$
+
 $$P_{\theta \in I} \geq 1-\alpha \quad \forall \theta \in \Theta$$
 
 ## Construction of confidence intervals
@@ -449,15 +456,15 @@ $$\underbrace{\sqrt{n}\frac{Y/n - \theta}{\sqrt{\frac{Y}{n}(1-\frac{Y}{n})}}}_{\
 
 ## Simultaneous Confidence Interval/Confidence regions.
 
- 
-**Definition 18**.
 
+**Definition 18**.
 
 $\mathbf{\theta} = (\theta_1,\dots,\theta_k)^T \in \Theta \in \mathbb{R}^k$\
 With random intervals $(L_i(\mathbf{Y}),U_i(\mathbf{Y}))$ s.t
+
 $$\forall \mathbf{\theta}: P_{\theta}(L_i(\mathbf{Y} < \theta_i < U_i(\mathbf{Y}), i \in \{1,\dots,k\}) \geq 1 - \alpha$$
-$(L_i(\mathbf{y},U_i(\mathbf{y})) \ i \in \{1,\dots,k\}$ a [
-**$1-\alpha$ simultaneous confidence
+
+$(L_i(\mathbf{y},U_i(\mathbf{y})) \ i \in \{1,\dots,k\}$ a [**$1-\alpha$ simultaneous confidence
 interval**] for $\theta_1,\dots,\theta_k$
 
 **Remark -** (Bonferroni correction)
@@ -509,13 +516,18 @@ subset of sample space for which $H_0$ rejected
 
 $\Theta$ parameter space with
 $\Theta_0 \subset \Theta,\ \Theta_1 = \Theta \backslash \Theta_0$\
-Consider: $$\begin{aligned}
+Consider: 
+
+$$\begin{aligned}
     H_0: & \theta \in \Theta_0\\
-    H_1: & \theta \in \Theta_1\end{aligned}$$ Given a test for this
-hypothsis, we have a [**Power function**]
+    H_1: & \theta \in \Theta_1\end{aligned}$$ 
+    
+Given a test for this hypothesis, we have a [**Power function**]
+
 $$\begin{aligned}
     \beta: &\theta \to [0,1]\\
     \beta(\theta) &= P_{\theta}(\text{reject} H_0)\end{aligned}$$
+
 $\theta \in \Theta_0 \implies$ want $\beta(\theta)$ small\
 $\theta \in \Theta_1 \implies$ want $\beta(\theta)$ large
 
@@ -526,10 +538,13 @@ $\theta \in \Theta_1 \implies$ want $\beta(\theta)$ large
 
 
 $$p = \sup_{\theta \in \Theta_0}P_{\theta}(\text{observing something 'at least as extreme' as the observation})$$
+
 reject $H_0 \iff p \leq \alpha$\
 For test based on statistic $T$ with rejection for large value of $T$ we
-have $$p = \sup_{\theta \in \Theta_0}P_{\theta}(T\geq t)$$ for $t$ our
-observed value
+have 
+$$p = \sup_{\theta \in \Theta_0}P_{\theta}(T\geq t)$$
+
+for $t$ our observed value
 
 ## Connection between tests & confidence intervals
 
@@ -537,13 +552,20 @@ observed value
 
 $Y$ a random observation.\
 $A(Y)$ a $1-\alpha$ confidence region for $\theta$
+
 $$P(\theta \in A(Y)) \geq 1 - \alpha \quad \forall \theta \in \Theta$$
-Define test for $\begin{aligned}
+
+Define test for 
+
+$$\begin{aligned}
 H_0:& \theta \in \Theta_0\\
 H_1:& \theta \not\in \Theta_0
-\end{aligned}$ for $\Theta_0 \subset \Theta$ a fixed subset with level
-$\alpha$ s.t
+\end{aligned}$$
+
+for $\Theta_0 \subset \Theta$ a fixed subset with level $\alpha$ s.t
+
 $$\text{Reject } H_0 \text{ if } \Theta_0 \cap A(Y) = \emptyset$$
+
 $$\begin{aligned}
 P_{\theta}(\text{Type I error}) = P_{\theta}(\text{reject}) &= P_{\theta}(\Theta_0 \cap A(Y) = \emptyset)\\
 &\leq P_{\theta}(\theta \not\in A(Y)) \leq \alpha\end{aligned}$$
@@ -552,18 +574,24 @@ P_{\theta}(\text{Type I error}) = P_{\theta}(\text{reject}) &= P_{\theta}(\Theta
 
 Suppose $\forall \theta_0 \in \Theta$ we have a level $\alpha$ test
 $\phi_{\theta_0}$ for
+
 $$H^{\theta_0}_0: \theta = \theta_0 \quad \text{vs.} \quad H^{\theta_0}_1: \theta \neq \theta_0$$
+
 A decision rule $\phi_{\theta_0}$ to reject/not reject $H^{\theta_0}_0$
 satisfying:
+
 $$P_{\theta_0}(\phi_{\theta_0} \text{ reject } H^{\theta_0}_0) \leq \alpha$$
+
 Consider random set:
+
 $$A:= \left\{ \theta_0 \in \Theta: \phi_{\theta_0} \text{ doesn't reject } H^{\theta_0}_0 \right\}$$
+
 We see $A$ a $1-\alpha$ confidence region for $\theta$\
 $\forall \theta \in \Theta\ P_{\theta}(\theta \in A) = P_{\theta}(\phi_\theta \text{ not rejects }) = 1 - P_{\theta}(\phi_\theta \text{ rejects }) \geq 1 - \alpha$
 
 # Likelihood Ratio Tests
 
-*(Numbers don't line up with official notes!!!)*\
+*(Numbers don't line up with official notes!!!)*
 
  
 **Definition 24**. *(Likelihood ratio statistic)*
@@ -591,15 +619,16 @@ $\mathbf{\theta}$ needed to define $H_0$
 
 ## Simple Linear Regression
 
- 
+
 **Definition 25**. *(Simple Linear Model)*
 
 
-$$\underbrace{Y_i}_{\substack{\text{outcome}\\ \text{observable random var}}} = \underbrace{\textcolor{red}{\beta_1} + \overbrace{a_i}^{\substack{\text{covariate}\\ \text{(observable constant)}}} \textcolor{red}{\beta_2}}_{\textcolor{red}{\substack{\text{unknown}\\ \text{parameters}}}} + \overbrace{\epsilon_i}^{\text{error (not observable)}}$$
+$$\underbrace{Y_i}_{\substack{\text{outcome}\\ \text{observable random var}}} = \underbrace{\textcolor{red}{\beta_1} + \overbrace{a_i}^{\substack{\text{covariate}\\ \text{(observable constant)}}} + \textcolor{red}{\beta_2}}_{\textcolor{red}{\substack{\text{unknown}\\ \text{parameters}}}} + \overbrace{\epsilon_i}^{\text{error (not observable)}}$$
 
 [**Least Square Estimators**]\
 $\hat{\beta_1},\hat{\beta_2}$ of $\beta_1,\beta_2$ defined as minimisers
 of
+
 $$S(\beta_1,\beta_2) = \sum_{i=1}^{n}(y_i - \beta_1 - a_i\beta_2)^{2}$$
 
 **Remark**
@@ -642,6 +671,7 @@ $Q^T A Q = I_n$
 
 
 $\mathbf{X} = (X_1,\dots,X_n)^T$ random vector
+
 $$\implies E(\mathbf{X}) = (E(X_1),\dots,E(X_n))^T$$
 
 **Lemma 9**\
@@ -658,9 +688,10 @@ $\mathbf{X,Y}$ random vector
  
 **Definition 27**. *(Covariance)*
 
+$\mathbf{X,Y}$ random vectors
 
-random vectors
 $$cov(\mathbf{X,Y}) = E(\mathbf{XY^T}) - E(\mathbf{X})E(\mathbf{Y})^T$$
+
 $$cov(\mathbf{X}) = cov(\mathbf{X,X})$$
 
 **Lemma 10**\
@@ -688,6 +719,7 @@ $A,B$ deterministic matrices, $a,b \in \mathbb{R}$
 
 
 In a [**linear model**]
+
 $$\mathbf{Y} = X\mathbf{\beta} + \mathbf{\epsilon}$$
 
 -   $\mathbf{Y}$ - n. dimensional random vector (observable)
@@ -702,7 +734,9 @@ $$\mathbf{Y} = X\mathbf{\beta} + \mathbf{\epsilon}$$
 
 **Assumptions**\
 *2nd order assumptions (SOA)*
+
 $$cov(\mathbf{\epsilon}) = (cov(\epsilon_i,\epsilon_j))_{\substack{i = 1,\dots,n \\ j = 1,\dots,n}} = \sigma^{2}I_{n} \quad \sigma^{2} > 0$$
+
 *Normal theory assumptions (NTA)*\
 $\mathbf{\epsilon} \sim N(0,\sigma^{2}I_{n})$, some $\sigma^{2} > 0$\
 $N$-multivariate $n$-dimensional normal multivariate distribution
@@ -725,14 +759,18 @@ different values of $\theta$ yield same distribution of observed data.
 ## Least Square estimation
 
 Estimate $\beta$ by least squares.\
-Least squares: choose $\beta$ to minimise $$\begin{aligned}
+Least squares: choose $\beta$ to minimise 
+
+$$\begin{aligned}
     S(\beta) &= \sum_{i=1}^{n}\left (Y_i - \sum_{j=1}^{p}X_{ij}\beta_{j}\right)^{2}\\
              &=  (Y-X\beta)^T(Y-X\beta)\\
              &= Y^T Y - 2Y^T X\beta + \beta^T X^T X \beta\\
     \frac{\partial S(\beta)}{\partial \beta} &= \frac{\partial S(\beta)}{\partial \beta_i}_{i = 1,\dots,p} = -2X^TY + 2X^TX\beta\end{aligned}$$
+
 $$\begin{aligned}
 \text{Unique solution} &\iff X^TX \text{ invertible } (rank = p)\quad rank(X^TX) = rank(X)\\
                        &\iff \text{linear model of full rank}\end{aligned}$$
+
 $\hat{\beta}$ satisfies LSE $\implies$ minimise $S(\beta)$
 
 ## Properties of LSE
@@ -780,9 +818,7 @@ $P \in \mathbb{R}^{n\times n}$ a projection matrix onto $L$ if
 2.  $P\mathbf{x} = \mathbf{0} \quad \forall \mathbf{x} \in L^{\perp} = \{ \mathbf{z} \in \mathbb{R}^{n} : \mathbf{z}^{T}\mathbf{y} = 0 \ \forall \mathbf{y} \in L\}$
 
 **Lemma 11**\
-$P$ a projection matrix
-$\iff \underbrace{P^{T} = P}_{P \text{ symmetric}}$ and
-$\underbrace{P^{2} = P}_{P \text{ independent}}$
+$P$ a projection matrix $\iff \underbrace{P^{T} = P}_{P \text{ symmetric}}$ and $\underbrace{P^{2} = P}_{P \text{ independent}}$
 
 **Lemma 12**\
 $A$ a $n\times n$ projection matrix $(A = A^{T}, A^{2} = A)$ of
