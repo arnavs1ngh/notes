@@ -2709,7 +2709,7 @@ $$\hat{f}_k := \frac{1}{2\pi}\int_{0}^{2\pi}f(\theta)e^{-ik\theta} d\theta$$
 
 Written as
 
-$$f(\theta) = \underbrace{[\dots | { e}^{-2{ i}\theta} |{ e}^{-{ i}\theta} | \underline 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots]}_{F(\theta)}\underbrace{\begin{bmatrix} \vdots \\ \hat{f}_{-2} \\ \hat{f}_{-1} \\ \underline{\hat{f}_0} \\ \hat{f}_1 \\ \hat{f}_2 \\ \vdots \end{bmatrix}}_{\mathbf{\hat{f}}}$$
+$$f(\theta) = \underbrace{[\dots | { e}^{-2i\theta} |{ e}^{-i\theta} | \underline 1 | { e}^i\theta} | { e}^{2i\theta} | \dots]}_{F(\theta)}\underbrace{\begin{bmatrix} \vdots \\ \hat{f}_{-2} \\ \hat{f}_{-1} \\ \underline{\hat{f}_0} \\ \hat{f}_1 \\ \hat{f}_2 \\ \vdots \end{bmatrix}}_{\mathbf{\hat{f}}}$$
 
 Build approximation using $n$ approximate coefficients
 $\hat{f}^{n}_{k} \approx \hat{f}_k$\
@@ -2718,23 +2718,23 @@ Seperating into 3 cases:
 1.  Odd: $n = 2m+1$ we approximate
 
      $$\begin{aligned}
-            f(\theta) &\approx \sum_{k = -m}^{m} \hat{f}ₖ^n { e}^{{ i} k \theta} \\
-                 &= \underbrace{[ { e}^{-{ i}m\theta} | \dots | { e}^{-2{ i}\theta} |{ e}^{-{ i}\theta} | 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots |  { e}^{{ i} m \theta}]}_{F_{-m:m}(\theta)} \begin{bmatrix} \hat{f}_{-m}^n \\ \vdots \\ \hat{f}_m^n \end{bmatrix}
+            f(\theta) &\approx \sum_{k = -m}^{m} \hat{f}ₖ^n { e}^{ k \theta} \\
+                 &= \underbrace{[ { e}^{-im\theta} | \dots | { e}^{-2i\theta} |{ e}^{-i\theta} | 1 | { e}^{i\theta} | { e}^{2i\theta} | \dots |  { e}^{i m \theta}]}_{F_{-m:m}(\theta)} \begin{bmatrix} \hat{f}_{-m}^n \\ \vdots \\ \hat{f}_m^n \end{bmatrix}
         \end{aligned}$$
 
 2.  Even: $n = 2m$ we approximate 
 
     $$\begin{aligned}
-        f(\theta) &\approx \sum_{k = -m}^{m-1} \hat{f}ₖ^n { e}^{{ i} k \theta} \\
-             &= \underbrace{[ { e}^{-{ i}m\theta} | \dots | { e}^{-2{ i}\theta} |{ e}^{-{ i}\theta} | 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots |  { e}^{{ i} (m-1) \theta}]}_{F_{-m:m-1}(\theta)} \begin{bmatrix} \hat{f}_{-m}^n \\ \vdots \\ \hat{f}_{m-1}^n \end{bmatrix}
+        f(\theta) &\approx \sum_{k = -m}^{m-1} \hat{f}ₖ^n { e}^{i k \theta} \\
+             &= \underbrace{[ { e}^{-im\theta} | \dots | { e}^{-2i\theta} |{ e}^{-i\theta} | 1 | { e}^{i\theta} | { e}^{2i\theta} | \dots |  { e}^{i (m-1) \theta}]}_{F_{-m:m-1}(\theta)} \begin{bmatrix} \hat{f}_{-m}^n \\ \vdots \\ \hat{f}_{m-1}^n \end{bmatrix}
         \end{aligned}$$
 
 3.  Taylor: if we know negative coefficients vanish
     $(0 = \hat{f}_{-1} = \hat{f}_{-2} = \dots$ we approximate:
 
     $$\begin{aligned}
-        f(\theta) &\approx \sum_{k = 0}^{n-1} \hat{f}ₖ^n { e}^{{ i} k \theta} \\
-             &= \underbrace{[ 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots |  { e}^{{ i} (n-1) \theta}]}_{F_{0:n-1}(\theta)} \begin{bmatrix} \hat{f}_0^n \\ \vdots \\ \hat{f}_{n-1}^n \end{bmatrix}
+        f(\theta) &\approx \sum_{k = 0}^{n-1} \hat{f}ₖ^n { e}^{i k \theta} \\
+             &= \underbrace{[ 1 | { e}^{i\theta} | { e}^{2i\theta} | \dots |  { e}^{i (n-1) \theta}]}_{F_{0:n-1}(\theta)} \begin{bmatrix} \hat{f}_0^n \\ \vdots \\ \hat{f}_{n-1}^n \end{bmatrix}
         \end{aligned}$$ 
     
     Can be thought of as approximate Taylor expansion using change of var $z = e^{i\theta}$
@@ -2750,7 +2750,7 @@ $$\|\mathbf{\hat{f}}\|_1 = \sum_{k=-\infty}^\infty \lvert \hat{f}_k \rvert < \in
 
 
 if Fourier coefficients absolutely convergent
-$$\implies f(\theta) = \sum_{k = -\infty}^\infty\hat{f}_{k} { e}^{{ i} k \theta},\quad \text{Converges Uniformly}$$
+$$\implies f(\theta) = \sum_{k = -\infty}^\infty\hat{f}_{k} { e}^{i k \theta},\quad \text{Converges Uniformly}$$
 
 **Remark**\
 Also have convergence for continuous version of 2-norm
@@ -2870,10 +2870,10 @@ Defined as:
 
 $$\begin{aligned}
 Q_n &:= \frac{1}{\sqrt{n}}\begin{bmatrix} 1 & 1 & 1&  \dots & 1 \\
-                            1 & { e}^{-{ i} \theta_1} & { e}^{-{ i} \theta_2} & \dots & { e}^{-{ i} \theta_{n-1}} \\
-                            1 & { e}^{-{ i} 2 \theta_1} & { e}^{-{ i} 2 \theta_2} & \dots & { e}^{-{ i} 2\theta_{n-1}} \\
+                            1 & { e}^{-i \theta_1} & { e}^{-i \theta_2} & \dots & { e}^{-i \theta_{n-1}} \\
+                            1 & { e}^{-i 2 \theta_1} & { e}^{-i 2 \theta_2} & \dots & { e}^{-i 2\theta_{n-1}} \\
                             \vdots & \vdots & \vdots & \ddots & \vdots \\
-                            1 & { e}^{-{ i} (n-1) \theta_1} & { e}^{-{ i} (n-1) \theta_2} & \dots & { e}^{-{ i} (n-1) \theta_{n-1}}
+                            1 & { e}^{-i (n-1) \theta_1} & { e}^{-i (n-1) \theta_2} & \dots & { e}^{-i (n-1) \theta_{n-1}}
                         \end{bmatrix} 
 =  \frac{1}{\sqrt{n}} \begin{bmatrix} 
                             1 & 1 & 1&  \dots & 1 \\
@@ -2884,10 +2884,10 @@ Q_n &:= \frac{1}{\sqrt{n}}\begin{bmatrix} 1 & 1 & 1&  \dots & 1 \\
                         \end{bmatrix} \quad \left(\omega = e^{i\pi/n}\right)\\
 Q_n^{\ast} &= \frac{1}{\sqrt{n}} \begin{bmatrix}
 1 & 1 & 1&  \dots & 1 \\
-1 & { e}^{{ i} \theta_1} & { e}^{{ i} 2 \theta_1} & \dots& { e}^{{ i} (n-1) \theta_1} \\
-1 &  { e}^{{ i} \theta_2}  & { e}^{{ i} 2 \theta_2} & \dots& { e}^{{ i} (n-1)\theta_2} \\
+1 & { e}^{i \theta_1} & { e}^{i 2 \theta_1} & \dots& { e}^{i (n-1) \theta_1} \\
+1 &  { e}^{i \theta_2}  & { e}^{i 2 \theta_2} & \dots& { e}^{i (n-1)\theta_2} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-1 & { e}^{{ i} \theta_{n-1}} & { e}^{{ i} 2 \theta_{n-1}} & \dots& { e}^{{ i} (n-1) \theta_{n-1}}
+1 & { e}^{i \theta_{n-1}} & { e}^{i 2 \theta_{n-1}} & \dots& { e}^{i (n-1) \theta_{n-1}}
 \end{bmatrix} 
 = \frac{1}{\sqrt{n}} \begin{bmatrix}
 1 & 1 & 1&  \dots & 1 \\
