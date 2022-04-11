@@ -2980,7 +2980,7 @@ polynomials of degree $n$
 Given integrable weight $w(x)$ for $x \in (a,b)$, define continuous
 inner product 
 
-$$\left < f,g\right > = \int_a^b  f(x) g(x) w(x) {d} x$$
+$$\left < f,g\right > = \int_a^b  f(x) g(x) w(x) d x$$
 
 Graded polynomial basis $\{p_0(x), p_1(x), … \}$ are orthogonal
 polynomials (OPs) if 
@@ -3182,7 +3182,7 @@ $$k_n = {2^n (1/2)_n \over n!}$$
 **Theorem 21**. *(Legendre Rodriguez formula)*
 
 
-$$P_n(x) = {1 \over (-2)^n n!}{{d}^n \over {d} x^n} (1-x^2)^n$$
+$$P_n(x) = {1 \over (-2)^n n!}{d^n \over d x^n} (1-x^2)^n$$
 
 **Lemma** - *(Legendre monomial coefficients)* 
 
