@@ -1330,7 +1330,7 @@ Arietic on floating-points exact up to rounding.
 
 $$\begin{aligned}
     \rm fl^{\rm UP}_{\sigma_Q,S}: \mathbb{R}\to \rm F_{\sigma,Q,S} & \text{ rounds up}\\
-    \rm fl^{\rm DOWN}_{\sigma_Q,S}: \mathbb{R}\to F_{\sigma,Q,S} & \text{ rounds down}\\
+    \rm fl^{dOWN}_{\sigma_Q,S}: \mathbb{R}\to F_{\sigma,Q,S} & \text{ rounds down}\\
     \rm fl^{\rm Nearest}_{\sigma_Q,S}: \mathbb{R}\to F_{\sigma,Q,S} & \text{ rounds nearest}\end{aligned}$$
 In case of tie, returns floating-point number whose least significand
 bit is equal to 0
@@ -3182,7 +3182,7 @@ $$k_n = {2^n (1/2)_n \over n!}$$
 **Theorem 21**. *(Legendre Rodriguez formula)*
 
 
-$$P_n(x) = {1 \over (-2)^n n!}{{\rm d}^n \over {\rm d} x^n} (1-x^2)^n$$
+$$P_n(x) = {1 \over (-2)^n n!}{{d}^n \over {d} x^n} (1-x^2)^n$$
 
 **Lemma** - *(Legendre monomial coefficients)* 
 
