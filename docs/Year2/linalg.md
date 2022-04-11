@@ -2696,8 +2696,9 @@ fourth-derivative\
 $\implies$ finite difference approximation to Poisson convergence like
 $O(n^2)$
 
+# Computing with Functions
 
-# Fourier Series
+## Fourier Series
 
  
 **Definition 31**. *(Complex Fourier Series)*
@@ -2739,7 +2740,7 @@ Seperating into 3 cases:
     
     Can be thought of as approximate Taylor expansion using change of var $z = e^{i\theta}$
 
-## Basics of Fourier series
+### Basics of Fourier series
 
 Focus on case where $\hat{f}_k$ absolutely convergent (1-norm of
 $\mathbf{f}$ bounded)
@@ -2778,7 +2779,7 @@ circle
 $\implies$ fourier coeff. decay exponentially fast\
 $f(z)$ entire $\implies$ decay faster than exponentially fast.
 
-## Trapezium rule + discrete Fourier coefficients
+### Trapezium rule + discrete Fourier coefficients
 
 $$\theta_{j} = \frac{2\pi j}{n},\ j = 0,1,\dots,n$$ 
 
@@ -2860,7 +2861,7 @@ absolutely convergent
 
 $$\implies f_n(\theta) = \sum_{k=0}^{n-1} \hat{f}_k^n {e}^{ i k \theta} \quad \text{ converges uniformly to } f(\theta)$$
 
-#### Discrete Fourier Transform and Interpolation
+## Discrete Fourier Transform and Interpolation
 
  
 **Definition 33**. *(DFT)*
@@ -2947,7 +2948,7 @@ $$\begin{aligned}
 Can reduce DFT to 2 DFTs applied to vectors of half dimension.\
 For $n = 2^{q} \implies O(n\log n)$ opperations.\
 
-# Orthogonal polynomials
+## Orthogonal polynomials
 
 Consider expansions of the form
 $$f(x) = \sum_{k=0}^{\infty}c_k p_k(x) \approx \sum_{k=0}^{n-1}c_k^{n} p_k(x)$$
@@ -2959,7 +2960,7 @@ For:
 
 -   $c_{k}^{n}$ - approximate coefficients
 
-## General properties of orthogonal polynomials
+### General properties of orthogonal polynomials
 
  
 **Definition 34**. *(Graded polynomial basis)*
@@ -3026,7 +3027,7 @@ $\forall$ degree $m<n$, polynmial $r \iff p(x) = ap_n(x)$
 where $p_n(x)$ are monic OPs.\
 $\implies$ OP uniquely defines by $k_n$
 
-### 3-term Recurrence
+#### 3-term Recurrence
 
  
 **Theorem 18**. *(3-term recurrence, 2nd form)*
@@ -3044,7 +3045,7 @@ $p_n$ monic $\implies xp_n$ monic
 **Corollary** - *(monic 3-term recurrence)*\
 If $\{p_n\}$ are monic $\implies b_n =  1$.
 
-### Jacobi Matrix
+#### Jacobi Matrix
 
 **Corollary** - *(Jacobi Matrix)*\
 For 
@@ -3108,7 +3109,7 @@ Other important families discussed are
 3.  Laguerre polynomials
 
 
-### Chebyshev
+#### Chebyshev
 
  
 **Definition 38**. *(Chebyshev polynomials, 1st kind)*
@@ -3199,14 +3200,14 @@ $$\begin{aligned}
     xP_0(x) &= P_1(x)\\
     (2n+1)xP_n(x) &= nP_{n-1}(x) + (n+1)P_{n+1}(x)\end{aligned}$$
 
-# Interpolation and Gaussian Quadrature
+## Interpolation and Gaussian Quadrature
 
 **Polynomial Interpolation -** process of finding poly. equal to data at
 precise set of points\
 **Quadrature -** act of approximating an integral by a weighted sum
 $$\int_{a}^{b}f(x)w(x)dx \approx \sum_{j=1}^{n}w_j f(x_j)$$
 
-## Polynomial Interpolation
+### Polynomial Interpolation
 
 Given $n$ distinct points $x_1,\dots,x_n \in \mathbb{R}$, $n$ samples
 $f_1,\dots,f_n \in \mathbb{R}$\
@@ -3279,7 +3280,7 @@ q_{n-1}(x_1) & \dots & q_{n-1}(x_n)
 
 where $\alpha_j = \sqrt{q_0(x_j)^2 + \dots + q_{n-1}(x_j)^2}$.
 
-## Interpolatory Quadrature Rules
+### Interpolatory Quadrature Rules
 
  
 **Definition 45**. *(interpolatory quadrature rule)*
@@ -3297,7 +3298,7 @@ Interpolatory quadrature is exact for all degree $n-1$ polynomials $p$:
 
 $$\int_a^b p(x) w(x) dx = \Sigma_n^{w,\mathbf{x}}[f]$$
 
-## Gaussian Quadrature
+### Gaussian Quadrature
 
  
 **Definition 46**. *(Gaussian Quadrature)*
