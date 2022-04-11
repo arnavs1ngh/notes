@@ -286,7 +286,7 @@ $p(x) = \sum_{i}a_{i}x^{i}, F[x] = \{ p(x) : a_{i} \in F\}$
 
 $deg(p(x)) =$ the highest power of $x$ in $p(x)$
 
-<span style="color: green;">**Euclidean Algorithm**</span>
+<span style="color: green;">**Euclidean Algori**</span>
 $f,g \in F[x]$ with $deg(g) \geq 1$, Then $\exists q,r \in F[x] s.t$
 <center>
 $$f = gq +r$$ for either $r = 0$ or $deg(r) < deg(g)$
@@ -1183,7 +1183,7 @@ $m$**</span>*
 
 $${\mathbb Z}_{m} := \{0 \ ({\rm mod}\ m), 1 \ ({\rm mod}\ m), \ldots, m-1 \ ({\rm mod}\ m) \}$$
 Integers with $p-$ bits represent elements in $\mathbb{Z}_{2^p}$\
-Integer arithmetic equivalent to arithmetic module $2^p$
+Integer arietic equivalent to arietic module $2^p$
 
 ##### Signed Integer
 
@@ -1205,7 +1205,7 @@ e.g
 
 \
 *Overflow*\
-Given arithmetic is modulo $2^p$ we often get overflow errors
+Given arietic is modulo $2^p$ we often get overflow errors
 
     typemax(Int8) + Int8(1)# returns typemin(Int8)               
     127 + 1 = -128
@@ -1234,7 +1234,7 @@ We have $2$ types of division
     Can also create rationals using $(//)$\
     `(1//2) + (3//4)`
 
-Rational arithmetic often leads to overflow so combine it with `big()`
+Rational arietic often leads to overflow so combine it with `big()`
 often.
 
 #### Floating Point numbers
@@ -1320,9 +1320,9 @@ $$\max F_{\sigma,Q,S}^{\rm normal} = 2^{2^Q-2-\sigma} (1.11\ldots1)_2 = 2^{2^Q-2
 
 We have `NaN` represent \"not a number\"
 
-#### Arithmetic
+#### Arietic
 
-Arithmetic on floating-points exact up to rounding.
+Arietic on floating-points exact up to rounding.
 
  
 **Definition 7**. *<span style="color: green;">**Rounding**</span>*
@@ -1349,11 +1349,11 @@ x\ominus y &:= {\rm fl}(x - y) \\
 x\otimes y &:= {\rm fl}(x * y) \\
 x\oslash y &:= {\rm fl}(x / y)\end{aligned}$$
 
-Each of the above defined in IEEE arithmetic.\
+Each of the above defined in IEEE arietic.\
 *Warning* These operations are not **associative**
 $(x \oplus y) \oplus z \neq x \oplus (y \oplus z)$
 
-#### Bounding errors in floating-point arithmetic
+#### Bounding errors in floating-point arietic
 
  
 **Definition 8**. *<span style="color: green;">**Absolute/relative error**</span>*
@@ -1375,7 +1375,7 @@ number:
 
 $${\cal N}_{\sigma,Q,S} := \{x : \min |F_{\sigma,Q,S}| \leq |x| \leq \max F_{\sigma,Q,S} \}$$
 
-**Proposition.** - *Rounding arithmetic*\
+**Proposition.** - *Rounding arietic*\
 if $x \in \cal{N} \implies$
 
 $${\rm fl}^{\rm mode}(x) = x (1 + \delta_x^{\rm mode})$$
@@ -1386,7 +1386,7 @@ $$\begin{aligned}
 |\delta_x^{\rm nearest}| &\leq {\epsilon_{\rm m} \over 2} \\
 |\delta_x^{\rm up/down}| &< {\epsilon_{\rm m}}.\end{aligned}$$
 
-##### Arithmetic and Special numbers
+##### Arietic and Special numbers
 
 We have the following identiites
 
@@ -1941,7 +1941,7 @@ We can find an orthogonal basis using Gram-Schmidt.
 
 **Complexity and Stability**\
 We have a total complexity of $O(mn^{2})$ operations,\
-Gram-Schmidt algorithm is unstable, rounding errors in floating point
+Gram-Schmidt algori is unstable, rounding errors in floating point
 accumulate, $\implies$ lose orthogonality.
 
 #### Householder reflections and QR
@@ -2394,7 +2394,7 @@ $A\mathbf{x} \approx (A + \delta A)\mathbf{x}$
 $$\frac{\| \delta A \mathbf{x}\|}{\|A \mathbf{x}\|} \leq \kappa(A)\epsilon$$
 
 if we have relative perturbation error $\|\delta A \| = \|A\|\epsilon$\
-We know for floating point arithmetic the error is bounded by
+We know for floating point arietic the error is bounded by
 
 $$\kappa(A)\frac{n\epsilon_m}{2-n\epsilon_m}$$
 
@@ -2696,3 +2696,647 @@ fourth-derivative\
 $\implies$ finite difference approximation to Poisson convergence like
 $O(n^2)$
 
+
+# Fourier Series
+
+ 
+**Definition 31**. *(Complex Fourier Series)*
+
+
+$$f(\theta) = \sum_{n = -\infty}^{\infty}\hat{f}_k e^{ik\theta}$$
+
+$$\hat{f}_k := \frac{1}{2\pi}\int_{0}^{2\pi}f(\theta)e^{-ik\theta} d\theta$$
+
+Written as
+
+$$f(\theta) = \underbrace{[\dots | { e}^{-2{ i}\theta} |{ e}^{-{ i}\theta} | \underline 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots]}_{F(\theta)}\underbrace{\begin{bmatrix} \vdots \\ \hat{f}_{-2} \\ \hat{f}_{-1} \\ \underline{\hat{f}_0} \\ \hat{f}_1 \\ \hat{f}_2 \\ \vdots \end{bmatrix}}_{\mathbf{\hat{f}}}$$
+
+Build approximation using $n$ approximate coefficients
+$\hat{f}^{n}_{k} \approx \hat{f}_k$\
+Seperating into 3 cases:
+
+1.  Odd: $n = 2m+1$ we approximate
+
+     $$\begin{aligned}
+            f(\theta) &\approx \sum_{k = -m}^{m} \hat{f}ₖ^n { e}^{{ i} k \theta} \\
+                 &= \underbrace{[ { e}^{-{ i}m\theta} | \dots | { e}^{-2{ i}\theta} |{ e}^{-{ i}\theta} | 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots |  { e}^{{ i} m \theta}]}_{F_{-m:m}(\theta)} \begin{bmatrix} \hat{f}_{-m}^n \\ \vdots \\ \hat{f}_m^n \end{bmatrix}
+        \end{aligned}$$
+
+2.  Even: $n = 2m$ we approximate 
+
+    $$\begin{aligned}
+        f(\theta) &\approx \sum_{k = -m}^{m-1} \hat{f}ₖ^n { e}^{{ i} k \theta} \\
+             &= \underbrace{[ { e}^{-{ i}m\theta} | \dots | { e}^{-2{ i}\theta} |{ e}^{-{ i}\theta} | 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots |  { e}^{{ i} (m-1) \theta}]}_{F_{-m:m-1}(\theta)} \begin{bmatrix} \hat{f}_{-m}^n \\ \vdots \\ \hat{f}_{m-1}^n \end{bmatrix}
+        \end{aligned}$$
+
+3.  Taylor: if we know negative coefficients vanish
+    $(0 = \hat{f}_{-1} = \hat{f}_{-2} = \dots$ we approximate:
+
+    $$\begin{aligned}
+        f(\theta) &\approx \sum_{k = 0}^{n-1} \hat{f}ₖ^n { e}^{{ i} k \theta} \\
+             &= \underbrace{[ 1 | { e}^{{ i}\theta} | { e}^{2{ i}\theta} | \dots |  { e}^{{ i} (n-1) \theta}]}_{F_{0:n-1}(\theta)} \begin{bmatrix} \hat{f}_0^n \\ \vdots \\ \hat{f}_{n-1}^n \end{bmatrix}
+        \end{aligned}$$ 
+    
+    Can be thought of as approximate Taylor expansion using change of var $z = e^{i\theta}$
+
+## Basics of Fourier series
+
+Focus on case where $\hat{f}_k$ absolutely convergent (1-norm of
+$\mathbf{f}$ bounded)
+$$\|\mathbf{\hat{f}}\|_1 = \sum_{k=-\infty}^\infty \lvert \hat{f}_k \rvert < \infty$$
+
+ 
+**Theorem 15**. *(Convergence)*
+
+
+if Fourier coefficients absolutely convergent
+$$\implies f(\theta) = \sum_{k = -\infty}^\infty\hat{f}_{k} { e}^{{ i} k \theta},\quad \text{Converges Uniformly}$$
+
+**Remark**\
+Also have convergence for continuous version of 2-norm
+
+$$\| f \|_2 := \sqrt{\int_0^{2\pi} |f(\theta)|^2 { d} \theta},$$ 
+
+for any function s.t $\|f\|_{2} < \infty$
+
+**Proposition -** *(Differentiability and absolutely convergence)*\
+if $f:\mathbb{R}\to\mathbb{C}$ and $f'$ periodic, with $f'$ uniformly bounded\
+$\implies$ fourier coefficients satisfy:
+
+$$\|\mathbf{\hat{f}}\|_1 < \infty$$
+
+**Remark**\
+More times differentiabel a function $\implies$ faster the coeff. decay
+$\implies$ faster Fourier series converges.
+
+If function smooth,$2\pi$ periodic $\implies$ fourier coeffs. decay
+faster than algebraically; decay like $O(k^{-2})\ \forall \lambda$
+
+**Remark**\
+Let $z = e^{i\theta}$ then if $f(z)$ analytic in a neighbourhood of unit
+circle
+$\implies$ fourier coeff. decay exponentially fast\
+$f(z)$ entire $\implies$ decay faster than exponentially fast.
+
+## Trapezium rule + discrete Fourier coefficients
+
+$$\theta_{j} = \frac{2\pi j}{n},\ j = 0,1,\dots,n$$ 
+
+Gives $n+1$ evenly spaced points over $[0,2\pi]$
+
+ 
+**Definition 32**. *(Trapezium rule)*
+
+
+Trapezium rule over $[0,2\pi]$
+
+$$\int_{0}^{2\pi} f(\theta) { d}\theta \approx {2 \pi \over n} \left[{f(0) \over 2} + \sum_{j=1}^{n-1} f(\theta_j) + {f(2 \pi) \over 2} \right]$$
+
+$f$ periodic; $f(0) = f(2\pi)$
+
+$$\implies \int_{0}^{2\pi} f(\theta) { d}\theta \approx 2 \pi\underbrace{{1 \over n} \sum_{j=0}^{n-1} f(\theta_j)}_{\sum_{n}[f]}$$
+
+Define Trapezium rule approximation to Fourier coeffs by
+
+$$\hat{f}_k^n := \sum_n[f(\theta) { e}^{-i k \theta}]  = {1 \over n} \sum_{j=0}^{n-1} f(\theta_j) { e}^{-i k \theta_j}$$
+
+**Lemma.** *(Discrete Orthogonality*\
+We have:
+
+$$\sum_{j=0}^{n-1} { e}^{i k \theta_j} = \begin{cases} n & k = \ldots,-2n,-n,0,n,2n,\ldots  \cr
+0 & \hbox{otherwise}
+\end{cases}$$
+
+In other words,
+
+$$\sum_n[{ e}^{i (k-j) \theta_j}] = \begin{cases} 1 & k-j = \ldots,-2n,-n,0,n,2n,\ldots  \cr
+0 & \hbox{otherwise}
+\end{cases}.$$
+
+ 
+**Theorem 16**. *(Discrete Fourier coefficients)*
+
+$f$ absolutely convergent
+
+$$\implies\hat{f}_k^n = \dots +\hat{f}_{k-2n} +\hat{f}_{k-n} +\hat{f}_k +\hat{f}_{k+n} +\hat{f}_{k+2n} + \dots$$
+
+**Corollary.** *(Aliasing)*\
+$\forall p \in \mathbb{Z},\hat{f}_k^n =\hat{f}_{k+pn}^n$.\
+If we know $\hat{f}_{0}^{n},\dots,\hat{f}_{n-1}^{n} \implies$ we know
+$\hat{f}^{n}_{k}$ $\forall k$ via permutations.\
+e.g $n = 2m+1$ 
+
+$$\begin{bmatrix}
+\hat{f}_{-m}^n \\
+\vdots\\
+\hat{f}_m^n
+\end{bmatrix} = \underbrace{\begin{bmatrix} &&& 1 \\ &&& \ddots \\ &&&& 1 \\
+    1 \\ & \ddots \\ && 1 \end{bmatrix}}_{P_\sigma}
+\begin{bmatrix}
+\hat{f}_0^n \\
+\vdots\\
+\hat{f}_{n-1}^n
+\end{bmatrix}$$
+
+$$\sigma = \begin{pmatrix}
+1 & 2 & \dots & m & m+1 & m+2 & \dots & n  \\
+m+2 & m+3 & \dots & n & 1 & 2 & \dots & m+1
+\end{pmatrix}.$$
+
+Take Case: Taylor (all neg. coeffs = 0)\
+Let $z = e^{i\theta}$ 
+
+$$f(z) = \sum_{k = 0}^{\infty}\hat{f}_{k}z^{k}$$
+
+$\hat{f}_{0}^{n},\dots,\hat{f}_{n-1}^{n}$ approx. of Taylor series
+coeffs. by evalueating on the boundary.
+
+ 
+**Theorem 17**. *(Taylor series converge)*
+
+
+$0 = \hat{f}_{-1} = \hat{f}_{-2} = \dots$ and $\mathbf{\hat{f}}$
+absolutely convergent
+
+$$\implies f_n(\theta) = \sum_{k=0}^{n-1} \hat{f}_k^n {e}^{ i k \theta} \quad \text{ converges uniformly to } f(\theta)$$
+
+#### Discrete Fourier Transform and Interpolation
+
+ 
+**Definition 33**. *(DFT)*
+
+
+Defined as: 
+
+$$\begin{aligned}
+Q_n &:= \frac{1}{\sqrt{n}}\begin{bmatrix} 1 & 1 & 1&  \dots & 1 \\
+                            1 & { e}^{-{ i} \theta_1} & { e}^{-{ i} \theta_2} & \dots & { e}^{-{ i} \theta_{n-1}} \\
+                            1 & { e}^{-{ i} 2 \theta_1} & { e}^{-{ i} 2 \theta_2} & \dots & { e}^{-{ i} 2\theta_{n-1}} \\
+                            \vdots & \vdots & \vdots & \ddots & \vdots \\
+                            1 & { e}^{-{ i} (n-1) \theta_1} & { e}^{-{ i} (n-1) \theta_2} & \dots & { e}^{-{ i} (n-1) \theta_{n-1}}
+                        \end{bmatrix} 
+=  \frac{1}{\sqrt{n}} \begin{bmatrix} 
+                            1 & 1 & 1&  \dots & 1 \\
+                            1 & \omega^{-1} & \omega^{-2} & \dots & \omega^{-(n-1)}\\
+                            1 & \omega^{-2} & \omega^{-4} & \dots & \omega^{-2(n-1)}\\
+                            \vdots & \vdots & \vdots & \ddots & \vdots \\
+                            1 & \omega^{-(n-1)} & \omega^{-2(n-1)} & \dots & \omega^{-(n-1)^2}
+                        \end{bmatrix} \quad \left(\omega = e^{i\pi/n}\right)\\
+Q_n^{\ast} &= \frac{1}{\sqrt{n}} \begin{bmatrix}
+1 & 1 & 1&  \dots & 1 \\
+1 & { e}^{{ i} \theta_1} & { e}^{{ i} 2 \theta_1} & \dots& { e}^{{ i} (n-1) \theta_1} \\
+1 &  { e}^{{ i} \theta_2}  & { e}^{{ i} 2 \theta_2} & \dots& { e}^{{ i} (n-1)\theta_2} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & { e}^{{ i} \theta_{n-1}} & { e}^{{ i} 2 \theta_{n-1}} & \dots& { e}^{{ i} (n-1) \theta_{n-1}}
+\end{bmatrix} 
+= \frac{1}{\sqrt{n}} \begin{bmatrix}
+1 & 1 & 1&  \dots & 1 \\
+1 & \omega^{1} & \omega^{2} & \dots& \omega^{(n-1)}\\
+1 & \omega^{2} & \omega^{4} & \dots& \omega^{2(n-1)}\\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & \omega^{(n-1)} & \omega^{2(n-1)} & \dots& \omega^{(n-1)^2}
+\end{bmatrix}\end{aligned}$$ 
+
+Such that we have
+
+$$\underbrace{\begin{bmatrix} f_0^n \\ \vdots \\ f_{n-1}^n \end{bmatrix}}_{\mathbf{\hat{f}}^{n}} = \frac{1}{\sqrt{n}} Q_n \underbrace{\begin{bmatrix} f(\theta_0) \\ \vdots \\ f(\theta_n) \end{bmatrix}}_{\mathbf{f}^{n}}$$
+
+
+
+**Proposition** - *(DFT is Unitary)*\
+$Q_n$ is unitary: $Q_n^{\ast} Q_n = Q_n Q_n^{\ast} = I$.\
+$\implies$ easily inverted with map from DFT $\to$ values
+
+$$\sqrt{n}Q_n^{\ast}\mathbf{f}^{n} = \mathbf{f}^{n}$$
+
+**Corollary**\
+$f_n(\theta)$ interpolates $f$ at $\theta_j$
+
+$$f_n(\theta_j) = f(\theta_j)$$
+
+#### Fast Fourier Transform
+
+$Q_n, Q_n^{\ast}$ applied take $O(n^2)$ operations, reduced to
+$O(n\log n)$ with FFT
+
+$$\omega_n = \exp(\frac{2\pi}{n}); \quad \underbrace{\begin{bmatrix} 1 \\ \omega_{2n} \\ \vdots \\ \omega_{2n}^{2n-1} \end{bmatrix}}_{\vec{\omega}_{2n}} =
+P_{\sigma}^{T} \begin{bmatrix} I_n \\ \omega_{2n} I_n \end{bmatrix} \underbrace{\begin{bmatrix} 1 \\ \omega_n \\ \vdots \\ \omega_n^{n-1} \end{bmatrix}}_{\vec{\omega}_n}$$
+
+$$\text{ For } \sigma = \begin{pmatrix}
+1 & 2 & 3 & \dots & n & n+1 & \dots & 2n \\
+1 & 3 & 5 & \dots & 2n-1 & 2 & \dots & 2n
+\end{pmatrix}$$ 
+
+$\sigma$ being the permutation that takes:
+
+-   Even entries $\to$ first $n$ entries
+
+-   Odd entries $\to$ last $n$ entries
+
+With $P_{\sigma}^{T}$ reversing that process. 
+
+$$\begin{aligned}
+\implies Q_{2n}^{\ast} &= {1 \over \sqrt{2n}} \begin{bmatrix} \mathbf{1}_{2n} | \vec{\omega}_{2n} | \vec{\omega}_{2n}^2 | \dots | \vec{\omega}_{2n}^{2n-1} \end{bmatrix}
+= {1 \over \sqrt{2n}} P_{\sigma}^{T} \begin{bmatrix} \mathbf{1}_{n} &   \vec{\omega}_n        & \vec{\omega}_n^2          & \dots & \vec{\omega}_n^{n-1}          & \vec{\omega}_n^n  & \dots & \vec{\omega}_n^{2n-1}  \\
+                        \mathbf{1}_{n} & \omega_{2n} \vec{\omega}_n & \omega_{2n}^2 \vec{\omega}_n^2 & \dots & \omega_{2n}^{n-1} \vec{\omega}_n^{n-1} & \omega_{2n}^n \vec{\omega}_n^n  & \dots & \omega_{2n}^{2n-1} \vec{\omega}_n^{2n-1}
+\end{bmatrix} \\
+&= {1 \over \sqrt{2}} P_{\sigma}^{T} \begin{bmatrix} Q_n^{\ast} & Q_n^{\ast} \\
+                                     Q_n^{\ast} D_n & -Q_n^{\ast} D_n
+                                     \end{bmatrix} =
+                                     {1 \over \sqrt{2}}P_{\sigma}^{T} \begin{bmatrix} Q_n^{\ast} \\ &Q_n^{\ast} \end{bmatrix} \begin{bmatrix} I_n & I_n \\ D_n & -D_n \end{bmatrix}\end{aligned}$$
+Can reduce DFT to 2 DFTs applied to vectors of half dimension.\
+For $n = 2^{q} \implies O(n\log n)$ opperations.\
+
+# Orthogonal polynomials
+
+Consider expansions of the form
+$$f(x) = \sum_{k=0}^{\infty}c_k p_k(x) \approx \sum_{k=0}^{n-1}c_k^{n} p_k(x)$$
+For:
+
+-   $p_{k}(x)$ - special families of polynomials
+
+-   $c_k$ - expansion coefficients
+
+-   $c_{k}^{n}$ - approximate coefficients
+
+## General properties of orthogonal polynomials
+
+ 
+**Definition 34**. *(Graded polynomial basis)*
+
+
+Set of polynomials; $\{p_0(x), p_1(x), \dots \}$ if $p_n$ is precisely
+degree $n$
+
+$$p_n(x) = k_n x^n + k_n^{(n-1)} x^{n-1} + \dots + k_n^{(1)} x + k_n^{(0)}$$
+
+If $p_n$ graded $\implies \{p_0(x), \dots, p_n(x) \}$ a basis of all
+polynomials of degree $n$
+
+ 
+**Definition 35**. *(Orthogonal polynomial)*
+
+
+Given integrable weight $w(x)$ for $x \in (a,b)$, define continuous
+inner product 
+
+$$\left < f,g\right > = \int_a^b  f(x) g(x) w(x) {d} x$$
+
+Graded polynomial basis $\{p_0(x), p_1(x), … \}$ are orthogonal
+polynomials (OPs) if 
+
+$$⟨p_n,p_m⟩ = 0 \quad \text{when } m \neq n$$
+
+ 
+**Definition 36**. *(Orthonormal polynomials)*
+
+
+A set of OPs $\{p_0(x), p_1(x), … \}$ [**orthonormal**] if $\|q_n\| = 1\ \forall n$
+
+ 
+**Definition 37**. *(Monic OP)*
+
+
+A set of OPs $\{p_0(x), p_1(x), … \}$
+[**monic**] if $k_n = 1$
+
+**Proposition -** *(Expansion)* 
+
+If $r(x)$ a degree $n$ poly., $\{p_n\}$
+orthogonal and $\{q_n\}$ orthonormal $\implies$ 
+
+$$\begin{aligned}
+r(x) &= \sum_{k=0}^n {⟨p_k,r⟩ \over \|p_k\|^2} p_k(x) \\
+     &    = \sum_{k=0}^n ⟨q_k,r⟩ q_k(x)\end{aligned}$$
+
+**Corollary** - *Zero inner product*\
+If degree $n$ polynomial $r$ satisfies
+
+$$0 = ⟨p_0,r⟩ = \dots = ⟨p_n,r⟩\implies r = 0$$
+
+**Corollary** - *(Uniqueness)*\
+Monic OPs are unique
+
+**Proposition** - *Orthogonal to lower degree*\
+Given weigth $w(x)$, polynomial $p$ of precisely degree $n$ satisfies
+
+$$⟨p,r⟩ = 0$$ 
+
+$\forall$ degree $m<n$, polynmial $r \iff p(x) = ap_n(x)$
+where $p_n(x)$ are monic OPs.\
+$\implies$ OP uniquely defines by $k_n$
+
+### 3-term Recurrence
+
+ 
+**Theorem 18**. *(3-term recurrence, 2nd form)*
+
+
+If $\{p_n\}$ are OPs
+$\implies \exists a_n, b_n \neq 0,c_{n-1} \neq 0 \in \mathbb{R}$ s.t
+
+$$\begin{aligned}
+x p_0(x) &= a_0 p_0(x) + b_0 p_1(x)  \\
+x p_n(x) &= c_{n-1} p_{n-1}(x) + a_n p_n(x) + b_n p_{n+1}(x)\end{aligned}$$
+
+$p_n$ monic $\implies xp_n$ monic
+
+**Corollary** - *(monic 3-term recurrence)*\
+If $\{p_n\}$ are monic $\implies b_n =  1$.
+
+### Jacobi Matrix
+
+**Corollary** - *(Jacobi Matrix)*\
+For 
+
+$$P(x) := [p_0(x) | p_1(x) | \dots]$$
+
+$$\implies x P(x) = P(x) \underbrace{\begin{bmatrix} a_0 & c_0 \\
+                                                        b_0 & a_1 & c_1\\
+                                                        & b_1 & a_2 & \ddots \\
+                                                        && \ddots & \ddots
+                                                        \end{bmatrix}}_X$$
+More generally, for any polynomial $a(x)$ we have
+
+$$a(x) P(x) = P(x) a(X).$$
+
+**Corollary** - *(Orthonormal 3-term recurrence)*\
+$\{q_n\}$ are orthonormal $\implies$ recurrence coefficients satisfy
+$c_n = b_n$.\
+The Jacobi matrix is symmetric: 
+
+$$X = \begin{bmatrix} a_0 & b_0 \\
+        b_0 & a_1 & b_1\\
+        & b_1 & a_2 & \ddots \\
+        && \ddots & \ddots
+        \end{bmatrix}$$
+
+**Remark**\
+Typically Jacobi matrix is the transpose $J := X^{T}$.\
+If the basis orthonormal $\implies$ $X$ is symmetric and they are the
+same.
+
+#### Classical Orthogonal Polynomials
+
+Classic OPs special families of OPs with special properties
+
+-   Their derivatives are also OPs
+
+-   They are eigenfunctions of simple differential operators
+
+
+We consider:
+
+1.  Chebyshev polynomials (1st kind) $T_n(x)$:\
+    $w(x) = 1/\sqrt{1-x^2}$ on $[-1,1]$.
+
+2.  Chebyshev polynomials (2nd kind) $U_n(x)$:\
+    $w(x) = \sqrt{1-x^2}$ on $[-1,1]$.
+
+3.  Legendre polynomials $P_n(x)$:\
+    $w(x) = 1$ on $[-1,1]$.
+
+4.  Hermite polynomials $H_n(x)$:\
+    $w(x) = \exp(-x^2)$ on $(-\infty,\infty)$
+
+Other important families discussed are
+
+1.  Ultraspherical polynomials
+
+2.  Jacobi polynomials
+
+3.  Laguerre polynomials
+
+
+### Chebyshev
+
+ 
+**Definition 38**. *(Chebyshev polynomials, 1st kind)*
+
+
+$T_n(x)$ are orthogonal with respect to $1/sqrt{1-x^2}$ and satisfy:
+
+$$T_0(x) = 1, T_n(x) = 2^{n-1} x^n + O(x^{n-1})$$
+
+ 
+**Definition 39**. *(Chebyshev polynomials, 2nd kind)*
+
+
+$T_n(x)$ are orthogonal with respect to $1/sqrt{1-x^2}$.
+
+$$U_n(x) = 2^n x^n + O(x^{n-1})$$
+
+ 
+**Theorem 19**. *(Chebyshev T are $\cos$)*
+
+$$T_n(x) = \cos (n \cdot acos x) \quad
+T_n(cos(\theta)) = \cos n \theta.$$
+
+**Corollary**
+
+$$\begin{aligned}
+x T_0(x) = T_1(x) \\
+x T_n(x) = {T_{n-1}(x) + T_{n+1}(x) \over 2}\end{aligned}$$ 
+
+Chebyshev polynomials particularly powerful
+
+$$f(x) = \sum_{k = 0}^{\infty}\check{f}_k T_k(x), \quad f(x) = \sum_{k = 0}^{\infty}\check{f}_k \cos (k\theta)$$
+
+$\implies$ coefficients recovered fast using FFT-based techniques.
+
+ 
+**Theorem 20**. *(Chebyshev U are $\sin$)*
+
+
+For $x = \cos \theta$, 
+
+$$U_n(x) = {\sin(n+1) \theta \over \sin \theta}$$
+
+which satisfy: 
+
+$$\begin{aligned}
+x U_0(x) &= U_1(x)/2 \\
+x U_n(x) &= {U_{n-1}(x) \over 2} + {U_{n+1}(x) \over 2}.\end{aligned}$$
+
+#### Legendre
+
+ 
+**Definition 40**. *(Pochammer symbol)*
+
+
+The Pochammer symbol is
+
+$$\begin{aligned}
+(a)_0 &= 1 \\
+(a)_n &= a (a+1) (a+2) \dots (a+n-1).\end{aligned}$$
+
+ 
+**Definition 41**. *(Legendre)*
+
+
+Legendre polynomials $P_n(x)$ are OPs w.r.t $w(x) = 1$ on $[-1,1]$, with
+
+$$k_n = {2^n (1/2)_n \over n!}$$
+
+ 
+**Theorem 21**. *(Legendre Rodriguez formula)*
+
+
+$$P_n(x) = {1 \over (-2)^n n!}{{\rm d}^n \over {\rm d} x^n} (1-x^2)^n$$
+
+**Lemma** - *(Legendre monomial coefficients)* 
+
+$$\begin{aligned}
+    P_{0}(x) &= 1\\
+    P_{1}(x) &= x\\
+    P_{n}(x) &= \underbrace{\frac{(2n)!}{2^n (n!)^2}}_{k_n}x^n - \underbrace{\frac{(2n-2)!}{2^n (n-2)!(n-1)!}}_{k_n^{(2)}} x^{n-2} + O(x^{n-4})\end{aligned}$$
+
+ 
+**Theorem 22**. *(Legendre 3-term recurrence)*
+
+
+$$\begin{aligned}
+    xP_0(x) &= P_1(x)\\
+    (2n+1)xP_n(x) &= nP_{n-1}(x) + (n+1)P_{n+1}(x)\end{aligned}$$
+
+# Interpolation and Gaussian Quadrature
+
+**Polynomial Interpolation -** process of finding poly. equal to data at
+precise set of points\
+**Quadrature -** act of approximating an integral by a weighted sum
+$$\int_{a}^{b}f(x)w(x)dx \approx \sum_{j=1}^{n}w_j f(x_j)$$
+
+## Polynomial Interpolation
+
+Given $n$ distinct points $x_1,\dots,x_n \in \mathbb{R}$, $n$ samples
+$f_1,\dots,f_n \in \mathbb{R}$\
+Degree $n-1$ interpolatory poly. $p(x)$ satisfies $$p(x_j) = f_j$$
+
+ 
+**Definition 42**. *(Vandermonde)*
+
+
+The Vandermonde matrix associated with $n$ distinct points
+$x_1,…,x_n \in \mathbb{R}$ is the matrix
+$$V := \begin{bmatrix} 1 & x_1 & \dots & x_1^{n-1} \\
+                    \vdots & \vdots & \ddots & \vdots \\
+                    1 & x_n & \dots & x_n^{n-1}
+                    \end{bmatrix}$$ 
+                    
+**Proposition** - *(Interpolatory polynomial uniqueness)*
+
+Interpolatory polynomial is unique and Vandermonde matrix is invertible
+
+ 
+**Definition 43**. *(Lagrange basis polynomial)*
+
+
+$$\ell_k(x) := \prod_{j \neq k} {x-x_j \over x_k - x_j} =  {(x-x_1) \dots(x-x_{k-1})(x-x_{k+1}) \dots (x-x_n) \over (x_k - x_1) \dots (x_k - x_{k-1}) (x_k - x_{k+1}) \dots (x_k - x_n)}$$
+
+**Proposition** - *(Delta interpolation)*
+
+$$\ell_k(x_j) = \delta_{kj}$$
+
+ 
+**Theorem 23**. *(Lagrange Interpolation)*
+
+
+The unique polynomial of degree at most $n-1$ that interpolates $f$ at
+$x_j$ is 
+
+$$p(x) = f(x_1) \ell_1(x) + \dots + f(x_n) \ell_n(x)$$
+
+#### Roots of orthogonal polynomials and truncated Jacobi matrices
+
+**Lemma**\
+$q_n(x)$ has exactly $n$ distinct roots
+
+ 
+**Definition 44**. *(Truncated Jacobi Matrix)*
+
+
+Given a symmetric Jacobi matrix $X$, (or weight $w(x)$ with orthonormal
+polynomials associated with $X$) the truncated Jacobi matrix is
+
+$$X_n := \begin{bmatrix} a_0 & b_0 \\
+                         b_0 & \ddots & \ddots \\
+                         & \ddots & a_{n-2} & b_{n-2} \\
+                         && b_{n-2} & a_{n-1} \end{bmatrix} \in \mathbb{R}^{n \times n}$$
+
+**Lemma** - *(Zeros)*\
+The zeros $x_1, \dots,x_n$ of $q_n(x)$ are the eigenvalues of the
+truncated Jacobi matrix $X_n$.
+
+$$X_n Q_n = Q_n \begin{bmatrix} x_1 \\ & \ddots \\ && x_n \end{bmatrix}$$
+
+for the orthogonal matrix 
+
+$$Q_n = \begin{bmatrix}
+q_0(x_1) & \dots & q_0(x_n) \\
+\vdots  & \ddots & \vdots  \\
+q_{n-1}(x_1) & \dots & q_{n-1}(x_n)
+\end{bmatrix} \begin{bmatrix} \alpha_1^{-1} \\ & \ddots \\ && \alpha_n^{-1} \end{bmatrix}$$
+
+where $\alpha_j = \sqrt{q_0(x_j)^2 + \dots + q_{n-1}(x_j)^2}$.
+
+## Interpolatory Quadrature Rules
+
+ 
+**Definition 45**. *(interpolatory quadrature rule)*
+
+
+Set of points $\mathbf{x} = [x_1,\dots,x_n]$ the interpolatory
+quadrature rule is:
+
+$$\Sigma_n^{w,\mathbf{x}}[f] := \sum_{j=1}^n w_j f(x_j)
+\quad \text{where} \quad
+w_j := \int_a^b \ell_j(x) w(x)  dx$$
+
+**Proposition** - *(Interpolatory quadrature is exact for polynomials)*\
+Interpolatory quadrature is exact for all degree $n-1$ polynomials $p$:
+
+$$\int_a^b p(x) w(x) dx = \Sigma_n^{w,\mathbf{x}}[f]$$
+
+## Gaussian Quadrature
+
+ 
+**Definition 46**. *(Gaussian Quadrature)*
+
+Given weight $w(x)$, the Gauss quadrature rule is:
+
+$$\int_a^b f(x)w(x) dx \approx \underbrace{\sum_{j=1}^n w_j f(x_j)}_{\Sigma_n^w[f]}$$
+
+where $x_1,\dots,x_n$ are the roots of $q_n(x)$ and
+
+$$w_j := {1 \over \alpha_j^2} = {1 \over q_0(x_j)^2 + \dots + q_{n-1}(x_j)^2}.$$
+
+Equivalently, $x_1,\dots,x_n$ are the eigenvalues of $X_n$ and
+
+$$w_j = \int_a^b w(x) dx Q_n[1,j]^2.$$ 
+
+(Note we have $\int_a^b w(x)  dx q_0(x)^2 = 1$.)
+
+**Lemma** - *(Discrete orthogonality)*\
+For $0 \leq \ell,m \leq n-1$,
+
+$$\Sigma_n^w[q_\ell\ q_m] = \delta_{\ell m}$$
+
+ 
+**Theorem 24**. *(Interpolation via quadrature)*
+
+$$f_n(x) = \sum_{k=0}^{n-1} c_k^n q_k(x)\quad \text{ for } \quad c_k^n := \Sigma_n^w[f q_k]$$
+
+interpolates $f(x)$ at the Gaussian quadrature points $x_1,\dots,x_n$.
+
+**Corollary**\
+Gaussian quadrature is an interpolatory quadrature rule with the
+interpolation points equal to the roots of $q_n$:
+
+$$\Sigma_n^w[f] = \Sigma_n^{w,\mathbf{x}}[f]$$
+
+ 
+**Theorem 25**. *(Exactness of Gauss quadrature)*
+
+If $p(x)$ is a degree $2n-1$ polynomial then Gauss quadrature is exact:
+
+$$\int_a^b p(x)w(x) dx = \Sigma_n^w[p].$$
