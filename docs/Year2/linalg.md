@@ -1593,9 +1593,6 @@ efficient memory accessing.
 Represented as dense square matrices, where we ignore entries
 above/below diagonal.
 
- multicols
-3
-
     A = [1 2 3;
          4 5 6;
          7 8 9]
@@ -1670,9 +1667,7 @@ Matrix bidiagonal if square and has bandwidths
 
 -   $(l,u) = (0,1)$ $\implies$ upper-bidiagonal
 
- multicols
-2
-
+```
     Bidiagonal([1,2,3], [4,5], :L)
     # 1  ⋅  ⋅
       4  2  ⋅ 
@@ -1682,14 +1677,11 @@ Matrix bidiagonal if square and has bandwidths
     # 1  4   
          2  5
             3
-
+```
 
 Multiplication and solving linear systems still $O(n)$ operations.
 
- multicols
-2
 
- 
 **Definition 15**. *<span style="color: green;">**Tridiagonal**</span>*
 
 
@@ -2053,15 +2045,14 @@ Similarly to QR decomposition we perform a triangularisation using
 $L_j \in \cal{L}_j$.\
 Taking the following definitions
 
- multicols
-3
-
 $$L_j := I - \begin{bmatrix} \mathbf{0}_j \\ {\mathbf{a}_{j+1}^j[2:n-j] \over \mathbf{a}_{j+1}^j[1]} \end{bmatrix} \mathbf{e}_j^{T}$$
 
 $$\mathbf{a}_j^k := (L_k \mathbf{a}_j^{k-1})[2:n-k+1]$$
 
-$u_{kj} := (L_k \mathbf{a}_j^{k-1})[1]$
+$$u_{kj} := (L_k \mathbf{a}_j^{k-1})[1]$$
 
+<br>
+</br>
 
 $$\implies L_{n-1}\dots L_{1} A = \underbrace{\begin{bmatrix} 
                                                 u_{11} & \cdots & u_{1n} \\
@@ -2188,9 +2179,6 @@ $$\implies L = \begin{bmatrix}
 #### Timings
 
 Different decompositions have trade-offs between stability and speed.
-
- multicols
-2
 
     n = 100
     A = Symmetric(rand(n,n)) + 100I 
