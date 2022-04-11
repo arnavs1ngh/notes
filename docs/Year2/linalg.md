@@ -2794,11 +2794,11 @@ $$\int_{0}^{2\pi} f(\theta) { d}\theta \approx {2 \pi \over n} \left[{f(0) \over
 
 $f$ periodic; $f(0) = f(2\pi)$
 
-$$\implies \int_{0}^{2\pi} f(\theta) { d}\theta \approx 2 \pi\underbrace{{1 \over n} \sum_{j=0}^{n-1} f(\theta_j)}_{\sum_{n}[f]}$$
+$$\implies \int_{0}^{2\pi} f(\theta) { d}\theta \approx 2 \pi\underbrace{\frac{1}{n} \sum_{j=0}^{n-1} f(\theta_j)}_{\sum_{n}[f]}$$
 
 Define Trapezium rule approximation to Fourier coeffs by
 
-$$\hat{f}_k^n := \sum_n[f(\theta) { e}^{-i k \theta}]  = {1 \over n} \sum_{j=0}^{n-1} f(\theta_j) { e}^{-i k \theta_j}$$
+$$\hat{f}_k^n := \sum_n[f(\theta) { e}^{-i k \theta}]  = \frac{1}{n} \sum_{j=0}^{n-1} f(\theta_j) { e}^{-i k \theta_j}$$
 
 **Lemma.** *(Discrete Orthogonality*\
 We have:
