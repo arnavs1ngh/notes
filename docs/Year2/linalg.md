@@ -77,12 +77,12 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 
 # <span style="color: white;">1</span> Prelim
 
-**Definition** - <span style="color: green;">**Similair Matrices**</span>
+**Definition** - <span style="color: green;">**Similar Matrices**</span>
 
-$A,B \in M_{n}(F)$ similair $(A \sim B)$ if $\exists$ invertible $P \in M_{n}(F)$ s.t $P^{-1}AP = B$\
+$A,B \in M_{n}(F)$ similar $(A \sim B)$ if $\exists$ invertible $P \in M_{n}(F)$ s.t $P^{-1}AP = B$\
 $\sim$ is an equivalence relation.
 
-*Properties of Similair Matrices*
+*Properties of similar Matrices*
 
 -   Same Determinant
 
@@ -445,7 +445,7 @@ $A \in M_{n}(F)$, suppose $c_{A}(x)$ a product of linear factors over
 $F$.\
 Then
 
-1.  $A$ similair to matrix of form
+1.  $A$ similar to matrix of form
    
    <center>
     $$J = J_{n_{1}}(\lambda_{1}) \oplus \dots \oplus J_{n_{k}}(\lambda_{k})$$
