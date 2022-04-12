@@ -211,7 +211,7 @@ A set $U \subseteq \mathbb{R}^{n}$ is called <span style="color: green;">open</s
 
 **Definition 1.3 - <span style="color: green;">Continuity at a point</span>**
   
-Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to R^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if
+Let $A\subset\mathbb{R}^{n}$ an open set, with $f: A \to \mathbb{R}^{n}$ <span style="color: red;">$f$ continuous at $p \in A$</span> if
 
 $$\textcolor{RoyalBlue}{\forall \epsilon > 0, \exists \delta > 0 \text{ s.t } ||x-p|| < \delta \implies ||f(x)-f(p)|| < \epsilon}$$
 
@@ -223,7 +223,7 @@ For small enough $\delta$, we have $f(B_{\delta}(p)) \subseteq B_{\epsilon}(f(p)
 **Theorem 1.2 - Composition of continuous functions**\
 Let $A \subseteq \mathbb{R}^{n}$ open, $B \subseteq \mathbb{R}^{m}$ open and suppose $f: A \to B$ continuous at $p\in A$, and $g: B \to \mathbb{R}^{l}$ continuous at $f(p)$
 
-  <center>Then $g \circ f: A \to \mathbb{R}^{l}$ continuous at p</center>
+  <center>$ \implies g \circ f: A \to \mathbb{R}^{l}$ continuous at p</center>
 
 **Definition 1.4 - <span style="color: green;">Limit of a function at a point</span>**
 
