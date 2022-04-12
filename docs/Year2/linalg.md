@@ -207,7 +207,9 @@ A_{1} & &\\
 $V$ a vector space over $F$, with $W \leq V$ a subspace.
 
 <center>
-Cosets $W + v$ for $v\in V$ $W + v:= \{w+v:w \in W\}$
+Cosets $W + v$ for $v\in V$
+
+$$W + v:= \{w+v:w \in W\}$$
 </center>
 
 <span style="color: green;">**Quotient Space**</span>
