@@ -269,5 +269,8 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Useful Links & Resources
 
 - <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" target="_blank" style="color:#801fff;">**Matrix Cookbook**</a>
+- <a href="https://matrixcalc.org/en/" target="_blank" style="color:#801fff;">**Matrix Calc**</a>
+- <a href="https://www.wolframalpha.com" target="_blank" style="color:#801fff;">**Wolfram Alpha**</a>
+- <a href="https://www.desmos.com" target="_blank" style="color:#801fff;">**Desmos**</a>
 - <a href="https://github.com/isaacjeffersonlee/lag-helper" target="_blank" style="color:#801fff;">**LAG Helper**</a>
 
