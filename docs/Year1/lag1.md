@@ -81,7 +81,6 @@ $$X =
 \end{array}
 \right]$$
 are column matrices, and 
-
 $$A = 
 \left[
 \begin{array}{cccc}
@@ -91,7 +90,6 @@ $$A =
      a_{m1}&a_{m2}&\ldots&a_{mn}
 \end{array}
 \right]$$ 
-
 an $m \times\ n\  matrix$
 
 We can also use an **Augmented Matrix** to represent the system of
