@@ -88,10 +88,16 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 
 \
 Let $f$ be a function defined at all points near $X_0$, except possible
-at $x_0$, and let $l$ be a real number. We say that $l$ is a limit of
-$f(x)$ as $x$ approaches $x_0$, if for every $\epsilon >0$ there exists
-a $\delta>0$ such that $|f(x)-l|<\epsilon$ whenever $|x-x_0|<\delta$ and
-$x\neq x_0$. We write $lim_{x\rightarrow x_0}f(x)=l$\
+at $x_0$\
+let $l$ be a real number.\
+ We say that $l$ is a limit of
+$f(x)$ as $x$ approaches $x_0$ if
+
+$$\forall \epsilon >0\ \exists\delta>0 \text{ s.t } |f(x)-l|<\epsilon  
+\text{ for  } |x-x_0|<\delta, x\neq x_0$$
+
+We write $lim_{x\rightarrow x_0}f(x)=l$
+
 **Basic Properties of Limits**
 
 1.  *Sum rule*\
@@ -100,13 +106,16 @@ $x\neq x_0$. We write $lim_{x\rightarrow x_0}f(x)=l$\
 2.  *Product rule*\
     $\lim_{x \to x{0}} [f(x)g(x)]=\lim_{x \to x{0}} f(x)\lim_{x \to x{0}} g(x)$
 
-3.  $Reciprocal rule$ If $\lim{x \to x_{0}} f(x)\neq 0$ then\
+3.  Reciprocal rule\
+    if $\lim{x \to x_{0}} f(x)\neq 0$ then\
     $\lim_{x \to x{0}} [1/f(x)] = 1/\lim_{x \to x{0}} f(x)$
 
-4.  *Quetient rule* If $\lim_{x \to x{0}} g(x)\neq 0$ then\
+4.  *Quotient rule*\
+    If $\lim_{x \to x{0}} g(x)\neq 0$ then\
     $\lim_{x \to x{0}} [f(x)/g(x)] = \lim_{x \to x{0}} f(x)/\lim_{x \to x{0}} g(x)$
 
-5.  *Composite function rule* If $h(x)$ is conitnuous at
+5.  *Composite function rule*\
+     If $h(x)$ is conitnuous at
     $\lim_{x \to x{0}} f(x)$ then\
     $\lim_{x \to x{0}} h(f(x)) = h(\lim_{x \to x{0}} f(x))$
 
@@ -115,7 +124,7 @@ $x\neq x_0$. We write $lim_{x\rightarrow x_0}f(x)=l$\
 $\lim{x \to \infty} f(x)=l$
 
 
-Let $f(x)$ bedefined on a domain containing, the interval $(a,\infty)$.A
+Let $f(x)$ be defined on a domain containing, the interval $(a,\infty)$.A
 real number $l$is the limit of $f(x)$ as $x$ approaches $\infty$ if for
 every $\epsilon>0$ there exists a $A>a$, such that $|f(x)-l|<\epsilon$
 whenver $x>A$. We write $\\lim{x \to \infty} f(x)=l$
@@ -211,11 +220,11 @@ $f'(x) = ax^{a-1}$.
 
 5.  $\frac{d}{dx}\frac{f(x)}{g(x)}=\frac{g(x)f'(x)-f(x)g'(x)}{(g(x))^2}$
 
-\
+
 
 ### The Chain Rule
 
-$\frac{d}{dx}(f\circg)(x)=(f\circ g)'(x)=f'(g(x))g'(x)$
+$$\frac{d}{dx}(f\circ g)(x)=(f\circ g)'(x)=f'(g(x))g'(x)$$
 
 
 **Theorem 3**.
@@ -226,7 +235,7 @@ If $f(x)$ is differentiable at $x=x_0$ then it is also continuous there.
 ## Implicit differentiation, related rates of change
 
 Not much notable here. You can prove the derivative of polynomials with
-fractional powers using implicit differentiation.\
+fractional powers using implicit differentiation.
 
 # Mean Value and Intermediate Value Theorems
 

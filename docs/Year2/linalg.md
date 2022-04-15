@@ -401,8 +401,8 @@ polynomials s.t $g_{1}(T)g_{2}(T) = 0$
 
 **Definition -** <span style="color: green;">**Jordan Block**</span>\
 $F$ a field and let $\lambda \in F$. Define $n\times n$ matrix:
-<center>
-$$J_{n}(\lambda) =
+
+$$J_{n}(\lambda) = 
  \begin{pmatrix}
 \lambda & 1 & 0 & \dots & 0 & 0 \\
 0 & \lambda & 1 & \dots & 0 & 0 \\
@@ -411,11 +411,11 @@ $$J_{n}(\lambda) =
 0 & 0 & 0 & \dots & \lambda & 1 \\
 0 & 0 & 0 & \dots & 0 & \lambda 
 \end{pmatrix}$$
-</center>
+
     
 ***Properties of the Jordan Blocks***
 
-1.  characteristic and minimal polynomials of $J$, $= (x-\lambda)^{n})$
+1.  characteristic and minimal polynomials of $J$, $= (x-\lambda)^{n}$
 
 2.  $\lambda$ the only eigenvalue of $J$, with
     $a(\lambda) = n, g(\lambda) = 1$
@@ -584,15 +584,15 @@ where
 ***Corollary 12.3***\
 $T$ a finite dimensional vector space over $F$\
 $\implies \exists$ basis $B$ of $V$ s.t
-<center>
-$$[T]_{B} = C(f(x)^{k_{1}}) \oplus \dots \oplus C(f(x)^{k_{r}})$$
-</center>
 
-***Corollary 12.3***\
+$$[T]_{B} = C(f(x)^{k_{1}}) \oplus \dots \oplus C(f(x)^{k_{r}})$$
+
+
+***Corollary 12.4***\
 $A \in M_{n}(F)$, with $m_A(x) = x^{k}$
-<center>
-$$\implies A \sim C(x^{k_1} \oplus \dots \oplus C(x^{k_r})$$
-</center>
+
+$$\implies A \sim C(x^{k_1}) \oplus \dots \oplus C(x^{k_r})$$
+
 
 
 **Theorem 12.5**. **(Rational Canonical Form Theorem)**
