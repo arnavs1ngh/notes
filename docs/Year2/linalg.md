@@ -652,12 +652,12 @@ $V^{*}$ a vector space over $F$ w.r.t above multiplication and addition.
 
 ***Dimension***
 
-$\ \{ v_i \}_{i} $ a basis of $V$ with eigenvalues $\ \{ \lambda \}_{i} $
+$\{ v_{i} \}_{i} $ a basis of $V$ with eigenvalues $\{ \lambda \}_{i}$
 
 $\exists! \phi \in V^*$ sending $v_i \to \lambda_i$
-<center>
+
 $$\phi(\sum \alpha_i v_i) = \sum \alpha_i \lambda_i$$
-</center>
+
 
 **Proposition 13.1**\
 Let $n = dim V$ with $\{v_1,\dots,v_n\}$ a basis of $V$\
