@@ -1322,7 +1322,7 @@ $$z = r(\cos\theta + i\sin\theta$$
 
 ***De-Moivre's Formula***
 
-$$z^{n} = r^{n}(\cos(n\theta) + i\sin(n'\theta)),\ n \in \mathbb{Z}^{+}$$
+$$z^{n} = r^{n}(\cos(n\theta) + i\sin(n\theta)),\ n \in \mathbb{Z}^{+}$$
 
 ***Eulers's Formula***
 $$e^{i\theta} = (\cos\theta + i\sin\theta)$$
@@ -1332,11 +1332,11 @@ $$e^{i\theta} = (\cos\theta + i\sin\theta)$$
  
 **Definition 2**. <span style="color: green;">**Discs in $\mathbb{C}$**</span>
 
-- <span style="color: green;">**Open Disc : $D_{r}(z_{0})$**</span> $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
+- <span style="color: green;">**Open Disc** : $D_{r}(z_{0})$</span> $= \{ z \in \mathbb{C}: |z-z_{0}| < r\}$
 
-- <span style="color: green;">**Boundary of Disc : $C_{r}(z_{0})$**</span> $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
+- <span style="color: green;">**Boundary of Disc** : $C_{r}(z_{0})$</span> $= \{ z \in \mathbb{C}: |z-z_{0}| = r\}$
 
-- <span style="color: green;">**Unit Disc : $\mathbb{D}$**</span> $= \{ z \in \mathbb{C}: |z| < 1\}$
+- <span style="color: green;">**Unit Disc** : $\mathbb{D}$</span> $= \{ z \in \mathbb{C}: |z| < 1\}$
 
  
 **Definition 3**. <span style="color: green;">**Interior Point**</span>
@@ -1370,8 +1370,7 @@ $\bar{\Omega} = \{ \Omega \cup \text{ limit points of } \Omega\}$
  
 **Definition 7**. Boundary
 
-<span style="color: green;">**Boundary**</span> of $\Omega$ =
-$\underbrace{\bar{\Omega}}_{\text{Closure}}\backslash\underbrace{\partial\Omega}_{\text{interior}}$
+<span style="color: green;">**Boundary**</span> of $\Omega = \underbrace{\bar{\Omega}}_{\text{Closure}}\backslash\underbrace{\partial\Omega}_{\text{interior}}$
 
  
 **Definition 8**. Bounded
