@@ -2369,7 +2369,8 @@ Straight lines, considered to be circles of infinite radius
 
 
 $w = f(z)$ a Mobius Transformation\
-s.t distinct $(z_1,z_2,z_3) \mapsto (w_1,w_2,w_3)$\
+s.t distinct $(z_1,z_2,z_3) \mapsto (w_1,w_2,w_3)$
+
 $$\implies \left( \frac{z-z_1}{z-z_3} \right)\left( \frac{z_2-z_3}{z_2-z_1} \right) = \left( \frac{w-w_1}{w-z_3} \right)\left( \frac{w_2-w_3}{w_2-w_1} \right) \quad \forall z$$
 
 -------------------------------------------
