@@ -1096,7 +1096,7 @@ $(X,d)$ a metric space. $Y \subseteq X$
     Say $C$ a <span style="color: green;">**sub-cover**</span> of $R$ for $Y$
     if $C \subseteq R$ and $Y \subseteq \bigcup_{v \in R}v$
 
-3.  Open cover $R$ for $Y$ is a <span style="color: green;">** finite cover **</span> if $R$ has finitely many elements.
+3.  Open cover $R$ for $Y$ is a **<span style="color: green;">finite cover</span>** if $R$ has finitely many elements.
 
  
 **Definition 2.31**. <span style="color: green;">**Compact**</span>
@@ -1450,7 +1450,8 @@ $\Omega_1, \Omega_2 \subset \mathbb{C}$ open sets\
 $f: \Omega_1 \to \Omega_2$\
 Say $f$ <span style="color: green;">**differentiable/holomorphic**</span> at
 $z_{0}$ if
-$$\lim_{h\to 0}\frac{f(z_{0} + h) - f(z_0)}{h} = f'(z_0) \textbf{\text{ exists}}$$
+
+$$\lim_{h\to 0}\frac{f(z_{0} + h) - f(z_0)}{h} = f'(z_0) \text{ exists}$$
 
 $f$ holomorphic on open set $\Omega$ if holomorphic at every point of
 $\Omega$
@@ -1515,9 +1516,12 @@ $$u'_r = \frac{1}{r}v'_\theta \qquad v'_r = -\frac{1}{r}u'_\theta$$
 ## Power Series
 
  
-**Definition 16**. <span style="color: green;">Power Series</span>
+**Definition 16**. **<span style="color: green;">Power Series</span>**
 
-Of the form $$\sum_{n = 0}^{\infty}a_n z^{n} \quad a_n \in \mathbb{C}$$
+Of the form 
+
+$$\sum_{n = 0}^{\infty}a_n z^{n} \quad a_n \in \mathbb{C}$$
+
 Series converge at $z$ if $S_N(z) = \sum_{n=0}^{N}a_n z^{n}$ has limit
 $S(z) = \lim_{n\to \infty}S_{N}(z)$
 
@@ -1528,15 +1532,14 @@ $S(z) = \lim_{n\to \infty}S_{N}(z)$
 Given power series $\sum_{n=0}^{\infty}a_{n}z^{n}$,
 $\exists 0 \leq R \leq \infty$ s.t
 
-1.  if $|z| < R \implies$ series converges absolutely
+1.  if $\lvert z\rvert < R \implies$ series converges absolutely
 
-2.  $|z| > R \implies$ series diverges
+2.  $\lvert z\rvert > R \implies$ series diverges
 
 $$\frac{1}{R} = \limsup_{n\to \infty}|a_n|^{1/n}\qquad \text{(Radius of Convergence)}$$
 
  
 **Theorem 6**.
-
 
 $$f(z) = \sum_{n = 0}^{\infty}a_n z^{n}$$
 
@@ -1562,6 +1565,7 @@ holomorphic $\forall z \in \mathbb{C}$
 ### Exponential function
 
 $$e^z = e^x\cos y + ie^x \sin y \qquad z = x + iy \in \mathbb{C}$$
+
 ***Properties***
 
 1.  $y = 0 \implies e^z = e^x$
@@ -1573,7 +1577,7 @@ $$e^z = e^x\cos y + ie^x \sin y \qquad z = x + iy \in \mathbb{C}$$
 
 4.  $z_1,z_2 \in \mathbb{C}\quad e^{z_1 + z_2} = e^{z_1}e^{z_2}$
 
-5.  $|e^z| = |e^x||e^{iy}| = e^x\sqrt{\cos^{2}x + \sin^{2}(x)} = e^x$
+5.  $\lvert e^z\rvert = \lvert e^x\rvert \lvert e^{iy}| = e^x\sqrt{\cos^{2}x + \sin^{2}(x)} = e^x$
 
 6.  $(e^{iy})^{n} = e^{iny}$
 
@@ -1646,7 +1650,7 @@ $z^{\alpha} = e^{\alpha\mathop{\mathrm{Log}}(z)}$ ***Properties***
 
 **Definition 23**.
 
-<span style="color: green;">Parametrised curve</span> a function $z(t): [a,b] \to \mathbb{C}$
+**<span style="color: green;">Parametrised curve</span>** a function $z(t): [a,b] \to \mathbb{C}$
 
 <span style="color: green;">**Smooth**</span> if $z'(t)$ exists and is  continuous on $[a,b]$ with $z'(t) \neq 0 \forall t \in [a,b]$ 
 
@@ -1658,9 +1662,9 @@ $$z:[a,b] \to \mathbb{C}\quad \tilde{z}:[c,d] \to \mathbb{C}$$
 
 equivalent if $\exists$ continuously differentiable bijection $s \to t(s)$ from $[c,d]$ to $[a,b]$ s.t $t'(s) > 0$ and $\tilde{z}(s) = z(t(s))=$
 
-**Definition 24**. <span style="color: green;">Path integral</span>
+**Definition 24**. **<span style="color: green;">Path integral</span>**
 
-<span style="color: green;">Path integral</span> given smooth $\gamma \subset \mathbb{C}$ parametrised by
+**<span style="color: green;">Path integral</span>** given smooth $\gamma \subset \mathbb{C}$ parametrised by
 $z:[a,b] \to \mathbb{C}$.\
 $f$ continuous function on $\gamma$
 
@@ -1681,21 +1685,21 @@ Can take $z^{-}:[a,b]\to \mathbb{C}$ s.t $z^{-}(t) = z(b + a -t)$
 **Definition 26**. Closed Curve
 
 
-Smooth/piece-wise smooth curve <span style="color: green;">closed</span> if $z(a) = z(b)$ for any
+Smooth/piece-wise smooth curve **<span style="color: green;">closed</span>** if $z(a) = z(b)$ for any
 parametrisation.
 
  
 **Definition 27**. Simple Curve
 
 
-Smooth/piece-wise smooth curve <span style="color: green;">simple</span> if not **self-intersecting**
+Smooth/piece-wise smooth curve **<span style="color: green;">simple</span>** if not **self-intersecting**
 
 $$z(t) \neq z(s) \text{ unless } s = t \in [a,b]$$
 
 ## Integration along Curves
 
  
-**Definition 28**. <span style="color: green;">Length of smooth curve</span>
+**Definition 28**. **<span style="color: green;">Length of smooth curve</span>**
 
 $$\text{Length}(\gamma) = \int_{a}^{b}|z'(t)|dt = \int_{a}^{b}\sqrt{x'(t)^{2} + y'(t)^{2}}dt$$
 
