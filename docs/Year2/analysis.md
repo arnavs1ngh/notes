@@ -2096,7 +2096,8 @@ $$\implies Res[f,z_0] = \frac{1}{2\pi i}\int_{\gamma}f(z) dz$$
 
 **Lemma**
 
-$\gamma$ simple closed piecewise-smooth curve
+$f$ holomorphic inside and on\
+$\gamma$ a simple closed piecewise-smooth curve with $z_i$ the singularities in its interior.
 
 $$\int_{\gamma}f(z)dz = 2\pi i \cdot \sum_{z_0 \text{ a singularity }} \text{Res}[f,z_0]$$
 
