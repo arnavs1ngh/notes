@@ -2082,7 +2082,8 @@ $g$ holomorphic at $z_0$, $g(z_0) \neq 0$
 Let $f(z) = \sum_{-\infty}^{\infty} a_{n}(z-z_{0})^{n}$ for
 $0 < |z-z_0| < R$ the Laurent series for $f$ at $z_0$\
 <span style="color: green;">**Residue**</span> of $f$ at $z_0$ is
-$$\implies Res[f,z_0] - a_{-1}$$
+
+$$\implies Res[f,z_0] = a_{-1}$$
 
 
 **Theorem 28**.
@@ -2091,6 +2092,15 @@ $$\implies Res[f,z_0] - a_{-1}$$
 $\gamma \subset \{ z : 0< |z-z_0| <R\}$ simple closed piecewise-smooth
 curve containing $z_0$
 $$\implies Res[f,z_0] = \frac{1}{2\pi i}\int_{\gamma}f(z) dz$$
+
+
+**Lemma**
+
+$\gamma$ simple closed piecewise-smooth curve
+
+$$\int_{\gamma}f(z)dz = 2\pi i \cdot \sum_{z_0 \text{ a singularity }} \text{Res}[f,z_0]$$
+
+$$\text{Res}[f,z_0] = \lim_{z\to z_0}\frac{d^{m-1}}{dz^{m-1}}\frac{f(z)(z-z_0)^{m}}{(m-1)!} \quad m = ord(z_0)$$
 
 
 **Theorem 29**.
