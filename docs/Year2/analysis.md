@@ -1915,8 +1915,10 @@ Given series converges uniformmly in compact subsets of $\Omega$ $\implies F(z)$
  
 **Theorem 20**.
 
-Sequence $\{f_n\}_{n=1}^{\infty} \xrightarrow[unif]{} f$ in every
-compact subset of $\Omega$ $\implies$ sequence $\{f'_n\}_{n=1}^{\infty} \xrightarrow[unif]{} f'$ in every compact subset of $\Omega$
+Sequence $\{f_{n}\}_{n=1}^{\infty} \xrightarrow[unif]{} f$ in every
+compact subset of $\Omega$ 
+
+$\implies$ sequence $\{f'_n\}_{n=1}^{\infty} \xrightarrow[unif]{} f'$ in every compact subset of $\Omega$
 
 ## Holomorphic functions defined in terms of integrals
 
