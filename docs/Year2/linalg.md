@@ -288,7 +288,8 @@ $p(x) = \sum_{i}a_{i}x^{i}, F[x] = \{ p(x) : a_{i} \in F\}$
 
 $deg(p(x)) =$ the highest power of $x$ in $p(x)$
 
-<span style="color: green;">**Euclidean Algori**</span>
+<span style="color: green;">**Euclidean Algorithm**</span>
+
 $f,g \in F[x]$ with $deg(g) \geq 1$, Then $\exists q,r \in F[x] s.t$
 <center>
 $$f = gq +r$$ for either $r = 0$ or $deg(r) < deg(g)$
@@ -308,14 +309,19 @@ Say $f,g$ are co-prime if $gcd(f,g) = 1$
 $d = gcd(f,g) \implies \exists r,s \in F[x] \text{ s.t } d = rf + sg$
   
 **Definiton -** <span style="color: green;">**Irreducible polynomials**</span>
+
 $p(x) \in F[x]$ irreducible over $F$ if $deg(p) \geq 1$ and $p$ not factorisable over $F$ as a product of $\{f_{i}\} \in F$ s.t $deg(f_{i}) \leq deg(p)$
   
 ***Corollary***\
 $p(x) \in F[x]$ irreducible, $\{g_{i}\} \in F[x]$, if $p|g_{1}\dots g_{r} \implies p|g_{i} \text{ for some } i$
   
-**Theorem 8.7 - *(Unique Factorization Theorem)***\
-$f(x) \in F[x]$ s.t $deg(f) \geq 1$ $$f = p_{1}\dots p_{r}$$ where each
-$p_{i} \in F[x]$ irreducible. **Factorisation of $f$ is unique up to
+**Theorem 8.7 - *(Unique Factorization Theorem)***
+
+$f(x) \in F[x]$ s.t $deg(f) \geq 1$
+
+$$f = p_{1}\dots p_{r}$$ 
+
+where each $p_{i} \in F[x]$ irreducible. **Factorisation of $f$ is unique up to
 scalar multiplication**
 
 # <span style="color: white;">9</span> The minimal polynomial of a linear map
@@ -454,7 +460,7 @@ Then
     </center>
     
   <center>
-    <span style="color: green;">**This is the Jordan Canonical Form (JCF) of $A$**</span>
+    **<span style="color: green;">This is the Jordan Canonical Form (JCF) of $A$</span>**
    </center>
 
 2.  Matrix $J$ from above, is uniquely determined by $A$ up to order of
