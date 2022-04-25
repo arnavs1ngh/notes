@@ -1973,7 +1973,7 @@ $$Q_1 A = \begin{bmatrix}
     \qquad
     r_{1j} := (Q_1 \mathbf{a}_j)[1] \quad \mathbf{a}_1^j := (Q_1 \mathbf{a}_j)[2:m]$$
 
-Note that $r_{11} = -sign(a_11)\|a_1\|$ with all entries of
+Note that $r_{11} = -sign(a_1^1)\|a_1\|$ with all entries of
 $\mathbf{a}^{1}_{1}$ zero.\
 Now consider,
 
