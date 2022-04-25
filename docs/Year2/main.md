@@ -104,7 +104,25 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/LAGPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/LAGPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS1.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS1-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS2.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS2-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS3.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS3-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS4.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS4-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS5.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS5-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS6.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS6-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS7.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS7-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS8.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS8-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS9.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS9-Sol.ipynb" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS10.ipynb" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year2/problemsheets/numASheets/NAPS10-Sol.ipynb" target="_blank">**Solutions**</a>
   
 </details>
 
