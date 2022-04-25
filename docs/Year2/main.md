@@ -70,7 +70,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Linear Algebra + Numerical Analysis - MATH50003
 - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Concise - Complete**</a> - <a href="/notes/pdfs/year2/LAGN-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year2/LagLec.pdf" target="_blank" style="color:#801fff;">**Open Linear Algebra Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/LagLec.pdf" download>**Download**</a>
-- <a href="https://github.com/isaacjeffersonlee/MATH50003-compiled-lecture-notes" target="_blank" style="color:#801fff;">**Numerical Analysis Lecturer - Term 2**</a>
+- <a href="https://github.com/isaacjeffersonlee/MATH50003-compiled-lecture-notes" target="_blank" style="color:#801fff;">**Numerical Analysis Lecturer - Term 2**</a> - <a href="https://github.com/Imperial-MATH50003/MATH50003NumericalAnalysis" target="_blank">**Official**</a>
 
 <details closed markdown="block">
   <summary>
