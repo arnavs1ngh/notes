@@ -1949,7 +1949,7 @@ We can find an orthogonal basis using Gram-Schmidt.
 
 **Complexity and Stability**\
 We have a total complexity of $O(mn^{2})$ operations,\
-Gram-Schmidt algori is unstable, rounding errors in floating point
+Gram-Schmidt algorithm is unstable, rounding errors in floating point
 accumulate, $\implies$ lose orthogonality.
 
 #### Householder reflections and QR
@@ -2125,11 +2125,10 @@ definite matrices**\
 Substantially faster.
 
  
-**Definition 22**. *<span style="color: green;">Positive definite</span>*
+**Definition 22**. **<span style="color: green;">Positive definite</span>**
 
 
-A square matrix $A \in \mathbb{R}^{n\times n}$ [**positived
-definite**] if
+A square matrix $A \in \mathbb{R}^{n\times n}$ [**positive definite**] if
 $\forall x \in \mathbb{R}^n, x \neq 0$ we have 
 
 $$x^T A x > 0$$
@@ -2260,8 +2259,8 @@ Given by
 **Definition 26**. *(Matrix-norm)*
 
 
-$A \in \mathbb{R}^{n\times m}$ for 2 norms $\|\cdot\|_{X}$ on
-$\mathbb{R}^n$ and $\|\cdot\|_{Y}$ on $\mathbb{R}^{n}$\
+$A \in \mathbb{R}^{n\times m}$ for 2 norms $\lvert\lvert \cdot\rvert\rvert_{X}$ on
+$\mathbb{R}^n$ and $\lvert\lvert \cdot\rvert\rvert_{Y}$ on $\mathbb{R}^{n}$\
 We have the <span style="color: green;">**induced matrix norm**</span>
 
 $$\|A \|_{X \to Y} := \sup_{\mathbf{v} : \|\mathbf{v}\|_X=1} \|A \mathbf{v}\|_Y = \sup_{x \in \mathbb{R}^n, x\neq 0}\frac{\|Ax\|_{Y}}{\|x\|_{X}}$$
@@ -2296,13 +2295,15 @@ orthogonal matrices,\
 $\tilde{\Sigma} \in \mathbb{R}^{m\times n}$ has only diagonal entries.\
 For $\sigma_{k} = 0$ if $k>r$
 
-| if $m>n$                                                                                                          | if $m <n$                                                                                            |
+| if $m>n$        | if $m <n$  |
 |-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_n \\ && 0 \\ && \vdots \\ && 0 \end{bmatrix}$ | $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_m & 0 & \dots & 0 \end{bmatrix}$ |
 
 **Proposition** - *Gram matrix kernel*\
-[**Gram-matrix**]: $A^T A$ Kernel of $A$
-also kernel of $A^A$\
+<span style="color: green;">**Gram-matrix**</span>: $A^T A$
+
+Kernel of $A$ also kernel of $A^T A$
+
 **Proposition** - *Gram matrix diagonalisation*\
 Gram-matrix satisfies
 
@@ -2583,7 +2584,7 @@ $$\mathbf{u}_{k+1} = \mathbf{u}_k + hf(t_k, \mathbf{u}_k)$$
 
 Consider one discretisation, since symmetric
 
-$$u''(x) \approx \frac{u_{k-1} = 2u_k + u_{k+1}}{h^2}$$
+$$u''(x) \approx \frac{u_{k-1} - 2u_k + u_{k+1}}{h^2}$$
 
 So we use the $n -1 \times n + 1$ matrix
 
@@ -2718,7 +2719,7 @@ $$\hat{f}_k := \frac{1}{2\pi}\int_{0}^{2\pi}f(\theta)e^{-ik\theta} d\theta$$
 
 Written as
 
-$$f(\theta) = \underbrace{[\dots | { e}^{-2i\theta} |{ e}^{-i\theta} | \underline 1 | { e}^i\theta} | { e}^{2i\theta} | \dots]}_{F(\theta)}\underbrace{\begin{bmatrix} \vdots \\ \hat{f}_{-2} \\ \hat{f}_{-1} \\ \underline{\hat{f}_0} \\ \hat{f}_1 \\ \hat{f}_2 \\ \vdots \end{bmatrix}}_{\mathbf{\hat{f}}}$$
+$$f(\theta) = \underbrace{[\dots | { e}^{-2i\theta} |{ e}^{-i\theta} | \underline 1 | e^{i\theta} | { e}^{2i\theta} | \dots]}_{F(\theta)}\underbrace{\begin{bmatrix} \vdots \\ \hat{f}_{-2} \\ \hat{f}_{-1} \\ \underline{\hat{f}_0} \\ \hat{f}_1 \\ \hat{f}_2 \\ \vdots \end{bmatrix}}_{\mathbf{\hat{f}}}$$
 
 Build approximation using $n$ approximate coefficients
 $\hat{f}^{n}_{k} \approx \hat{f}_k$\
