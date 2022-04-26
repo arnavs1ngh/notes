@@ -2830,8 +2830,10 @@ $f$ absolutely convergent
 
 $$\implies\hat{f}_k^n = \dots +\hat{f}_{k-2n} +\hat{f}_{k-n} +\hat{f}_k +\hat{f}_{k+n} +\hat{f}_{k+2n} + \dots$$
 
-**Corollary.** *(Aliasing)*\
-$\forall p \in \mathbb{Z},\hat{f}_k^n =\hat{f}_{k+pn}^n$.\
+**Corollary.** *(Aliasing)*
+
+$\forall p \in \mathbb{Z},\hat{f}_k^n =\hat{f}_{k+pn}^n$.
+
 If we know $\hat{f}_{0}^{n},\dots,\hat{f}_{n-1}^{n} \implies$ we know
 $\hat{f}^{n}_{k}$ $\forall k$ via permutations.\
 e.g $n = 2m+1$ 
@@ -2858,8 +2860,7 @@ Let $z = e^{i\theta}$
 
 $$f(z) = \sum_{k = 0}^{\infty}\hat{f}_{k}z^{k}$$
 
-$\hat{f}_{0}^{n},\dots,\hat{f}_{n-1}^{n}$ approx. of Taylor series
-coeffs. by evalueating on the boundary.
+$\hat{f}_{0}^{n},\dots,\hat{f}_{n-1}^{n}$ approx. of Taylor series coeffs. by evaluating on the boundary.
 
  
 **Theorem 17**. *(Taylor series converge)*
@@ -3124,7 +3125,7 @@ Other important families discussed are
 **Definition 38**. *(Chebyshev polynomials, 1st kind)*
 
 
-$T_n(x)$ are orthogonal with respect to $1/sqrt{1-x^2}$ and satisfy:
+$T_n(x)$ are orthogonal with respect to $1/\sqrt{1-x^2}$ and satisfy:
 
 $$T_0(x) = 1, T_n(x) = 2^{n-1} x^n + O(x^{n-1})$$
 
