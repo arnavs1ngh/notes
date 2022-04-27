@@ -1787,7 +1787,7 @@ $Q \begin{bmatrix} a \\ b \end{bmatrix} = \sqrt{a^2 + b^2} \begin{bmatrix} 1 \\ 
 ##### Reflections
 
  
-**Definition 20**. *[**Reflection Matrix**]*
+**Definition 20**. *<span style="color: green;">**Reflection Matrix**</span>
 
 
 Given vector $\mathbf{v}$ satisfying $||v|| = 1$, reflection matrix is
@@ -1810,8 +1810,7 @@ Reflections in direction of $\mathbf{v}$
 5.  3\. $\det Q_{v} = -1$
 
  
-**Definition 21**. *[**Householder
-reflection**]*
+**Definition 21**. *<span style="color: green;">**Householder reflection**</span>*
 
 
 Given vector $\mathbf{x}$ define Householder reflection.
@@ -2128,7 +2127,7 @@ Substantially faster.
 **Definition 22**. **<span style="color: green;">Positive definite</span>**
 
 
-A square matrix $A \in \mathbb{R}^{n\times n}$ [**positive definite**] if
+A square matrix $A \in \mathbb{R}^{n\times n}$ <span style="color: green;">**positive definite**</span> if
 $\forall x \in \mathbb{R}^n, x \neq 0$ we have 
 
 $$x^T A x > 0$$
@@ -2215,7 +2214,7 @@ doesn't run into them.
 #### Vector Norms
 
  
-**Definition 23**. *<span style="color: green;">Vector-norm</span>*
+**Definition 23**. *<span style="color: green;">**Vector-norm**</span>*
 
 
 Norm on $\|\cdot\|$ on $\mathbb{R}^n$ a function satisfying the
@@ -2228,7 +2227,7 @@ following, $\forall x,y\in \mathbb{R}^n,\ c\in \mathbb{R}$:
 3.  Positive-definiteness: $\lvert\lvert x\rvert\rvert = 0 \iff x = 0$
 
  
-**Definition 24**. *<span style="color: green;">p-norm</span>*
+**Definition 24**. *<span style="color: green;">**p-norm**</span>*
 
 
 For $1 \leq p < \infty,\ x \in \mathbb{R}^n$
@@ -2810,7 +2809,7 @@ Define Trapezium rule approximation to Fourier coeffs by
 
 $$\hat{f}_k^n := \sum_n[f(\theta) { e}^{-i k \theta}]  = \frac{1}{n} \sum_{j=0}^{n-1} f(\theta_j) { e}^{-i k \theta_j}$$
 
-**Lemma.** *(Discrete Orthogonality*\
+**Lemma.** *(Discrete Orthogonality)*\
 We have:
 
 $$\sum_{j=0}^{n-1} { e}^{i k \theta_j} = \begin{cases} n & k = \ldots,-2n,-n,0,n,2n,\ldots  \cr
@@ -3002,14 +3001,13 @@ $$⟨p_n,p_m⟩ = 0 \quad \text{when } m \neq n$$
 **Definition 36**. *(Orthonormal polynomials)*
 
 
-A set of OPs $\{p_0(x), p_1(x), … \}$ [**orthonormal**] if $\|q_n\| = 1\ \forall n$
+A set of OPs $\{p_0(x), p_1(x), … \}$ <span style="color: green;">**orthonormal**</span> if $\|q_n\| = 1\ \forall n$
 
  
 **Definition 37**. *(Monic OP)*
 
 
-A set of OPs $\{p_0(x), p_1(x), … \}$
-[**monic**] if $k_n = 1$
+A set of OPs $\{p_0(x), p_1(x), … \}$ <span style="color: green;">**monic**</span> if $k_n = 1$
 
 **Proposition -** *(Expansion)* 
 
