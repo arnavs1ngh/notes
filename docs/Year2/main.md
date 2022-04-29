@@ -24,25 +24,25 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 1</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS2-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS3-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS4-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS5-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS6-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS7-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS7-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS8-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS8-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS9-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS9-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS10-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term1/ANAPS10-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -51,19 +51,19 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS2-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS2-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS3-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS3-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS4-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS4-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS5-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS5-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS6-Sol.pdf" target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS7-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/analysisSheets/term2/ANAPS7-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
@@ -156,7 +156,18 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
   
   - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS2-Sol.pdf" target="_blank">**Solutions**</a>
-  
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS6-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS7-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS8-Sol.pdf" target="_blank">**Solutions**</a>
 </details>
 
 ### Groups and Rings - MATH50005
