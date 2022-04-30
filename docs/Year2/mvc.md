@@ -1743,7 +1743,7 @@ $x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 locally Lipschitz continuous, with flow $\varphi$\
-Orbit $O(x)$ for some $x \in D$\
+Orbit $O(x)$ for some $x \in D$
 
 1.  <span style="color: green;">**Homoclinic**</span> orbit if $\exists$
     equilibrium $x^{*} \in D \backslash\{x\}$ s.t
