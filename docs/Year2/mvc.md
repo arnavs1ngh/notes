@@ -1594,7 +1594,9 @@ Can't happen as a 2D matrix of real eigenvalues can't have eigenvalue of
 
     <span style="color: green;">**Lyapunov exponent**</span>\
     For solution $\lambda$ with initial condition $(x_0,y_0) \neq (0,0)$
+
     $$\sigma_{lyap}(\lambda) = \lim_{t\to\infty}\frac{\ln \| \lambda (t)\|}{t}$$
+
     We have a solution decay if $\sigma_{lyap} < 0$ , grow if
     $\sigma_{lyap} > 0$
 
@@ -1625,9 +1627,12 @@ $p_j, j \in \{1,\dots,p\}$ complex e.vals of $A$
 **Theorem 3.7** - *Real Jordan Form*\
 $A \in \mathbb{R}^{d\times d}$, $\exists T \in \mathbb{R}^{d\times d}$
 s.t
+
 $$J := T^{-1} A T = \begin{pmatrix}J_1 & & 0\\ &\ddots\\0 && J_p \end{pmatrix}$$
+
 $J_j$ as in 3.6 if $\rho_j$ real\
 if $\rho_j$ complex $\implies$
+
 $$J_j = \begin{pmatrix} C_j & I_2 && 0 &0\\ 0 & C_2 & I_2 && 0\\ &&\ddots & \ddots\\ 0 &&& C_j & I_2\\ 0 & 0 && 0 & C_j \end{pmatrix} \quad \text{ with } C_j = \begin{pmatrix} a_j & b_j\\ -b_j & a_j \end{pmatrix}\ \rho_j = a_j + ib_j$$
 
 ## Explicit representation of matrix exponential function
@@ -1644,9 +1649,11 @@ $A\in \mathbb{R}^{d\times d}$ $J_j, j \in \{1,\dots,p\}$\
 Jordan blocks for real Jordan normal form with eigenvalues $\rho_j$
 
 1.  $\rho_j$ real
+
     $$\exp\left\{ \begin{pmatrix}\rho_j & 1 &&0\\ & \ddots&\ddots\\ &&\ddots& 1\\ 0 &&& \rho_j \end{pmatrix}t\right\} = e^{\rho_j t}\begin{pmatrix} 1 & t & t^2/2 & \dots & \frac{t^{d_j -1}}{(d_j -1)!} \\ 0 & 1 & t & \ddots & \vdots\\ && \ddots & \ddots & t^2/2\\ 0 &&& 1 & t\\ 0 & 0 && 0 & 1\end{pmatrix}$$
 
 2.  $\rho_j = a_j + ib_j \in \mathbb{C}$
+
     $$\exp\left\{ \begin{pmatrix}C_j & I_2 &&0\\ & \ddots&\ddots\\ &&\ddots& I_2\\ 0 &&&C_j \end{pmatrix}t\right\} = e^{a_jt}\begin{pmatrix} G(t) & tG(t) & \frac{t^2}{2}G(t) & \dots & \frac{t^{d_j -1}}{(d_j -1)!}G(t) \\ 0 & G(t) & tG(t) & \ddots & \vdots\\ && \ddots & \ddots & \frac{t^2}{2}G(t)\\ 0 &&& G(t) & tG(t)\\ 0 & 0 && 0 & G(t)\end{pmatrix}$$
 
     Where
@@ -1659,6 +1666,7 @@ Jordan blocks for real Jordan normal form with eigenvalues $\rho_j$
 **Definition 13**. - <span style="color: green;">**Spectrum of $A$**</span>
 
 $$A\in \mathbb{R}^{d\times d} \quad \Sigma (A) = \left \{ Re(\rho): \rho \text{ eval of } A\right \} = \{s_1,\dots,s_p\}$$
+
 For $\dot{x} = Ax$ we have decomposition
 
 $$\mathbb{R}^d = E_1 \oplus \dots \oplus E_q$$ 

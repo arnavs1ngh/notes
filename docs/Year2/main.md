@@ -303,3 +303,19 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 - <a href="https://www.desmos.com" target="_blank" style="color:#801fff;">**Desmos**</a>
 - <a href="https://github.com/isaacjeffersonlee/lag-helper" target="_blank" style="color:#801fff;">**LAG Helper**</a>
 
+## Revision Resources
+
+### Past Papers
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Analysis</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1.pdf" target="_blank" style="color:#00ba47;">**PLACE HOLDER LINK**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  
+</details>
+
+
+
