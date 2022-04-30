@@ -1886,7 +1886,9 @@ locally lipschitz continuous\
 $V:D\to \mathbb{R}$ continuosly differentiable function.\
 Define <span style="color: green;">**orbital derivative**</span> $\dot{V}$ of
 $V$
+
 $$\dot{V}(x) := V'(x)\cdot f(x) = \sum_{i=1}^{d}\frac{\partial V}{\partial x_i}(x) f_{i}(x)$$
+
 $V'(x) \in \mathbb{R}^{1\times d}$ the gradient of $V$ at $x \in D$\
 $\dot{V}$ describes derivative of $V$ along solution $\mu:I \to D$ of
 $\dot{x} = f(x)$
@@ -1898,17 +1900,22 @@ $\dot{x} = f(x)$
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 Locally Lipschitz continuous.\
 $V: D \to \mathbb{R}$ continuously differentiable function\
-$V$ a Lyapunov function if $\dot{V}(X) \leq 0\ \forall x \in D$\
+$V$ a Lyapunov function if $\dot{V}(X) \leq 0\ \forall x \in D$
+
 *Remark.*\
 Lyapunov function decrease along solutions
+
 $$V(\varphi(t,x)) \leq V(x) \ \forall t \in [0,\sup J_{max}(x))$$
 
-**Proposition 4.25.** - *(Sublevel sets of Lyapunov functions are
-positively invariant)*\
+**Proposition 4.25.** - *(Sublevel sets of Lyapunov functions are positively invariant)*
+
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$\
+
+Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$
 Any sublevel set of form
+
 $$S_{c} := \{ x\in D: V(x) \leq c\},\ c\in \mathbb{R}$$
+
 is positively invariant
 
  
@@ -1926,11 +1933,13 @@ $$V(x^{\ast}) = 0, V(x) >0 \ \forall x \in D\backslash\{x^{\ast}\} \implies x^{\
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$
+
 $$\omega(x) \subset \{ y \in D: \dot{V}(y) = 0\} \ \forall x \in D$$
 
 **Corollary 4.30** - *(Reformation of La Salle's invariance principle)*\
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 Locally Lipschitz continuous, with Lyapunov function $V:D\to\mathbb{R}$
+
 $$\forall x \in D \omega(x) \subset \underbrace{\text{ largest invariant subset of } \{y \in D:\dot{V}(y) = 0\}}_{= \bigcup \text{ invariant subsets of } \{y \in D:\dot{V}(y) = 0\}}$$
 
  
