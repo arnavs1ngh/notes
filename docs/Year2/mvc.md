@@ -1730,10 +1730,10 @@ $x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 5.  $x^{*}$ <span style="color: green;">**exponentially stable**</span> if
     $\exists \delta>0, K\geq 1$ and $\gamma <0$ s.t
 
-    $$\| \varphi(t,x) -x^{*}\| \leq Ke^{\gamma t}\|$$
+    $$\| \varphi(t,x) -x^{*}\| \leq \| Ke^{\gamma t}\|$$
 
 6.  $x^{\ast}$ <span style="color: green;">**repulsive**</span> if $\exists \delta >0$ s.t
-    $\lim_{t\to -\infty}\varphi(t,x) = x^{*},\ \forall x \in B_{\delta}(x^{*})$
+    $\lim_{t\to -\infty} \varphi(t,x) = x^{\ast}, \forall x \in B_{\delta}(x^{\ast})$
 
     $$INSERT FIGURES HERE$$
 
@@ -1802,10 +1802,14 @@ Assume $x^{\ast}$ equilibrium of above s.t $\forall$ e.vals $\lambda \in \mathbb
 
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
-locally lipschitz continuous, with flow $\varphi$ and equilibria $x^{\ast}$\
+locally lipschitz continuous, with flow $\varphi$ and equilibria $x^{\ast}$
+
 <span style="color: green;">**Stable set**</span> of $x^{\ast}$
+
 $$W^{s}(x^{\ast}) = \{ x \in D: \lim_{t\to\infty} \varphi(t,x) = x^{\ast}\}$$
+
 <span style="color: green;">**Unstable set**</span> of $x^{\ast}$
+
 $$W^{u}(x^{\ast}) = \{ x \in D: \lim_{t\to-\infty} \varphi(t,x) = x^{\ast}\}$$
 
  
