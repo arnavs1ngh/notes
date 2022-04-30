@@ -214,7 +214,7 @@ $$\lim_{n\rightarrow \infty} \sum_{n=1}^{N} f_{n} \delta s_n = \int_{\gamma}f ds
   
 **Definition 1.5.3 -** <span style="color: green;">**Conservative forces**</span>
 
-If [**$F = \nabla \phi$**] for a **differentiable scalar function $\phi$**, **$F$ is said to be a** <span style="color: green;">**conservative field**</span>, which has the following properties:
+If <span style="color: green;">$F = \nabla \phi$</span> for a **differentiable scalar function $\phi$**, **$F$ is said to be a** <span style="color: green;">**conservative field**</span>, which has the following properties:
 <center>
 $$\int_{\gamma} \textbf{F} \cdot d\textbf{r} = \phi(B)-\phi(A)$$ 
   </center>
@@ -960,7 +960,7 @@ $f:D \to \mathbb{R}^{d}$ Call
 
 $$\dot{x} = f(t,x)$$
 
- a [**d-dimensional (first-order) ordinary differential equation**]
+ a <span style="color: green;">**d-dimensional (first-order) ordinary differential equation**</span>
 
 Differentiable function $\lambda:I \to \mathbb{R}^{d}$ on interval
 $I \subset \mathbb{R}$ a **solution** to a differential equation if
@@ -968,7 +968,7 @@ $(t,\lambda(t)) \in D$ and
 
 $$\dot{\lambda}(t) = f(t,\lambda(t))\quad \forall t \in I$$
 
-Say ODE [**autonomous**] if of form
+Say ODE <span style="color: green;">**autonomous**</span> if of form
 
 $$\dot{x} = f(x)$$
 
@@ -986,8 +986,7 @@ $\lambda(t) = a \iff f(a) =0 \forall t$
 
 $d \in \mathbb{N}$ open
 $D \subset \mathbb{R}\times\mathbb{R}^d,\ f:D \to \mathbb{R}^d$.\
-Call the following pair a [**initial value
-problem**]
+Call the following pair a <span style="color: green;">**initial value problem**</span>
 
  center
 $\underbrace{\dot{x} = f(t,x)}_{\text{ODE}}$ and
@@ -1005,10 +1004,10 @@ $f:D \subset \mathbb{R}\times\mathbb{R}^d \to \mathbb{R}^d$ with
 $\dot{x} = f(t,x)$\
 Graph of solutions given by
 
-<center>
-[**Solution Curve**]:
-$G(\lambda) = \left\{(t,\lambda(t)): t \in I\right\} \subset \mathbb{R}\times \mathbb{R}^d$
-</center>
+<span style="color: green;">**Solution Curve**</span>
+
+$$G(\lambda) = \left\{(t,\lambda(t)): t \in I\right\} \subset \mathbb{R}\times \mathbb{R}^d$$
+
 
 derivative of curve at point $t_0 \in I$ is
 
@@ -1069,11 +1068,11 @@ $$\int_{t_0}^{t}g(s)ds = \begin{pmatrix}\int_{t_0}^{t}g_1(s)ds\\ \vdots \\ \int_
 
 Consider initial value problem; $\dot{x} = f(t,x)\quad x(t_0) = x_0$ and
 chosen interval $J$ s.t $t_0 \in J$\
-Define [**initial function**]:
+Define <span style="color: green;">**initial function**</span>:
 
 $$\lambda_0(t) \equiv x_0 \quad \forall t \in J$$
 
-and inductively the [**Picard iterates**]:
+and inductively the <span style="color: green;">**Picard iterates**</span>:
 
 $$\lambda_{n+1}(t) := x_0 + \int_{t_0}^{t}f(s,\lambda_n(s))ds \quad \forall t\in J\ \forall n \in \mathbb{N}_{0}$$
 
@@ -1086,8 +1085,8 @@ $\implies \lambda_{\infty}$ a solution to integral equation $\implies$ solves in
 ## Lipschitz Continuity
 
 **Definition**\
-[**Space of continuous functions on compact interval
-J**] $:= C^{0}(J,\mathbb{R}^{d})$\
+<span style="color: green;">**Space of continuous functions on compact interval J**</span>
+$:= C^{0}(J,\mathbb{R}^{d})$\
 This a complete normed vector space under supremum norm. (Banach Space)
 
  
@@ -1103,10 +1102,9 @@ $\lvert \lvert \cdot\rvert\rvert:V \to \mathbb{R}^{+}_{0}$ s.t
 
 3.  $\lvert \lvert x+y\rvert\rvert\leq \lvert \lvert x\rvert\rvert+\lvert \lvert y\rvert\rvert$
 
-Normed vector space $V$ [**complete**] if
+Normed vector space $V$ <span style="color: green;">**complete**</span> if
 every cauchy sequence converges in $V$\
-Call a complete normed vector space a [**Banach
-Space**]
+Call a complete normed vector space a <span style="color: green;">**Banach Space**</span>
 
  
 **Definition 5**. (Continuous + Lipschitz continuous functions)
@@ -1118,15 +1116,15 @@ $Y \subset$ normed vector space
 $(W,\lvert \lvert \cdot\rvert\rvert_{W})$\
 We say a function $f:X \to Y$
 
-1.  [**Continuous**] if
+1.  <span style="color: green;">**Continuous**</span> if
 
     $$\forall x \in X, \epsilon > 0, \exists \delta > 0, \lvert \lvert  x-\bar{x}\rvert\rvert_{V} < d \implies \lvert \lvert  f(x)-f(\bar{x})\rvert\rvert_{W} < \epsilon$$
 
-2.  [**Lipschitz Continuous**] if
+2.  <span style="color: green;">**Lipschitz Continuous**</span> if
 
     $$\exists K > 0, \lvert \lvert  f(x)-f(\bar{x})\rvert\rvert_{W} \leq K\lvert \lvert  x-\bar{x}\rvert\rvert_{V}\ \forall x,\bar{x} \in X$$
 
-    Call $K$ a [**Lipschitz Constant**]
+    Call $K$ a <span style="color: green;">**Lipschitz Constant**</span>
 
  center
 Lipschitz continuous $\implies$ Continuous
@@ -1195,11 +1193,11 @@ $$\lambda:[t_0 - h, t_0 + h] \to \mathbb{R}^d$$
 **Definition 7**.
 
 
-1.  [**Globally Lipschitz continuous**]\
+1.  <span style="color: green;">**Globally Lipschitz continuous**</span>\
     if $\exists K > 0$ s.t
     $\lvert \lvert  f(t,x) - f(t,y) \rvert\rvert \leq K \lvert \lvert  x-y \rvert\rvert \quad \forall (t,x),(t,y) \in D$
 
-2.  [**Locally Lipschitz continuous**]\
+2.  <span style="color: green;">**Locally Lipschitz continuous**</span>\
     if $\forall (t_0,x_0) \in D$ and $\exists$ neighbourhood
     $U\subset D$ of $(t_0,x_0)$ and $\exists L > 0$ s.t
 
@@ -1267,7 +1265,7 @@ Consider initial value problem $\dot{x} = f(t,x),\ x(t_0) = x_0$ Define
 
 -   $I_{-}(t_0,x_0) := \sup\{ t_{-} \leq t_0 : \text{there exists solution on } [t_{-},t_0] \}$
 
-[**Maximal existence interval:**]
+<span style="color: green;">**Maximal existence interval:**</span>
 
 $$I_{max}(t_0,x_0) := \left( I_{-}(t_0,x_0), I_{+}(t_0,x_0) \right)$$
 
@@ -1308,7 +1306,7 @@ Consider $\dot{x} = f(t,x)$. We define
 
 $$\Omega := \{ (t,t_0,x_0) \in \mathbb{R}^{1+1+d}: (t_0,x_0) \in D \text{ and } t\in I_{max}(t_0,x_0) \}$$
 
-We say $\lambda:\Omega \to \mathbb{R}^{d}$ with $\lambda(t,t_0,x_0) := \lambda_{max}(t,t_0,x_0)$ a [**general solution**] of $\dot{x} = f(t,x)$
+We say $\lambda:\Omega \to \mathbb{R}^{d}$ with $\lambda(t,t_0,x_0) := \lambda_{max}(t,t_0,x_0)$ a <span style="color: green;">**general solution**</span> of $\dot{x} = f(t,x)$
 
 Solution identity:
 
@@ -1320,11 +1318,11 @@ $\implies \forall s \in I_{max}(t_0,x_0)$ we have
 
 1.  $I_{max}(s,\lambda(s,t_0,x_0)) = I_{max}(t_0,x_0)$
 
-2.  $\lambda(t_0,t_0,x_0) = x_0$ [**(Initial value
-    property)**]
+2.  $\lambda(t_0,t_0,x_0) = x_0$ <span style="color: green;">**(Initial value
+    property)**</span>
 
 3.  $\lambda(t,s,\lambda(s,t_0,x_0)) = \lambda(t,t_0,x_0) \forall t \in I_{max}(t_0,x_0)$
-    [**(Cocycle property)**]
+    <span style="color: green;">**(Cocycle property)**</span>
 
 ### Flows
 
@@ -1339,7 +1337,7 @@ $$J_{max}(x_0) := I_{max}(0,x_0)$$
 
 $$\varphi(t,x_0) = \lambda(t,0,x_0) \quad \forall t \in J_{max}(x_0)$$
 
-$(t,x_0) \mapsto \phi(t,0,x_0)$ called [**flow of autonomous differential equation**]
+$(t,x_0) \mapsto \phi(t,0,x_0)$ called <span style="color: green;">**flow of autonomous differential equation**</span>
 
 Solution identity:
 
@@ -1351,12 +1349,12 @@ $\implies \forall x \in D$ we have
 
 1.  $J_{max}(\varphi(t,x)) = J_{max}(x) - t \quad \forall t \in J_{max}(x)$
 
-2.  $\varphi(0,x) = x$ [**(Initial value
-    property)**]
+2.  $\varphi(0,x) = x$ <span style="color: green;">**(Initial value
+    property)**</span>
 
 3.  $\varphi(t,\varphi(s,x)) = \varphi(t +s ,x) \quad \forall t,s$ with
-    $s,t+s \in J_{max}(x)$ [**(Group
-    property)**]
+    $s,t+s \in J_{max}(x)$ <span style="color: green;">**(Group
+    property)**</span>
 
 4.  $\varphi(-t,\varphi(t,x)) = x \quad \forall t \in J_{max}(x)$
 
@@ -1365,7 +1363,7 @@ $\implies \forall x \in D$ we have
 
 
 $\varphi$ flow of autonomous differential equations $\forall x \in D$,
-we have the [**Orbit**] through $x$
+we have the <span style="color: green;">**Orbit**</span> through $x$
 
 $$O(x) := \{ \varphi(t,x) \in D: t \in J_{max}(x) \}$$
 
@@ -1594,7 +1592,7 @@ Can't happen as a 2D matrix of real eigenvalues can't have eigenvalue of
     Obtain exponential growth rate for $\mu (t) = e^{at}$
     $$\lim_{t\to\infty}\frac{\ln e^{at}}{t} = a$$ 
 
-    [**Lyapunov exponent**]\
+    <span style="color: green;">**Lyapunov exponent**</span>\
     For solution $\lambda$ with initial condition $(x_0,y_0) \neq (0,0)$
     $$\sigma_{lyap}(\lambda) = \lim_{t\to\infty}\frac{\ln \| \lambda (t)\|}{t}$$
     We have a solution decay if $\sigma_{lyap} < 0$ , grow if
@@ -1658,7 +1656,7 @@ Jordan blocks for real Jordan normal form with eigenvalues $\rho_j$
 ## Exponential growth behaviour
 
  
-**Definition 13**. - [**Spectrum of $A$**]
+**Definition 13**. - <span style="color: green;">**Spectrum of $A$**</span>
 
 $$A\in \mathbb{R}^{d\times d} \quad \Sigma (A) = \left \{ Re(\rho): \rho \text{ eval of } A\right \} = \{s_1,\dots,s_p\}$$
 For $\dot{x} = Ax$ we have decomposition
@@ -1672,7 +1670,7 @@ $E_j$ invariant
 -   $x \in E_j \backslash \{0\} \implies \sigma_{lyap}(\varphi(\cdot,x)) = \lim_{t\to\infty}\frac{\|\varphi(t,x)\|}{t} = s_j$
 
  
-**Definition 14**. - [**semi-simple eigenvalue**]
+**Definition 14**. - <span style="color: green;">**semi-simple eigenvalue**</span>
 
 If all Jordan blocks associated to eval in real Jordan normal form are:
 - 1 dim. for real e.val
@@ -1706,27 +1704,27 @@ $$\lambda(t,t_0,x_0) = e^{A(t-t_0)}x_0 + \int_{t_0}^{t}e^{A(t-s)}g(s) ds \quad \
 
 $x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 
-1.  $x^{*}$ [**stable**] if
+1.  $x^{*}$ <span style="color: green;">**stable**</span> if
     $\forall \epsilon > 0, \exists \delta >0$ s.t
 
     $$\|\varphi(t,x) - x^{*}\| < \epsilon \quad \forall x \in B_{\delta}(x^{*}) \text{ and } t \geq 0$$
 
-2.  $x^{\ast}$ [**unstable**] if not stable
+2.  $x^{\ast}$ <span style="color: green;">**unstable**</span> if not stable
 
-3.  $x^{*}$ [**attractive**] if
+3.  $x^{*}$ <span style="color: green;">**attractive**</span> if
     $\exists \delta > 0$ s.t
 
     $$\lim_{t\to \infty}\varphi(t,x) = x^{*} \quad \forall x \in B_{\delta}(x^{*})$$
 
-4.  $x^{\ast}$ [**asymptotically stable**] if
+4.  $x^{\ast}$ <span style="color: green;">**asymptotically stable**</span> if
     $x^{\ast}$ stable and attractive
 
-5.  $x^{*}$ [**exponentially stable**] if
+5.  $x^{*}$ <span style="color: green;">**exponentially stable**</span> if
     $\exists \delta>0, K\geq 1$ and $\gamma <0$ s.t
 
     $$\| \varphi(t,x) -x^{*}\| \leq Ke^{\gamma t}\|$$
 
-6.  $x^{\ast}$ [**repulsive**] if $\exists \delta >0$ s.t
+6.  $x^{\ast}$ <span style="color: green;">**repulsive**</span> if $\exists \delta >0$ s.t
     $\lim_{t\to -\infty}\varphi(t,x) = x^{*},\ \forall x \in B_{\delta}(x^{*})$
 
     $$INSERT FIGURES HERE$$
@@ -1739,12 +1737,12 @@ $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{
 locally Lipschitz continuous, with flow $\varphi$\
 Orbit $O(x)$ for some $x \in D$\
 
-1.  [**Homoclinic**] orbit if $\exists$
+1.  <span style="color: green;">**Homoclinic**</span> orbit if $\exists$
     equilibrium $x^{*} \in D \backslash\{x\}$ s.t
 
     $$\lim_{t\to\infty}\varphi(t,x) = x^{\ast} \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x^{\ast}$$
 
-2.  [**Heteroclinic**] orbit if $\exists$ 2
+2.  <span style="color: green;">**Heteroclinic**</span> orbit if $\exists$ 2
     distinct equilibria $x_1^* \neq x_2^*$ s.t
 
     $$\lim_{t\to\infty}\varphi(t,x) = x_1^* \text{ and } \lim_{t\to -\infty}\varphi(t,x) = x_2^*$$
@@ -1772,9 +1770,9 @@ Have trivial equilibrium $x^{\ast} = 0$
 
 
 $A \in \mathbb{R}^{d\times d}$
-[**hyperbolic**] if $Re(\lambda) \neq 0\ \forall \lambda$ e.vals of $A$
+<span style="color: green;">**hyperbolic**</span> if $Re(\lambda) \neq 0\ \forall \lambda$ e.vals of $A$
 
-Equilibrium $x^{\ast}$ of differential equation $\dot{x} = f(x)\ f:D\subset \mathbb{R}^d \to \mathbb{R}^d$ continuouslydifferentiable, is [**hyperbolic**] if matrix $f'(x^{\ast}) \in \mathbb{R}^{d\times d}$ hyperbolic.
+Equilibrium $x^{\ast}$ of differential equation $\dot{x} = f(x)\ f:D\subset \mathbb{R}^d \to \mathbb{R}^d$ continuouslydifferentiable, is <span style="color: green;">**hyperbolic**</span> if matrix $f'(x^{\ast}) \in \mathbb{R}^{d\times d}$ hyperbolic.
 
 **Lemma 4.9** - *Gronwall Lemma*\
 Consider continuous function $u:[a,b] \to \mathbb{R},$ let $c,d \geq 0$\
@@ -1797,9 +1795,9 @@ Assume $x^{\ast}$ equilibrium of above s.t $\forall$ e.vals $\lambda \in \mathbb
 
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 locally lipschitz continuous, with flow $\varphi$ and equilibria $x^{\ast}$\
-[**Stable set**] of $x^{\ast}$
+<span style="color: green;">**Stable set**</span> of $x^{\ast}$
 $$W^{s}(x^{\ast}) = \{ x \in D: \lim_{t\to\infty} \varphi(t,x) = x^{\ast}\}$$
-[**Unstable set**] of $x^{\ast}$
+<span style="color: green;">**Unstable set**</span> of $x^{\ast}$
 $$W^{u}(x^{\ast}) = \{ x \in D: \lim_{t\to-\infty} \varphi(t,x) = x^{\ast}\}$$
 
  
@@ -1809,13 +1807,13 @@ $$W^{u}(x^{\ast}) = \{ x \in D: \lim_{t\to-\infty} \varphi(t,x) = x^{\ast}\}$$
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 locally lipschitz continuous..
 
-1.  [**positively invariant**] if
+1.  <span style="color: green;">**positively invariant**</span> if
     $\forall x \in M, O^+(x) \subset M$
 
-2.  [**negatively invariant**] if
+2.  <span style="color: green;">**negatively invariant**</span> if
     $\forall x \in M, O^-(x) \subset M$
 
-3.  [**invariant**] if
+3.  <span style="color: green;">**invariant**</span> if
     $\forall x\in M, O(x) \subset M$
 
 ## Limit Sets
@@ -1827,7 +1825,7 @@ locally lipschitz continuous..
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 locally lipschitz continuous, with flow $\varphi, x\in D$
 
-1.  $x_w \in D$ an [**omega limit point**]
+1.  $x_w \in D$ an <span style="color: green;">**omega limit point**</span>
     of $x$\
     If $\exists$ sequence $ \{ t_n \}_{n\in\mathbb{N}}$ s.t
     $\lim_{n\to \infty} t_n = \infty$ and
@@ -1837,8 +1835,8 @@ locally lipschitz continuous, with flow $\varphi, x\in D$
     $\omega(x)= \{$ all omega limit
     points of $x\}$
 
-2.  $x_{\alpha}\in D$ an [**alpha limit
-    point**] of $x$\
+2.  $x_{\alpha}\in D$ an <span style="color: green;">**alpha limit
+    point**</span> of $x$\
     if $\exists$ sequence $\{t_n\}_{n\in\mathbb{N}}$ s.t
     $\lim_{n\to\infty}t_n = -\infty$ and
 
@@ -1874,7 +1872,7 @@ locally lipschitz continuous, $x\in D$
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 locally lipschitz continuous\
 $V:D\to \mathbb{R}$ continuosly differentiable function.\
-Define [**orbital derivative**] $\dot{V}$ of
+Define <span style="color: green;">**orbital derivative**</span> $\dot{V}$ of
 $V$
 $$\dot{V}(x) := V'(x)\cdot f(x) = \sum_{i=1}^{d}\frac{\partial V}{\partial x_i}(x) f_{i}(x)$$
 $V'(x) \in \mathbb{R}^{1\times d}$ the gradient of $V$ at $x \in D$\
