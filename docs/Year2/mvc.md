@@ -24,8 +24,8 @@ ol.n {list-style-type: none;}
   </summary>
   
 - <a href="/notes/pdfs/year2/MVC-Concise.pdf" target="_blank" style="color:#801fff;">**Open Calculus Concise - Complete**</a> - <a href="/notes/pdfs/year2/MVC-Concise.pdf" download>**Download**</a>
-  
 - <a href="/notes/pdfs/year2/MVCLec.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 1**</a> - <a href="/notes/pdfs/year2/MVCLec.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year2/MVC-T2.pdf" target="_blank" style="color:#801fff;">**Open Calculus Lecturer - Term 2**</a> - <a href="/notes/pdfs/year2/MVC-T2.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -49,8 +49,21 @@ ol.n {list-style-type: none;}
     <span style="color: #00ba47;">Problem Sheets - Term 2</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/linalgSheets/term2/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS1-Sol.pdf" target="_blank">**Solutions**</a>
   
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS2-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS6-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS7-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/mvcSheets/term2/MVCPS8-Sol.pdf" target="_blank">**Solutions**</a>
 </details>
 </details>
 
