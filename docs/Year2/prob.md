@@ -819,7 +819,8 @@ $(X_n)_{n\in\mathbb{N}_0}$ irreducible Markov Chain
 $$\forall i \in \mathcal{E}\text{ let } V(i) = \sum_{r=0}^{n}I(X_r = i)$$
 Counts the number of visits to $i$ before time $n$\
 $\implies \forall$ initial distributions, $i\in\mathcal{E}$ we have
-$Pr(\frac{V(i)}{n}\xrightarrow[n\to \infty]{} \pi_i) = 1$
+
+$$Pr\left(\frac{V(i)}{n}\xrightarrow[n\to \infty]{} \pi_i\right) = 1$$
 
 **Proposition**\
 <span style="color: RoyalBlue;">**Symmetrical random walk on finite graph**</span>\
