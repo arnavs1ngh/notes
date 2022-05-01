@@ -350,4 +350,13 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
 </details>
 
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Groups & Rings</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/papers/GR-MAY21.pdf" target="_blank" style="color:#801fff;">**May 21**</a> - <a href="/notes/pdfs/year2/papers/MVC-JAN21.pdf" download>**Download**</a>
+  
+</details>
+
 
