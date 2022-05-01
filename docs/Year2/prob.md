@@ -130,7 +130,7 @@ $\{\mathcal{F}_{i}\}$ clearly non-empty, since power set of $\mathbb{R}$ is such
 
     $\mathcal{B}$ thought of as the smallest sigma algebra containing all intervals
 
-3.  $B \subset \mathcal{B}$ said to be a [**Borel set**]
+3.  $B \subset \mathcal{B}$ said to be a <span style="color: green;">**Borel set**</span>
 
 **Definition 1.16** - <span style="color: green;">**Kolmogorov Axioms**</span>
 
@@ -575,8 +575,7 @@ $$\text{ if } E(X_i) = \mu\ \forall i \implies \bar{X}_n \xrightarrow[]{P} \mu$$
 ## The Central Limit Theorem
 
 **Proposition 5.14.**\
-$X_1,X_2,\dots$ sequence of iid random variables with [**common MGF
-$M(t)$**] (existing in open interval containing 0)\
+$X_1,X_2,\dots$ sequence of iid random variables with <span style="color: RoyalBlue;">**common MGF $M(t)$**</span> (existing in open interval containing 0)\
 <span style="color: RoyalBlue;">**$E(X_i) = \mu,\ Var(X_i) = \sigma^2 \forall i$**</span>`
   
 $$\implies \textcolor{red}{\frac{\sqrt{n}}{\sigma}(\bar{X}_n - \mu) \xrightarrow[]{D } Z \sim N(0,1)}$$
