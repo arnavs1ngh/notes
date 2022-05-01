@@ -19,7 +19,7 @@ ol.n {list-style-type: none;}
 
 <details closed markdown="block">
   <summary>
-    <span style="color: RoyalRoyalBlue;">PDFs</span>
+    <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
 - <a href="/notes/pdfs/year2/PFS-Concise.pdf" target="_blank" style="color:#801fff;">**Open Probability Concise**</a> - <a href="/notes/pdfs/year2/PFS-Concise.pdf" download>**Download**</a>
