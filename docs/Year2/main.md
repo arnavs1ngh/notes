@@ -312,10 +312,42 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
     <span style="color: #00ba47;">Analysis</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1.pdf" target="_blank" style="color:#00ba47;">**PLACE HOLDER LINK**</a> - <a href="/notes/pdfs/year2/problemsheets/pfsSheets/given/SMPS1-Sol.pdf" target="_blank">**Solutions**</a>
-  
+  - <a href="/notes/pdfs/year2/papers/ANA-JAN21.pdf" target="_blank" style="color:#801fff;">**January 21**</a> - <a href="/notes/pdfs/year2/papers/ANA-JAN21.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/ANA-JAN22.pdf" target="_blank" style="color:#801fff;">**January 22**</a> - <a href="/notes/pdfs/year2/papers/ANA-JAN22.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/ANA-MAY21.pdf" target="_blank" style="color:#801fff;">**January 21**</a> - <a href="/notes/pdfs/year2/papers/ANA-MAY21.pdf" download>**Download**</a>
   
 </details>
 
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Linear Algebra & Numerical Analysis</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/papers/LAGN-JAN21.pdf" target="_blank" style="color:#801fff;">**January 21**</a> - <a href="/notes/pdfs/year2/papers/LAGN-JAN21.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/LAGN-JAN22.pdf" target="_blank" style="color:#801fff;">**January 22**</a> - <a href="/notes/pdfs/year2/papers/LAGN-JAN22.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/LAGN-MAY21.pdf" target="_blank" style="color:#801fff;">**January 21**</a> - <a href="/notes/pdfs/year2/papers/LAGN-MAY21.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/LAGN-T1-Prac.pdf" target="_blank" style="color:#801fff;">**2022 Practice Qs T1**</a> - <a href="/notes/pdfs/year2/papers/LAGN-MAY21.pdf" download>**Download**</a> - <a href="/notes/pdfs/year2/papers/LAGN-T1-PracSol.pdf" target="_blank" style="color:#801fff;">**Solution**</a> - <a href="/notes/pdfs/year2/papers/LAGN-MAY21.pdf" download>**Download**</a> 
+  
+</details>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Multivariable Calculus & Differential Equations</span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year2/papers/MVC-JAN21.pdf" target="_blank" style="color:#801fff;">**January 21**</a> - <a href="/notes/pdfs/year2/papers/MVC-JAN21.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/MVC-JAN22.pdf" target="_blank" style="color:#801fff;">**January 22**</a> - <a href="/notes/pdfs/year2/papers/MVC-JAN22.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/MVC-MAY21.pdf" target="_blank" style="color:#801fff;">**January 21**</a> - <a href="/notes/pdfs/year2/papers/MVC-MAY21.pdf" download>**Download**</a>
+
+  - <a href="/notes/pdfs/year2/papers/MVCPrac22.pdf" target="_blank" style="color:#801fff;">**2022 Practice Qs**</a> - <a href="/notes/pdfs/year2/papers/MVCPrac22.pdf" download>**Download**</a> - <a href="/notes/pdfs/year2/papers/MVCPrac22Sol.pdf" target="_blank" style="color:#801fff;">**Solution**</a> - <a href="/notes/pdfs/year2/papers/MVC-Prac22Sol.pdf" download>**Download**</a>
+  
+</details>
 
 
