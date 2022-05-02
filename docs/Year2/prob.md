@@ -591,7 +591,7 @@ $\mathcal{E}$ valued random variables $X_0,X_1,\dots$
 
 \
 **Definition 6.1**\
-<span style="color: green;">**Stochastic Process**</span> on state space $ \mathcal{E}$, collection of $\mathcal{E}$-valued r.v $(X_t)_{t\in T}$ indexed by set $T$; often $T = \mathbb{N}_{0}$
+<span style="color: green;">**Stochastic Process**</span> on state space $ \mathcal{E}$, collection of $\mathcal{E}$ - valued r.v $(X_t)_{t\in T}$ indexed by set $T$ often $T = \mathbb{N}_{0}$
 
 **Definition 6.2**\
 Discrete time stochastic process $(X_n)_{n\in \mathbb{N}_0}$ on
@@ -608,7 +608,7 @@ $$P(X_{n+1} = j \rvert X_n = i) = P(X_1 = j \rvert X_0 = i) \quad \forall n \in 
 
 **Definition 6.4**
   
-Matrix $P = (p_{ij})_{i,j \in \mathcal{E}} $ of <span style="color: green;">**transition probability**</span> $ p_{ij} = Pr(X_1 = j \rvert X_0 = i)$
+Matrix $P = (p_{ij})_{i,j \in \mathcal{E}}$ of <span style="color: green;">**transition probability**</span> $p_{ij} = Pr(X_1 = j \rvert X_0 = i)$
   
 Called the <span style="color: green;">**Transition Matrix**</span> for the
 time homogeneous Markov chain. $(X_n)$
