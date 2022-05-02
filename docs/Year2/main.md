@@ -295,6 +295,10 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 - <a href="/notes/pdfs/year2/NSC-Lec.pdf" target="_blank" style="color:#801fff;">**Open NetSci Lecturer**</a> - <a href="/notes/pdfs/year2/NSC-Lec.pdf" download>**Download**</a>
 
+### Lebesgue Measure & Integration - MATH50006
+
+- <a href="/notes/pdfs/year2/LBGLec.pdf" target="_blank" style="color:#801fff;">**Open Lebesgue Lecturer**</a> - <a href="/notes/pdfs/year2/LBGLec.pdf" download>**Download**</a>
+
 ### Useful Links & Resources
 
 - <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" target="_blank" style="color:#801fff;">**Matrix Cookbook**</a>
