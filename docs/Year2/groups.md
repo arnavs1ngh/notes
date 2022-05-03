@@ -146,9 +146,9 @@ We say that N is stable under the conjugation by any element in G.
 
 **Define**
 
--   $gS := \{gs | s \in S\}$ - <span style="color: green;">**Left cosets**</span> of S
+-   $gS := \{gs \lvert s \in S\}$ - <span style="color: green;">**Left cosets**</span> of S
 
--   $Sg := \{sg | s \in S\}$ - <span style="color: green;">**Right cosets**</span> of S
+-   $Sg := \{sg \lvert s \in S\}$ - <span style="color: green;">**Right cosets**</span> of S
 
 **Lemma**
 
@@ -230,7 +230,7 @@ The set of elements of $G$ that have finite order is a subgroup of $G$, denoted 
 
 $G$ an abelian group, $p$ a prime number.
 
-The subgroup $G\{p\} = \{g | g \in G \text{ s.t } ord(g) = p^{n}\}$ is the **$p$-primary subgroup of G**
+The subgroup $G\{p\} = \{g \rvert g \in G \text{ s.t } ord(g) = p^{n}\}$ is the **$p$-primary subgroup of G**
 
 If $G = G\{p\}$ then $G$ is called a **$p$-primary torsion abelian group**
 
@@ -323,14 +323,19 @@ $X = G(x)$ ($X$ a $G$-orbit) for some $x \in X$, then we say <span style="color:
 
 Let $G \times X \to X$ an action of $G$ on $X$. If
 $x \in X$ s.t $g(x) = x$. <span style="color: green;">**We say $x$ a **fixed
-point****</span>.\
+point****</span>.
+
 <span style="color: green;">**Fix($g$) $\subset X$ - the set of fixed points of
 $g \in G$**</span>
 
 **Theorem 2.15** - *(Jordan)*\
 Let $G \times X \to X$ a transitive action of a finite group $G$ on a
-finite set $X$. Then: $$\sum_{g \in G}|Fix(G)| = |G|$$ $\exists g \in G$
-s.t $Fix(g) = \varnothing$\
+finite set $X$. Then: 
+
+$$\sum_{g \in G}|Fix(G)| = |G|$$
+
+$\exists g \in G$ s.t $Fix(g) = \varnothing$
+
 *Corollary 2.16* Let $G \times X \to X$ an action of a finite group $G$
 on a finite set $X$ Then the number of $G$-orbits in $X$ is
 $|G|^{-1}\sum_{g\in G}|Fix(g)|.$
@@ -349,7 +354,7 @@ Form**</span> if:
 -   $a_{i} = a_{ii}$. For $k \geq 0, a_{i} > 0$ for
     $i \leq k, a_{i} = 0,$ for $i > k$
 
--   $a_{1} | a_{2} | \dots | a_{k}$
+-   $a_{1} \rvert a_{2} \rvert \dots \rvert a_{k}$
 
 **Theorem 3.2**\
 Any Matrix of integer coefficients made into Smith Normal form via
@@ -763,8 +768,8 @@ $R$ an integral domain. $R$ a UFD $\iff$
 1.  There is no infinite sequence $r_{1},r_{2},\dots$ of elements of $R$
     such that $r_{n+1}$ properly divides $r_{n}\ \forall n \geq 1$
 
-2.  For every irreducible elements $p \in R$ if $p |ab \implies p|a$ or
-    $p|b$
+2.  For every irreducible elements $p \in R$ if $p \rvert ab \implies p\rvert a$ or
+    $p\rvert b$
 
 **Proposition 5.14.**\
 Suppose $R$ a PID and $I_{1} \subset I_{2} \subset \dots$ are ideals in
