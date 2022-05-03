@@ -306,6 +306,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 - <a href="https://www.wolframalpha.com" target="_blank" style="color:#801fff;">**Wolfram Alpha**</a>
 - <a href="https://www.desmos.com" target="_blank" style="color:#801fff;">**Desmos**</a>
 - <a href="https://github.com/isaacjeffersonlee/lag-helper" target="_blank" style="color:#801fff;">**LAG Helper**</a>
+- <a href="https://eigs.herokuapp.com" target="_blank" style="color:#801fff;">**Eigs Dash**</a>
 
 ## Revision Resources
 
