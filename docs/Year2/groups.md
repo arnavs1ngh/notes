@@ -164,7 +164,7 @@ $N$ a normal subgroup of $G$. $G/N$ the quotient group of $G$ modulo $N$ is the 
 
 **Lemma**
 
-$N$ a normal subgroup of $G$. The set <span style="color: red;">**$G/N$</span> of left cosets of $G$ modulo $N$ <span style="color: red;">**is a group</span> under group law
+$N$ a normal subgroup of $G$. The set <span style="color: red;">$G/N$</span> of left cosets of $G$ modulo $N$ <span style="color: red;">**is a group</span> under group law
 <span style="color: RoyalBlue;">**$(g_{1}N, g_{2}N) \mapsto (g_{1}g_{2}N)$.</span>
 
 **Lemma**
@@ -206,7 +206,7 @@ $G/Z(G) \xrightarrow{\sim} Inn(G)$. using **Theorem 1.19**
 
 **Lemma 1.21**
 
-<span style="color: RoyalBlue;">**$G$ a group</span> .Then <span style="color: red;">**$[G, G]$ a normal subgroup</span> of $G$ and <span style="color: red;">**$G/[G,G]$ is abelian.</span>
+<span style="color: RoyalBlue;">**$G$ a group</span> .Then <span style="color: red;">**$[G, G]$ a normal subgroup</span> of $G$ and <span style="color: red;">**$G/[G,G]$ is abelian.**</span>
 
 **Proposition 1.22**
 
@@ -214,13 +214,13 @@ $G/Z(G) \xrightarrow{\sim} Inn(G)$. using **Theorem 1.19**
 
 **Lemma 1.23**
 
-Any <span style="color: RoyalBlue;">**subgroup of $G$ containing $[G,G]$</span> is <span style="color: red;">**normal</span>
+Any <span style="color: RoyalBlue;">**subgroup of $G$ containing $[G,G]$**</span> is <span style="color: red;">**normal**</span>
 
 **Behaviour of products of groups in the abelian case:**
 
 **Lemma 1.25**
 
-$G$ an abelian group. <span style="color: RoyalBlue;">**If orders of $a,b \in G$ finite</span>, then <span style="color: red;">**order of $ab$ is finite and divides $lcm(ord(a),ord(b))$.</span>
+$G$ an abelian group. **<span style="color: RoyalBlue;">If orders of $a,b \in G$ finite</span>**, then **<span style="color: red;">order of $ab$ is finite and divides $lcm(ord(a),ord(b))$.</span>**
 
 **Definition** - <span style="color: green;">Torsion subgroups</span>
 
@@ -280,7 +280,7 @@ action of G on a set X. The $G$-orbit of $x\in X$ is
 
 $$\text{St}_{G}(x) = \{g \in G | g(x) = x\}\subset G$$
 
-**Theorem 2.6** <span style="color: red;">**Orbit-Stabiliser Theorem</span>
+**Theorem 2.6 <span style="color: red;">Orbit-Stabiliser Theorem</span>**
 
 $G \times X \to X$ an action of $G$ on $X$. $\forall x\in X$ the map
 $g \mapsto g(x)$, gives bijection from set of left cosets
