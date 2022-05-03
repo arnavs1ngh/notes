@@ -167,6 +167,10 @@ $N$ a normal subgroup of $G$. $G/N$ the quotient group of $G$ modulo $N$ is the 
 $N$ a normal subgroup of $G$. The set <span style="color: red;">**$G/N$**</span> of left cosets of $G$ modulo $N$ <span style="color: red;">**is a group**</span> under group law
 <span style="color: RoyalBlue;">**$(g_{1}N, g_{2}N) \mapsto (g_{1}g_{2}N)$.**</span>
 
+**Lemma**
+
+If $G$ is a group and $H$ is a normal subgroup of $G$ such that both $H$ and the quotient group $G/H$ are finitely generated, then $G$ is also finitely generated.
+
 **Theorem 1.19 - Isomorphism Theorem**
 
 Let $f: G \to H$ a homomorphism
