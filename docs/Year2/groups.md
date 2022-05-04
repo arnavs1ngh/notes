@@ -384,7 +384,7 @@ operations to $B$ s.t $t(B) = d(B) = d(A)$
 
 #### Classification of finitely generated abelian groups
 
-**Definition 3.4 - <span style="color: green;">Free abelian group of rank $n$**</span>
+**Definition 3.4**- <span style="color: green;">**Free abelian group of rank $n$**</span>
 
 $$\mathbb{Z}^{n} := \{(a_{1},\dots,a_{n})|a_{i} \in \mathbb{Z}\}$$
 *Lemma*
@@ -447,8 +447,9 @@ satisfying:
     $\hookrightarrow \forall a,b,c \in R; a(b + c) = ab + ac\ , (a+b)c = ac + bc$
 
 $R$ is closed under both $+$ and $\times$\
-Say $R$ commutatitive if $xy = yx,\ \forall x,y \in R$ *Lemma 4.2 -
-Properties of rings*
+Say $R$ commutatitive if $xy = yx,\ \forall x,y \in R$ 
+
+**Lemma 4.2** - *Properties of rings*
 
 -   $\forall x \in R, x0 = 0x = 0$
 
@@ -622,7 +623,7 @@ field extension $\mathbb{F}$ of $k$ is a vector space over $k$
 $k$ a field.\
 if $char(k) = 0 \implies k$ has unique subfield isomorphic to
 $\mathbb{Q}\implies k$ a vector space over $\mathbb{Q}$\
-if char$(k) = p \in \mathbb{P} \implies k$ contains unique subfield
+if $char(k) = p \in \mathbb{P} \implies k$ contains unique subfield
 isomorphic to $\mathbb{F}_{p} \implies k$ a vector space over
 $\mathbb{F}_{p}$
 
@@ -819,9 +820,12 @@ irreducible $\iff$ has no roots in $k$
 $p \neq 2$ prime. Field $\mathbb{F}_{p} = \mathbb{Z}/p\mathbb{Z}$
 contains $(p-1)/2 \geq 1$ non-squares.
 
-$\forall a \in \mathbb{F}_{p}$ non-square we have $t^2 - a$ irreducible
-in $F_{p}[t]$ with $F_{p}[t]/(t^2 -a)\mathbb{F}_{p}[t]$ a quadratic
-extension of $\mathbb{F}_{p}$
+$\forall a \in \mathbb{F}_{p}$ non-square we have $t^{2} - a$ irreducible
+in $F_{p}[t]$ 
+
+with $F_{p}[t]/(t^2 -a)\mathbb{F}_{p}[t]$ a quadratic
+extension of $\mathbb{F}_{p}$ 
+
 
 #### Existence of finite fields
 
