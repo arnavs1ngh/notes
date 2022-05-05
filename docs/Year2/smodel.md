@@ -121,11 +121,15 @@ $\Theta$
 
 
 $T$ estimator for $\theta \in \Theta \subset \mathbb{R}$
+
 $$bias_{\theta}(T) = E_{\theta}(T)-\theta$$
+
+
 <span style="color: green;">**unbiased**</span> if
 $bias_{\theta}(T) = 0,\quad \forall \theta \in \Theta$\
 If $\Theta \subset \mathbb{R}^k$ often interested in
 $g(\theta),\ g:\theta \to \mathbb{R}$
+
 $$\text{extend } bias_{\theta}(T) = E_{\theta}(T) - g(\theta)$$
 
 ### Standard error
@@ -148,7 +152,9 @@ deviation of sampling distribution of $T$
 
 
 $T$ estimator for $\theta \in \Theta \subset \mathbb{R}$\
-Mean square error of $T$ $$\begin{aligned}
+Mean square error of $T$ 
+
+$$\begin{aligned}
     MSE_{\theta}(T) &= E_{\theta}(T-\theta)^{2}\\
     &= Var_{\theta}(T) + [bias_{\theta}(T)]^2\end{aligned}$$
 
@@ -160,15 +166,21 @@ Mean square error of $T$ $$\begin{aligned}
 
 $T = T(X)$ unbiased estimator for $\theta \in \Theta \subset \mathbb{R}$
 for $X = (X_1,\dots,X_n)$ with just pdf $f_{\theta}(x)$ under mild
-regularity conditions: $$Var_{\theta}(T) \geq \frac{1}{I(\theta}$$ For
-$I_{\theta}$ the <span style="color: green;">**Fisher information of
-sample**</span> $$\begin{aligned}
+regularity conditions: 
+
+$$Var_{\theta}(T) \geq \frac{1}{I(\theta}$$
+
+For $I_{\theta}$ the <span style="color: green;">**Fisher information of
+sample**</span> 
+
+$$\begin{aligned}
 I(\theta) &= E_{\theta}\left[\left\{ \frac{\partial}{\partial \theta}\log f_{\theta}(x) \right\}^2\right]\\
 &= -E_{\theta}\left[\frac{\partial^2}{\partial \theta^2} \log f_\theta (x) \right]\\
 I_n(\theta) &= -nE_{\theta}\left[\frac{\partial^2}{\partial \theta^2} \log f_\theta (x) \right]\end{aligned}$$
 
 **Proposition.**\
-For a random sample: Fisher info proportional to sample size\
+For a random sample: Fisher info proportional to sample size
+
 **Jensen's inequality**\
 For $X$ a random variable with $\varphi$ a convex function
 
@@ -187,13 +199,13 @@ gap**</span>
 Sequence of estimators $(T_{n})_{n\in\mathbb{N}}$ for $g(\theta)$ called
 <span style="color: green;">**(weakly) consistent**</span> if
 $\forall \theta \in \Theta$
+
 $$T_n \xrightarrow[]{P_{\theta}} g(\theta) \quad (n\to \infty)$$
 
- 
 **Definition 9**.
 
-
 Convergence in probability: $T_n \xrightarrow[]{P_{\theta}} g(\theta)$
+
 $$\forall \epsilon > 0: \lim_{n\to\infty}P_{\theta}(|T_n - g(\theta)| < \epsilon) = 1$$
 
 **Lemma - (Portmanteau Lemma)**\
@@ -240,12 +252,15 @@ for some $\sigma^2)(\theta)$
 
 
 $Y_1,\dots,Y_n$ be iid random variable with
-$E(Y_i) = \mu,\ Var(Y_i) = \sigma^2$\
+$E(Y_i) = \mu,\ Var(Y_i) = \sigma^2$
+
 $$\implies \text{sequence } \sqrt{n}(\bar{Y} - \mu) \xrightarrow[]{d} N(0,\sigma^2)$$
 
 **Remark.**\
 Under mild regularity conditions for asymptotically normal estimators
-$T_n$ $$SE_{\theta}(T_n) \approx \frac{\sigma(T_n)}{\sqrt{n}}$$
+$T_n$ 
+
+$$SE_{\theta}(T_n) \approx \frac{\sigma(T_n)}{\sqrt{n}}$$
 
 **Lemma.** *(Slutsky)*\
 $X_n,X,Y_n$ random variables\
@@ -263,9 +278,12 @@ $c$
 
 
 Suppose $T_n$ asymptotically normal estimator of $\theta$ with
+
 $$\sqrt{n}(T_n - \theta) \xrightarrow[d]{} N(0,\sigma^{2}(\theta))$$
+
 $g:\Theta \to \mathbb{R})$ differentiable function with
 $g'(\theta) \neq 0$. Then
+
 $$\sqrt{n}[g(T_n) - g(\theta)] \xrightarrow[d]{} N(0,g'(\theta)^2\sigma^{2}(\theta))$$
 
  
@@ -304,6 +322,7 @@ Likelihood function is the joint pdf/pmf or observed data
 as a function of unknown parameter.\
 Random sample $Y = (Y_1,\dots,Y_n)\quad Y_i$ iid.\
 If $Y_i$ has pdf $f(\cdot;\theta)$
+
 $$\implies L(\theta) = \prod_{i=1}^{n}f(y_i:\theta)$$
 
  
@@ -312,6 +331,7 @@ $$\implies L(\theta) = \prod_{i=1}^{n}f(y_i:\theta)$$
 
 <span style="color: green;">**MLE**</span> of $\theta$ is estimator
 $\hat{\theta}$ s.t
+
 $$L(\hat{\theta}) = \sup_{\theta \in \Theta}L(\theta)$$
 
 ## Properties of Maximum Likelihood estimators
@@ -541,7 +561,8 @@ $$p = \sup_{\theta \in \Theta_0}P_{\theta}(\text{observing something 'at least a
 
 reject $H_0 \iff p \leq \alpha$\
 For test based on statistic $T$ with rejection for large value of $T$ we
-have 
+have
+
 $$p = \sup_{\theta \in \Theta_0}P_{\theta}(T\geq t)$$
 
 for $t$ our observed value
@@ -611,7 +632,9 @@ $$\sum_{i=1}^{n}X^{2}_i \sim \chi^{2}_{n}$$
 
 
 Under regularity conditions
+
 $$2\log t(\mathbf{Y}) \xrightarrow[]{D} \chi^2_{r} \quad (n\to \infty)$$
+
 under $H_0$ where $r$ the number of independent restrictions on
 $\mathbf{\theta}$ needed to define $H_0$
 
@@ -658,7 +681,8 @@ $$S(\beta_1,\beta_2) = \sum_{i=1}^{n}(y_i - \beta_1 - a_i\beta_2)^{2}$$
 
 4.  $rank(X^TX) = rank(X)$
 
-**Lemma 8**\
+**Lemma 8**
+
 $A\in \mathbb{R}^{n\times n}$ symmetric $\implies \exists$ orthogonal
 $P$ s.t $P^T A P$ diagonal with diagonal entries $=$ e.vals of $A$\
 $A$ positive definite, symmetric $\implies \exists Q$ non-singular s.t
@@ -844,8 +868,8 @@ column space of $X$
  
 **Definition 33**.
 
-
 Vector of residuals.
+
 $$\begin{aligned}
     \mathbf{e} &= Y - \hat{Y}: \text{ vector of residuals}\\
                &= Y-PY = QY, Q = I - P: \text{ the projection of matrix onto } span(X)^{\perp}\\
@@ -853,12 +877,16 @@ $$\begin{aligned}
 
 **Diagnostic plots**\
 Suppose data comes from model
+
 $$Y = X\beta + Z\gamma + \epsilon \quad E(\epsilon) = 0$$
+
 $z \in \mathbb{R}^{n}\backslash span(X), \gamma \in \mathbb{R}$
 deterministic\
 But analyst works with $$Y = X\beta + \epsilon$$ $\implies$ if
 $\gamma \neq 0$, used wrong model
+
 $$\implies E(\epsilon) = E(QY) = E(Q(X\beta + Z\gamma + \epsilon)) = QZ\gamma$$
+
 $\implies$ plot $QZ$ against residuals yields line through the origin.\
 if non-zero slope $\implies$ consider including $Z$
 
@@ -866,7 +894,6 @@ if non-zero slope $\implies$ consider including $Z$
 
  
 **Definition 34**. *(Residual sum of squares)*
-
 
 $$RSS = e^{T}e$$
 
@@ -887,14 +914,16 @@ $$RSS = e^{T}e$$
  
 **Theorem 9**.
 
-
 $$\hat{\sigma}^{2} = \frac{RSS}{n-r}$$
 
 An unbiased estimator of $\sigma^{2}$, $r = rank(X)$
 
 **Coefficient of determination** - ($\mathbb{R}^{2}$)\
 For models containing intercept term ($X$ has column of 1s or other
-constants) $$R^{2} = 1 - \frac{RSS}{\sum_{i=1}^{n}(Y_i - \bar{Y})^{2}}$$
+constants) 
+
+$$R^{2} = 1 - \frac{RSS}{\sum_{i=1}^{n}(Y_i - \bar{Y})^{2}}$$
+
 Small RSS 'better' $\implies$ want large $R^{2}$\
 $0 \leq R^{2} \leq 1 \implies R^{2} = 1$ for perfect model.
 
@@ -923,7 +952,9 @@ distribution of random vec. $\mu$ - Expectation, $\Sigma$ - Covariance
 
 $\Sigma$ - positive definite\
 $Z \sim N(\mu,\Sigma)$ if $Z$ has pdf of form
+
 $$f(z) = \frac{1}{(2\pi)^{n/2}\lvert \Sigma \rvert^{1.2}}\exp \left( -\frac{1}{2}(z-\mu)^{T}\Sigma^{-1}(z-\mu) \right)$$
+
 $n$-variate random vector $Z$ follows MVN distribution if
 
 -   $\forall a \in \mathbb{R}^{n}$ random variable $a^TZ$ follows
@@ -936,6 +967,7 @@ $n$-variate random vector $Z$ follows MVN distribution if
 -   $Z \sim N(\mu,\Sigma)$ if its characteristic function
     $\phi:\mathbb{R}^{n} \to \mathbb{C}, \phi(t) = E(\exp(iZ^{T}t)$
     satisfies
+
     $$\phi(t) = \exp\left( i\mu^Tt - \frac{1}{2}t^T\Sigma t\right) \quad \forall \ t \in \mathbb{R}^{n},\mu \in \mathbb{R}^{n},\Sigma\in \mathbb{R}^{n\times n} \text{ symm. pos. def}$$
 
 **Remark**\
@@ -971,6 +1003,7 @@ $Z\sim N(\mu,I_n), \ \mu \in \mathbb{R}^n$\
 $U = Z^TZ = \sum_{i=1}^{n}z_{i}^{2}$ has non-central $\chi^{2}$
 distribution with $n$ degrees of freedom and non-centrality parameter;
 $\delta = \sqrt{\mu^T\mu}$
+
 $$U \sim \chi^{2}_{n}(\delta), \quad \chi^{2}_{n} =\chi^{2}_{n}(0)$$
 
 **Lemma**\
@@ -994,14 +1027,17 @@ $t_n = t_n(0)$
 
 **Remark**\
 $Y_n \sim t_n \ \forall n \in \mathbb{N}$
-$$Y_n \xrightarrow[n\to\infty]{d} N(0,1)$$
 
+$$Y_n \xrightarrow[n\to\infty]{d} N(0,1)$$
  
 **Definition 38**.
 
 
 $W_1 \sim \chi^{2}_{n_{1}}(\delta), W_2 \sim \chi^{2}_{n_2}$
-independently $$F = \frac{W_1/n_1}{W_2/n_2} \sim F_{n_1,n_2}(\delta)$$
+independently 
+
+$$F = \frac{W_1/n_1}{W_2/n_2} \sim F_{n_1,n_2}(\delta)$$
+
 Non-central $F$ distribution with $(n_1,n_2)$ degrees of freedom and
 non-centrality parameter $= \delta$\
 $F_{n_1,n_2} = F_{n_1,n_2}(0)$
@@ -1129,6 +1165,7 @@ $R$ an ellipsoid central at $\hat{\beta}$
 
 **Remark**\
 General definition of ellipsoid
+
 $$\{z\in \mathbb{R}^p: (z-z_0)^TA^{-1}(z-z_0) \leq 1\}\quad A \text{ pos. semi def.}, z_0 \in \mathbb{R}^p$$
 
 # Diagnostics,Model selection, Extensions
