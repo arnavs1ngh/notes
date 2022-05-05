@@ -67,19 +67,19 @@ and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: bl
 ## Parametric Statistical Models
 
  
-**Definition 1**. *[**Statistical Model**]*
+**Definition 1**. *<span style="color: green;">**Statistical Model**</span>*
 
 
 Statistical model; collection of probability distribution
 $\{P_{\theta}:\theta \in \Theta\}$ on a given sample space.\
-Set $\Theta$ - ([**Parameter Space**]) - set
+Set $\Theta$ - (<span style="color: green;">**Parameter Space**</span>) - set
 of all possible parametric values, $\Theta \subset \mathbb{R}^p$
 
  
-**Definition 2**. *[**Identifiable**]*
+**Definition 2**. *<span style="color: green;">**Identifiable**</span>*
 
 
-Statistical model is [**identifiable**] if
+Statistical model is <span style="color: green;">**identifiable**</span> if
 map $\theta \mapsto P_\theta$, one-to-one,
 $P_{\theta_1} = P_{\theta_2} \implies \theta_1 = \theta_2\quad \forall \theta_1,\theta_2 \in \Theta$
 
@@ -96,20 +96,20 @@ Requirements for a model
 # Point Estimation
 
  
-**Definition 3**. *[**Statistic**]*
+**Definition 3**. *<span style="color: green;">**Statistic**</span>*
 
 
 Statistic - function of observable random variable.
 
  
 **Definition 4**.
-*[**Estimate/Estimators**]*
+*<span style="color: green;">**Estimate/Estimators**</span>*
 
 
 $t$ a statistic\
-$t(y_1,\dots,y_n)$ called [**estimate**] of
+$t(y_1,\dots,y_n)$ called <span style="color: green;">**estimate**</span> of
 $\theta$\
-$T(Y_1,\dots,Y_n)$ an [**estimator**] of
+$T(Y_1,\dots,Y_n)$ an <span style="color: green;">**estimator**</span> of
 $\Theta$
 
 ## Properties of estimators
@@ -117,12 +117,12 @@ $\Theta$
 ### Bias
 
  
-**Definition 5**. *[**Bias**]*
+**Definition 5**. *<span style="color: green;">**Bias**</span>*
 
 
 $T$ estimator for $\theta \in \Theta \subset \mathbb{R}$
 $$bias_{\theta}(T) = E_{\theta}(T)-\theta$$
-[**unbiased**] if
+<span style="color: green;">**unbiased**</span> if
 $bias_{\theta}(T) = 0,\quad \forall \theta \in \Theta$\
 If $\Theta \subset \mathbb{R}^k$ often interested in
 $g(\theta),\ g:\theta \to \mathbb{R}$
@@ -161,8 +161,8 @@ Mean square error of $T$ $$\begin{aligned}
 $T = T(X)$ unbiased estimator for $\theta \in \Theta \subset \mathbb{R}$
 for $X = (X_1,\dots,X_n)$ with just pdf $f_{\theta}(x)$ under mild
 regularity conditions: $$Var_{\theta}(T) \geq \frac{1}{I(\theta}$$ For
-$I_{\theta}$ the [**Fisher information of
-sample**] $$\begin{aligned}
+$I_{\theta}$ the <span style="color: green;">**Fisher information of
+sample**</span> $$\begin{aligned}
 I(\theta) &= E_{\theta}\left[\left\{ \frac{\partial}{\partial \theta}\log f_{\theta}(x) \right\}^2\right]\\
 &= -E_{\theta}\left[\frac{\partial^2}{\partial \theta^2} \log f_\theta (x) \right]\\
 I_n(\theta) &= -nE_{\theta}\left[\frac{\partial^2}{\partial \theta^2} \log f_\theta (x) \right]\end{aligned}$$
@@ -175,8 +175,8 @@ For $X$ a random variable with $\varphi$ a convex function
 $$\varphi(E[X])\leq E\left[\varphi (X)\right]$$
 
 Call
-$E\left[\varphi (X)\right]-\varphi \left(E[X]\right)$ the [**Jensen
-gap**]
+$E\left[\varphi (X)\right]-\varphi \left(E[X]\right)$ the <span style="color: green;">**Jensen
+gap**</span>
 
 # Asymptotic Properties
 
@@ -185,7 +185,7 @@ gap**]
 
 
 Sequence of estimators $(T_{n})_{n\in\mathbb{N}}$ for $g(\theta)$ called
-[**(weakly) consistent**] if
+<span style="color: green;">**(weakly) consistent**</span> if
 $\forall \theta \in \Theta$
 $$T_n \xrightarrow[]{P_{\theta}} g(\theta) \quad (n\to \infty)$$
 
@@ -210,7 +210,7 @@ Following are equivalent:
 
 
 Sequence of estimators $(T_n)_{n\in\mathbb{N}}$ for $g(\theta)$
-[**asymptotically unbiased**] if
+<span style="color: green;">**asymptotically unbiased**</span> if
 $\forall \theta \in \Theta$
 
 $$E_{\theta} \to g(\theta) \quad n \to \infty$$
@@ -229,7 +229,7 @@ consistent for $g(\theta)$
 
 
 Sequence $(T_n)$ of estimators for $\theta \in \mathbb{R}$
-[**asymptotically normal**] if
+<span style="color: green;">**asymptotically normal**</span> if
 
 $$\sqrt{n}(T_n - \theta) \xrightarrow[]{d} N(0,\sigma^{2}(\theta))$$
 
@@ -293,7 +293,7 @@ $C$ s.t $P(X \in C) = 1$
 
 
 Suppose observer $Y$ with realisation $y$\
-[**Likelihood function**]
+<span style="color: green;">**Likelihood function**</span>
 
 $$L(\theta) = L(\theta:y) = \begin{cases}
   P(Y=y:\theta) & \text{ discrete data } \\
@@ -310,7 +310,7 @@ $$\implies L(\theta) = \prod_{i=1}^{n}f(y_i:\theta)$$
 **Definition 13**. *(Maximum Likelihood Estimator)*
 
 
-[**MLE**] of $\theta$ is estimator
+<span style="color: green;">**MLE**</span> of $\theta$ is estimator
 $\hat{\theta}$ s.t
 $$L(\hat{\theta}) = \sup_{\theta \in \Theta}L(\theta)$$
 
@@ -372,8 +372,8 @@ based on $n$ observation.
 
 $$\sqrt{n}(\hat{\mathbf{\theta}}_n - \mathbf{\theta}_0) \xrightarrow[]{d} N(0,(I_f(\mathbf{\theta_0})^{-1})$$
 
-$\mathbf{\theta_0}$ the true parameter, $I_f(\mathbf{\theta})$ [**Fisher
-information matrix**] 
+$\mathbf{\theta_0}$ the true parameter, $I_f(\mathbf{\theta})$ <span style="color: green;">**Fisher
+information matrix**</span> 
 
 $$\begin{aligned}
 I_{f}(\mathbf{\theta}) &:= E_{\theta}\left[ (\nabla \log f(X; \mathbf{\theta}))^T(\nabla \log f(X;\theta)) \right]\\
@@ -383,7 +383,7 @@ I_{f}(\mathbf{\theta}) &:= E_{\theta}\left[ (\nabla \log f(X; \mathbf{\theta}))^
 **Definition 14**.
 
 
-[**Converges in distribution**] for random
+<span style="color: green;">**Converges in distribution**</span> for random
 vector\
 $\mathbf{X,X_1,X_2}$ random vectors of dimension $k$
 
@@ -397,7 +397,7 @@ If $P(\mathbf{X}_n \leq z) \xrightarrow[n\to\infty]{} P(\mathbf{X} \leq z) \quad
 **Definition 15**. *(Confidence interval)*
 
 
-$1-\alpha$ [**confidence interval**] for
+$1-\alpha$ <span style="color: green;">**confidence interval**</span> for
 $\theta$, a random interval $I$ containing 'true' paramter with
 probability $\geq 1 - \alpha$
 
@@ -409,17 +409,17 @@ $$P_{\theta \in I} \geq 1-\alpha \quad \forall \theta \in \Theta$$
 **Definition 16**.
 
 
-[**Pivotal Quantity**] for $\theta$ a
+<span style="color: green;">**Pivotal Quantity**</span> for $\theta$ a
 function $t(Y,\theta)$ of data and $\theta$\
 s.t distribution of $t(Y,\theta)$ known (no dependency on unknown
 parameters)\
 Know distribution of $t(Y,\theta) \implies$ can find constant $a_1,a_2$
 s.t $P(a_1 \leq t(Y_1,\theta) \leq a_2) \geq 1 - \alpha$\
 $\implies P(h_1(Y) \leq \theta \leq h_2(Y)) \geq 1 - \alpha$\
-Call $[h_1(Y),h_2(Y)]$ a [**random
-interval**]\
-with observed interval $[h_1(y),h_2(y)]$ a [**$1-\alpha$ confidence
-interval for $\theta$**]
+Call $[h_1(Y),h_2(Y)]$ a <span style="color: green;">**random
+interval**</span>\
+with observed interval $[h_1(y),h_2(y)]$ a <span style="color: green;">**$1-\alpha$ confidence
+interval for $\theta$**</span>
 
 ## Asymptotic confidence intervals
 
@@ -434,8 +434,8 @@ $$\implies \underbrace{\sqrt{n}(\frac{T_n - \theta}{\sigma(\theta)})}_{\text{use
 
 
 Sequence of random intervals $I_n$\
-an [**asymptotic $1-\alpha$ Confidence
-Interval**] if
+an <span style="color: green;">**asymptotic $1-\alpha$ Confidence
+Interval**</span> if
 
 $$\lim_{n\to\infty} P_{\theta} (\theta \in I_n) \geq 1 - \alpha \quad \theta$$
 
@@ -464,8 +464,8 @@ With random intervals $(L_i(\mathbf{Y}),U_i(\mathbf{Y}))$ s.t
 
 $$\forall \mathbf{\theta}: P_{\theta}(L_i(\mathbf{Y} < \theta_i < U_i(\mathbf{Y}), i \in \{1,\dots,k\}) \geq 1 - \alpha$$
 
-$(L_i(\mathbf{y},U_i(\mathbf{y})) \ i \in \{1,\dots,k\}$ a [**$1-\alpha$ simultaneous confidence
-interval**] for $\theta_1,\dots,\theta_k$
+$(L_i(\mathbf{y},U_i(\mathbf{y})) \ i \in \{1,\dots,k\}$ a <span style="color: green;">**$1-\alpha$ simultaneous confidence
+interval**</span> for $\theta_1,\dots,\theta_k$
 
 **Remark -** (Bonferroni correction)
 
@@ -497,7 +497,7 @@ $x_1,\dots,x_n$ a decision is to be made
 
 -   reject $H_0$ and accept $H_1$
 
-[**Rejection region/Critical region**] -
+<span style="color: green;">**Rejection region/Critical region**</span> -
 subset of sample space for which $H_0$ rejected
 
  
@@ -522,7 +522,7 @@ $$\begin{aligned}
     H_0: & \theta \in \Theta_0\\
     H_1: & \theta \in \Theta_1\end{aligned}$$ 
     
-Given a test for this hypothesis, we have a [**Power function**]
+Given a test for this hypothesis, we have a <span style="color: green;">**Power function**</span>
 
 $$\begin{aligned}
     \beta: &\theta \to [0,1]\\
@@ -625,7 +625,7 @@ $\mathbf{\theta}$ needed to define $H_0$
 
 $$\underbrace{Y_i}_{\substack{\text{outcome}\\ \text{observable random var}}} = \underbrace{\textcolor{red}{\beta_1} + \overbrace{a_i}^{\substack{\text{covariate}\\ \text{(observable constant)}}} + \textcolor{red}{\beta_2}}_{\textcolor{red}{\substack{\text{unknown}\\ \text{parameters}}}} + \overbrace{\epsilon_i}^{\text{error (not observable)}}$$
 
-[**Least Square Estimators**]\
+<span style="color: green;">**Least Square Estimators**</span>\
 $\hat{\beta_1},\hat{\beta_2}$ of $\beta_1,\beta_2$ defined as minimisers
 of
 
@@ -634,7 +634,7 @@ $$S(\beta_1,\beta_2) = \sum_{i=1}^{n}(y_i - \beta_1 - a_i\beta_2)^{2}$$
 **Remark**
 
 -   $e_i = y_i = \hat{\beta}_1 - a_i \hat{\beta}_2$ -
-    [**residuals**] are observable, not
+    <span style="color: green;">**residuals**</span> are observable, not
     i.i.d
 
 -   unkown parameters $\beta_1,\beta_2$ and $\sigma^{2}$
@@ -718,14 +718,14 @@ $A,B$ deterministic matrices, $a,b \in \mathbb{R}$
 **Definition 28**.
 
 
-In a [**linear model**]
+In a <span style="color: green;">**linear model**</span>
 
 $$\mathbf{Y} = X\mathbf{\beta} + \mathbf{\epsilon}$$
 
 -   $\mathbf{Y}$ - n. dimensional random vector (observable)
 
--   $X \in \mathbb{R}^{n\times p}$ known matrix - [**design
-    matrix**]
+-   $X \in \mathbb{R}^{n\times p}$ known matrix - <span style="color: green;">**design
+    matrix**</span>
 
 -   $\mathbf{\beta} \in \mathbb{R}^{p}$
 
@@ -753,7 +753,7 @@ $X$ has full rank $rank(X) = r$
 
 
 Suppose statistical model with unkown parameter $\theta$\
-$\theta$ [**identifiable**] if no 2
+$\theta$ <span style="color: green;">**identifiable**</span> if no 2
 different values of $\theta$ yield same distribution of observed data.
 
 ## Least Square estimation
@@ -1138,7 +1138,7 @@ $$\{z\in \mathbb{R}^p: (z-z_0)^TA^{-1}(z-z_0) \leq 1\}\quad A \text{ pos. semi d
  
 **Definition 39**. *(Outlier)*
 
-[**Outlier**] - an obseravtion that does not
+<span style="color: green;">**Outlier**</span> - an obseravtion that does not
 conform to general pattern of the rest of the data.\
 Potential causes
 
@@ -1180,7 +1180,7 @@ small
  
 **Definition 40**.
 
-[**Leverage**] of $i^{\text{th}}$
+<span style="color: green;">**Leverage**</span> of $i^{\text{th}}$
 observation in linear model is $P_{ii}$\
 $i^{\text{th}}$ diagonal matrices of hat matrix $P$
 

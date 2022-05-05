@@ -78,10 +78,10 @@ ol.n {list-style-type: none;}
 ---
 
 
-**Colour Code** - <span style="color: green;">Definition</span> are
-<span style="color: green;">green</span> in these notes,
-<span style="color: red;">**Consequences</span> are <span style="color: red;">**red</span>
-and <span style="color: RoyalBlue;">**Causes</span> are <span style="color: blue-000;">**blue</span>
+**Colour Code** - <span style="color: green;">**Definition**</span> are
+<span style="color: green;">**green**</span> in these notes,
+<span style="color: red;">**Consequences**</span> are <span style="color: red;">**red**</span>
+and <span style="color: RoyalBlue;">**Causes**</span> are <span style="color: blue-000;">**blue**</span>
 
 *Content from MATH40003 assumed to be known.*
 
@@ -344,7 +344,7 @@ $|G|^{-1}\sum_{g\in G}|Fix(g)|.$
 
 #### Smith Normal form
 
-**Definition 3.1 - <span style="color: green;">Smith Normal Form**</span>
+**Definition 3.1** - <span style="color: green;">**Smith Normal Form**</span>
 
 $A = (a_{ij}) \in \mathbb{Z}$ a $(m\times n)$ matrix in <span style="color: green;">Smith Normal
 Form</span> if:
@@ -429,7 +429,7 @@ only on the group.
 
 #### Motivation
 
-**Definition 4.1 - <span style="color: green;">Ring**</span>\
+**Definition 4.1** - <span style="color: green;">**Ring**</span>\
 A ring a set $R$ with $2$ binary operations, $+$ and $\times$,
 satisfying:
 
@@ -475,7 +475,8 @@ $$R^{\times} = \{x \in R \mid x \text{ invertible} \}$$
 
 **Definition 4.8** - <span style="color: green;">**Division Ring**</span>
 
-A ring where all  non-zero elements a <span style="color: green;">division ring</span>
+A ring where all  non-zero elements a <span style="color: green;">division ring</span>\
+A ring in which every nonzero element $a$ has a multiplicative inverse, 
 
 **Definition 4.8.2** - <span style="color: green;">**Field**</span>\
 A commutative division ring a <span style="color: green;">Field</span>.
