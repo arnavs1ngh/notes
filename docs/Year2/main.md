@@ -283,6 +283,14 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS4-Sol.pdf" target="_blank">**Solutions**</a>
   
   - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS6-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS7-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS8-Sol.pdf" target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year2/problemsheets/smSheets/SMPS9-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
