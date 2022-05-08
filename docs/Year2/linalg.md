@@ -604,21 +604,21 @@ $$\implies A \sim C(x^{k_1}) \oplus \dots \oplus C(x^{k_r})$$
 **Theorem 12.5**. **(Rational Canonical Form Theorem)**
 
 $V$ be finite dimensional over field $F$ with $T:V \to V$ a linear map with
-<center>
+
 $$m_{T}(x) = \prod_{i=1}^{t}f_{i}(x)^{k_i}$$
-  </center>
+
 with $\{f_{i}(x)\}_{i=1}^{t} \in F[x]$ set of distinct irreducible polynomials $\implies \exists$ basis $B$ of $V$ s.t
 
-<center>
+
 $$\begin{aligned}
-[T]_{B} &= C(f_{1}(x)^{k_{11}}) \oplus \dots \oplus C(f_{1}(x)^{k_{1r_1}}) \oplus \dots\\
+[ T ]_{B} &= C(f_{1}(x)^{k_{11}}) \oplus \dots \oplus C(f_{1}(x)^{k_{1r_1}}) \oplus \dots\\
     & \oplus C(f_{t}(x)^{k_{t1}}) \oplus \dots \oplus C(f_{t}(x)^{k_{tr_{t}}})\end{aligned}$$
-</center>
+
 
 where for each $i$
-<center>
+
 $$k_{i} = k_{i1} \geq \dots \geq k_{ir_{i}}$$
-</center>
+
 with $r_{i}$ and $k_{i1},\dots,k_{ir_{i}}$ uniquely determined by $T$
 
 ***Corollary 12.6***\
@@ -1191,9 +1191,9 @@ $m$**</span>*
 
 $${\mathbb Z}_{m} := \{0 \ ({\rm mod}\ m), 1 \ ({\rm mod}\ m), \ldots, m-1 \ ({\rm mod}\ m) \}$$
 Integers with $p-$ bits represent elements in $\mathbb{Z}_{2^p}$\
-Integer arietic equivalent to arietic module $2^p$
+Integer arithmetic equivalent to arithmetic module $2^p$
 
-##### Signed Integer
+#### Signed Integer
 
 Use **Two's complement** convention.
 
@@ -1213,7 +1213,7 @@ e.g
 
 \
 *Overflow*\
-Given arietic is modulo $2^p$ we often get overflow errors
+Given arithmetic is modulo $2^p$ we often get overflow errors
 
     typemax(Int8) + Int8(1)# returns typemin(Int8)               
     127 + 1 = -128
@@ -1223,13 +1223,13 @@ Given arietic is modulo $2^p$ we often get overflow errors
     --------
     =10000000
 
-##### Variable bit representation
+#### Variable bit representation
 
 Can represent integers using a variable number of bits, hence avoiding
 overflow.\
 In Julia we have `BigInt`s created by `big()`
 
-##### Division
+#### Division
 
 We have $2$ types of division
 
@@ -1242,7 +1242,7 @@ We have $2$ types of division
     Can also create rationals using $(//)$\
     `(1//2) + (3//4)`
 
-Rational arietic often leads to overflow so combine it with `big()`
+Rational arithmetic often leads to overflow so combine it with `big()`
 often.
 
 #### Floating Point numbers
@@ -1290,7 +1290,7 @@ For $q = (q_{Q-1}\ldots q_0)_2$
     $\pm \infty$
 
 
-##### IEEE Floating-point numbers
+#### IEEE Floating-point numbers
 
  
 **Definition 4**. *<span style="color: green;">**IEEE Floating-point numbers**</span>*
@@ -1304,7 +1304,7 @@ corresponding types in Julia $$\begin{aligned}
 `Float64` - created by using decimals. e.g `1.0`\
 `Float32` - created by using `f0` e.g `1f0`
 
-##### Special normal numbers
+#### Special normal numbers
 
 
 **Definition 5**. *<span style="color: green;">**Machine epsilon** </span>*
@@ -1320,7 +1320,7 @@ $$\min |F_{\sigma,Q,S}^{\rm normal}| = 2^{1-\sigma}$$
 Largest (postive) normal number is
 $$\max F_{\sigma,Q,S}^{\rm normal} = 2^{2^Q-2-\sigma} (1.11\ldots1)_2 = 2^{2^Q-2-\sigma} (2-\epsilon_{\rm m})$$
 
-##### Special Numbers
+#### Special Numbers
 
  
 **Definition 6**. *<span style="color: green;">**Not a Number**</span>*
@@ -1328,9 +1328,9 @@ $$\max F_{\sigma,Q,S}^{\rm normal} = 2^{2^Q-2-\sigma} (1.11\ldots1)_2 = 2^{2^Q-2
 
 We have `NaN` represent \"not a number\"
 
-#### Arietic
+#### arithmetic
 
-Arietic on floating-points exact up to rounding.
+arithmetic on floating-points exact up to rounding.
 
  
 **Definition 7**. *<span style="color: green;">**Rounding**</span>*
@@ -1357,11 +1357,11 @@ x\ominus y &:= {\rm fl}(x - y) \\
 x\otimes y &:= {\rm fl}(x * y) \\
 x\oslash y &:= {\rm fl}(x / y)\end{aligned}$$
 
-Each of the above defined in IEEE arietic.\
+Each of the above defined in IEEE arithmetic.\
 *Warning* These operations are not **associative**
 $(x \oplus y) \oplus z \neq x \oplus (y \oplus z)$
 
-#### Bounding errors in floating-point arietic
+#### Bounding errors in floating-point arithmetic
 
  
 **Definition 8**. *<span style="color: green;">**Absolute/relative error**</span>*
@@ -1383,7 +1383,7 @@ number:
 
 $${\cal N}_{\sigma,Q,S} := \{x : \min |F_{\sigma,Q,S}| \leq |x| \leq \max F_{\sigma,Q,S} \}$$
 
-**Proposition.** - *Rounding arietic*\
+**Proposition.** - *Rounding arithmetic*\
 if $x \in \cal{N} \implies$
 
 $${\rm fl}^{\rm mode}(x) = x (1 + \delta_x^{\rm mode})$$
@@ -1394,14 +1394,14 @@ $$\begin{aligned}
 |\delta_x^{\rm nearest}| &\leq {\epsilon_{\rm m} \over 2} \\
 |\delta_x^{\rm up/down}| &< {\epsilon_{\rm m}}.\end{aligned}$$
 
-##### Arietic and Special numbers
+#### arithmetic and Special numbers
 
 We have the following identiites
 
 ![Identities](diags/numanal_ids.png)
 
 
-##### Special functions
+#### Special functions
 
 Functions such as `cos, sin, exp` designed to have *relative accuracy*\
 e.g for `s = sin(x)` we satisfy
@@ -1464,7 +1464,7 @@ Can also use left-side and central differences to compute derivatives.
 
 -   $f'(x) \approx {f(x + h) - f(x - h) \over 2h}$
 
-##### Bounding the error
+#### Bounding the error
 
  
 **Theorem 1**. *(Finite differences error bound)*
@@ -1494,7 +1494,7 @@ Choose $h$ proportional to $\sqrt{\epsilon_m}$
 Dual numbers, $\mathbb{D}$ Commutative ring over reals generated by 1
 and $\epsilon$ with $\epsilon^2 = 0$, written $a + b \epsilon$
 
-##### Connection with differentiation
+#### Connection with differentiation
 
 Dual numbers not prone to growth due to round-off errors.
 
@@ -1751,7 +1751,7 @@ Square matrix orthogonal if $Q^T Q = Q Q^T = I$
 
 Special cases
 
-##### Simple Roations
+#### Simple Roations
 
  
 **Definition 18**. *<span style="color: green;">**Simple Rotation**</span>*
@@ -1784,7 +1784,7 @@ $$Q = {1 \over \sqrt{a^2 + b^2}}\begin{bmatrix}
 Satisfies
 $Q \begin{bmatrix} a \\ b \end{bmatrix} = \sqrt{a^2 + b^2} \begin{bmatrix} 1 \\ 0 \end{bmatrix}$
 
-##### Reflections
+#### Reflections
 
  
 **Definition 20**. *<span style="color: green;">**Reflection Matrix**</span>
@@ -1885,7 +1885,7 @@ Provided column rank of $A$ is full, we have $\hat{R}$ invertible
 
 #### Reduced QR and Gram-Schmidt
 
-##### Computing QR decomposition
+#### Computing QR decomposition
 
 1.  Write
     $A = \begin{bmatrix} \mathbf{a}_1 | \dots | \mathbf{a}_n \end{bmatrix}$,
@@ -2014,7 +2014,7 @@ $$\implies A = \underbrace{Q_1 \cdots Q_n}_Q R.$$
 
 #### PLU Decomposition
 
-##### Special \"one-column\" Lower triangular matrices
+#### Special \"one-column\" Lower triangular matrices
 
 Consider the following set of lower triangular matrices
 
@@ -2046,7 +2046,7 @@ With the following properties:
 
     $$P_{\sigma}L_j = \tilde{L}_{j}P_{\sigma} \quad \tilde{L}_{j} \in \cal{L}_{j}$$
 
-##### LU Decomposition
+#### LU Decomposition
 
 Similarly to QR decomposition we perform a triangularisation using
 $L_j \in \cal{L}_j$.\
@@ -2083,7 +2083,7 @@ $$A = \underbrace{L_{1}^{-1}\dots L_{n-1}^{-1}}_{L} U
                 -\ell_{n1} & -\ell_{n2} & \cdots & -\ell_{n,n-1} & 1
             \end{bmatrix}$$
 
-##### PLU Decomposition
+#### PLU Decomposition
 
 Achieved by always pivoting when performing Gaussian elimination, swap
 largest in magnitude entry on the diagonal.\
@@ -2402,7 +2402,7 @@ $A\mathbf{x} \approx (A + \delta A)\mathbf{x}$
 $$\frac{\| \delta A \mathbf{x}\|}{\|A \mathbf{x}\|} \leq \kappa(A)\epsilon$$
 
 if we have relative perturbation error $\|\delta A \| = \|A\|\epsilon$\
-We know for floating point arietic the error is bounded by
+We know for floating point arithmetic the error is bounded by
 
 $$\kappa(A)\frac{n\epsilon_m}{2-n\epsilon_m}$$
 
@@ -2645,7 +2645,7 @@ $\implies$ error for forwardEuler is
 
 $$\| \mathbf{u}^{f} - \mathbf{u} \|_{\infty},\| \mathbf{u}^{b} - \mathbf{u} \|_{\infty} = O(n^{-1})$$
 
-##### Poisson
+#### Poisson
 
 For $2D$ problems consider Poisson. First stage is to row-reduce to get
 a symmetric tridiagonal pos. def. matrix

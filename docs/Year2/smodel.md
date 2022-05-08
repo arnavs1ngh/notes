@@ -440,10 +440,14 @@ $$P_{\theta \in I} \geq 1-\alpha \quad \forall \theta \in \Theta$$
 <span style="color: green;">**Pivotal Quantity**</span> for $\theta$ a
 function $t(Y,\theta)$ of data and $\theta$\
 s.t distribution of $t(Y,\theta)$ known (no dependency on unknown
-parameters)\
+parameters)
+
 Know distribution of $t(Y,\theta) \implies$ can find constant $a_1,a_2$
 s.t $P(a_1 \leq t(Y_1,\theta) \leq a_2) \geq 1 - \alpha$\
-$\implies P(h_1(Y) \leq \theta \leq h_2(Y)) \geq 1 - \alpha$\
+$\implies P(h_1(Y) \leq \theta \leq h_2(Y)) \geq 1 - \alpha$
+
+
+
 Call $[h_1(Y),h_2(Y)]$ a <span style="color: green;">**random
 interval**</span>\
 with observed interval $[h_1(y),h_2(y)]$ a <span style="color: green;">**$1-\alpha$ confidence
