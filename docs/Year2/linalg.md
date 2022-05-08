@@ -1451,6 +1451,7 @@ Considering functions:
 #### Finite-differences
 
 $$f'(x) = \lim_{h \rightarrow 0} {f(x+h) - f(x) \over h} \implies f'(x) \approx {f(x+h) - f(x) \over h}$$
+
 for sufficiently small $h$\
 Approximation uses only *black-box* notion of function.
 
@@ -1476,9 +1477,13 @@ accuracy in that neighbourhood i.e
 $|\delta_x^f| \leq c \epsilon_{\rm m}$ for fixed constant $c$.\
 Take $h = 2^{-n}$ for $n \leq S$ (no. of Significand bits) and $|x|<1$\
 Finite difference approximation then satisfies
+
 $$(f^{\rm FP}(x + h) \ominus f^{\rm FP}(x)) \oslash h = f'(x) + \delta_{x,h}^{\rm FD}$$
+
 Where
+
 $$|\delta_{x,h}^{\rm FD}| \leq {|f'(x)| \over 2} \epsilon_{\rm m} + M h +  {4c \epsilon_{\rm m} \over h}$$
+
 for $M = \sup_{x \leq t \leq x+h} |f''(t)|$.\
 3 terms in bound tell us behaviour.
 
@@ -1578,9 +1583,10 @@ Transposing `A` done lazily, `A'` stores entries by row
 
  
 **Using Traditional definition**
+
 $$\begin{bmatrix} \sum_{j=1}^n a_{1,j} x_j \\ \vdots \\ \sum_{j=1}^n a_{m,j} x_j \end{bmatrix}$$
 
-Or going **column-by-column**\
+Or going **column-by-column**
 
 $$x_1 \mathbf{a}_1  + \cdots + x_n \mathbf{a}_n$$
 
@@ -1787,7 +1793,7 @@ $Q \begin{bmatrix} a \\ b \end{bmatrix} = \sqrt{a^2 + b^2} \begin{bmatrix} 1 \\ 
 #### Reflections
 
  
-**Definition 20**. *<span style="color: green;">**Reflection Matrix**</span>
+**Definition 20**. <span style="color: green;">**Reflection Matrix**</span>
 
 
 Given vector $\mathbf{v}$ satisfying $||v|| = 1$, reflection matrix is
@@ -2058,8 +2064,6 @@ $$\mathbf{a}_j^k := (L_k \mathbf{a}_j^{k-1})[2:n-k+1]$$
 
 $$u_{kj} := (L_k \mathbf{a}_j^{k-1})[1]$$
 
-<br>
-</br>
 
 $$\implies L_{n-1}\dots L_{1} A = \underbrace{\begin{bmatrix} 
                                                 u_{11} & \cdots & u_{1n} \\
