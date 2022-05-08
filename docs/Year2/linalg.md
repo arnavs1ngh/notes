@@ -2300,7 +2300,7 @@ For $\sigma_{k} = 0$ if $k>r$
 
 | if $m>n$        | if $m <n$  |
 |-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_n \\ && 0 \\ && \vdots \\ && 0 \end{bmatrix}$ | $\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_m & 0 & \dots & 0 \end{bmatrix}$ |
+| $$\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_n \\ && 0 \\ && \vdots \\ && 0 \end{bmatrix}$$ | $$\tilde{\Sigma} = \begin{bmatrix} \sigma_1 \\ & \ddots \\ && \sigma_m & 0 & \dots & 0 \end{bmatrix}$$ |
 
 **Proposition** - *Gram matrix kernel*\
 <span style="color: green;">**Gram-matrix**</span>: $A^T A$
