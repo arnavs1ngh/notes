@@ -3069,6 +3069,7 @@ $$\implies x P(x) = P(x) \underbrace{\begin{bmatrix} a_0 & c_0 \\
                                                         & b_1 & a_2 & \ddots \\
                                                         && \ddots & \ddots
                                                         \end{bmatrix}}_X$$
+                                                        
 More generally, for any polynomial $a(x)$ we have
 
 $$a(x) P(x) = P(x) a(X).$$
