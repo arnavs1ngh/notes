@@ -1312,7 +1312,7 @@ problem. Having properties:
     $$\sup_{t \in (I_{-}(t_0,x_0),t_0)} \lvert \lvert  \lambda_{max}(t) \rvert\rvert  = \infty$$
 
     **Or** boundary: $\partial D$ of $D$ non-empty and we have
-    
+
     $$\lim_{t \searrow I_{-}(t_0,x_0)} dist\left( (t,\lambda_{max}(t)),\partial D\right) = 0$$
 
 ***Dist function***
@@ -1640,15 +1640,20 @@ Can't happen as a 2D matrix of real eigenvalues can't have eigenvalue of
 
 **Theorem 3.6** - *Complex Jordan Normal Form*\
 $A\in \mathbb{R}^{d\times d}, \exists T \in \mathbb{C}^{d\times d}$ s.t we get
+
 $$J := T^{-1} AT = \begin{pmatrix}J_1 & & 0\\ &\ddots\\0 && J_p \end{pmatrix}$$
-With Jordan blocks $$J_{j}=\left(\begin{array}{ccccc}
+
+With Jordan blocks 
+
+$$J_{j}=\left(\begin{array}{ccccc}
 \rho_{j} & 1 & & 0 & 0 \\
 0 & \rho_{j} & 1 & & 0 \\
 & & \ddots & \ddots & \\
 0 & & & \rho_{j} & 1 \\
 0 & 0 & & 0 & \rho_{j}
-\end{array}\right) \quad \text { for all } j \in\{1, \ldots, p\}$$ For
-$p_j, j \in \{1,\dots,p\}$ complex e.vals of $A$
+\end{array}\right) \quad \text { for all } j \in\{1, \ldots, p\}$$ 
+
+For $p_j, j \in \{1,\dots,p\}$ complex e.vals of $A$
 
 **Theorem 3.7** - *Real Jordan Form*\
 $A \in \mathbb{R}^{d\times d}$, $\exists T \in \mathbb{R}^{d\times d}$
@@ -1761,7 +1766,8 @@ $x^{\ast}$ an equilibrium of $\dot{x} = f(x) \implies f(x^{*}) = 0$
 6.  $x^{\ast}$ <span style="color: green;">**repulsive**</span> if $\exists \delta >0$ s.t
     $\lim_{t\to -\infty} \varphi(t,x) = x^{\ast}, \forall x \in B_{\delta}(x^{\ast})$
 
-    $$INSERT FIGURES HERE$$
+
+![Stability Diagram](diags/stability.png)
 
  
 **Definition 16**. (Homoclinic and heteroclinic orbits)
