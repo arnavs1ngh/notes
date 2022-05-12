@@ -768,7 +768,7 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
   
 ### Gradient in orthogonal curvilinear coordinates
 
-Let $\nabla \Phi = \lambda_{1}\mathbf{\hat{e}_{1}} + \lambda_{2}\mathbf{\hat{e}_{2}} + \lambda_{3}\mathbf{\hat{e}_{3}}$
+Let $\nabla\Phi = \lambda_{1}\mathbf{\hat{e}}_{1} + \lambda_{2}\mathbf{\hat{e}}_{2} + \lambda_{3}\mathbf{\hat{e}}_{3}$
 
 In a general coordinate system for $\lambda_{i}$s to be found.
 
@@ -1796,7 +1796,7 @@ $\dot{x} = Ax, A \in \mathbb{R}^{d\times d}$\
 Have trivial equilibrium $x^{\ast} = 0$
 
 1.  stable $\iff$
-    - $Re(\rho) \leq 0\ \forall \rho$ e.vals of $A$\
+    - $Re(\rho) \leq 0\ \forall \rho$ e.vals of $A$
     - e.val $\rho$ semi-simple $\forall$ e.vals $\rho$ of $A$ with
     $Re(\rho) =0$
 
@@ -1817,6 +1817,7 @@ Equilibrium $x^{\ast}$ of differential equation $\dot{x} = f(x)\ f:D\subset \mat
 **Lemma 4.9** - *Gronwall Lemma*\
 Consider continuous function $u:[a,b] \to \mathbb{R},$ let $c,d \geq 0$\
 Assume $u$ satisfies implicit inequality
+
 $$0 \leq u(t) \leq c + d\int_{a}^{t}u(s) ds \quad \forall t \in [a,b]$$
 
  
@@ -1871,8 +1872,7 @@ locally lipschitz continuous, with flow $\varphi, x\in D$
 
 1.  $x_w \in D$ an <span style="color: green;">**omega limit point**</span>
     of $x$\
-    If $\exists$ sequence $ \{ t_n \}_{n\in\mathbb{N}}$ s.t
-    $\lim_{n\to \infty} t_n = \infty$ and
+    If $\exists$ sequence $\{ t_n \}_{n\in\mathbb{N}}$ s.t $\lim_{n\to \infty} t_n = \infty$ and
 
     $$x_\omega = \lim_{n\to\infty}\varphi(t_n,x)$$
 
@@ -1891,7 +1891,9 @@ locally lipschitz continuous, with flow $\varphi, x\in D$
 
 **Proposition 4.19** - *(Alternative characterisation of limit sets)*\
 $\varphi$ flow of differential from above $x\in D$
+
 $$\omega(x) = \bigcap_{t\geq 0}\overline{O^{+}(\varphi(t,x))}$$
+
 $$\alpha(x) = \bigcup_{t\leq 0}\overline{O^{-}(\varphi(t,x))}$$
 
 **Proposition 4.21** - *(properties of $\omega,\alpha$ limit sets)*\
@@ -1957,6 +1959,7 @@ is positively invariant
 $\dot{x} = f(x)\ f:\underbrace{D \subset \mathbb{R}^d}_{\text{open}}\to \mathbb{R}^d$
 Locally Lipschitz continuous, $x^{\ast}$ an equilibria and
 $V:D\to \mathbb{R}$ lyapunov funtion s.t
+
 $$V(x^{\ast}) = 0, V(x) >0 \ \forall x \in D\backslash\{x^{\ast}\} \implies x^{\ast} \text{ stable }$$
 
  
