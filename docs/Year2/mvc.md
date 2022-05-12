@@ -1001,10 +1001,9 @@ $d \in \mathbb{N}$ open
 $D \subset \mathbb{R}\times\mathbb{R}^d,\ f:D \to \mathbb{R}^d$.\
 Call the following pair a <span style="color: green;">**initial value problem**</span>
 
- center
-$\underbrace{\dot{x} = f(t,x)}_{\text{ODE}}$ and
-$\underbrace{x(t_0) = x_0}_{\text{Initial condition}}$
+$$\underbrace{\dot{x} = f(t,x)}_{\text{ODE}}$$
 
+$$\underbrace{x(t_0) = x_0}_{\text{Initial condition}}$$
 
 Solutions s.t $\lambda:I \to \mathbb{R}^d$ with $t_0$ in interior of $I$
 and $\lambda(t_0) = x_0$
@@ -1025,6 +1024,7 @@ $$G(\lambda) = \left\{(t,\lambda(t)): t \in I\right\} \subset \mathbb{R}\times \
 derivative of curve at point $t_0 \in I$ is
 
 $$\frac{d}{dt}(t,\lambda(t))\vert_{t = t_0} = (t,\dot{\lambda}(t_0)) = (1, f(t_0,\lambda(t_0))$$
+
 Vector field a map $(t,x) \mapsto (1,f(t,x))$, defined on $D$
 
 Solution Curves are tangential to vector field.\
@@ -1073,6 +1073,7 @@ Following are equivalent:
 
 ***Higher dimensional derivative***\
 for $g:\mathbb{R}\to\mathbb{R}^{d}$
+
 $$\int_{t_0}^{t}g(s)ds = \begin{pmatrix}\int_{t_0}^{t}g_1(s)ds\\ \vdots \\ \int_{t_0}^{t}g_d(s)ds\end{pmatrix}$$
 
  
@@ -1139,7 +1140,7 @@ We say a function $f:X \to Y$
 
     Call $K$ a <span style="color: green;">**Lipschitz Constant**</span>
 
- center
+
 Lipschitz continuous $\implies$ Continuous
 
 
@@ -1182,9 +1183,14 @@ $f:I \to \mathbb{R}^{m}$ continuous function
 
 $$\implies \left\lvert \left\lvert  \int_{t_0}^{t}f(s)ds \right\rvert\right\rvert \leq \left\lvert  \int_{t_0}^{t} \lvert \lvert  f(s)\rvert\rvert ds \right\rvert \quad \forall t,t_0 \in I$$
 
-**Corollary 2.10.** - (Lipschitz continuous and mean value inequality)\
+**Corollary 2.10.** - (Lipschitz continuous and mean value inequality)
+
 $U \subset \mathbb{R}^{n}$ open. $f:U \to \mathbb{R}^{m}$ continuously differentiable\
-Given compact and convex set $C\subset U$. Restriction is Lipschitz continuous $$f\rvert_{C}: C \to \mathbb{R}^{m}$$ Convex $C$ means $\forall x,y, \in C$ closed line segment lies in $C$ i.e. $[x,y] \subset C$
+Given compact and convex set $C\subset U$. Restriction is Lipschitz continuous 
+
+$$f\rvert_{C}: C \to \mathbb{R}^{m}$$
+
+Convex $C$ means $\forall x,y, \in C$ closed line segment lies in $C$ i.e. $[x,y] \subset C$
 
 ## Picard-Lindelöf Theorem
 
@@ -1255,7 +1261,8 @@ Continuity)
 $D\subset \mathbb{R}\times \mathbb{R}^d$ open. Continuously differentiable function $f:D\to \mathbb{R}^d$
 
 <center>
-$\implies f$ locally Lipschitz continuous w.r.t $x$\
+$\implies f$ locally Lipschitz continuous w.r.t $x$
+
 $\implies$ every intial value problem with differential equation with RHS $f$ solved locally uniquely.
 </center>
 
@@ -1292,14 +1299,20 @@ problem. Having properties:
 
 1.  $I_{+}(t_0,x_0)$ finite\
     **Either** - maximal solution unbounded for $t\geq t_0$
+
     $$\sup_{t \in (t_0,I_{+}(t_0,x_0))} \lvert \lvert  \lambda_{max}(t) \rvert\rvert  = \infty$$
+
     **Or** boundary: $\partial D$ of $D$ non-empty and we have
+
     $$\lim_{t \nearrow I_{+}(t_0,x_0)} dist\left( (t,\lambda_{max}(t)),\partial D\right) = 0$$
 
 2.  $I_{-}(t_0,x_0)$ finite\
     **Either** - maximal solution unbounded for $t \leq t_0$
+
     $$\sup_{t \in (I_{-}(t_0,x_0),t_0)} \lvert \lvert  \lambda_{max}(t) \rvert\rvert  = \infty$$
+
     **Or** boundary: $\partial D$ of $D$ non-empty and we have
+    
     $$\lim_{t \searrow I_{-}(t_0,x_0)} dist\left( (t,\lambda_{max}(t)),\partial D\right) = 0$$
 
 ***Dist function***

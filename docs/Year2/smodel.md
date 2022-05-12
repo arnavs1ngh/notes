@@ -1238,7 +1238,7 @@ $i^{\text{th}}$ diagonal matrices of hat matrix $P$
  
 **Definition 41**. *(Cook's Distance)*
 
-Measure how much $i^{\text{th}}$ observation changes estimator
+Measure how much $i^{\text{th}}$ observation changes
 $\hat{\beta}$
 
 $$D_i = \frac{(\hat{\beta}_{(i)}-\hat{\beta})^TX^TX(\hat{\beta}_{(i)}-\hat{\beta})}{pRSS/(n-p)}$$
