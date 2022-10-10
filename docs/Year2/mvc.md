@@ -735,6 +735,8 @@ For $u_1$ constant. $$dS = h_2h_3du_2du_3$$ similarly for $u_2,u_3$
 
     $$x = r\sin\theta\cos\phi \quad y = r\sin\theta\sin\phi \quad z = r\cos\theta$$
 
+    $$\theta \in [0,\pi],\ \phi \in [0,2\pi]$$
+
     $$\begin{aligned}
     \frac{\partial \mathbf{r}}{\partial r} &= (\sin\theta\cos\phi)\mathbf{\hat{i}} + (\sin\theta\sin\phi)\mathbf{\hat{j}} + (\cos\theta)\mathbf{\hat{k}}
                 \\
