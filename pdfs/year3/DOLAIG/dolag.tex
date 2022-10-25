@@ -1,0 +1,116 @@
+\documentclass[a4paper]{article}
+\author{Arnav Singh}
+\title{MATH60002\\Mathematical Logic}
+
+% \usepackage[english]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{graphicx}
+% \usepackage{xpatch}
+% \usepackage{amsmath,url}
+% \usepackage{ragged2e}
+% \usepackage{amssymb}
+% \usepackage{amsfonts}
+% \usepackage{enumitem}
+% \setlength{\parindent}{0pt}
+% \usepackage[dvipsnames]{xcolor}
+% \usepackage[margin=0.5in]{geometry}
+% \usepackage{amsthm}
+% \usepackage{hyperref}
+% \usepackage{tikz,lipsum,lmodern}
+% \usepackage[most]{tcolorbox}
+% \usepackage{ esint }
+% \usepackage{ float }
+
+% \newcommand\R{\mathbb{R}}
+% \newcommand{\notimplies}{\;\not\!\!\!\implies}
+% \newcommand\N{\mathbb{N}}
+% \newcommand\Z{\mathbb{Z}}
+% \newcommand\Q{\mathbb{Q}}
+% \newcommand\C{\mathbb{C}}
+% \newcommand\T{\tau}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+         
+         \huge
+        \textbf{Dynamics of Learning and Iterated Games\\ - Concise Notes -}
+ 
+        \vspace{0.5cm}
+         MATH60007\\
+         \vspace{0.25cm}
+         \large
+         \textbf{Year 3}
+             
+        \vspace{1.5cm}
+         
+         \LARGE
+        \textbf{Arnav Singh}
+        
+        \vspace{1.2cm}
+ 
+        % \includegraphics{/university.png}
+             
+        
+             
+        \vspace{1.8cm}
+        
+         \normalsize
+        % \textbf{Colour Code} - \definition{Definitions} are \definition{green} in these notes, \consequence{Consequences} are \consequence{red} and \cause{Causes} are \cause{blue}\\
+        \vspace{0.2cm}
+        
+         \textit{Content from previous years to be known.}
+         
+         \vfill
+             
+        Mathematics\\
+        Imperial College London\\
+        United Kingdom\\
+        \today
+             
+    \end{center}
+ \end{titlepage}
+
+ \tableofcontents
+
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\pagebreak
+
+\setcounter{section}{-1}
+\section{Introduction}
+\section{Replicator Dynamics for one population}
+
+Consider population, where individuals employ one of $n$ pure strategies
+
+\begin{enumerate}
+    \item $x_i$ - frequency of strategy $i$ in population
+    \item $(x_1 ,\ldots , x_n)$ a probability vector
+    \item $ \Delta_n = \{x \in R; 0 \leq x_i \leq 1, \sum_{i=1}^{n} x_i = 1   \}$
+\end{enumerate}
+
+Take $e_{i}$ the unit vector in the $i^{th}$ dimension. $n$ often fixed so we write $\Delta$ often\dots
+\\
+Take a population, with invader who chooses strategy $i$ against a strategy $j$ to recieve payoff $a_{ij}$.\\
+Given a population uses mixed strategy $\begin{pmatrix} y_1, \ldots ,y_n \end{pmatrix}$, with random matching - givin us the \texttt{linear payoff} 
+\[
+    a_{i} (y) = \sum_{j=1}a_{ij}  y_{j} = \left(Ay\right)_{i} 
+\]
+For $A$ the matrix $(a_{ij} )$.\\
+Using a mixed strategy $x \in \Delta $ we have a payoff
+\[
+    {Payoff}(x,y) :=   x \cdot Ay
+\]
+A probability vector $\hat{x} \in \Delta $ is called a \textbf{Nash Equilibrium (NE)} iff
+\[
+    x\cdot A\hat{x} \leq  \hat{x} , \forall x \in \Delta 
+\]
+and a \textbf{strict Nash Equilibrium} if
+\[
+    x \cdot A \hat{x} < \hat{x} \cdot A
+\]
+
+
+
+\end{document}
