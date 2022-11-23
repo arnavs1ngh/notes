@@ -16,24 +16,15 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year2/ANA2-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Complete**</a> - <a href="/notes/pdfs/year2/ANA2-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Complete**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets - Term 1</span>
+    <span style="color: #00ba47;">Problem Sheets</span>
   </summary>
   
   - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
 
-</details>
-
-<details closed markdown="block">
-  <summary>
-    <span style="color: #00ba47;">Problem Sheets - Term 2</span>
-  </summary>
-  
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term2/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
-  
 </details>
 </details>
 
@@ -542,8 +533,7 @@ the homomorphism $\iota :R \to S^{-1} R$ i.e
 $\exists ! \widetilde{\varphi} :S^{-1} R \to A$ s.t
 $\varphi = \iota  \circ \widetilde{\varphi}$*
 
-
-![image](figs/fig1.jpg){width="60%"}
+![image](figs/alg3/fig1.jpg)
 
 
 **Definition 69**. *$R$ a commutative ring, $S \subseteq R$ a
