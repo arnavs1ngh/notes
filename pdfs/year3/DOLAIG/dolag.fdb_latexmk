@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1665681287 "/Users/arnav/Documents/notes/pdfs/year3/DOLAIG/dolag.tex" "dolag.pdf" "dolag" 1665681287
-  "/Users/arnav/Documents/notes/pdfs/year3/DOLAIG/dolag.tex" 1665681286 3147 eccd95e7c0040bb183abe98ad7cd37ae ""
+["pdflatex"] 1668434481 "/Users/arnav/Documents/notes/pdfs/year3/DOLAIG/dolag.tex" "dolag.pdf" "dolag" 1668434481
+  "/Users/arnav/Documents/notes/pdfs/year3/DOLAIG/dolag.tex" 1668423298 3107 b4dfd8dfce5230b0eafba35e6015e460 ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -16,7 +16,6 @@
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/Users/arnav/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
@@ -26,9 +25,9 @@
   "/Users/arnav/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1639064919 92933 83e67a7804b8542ea4bf8158dbc379fd ""
   "/Users/arnav/Library/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1638982910 1429046 e6bacba71619270a4b6d792a7e1cf18a ""
   "/Users/arnav/Library/TinyTeX/texmf.cnf" 1639064868 708 85fd07691b6294ba94c59dbc62380410 ""
-  "dolag.aux" 1665681287 321 0480f2f7cec630c6bf3ceca559553e0b "pdflatex"
-  "dolag.tex" 1665681286 3147 eccd95e7c0040bb183abe98ad7cd37ae ""
-  "dolag.toc" 1665681287 187 30e6db20ed18b4d8be3b29a86cb65d43 "pdflatex"
+  "dolag.aux" 1668434481 321 0480f2f7cec630c6bf3ceca559553e0b "pdflatex"
+  "dolag.tex" 1668423298 3107 b4dfd8dfce5230b0eafba35e6015e460 ""
+  "dolag.toc" 1668434481 187 30e6db20ed18b4d8be3b29a86cb65d43 "pdflatex"
   (generated)
   "dolag.aux"
   "dolag.log"
