@@ -16,7 +16,7 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Analysis 2 Concise - Complete**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -44,8 +44,8 @@ math: mathjax3
 ## Basic Definitions and Examples
 
 
-**Definition 1**. *A *monoid* $(M, \cdot )$ a set $M$ and binary op
-$\cdot  \colon M \times M \to M$, with $1_{M} \in M$ s.t*
+**Definition 1**. A *monoid* $(M, \cdot )$ a set $M$ and binary op
+$\cdot  \colon M \times M \to M$, with $1_{M} \in M$ s.t
 
 -   *$m \cdot  1_M = m = 1_M \cdot  m \forall  m \in M$*
 
@@ -89,15 +89,19 @@ ring*
 
 
 
-**Definition 6**. *$u \in R$ a unit, if $\exists v \in R$ s.t
+**Definition 6**. $u \in R$ a unit, if $\exists v \in R$ s.t
 $u \cdot  v = v \cdot  u = 1_R$
+
 $$R^{\times } \subseteq R, \text{ the set of units in } R$$ 
 
 
 
-**Definition 7**. *A *division ring* a non-trivial ring, s.t every
-$u \neq  0_R \in R$ a unit. $$R^{\times } = R \backslash \{0\}$$ A
-**Field** a commutative division ring*
+**Definition 7**. A *division ring* a non-trivial ring, s.t every
+$u \neq  0_R \in R$ a unit. 
+
+$$R^{\times } = R \backslash \{0\}$$
+
+A **Field** a commutative division ring*
 
 
 
@@ -118,10 +122,14 @@ $$(r,s) + (r^\prime ,s^\prime ) = (r + r^\prime ,s + s^\prime ) \quad (r,s)\cdot
 $$R[X] = \{f = a_0 + a_1 X + \ldots  a_n X^n \mid a_i \in R \}$$ 
 
 So for $f = \sum_{i=1}^{n} a_i X^i$, $g = \sum_{i=1}^{k} b_i X^i$, we have ring
-ops $$f + g :=  \sum_{r=0}^{\mathop{\max} \{n,m\}} (a_{i} + b_{i}) X^i$$
+ops 
+
+$$f + g :=  \sum_{r=0}^{\mathop{\max} \{n,m\}} (a_{i} + b_{i}) X^i$$
+
 $$f \cdot g :=  \sum_{i=0}^{n + k} 
-        \left( \sum_{j=0}^{i} a_{j}b_{i-j}  \right) X^i$$ *Note:* call
-maximal $n$ s.t $a_n \neq  0_R$ the $deg(f)$\
+        \left( \sum_{j=0}^{i} a_{j}b_{i-j}  \right) X^i$$
+        
+*Note:* call maximal $n$ s.t $a_n \neq  0_R$ the $deg(f)$\
 For $f$ of degree $n \geq 0$, if $a_{n}=1$ say $f$ is monic.\
 *Notation:* Write $R[X,Y]$ for $(R[X])[Y]$ polynomial ring in 2
 variables, and in general
@@ -130,27 +138,34 @@ $R[X_1, \ldots  , X_n] = (\ldots ((R[X_1])[X_2]\ldots  )[X_n] )$
 
 
 **Example 11**. **Laurent polynomials* on $R$ the set $R[X,X^{-1} ]$
+
 $$R[X,X^{-1} ] = \left\{f = \sum_{i\in \mathbb{Z}} a_{i}X^i \mid \text{ only finitely many } a_i \neq 0 \right\}$$
+
 Operations defined similarly to $R[X]$\
-We have here the set of monomilas $\{X^i: i \in \mathbb{Z}\}$ form a
+We have here the set of monomials $\{X^i: i \in \mathbb{Z}\}$ form a
 group under multiplication.*
 
 
 
 **Example 12**. *$G$ a group, $R$ a ring. Define the *Group Ring*
 $R[G]$:
+
 $$R[G] := \left\{\sum_{g\in G} a_{g}g \mid a_{g} \in R, |\{g\in G: a_{g}\neq 0\}| < \infty \right\}$$
+
 With addition and multiplication as follows
+
 $$\left( \sum_{g\in G} a_{g}g \right) 
         +
         \left( \sum_{g\in G} b_{g}g \right) 
         =
         \sum_{g\in G} (a_{g} +_{R} b_{g} )g$$
+
 $$\left( \sum_{g\in G} a_{g}g   \right) \cdot 
         \left( \sum_{g\in G} b_{g} g  \right) 
         =
         \sum_{g\in G}
         \left( \sum_{h \in G} a_{h} \cdot_{R} b_{h^{-1}g}  \right)  g$$
+
 We have that
 $R[X,X^{-1} ] \cong R[C_\infty], C_\infty = (\mathbb{Z}, + )$\
 If $R$ commutative ring, then $R[G]$ commutative $\iff G$ abelian.*
@@ -158,15 +173,19 @@ If $R$ commutative ring, then $R[G]$ commutative $\iff G$ abelian.*
 
 
 **Example 13**.
+
 *$$M_{n}(R) = \text{ set of } n\times n \text{ matrices},\ R \text{ a ring}$$
+
 A ring over the usual addition and multiplication*
 
-
-
 **Example 14**. *Abelian group $A$
+
 $$\mathop{End}(A) = \{f:A \to A\mid f \text{ a group homomorphism} \}$$
+
 A ring with ops
+
 $$(f +_{\mathop{End}(A)} g)(x) := f(x) +_{A} g(x) \quad (f \cdot_{\mathop{End}(A)} g)(x) := (f \circ g)(x)$$
+
 Group of units of $\mathop{End}(A)$ is the *automorphism group* of $A$
 denoted $\mathop{Aut}(A)$*
 
@@ -190,23 +209,21 @@ if*
 **Definition 16**. *An isomorphism, A bijective homomorphism $\varphi$*
 
 
-
 **Definition 17**. Kernel of homomorphism $\varphi : R \to S$
+
 $$\mathop{ker}(\varphi ) = \{r \in R: \varphi (r) = 0_S\}$$
 
-
-
 **Definition 18**. Image of homomorphism $\varphi : R \to S$
-$$\mathop{im}(\varphi ) = \{s \in S: s = \varphi (r), \text{ for some } r \in R \}$$
 
+$$\mathop{im}(\varphi ) = \{s \in S: s = \varphi (r), \text{ for some } r \in R \}$$
 
 
 **Lemma 19**. *Homomorphism $\varphi : R \to S$ injective
 $\iff \mathop{ker}\varphi = \{0_R\}$*
 
 
-
 **Definition 20**. A ideal $I \subset R$ an abelian subgroup s.t
+
 $$\forall i \in I, r \in R
         \begin{cases}
             ri \in I, &\text{ left ideal }  \\
@@ -227,54 +244,63 @@ $\mathop{ker}(\varphi ) \subset R$ a two-sided ideal*
 For every proper ideal $I$, we have $1 \notin I$ $\implies$ not a
 subring.\
 Even more generally, proper ideals do not contain any unit.
+
 $$\text{if } I \neq  R \implies I \subset R \backslash R^{\times }$$
 
 
 
 **Definition 23**. *For element $a \in R$, write the ideal generated by
-$a$ as, $$(a) = Ra = \{r \cdot  a \mid r \in R\} \subset R$$ The ideal
-generated by $a_1, \ldots  a_n$
+$a$ as, 
+
+$$(a) = Ra = \{r \cdot  a \mid r \in R\} \subset R$$ 
+
+The ideal generated by $a_1, \ldots  a_n$
+
 $$\begin{pmatrix} a_1, \ldots ,a_n \end{pmatrix} = \{r_1 a_1 + \ldots  r_k a_k \mid r_i \in R\}$$
 
 
 
 **Definition 24**. *$A \subset R$ define ideal generated by $A$ as
+
 $$(A) = R \cdot A = \left\{ \\sum_{a \in A} r_{a} \cdot  a \mid r_{a}\in R, \text{ only finitely many non-zero}   \right\}$$
 
 
-
-**Definition 25**. *Say ideal $I$ principal if $I = (a)$ for some
-$a \in R$*
-
+**Definition 25**. Say ideal $I$ principal if $I = (a)$ for some
+$a \in R$
 
 
-**Definition 26**. *Let $I \subset R$ a two-sided ideal\
+
+**Definition 26**. Let $I \subset R$ a two-sided ideal\
 Quotient ring $R/I = \{r + I \mid  r \in R\}$ a ring with
 $0_R + I, 1_R + I$
+
 $$(r_1 + I) +  (r_2 + I) = (r_1 + r_2 ) + I,\quad (r_1 + I) \cdot (r_2 + I) = r_1 r_2 + I$$
 
 
 
 **Proposition 27**. Quotient ring a ring, and function
+
 $$\varphi \colon R \to R/I, r \mapsto r + I$$ 
+
 a ring homomorphism.
 
 
 
-**Proposition 28**. *(Euclidean algorithm for polynomials)\
+**Proposition 28**. (Euclidean algorithm for polynomials)\
 Let $F$ a field, and $f,g \in F[X] \implies \exists r,q \in F[X]$ s.t
+
 $$f = gq + r$$ 
+
 with $\mathop{deg } r < \mathop{deg } g$
 
 
- theorem
+ 
 **Theorem 29**. *(First isomorphism theorem)\
-Let $\varphi :R \to S$ a ring homomorphism,
-$\mathop{ker}(\varphi) \subseteq R$ a 2-sided ideal and
+Let $\varphi :R \to S$ a ring homomorphism, $\mathop{ker}(\varphi) \subseteq R$ a 2-sided ideal and
+
 $$\frac{R}{\mathop{ker}(\varphi )} \cong \mathop{im}(\varphi ) \leq S$$
 
-
- theorem
+ 
 **Theorem 30**. *(Second isomorphism theorem)\
 $R \leq S$ be subrings, $J \subseteq S$ a 2-sided ideal. Then*
 
@@ -287,12 +313,12 @@ $R \leq S$ be subrings, $J \subseteq S$ a 2-sided ideal. Then*
       a subring, and $\frac{R}{R \cap  J} \cong \frac{R+J}{J}$*
 
 
- theorem
+ 
 **Theorem 31**. *(Third isomorphism theorem)\
 Let $R$ a ring, $I,J \subseteq R$ 2-sided ideals s.t $I \subseteq J$
-Then $J/i \subseteq R/I$ a 2-sided ideal and*
+Then $J/I \subseteq R/I$ a 2-sided ideal and*
 
-*$$\left( \frac{R}{I} \right) / 
+$$\left( \frac{R}{I} \right) / 
         \left( \frac{J}{I} \right) \cong \frac{R}{J}$$
 
 
@@ -307,29 +333,25 @@ $x \neq 0, \exists y \neq 0 \text{ s.t } x \cdot  y = 0 \in R$*
 
 
 
-**Definition 33**. *Integral domain (ID) a non-trivial commutative ring
+**Definition 33**. Integral domain (ID) a non-trivial commutative ring
 without zero divisors
-$$\text{a ring where if } ab = 0 \implies a = 0 \text{ or } b = 0$$
 
+$$\text{a ring where if } ab = 0 \implies a = 0 \text{ or } b = 0$$
 
 
 **Lemma 34**. *$R$ a finite ring, and integral domain $\implies R$ a
 field.*
 
 
-
 **Lemma 35**. *$R$ an integral domain. Then $R[X]$ an integral domain*
 
 
-
-**Lemma 36**. *A non-trivial commmutative ring $R$ a field $\iff$ its
+**Lemma 36**. *A non-trivial commutative ring $R$ a field $\iff$ its
 only ideals are $\{0\}$ and $R$*
-
 
 
 **Definition 37**. *An ideal $I$ of ring $R$ **maximal** if $I \neq R$
 and for any ideal $J$ s.t $I \leq  J \leq  R$ either $J = I$ or $J = R$*
-
 
 
 **Lemma 38**. *$R$ a commutative ring. $I \subseteq R$ maximal $\iff$
@@ -393,7 +415,7 @@ or $r$ prime*
 
 
 
-**Lemma 49**. *If $r \in R$ prime, the $r$ irreducible*
+**Lemma 49**. *If $r \in R$ prime, then $r$ irreducible*
 
 
 
@@ -403,22 +425,24 @@ function $\phi : R\backslash \{0\} \to \mathbb{Z}_{\geq 0}$ s.t*
 
 1.  *$\phi (a \cdot  b) \geq  \phi (b), \forall a,b \neq  0$*
 
-2.  *If $a,b \in R, b \neq  0 \implies \exists q,r \in R$ s.t
+2.  If $a,b \in R, b \neq  0 \implies \exists q,r \in R$ s.t
+
     $$a = b \cdot  q + r$$ 
+
     With either $r = 0$ or $\phi (r) < \phi (b)$*
 
 
 
 **Definition 51**. *(Principal ideal domain)\
 A ring $R$, an integral domain, is a principal ideal domain (PID) if
-every ideal is a principal ideal.\
+every ideal is a principal ideal.
+
 $$\forall I \subseteq R \text{ an ideal } \implies \exists a \text{ s.t } I = (a)$$
 
 
 
 **Proposition 52**. *Let $R$ a Euclidean domain. Then $R$ a principal
 ideal domain*
-
 
 
 **Definition 53**. *(Unique factorisation domain)\
@@ -428,10 +452,10 @@ An integral domain a unique factorisation domain (UFD) if*
 
 2.  *If $p_1 \ldots  p_n = q_1 \ldots  q_m$ with $p_i, q_j$
     irreducibles, then $n = m$ and they can be reordered s.t $p_i$ is an
-    assosciate of $q_i$*
+    associate of $q_i$*
 
 
- theorem
+ 
 **Theorem 54**. *(PID $\implies$ UFD)\
 If $R$ a principal ideal domain, then $R$ a unique factorisation
 domain.*
@@ -455,7 +479,9 @@ maximal*
 
 **Definition 58**. *(ACC - Ascending Chain Condition)\
 A commutative ring satisfies the ACC, if
+
 $$I_1 \subseteq I_2 \subseteq I_3 \subseteq \ldots  \text{ ,a chain of ideals}$$
+
 Then $\exists N \in \mathbb{N}$ s.t $I_n = I_n + 1$ for some
 $n \geq  N$*
 
@@ -485,6 +511,7 @@ $d, d^\prime$ are associates.*
 
 **The above lemmas and theorems yield the following chain of
 implications**
+
 $$\underbrace{(\mathbb{Z})}_{\text{isomorphic to } \mathbb{Z} } \implies \text{ED} \implies \text{PID} \implies \text{UFD} \implies \text{ID} \implies \text{Commutative Ring} \implies \text{Ring}$$
 
 $$(\mathbb{Z}) \underbrace{\not\Leftarrow}_{\mathbb{Q}, \mathbb{Z}[i]} \text{ED} \underbrace{\not\Leftarrow}_{\mathbb{Z}[\frac{1 + \sqrt{-19} }{2}]} \text{PID} \underbrace{\not\Leftarrow}_{\mathbb{Z}[X]} \text{UFD} \underbrace{\not\Leftarrow}_{\mathbb{Z}[\sqrt{-5} ]} \text{ID} \underbrace{\not\Leftarrow}_{\mathbb{Z}/6\mathbb{Z}} \text{Commutative Ring} \underbrace{\not\Leftarrow}_{M_2(\mathbb{Z})} \text{Ring}$$
@@ -495,8 +522,11 @@ $$(\mathbb{Z}) \underbrace{\not\Leftarrow}_{\mathbb{Q}, \mathbb{Z}[i]} \text{ED}
 **Definition 63**. *$R$ an ID, $S \subseteq (R, \cdot )$ a
 multiplicative submonoid. $0 \notin S$. **Localisation** is set of
 equivalence classes
+
 $$S^{-1} R = \left\{(r,s) \mid r \in R, s \in S, (r,s) \sim  (r^\prime ,s^\prime) \text{ if } rs^\prime = r^\prime s)\right\}$$
+
 Pair $(r,s)$ denoted $\frac{r}{s}$ - this is a ring with ops.
+
 $$(r,s) \cdot  (r^\prime , s^\prime ) :=  (r r^\prime ,s s^\prime),\quad (r,s) + (r^\prime ,s^\prime ) = (r s^\prime  + r^\prime s,s s^\prime )$$
 
 
@@ -514,7 +544,9 @@ $0 \notin S$ Then the map $\iota :R \to S^{-1} R$ is injective*
 **Definition 66**. *$R$ a commutative ring, $S \subseteq R$ a
 submonoid.\
 Localisation
+
 $$S^{-1} R = \{(r,s) \mid r\in R, s\in S, (r,s) \sim (r^\prime ,s^\prime )  \text{ if } \exists t \in S, t(rs^\prime  - r^\prime s ) = 0\}$$
+
 Note we have $t$ in this definition when we move away from $R$ being an
 integral domain.*
 
@@ -609,8 +641,10 @@ $S^{-1}  J$ for some $J \subseteq R$ an ideal.*
 
 **Definition 79**. *$R$ a UFD,
 $f = a_0 + a_{1} X + \ldots a_n X^n   \in R[X]$. The content is
+
 $$c(f) = gcd \begin{pmatrix} a_0, \ldots ,a_n \end{pmatrix} \in R$$
-Equivalenlt define content as the ideal
+
+Equivalently define content as the ideal
 $(gcd \begin{pmatrix} a_0, \ldots ,a_n \end{pmatrix})$*
 
 
@@ -642,7 +676,7 @@ irreducible in $R[X] \iff f$ irreducible $F[X]$ where
 $F= \mathop{Frac}(R)$*
 
 
- theorem
+ 
 **Theorem 85**. *(Polynomial rings over UFDs)\
 If $R$ a UFD, then $R[X]$a UFD.\
 Further if $R$ a UFD then $R[X_1, \ldots  , X_n]$ a UFD*
@@ -721,7 +755,7 @@ is finitely generated.\
 $\implies R / I$ Noetherian.*
 
 
- theorem
+ 
 **Theorem 96**. *(Hilbert's basis theorem)\
 $R$ a Noetherian ring, $\implies R[X]$ also Noetherian.*
 
@@ -756,21 +790,30 @@ with (iii) now as $(m \cdot  r_1) \cdot  r_2 = m \cdot (r_1 \cdot  r_2)$
 $R$-module an abelian group M, equipped with ring homomorphism*
 
 *$$\varphi : R \longrightarrow \underbrace{\mathop{End}(M)}_{\{f:M \to M \mid f \text{ a group hom.} \}}$$
-Such that $$\begin{aligned}
-            \cdot \colon R\times M & \longrightarrow M      \\
-            (r,m)          & \longmapsto \varphi(r)(m)
-        \end{aligned}$$
+
+Such that 
+
+$$\begin{aligned}
+          \cdot \colon R\times M & \longrightarrow M      \\
+          (r,m)          & \longmapsto \varphi(r)(m)
+\end{aligned}$$
 
 
 ## Constructions of modules
 
 
-**Definition 99**. *Let $M_1, M_2, \ldots  , M_k$ be $R-$modules. Direct
-sum is also an $R-$module $$M_1 \oplus M_2 \oplus \ldots \oplus M_{k}$$
+**Definition 99**. *Let $M_1, M_2, \ldots  , M_k$ be $R-$ modules. Direct
+sum is also an $R-$module 
+
+$$M_1 \oplus M_2 \oplus \ldots \oplus M_{k}$$
+
 Which is the set $M_1 \times \ldots  \times M_{k}$ with addition given
 by
+
 $$\begin{pmatrix} m_1, \ldots ,m_k \end{pmatrix} + \begin{pmatrix} m^\prime_1, \ldots ,m^\prime_k \end{pmatrix} = \begin{pmatrix} m_1 + m'_1, \ldots ,m_k + m'_k \end{pmatrix}$$
+
 And $R-$action given by
+
 $$r \cdot \begin{pmatrix} m_1, \ldots ,m_k \end{pmatrix} = \begin{pmatrix} rm_1, \ldots ,rm_k \end{pmatrix}$$
 
 
@@ -787,12 +830,14 @@ given by $$r \cdot (m + N) = (r \cdot  m) + N$$
 
 
 
-**Definition 102**. *Function $f: M \to N$ between $R-$modules an
-$R-$module homomorphism if it is a homomorphism of abelian groups and
+**Definition 102**. *Function $f: M \to N$ between $R-$ modules an
+$R-$ module homomorphism if it is a homomorphism of abelian groups and
 satisfies
+
 $$f(r \cdot  m) = r \cdot  f(m), \quad \forall r \in R, m \in M$$
+
 An isomorphism, is a bijective homomorphism.\
-Say 2 $R-$modules are isomorphic if there exists isomorphism between
+Say 2 $R-$ modules are isomorphic if there exists isomorphism between
 them.*
 
 
@@ -800,6 +845,7 @@ them.*
 **Definition 103**. *If $R_1, R_2$ rings, $M_1$ an $R_1$-module and
 $M_2$ an $R_2$-module, then $(M_1 \times  M_2)$ is a
 $(R_1 \times  R_2)$-module with action
+
 $$(r_1,r_2) \cdot  (m_1,m_2) := (r_1m_2, r_2 m_2)$$
 
 
@@ -807,10 +853,14 @@ $$(r_1,r_2) \cdot  (m_1,m_2) := (r_1m_2, r_2 m_2)$$
 **Definition 104**. *$R$ a commutative ring, $S \subseteq R$ a
 multiplicative submonoid, $M$ an $R-$module.\
 **Localisation** of $M$ by $S$,
+
 $$S^{-1} M = \{(m,s) \mid m \in M, s\in S , (m,s) \sim (m^\prime ,s^\prime ) \text{ if } \exists t \in S \text{ s.t } t(ms^\prime - m^\prime  s) = 0  \}$$
+
 This an $S^{-1} R$-module, with natural structure of abelian group, and
 $S^{-1} R$ action given by
+
 $$(r,t) \cdot  (m,s) := (rm,ts)\ (r,t) \in S^{-1} R  , (m,s) \in S^{-1} M$$
+
 Given ideal $I \subseteq R$ localisation $S^{-1} I \subset S^{-1} R$ as
 an ideal is isomorphism as an $S^{-1} R$-module to the localisation of
 $I$ as a module.*
