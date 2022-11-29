@@ -16,7 +16,7 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -91,7 +91,7 @@ The matrix of $n$-step transition probabilities.
 **Lemma 6**. *For discrete markov chain $\{X_{n}\}_{n \geq 0}$ on state
 space $E$ we have*
 
-$$P(X_{n+m} = x_{n+m} | X_{n} = x_{n}, \ldots , X_0 = x_0 ) = P(X_{n+m} = x_{n+m} \mid X_{n} = x_{n}),\ m \in \mathbb{N}, \forall x_{n+m}, x_{n}, \ldots , x_0 \in E$$
+$$P(X_{n+m} = x_{n+m} \mid  X_{n} = x_{n}, \ldots , X_0 = x_0 ) = P(X_{n+m} = x_{n+m} \mid X_{n} = x_{n}),\ m \in \mathbb{N}, \forall x_{n+m}, x_{n}, \ldots , x_0 \in E$$
 
 
 
@@ -555,9 +555,9 @@ convergent series $\forall  n \in N$ s.t
 
 2.  $\exists$ seq. $(b_{i})_{i\in I}$ s.t $b_{i} \geq  0\, \forall i$
     and $\sum_{i\in \mathcal{I}} b_{i} < \infty$ s.t
-    $\forall n, i: |a_{i}(n)| \leq  b_{i}$
+    $\forall n, i: \mid a_{i}(n)\mid \leq  b_{i}$
 
-Then $\sum_{i\in \mathcal{I}} |a_{i}| < \infty$ and
+Then $\sum_{i\in \mathcal{I}} \mid a_{i} \mid < \infty$ and
 
 $$\sum_{i\in I}a_{i} = \sum_{i\in I} \lim\limits_{n \to \infty} a_{i}(n) = \lim\limits_{n \to \infty} \sum_{i\in \mathcal{I}}a_{i}(n)$$
 
@@ -676,7 +676,7 @@ For weights $\omega_{i} \geq 0, \sum_{i=1}^{n} \omega _{i} = 1$
 ### Limiting distributions on a finite state space
 
 
-**Theorem 57**. *Let $K = |E| < \infty$ Suppose for some $i \in E$ that
+**Theorem 57**. *Let $K = \mid E\mid  < \infty$ Suppose for some $i \in E$ that
 
 $$\lim\limits_{n \to \infty} p_{ij} (n) = \pi_{j}, \quad \forall  j \in E$$
 
@@ -1032,7 +1032,7 @@ rate $l > 0$. Then $\forall n \in \mathbb{N}, t > 0$, the conditional
 density of $\begin{pmatrix} J_1, \ldots ,J_n \end{pmatrix}$ given by
 $N_{t} = n$ is given by
 
-$$f_{\begin{pmatrix} J_1, \ldots ,J_n \end{pmatrix}} \begin{pmatrix} t_1, \ldots ,t_n | N_{t}= n\end{pmatrix} =
+$$f_{\begin{pmatrix} J_1, \ldots ,J_n \end{pmatrix}} \begin{pmatrix} t_1, \ldots ,t_n \mid  N_{t}= n\end{pmatrix} =
         \begin{cases}
             \frac{n! }{t^n}, &\text{ if }  0 < t_1 < \ldots < t_n \leq  t ;\\
             0, &\text{ otherwise }  .

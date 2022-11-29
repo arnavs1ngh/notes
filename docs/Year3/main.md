@@ -12,6 +12,78 @@ Here you can find all the notes for Year 3 Mathematics at Imperial College Londo
 
 Let me know if there are any mistakes, they will be amended promptly. You can email me at <arnav.singh20@imperial.ac.uk> with the subject **Online Notes**
 
+### Algebra 3 - MATH60035
+
+- <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets </span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS1-Sol.pdf"  target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2-Sol.pdf"  target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3-Sol.pdf"  target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4-Sol.pdf"  target="_blank">**Solutions**</a>
+
+  
+  
+  
+</details>
+
+### Applied Probability - MATH60045
+
+- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets </span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS.pdf" target="_blank" style="color:#00ba47;">** All 5 Problem Sheets**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS1-Sol.pdf"  target="_blank">**PS1 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS2-Sol.pdf"  target="_blank">**PS2 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS3-Sol.pdf"  target="_blank">**PS3 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS4-Sol.pdf"  target="_blank">**PS4 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS5-Sol.pdf"  target="_blank">**PS5 - Solutions**</a>
+  
+</details>
+
+### Mathematical Logic - MATH60132
+
+- <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" target="_blank" style="color:#801fff;">**Open Math Logic Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" target="_blank" style="color:#801fff;">**Open Math Logic - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets </span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7-Sol.pdf" target="_blank">**Solutions**</a>
+  
+</details>
 
 ### Useful Links & Resources
 
