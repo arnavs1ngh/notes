@@ -15,7 +15,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Algebra 3 - MATH60035
 
 - <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AlG3-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AlG3-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AlG3-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -24,11 +24,11 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
   - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS1-Sol.pdf"  target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2-Sol.pdf"  target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2-Sol.pdf"  target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3-Sol.pdf"  target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3-Sol.pdf"  target="_blank">**Solutions**</a>
   
-  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4-Sol.pdf"  target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4-Sol.pdf"  target="_blank">**Solutions**</a>
 
   
   
@@ -38,14 +38,14 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Applied Probability - MATH60045
 
 - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AP-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
     <span style="color: #00ba47;">Problem Sheets </span>
   </summary>
   
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS.pdf" target="_blank" style="color:#00ba47;">** All 5 Problem Sheets**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS.pdf" target="_blank" style="color:#00ba47;">**All 5 Problem Sheets**</a>
 
   - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS1-Sol.pdf"  target="_blank">**PS1 - Solutions**</a>
 
@@ -62,7 +62,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 ### Mathematical Logic - MATH60132
 
 - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" target="_blank" style="color:#801fff;">**Open Math Logic Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" target="_blank" style="color:#801fff;">**Open Math Logic - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ML-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Math Logic - Lecture Notes (2018)**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -71,17 +71,17 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
   - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7-Sol.pdf" target="_blank">**Solutions**</a>
   
 </details>
 
