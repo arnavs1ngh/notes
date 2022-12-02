@@ -1035,7 +1035,7 @@ isomorphic*
 
 
 
-**Lemma 71**. *(Los-Vaught test)\
+**Lemma 71**. (Los-Vaught test)\
 Let $\Sigma = \Sigma_E \cup  \Delta$. Then for every closed
 $\mathcal{L}^{=}$-formula $\phi$ we have either
 
