@@ -1038,9 +1038,9 @@ isomorphic*
 **Lemma 71**. *(Los-Vaught test)\
 Let $\Sigma = \Sigma_E \cup  \Delta$. Then for every closed
 $\mathcal{L}^{=}$-formula $\phi$ we have either
-$\Sigma \vdash_{K_{\mathcal{{L^{=}}}}} \phi$ or
-$\Sigma \vdash_{K_{\mathcal{{L^{=}}}}} (\neg  \phi )$. Say
-that $\Sigma$ is **complete***
+
+$\Sigma \vdash_{K_{\mathcal{L^{=}}}} \phi$ or $\Sigma \vdash_{K_{\mathcal{L^{=}}}} (\neg\phi)$
+Say that $\Sigma$ is **complete**
 
 
 # Set theory
