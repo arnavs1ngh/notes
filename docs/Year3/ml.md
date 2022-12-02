@@ -153,7 +153,7 @@ normal form.*
 *We also have the **(NOR)** connective $\{\downarrow\}$ is adequate*
 
 | $p$ | $q$ | $p \downarrow q$ |
-|---|---|---|
+|:---:|:---:|:---:|
 | T | T | F |
 | T | F | F |
 | F | T | F |
