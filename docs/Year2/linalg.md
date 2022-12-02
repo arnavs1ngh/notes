@@ -578,7 +578,7 @@ $T:V \to V$ a linear map. Suppose $m_{T}(x) = f(x)^{k}$ for irreducible
 $f(x) \in F[x]$\
 $\implies \exists v_{1},\dots,v_{r} \in V$ s.t
 <center>
-$$V + Z(v_1,T) \oplus \dots \oplus Z(v_r,T)$$
+$$V = Z(v_1,T) \oplus \dots \oplus Z(v_r,T)$$
 </center>
 where
 
