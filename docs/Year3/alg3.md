@@ -23,7 +23,13 @@ math: mathjax3
     <span style="color: #00ba47;">Problem Sheets</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS1-Sol.pdf"  target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS2-Sol.pdf"  target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS3-Sol.pdf"  target="_blank">**Solutions**</a>
+  
+  - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/alg3/ALG3-PS4-Sol.pdf"  target="_blank">**Solutions**</a>
 
 </details>
 </details>

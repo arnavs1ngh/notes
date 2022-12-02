@@ -23,7 +23,17 @@ math: mathjax3
     <span style="color: #00ba47;">Problem Sheets</span>
   </summary>
   
-  - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year2/problemsheets/anlaysisSheets/term1/ANAPS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS.pdf" target="_blank" style="color:#00ba47;">**All 5 Problem Sheets**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS1-Sol.pdf"  target="_blank">**PS1 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS2-Sol.pdf"  target="_blank">**PS2 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS3-Sol.pdf"  target="_blank">**PS3 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS4-Sol.pdf"  target="_blank">**PS4 - Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS5-Sol.pdf"  target="_blank">**PS5 - Solutions**</a>
 
 </details>
 </details>
