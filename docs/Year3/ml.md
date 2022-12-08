@@ -208,7 +208,7 @@ propositional logic has the following*
 
     -   *Any formula arises this way*
 
--   *Axioms, suppose $\phi ,\psi ,\chi$ are L-formulas. We have the
+-   *Axioms, suppose $\phi ,\psi ,\chi$ are . We have the
     following axioms for $\mathcal{L}$*
 
     -   *$(\phi \to (\psi \to \phi ))$*
@@ -224,9 +224,9 @@ propositional logic has the following*
 
 
 
-**Definition 12**. *Suppose $\Gamma$ a set of L-formulas*
+**Definition 12**. *Suppose $\Gamma$ a set of $*
 
--   *A **deduction** from $\Gamma$ a finite sequence of L-formulas
+-   *A **deduction** from $\Gamma$ a finite sequence of $\mathcal{L}$ -formulas
     $\phi_1, \ldots  , \phi_{n}$ s.t each $\phi_i$ either an axiom, a
     formula in $\Gamma$ or obtained from previous formulas via MP*
 
@@ -237,19 +237,19 @@ propositional logic has the following*
 
 
 **Theorem 13**. *(Deduction Theorem)\
-Suppose $\Gamma$ a set of L-formulas and $\phi ,\psi$ L-formulas.\
+Suppose $\Gamma$ a set of $\mathcal{L}$ -formulas and $\phi ,\psi$ $\mathcal{L}$ -formulas.\
 Suppose $\Gamma  \cup \{\phi \} \vdash_L \psi$ then
 $\Gamma \vdash_L (\phi \to \psi )$*
 
 
 
 **Corollary 14**. *(Hypothetical syllogism)\
-Suppose $\phi ,\psi ,\chi$ L-formulas, and $\vdash_{L} (\phi \to \psi)$
+Suppose $\phi ,\psi ,\chi$ $\mathcal{L}$ -formulas, and $\vdash_{L} (\phi \to \psi)$
 and $\vdash_{L} (\psi \to \chi )$ Then $\vdash_{L} (\phi \to \chi )$*
 
 
 
-**Proposition 15**. *Suppose $\phi ,\psi$ are L-formulas. Then*
+**Proposition 15**. *Suppose $\phi ,\psi$ are $\mathcal{L}$ -formulas. Then*
 
 1.  *$\vdash_{L} ((\neg  \phi ) \to (\psi \to \phi ))$*
 
@@ -286,20 +286,20 @@ $\vdash_{L} \phi$*
 
 
 
-**Definition 20**. *A set $\Gamma$ of L-formulas is **consistent** if
-there is no L-formula $\phi$ such that $\Gamma \vdash_{L} \phi$ and
+**Definition 20**. *A set $\Gamma$ of $\mathcal{L}$ -formulas is **consistent** if
+there is no $\mathcal{L}$ -formula $\phi$ such that $\Gamma \vdash_{L} \phi$ and
 $\Gamma \vdash_{L} (\neg  \phi )$*
 
 
 
-**Proposition 21**. *Suppose $\Gamma$ a consistent set of L-formulas and
+**Proposition 21**. *Suppose $\Gamma$ a consistent set of $\mathcal{L}$ -formulas and
 $\Gamma \not \vdash_{L} \phi$ Then $\Gamma \cup \{(\neg \phi )\}$ is
 consistent*
 
 
 
 **Proposition 22**. *(Lindenbaum Lemma)\
-Suppose $\Gamma$ a set of L-formulas. Then there is a consistent set of
+Suppose $\Gamma$ a set of $\mathcal{L}$ -formulas. Then there is a consistent set of
 formulas $\Gamma^{\ast} \supseteq \Gamma$ s.t for every $\phi$ either
 $\Gamma^{\ast} \vdash_{L} \phi$ or
 $\Gamma^{\ast} \vdash_{L} (\neg \phi )$. Say $\Gamma^{\ast}$ is
@@ -308,19 +308,19 @@ $\Gamma^{\ast} \vdash_{L} (\neg \phi )$. Say $\Gamma^{\ast}$ is
 
 
 **Lemma 23**. *Let $\Gamma^{\ast}$ as above. Then $\exists$ valuation
-$v$ s.t for every L-formula $\phi$, $v(\phi ) = T$ iff
+$v$ s.t for every $\mathcal{L}$ -formula $\phi$, $v(\phi ) = T$ iff
 $\Gamma^{\ast} \vdash_{L} \phi$*
 
 
 
-**Corollary 24**. *Suppose $\Delta$ a consistent set of L-formulas, and
+**Corollary 24**. *Suppose $\Delta$ a consistent set of $\mathcal{L}$ -formulas, and
 $\Delta \not \vdash_{L} \phi$ Then there is a valuation $v$ s.t
 $v(\Delta ) = T$ and $v(\phi ) = F$*
 
 
 
-**Corollary 25**. *Suppose $\Delta$ a set of L-formulas and $\phi$ an
-L-formula. Then*
+**Corollary 25**. *Suppose $\Delta$ a set of $\mathcal{L}$ -formulas and $\phi$ an
+$\mathcal{L}$ -formula. Then*
 
 1.  *$\Delta$ consistent iff there is a valuation $v$ with
     $v(\Delta ) = T$, and*
@@ -331,7 +331,7 @@ L-formula. Then*
 
 
 **Theorem 26**. *(Compactness theorem for L)\
-Suppose $\Delta$ a set of L-formulas. The following are equivalent*
+Suppose $\Delta$ a set of $\mathcal{L}$ -formulas. The following are equivalent*
 
 1.  *There is a valuation $v$ s.t $v(\Delta ) = T$*
 
@@ -457,17 +457,17 @@ as follows*
 
     -   *Any atomic formula is a formula*
 
-    -   *If $\phi ,\psi$ are L-formulas, then
+    -   *If $\phi ,\psi$ are $\mathcal{L}$ -formulas, then
 
         $$(\neg \phi ),\ (\phi  \to \psi ),\ (\forall x)\phi$$
         
-        are L-formulas, where $x$ is any variable*
+        are $\mathcal{L}$ -formulas, where $x$ is any variable*
 
-    -   *Every L-formula arises in this way*
+    -   *Every $\mathcal{L}$ -formula arises in this way*
 
 
 
-**Definition 32**. *Suppose $\phi ,\psi$ are L-formulas*
+**Definition 32**. *Suppose $\phi ,\psi$ are $\mathcal{L}$ -formulas*
 
 -   *$(\exists x) \phi$ means $(\neg (\forall x)(\neg \phi ))$*
 
@@ -676,7 +676,7 @@ $v^\prime [\phi (x_1)] = T \iff v[\phi (t)] = T$*
 language. The formal system $K_{\mathcal{L} }$ has, as
 formulas, $\mathcal{L}$-formulas, and the following*
 
--   *Axioms. For L-formulas, $\phi ,\psi ,\chi$*
+-   *Axioms. For $\mathcal{L}$ -formulas, $\phi ,\psi ,\chi$*
 
 -   *$(\phi \to (\psi \to \phi ))$*
 
@@ -788,35 +788,35 @@ $K_{\mathcal{L} }$ is consistent*
 
 **Remark 55**. *If $\Sigma$ inconsistent, then
 
-$$\Sigma \vdash_{K_{\mathcal{L} } } \chi,\quad \forall \text{ L-formula } \chi$$
+$$\Sigma \vdash_{K_{\mathcal{L} } } \chi,\quad \forall \text{ $\mathcal{L}$ -formula } \chi$$
 
 
 
 **Proposition 56**. *Suppose $\Sigma$ a consistent set of closed
-L-formulas and $\phi$ a closed L-formula.*
+$\mathcal{L}$ -formulas and $\phi$ a closed $\mathcal{L}$ -formula.*
 
 1.  *Comparing 1.3.7, if
     $\Sigma \not \vdash_{K_{\mathcal{L}}} \phi$, then
     $\Sigma  \cup \{(\neg \phi )\}$ is consistent*
 
 2.  *Comparing the Lindenbaum lemma (1.3.8), there is a consistent set
-    $\Sigma^{\ast} \supseteq \Sigma$ of closed L-formulas such that for
-    every closed L-formula $\phi$, either
+    $\Sigma^{\ast} \supseteq \Sigma$ of closed $\mathcal{L}$ -formulas such that for
+    every closed $\mathcal{L}$ -formula $\phi$, either
     $\Sigma^{\ast} \vdash_{K_{\mathcal{L}}} \psi$ or
     $\Sigma^{\ast}  \vdash_{K_{\mathcal{L}}} (\neg \phi )$*
 
 
 
 **Theorem 57**. *(Model existence theorem)\
-Suppose $\Sigma$ a consistent set of closed L-formulas. Then there is a
+Suppose $\Sigma$ a consistent set of closed $\mathcal{L}$ -formulas. Then there is a
 countable L-structure $\mathcal{A}$ such that
 
 $$A \models \Sigma, \text{ i.e } A\models \sigma , \forall \sigma  \in \Sigma$$
 
 
 
-**Theorem 58**. *Let $\Sigma$ a set of closed L-formulas, $\phi$ a
-closed L-formula.\
+**Theorem 58**. *Let $\Sigma$ a set of closed $\mathcal{L}$ -formulas, $\phi$ a
+closed $\mathcal{L}$ -formula.\
 If every model $\Sigma$ is a model of $\phi$, then
 $\Sigma  \vdash_{K_{\mathcal{L}}} \phi$ . That is
 
@@ -827,7 +827,7 @@ $$\text{if } \mathcal{A} \models \Sigma, \text{ or } \mathcal{A} \models \sigma 
 
 **Theorem 59**. *(Gödel's completeness theorem for
 $K_{\mathcal{L} }$ )\
-If $\phi$ an L-formula with $\models \phi$, then $\phi$ a theorem of
+If $\phi$ an $\mathcal{L}$ -formula with $\models \phi$, then $\phi$ a theorem of
 $K_{\mathcal{L} }$ i.e.
 $\vdash_{K_{\mathcal{L}}} \phi$*
 
@@ -835,7 +835,7 @@ $\vdash_{K_{\mathcal{L}}} \phi$*
 
 **Corollary 60**. *(Compactness theorem for
 $K_{\mathcal{L} }$ )\
-Suppose $\Sigma$ a set of closed L-formulas and every finite subset of
+Suppose $\Sigma$ a set of closed $\mathcal{L}$ -formulas and every finite subset of
 $\Sigma$ has a model. Then $\Sigma$ has a model.*
 
 
