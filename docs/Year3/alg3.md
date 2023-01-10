@@ -16,7 +16,8 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ALG3-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Lecture notes**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
