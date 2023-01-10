@@ -808,8 +808,8 @@ $$\begin{aligned}
 ## Constructions of modules
 
 
-**Definition 99**. *Let $M_1, M_2, \ldots  , M_k$ be $R-$ modules. Direct
-sum is also an $R-$module 
+**Definition 99**. *Let $M_1, M_2, \ldots  , M_k$ be $R$- modules. Direct
+sum is also an $R$-module 
 
 $$M_1 \oplus M_2 \oplus \ldots \oplus M_{k}$$
 
@@ -818,32 +818,32 @@ by
 
 $$\begin{pmatrix} m_1, \ldots ,m_k \end{pmatrix} + \begin{pmatrix} m^\prime_1, \ldots ,m^\prime_k \end{pmatrix} = \begin{pmatrix} m_1 + m'_1, \ldots ,m_k + m'_k \end{pmatrix}$$
 
-And $R-$action given by
+And $R$-action given by
 
 $$r \cdot \begin{pmatrix} m_1, \ldots ,m_k \end{pmatrix} = \begin{pmatrix} rm_1, \ldots ,rm_k \end{pmatrix}$$
 
 
 
-**Definition 100**. *Let $M$ an $R-$module. A subset $N \subseteq M$ an
-$R-$submodule if it is a subgroup of $(M, + , 0_{M})$ and if
+**Definition 100**. *Let $M$ an $R$-module. A subset $N \subseteq M$ an
+$R$-submodule if it is a subgroup of $(M, + , 0_{M})$ and if
 $n \in N, r\in R \implies rn \in N$. Write $N \leq  M$*
 
 
 
-**Definition 101**. *Let $N  \leq M$ be an $R-$submodule. The quotient
-module $M / N$ the set of $N-$cosets in $(M, + , 0_{M}$ with $R-$action
+**Definition 101**. *Let $N  \leq M$ be an $R$-submodule. The quotient
+module $M / N$ the set of $N-$cosets in $(M, + , 0_{M}$ with $R$-action
 given by $$r \cdot (m + N) = (r \cdot  m) + N$$
 
 
 
-**Definition 102**. *Function $f: M \to N$ between $R-$ modules an
-$R-$ module homomorphism if it is a homomorphism of abelian groups and
+**Definition 102**. *Function $f: M \to N$ between $R$- modules an
+$R$- module homomorphism if it is a homomorphism of abelian groups and
 satisfies
 
 $$f(r \cdot  m) = r \cdot  f(m), \quad \forall r \in R, m \in M$$
 
 An isomorphism, is a bijective homomorphism.\
-Say 2 $R-$ modules are isomorphic if there exists isomorphism between
+Say 2 $R$- modules are isomorphic if there exists isomorphism between
 them.*
 
 
@@ -857,7 +857,7 @@ $$(r_1,r_2) \cdot  (m_1,m_2) := (r_1m_2, r_2 m_2)$$
 
 
 **Definition 104**. *$R$ a commutative ring, $S \subseteq R$ a
-multiplicative submonoid, $M$ an $R-$module.\
+multiplicative submonoid, $M$ an $R$-module.\
 **Localisation** of $M$ by $S$,
 
 $$S^{-1} M = \{(m,s) \mid m \in M, s\in S , (m,s) \sim (m^\prime ,s^\prime ) \text{ if } \exists t \in S \text{ s.t } t(ms^\prime - m^\prime  s) = 0  \}$$
@@ -870,4 +870,277 @@ $$(r,t) \cdot  (m,s) := (rm,ts)\ (r,t) \in S^{-1} R  , (m,s) \in S^{-1} M$$
 Given ideal $I \subseteq R$ localisation $S^{-1} I \subset S^{-1} R$ as
 an ideal is isomorphism as an $S^{-1} R$-module to the localisation of
 $I$ as a module.*
+
+## Basic theory of modules
+
+THEOREM NUMBERS AND DEFS TO BE AMENDED
+
+
+**Theorem 105**. *(1st isomorphism theorem)\
+Let $f: M \to N$ an $R$-module homomorphism, Then we have*
+
+-   *$\mathop{ker}(f) = \{m \in M: f(m) = 0\} \leq M$ (is an
+    R-submodule)*
+
+-   *$\mathop{im}(f) = \{f(m): m \in M\} \leq N$ (is an R-submodule)*
+
+*Then $M / \mathop{ker}(f) \cong \mathop{im}(f)$*
+
+
+
+**Definition 106**. *Let $f: M \to N$ a map of $R$-modules. We define
+the cokernel of $f$ as 
+
+$$\mathop{coker}(f) = N / \mathop{im}(f)$$*
+
+
+
+**Remark 107**. *For submodules, $A_1, \ldots  , A_{n}$
+
+$$A_1 + \ldots   + A_{n} = \{a_1 + \cdots + a_{n}: a_{i} \in A_{i}\} \leq  M \ \text{(an }R\text{-submodule)}$$
+
+
+
+
+**Theorem 108**. *(2nd isomorphism theorem)\
+Let $M$ an $R$-module, let $A,B \leq M$ then*
+
+-   *$A+ B := \{a+b: a\in A, b\in B\}$*
+
+-   *$A \cap  B \leq M$*
+
+*Then 
+
+$$\frac{A+B}{A} \cong \frac{B}{A \cap B}$$*
+
+
+
+**Theorem 109**. *(3rd isomorphism theorem)\
+Let $M$ an $R$-module, and $N \leq  L \leq  M$, Then:*
+
+-   *$L / N \leq M / N$*
+
+-   *$M / L \cong \frac{M / N}{L / N}$*
+
+
+
+**Definition 110**. *$M$ an $R$-module, $m \in M$, submodule generated
+by $m$ is 
+
+$$Rm:= \{r \cdot  m : r \in R\} \leq  M$$*
+
+
+
+**Definition 111**. *$M$ an $R$-module, $m \in M$, the annihilator of
+$m$ is 
+
+$$\mathop{Ann}(m) := \{r\in R: r \cdot  m = 0\}$$
+
+Since $\mathop{Ann}(m) = \mathop{ker}(\varphi )$ for the homomorphism
+
+$$\varphi \colon R \to M, r \mapsto r \cdot  m$$
+
+by 1st isomorphism theorem, we have $\mathop{Ann}(m) \leq  R, Rm \cong R / \mathop{Ann}(m)$*
+
+
+ example
+**Example 112**. *$R$ a PID, let $I \subseteq R$ an ideal. Then
+
+$$I \cong R$$
+
+as $R$-modules.*
+
+
+
+
+**Definition 113**. $R$-module, $M$ is finitely generated if
+$\exists m_1, \ldots  , m_{n}$ s.t 
+
+$$\begin{aligned}
+        M &= Rm_1 + Rm_2 + \ldots  + Rm_{n}\\
+        &= \{r_{1}m_1 + \ldots  + r_n m_n: r_1, \ldots , r_{n} \in R   \}
+    \end{aligned}$$
+
+
+
+**Lemma 114**. *$M$ an $R$-module, then $M$ is finitely generated $\iff$
+$\exists$ surjective $R$-module homomorphism $f: R^n \to M$ for some
+$n$*
+
+
+
+**Corollary 115**. *Let $N \leq  M$ be $R$-modules, if $M$ finitely
+generated, then $M / N$ is finitely generated.*
+
+
+## Free and projective modules
+
+
+**Definition 116**. *Given set $S$ define the free module over $S$ to be
+$R$-module
+
+$$R^{(S)} = \bigoplus_{i \in S} R = \{(x_{i})_{i \in S} \in \prod\limits_{s\in S} R : x_{i} = 0 \text{ for all but finitely many } i  \}$$
+
+with coordinate wise addition and $R$-action.\
+An $R$-module $M$ is free if $M \cong R^{(S)}$ for some $S$*
+
+
+
+**Proposition 117**. *The free module $R^{(S)}$ is finitely generated
+$\iff S$ finite*
+
+
+
+**Proposition 118**. *$F$ a field.If $M$ an $F-$module, then $M$ a free
+$F-$module*
+
+
+
+**Definition 119**. *$S \subseteq M$ generates $M$ freely if*
+
+1.  *$S$ generates $M$ as an $R$-module, i.e. $R \cdot  S = M$*
+
+2.  *Any set function $\psi : S \to N$, $N$ a $R$-module, extends to an
+    $R$-module map $\theta :M \to N$*
+
+
+
+**Definition 120**. *$R$-module $M$ is free, if it is freely generated
+by some subset $S \subseteq M$. A set $S$ with this property called a
+basis for $M$*
+
+
+
+**Proposition 121**. *The two definitions of free module are equivalent*
+
+
+
+**Lemma 122**. *Suppose $M, N$ are $R$-modules, s.t $M$ freely generated
+by $S \subseteq M$ and $N$ freely generated by $T \subseteq N$.\
+If $\exists$ bijection, $S \cong T$ then $M \cong N$ as $R$-modules*
+
+
+
+**Definition 123**. Let
+$m1, \ldots ,m_{n} \in M \implies \{m_1, \ldots ,m_{n} \}$ is linearly
+independent if 
+
+$$\sum_{i=1}^{n} r_{i}m_{i}=0$$
+
+$\implies r_1 = r_2 = \ldots = r_{n} = 0$
+
+
+
+**Proposition 124**. *For a subset
+$S = \{m1, \ldots ,m_{n} \}\subseteq M$, following are equivalent;*
+
+(i) *$S$ generates $M$ freely, equivalent to $M \cong R^n$*
+
+(ii) *$S$ generates $M$ and $S$ is linearly independent*
+
+(iii) *Every element of $M$ is uniquely expressible as
+
+$$r_1 m_1 + r_2 m_2 + \ldots r_{n}m_{n}$$
+
+for some $r_{i}\in R$*
+
+
+
+**Definition 125**. *$M$ a finitely generated $R$-module. We have show
+that $\exists \varphi : R^n \to M$ a surjective $R$-module homomorphism,
+for some $n$.\
+Call the $R$-submodule $ker(\varphi ) \leq  R^n$ the *relation module*
+for those generators*
+
+
+
+**Definition 126**. *A finitely generated $R$-module $M$ is *finitely
+presented* if there exists a surjective homomorphism $f: R^n \to M$ such
+that $ker(f)$ a finitely generated $R$-module*
+
+
+
+**Proposition 127**. *Let $\varphi :R^m \to R^n$ an $R$-module
+homomorphism\
+Let $e_1, \ldots , e_{m} \in R^m$ and $v_1, \ldots ,v_{n}\in R^n$ the
+standard basis elements\
+Let $\varphi (e_{j}) = \sum_{i=1}^{n} A_{ij} e_{i}$ for some
+$A_{ij} \in R$ and let $A = (A_{ij} ) \in M_{m\times n}(R)$ the
+corresponding $n \times m$ matrix\
+Then $\varphi (r) = A \cdot  r$*
+
+
+
+**Definition 128**. *Say a ring $R$ has the invariant basis number
+property (IBN) if $R^n \cong R^m$ are isomorphic as $R$-modules
+$\iff n = m$*
+
+
+
+**Proposition 129**. *Non-trivial commutative rings have the invariant
+basis number property*
+
+
+
+**Definition 130**. *An $R$-module $M$ is *stably free* if there exists
+$n$ such that $M \oplus R^n$ is a free module\
+An $R$-module $M$ is projective if there exists an $R$-module $N$ such
+that $M \oplus N$ is a free $R$-module*
+
+
+## Noetherian modules
+
+
+**Theorem 131**. *An $R$-module $M$ is Noetherian $\iff$ every
+$R$-submodule of $M$ is finitely generated.*
+
+
+
+**Corollary 132**. *R a PID $\implies$ R is Noetherian*
+
+
+
+**Theorem 133**. *Any finitely generated module over a Noetherian ring
+is Noetherian*
+
+
+
+**Proposition 134**. *$M$ a Noetherian $R$-module, then $\forall$
+submodules $N \leq  M$, both $N$ and $M / N$ are Noetherian*
+
+
+
+**Proposition 135**. *Let $M$ an $R$-module, let $N$ a Noetherian
+submodule of $M$, and suppose that $M / N$ is Noetherian. Then $M$is
+Noetherian*
+
+
+
+**Corollary 136**. *If $M,N$ are Noetherian $R$-modules, then so is
+$M \oplus N$*
+
+
+
+**Corollary 137**. *If $R$ is Noetherian, then any free $R$-module of
+finite rank is Noetherian*
+
+
+
+**Corollary 138**. *Let $R$ a Noetherian ring. Then every finitely
+generated $R$-module is finitely presented*
+
+
+## Modules over principal ideal domains
+
+
+**Theorem 139**. *(Classification of finitely generated modules over a
+PID)\
+Let $R$ a PID. If $M$ finitely generated $R$-module, then
+$\exists n,r \geq  0$ and elements $d_1, \ldots ,d_{r}\in R$ such that
+
+$$M \cong R^n \oplus R / (d_1) \oplus \ldots \oplus R / (d_{r})$$
+
+We can assume that $d_1 \mid d_2 \mid  \ldots \mid d_{r}$\
+Can be shown that is we choose the $d_{i}$ to satisfy these conditions,
+then the $n$ and $d_{i}$ are unique.
 
