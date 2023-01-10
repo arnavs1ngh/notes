@@ -16,7 +16,8 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AP-LecNote.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -1713,8 +1714,7 @@ $$P(J_\infty < \infty ) > 0$$
 
 
 
-**Theorem 117**. *Let $N$ be a birth process started from
-$k \in \mathbb{N}_0$, with rates $\lambda_{k},\lambda_{k+1}, \ldots > 0$
+**Theorem 117**. Let $N$ be a birth process started from $k \in \mathbb{N}_0$, with rates $\lambda_{k},\lambda_{k+1}, \ldots > 0 $
 Then: 
 
 $$\text{ If } \sum_{i=k}^{\infty} \frac{1}{\lambda_{i}} 
@@ -1839,7 +1839,7 @@ $B = \{B_{t}\}_{t \geq  0}$ a **standard Brownian motion** if*
 
 
 
-**Definition 124**. *Let $B = \{B_{t}\}_{t \geq 0}$ denote a standard
+**Definition 124**.*Let $B = \{B_{t}\}_{t \geq 0}$ denote a standard
 Brownian motion.\
 Stochastic process $Y = \{Y_{t}\}_{t \geq  0}$ defined by
 
@@ -1873,7 +1873,7 @@ where $\{W_{t}^x\}$ is a Brownian motion started at $x$*
 ## Symmetries and scaling laws
 
 
-**Proposition 126**. *Let $\{B_{t}\}_{t \geq  0}$ a standard Brownian
+**Proposition 126**. Let $\{B_{t}\}_{t \geq  0}$ a standard Brownian
 motion. Then each of the following processes is also a standard Brownian
 motion
 
