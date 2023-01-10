@@ -1240,3 +1240,725 @@ referred to as the **net profit condition***
 ## The coalescent process
 
 
+### Problem
+
+-   Given collection of $n$ individuals - observe a DNA sequence from
+    the individual
+
+-   A DNA sequence a collection of letters; A,C,T and G - for simplicity
+    take that only one letter observed
+
+-   Coalescent process provides genealogical tree representation of this
+    data. A tree-like structure representing the history of the
+    individuals backward in time.\
+    Individuals coalesce until we have only individual - the most recent
+    common ancestor.
+
+![A Coalescent Graph](figs/ap/cp.jpg)
+
+### The Process
+
+-   At start of process we have $n \geq 2$ individuals (all of the same
+    DNA base)
+
+-   Each pair of individuals coalesce according to an (independent)
+    Poisson process of rate $1$
+
+-   We have $\begin{pmatrix}
+             n \\
+             2 \\
+        \end{pmatrix}$ pairs - time to first coalescent event is
+    exponential random variable of rate $\begin{pmatrix}
+             n \\
+             2 \\
+        \end{pmatrix}$ - since we consider the minimum of
+    $\begin{pmatrix}
+             n \\
+             2 \\
+        \end{pmatrix}$ independent $Exp(1)$-distributed random
+    variables.
+
+-   At first event - 2 individuals picked uniformly at random and
+    combined
+
+-   Continue this until there is only one individual - the most recent
+    common ancestor
+
+-   So we have $n-1$ coalescent events
+
+-   Model, assumes all individuals have the same DNA base, so we require
+    another mechanism - a mutation process
+
+-   In this process the number of individuals decrease - our first
+    example of a death process.
+
+### Time to most recent common ancestor
+
+Time to most recent common ancestor estimated i.e. the height of the
+tree, estimated by 
+
+$$E    \left( \sum_{k=1}^{n-1} H_{k} \right), \text{ for } n \in \mathbb{N}, n \geq  2$$
+
+Where we have that $H_{k}$ the time to $k^{th}$ coalescence
+
+$$H_{k} \sim \text{Exp}
+    \left(  \begin{pmatrix}
+         n - (k-1) \\
+         2 \\
+    \end{pmatrix} \right) \implies E(H_{k}) = 
+    \left( \begin{pmatrix}
+         n-(k-1) \\
+         2 \\
+    \end{pmatrix} \right)^{-1}$$
+
+So we have that
+
+$$\begin{aligned}
+    E( \sum_{k=1}^{n-1} H_{k}) &= \sum_{k=1}^{n-1} E(H_{k})\\
+    &= \sum_{k=1}^{n-1} \begin{pmatrix}
+         (n-k+1)! \\
+         (n-k-1)! 2! \\
+    \end{pmatrix}^{-1} = \sum_{k=1}^{n-1}  \frac{2(n-k-1)!}{(n-k+1)!}\\
+    &= \sum_{k=1}^{n-1} \frac{2}{(n-k+1)(n-k)} = \sum_{k=1}^{n-1} \frac{2}{k(k+1)}\\
+    &= 2
+    \left( 1 - \frac{1}{n} \right) \end{aligned}$$
+
+Further, since $H_{n-1} \sim \text{Exp}
+\left(  
+\begin{pmatrix}
+    2 \\
+     2 \\
+\end{pmatrix} \right)$ 
+
+$$E(H_{n-1} ) = 1$$
+
+# Continuous-time Markov Chains
+
+## Some definitions
+
+
+**Definition 99**. *A continuous-time process
+$\{X_{t}\}_{t \in [0,\infty )}$ satisfies the **Markov property** if
+
+$$P(X_{t_{n}} = j \mid X_{t_1} = i_1, \ldots , X_{t_{n-1} } = i_{n-1}  ) = P(X_{t_n} = j \mid X_{t_{n-1} } = i_{n-1} )$$
+
+for all $j, i_1, \ldots , i_{n-1} \in E$ and for any sequence
+$0 \leq t_1 < \ldots < t_{n} < \infty$ of times (with $n \in \mathbb{N}$
+)*
+
+
+
+**Definition 100**. *The **transition probability** $p_{ij} (s,t)$ is,
+for $s \leq  t, i,j \in E$ 
+
+$$p_{ij} (s,t) = P(X_{t}= j \mid  X_{s}=i)$$
+
+also, the chain is **homogeneous** if 
+
+$$p_{ij} (s,t) = p_{ij} (0,t-s)$$
+
+Write $p_{ij} (t-s) = p_{ij} (s,t)$ in this case\
+Let $\mathbf{P}_{t}  = (p_{ij} (t))$*
+
+
+
+**Theorem 101**. *The family $\{\mathbf{P}_{t} : t \geq  0\}$ is a
+**stochastic semigroup**; that is, it satisfies*
+
+1.  *$\mathbf{P}_0 = I_{K\times K}$*
+
+2.  *$\mathbf{P}_{t}$ is stochastic - non-negative entries with rows
+    summing to $1$*
+
+3.  *The Chapman-Kolmogorov equations hold:
+
+    $$\mathbf{P}_{s+t} = \mathbf{P}_{s}\mathbf{P}_{t},\quad \forall s,t \geq  0$$
+
+
+
+**Definition 102**. *The semigroup $\{\mathbf{P}_{t}\}$ is called
+**standard** if
+
+$$\lim\limits_{t \downarrow 0}   \mathbf{P}_{t} = \mathbf{I}\ (= \mathbf{P}_0 )$$
+
+where $\mathbf{I} = \mathbf{I}_{K\times K}$\
+A semigroup standard $\iff$ its elements $p_{ij} (t)$ are continuous
+functions in $t$*
+
+
+## Holding times and alarm clocks
+
+### Holding times
+
+Suppose that we have $\{X_{t}\}_{t\geq 0}$ a continuous-time homogeneous
+Markov Chain, suppose that $t \geq 0$ and for, $i \in E$, we have
+$X_{t}=i$. Given $X_{t}=i$, define
+
+$$H_{\mid i} = \inf \{s \geq  0 : X_{t+s} \neq i\}$$ 
+to be the **holding
+time at state** $i$ , that is the length of time that a continuous-time
+Markov chain started in state $i$ stays in state $i$ before
+transitioning to a new state.\
+Note that holding times does not depend on $t$ since we work under
+time-homogeneity assumption
+
+$$\inf \{s \geq 0: X_{t+s} \neq  i\}\mid X_{t} = i \stackrel{\text{def.}}{=} = \inf \{s \geq  0: X_{s} \neq i\}\mid X_0 =i$$
+
+
+**Theorem 103**. *The holding times $H_{\mid i}$, for $i \in E$ follows
+an exponential distribution*
+
+
+### Describing the evolution of a Markov Chain using exponential holding times
+
+Can describe the evolution of continuous-time Markov chains by
+specifying **transition rates** between states and using the concept of
+**exponential alarm clocks**
+
+-   $\forall i \in E$ denote $n_{i}$- number of states which can be
+    reached from state $i$
+
+-   Associate $n_{i}$ independent, exponential alarm clocks with rates
+    $q_{ij}$ provided $j$ can be reached from state $i$
+
+-   When chain first visits state $i$, all $n_{i}$ exponential alarm
+    clocks are set simultaneously
+
+-   First alarm clock which rings, determines which state the chain
+    transitions to.
+
+-   As soon as state $j$ has been reached - set $n_{j}$ independent
+    exponential alarm clocks associated to $j$and repeat the process
+
+    $$q_{ij} \text{ - \textbf{transition rates} }$$
+
+-   Let $i \neq  j$, with $q_{ij} > 0$ denote the transition rates when
+    state $j$ can be reached from state $i$
+
+-   Let $i \neq  j$, set $q_{ij} = 0$ if $j$ can't be reached from $i$
+
+-   Also set $q_{ii} = 0, \forall  i \in E$
+
+-   The minimum/infimum of the $n_{i}$ exponential alarm clocks of state
+    $i$,follows an exponential distribution with rate
+
+    $$q_{i} = \sum_{j\in E} q_{ij}$$
+
+-   $P(i \to j) = P(q_{i} = q_{ij} ) = \frac{q_{ij} }{q_{i}}$
+
+-   Hence, the transition probabilities of embedded chain $Z$ given by
+
+    $$p_{ij}^{Z} = \frac{q_{ij} }{q_{i}}$$ 
+    
+    We assumed above that $0 < q_{i} < \infty$. In case that $q_{i} = 0$ then we have
+    $p_{ii}^{Z} = 1$
+
+## The generator
+
+
+**Definition 104**. *The generator $\mathbf{G} = (g_{ij} )_{i,j \in E}$
+of the Markov chain with stochastic semigroup $\mathbf{P}_{t}$ is
+defined as the $card(E) \times card(E)$ matrix given by
+
+$$\mathbf{G} := \lim\limits_{\delta  \downarrow 0} \frac{1}{\delta }[\mathbf{P}_\delta - \mathbf{I} ] = \lim\limits_{\delta  \downarrow 0} \frac{1}{\delta }[\mathbf{P} -\mathbf{P}_0]$$
+
+That is, $\mathbf{P}_{t}$ differentiable at $t =0$*
+
+
+### Transition probabilities of the associated jump chain
+
+Can now derive the transition probabilities of the embedded/jump chain -
+expressing them in terms of the generator\
+if $X_{t} = i$- stay at $i$ for exponentially distributed time with rate
+$-g_{ii} = q_{i}$ and then moves to other state $j$\
+Probability that the chain jumps to $j \neq  i$ is $-g_{ij}/ g_{ii}$\
+i.e for $i \neq  j$,
+
+$$p_{ij}^{Z} = -\frac{g_{ij}}{g_{ii}} = \frac{q_{ij} }{q_{i}}$$
+
+Equivalent to
+
+$$q_{ij} = q_{i}p_{ij}^{Z}$$
+
+## The forward and backward equations
+
+
+**Theorem 105**. *Subject to regularity conditions, a continuous-time
+Markov chain with stochastic semigroup $\{\mathbf{P}_{t}\}$ and
+generator $\mathbf{G}$ satisfies the **Kolmogorov forward equation**
+
+$$\mathbf{P}^\prime_{t} = \mathbf{P}_{t}\mathbf{G}$$
+
+and the **Kolmogorov backward equation**
+
+$$\mathbf{P}'_{t}= \mathbf{G} \mathbf{P}_{t},\quad \forall t \geq 0$$
+
+
+### Matrix exponentials
+
+## Irreducibility, stationarity and limiting distribution
+
+
+**Definition 106**. *Chains is **irreducible** if for any $i,j \in E$ we
+have $p_{ij} (t) > 0,$ for some $t$*
+
+
+
+**Theorem 107**. *If $p_{ij} (t) > 0, \text{ for some } t > 0$ then
+$p_{ij} (t) > 0,\ \forall t > 0$*
+
+
+
+**Definition 108**. *A distribution $\mathbf{\pi}$ is the **limiting
+distribution** of a continuous-time Markov chain if, for all states
+$i,j \in E$ we have 
+
+$$\lim\limits_{t \to \infty} p_{ij} (t) = \pi_{j}$$
+
+
+
+**Definition 109**. *A distribution $\mathbf{\pi}$ is a stationary
+distribution if $\mathbf{\pi = \pi P_{t}} \ \forall  t \geq  0$*
+
+
+
+**Theorem 110**. *Subject to regularity conditions, we have
+$\mathbf{\pi = \pi P_{t}}, \forall t \geq  0 \iff \mathbf{\pi G} = 0$*
+
+
+
+**Theorem 111**. *Let $X$ an irreducible Markov chain with a standard
+semigroup $\{\mathbf{P}_{t}\}$ of transition probabilities*
+
+1.  *If $\exists$ stationary distribution $\mathbf{\pi}$ then it is
+    unique and $\forall i,j \in E$
+
+    $$\lim\limits_{t \to +\infty } p_{ij} (t) = \pi_{j}$$
+
+2.  *If there is no stationary distribution then
+
+    $$\lim\limits_{t \to +\infty} p_{ij}(t) = 0 \ \forall  i,j \in E$$
+
+
+## Jump chain and explosion
+
+Subject to regularity conditions, can construct the jump chain $Z$ from
+a continuous time Markov chain $X$ as follows
+
+-   $J_{n}$ denote the $n$th change in value of the chain $X$ and set
+    $J_0 = 0$
+
+-   Values $Z_{n} = X_{J_{n}+}$ of $X$ form a discrete-time Markov Chain
+    $Z = \{Z_{n}\}_{n \in \mathbb{N}_0}$
+
+-   Transition matrix of $Z$ denoted by $\mathbf{P}^Z$ and satisfies
+
+    -   $p_{ij}^{Z} = g_{ij} / g_{i}$ if $g_{i} := - g_{ii} > 0$
+
+    -   if $g_{i} = 0$, then the chain gets absorbed in state $i$ once
+        it gets there for the first time.
+
+-   If $Z_{n} = j$ then the holding time
+    $H_{n+1} = J_{n+1} -J_{n} = H_{\mid j}$ has exponential distribution
+    with parameter $g_{j}$
+
+-   The chain $Z$ is called the **jump chain of** $X$
+
+Consider the converse - a discrete-time Markov chain $Z$ taking values
+in $E$ - Try and find a continuous-time Markov chain $X$ having $Z$ as
+its jump chain - Many such $X$ exist
+
+-   Let $\mathbf{P}^Z$ denote transition matrix of the discrete-time
+    Markov chain $Z$ taking values in $E$\
+    Assume $p_{ii}^{Z} = 0,\ \forall  i \in E$
+
+-   $i \in E$ let $g_{i}$ denote non-negative constants. Define
+
+    $$g_{ij} = \begin{cases}
+                g_{i}p_{ij}^{Z} , &\text{ if } i \neq j;\\
+                - g_{i} , &\text{ if }  i = j.
+            \end{cases}$$ 
+
+Construction of continuous-time Markov chain $X$ done as follows
+
+-   Set $X_0 = Z_0$
+
+-   After holding time $H_1 = H_{\mid Z_0} \sim Exp(g_{Z_0})$ the
+    process jumps to state $Z_1$
+
+-   After holding time $H_2 = H_{\mid Z_1} \sim Exp(gZ_1)$ the process
+    jumps to state $Z_3$
+
+-   Formally: conditionally on the values $Z_{n}$ of chain $Z$ let
+    $H_1, H_2, \ldots$ be independent random variables with exponential
+    distribution $H_{i} \sim Exp(gZ_{i-1} )$, $i = 1,2, \ldots$. Set
+    $J_{n} = H_1 + \ldots + H_{n}$
+
+-   Then define 
+
+    $$X_{t} = 
+            \begin{cases}
+                Z_{n}, &\text{ if } J_{n} \leq  t \leq  J_{n+1} \text{ for some } n  ;\\
+                \infty , &\text{ otherwise i.e. if } J_\infty \leq t  .
+            \end{cases}$$
+
+-   Note that the special state $\infty$ added in case the chain
+    explodes Recall that
+    $J_\infty = \lim\limits_{n \to \infty} J_{n}\cdot J_\infty$ called
+    the **explosion time** say chain **explodes** if
+
+    $$P(J_\infty  < \infty ) > 0$$ 
+    
+    Can show that
+
+-   $X$ a continuous-time Markov chain with state space
+    $E \cup  \{\infty \}$
+
+-   Matrix $G$ is the generator of $X$
+
+-   $Z$ is the jump chain of $X$
+
+
+**Theorem 112**. *The cain $X$ constructed above does not explodes if
+any of the following conditions hold*
+
+1.  *State space $E$ is finite*
+
+2.  *$\sup_{i \in E} g_{i} < \infty$*
+
+3.  *$X_0 = i$ where $i$ a recurrent state for the jump chain $Z$*
+
+
+## Birth processes
+
+
+**Definition 113**. *A birth process with intensities
+$\lambda_0, \lambda_1, \ldots \geq 0$ a stochastic process
+$\{N_{t}\}_{t \geq  0}$ with values in $\mathbb{N}_0$, such that*
+
+1.  *Non-decreasing process: $N_0 \geq  0$; if $s < t$ then
+    $N_{s}\leq  N_{t}$*
+
+2.  *There is a 'single arrival' i.e. the infinitesimal transition
+    probabilities are for $t \geq  0, \delta > 0, n ,m \in \mathbb{N}_0$
+
+    $$P(N_{t+\delta } = n + m \mid N_{t} = n ) = 
+                \begin{cases}
+                    1 - \lambda_{n}\delta + o(\delta ), &\text{ if } m = 0 ;\\
+                    \lambda_{n}\delta + o(\delta ), &\text{ if }  m =1 ;\\
+                    o(\delta ) &\text{ if } m > 1
+                \end{cases}$$
+
+3.  *Conditionally independent increments: Let $s < t$ then the
+    conditional on the values of $N_{s}$, the increment $N_{t}-N_{s}$ is
+    independent of all arrivals prior to $s$*
+
+*Note that by conditionally independent increments, mean that for
+$0 \leq  s < t$, conditional on the value of $N_{s}$, the increment
+$N_{t} - N_{s}$ independent of all arrivals prior to $s$ i.e. for
+$k,l , x(r) \in \{0,1,2, \ldots  \}$ for $0 \leq  r<s$ we have
+
+$$P(N_{t} - N_{s} = k \mid N_{s} = l, N_{r} = x(r) \text{ for } 0 \leq  r< s) = P(N_{t}-N_{s} = k \mid N_{s}= l)$$
+
+Birth process a continuous-time Markov chain\
+A Poisson process a special case of a birth process (with
+$\lambda_{n} = \lambda , \forall n \in \mathbb{N}_0$)\
+With the general case, birth rates depend on the current state of the
+process.*
+
+
+### The forward and backward equations
+
+Let $\{N_{t}\}$ a birth process with positive intensities
+$\lambda_0 ,\ldots$\, With transition probabilities
+
+$$p_{ij} (t) = P(N_{t+s}  = j \mid N_{s}=  i ) = P(N_{t}= j \mid  N_0 = i), \quad \text{for } i,j \in E$$
+
+
+**Theorem 114**. *For $i,j \in E, i < j, t \geq 0$ the forward equations
+of a birth process are given by
+
+$$\frac{dp_{ij}(t)}{dt} = -\lambda_{j}p_{ij} (t) + \lambda_{j-1} p_{i,j-1} (t)$$
+
+with $\lambda_{-1} = 0,$ and the backward equation given by
+
+$$\frac{dp_{ij} (t)}{dt} = -\lambda_{i}p_{ij}(t) + \lambda_{i}+p_{i+1,j} (t)$$
+
+Where for both, boundary condition given by $p_{ij} (0) = \delta_{ij}$ -
+$\delta$ the Kronecker delta*
+
+
+
+**Theorem 115**. *Let $\{N_{t}\}_{t\geq 0}$ a birth process of positive
+intensities $\lambda_0, \ldots$ Then the forward equations have unique
+solutions which satisfies the backward equations*
+
+
+### Explosion of a birth process
+
+
+**Definition 116**. *Let $J_0, J_1, \ldots$ denote the jump times of a
+birth process $N$
+
+$$J_0 = 0 \quad J_{n+1} = \inf \{t \geq  J_{n}: N_{t}\neq N_{J_{n}} \}, \quad n \in \mathbb{N}_0$$
+
+Further let $H_1,H_2, \ldots$ denote the corresponding holding times. As
+before, we write
+
+$$J_\infty = \lim\limits_{n \to \infty} J_{n}= \sum_{i=1}^{\infty} H_{i}$$
+
+Then we say that explosion of the birth process $N$ is possible if
+
+$$P(J_\infty < \infty ) > 0$$
+
+
+
+**Theorem 117**. *Let $N$ be a birth process started from
+$k \in \mathbb{N}_0$, with rates $\lambda_{k},\lambda_{k+1}, \ldots > 0$
+Then: 
+
+$$\text{ If } \sum_{i=k}^{\infty} \frac{1}{\lambda_{i}} 
+        \begin{cases}
+            < \infty , &\text{ Then } P(J_\infty  < \infty ) = 1 \text{ (Explosion occurs with probability 1)}  ;\\
+             = \infty , &\text{ Then } P(J_\infty = \infty ) = 1 \text{ (Probability explosion occurs is 0)} .
+        \end{cases}$$
+
+
+## Birth-death processes
+
+
+**Definition 118**. ***Birth-death process**\
+Suppose we are given the following process $\{X_{t}\}_{t \geq 0}$*
+
+1.  *$\{X_{t}\}_{t \geq 0}$ is Markov chain on $E = \mathbb{N}_0$*
+
+2.  *The infinitesimal transition probabilities are (for
+    $t \geq  0, \delta > 0, n \in \mathbb{N}_0, m\in \mathbb{Z}$ )
+
+    $$P(X_{t+\delta } = n+m \mid X_{t}=n ) =\begin{cases}
+                    1 - (\lambda_{n}+ \mu_{n})\delta  + o(\delta ), &\text{ if } m = 0 ;\\
+                    \lambda_{n} + o(\delta ), &\text{ if }  m = 1.\\
+                    \mu_{n}\delta + o(\delta ), & \text{ if } m = -1\\
+                    o(\delta ), & \text{ if } \left\vert m \right\vert >1
+                \end{cases}$$
+
+
+3.  *The birth rates $\lambda_0, \lambda_1, \ldots$ and the death rates
+    $\mu_0, \mu_1, \ldots$ satisfy
+
+    $$\lambda_{i}\geq  0, \quad \mu_{i} \geq  0 \quad \mu_0 = 0$$
+
+
+*We have the generator given by 
+
+$$\begin{pmatrix}
+            -\lambda_0 & \lambda_0 & 0 & 0 & 0 &  \ldots   \\
+            \mu_1 & -(\lambda_1 + \mu_1) & \lambda_1 & 0 & 0 &  \ldots   \\
+            0 & \mu_2 & -(\lambda_2 + \mu_2) & \lambda_2 & 0 &  \ldots   \\
+            0 & 0 & \mu_3 & -(\lambda_3 + \mu_3) & \lambda_3 & \ldots     \\
+            \vdots & \vdots & \vdots & \vdots & \vdots &  \ddots\\
+        \end{pmatrix}$$
+
+
+*We take a look at the asymptotic behaviour of the process.\
+Suppose that $\mu_{i}, \lambda_{i} > 0, \forall i$, where the rates make
+sense. Then using the claim $\pi G = 0$ 
+
+$$\begin{aligned}
+    -\lambda_0\pi_0 + \mu_1 \pi_1 &= 0\\
+    \lambda_{n-1} \pi_{n-1} - (\lambda_{n}+ \mu_{n})\pi_{n} + \mu_{n+1}\pi_{n+1} &= 0, \quad n \geq 1\end{aligned}$$
+
+
+
+# Brownian Motion
+
+## From random walk to Brownian motion
+
+### Modes of convergence in distribution, Slutsky's theorem and the CLT
+
+
+**Definition 119**. *(Convergence in probability)\
+A sequence of random variables $X_1, X_2, \ldots$ converges in
+probability to $X$ written $X_{n} \xrightarrow{P} X$ if for each
+$\epsilon >0$
+
+$$\lim\limits_{n \to \infty} P(\{\omega : \left\vert  X_{n}(\omega ) - X(\omega ) \right\vert \geq  \epsilon \}) = \lim\limits_{n \to \infty} P(\left\vert X_{n}-X \right\vert \geq  \epsilon) = 0$$
+
+
+
+
+**Definition 120**. *(Convergence in distribution)\
+Let the cumulative distribution function of $X_{n}$ and $X$ be denoted
+by $F_{n}$ and $F$ respectively\
+Say $X_{n}$ converges in distribution/weakly to $X$, written
+$X_{n} \xrightarrow{D}X$ if
+
+$$\lim\limits_{n \to \infty} F_{n}(x) = F(x), \quad \text{for every continuity point } x \text{of} F(x)$$
+
+
+
+
+**Theorem 121**. *(Slutsky's theorem)\
+Suppose that
+$X_{n}\xrightarrow[]{d} X, A_{n}\xrightarrow[]{P}a, B_{n}\xrightarrow[]{P}b$,
+where $a,b$ are (deterministic) constants. Then
+
+$$A_{n}X_{n}+ B_{n} \xrightarrow[]{d} aX + b$$
+
+
+
+
+**Theorem 122**. *(Central limit theorem)\
+Let $Z_1,Z_2, \ldots$ a sequence of i.i.d random variables of finite
+mean $\mu$ and finite variance $\sigma^{2}$. Then the distribution of
+
+$$\frac{1}{\sigma \sqrt{n} } 
+        \left( \sum_{i=1}^{n} Z_{i} - n \mu  \right)$$ 
+        
+tends to standard normal distribution as $n \to \infty$*
+
+
+## Brownian Motion
+
+
+**Definition 123**. *A real-valued stochastic process
+$B = \{B_{t}\}_{t \geq  0}$ a **standard Brownian motion** if*
+
+1.  *$B_0 = 0$ almost surely*
+
+2.  *$B$ has independent increments*
+
+3.  *$B$ has stationary increments*
+
+4.  *The increments are Gaussian, for $0 \leq  s < t$
+
+    $$B_{t} - B_{s} \sim N(0,(t-s));$$
+
+5.  *The sample paths are almost surely continuous i.e. the function
+    $t \mapsto B_{t}$ almost surely continuous in $t$*
+
+
+
+**Definition 124**. *Let $B = \{B_{t}\}_{t \geq 0}$ denote a standard
+Brownian motion.\
+Stochastic process $Y = \{Y_{t}\}_{t \geq  0}$ defined by
+
+$$Y_{t} = \sigma B_{t} + \mu_{t}, \forall t \geq  0$$
+ 
+is called a **Brownian motion with drift parameter** $\mu \in \mathbb{R}$ and
+**variance parameter** $\sigma^{2} , \sigma  > 0$\
+Note for
+$0 \leq  s < t, Y_{t} - Y_{s} \sim N(\mu (t-s), \sigma^{2} (t-s))$*
+
+
+## Finite dimensional distributions and transition densities
+
+
+**Theorem 125**. *Let $f\colon \mathbb{R} \to \mathbb{R}$ a continuous
+function satisfying some additional regularity conditions. Then the
+unique (continuous) solution $u_{t}(x)$ to the initial value problem
+
+$$\begin{aligned}
+        \frac{\partial }{\partial t} u_{t}(x) &= \frac{1}{2} \frac{\partial^{2} }{\partial x^{2} }u_{t}(x)\\
+        u_0(x) &= f(x)
+    \end{aligned}$$
+
+is given by
+
+$$u_{t}(x) = E[f(W_t^{x})] = \int_{-\infty}^{\infty} p_t (x,y) f(y) \,\mathrm{d}y$$
+
+where $\{W_{t}^x\}$ is a Brownian motion started at $x$*
+
+
+## Symmetries and scaling laws
+
+
+**Proposition 126**. *Let $\{B_{t}\}_{t \geq  0}$ a standard Brownian
+motion. Then each of the following processes is also a standard Brownian
+motion
+
+$\{-B_{t}\}_{t \geq  0}$          |                   | Reflection                              
+-------------------------------------|-------------------|-----------------------------------------
+ $\{B_{t+s} - B_{s}\}_{t \geq  0}$ | for $s \geq  0$ | Translation                             
+ $\{aB_{t/ a^{2} }\}_{t \geq  0}$  | for $a \geq  0$ | Rescaling (**Brownian scaling property**) 
+ $\{tB_{1 / t}\}_{t \geq  0}$      |                   | Inversion 
+
+### Some remarks
+
+First look at maximum and minimum processes 
+
+$$\begin{aligned}
+    M_t^+ &:= \mathop{\max} \{B_{s} : 0 \leq s \leq t\}\\
+    M_t^- &:= \mathop{\min} \{B_{s} : 0 \leq s \leq t\}\\\end{aligned}$$
+
+These are well-defined, because the Brownian motion has continuous
+paths, and continuous functions always attain their maximal and minimal
+values on compact intervals\
+Observe that if the path $B_{t}$ is replaced by its reflection $-B_{t}$
+then the maximum and the minimum are interchanged and negated\
+Since $-B_{t}$ a Brownian motion, follows that $M_t^+, -M_t^-$ have same
+distribution 
+
+$$M_t^+ \stackrel{d}{=} -M_t^-$$
+
+As a first example, consider implications of Brownian scaling property
+for the distributions of the maximum random variables $M_t^+$ . Fix
+$a > 0$ , and define
+
+ $$\begin{aligned}
+    B_t^{\ast} &:= a B_{t/a^{2} } \\
+    M_t^{+,\ast} &:= \mathop{\max}_{0 \leq s \leq t}B_s^{\ast} \\
+    & = a M_{t/a^{2}}^{+} \end{aligned}$$ 
+    
+By Brownian scaling property
+$B_t^{\ast}$ is a standard Brownian motion, and so random variable
+$M_t^{+ \ast}$ has same distribution as $M_{t^+}$. Therefore
+
+$$M_t^+ \stackrel{d}{=} a M_{t/a^{2} }^+$$
+
+Can be shown, above implies
+that the sample paths of a Brownian motion are with probability one,
+nowhere differentiable
+
+## The reflection property and first-passage times
+
+
+**Proposition 127**. *Let $x > 0$ then
+
+$$P(M_t^+ \geq  x) = 2P(B_{t} > x) = 2 -\Phi (x / \sqrt{t} )$$
+
+Where $\Phi$ the normal c.d.f*
+
+
+## A model for asset prices
+
+A model for describing movement of an asset price
+$\{S_{t}\}_{0 \leq  t \leq T}, S_{t} \in \mathbb{R}^+$ is as follows
+
+$$S_{t} = S_0 \exp \{ (\mu -\sigma^{2}/2)t + \sigma B_{t}\}$$
+
+where $S_0$ the initial value of the underlying stock. $\mu \in \mathbb{R}$ is
+the risk-free interest rate and $\sigma$ the volatitily (the
+instantaneous standard deviation of the stock)\
+This process known as **geometric Brownian motion**.\
+It is well-known that this model does not fit the stylized features of
+financial returns data.\
+Real financial data does not follow the dynamic above; because in
+practice volatility of asset prices is typically not constant, and often
+responds to a variety of market conditions\
+We typically observe time-varying volatility clusters.\
+This has yielded much academic and industrial research into cases (which
+goes back to at least the late 1970s) where $\sigma$ is a stochastic
+process, e.g: 
+
+$$\begin{aligned}
+    S_{t} &= S_o \exp 
+    \left\{ 
+        \left( \mu t - \frac{1}{2} \int_{0}^{t} \sigma^{2}_{s} \,\mathrm{d}s + \int_{0}^{t} \sigma_{s} \,\mathrm{d}B_{s}  \right) 
+    \right\}\\
+    \sigma_{t}&= \sigma_0 \exp \{\gamma t + \eta W_{t}\}
+    \end{aligned}$$
+
+where $W_{t}$ is an independent Brownian motion; such a model is termed
+a stochastic volatility model\
+
