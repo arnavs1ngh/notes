@@ -143,6 +143,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 - <a href="/notes/pdfs/year3/LecNotes/MBE-Concise.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/MBE-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-LecNotes.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/MBE-Annotated.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ - Annotated Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-Annotated.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
@@ -177,15 +178,15 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
   - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS5-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 11**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11-Sol.pdf" target="_blank">**Solutions**</a>
 
 </details>
 
@@ -202,15 +203,15 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
   - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC5-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC6-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC6-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC7-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC7-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC8-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC8-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC9-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC9-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC10-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC10-Sol.pdf" target="_blank">**Solutions**</a>
 
 </details>
 
