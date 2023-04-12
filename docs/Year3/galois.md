@@ -118,8 +118,10 @@ $f(\lambda ) =0,$ then $[K(\lambda ):K] = \mathop{deg}f$
 
 **Definition 8**. *$K \subset L, a\in L$ . We say the **evaluation
 homomorphism**
-$$e_{a}\colon K[X] \to K[a] \subset L, f(X) \mapsto f(a)$$ is a
-surjective ring homomorphism, where $K[a]$ the smallest subring of $L$
+
+$$e_{a}\colon K[X] \to K[a] \subset L, f(X) \mapsto f(a)$$ 
+
+is a surjective ring homomorphism, where $K[a]$ the smallest subring of $L$
 containing $K$ and $a$
 
 

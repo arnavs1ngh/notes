@@ -109,12 +109,34 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
   - <a href="/notes/pdfs/year3/probSheets/g/G-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS7-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/g/G-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS8-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS8-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/g/G-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS9-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS9-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/g/G-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS10-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS10-Sol.pdf" target="_blank">**Solutions**</a>
   
+</details>
+
+### Intro to Statistical Learning - MATH60049
+
+- <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/SL-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-LecNotes.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets </span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS1-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS2-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS5-Sol.pdf" target="_blank">**Solutions**</a>
+
 </details>
 
 ### Useful Links & Resources
