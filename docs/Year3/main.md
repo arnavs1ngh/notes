@@ -85,6 +85,38 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
 </details>
 
+### Galois Theory - MATH60037
+
+- <a href="/notes/pdfs/year3/LecNotes/G-Concise.pdf" target="_blank" style="color:#801fff;">**Open Galois Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/G-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/G-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Galois - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/G-LecNotes.pdf" download>**Download**</a>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets </span>
+  </summary>
+  
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS1-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS2-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS6-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS7-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS8-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS9-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS10-Sol.pdf" target="_blank">**Solutions**</a>
+  
+</details>
+
 ### Useful Links & Resources
 
 - <a href="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" target="_blank" style="color:#801fff;">**Matrix Cookbook**</a>
