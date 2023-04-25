@@ -59,7 +59,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
   
 </details>
 
-### Mathematical Logic - MATH60132
+<!-- ### Mathematical Logic - MATH60132
 
 - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" target="_blank" style="color:#801fff;">**Open Math Logic Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/ML-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Math Logic - Lecture Notes (2018)**</a> - <a href="/notes/pdfs/year3/LecNotes/ML-LecNotes.pdf" download>**Download**</a>
@@ -83,7 +83,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
   - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7-Sol.pdf" target="_blank">**Solutions**</a>
   
-</details>
+</details> -->
 
 ### Galois Theory - MATH60037
 
@@ -121,6 +121,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/SL-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-LecNotes.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ESL.pdf" target="_blank" style="color:#801fff;">**Open Elements of Stats Learning - Textbook**</a> - <a href="/notes/pdfs/year3/LecNotes/ESL.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
