@@ -63,16 +63,16 @@ $$\phi (a+b) = \phi (a) + \phi (b), \quad \phi (ab) = \phi (a)\phi (b), \quad \p
 
 
 
-**Definition 2**. *$\alpha$ **algebraic** over $k$ if $f(\alpha ) = 0$
+**Definition 2**. $\alpha$ **algebraic** over $k$ if $f(\alpha ) = 0$
 for some $0 \neq  f \in k[X]$, otherwise $\alpha$ **transcendental**
 over $k$
 
-*Extension $k \subset K$ **algebraic** if $\forall \alpha \in K, \alpha$
+Extension $k \subset K$ **algebraic** if $\forall \alpha \in K, \alpha$
 is algebraic over $k$
 
 
 
-**Definition 3**. *Consider field $k$ and $f \in k[X]$. Say
+**Definition 3**. Consider field $k$ and $f \in k[X]$. Say
 $k \subset K$ a **splitting field** for $f$ if
 $$f(X) = a\prod\limits_{i=1}^{n} (X- \lambda_{i}) \in K[X], \quad K = k(\lambda_1, \ldots ,\lambda_{n} )$$
 
@@ -83,7 +83,7 @@ $$f(X) = a\prod\limits_{i=1}^{n} (X- \lambda_{i}) \in K[X], \quad K = k(\lambda_
 **Theorem 4**. *(Fundamental theorem of Galois Theory, Galois
 correspondency)*
 
-*Assume characteristic 0. Let $k \subset K$ be the splitting field of
+Assume characteristic 0. Let $k \subset K$ be the splitting field of
 $f(X) \in k[X]$ Let
 $$G = \{\sigma :K \to K \mid  \sigma  \text{ a field automorphism, } \sigma\mid_{k} = id_{k}   \}$$
 Call this the **Galois group**. There is a one-to-one correspondence
@@ -103,11 +103,13 @@ $$[L:K] = dim_{K}L$$
 
 **Theorem 6**. *(Tower Law)*
 
-*Let $K \subset L \subset F$ Then $$[F:K] = [F:L] [L:K]$$
+Let $K \subset L \subset F$ Then 
+
+$$[F:K] = [F:L] [L:K]$$
 
 
 
-**Theorem 7**. *Suppose $f(X) in K[X]$ irreducible such that
+**Theorem 7**. Suppose $f(X) in K[X]$ irreducible such that
 $f(\lambda ) =0,$ then $[K(\lambda ):K] = \mathop{deg}f$
 
 
@@ -116,7 +118,7 @@ $f(\lambda ) =0,$ then $[K(\lambda ):K] = \mathop{deg}f$
 ## Elementary facts
 
 
-**Definition 8**. *$K \subset L, a\in L$ . We say the **evaluation
+**Definition 8**. $K \subset L, a\in L$ . We say the **evaluation
 homomorphism**
 
 $$e_{a}\colon K[X] \to K[a] \subset L, f(X) \mapsto f(a)$$ 
@@ -125,18 +127,17 @@ is a surjective ring homomorphism, where $K[a]$ the smallest subring of $L$
 containing $K$ and $a$
 
 
-
-**Definition 9**. *$f(X) = a_0 X^n + \ldots  + a_{n} \in K[X]$ is
+**Definition 9**. $f(X) = a_0 X^n + \ldots  + a_{n} \in K[X]$ is
 **monic** if $a_0 = 1$
 
 
 
 **Lemma 10**. *.*
 
--   *If $a$ *transcendental*, $e_{a}$ is injective and it extends to
+-   If $a$ *transcendental*, $e_{a}$ is injective and it extends to
     $\widetilde{e}_{a}:K(X) \to K(a)$ by $$DIAGRAM HERE$$
 
--   *If $a$ *algebraic* then $\mathop{ker} e_{a} = \left< f_{a} \right>$
+-   If $a$ *algebraic* then $\mathop{ker} e_{a} = \left< f_{a} \right>$
     where $f_{a}\in K[X]$ irreducible or prime, and unique if $f$ monic,
     then called the **minimal polynomial of $a \in L / K$* . In this
     case $$DIARGRAM\ HERE$$
@@ -145,14 +146,14 @@ containing $K$ and $a$
 
 **Corollary 11**. *For $K \subset L$ and $a \in L$ *algebraic* over $K$
 
--   *$[K(a) :K] = \mathop{deg} f_{a}$, and*
+-   $[K(a) :K] = \mathop{deg} f_{a}$, and
 
--   *If $K \subset F$ an extension
+-   If $K \subset F$ an extension
     $$\mathop{Em}_{K} (K(a), F) = \{ b \in F \mid  f_{a}(b) = 0\}$$
 
 
 
-**Corollary 12**. *Let $K$ a field and $f \in K[X]$. Then
+**Corollary 12**. Let $K$ a field and $f \in K[X]$. Then
 $\exists K \subset L$ s.t $f$ has a root in $L$
 
 
@@ -161,12 +162,12 @@ $\exists K \subset L$ s.t $f$ has a root in $L$
 ## Axiomatics
 
 
-**Proposition 13**. *Fix $k \subset K$ and $k \subset L$ Then
+**Proposition 13**. Fix $k \subset K$ and $k \subset L$ Then
 $$\# \mathop{Em}_{k} (K, L) \leq [K:k]$$
 
 
 
-**Proposition 14**. *Suppose given 2 field extensions $k \subset K$ and
+**Proposition 14**. Suppose given 2 field extensions $k \subset K$ and
 $k \subset L$. Then there is a non-unique bigger common field containing
 both. $$DIAGRAM\ HERE$$ Formally: given $\sigma_1 \in Em(k,K)$ and
 $\sigma_2 \in Em(k,L)$ then $\exists \Omega , \phi_1 \in Em(k, \Omega )$
@@ -178,15 +179,18 @@ and $Em_k (L, \Omega  )$ are both non-empty*
 
 
 
-**Proposition 15**. *Let $L$ be any field and $G$ a finite group action
+**Proposition 15**. Let $L$ be any field and $G$ a finite group action
 on $L$ as automorphism. Let
+
 $$K = G^{\ast} = \mathop{Fix} G = L^G = \{ \lambda \in L \mid \forall \sigma \in G, \sigma (\lambda ) = \lambda \}$$
+
 Consider $\mathop{Aut}_{K}L = K^{\dagger}$. Then the obvious inclusion
 $G \subset K^{\dagger} = (G^{\ast} )^{\dagger}$ is an equality, so $G$
 is all of $K^{\dagger}$.\
 **Remark***
 
-*We have to contextualise half of the Galois correspondence
+We have to contextualise half of the Galois correspondence
+
 $$\begin{aligned}
         \{F \mid k \subset F \subset \Omega  \} &\leftrightarrow \{G \mid G \leq \mathop{Aut}_{k}\Omega   \}\\
         F &\leftrightarrow \mathop{Aut}_{k} \Omega  = F^{\dagger}\\
@@ -195,7 +199,7 @@ $$\begin{aligned}
 
 
 
-**Lemma 16**. *$K \subset L$ a finite extension of degree
+**Lemma 16**. $K \subset L$ a finite extension of degree
 $[L:K] \leq \# G$
 
 
@@ -206,16 +210,15 @@ $[L:K] \leq \# G$
 $$\forall k \subset \Omega , \forall \sigma_1, \sigma_2 \in Em_k (K, \Omega), \exists \sigma \in Em_k (K,K), \sigma_2 = \sigma_1 \circ \sigma$$
 Equivalently $k \subset K$ is normal if
 $$\forall k \subset \Omega , \forall \sigma_1, \sigma_2 \in Em_k (K, \Omega), \sigma_2(K) \subset \sigma_1(K)$$
-**Remark***
+**Remark**
 
-*Will see later that $k \subset K$ is normal if and only if
+Will see later that $k \subset K$ is normal if and only if
 $\exists f(X) \in k[X]$ such that $K$ a splitting field of $f$
 
 
 
-**Lemma 18**. *Suppose $k \subset K$ normal. Consider
-$k \subset L \subset K$ Then also $L \subset K$ is normal*
-
+**Lemma 18**. Suppose $k \subset K$ normal. Consider
+$k \subset L \subset K$ Then also $L \subset K$ is normal
 
 
 **Definition 19**. *$k \subset K$ is **separable** if
@@ -236,10 +239,12 @@ separable if and only if $k\subset K, K \subset L$ is separable*
 
 
 
-**Theorem 21**. **(Fundamental theorem of Galois theory, Galois
-correspondence)*\
+**Theorem 21**. (Fundamental theorem of Galois theory, Galois
+correspondence)\
 Let $k \subset K$ be normal and separable. Let $G = Em_{k}(K,K)$ then
-there is a one-to-one correspondence $$\begin{aligned}
+there is a one-to-one correspondence 
+
+$$\begin{aligned}
     \{k \subset L \subset K\} &\leftrightarrow \{H \leq G\}\\
     L &\rightarrow  L^{\dagger} = \{\sigma  \in G \mid \forall \lambda  \in L, \sigma(\lambda ) = \lambda \}\\
     H^{\ast} = \{\lambda \in K \mid \forall \sigma \in H, \sigma (\lambda ) = \lambda \} &\leftarrow H\end{aligned}$$
