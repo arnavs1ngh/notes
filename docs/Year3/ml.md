@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: Maths Logic
 parent: Year 3
 nav_order: 2
 math: mathjax3
----
+--- -->
 
 # Mathematical Logic - Concise Notes
 {: .no_toc }

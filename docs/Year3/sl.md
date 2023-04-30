@@ -23,7 +23,15 @@ math: mathjax3
     <span style="color: #00ba47;">Problem Sheets</span>
   </summary>
   
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS1-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS2-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS5-Sol.pdf" target="_blank">**Solutions**</a>
 
 </details>
 </details>
@@ -311,10 +319,14 @@ $$\begin{aligned}
 
 2.  *Regress $Y$ onto $Z_{1}, \dots, Z_{M}$ by least squares*
 
-*PCR can be written as sum of univariate regressions $$\begin{aligned}
+*PCR can be written as sum of univariate regressions
+
+$$\begin{aligned}
         \hat{y}^{pcr}_{M} &= \overline{Y} \textbf{1}_{n} + \sum_{m=1}^{M} \hat{\theta}_{m}z_{m}\\
         &= \overline{Y} \textbf{1}_{n} + X \sum_{m=1}^{M} \hat{\theta}_{m}v_{m}
-    \end{aligned}$$ where
+    \end{aligned}$$
+    
+where
 $\hat{\theta}_{m} = \frac{\left< z_{m},y \right> }{\left< z_{m},z_{m} \right> }$\
 Can think of
 
