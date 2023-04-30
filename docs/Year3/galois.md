@@ -2,7 +2,7 @@
 layout: default
 title: Galois Theory
 parent: Year 3
-nav_order: 3
+nav_order: 2
 math: mathjax3
 ---
 
