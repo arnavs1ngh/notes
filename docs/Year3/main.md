@@ -37,7 +37,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Applied Probability - MATH60045
 
-- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/AP-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/AP-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
