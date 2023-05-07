@@ -20,22 +20,49 @@ math: mathjax3
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets</span>
+    <span style="color: #00ba47;">Problem Sheets - Homework </span>
   </summary>
-  
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS1-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS2-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS3-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS3-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS4-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS4-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS5-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS5-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS6-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/ml/ML-PS7-Sol.pdf" target="_blank">**Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 11**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11-Sol.pdf" target="_blank">**Solutions**</a>
+
+</details>
+
+<details closed markdown="block">
+  <summary>
+    <span style="color: #00ba47;">Problem Sheets - In Class </span>
+  </summary>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC2-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC3-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC4-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC6-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC7-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC8-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC9-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-IC10-Sol.pdf" target="_blank">**Solutions**</a>
 
 </details>
 </details>
