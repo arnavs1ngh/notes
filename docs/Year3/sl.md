@@ -16,7 +16,7 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
