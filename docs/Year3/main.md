@@ -14,7 +14,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Algebra 3 - MATH60035
 
-- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise - Incomplete**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/ALG3-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Algebra 3 - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/ALG3-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
@@ -142,7 +142,7 @@ Let me know if there are any mistakes, they will be amended promptly. You can em
 
 ### Maths of Business and Economics - MATH60013
 
-- <a href="/notes/pdfs/year3/LecNotes/MBE-Concise.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/MBE-Concise.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ Concise - INCOMPLETE**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-Concise.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/MBE-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-LecNotes.pdf" download>**Download**</a>
 - <a href="/notes/pdfs/year3/LecNotes/MBE-Annotated.pdf" target="_blank" style="color:#801fff;">**Open Maths of Business + Econ - Annotated Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/MBE-Annotated.pdf" download>**Download**</a>
 
