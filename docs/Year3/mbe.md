@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Math Finance - Options
+title: Maths of Business & Economics
 parent: Year 3
 nav_order: 5
 math: mathjax3
@@ -84,19 +84,22 @@ supplied of a good at different prices.*
 percentage change in quantity supplied/demanded divided by the
 percentage change in price.*
 
-*$$\begin{aligned}
+$$\begin{aligned}
         \epsilon_{D} &= \frac{\text{proportional change in quantity demanded} }{\text{proportional change in price} }\\
         % &= \frac{\frac{\partial D(p)}{\partial p} / D(p)}{1/p}
         &= \frac{\partial D(p)}{\partial p} \frac{p}{D(p)}
-    \end{aligned}$$ We have generally that $\epsilon_{D} < 0$ by the Law
-of demand, as demand is decreasing in $p$.
+\end{aligned}$$ 
+    
+We have generally that $\epsilon_{D} < 0$ by the Law of demand, as demand is decreasing in $p$.
 
-$$\left\vert \epsilon_{D}(p) \right\vert =
+$$
+\left\vert \epsilon_{D}(p) \right\vert =
         \begin{cases}
             >1, &\text{ elastic demand}  ;\\
             <1, &\text{ inelastic } ;\\
             =1, &\text{ unit elastic }.
-        \end{cases}$$ 
+        \end{cases}
+$$ 
         
 Determinants of elasticity include:*
 
