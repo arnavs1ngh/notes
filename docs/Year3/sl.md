@@ -17,10 +17,12 @@ math: mathjax3
   </summary>
   
 - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/SL-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Stats Learning - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/SL-LecNotes.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/ESL.pdf" target="_blank" style="color:#801fff;">**Textbook - Elements of Stats Learning**</a> - <a href="/notes/pdfs/year3/LecNotes/ESL.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets</span>
+    <span style="color: #00ba47;">Problem Sheets </span>
   </summary>
   
   - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/sl/SL-PS1-Sol.pdf" target="_blank">**Solutions**</a>
