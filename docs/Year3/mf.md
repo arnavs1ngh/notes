@@ -16,22 +16,29 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/MF-Concise.pdf" target="_blank" style="color:#801fff;">**Open Math Finance Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/MF-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/MF-Concise.pdf" target="_blank" style="color:#801fff;">**Open Options Pricing Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/MF-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/MF-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Options Pricing - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/MF-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets</span>
+    <span style="color: #00ba47;">Problem Sheets - Homework </span>
   </summary>
-  
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS1-Sol.pdf" target="_blank">**Solutions**</a>
-
-  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS2-Sol.pdf" target="_blank">**Solutions**</a>
 
   - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS3-Sol.pdf" target="_blank">**Solutions**</a>
 
   - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS4-Sol.pdf" target="_blank">**Solutions**</a>
 
   - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS5-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS6-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS8-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS9-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS10-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 11**</a> - <a href="/notes/pdfs/year3/probSheets/mf/MF-PS11-Sol.pdf" target="_blank">**Solutions**</a>
 
 </details>
 </details>
