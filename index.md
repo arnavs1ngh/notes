@@ -17,3 +17,5 @@ Notes provided by: Arnav Singh (Y3) and Louis Gibson (Y2)
 
 Contact us: <arnav.singh20@imperial.ac.uk>
 
+If you would like to access the github repo to download all the pdfs in one location you can do so via this link: [Github Repository](https://github.com/arnavs1ngh/notes), a simple download of the **pdfs** folder will suffice.
+
