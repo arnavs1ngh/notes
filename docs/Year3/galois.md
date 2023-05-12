@@ -16,26 +16,34 @@ math: mathjax3
     <span style="color: RoyalBlue;">PDFs</span>
   </summary>
   
-- <a href="/notes/pdfs/year3/LecNotes/G-Concise.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/G-Concise.pdf" download>**Download**</a>
-- <a href="/notes/pdfs/year3/LecNotes/G-LecNote.pdf" target="_blank" style="color:#801fff;">**Open Applied Probability Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/G-LecNotes.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/G-Concise.pdf" target="_blank" style="color:#801fff;">**Open Galois Concise**</a> - <a href="/notes/pdfs/year3/LecNotes/G-Concise.pdf" download>**Download**</a>
+- <a href="/notes/pdfs/year3/LecNotes/G-LecNotes.pdf" target="_blank" style="color:#801fff;">**Open Galois - Lecture Notes**</a> - <a href="/notes/pdfs/year3/LecNotes/G-LecNotes.pdf" download>**Download**</a>
 
 <details closed markdown="block">
   <summary>
-    <span style="color: #00ba47;">Problem Sheets</span>
+    <span style="color: #00ba47;">Problem Sheets </span>
   </summary>
   
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS.pdf" target="_blank" style="color:#00ba47;">**All 5 Problem Sheets**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS1.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 1**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS1-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS1-Sol.pdf"  target="_blank">**PS1 - Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS2.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 2**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS2-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS2-Sol.pdf"  target="_blank">**PS2 - Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS3.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 3**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS3-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS3-Sol.pdf"  target="_blank">**PS3 - Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS4.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 4**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS4-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS4-Sol.pdf"  target="_blank">**PS4 - Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS5.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 5**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS5-Sol.pdf" target="_blank">**Solutions**</a>
 
-  - <a href="/notes/pdfs/year3/probSheets/ap/AP-PS5-Sol.pdf"  target="_blank">**PS5 - Solutions**</a>
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS6.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 6**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS6-Sol.pdf" target="_blank">**Solutions**</a>
 
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS7.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 7**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS7-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS8.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 8**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS8-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS9.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 9**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS9-Sol.pdf" target="_blank">**Solutions**</a>
+
+  - <a href="/notes/pdfs/year3/probSheets/g/G-PS10.pdf" target="_blank" style="color:#00ba47;">**Problem Sheet 10**</a> - <a href="/notes/pdfs/year3/probSheets/g/G-PS10-Sol.pdf" target="_blank">**Solutions**</a>
+  
 </details>
 </details>
 
