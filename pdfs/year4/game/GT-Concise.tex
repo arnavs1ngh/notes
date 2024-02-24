@@ -1,0 +1,633 @@
+\documentclass[11pt]{article}
+
+% Essential Packages
+\usepackage{amsmath} % Advanced math typesetting
+\usepackage{amsfonts} % Mathematical fonts
+\usepackage{amssymb} % Extended symbol collection
+\usepackage{amsthm} % Theorem environment setup
+% \usepackage{mathtools} % Enhancements of amsmath
+\usepackage{graphicx} % Include graphics
+\usepackage{hyperref} % Hyperlinks
+\usepackage{geometry} % Page layout
+\usepackage{enumerate} % Customizable enumeration
+% \usepackage{enumitem} % More enumeration options
+% \usepackage{tikz} % Drawing diagrams
+% \usepackage{pgfplots} % Plotting with LaTeX
+% \pgfplotsset{compat=newest}
+
+% Page Layout
+% \geometry{a4paper, margin=1in}
+
+% Theorem Environments - Section numbering included
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+
+% Custom Commands (add your own here)
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+% Document Information
+\title{Game Theory}
+\author{Arnav Singh}
+\date{\today}
+
+% Document Start
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% Your notes start here
+\section{Prelude}
+
+\setcounter{subsection}{4} 
+\subsection{Strategies}
+
+\begin{definition}
+    A \textbf{move} refers to the action a player must make on their turn to progress from one game position to the next position
+\end{definition}
+
+\begin{definition}
+    An \textbf{outcome} of a game refers to the final result of a game once the game has been played
+\end{definition}
+
+\begin{definition}
+    A \textbf{strategy} for a player involves a complete description of all the moves that will be made in any game position, including responses to any random moves, and the opponent's moves. A strategy is a program which can be followed to play the game mechanically.
+\end{definition}
+
+\begin{definition}
+    A \textbf{pure strategy} is a strategy that doesn't involve any self-imposed random chances of playing any moves.
+\end{definition}
+
+\begin{definition}
+    \textbf{Finite game} - if all players in the game have a finite number of pure strategies. If at least one player has an infinite number of pure strategies, the game is called an \textbf{infinite game}.
+\end{definition}
+
+\section{Dominance, Best Response and Equilibria}
+
+Define the following notation to start with
+
+\begin{note}
+    Player \(A\) will have pure strategies \(A_{s} = \{a_1, a_2, \ldots  \}\), the set may be finite or infinite. Similarly, player \(B\) will have pure strategies \(B_{s} = \{b_1, b_2, \ldots  \}\)
+
+    Denote by \(g_{A}(a_{i},b_{j})\) the payoff to player \(A\) when player \(A\) plays pure strategy \(a_{i}\) and player \(B\) plays pure strategy \(b_{j}\).
+\end{note}
+
+\setcounter{theorem}{5} 
+\begin{definition}
+    Strategy \(a \in A_{s}\) is \textbf{strictly dominated} by another strategy \(a^\prime \in A_{s}\) if
+    \[
+        g_{A}(a,b) < g_{A}(a^\prime,b) \quad \forall b \in B_{s}
+    \]
+\end{definition}
+
+\begin{definition}
+    In an \(n\)-player game, a strategy \(s_{i} \in S_{i}\) for player \(i\) is \textbf{strictly dominated} by another strategy \(s_{i}^\prime \in S_{i}\) if 
+    \[
+        g_{i}(s_{i},s_{-i}) < g_{i}(s_{i}^\prime,s_{-i}) \quad \forall s_{-i} \in S_{-i}
+    \]
+    \(s_{-i}\) denotes the strategies of all players other than \(i\)
+\end{definition}
+
+\begin{definition}
+    \(a \in A_{s}\) is weakly dominated by \(a^\prime \in A_{s}\) if
+    \[
+        g_{A}(a,b) \leq g_{A}(a^\prime,b) \quad \forall b \in B_{s}
+    \]
+    and there exists at least one \(b \in B_{s}\) such that the inequality is strict
+\end{definition}
+
+\begin{definition}
+    In an \(n\)-player game, a strategy \(s_{i} \in S_{i}\) for player \(i\) is weakly dominated by another strategy \(s_{i}^\prime \in S_{i}\) if 
+    \[
+        g_{i}(s_{i},s_{-i}) \leq g_{i}(s_{i}^\prime,s_{-i}) \quad \forall s_{-i} \in S_{-i}
+    \]
+    and there exists at least one \(s_{-i} \in S_{-i}\) such that the inequality is strict
+\end{definition}
+
+\begin{definition}
+    In an \(n\)-player game, a strategy \(s_{i} \in S_{i}\) for player \(i\) is \textbf{payoff equivalent} to another strategy \(s_{i}^\prime \in S_{i}\) if
+    \[
+        g_{i}(s_{i},s_{-i}) = g_{i}(s_{i}^\prime,s_{-i}) \quad \forall s_{-i} \in S_{-i}
+    \]
+\end{definition}
+
+\begin{definition}
+    In an \(n\)-player game, a strategy \(s_{i} \in S_{i}\) for player \(i\) is a \textbf{best response} to a strategy profile \(s_{-i} \in S_{-i}\) if
+    \[
+        g_{i}(s_{i},s_{-i}) \geq g_{i}(s_{i}^\prime,s_{-i}) \quad \forall s_{i}^\prime \in S_{i}
+    \]
+\end{definition}
+
+\begin{proposition}
+    A dominated strategy is never a best response
+\end{proposition}
+
+\setcounter{subsection}{5} 
+\subsection{Equilibria}
+\begin{definition}[Nash Equilibrium]
+    An \textbf{equilibrium} of an \(n\)-player game is a strategy profile \(s \in S\) such that
+    \[
+        g_{i}(s_{i},s_{-i}) \geq g_{i}(s_{i}^\prime,s_{-i}) \quad \forall s_{i}^\prime \in S_{i}
+    \]
+    for all players \(i\).
+\end{definition}
+
+\setcounter{subsection}{7} 
+\subsection{Iterative Deletion of Dominated Strategies}
+
+\begin{proposition}
+    In an \(N\)-player game, with strategy sets \(S_1, S_2, \ldots , S_{N} \), let \(s_{i}, s_{i}^\prime \) be two strategies for player \(i\). Suppose \(s_{i}^\prime \) weakly dominates or is payoff equivalent to \(s_{i} \). Consider game \(G^\prime \) with identical payoffs as \(G\) but where \(S_{i}\) is replaced by \(S_{i} - \{s_{i}\}\), Then:
+    \begin{enumerate}
+        \item Any Nash equilibrium of \(G^\prime \) is a Nash equilibrium of \(G\)
+        \item If \(s_{i} \) is dominated by \(s_{i}^\prime \), then \(G\) and \(G^\prime \) have the \textbf{same} equilibria
+    \end{enumerate}
+\end{proposition}
+
+\begin{proposition}
+    Consider game \(G\) that upon performing iterative deletion of dominated strategies, results in game \(G^\prime \) with a single strategy profile. Then, the single strategy profile is the unique equilibrium of \(G\).
+\end{proposition}
+
+\section{Mixed Equilibria}
+
+\subsection{Mixed Strategies}
+
+\setcounter{theorem}{15} 
+\begin{definition}
+    A \textbf{mixed} strategy for a player is a self-imposed randomization over the player's pure strategies. A mixed strategy is a probability distribution over the pure strategies.
+    A mixed strategy \(\alpha\) for player \(A\) is denoted as
+    \begin{align*}
+        \alpha &= (p_1, p_2, \ldots , p_n), \quad \text{or} \\
+        \alpha &= p_1 a_1 + p_2 a_2 + \ldots + p_n a_n, \quad \text{where} \quad \sum_{i=1}^{n} p_i = 1, \quad 0 \leq p_i \leq 1
+    \end{align*}
+    We extend the pure strategy set \(A_{s}\) to the more general \textbf{mixed strategy set}, \(\mathbb{A}_{s}\) - the infinite set of all possible \(\alpha \) for player \(A\).
+\end{definition}
+
+\begin{definition}
+    Let player \(A\) have pure strategy set \(A_{s} = \{a_1, \ldots , a_{n}  \}\) and player \(B\) have pure strategy set \(B_{s} = \{b_1, \ldots , b_{m}  \}\).
+
+    If player \(A\) choses to play the mixed strategy \(\alpha = (p_1, \ldots , p_{n}  ) \in \mathbb{A}_{s}\) and player \(B\) choses to play the mixed strategy \(\beta = (q_1, \ldots , q_{m}  ) \in \mathbb{B}_{s}\), then the \textbf{expected payoff} to player \(A\) is
+    \[
+        g_{A}(\alpha,\beta) = \sum_{i=1}^{n} \sum_{j=1}^{m} p_i q_j g_{A}(a_i,b_j)
+    \]
+    If \(A_{s}, B_{s}\) are infinite sets then the summation is replaced by integration.
+    \[
+        g_{A}(\alpha ,\beta ) = \int_{x} \int_{y} g_{A}(x,y) f_{A}(x) f_{B}(y)\, dx \, dy
+    \]
+    where \(f_{A}(x), f_{B}(y)\) are the probability density functions of the mixed strategies \(\alpha, \beta \) respectively.
+\end{definition}
+
+\setcounter{theorem}{18} 
+\begin{definition}
+    A pair of mixed strategies \(\alpha^{\ast}\) for \(A\) and \(\beta^{\ast} \) for \(B\), are said to be in mixed equilibrium if
+    \begin{align*}
+        g_{A}(\alpha^{\ast},\beta^{\ast}) &\geq g_{A}(\alpha,\beta^{\ast}) \quad \forall \alpha \in \mathbb{A}_{s} \\
+        \text{and} \quad g_{B}(\alpha^{\ast},\beta^{\ast}) &\geq g_{B}(\alpha^{\ast},\beta) \quad \forall \beta \in \mathbb{B}_{s}
+    \end{align*}
+\end{definition}
+
+\setcounter{subsection}{2} 
+\subsection{Finding mixed equilibria by considering Pure strategies}
+
+\begin{proposition}
+    For any mixed strategies \(\alpha^{\ast}\) of player \(A\) and \(\beta^{\ast} \) of player \(B\), then
+    \begin{align*}
+        \mathop{\max}_{\alpha \in \mathbb{A}_{s}}\{ g_{A}(\alpha,\beta^{\ast})\} &= \mathop{\max}_{a \in A_{s}}\{ g_{A}(a,\beta^{\ast})\},\\
+        \mathop{\max}_{\beta \in \mathbb{B}_{s}}\{ g_{B}(\alpha^{\ast},\beta)\} &= \mathop{\max}_{b \in B_{s}}\{ g_{B}(\alpha^{\ast},b)\}
+    \end{align*}
+\end{proposition}
+
+
+\begin{definition}
+    Let \(c\) a constant. A mixed strategy \(\alpha^{\ast} \), for player \(A\) is an \textbf{equaliser strategy} if
+    \[
+        g_{A}(\alpha^{\ast},b) = c \quad \forall b \in \mathbb{B}_{s}  
+    \]
+
+    Similarly for player \(B\) 
+\end{definition}
+
+\begin{proposition}
+    In a 2-player game, if \(\alpha^{\ast} \) is an equaliser strategy for \(A\) using \(B\)'s payoffs and \(\beta^{\ast} \) is an equaliser strategy for \(B\) using \(A\)'s payoffs, then \((\alpha^{\ast},\beta^{\ast}) \) is a mixed equilibrium
+\end{proposition}
+
+\subsection{Geometry of Games}
+
+\begin{note}
+    Define the convex hull of a set of points as the smallest convex set that contains all the points.
+    For a set of points \(\{x_1, \ldots, x_{n} \}\) with each \(x_{i} \in \R^m\), form their convex hull as
+    \[
+        C = \left\{ \sum_{i=1}^{n} \lambda_{i} x_{i} \mid \lambda_{i} \geq 0, \sum_{i=1}^{n} \lambda_{i} = 1 \right\}
+    \]
+\end{note}
+
+\subsection{Existence of an equilibrium}
+
+\begin{theorem}[Nash, 1951]
+    Every finite game has at least one mixed equilibrium
+\end{theorem}
+\subsection{Finding equilibria by checking subgames}
+\subsection{The upper envelope method}
+\subsection{Degenerate games}
+
+\begin{definition}[Degenerate game]
+    A 2-player game is said to be \textbf{degenerate} if some player has a mixed strategy that assigns positive probability to exactly \(k\) pure strategies so that the other player has more than \(k\) pure strategies.
+\end{definition}
+
+\section{Zero-sum games}
+
+\setcounter{subsection}{2} 
+\subsection{Max-min and Min-max Strategies}
+
+\setcounter{theorem}{24} 
+\begin{definition}
+    A \textbf{max-min} strategy \(\hat{\alpha}  \in \mathbb{A}_{s}\) of player \(A\) is a strategy such that
+    \[
+        \mathop{\min}_{\beta \in \mathbb{B}_{s}}\{ g_{A}(\hat{\alpha},\beta)\} = \mathop{\max}_{\alpha \in \mathbb{A}_{s}} \left\{ \mathop{\min}_{\beta  \in \mathbb{B}_{s}}\{ g_{A}(\alpha,\beta)\} \right\}
+    \]
+    assuming that the maxima and minima exist. This also defines the \textbf{max-min payoff} to player \(A\) 
+\end{definition}
+
+\begin{definition}
+    A \textbf{min-max} strategy \(\hat{\beta}  \in \mathbb{B}_{s}\) of player \(B\) is a strategy such that
+    \[
+        \mathop{\max}_{\alpha \in \mathbb{A}_{s}}\{ g_{B}(\alpha,\hat{\beta})\} = \mathop{\min}_{\beta \in \mathbb{B}_{s}} \left\{ \mathop{\max}_{\alpha  \in \mathbb{A}_{s}}\{ g_{B}(\alpha,\beta)\} \right\}
+    \]
+    This also defines the \textbf{min-max payoff} to player \(B\)
+\end{definition}
+
+\begin{proposition}
+    In a zero-sum game, for \(\alpha \in \mathbb{A}_{s}\), then
+    \[
+        \mathop{\min}_{\beta \in \mathbb{B}_{s}}\{ g_{A}(\alpha,\beta)\} = \mathop{\min}_{b \in B_{s}}\{ g_{A}(\alpha,b)\}
+    \]
+    Similarly for \(\beta \in \mathbb{B}_{s}\), then
+    \[
+        \mathop{\max}_{\alpha \in \mathbb{A}_{s}}\{ g_{B}(\alpha,\beta)\} = \mathop{\max}_{a \in A_{s}}\{ g_{B}(a,\beta)\}
+    \]
+\end{proposition}
+
+\subsection{Relationship of Equilibria and Max-min/Min-max Strategies}
+
+\begin{proposition}
+    In a finite zero-sum game with \(\hat{\alpha} \in \mathbb{A}_{s}, \hat{\beta} \in \mathbb{B}_{s}\) then \((\hat{\alpha},\hat{\beta}) \) is a mixed equilibrium if and only if \(\hat{\alpha} \) is a max-min strategy for \(A\) and \(\hat{\beta} \) is a min-max strategy for \(B\), and
+    \[
+        \mathop{\max}_{\alpha \in \mathbb{A}_{s}} \left\{ 
+            \mathop{\min}_{\beta \in \mathbb{B}_{s}}\{ g_{A}(\alpha,\beta)\}
+        \right\} 
+        = 
+        \mathop{\min}_{\beta \in \mathbb{B}_{s}} \left\{ 
+            \mathop{\max}_{\alpha \in \mathbb{A}_{s}}\{ g_{B}(\alpha,\beta)\}
+        \right\}
+    \]
+\end{proposition}
+
+\subsection{The Minimax theorem of Von Neumann}
+
+\begin{theorem}[Von Neumann, 1928]
+    In a finite zero-sum game then
+    \[
+        \mathop{\max}_{\alpha \in \mathbb{A}_{s}} \left\{ 
+            \mathop{\min}_{\beta \in \mathbb{B}_{s}}\{ g_{A}(\alpha,\beta)\}
+        \right\} 
+        = v =
+        \mathop{\min}_{\beta \in \mathbb{B}_{s}} \left\{ 
+            \mathop{\max}_{\alpha \in \mathbb{A}_{s}}\{ g_{B}(\alpha,\beta)\}
+        \right\}
+    \]
+    where \(v\) is the unique max-min payoff to \(A\) (and cost to \(B\)), called the \textbf{value} of the game.
+\end{theorem}
+
+
+\subsection{Finding solutions in small zero-sum games}
+
+\begin{proposition}
+    Consider 2 zero-sum games \(G, G^\prime \), where \(G^\prime \) is obtained from \(G\) by deleting a weakly dominated strategy of one of the players. Then any equilibrium of \(G^\prime \) is also an equilibrium of \(G\), and \(G\) and \(G^\prime \) have the \textbf{same value}.
+\end{proposition}
+
+\section{Cooperative Games}
+
+\subsection{Bargaining sets}
+
+\setcounter{theorem}{30} 
+\begin{definition}
+    Bargaining (Negotiation) set, \(S\), resulting from a 2-player game in strategic form is the convex hull of all payoff pairs, with the added constraint that
+    \[
+        \forall (x,y) \in S, \quad x \geq t_{A}, \quad y \geq t_{B}
+    \]
+    where \(t_{A}, t_{B}\) are the max-min payoff of player \(A\) and \(B\) respectively.
+    Known as \(A\) and \(B\)'s security level or \textbf{threat level}.
+
+    Call \((t_{A}, t_{B})\) the \textbf{threat point} 
+\end{definition}
+
+\subsection{Bargaining Axioms}
+
+\begin{definition}[Axioms for bargaining solution]
+    For a bargaining set \(S\) with threat point \((t_{A}, t_{B})\), a \textbf{Nash bargaining solution} \(N(S) = (X,Y)\)   is said to satisfy the following axioms:
+    \begin{enumerate}[(a)]
+        \item \textbf{Efficiency} - \((X,Y) \in S\)
+        \item \textbf{Pareto optimality} - \((X,Y)\) are Pareto optimal, i.e. \(\forall (x,y) \in S\) if \(x \geq X\) and \(y \geq Y\), then \((x,y) = (X,Y)\)
+        \item \textbf{Invariant under payoff scaling}, meaning if \(a,c > 0\) and \(b,d \in \R\) and we define \(S^\prime \) to be the bargaining set
+        \[
+            S^\prime  = \{ (ax + b, cy + d) \mid (x,y) \in S\}
+        \]
+        with threat point \((at_{A} + b, ct_{B} + d)\), then \(N(S^\prime) = (aX + b, cY + d)\)
+        \item \textbf{Symmetry} - If \(t_A = t_B\) and \((x,y) \in S\) implies \((y,x) \in S\) then we must have \(X = Y\)
+        \item \textbf{Independence of irrelevant alternatives} - If \(S,T\) are bargaining sets with the same threat point and \(S \subset T\), then either \(N(S) = N(T)\) or \(N(T) \notin S\)
+    \end{enumerate}
+\end{definition}
+
+\subsection{The Nash Bargaining Solution}
+
+\begin{theorem}
+    Under the axioms of bargaining solution, (a)-(e) above. Every bargaining set \(S\) that contains a point \((x,y)\) with \(x > t_A, y > t_B\), has a unique Nash bargaining solution \(N(S) = (X,Y)\)
+
+    Obtained as the unique point \((x,y) \in S\) that maximises the \textbf{Nash product}
+    \[
+        (x - t_{A})(y - t_{B})
+    \]
+\end{theorem}
+
+\section{Congestion Games}
+
+\setcounter{subsection}{4} 
+\subsection{Components of a Congestion Game}
+\setcounter{theorem}{33}
+
+\begin{definition}
+    A \textbf{congestion network} has the following components:
+    \begin{enumerate}
+        \item A finite set of nodes
+        \item A finite set of directed edges, each edge, e, an ordered pair written \(AB\) from node \(A\) to node \(B\)
+        \item Each edge \(e\) has an associated cost function \(c_{e}(x)\) giving value when there are \(x\) users on edge \(e\), with \(c_{e}(x)\) weakly increasing in \(x\)
+        \[
+            x \leq y \implies c_{e}(x) \leq c_{e}(y)
+        \]
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    To form a \textbf{congestion game}, we need the following components:
+    \begin{enumerate}
+        \item A congestion network
+        \item \(N\) users of network with each user having a origin node, \(O_{i}\) and a destination node \(D_{i}\) 
+        \item A strategy of user \(i\) is a path \(P_{i}\) from \(O_{i} \to D_{i}\). Given strategy \(P_{i}\) for each user \(i\), the \textbf{flow} on edge \(e\) is the number of users using edge \(e\)
+        \[
+            f_{e} = \left\lVert \{i : e \in P_{i}\}\right\rVert 
+        \]
+        \item The \textbf{cost} to user \(i\) of using path \(P_{i}\) is the sum of the costs of the edges in \(P_{i}\)
+        \[
+            \text{Cost}_{i}(P_{i}) = \sum_{e \in P_{i}} c_{e}(f_{e})
+        \]
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    Say \(P_{i}\) a \textbf{best response} for user \(i\) if against strategies \(P_{j}\), \(j \neq i\), then
+    \[
+        \sum_{e \in P_{i}} c_{e}(f_{e}) \leq \sum_{e \in P_{i} \cap Q_{i}} c_{e}(f_{e}) + \sum_{e \in P_{i} / Q_{i}} c_{e}(f_{e} + 1)   
+    \]
+    holds for every possible alternative path \(Q_{i}\) for user \(i\)
+\end{definition}
+
+\begin{definition}
+    In a congestion game with \(N\) users strategies \(P_1, P_2, \ldots , P_{N} \)  of all \(N\) users define an \textbf{equilibrium} if each strategy is a best response to the other strategies. i.e if the above inequality holds for all \(i\)
+\end{definition}
+
+\subsection{Existence of Equilibrium in Congestion Games}
+
+\begin{theorem}
+    Every congestion game has at least one equilibrium
+\end{theorem}
+
+\subsection{Price of Anarchy}
+
+\begin{definition}
+    The \textbf{price of anarchy} of a congestion game is the ratio of the cost of the worst equilibrium to the cost of the best possible solution
+    \[
+        \text{PoA} = \frac{\text{Worst average cost per user in any equilibrium}}{\text{Average cost per user in social optimum} } = \frac{\max_{P} \sum_{i} \text{Cost}_{i}(P_{i})}{\min_{P} \sum_{i} \text{Cost}_{i}(P_{i})}  
+    \]
+\end{definition}
+
+\begin{proposition}
+    For atomic flow congestion games, the price of anarchy is at most \(5/2\)
+\end{proposition}
+
+\begin{proposition}
+    For split-able flow congestion games, the price of anarchy is at most \(4/3\)
+\end{proposition}
+
+\section{Combinatorial Games}
+
+These are 2-player, perfect information games with no chance moves. They come in 2 types:
+\begin{itemize}
+    \item \textbf{Partizan games} - where the players have different sets of moves
+    \item \textbf{Impartial games} - where the players have the same set of moves
+\end{itemize}
+
+\subsubsection{The Ending Condition}
+A combinatorial game ends when there are no legal moves left for any player. The game is then said to be in a \textbf{terminal position}. This is a necessary condition for a game to be a combinatorial game.
+
+\subsubsection{The Normal Play Convention}
+The normal play convention is that the player who cannot move loses the game. This is a necessary condition for a game to be a combinatorial game.
+
+\subsection{Nim and Impartial Games}
+
+\setcounter{theorem}{41} 
+\begin{definition}
+    An \textbf{option} of a game position in a combinatorial game is a position that can be reached in one move from the player to move.
+\end{definition}
+
+\subsubsection{Winning and Losing Positions}
+
+Impartial games, game positions belong to one of 2 classes:
+\begin{itemize}
+    \item \textbf{Winning positions} - the player to move has a winning move
+    \item \textbf{Losing positions} - the player to move has no winning move
+\end{itemize}
+
+\begin{proposition}
+    In an impartial game, a game position is losing if and only if all its options are winning positions. A game is winning if and only if at least one of its options is a losing position; moving to that position is a winning move.
+\end{proposition}
+
+\begin{proposition}
+    A Nim position is losing if and only if the Nim sum equals zero for all columns in the binary representation of the position; such a position is called a \textbf{zero position}. A Nim position is winning if and only if the Nim sum is not zero.
+\end{proposition}
+
+\subsection{Top-down induction}
+\subsubsection{Partial and Total Orders}
+
+\begin{definition}
+    A binary relation \(\simeq\) on a set \(S\) is a \textbf{partial order} if, for all \(x,y,z \in S\), we have:
+    \begin{itemize}
+        \item \textbf{Reflexivity} - \(x \simeq x\)
+        \item \textbf{Antisymmetry} - \(x \simeq y\) and \(y \simeq x\) implies \(x = y\)
+        \item \textbf{Transitivity} - \(x \simeq y\) and \(y \simeq z\) implies \(x \simeq z\)
+    \end{itemize}
+    If in addition to the above, for all \(x,y \in S\), we have:
+    \begin{itemize}
+        \item \textbf{Comparability} - \(x \simeq y\) or \(y \simeq x\)
+    \end{itemize}
+    then \(\simeq\) is a \textbf{total order}
+\end{definition}
+
+\begin{definition}
+    For a given partial order \(\simeq\) on a set \(S\), we define the \textbf{strict order} \(\sim\) corresponding to \(\simeq\) by; for all \(x,y \in S\):
+    \[
+        x \sim y \iff x \simeq y \text{ and } x \neq y  
+    \]
+\end{definition}
+
+\begin{definition}
+    An element \(x \in S\) is \textbf{maximal} if there is no \(y \in S\) such that \(x \sim y\)
+\end{definition}
+
+\subsubsection{Back to Top-Down Induction}
+
+\begin{definition}
+    Consider a set \(S\) of games, defined by a starting game and all the games that can be reached from it via any sequence of moves of the players. For two games; \(G,H \in S\), we call \(H\) \textbf{simpler} than \(G\), denoted with the binary relation \(H \leq G\), if there is a sequence of moves that leads from \(G\) to \(H\). We allow for \(G = H\) where this sequence is empty.
+\end{definition}
+
+\begin{proposition}
+    The binary relation \(\leq\) ('simpler than') on a set \(S\) of games is a partial order
+\end{proposition}
+
+\begin{proposition}
+    Every non-empty subset, \(T\), of \(S\) has a minimal element
+\end{proposition}
+
+\begin{theorem}[Top-down induction]
+    Consider a set \(S\) with a partial order \(\simeq\) such that every non-empty subset of \(S\) has a minimal element. Let \(P(x)\) be a statement about an element \(x \in S\) that may be true or false. Assume that \(P(x)\) holds whenever \(P(y)\) holds for all \(y \in S\) such that \(y \sim x\). Then \(P(x)\) is true for all \(x \in S\). That is
+    \[
+        (\forall x :\ ( \forall y \sim x : P(y)) \implies P(x)) \implies (\forall x : P(x))
+    \]
+\end{theorem}
+
+\subsection{Game Sums}
+
+\begin{definition}
+    Suppose that \(G\) and \(H\) are games with options \(G_1, \ldots , G_n\) and \(H_1, \ldots , H_m\) respectively. Then the \textbf{game sum} \(G + H\) is the game with options \(G_1 + H, \ldots , G_n + H, G + H_1, \ldots , G + H_m\)
+\end{definition}
+
+\begin{proposition}
+    Denoting the losing game with \textbf{no options} by \(0\), then for any games \(G,H\) and \(J\) we have
+    \begin{itemize}
+        \item \textbf{Commutativity of +}:
+        \[
+            G + H = H + G
+        \]
+        \item \textbf{Associativity of +}:
+        \[
+            (G + H) + J = G + (H + J)
+        \]
+        \item \textbf{Identity of +}:
+        \[
+            G + 0 = G
+        \]
+    \end{itemize}
+\end{proposition}
+
+\subsection{Equivalence of Games}
+\begin{definition}
+    Two games \(G\) and \(H\) are called \textbf{equivalent}, written \(G \equiv H\), if and only if for any other game \(J\), the game sum \(G+J\) is losing if and only if \(H + J\) is losing
+\end{definition}
+
+\begin{lemma}
+    The binary relation of equivalence, \(\equiv\), is an equivalence relation between games, this means that it is:
+    \begin{itemize}
+        \item \textbf{Reflexive} - \(G \equiv G\)
+        \item \textbf{Symmetric} - \(G \equiv H\) implies \(H \equiv G\)
+        \item \textbf{Transitive} - \(G \equiv H\) and \(H \equiv J\) implies \(G \equiv J\)
+    \end{itemize}
+\end{lemma}
+
+\begin{proposition}
+    Two Nim piles are equivalent if and only if they have the same size
+\end{proposition}
+
+\begin{proposition}
+    \(G\) is a losing game if and only if \(G \equiv 0\)
+\end{proposition}
+
+\begin{corollary}
+    Any two losing games are equivalent
+\end{corollary}
+
+\begin{lemma}
+    For all games \(G,H\) and \(K\) we have:
+    \[
+        G \equiv H \implies G + K \equiv H + K    
+    \]
+\end{lemma}
+
+\begin{lemma}
+    Let \(J\) be a losing game. Then \(G + J \equiv G\) for any game \(G\) 
+\end{lemma}
+
+\begin{proposition}[The Copycat Principle]
+    \(G + G \equiv 0\) for any impartial game \(G\) 
+\end{proposition}
+
+\begin{lemma}
+    For impartial games \(G\) and \(H\), then \(G \equiv H\)  if and only if \(G + H \equiv 0\) 
+\end{lemma}
+
+\setcounter{subsection}{4} 
+\subsection{Notation for Nim Piles}
+
+\begin{definition}
+    If \(G\) is a \textbf{single} Nim pile with \(n \geq 0\) tokens in it, then we denote this game by \(*n\). This game is specified by its \(n\) options, defined recursively as
+    \[
+      *0, *1, \ldots , *(n-1)  
+    \]
+\end{definition}
+
+\begin{definition}
+    If \(G \equiv *m\) for an impartial game \(G\), then \(m\) is called the \textbf{Nim value} of \(G\) 
+\end{definition}
+
+\subsection{The Mex Rule}
+\begin{definition}
+    For a finite set of natural numbers \(S\), the \textbf{minimum excluded number} of \(S\), written \(mex(S)\), is defined as
+    \[
+        mex(S) = \min \{n \in \N \mid n \notin S\}  
+    \]
+    In other words, \(mex(S)\) is the smallest non-negative integer not contained in \(S\)
+    e.g. \(mex(\{0,1,3,4,6\}) = 2\)
+\end{definition}
+
+\begin{theorem}[The Mex Rule]
+    Any impartial game \(G\) has \textbf{Nim value} \(m\), where \(m\) is uniquely determined as follows;
+    for each option \(H\) of \(G\), let \(H\) have Nim value \(s_{H}\), and let \(S = \{s_{H}: H \text{ is an option of } G\}\). Then \(m = mex(S)\), that is, \(G \equiv *(mex(S))\) 
+\end{theorem}
+
+\subsection{Sums of Nim Piles}
+
+\begin{definition}
+    If \(*k \equiv *m + *n\), then we call \(k\) the \textbf{Nim sum} of \(m\) and \(n\), and write \(k = m \oplus n\)
+\end{definition}
+
+\begin{theorem}
+    Let \(n \in \Z^+\), and represent \(n\) as a unique sum of powers of \(2\), i.e. write \(n = 2^{a} + 2^{b} + 2^{c} + \ldots  \), where \(a > b > c > \ldots \geq 0 \). Then 
+    \[
+        *n \equiv *2^{a} \oplus *2^{b} \oplus *2^{c} \oplus \ldots
+    \]
+\end{theorem}
+
+
+
+\end{document}

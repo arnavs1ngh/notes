@@ -1,0 +1,39 @@
+\contentsline {section}{\numberline {1}Prelude}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.5}Strategies}{3}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Dominance, Best Response and Equilibria}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.6}Equilibria}{4}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.8}Iterative Deletion of Dominated Strategies}{4}{subsection.2.8}%
+\contentsline {section}{\numberline {3}Mixed Equilibria}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Mixed Strategies}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.3}Finding mixed equilibria by considering Pure strategies}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Geometry of Games}{6}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Existence of an equilibrium}{6}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Finding equilibria by checking subgames}{6}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}The upper envelope method}{6}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Degenerate games}{6}{subsection.3.8}%
+\contentsline {section}{\numberline {4}Zero-sum games}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.3}Max-min and Min-max Strategies}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Relationship of Equilibria and Max-min/Min-max Strategies}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}The Minimax theorem of Von Neumann}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Finding solutions in small zero-sum games}{7}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Cooperative Games}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Bargaining sets}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Bargaining Axioms}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}The Nash Bargaining Solution}{8}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Congestion Games}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.5}Components of a Congestion Game}{8}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Existence of Equilibrium in Congestion Games}{9}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Price of Anarchy}{10}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Combinatorial Games}{10}{section.7}%
+\contentsline {subsubsection}{\numberline {7.0.1}The Ending Condition}{10}{subsubsection.7.0.1}%
+\contentsline {subsubsection}{\numberline {7.0.2}The Normal Play Convention}{10}{subsubsection.7.0.2}%
+\contentsline {subsection}{\numberline {7.1}Nim and Impartial Games}{10}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Winning and Losing Positions}{10}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Top-down induction}{11}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Partial and Total Orders}{11}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Back to Top-Down Induction}{11}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Game Sums}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Equivalence of Games}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Notation for Nim Piles}{13}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}The Mex Rule}{13}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Sums of Nim Piles}{13}{subsection.7.7}%
